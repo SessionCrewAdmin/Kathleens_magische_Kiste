@@ -1,4 +1,4 @@
-const CACHE='kathleen-v23-1-unified-poll-kiste-cleanup-20260919';
+const CACHE='kathleen-v23-1-unified-poll-kiste-cleanup-final-20260919';
 const CORE=[
   './','./index.html','./manifest.webmanifest',
   './tools/english-world-quiz/index.html','./tools/english-world-quiz/bonus.html','./tools/homework-vouchers/index.html',
