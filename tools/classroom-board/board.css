@@ -113,3 +113,6 @@ body:not(.hasTextSelection) .bottombar #fontSize,body:not(.hasTextSelection) .bo
 /* V22.3.1 Bottom Bar Cleanup */
 .bottombar > .colorWell:not(.textColorWell):not(.bgColorWell),
 .bottombar > #width{display:none!important}
+
+/* V22.3.2 Structural Bottom Bar Cleanup */
+.legacyBottomControls{display:none!important}
