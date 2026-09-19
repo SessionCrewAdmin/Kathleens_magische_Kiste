@@ -38,7 +38,6 @@ function widgetSeedData(type){if(type==='random'||type==='teams')return widgetCl
 function addStructuredWidget(widgetType,overrides={}){if(!window.KathleenWidgets?.definition(widgetType)){toast('Widget nicht registriert');return null}snapshot();const c=boardCenter(),seed=widgetSeedData(widgetType),o=window.KathleenWidgets.create(widgetType,{id:'i'+Date.now()+Math.random().toString(36).slice(2,5),x:c.x,y:c.y,...overrides,widgetData:{...seed,...(overrides.widgetData||{})}});o.x=(overrides.x??(c.x-o.w/2));o.y=(overrides.y??(c.y-o.h/2));const el=renderItem(o);select(el);persist();return el}
 window.KathleenWidgetHost=Object.freeze({add:addStructuredWidget,update:(el,patch)=>window.KathleenWidgets?.setData(el,patch,{mode:'teacher',interactive:true}),get:el=>window.KathleenWidgets?.itemFromElement(el),list:()=>window.KathleenWidgets?.list?.()||[]});
 world.addEventListener('kathleen:widget-change',()=>persist());
-world.addEventListener('kathleen:widget-change',()=>persist());
 function widgetUpdate(el,patch){return window.KathleenWidgetHost.update(el,patch)}
 function playTimerAlarm(){try{const C=window.AudioContext||window.webkitAudioContext,ac=new C();[0,.18,.36].forEach((t,i)=>{const o=ac.createOscillator(),g=ac.createGain();o.frequency.value=[880,1046,1318][i];g.gain.setValueAtTime(.0001,ac.currentTime+t);g.gain.exponentialRampToValueAtTime(.12,ac.currentTime+t+.02);g.gain.exponentialRampToValueAtTime(.0001,ac.currentTime+t+.15);o.connect(g);g.connect(ac.destination);o.start(ac.currentTime+t);o.stop(ac.currentTime+t+.17)});setTimeout(()=>ac.close(),1000)}catch(e){}}
 async function startSoundMeter(el){
@@ -51,7 +50,14 @@ async function startSoundMeter(el){
 }
 function stopSoundMeter(el){const rt=soundRuntime.get(el.id);if(rt){cancelAnimationFrame(rt.raf);rt.stream.getTracks().forEach(t=>t.stop());rt.ac.close().catch(()=>{});soundRuntime.delete(el.id)}widgetUpdate(el,{running:false,level:0})}
 async function pollRpc(name,body){return rpc(name,body)}
-async function refreshLivePollWidgets(){if(pollRefreshBusy||!classroom?.session_id)return;const els=$$('.item[data-widget-type="poll"]');if(!els.length)return;pollRefreshBusy=true;try{for(const el of els){const cur=window.KathleenWidgets.itemFromElement(el),d=cur?.widgetData||{};if(!d.pollKey)continue;try{const res=await pollRpc('classroom_poll_results',{p_session:classroom.session_id,p_teacher_token:classroom.teacher_token,p_poll_key:d.pollKey});if(res?.ok){const counts=res.counts||[];if(JSON.stringify(counts)!==JSON.stringify(d.counts||[])||!!res.open!==!!d.open)widgetUpdate(el,{counts,open:!!res.open})}}catch(err){if(!/404|PGRST|does not exist|schema/i.test(String(err?.message||err)))console.warn('Poll refresh',err)}}}finally{pollRefreshBusy=false}}
+function classroomPollOptions(data){
+ const type=data.pollType||'choice';
+ if(type==='yesno')return['Ja','Nein'];
+ if(type==='scale'||type==='rating')return['1','2','3','4','5'];
+ if(type==='open'||type==='wordcloud')return[];
+ return (data.options||[]).map(x=>String(x||'').trim()).filter(Boolean).slice(0,6)
+}
+async function refreshLivePollWidgets(){if(pollRefreshBusy||!classroom?.session_id)return;const els=$('.item[data-widget-type="poll"]');if(!els.length)return;pollRefreshBusy=true;try{for(const el of els){const cur=window.KathleenWidgets.itemFromElement(el),d=cur?.widgetData||{};if(!d.pollKey)continue;try{const res=await pollRpc('classroom_poll_results_v2',{p_session:classroom.session_id,p_teacher_token:classroom.teacher_token,p_poll_key:d.pollKey});if(res?.ok){const patch={pollType:res.poll_type||d.pollType||'choice',question:res.question??d.question,options:Array.isArray(res.options)?res.options:d.options,counts:Array.isArray(res.counts)?res.counts:[],answers:Array.isArray(res.answers)?res.answers:[],ranking:Array.isArray(res.ranking)?res.ranking:[],total:Number(res.total)||0,open:!!res.open,revealResults:!!res.reveal_results};const before=JSON.stringify([d.pollType,d.question,d.options,d.counts,d.answers,d.ranking,d.total,d.open,d.revealResults]),after=JSON.stringify([patch.pollType,patch.question,patch.options,patch.counts,patch.answers,patch.ranking,patch.total,patch.open,patch.revealResults]);if(before!==after)widgetUpdate(el,patch)}}catch(err){if(!/404|PGRST|does not exist|schema/i.test(String(err?.message||err)))console.warn('Poll refresh',err)}}}finally{pollRefreshBusy=false}}
 world.addEventListener('kathleen:widget-action',async e=>{
  const el=e.target.closest('.item[data-widget-type]');if(!el)return;const d=e.detail||{},current=window.KathleenWidgets?.itemFromElement(el);if(!current)return;const data=current.widgetData||{};snapshot();
  if(current.widgetType==='timer'){
@@ -83,10 +89,25 @@ world.addEventListener('kathleen:widget-action',async e=>{
   else if(d.action==='sound-reset'){stopSoundMeter(el);widgetUpdate(el,{counter:0})}
   else if(d.action==='field'&&d.field==='threshold')widgetUpdate(el,{threshold:+d.value||65})
  }else if(current.widgetType==='poll'){
-  if(d.action==='field'){if(d.field==='question')widgetUpdate(el,{question:String(d.value||'').slice(0,180)});else if(/^option_/.test(d.field)){const i=+d.field.split('_')[1],options=[...(data.options||[])];options[i]=String(d.value||'').slice(0,100);widgetUpdate(el,{options})}}
-  else if(d.action==='poll-open'){if(!classroom?.session_id){toast('Live Poll braucht einen gestarteten Klassenraum');return}const opts=(data.options||[]).filter(x=>String(x).trim());if(!data.question?.trim()||opts.length<2){toast('Frage + mindestens 2 Antworten');return}try{const ok=await pollRpc('classroom_poll_open',{p_session:classroom.session_id,p_teacher_token:classroom.teacher_token,p_poll_key:data.pollKey,p_question:data.question,p_options:opts});if(ok){widgetUpdate(el,{options:opts,counts:opts.map(()=>0),open:true});toast('Live Poll gestartet')}}catch(err){toast('Live-Poll SQL-Patch fehlt')}}
-  else if(d.action==='poll-close'){try{await pollRpc('classroom_poll_close',{p_session:classroom.session_id,p_teacher_token:classroom.teacher_token,p_poll_key:data.pollKey});widgetUpdate(el,{open:false});toast('Poll geschlossen')}catch(err){toast('Poll konnte nicht geschlossen werden')}}
-  else if(d.action==='poll-reset'){if(data.open)try{await pollRpc('classroom_poll_close',{p_session:classroom.session_id,p_teacher_token:classroom.teacher_token,p_poll_key:data.pollKey})}catch(err){}widgetUpdate(el,{open:false,counts:(data.options||[]).map(()=>0)})}
+  if(d.action==='field'){
+    if(d.field==='question')widgetUpdate(el,{question:String(d.value||'').slice(0,300)});
+    else if(d.field==='pollType'){const type=String(d.value||'choice'),defaults=type==='yesno'?['Ja','Nein']:(type==='scale'||type==='rating')?['1','2','3','4','5']:(type==='open'||type==='wordcloud')?[]:(data.options?.length?data.options:['Antwort A','Antwort B','Antwort C','Antwort D']);widgetUpdate(el,{pollType:type,options:defaults,counts:defaults.map(()=>0),answers:[],ranking:[],total:0,open:false,revealResults:false})}
+    else if(d.field==='chartMode')widgetUpdate(el,{chartMode:String(d.value||'bar')});
+    else if(d.field==='optionsText'){const options=String(d.value||'').split(/\r?\n/).map(x=>x.trim()).filter(Boolean).slice(0,6);widgetUpdate(el,{options,counts:options.map(()=>0)})}
+  }else if(d.action==='poll-open'){
+    if(!classroom?.session_id){toast('Live Poll braucht einen gestarteten Klassenraum');return}
+    const type=data.pollType||'choice',opts=classroomPollOptions(data),needsOptions=['choice','multi','ranking'].includes(type);
+    if(!data.question?.trim()||(needsOptions&&opts.length<2)){toast(needsOptions?'Frage + mindestens 2 Antworten':'Bitte eine Frage eingeben');return}
+    try{const ok=await pollRpc('classroom_poll_open_v2',{p_session:classroom.session_id,p_teacher_token:classroom.teacher_token,p_poll_key:data.pollKey,p_type:type,p_question:data.question,p_options:opts});if(ok){widgetUpdate(el,{options:opts,counts:opts.map(()=>0),answers:[],ranking:[],total:0,open:true,revealResults:false});toast('Live Poll gestartet')}}catch(err){console.warn(err);toast('Classroom Live-Poll V23.1 SQL fehlt')}
+  }else if(d.action==='poll-close'){
+    try{const ok=await pollRpc('classroom_poll_state_v2',{p_session:classroom.session_id,p_teacher_token:classroom.teacher_token,p_poll_key:data.pollKey,p_action:'close'});if(ok)widgetUpdate(el,{open:false})}catch(err){toast('Poll konnte nicht geschlossen werden')}
+  }else if(d.action==='poll-reveal'){
+    try{const reveal=!data.revealResults,ok=await pollRpc('classroom_poll_state_v2',{p_session:classroom.session_id,p_teacher_token:classroom.teacher_token,p_poll_key:data.pollKey,p_action:reveal?'reveal':'hide'});if(ok)widgetUpdate(el,{revealResults:reveal})}catch(err){toast('Ergebnisstatus konnte nicht geändert werden')}
+  }else if(d.action==='poll-reset'){
+    try{await pollRpc('classroom_poll_state_v2',{p_session:classroom.session_id,p_teacher_token:classroom.teacher_token,p_poll_key:data.pollKey,p_action:'reset'})}catch(err){}
+    const opts=classroomPollOptions(data);widgetUpdate(el,{open:false,revealResults:false,counts:opts.map(()=>0),answers:[],ranking:[],total:0})
+  }
+
  }
  e.stopPropagation();
 });
