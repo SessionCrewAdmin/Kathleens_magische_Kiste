@@ -116,3 +116,26 @@ body:not(.hasTextSelection) .bottombar #fontSize,body:not(.hasTextSelection) .bo
 
 /* V22.3.2 Structural Bottom Bar Cleanup */
 .legacyBottomControls{display:none!important}
+
+
+/* V22.4 Dynamic Tool Island */
+.bottombar,.zoom{display:none!important}
+.dynamicIsland{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);z-index:82;display:flex;align-items:center;gap:8px;min-height:54px;padding:7px 9px;background:rgba(24,20,27,.92);color:#fff;border:1px solid rgba(255,255,255,.12);border-radius:999px;box-shadow:0 18px 55px #2f203040,0 2px 0 rgba(255,255,255,.08) inset;backdrop-filter:blur(24px) saturate(145%);-webkit-backdrop-filter:blur(24px) saturate(145%);transition:width .3s cubic-bezier(.2,.8,.2,1),border-radius .3s ease,transform .3s ease,background .25s ease;max-width:calc(100vw - 100px)}
+.dynamicIsland.expanded{border-radius:28px;background:rgba(29,24,32,.95)}
+.islandCore,.islandContext,.islandZoom{display:flex;align-items:center;gap:5px}
+.islandContext{max-width:0;opacity:0;overflow:hidden;pointer-events:none;transform:scale(.96);transition:max-width .32s cubic-bezier(.2,.8,.2,1),opacity .18s ease,transform .25s ease}
+.islandContext.active{max-width:780px;opacity:1;pointer-events:auto;transform:scale(1)}
+.islandDivider{width:1px;height:28px;background:rgba(255,255,255,.15);margin:0 2px}
+.islandBtn{height:38px;min-width:38px;padding:0 10px;border:0;border-radius:14px;background:transparent;color:#f8f4fa;font:inherit;font-weight:850;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:5px;transition:background .15s ease,transform .15s ease}
+.islandBtn:hover{background:rgba(255,255,255,.12)}.islandBtn:active{transform:scale(.94)}.islandBtn.active{background:#fff;color:#3f3242}.islandBtn.wide{padding:0 12px}.islandBtn.danger{color:#ff9cac}.islandBtn.danger:hover{background:#ff5b731d}
+.islandSelect{height:38px;border:0;border-radius:14px;background:rgba(255,255,255,.1);color:#fff;padding:0 30px 0 11px;font-weight:800;outline:none}.islandSelect option{color:#3f3242;background:#fff}.islandSelect.compact{width:68px;padding-right:20px}
+.islandContextLabel{font-size:10px;font-weight:950;text-transform:uppercase;letter-spacing:.06em;color:#cfbfd3;padding:0 6px;white-space:nowrap}
+.islandColor{width:36px;height:36px;border-radius:13px;padding:3px;background:rgba(255,255,255,.1);display:grid;place-items:center;overflow:hidden}.islandColor input{width:30px;height:30px;border:0;padding:0;background:transparent;cursor:pointer}
+.islandSegment{display:flex;align-items:center;background:rgba(255,255,255,.08);border-radius:14px;padding:3px}.islandSegment button{height:32px;min-width:32px;border:0;background:transparent;color:#e9e1ec;border-radius:10px;font-weight:850;cursor:pointer}.islandSegment button.active{background:#fff;color:#3f3242;box-shadow:0 2px 8px #0002}
+.islandRange{display:flex;align-items:center;gap:7px;font-size:9px;font-weight:900;color:#d5c7d9;white-space:nowrap}.islandRange input{width:90px}
+.islandZoom{padding-left:3px;border-left:1px solid rgba(255,255,255,.14)}.islandZoom span{min-width:42px;text-align:center;font-size:11px;font-weight:900;color:#e9e1ec}
+.dynamicIsland .hidden{display:none!important}
+.formatBar{display:none!important}
+.drawPalette{display:none!important}
+@media(max-width:900px){.dynamicIsland{bottom:10px;max-width:calc(100vw - 20px);overflow-x:auto;justify-content:flex-start;border-radius:24px}.dynamicIsland::-webkit-scrollbar{display:none}.islandBtn{min-width:42px;height:42px}.islandSelect{height:42px}.islandContext.active{max-width:900px}}
+@media(pointer:coarse){.dynamicIsland{min-height:60px}.islandBtn{min-width:44px;height:44px;border-radius:15px}.islandSegment button{height:38px;min-width:38px}}
