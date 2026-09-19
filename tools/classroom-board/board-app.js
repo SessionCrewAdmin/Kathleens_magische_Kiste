@@ -141,8 +141,10 @@ function updateDynamicIsland(){
   }
 }
 function initDynamicIsland(){
+  const addIslandWidget=(type)=>{const target=$('[data-add="'+type+'"]');if(target){islandWidgetsOpen=false;target.click();updateDynamicIsland()}};
+  $('.islandQuickWidget').forEach(b=>b.onclick=e=>{e.stopPropagation();addIslandWidget(b.dataset.islandWidget)});
   $('#islandWidgetsBtn').onclick=e=>{e.stopPropagation();islandWidgetsOpen=!islandWidgetsOpen;if(islandWidgetsOpen){select(null);tool='select';$('.leftbar .tool').forEach(b=>b.classList.remove('active','deleteMode'));$('#widgetPanel').classList.add('hidden')}updateDynamicIsland()};
-  $('.islandWidgetChoice').forEach(b=>b.onclick=e=>{e.stopPropagation();const type=b.dataset.islandWidget,target=$('[data-add="'+type+'"]');if(target){islandWidgetsOpen=false;target.click();updateDynamicIsland()}});
+  $('.islandWidgetChoice').forEach(b=>b.onclick=e=>{e.stopPropagation();addIslandWidget(b.dataset.islandWidget)});
   $('#islandWidgetsMore').onclick=e=>{e.stopPropagation();islandWidgetsOpen=false;toggle('#widgetPanel');updateDynamicIsland()};
   $('#islandInkColor').oninput=e=>{inkColor=e.target.value;$('#color').value=inkColor;updateDynamicIsland()};
   $$('[data-island-width]').forEach(b=>b.onclick=()=>{inkWidth=+b.dataset.islandWidth;$('#width').value=String(inkWidth);updateDynamicIsland()});
