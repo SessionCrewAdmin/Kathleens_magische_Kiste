@@ -109,3 +109,7 @@ body:not(.hasTextSelection) .bottombar #fontSize,body:not(.hasTextSelection) .bo
 /* V22.3 Text Engine */
 .item[data-text-variant="text"]{background:transparent;box-shadow:none;border-color:transparent}.item[data-text-variant="card"],.item[data-text-variant="sticky"]{overflow:visible}.item .editableText.textEngine{box-sizing:border-box;outline:none;overflow:auto}.item .editableText.textEngine:focus{box-shadow:inset 0 0 0 2px #9675aa33}.item[data-text-variant="sticky"]>.body,.item[data-text-variant="card"]>.body,.item[data-text-variant="text"]>.body{height:calc(100% - 28px);padding:0;overflow:visible}
 @media(max-width:900px){.elementInspector{right:8px;top:64px;bottom:68px;width:min(300px,calc(100vw - 76px))}.formatBar{max-width:calc(100vw - 76px);overflow-x:auto}}
+
+/* V22.3.1 Bottom Bar Cleanup */
+.bottombar > .colorWell:not(.textColorWell):not(.bgColorWell),
+.bottombar > #width{display:none!important}
