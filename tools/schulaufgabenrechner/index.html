@@ -22,7 +22,7 @@
 <script src="../classroom-tools-shared.js"></script><script src="../presentation-mode.js"></script><script>
 (()=>{'use strict';
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],STORE='gradebook-v1',HISTORY_MAX=60,AUTOSAVE_MS=650;
-const clone=v=>structuredClone?structuredClone(v):JSON.parse(JSON.stringify(v));
+const clone=v=>typeof structuredClone==='function'?structuredClone(v):JSON.parse(JSON.stringify(v));
 let db={version:2,assessments:[],settings:{majorRatio:2,minorRatio:1}},current=null,history=[],future=[],saveTimer=null,saveBusy=false,saveQueued=false,lastSavedSignature='';
 const defaultThresholds=[.875,.75,.625,.5,.3472222222];
 
@@ -150,9 +150,23 @@ function moveScore(row,col,dr,dc){
   const el=$('[data-row="'+r+'"][data-col="'+c+'"]');if(el&&!el.disabled){el.focus();el.select();return}r+=dr;c+=dc
  }
 }
+function focusScoreCell(row,col){
+ if(row<0||row>=current.students.length||col<0||col>=current.tasks.length)return false;
+ const el=$('[data-row="'+row+'"][data-col="'+col+'"]');if(!el||el.disabled)return false;el.focus();el.select();return true
+}
+function tabScore(row,col,back=false){
+ let r=row,c=col+(back?-1:1);
+ if(c>=current.tasks.length){c=0;r++}else if(c<0){c=current.tasks.length-1;r--}
+ while(r>=0&&r<current.students.length){
+   if(focusScoreCell(r,c))return;
+   c+=back?-1:1;
+   if(c>=current.tasks.length){c=0;r++}else if(c<0){c=current.tasks.length-1;r--}
+ }
+}
 function scoreKeydown(e,input){
  const row=+input.dataset.row,col=+input.dataset.col;
- if(e.key==='Enter'){e.preventDefault();moveScore(row,col,e.shiftKey?-1:1,0)}
+ if(e.key==='Tab'){e.preventDefault();tabScore(row,col,e.shiftKey)}
+ else if(e.key==='Enter'){e.preventDefault();moveScore(row,col,e.shiftKey?-1:1,0)}
  else if(e.key==='ArrowDown'){e.preventDefault();moveScore(row,col,1,0)}
  else if(e.key==='ArrowUp'){e.preventDefault();moveScore(row,col,-1,0)}
  else if(e.key==='ArrowRight'&&input.selectionStart===input.value.length){e.preventDefault();moveScore(row,col,0,1)}
@@ -235,7 +249,7 @@ $$('.tab').forEach(b=>b.onclick=()=>showView(b.dataset.view));
 ['majorRatio','minorRatio'].forEach(id=>bindEditSession($('#'+id),()=>{db.settings.majorRatio=Number($('#majorRatio').value)||2;db.settings.minorRatio=Number($('#minorRatio').value)||1;renderClassbook();renderStudents();scheduleSave()}));
 ['title','kind','date','duration','weight','subject','topic','returned','directorate','gradebookDate'].forEach(id=>bindEditSession($('#'+id),()=>readInputs(true)));
 document.addEventListener('keydown',e=>{if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='z'){e.preventDefault();e.shiftKey?redo():undo()}else if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='y'){e.preventDefault();redo()}});
-window.addEventListener('beforeunload',()=>{clearTimeout(saveTimer)});
+document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='hidden'&&saveTimer)saveNow(false)});window.addEventListener('beforeunload',()=>{clearTimeout(saveTimer)});
 
 (async()=>{
  await KathleenClassLists.requireUnlock();
