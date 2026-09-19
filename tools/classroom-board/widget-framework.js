@@ -107,14 +107,54 @@ function renderTeams(data,{mode,esc}){
  (teams.length?'<div class="kwTeamsGrid">'+teams.map((team,i)=>'<section class="kwTeam" data-team="'+i+'"><h4><span>Team '+(i+1)+'</span><span>'+arr(team).length+'</span></h4>'+arr(team).map((n,j)=>'<button class="kwMember" '+(teacher?'draggable="true" data-team="'+i+'" data-index="'+j+'" data-name="'+esc(n)+'"':'disabled')+'>'+esc(n)+'</button>').join('')+'</section>').join('')+'</div>':'<div class="kwEmpty">Noch keine Teams erstellt.</div>')+'</div>'+
  (teacher?'<div class="kwActions"><button class="primary" data-kw-action="teams-generate">🧩 Erstellen</button><button data-kw-action="teams-generate">↻ Neu mischen</button><button data-kw-action="source-refresh">↻ Klasse</button></div>':'')+'</div>';
 }
-function pollCounts(data){const opts=arr(data.options).filter(x=>String(x).trim()),counts=arr(data.counts);return{opts,counts:opts.map((_,i)=>Number(counts[i])||0),total:opts.reduce((s,_,i)=>s+(Number(counts[i])||0),0)}}
+function pollTypeMeta(type){
+ const map={choice:['Einfachauswahl','🔘'],multi:['Mehrfachauswahl','☑️'],yesno:['Ja / Nein','👍'],scale:['Skala 1–5','📏'],rating:['Sterne','⭐'],ranking:['Ranking','🏁'],wordcloud:['Word Cloud','☁️'],open:['Freitext','💬']};
+ return map[type]||map.choice
+}
+function pollOptionsFor(data){
+ const type=data.pollType||'choice';
+ if(type==='yesno')return['Ja','Nein'];
+ if(type==='scale'||type==='rating')return['1','2','3','4','5'];
+ if(type==='open'||type==='wordcloud')return[];
+ return arr(data.options).map(x=>String(x||'').trim()).filter(Boolean).slice(0,6)
+}
+function pollCounts(data){
+ const opts=pollOptionsFor(data),counts=arr(data.counts);
+ return{opts,counts:opts.map((_,i)=>Number(counts[i])||0),respondents:Number(data.total)||0}
+}
+function pollChart(data,esc){
+ const type=data.pollType||'choice',info=pollCounts(data),opts=info.opts,counts=info.counts,respondents=info.respondents,mode=data.chartMode||'bar',selectionTotal=counts.reduce((a,b)=>a+b,0),denom=type==='multi'?selectionTotal:respondents,max=Math.max(1,...counts),palette=['#d98ab3','#8589da','#70bf9d','#dfaa62','#b59bd9','#6fb8c4'];
+ if(!opts.length)return '';
+ if(mode==='cards')return '<div class="kwPollCards">'+opts.map((o,i)=>{const pct=denom?Math.round(counts[i]/denom*100):0;return '<div class="kwPollCard"><b>'+String.fromCharCode(65+i)+' · '+esc(type==='rating'?o+' ⭐':o)+'</b><strong>'+pct+'%</strong><small>'+counts[i]+' Stimmen</small></div>'}).join('')+'</div>';
+ if(mode==='donut'||mode==='pie'){let start=0,stops=[];counts.forEach((n,i)=>{const pct=denom?n/denom*100:0;stops.push(palette[i%palette.length]+' '+start+'% '+(start+pct)+'%');start+=pct});const grad=stops.length?'conic-gradient('+stops.join(',')+')':'#eee';return '<div class="kwPollPieWrap"><div class="kwPollPie '+(mode==='donut'?'donut':'')+'" style="background:'+grad+'"><div class="kwPollPieCenter">'+(type==='multi'?selectionTotal:respondents)+'</div></div><div class="kwPollLegend">'+opts.map((o,i)=>{const pct=denom?Math.round(counts[i]/denom*100):0;return '<div class="kwPollLegendRow"><i class="kwPollLegendDot" style="background:'+palette[i%palette.length]+'"></i><b>'+esc(type==='rating'?o+' ⭐':o)+'</b><span>'+pct+'% · '+counts[i]+'</span></div>'}).join('')+'</div></div>'}
+ return '<div class="kwPollOptions">'+opts.map((o,i)=>{const pct=denom?Math.round(counts[i]/denom*100):0;return '<div class="kwPollOption"><span class="kwPollKey">'+String.fromCharCode(65+i)+'</span><span class="kwPollLabel">'+esc(type==='rating'?o+' ⭐':o)+'</span><div class="kwPollBar"><i style="width:'+Math.round(counts[i]/max*100)+'%"></i></div><span class="kwPollCount">'+pct+'%</span></div>'}).join('')+'</div>'
+}
+function pollSpecialResults(data,esc){
+ const type=data.pollType||'choice';
+ if(type==='open')return '<div class="kwPollAnswers">'+arr(data.answers).slice(-30).map(x=>'<div class="kwPollAnswer">'+esc(x)+'</div>').join('')+'</div>';
+ if(type==='wordcloud'){const freq={};arr(data.answers).forEach(x=>String(x||'').toLowerCase().split(/[,;\s]+/).filter(w=>w.length>1).forEach(w=>freq[w]=(freq[w]||0)+1));const words=Object.entries(freq).sort((a,b)=>b[1]-a[1]).slice(0,30),max=Math.max(1,...words.map(x=>x[1]));return '<div class="kwPollWordcloud">'+words.map(([w,n])=>'<span style="font-size:'+(10+Math.round(n/max*20))+'px;opacity:'+(0.55+n/max*.45)+'">'+esc(w)+'</span>').join('')+'</div>'}
+ if(type==='ranking')return '<div class="kwPollRanking">'+arr(data.ranking).map((x,i)=>'<div class="kwPollRank"><i>'+(i+1)+'</i><b>'+esc(x.label||'')+'</b><small>Ø '+Number(x.average||0).toFixed(1)+'</small></div>').join('')+'</div>';
+ return pollChart(data,esc)
+}
+function pollTeacherSetup(data,esc){
+ const type=data.pollType||'choice',custom=['choice','multi','ranking'].includes(type),meta=pollTypeMeta(type),m=data.chartMode||'bar';
+ return '<div class="kwPollSetup"><div class="kwPollSetupRow"><label class="kwField">Umfragetyp<select data-kw-field="pollType">'+['choice','multi','yesno','scale','rating','ranking','wordcloud','open'].map(t=>'<option value="'+t+'"'+(type===t?' selected':'')+'>'+pollTypeMeta(t)[1]+' '+pollTypeMeta(t)[0]+'</option>').join('')+'</select></label><label class="kwField">Darstellung<select data-kw-field="chartMode"><option value="bar"'+(m==='bar'?' selected':'')+'>▥ Balken</option><option value="donut"'+(m==='donut'?' selected':'')+'>◉ Donut</option><option value="pie"'+(m==='pie'?' selected':'')+'>◔ Torte</option><option value="cards"'+(m==='cards'?' selected':'')+'>▦ Karten</option></select></label></div><input data-kw-field="question" value="'+esc(data.question||'')+'" placeholder="Frage …">'+(custom?'<textarea data-kw-field="optionsText" placeholder="Eine Antwort pro Zeile">'+esc(pollOptionsFor(data).join('\n'))+'</textarea>':'')+'<div class="kwPollTypeHint">'+meta[1]+' '+meta[0]+' · '+(type==='multi'?'mehrere Antworten möglich':type==='ranking'?'Optionen sortieren':type==='wordcloud'?'kurze Begriffe ergeben eine Wortwolke':type==='open'?'freie Kurzantwort':type==='rating'?'1 bis 5 Sterne':type==='scale'?'Skala von 1 bis 5':'eine Antwort pro Person')+'</div></div>'
+}
+function pollStudentAnswer(data,esc){
+ const type=data.pollType||'choice',opts=pollOptionsFor(data);
+ if(!data.open)return '<div class="kwEmpty">Abstimmung ist geschlossen.</div>';
+ if(type==='open'||type==='wordcloud')return '<div class="kwPollStudentAnswer"><textarea class="kwPollStudentInput" data-poll-text maxlength="'+(type==='wordcloud'?60:300)+'" placeholder="'+(type==='wordcloud'?'Ein Begriff …':'Deine Antwort …')+'"></textarea><button class="kwPollStudentSubmit" data-poll-submit="'+type+'">Antwort senden</button></div>';
+ if(type==='rating')return '<div class="kwPollStars">'+[0,1,2,3,4].map(i=>'<button class="kwPollStar" data-poll-star="'+i+'">★<small>'+(i+1)+'</small></button>').join('')+'</div>';
+ if(type==='ranking')return '<div class="kwPollStudentAnswer"><div class="kwPollRankList">'+opts.map((o,i)=>'<div class="kwPollRankItem" data-poll-rank="'+i+'"><i>'+(i+1)+'</i><b>'+esc(o)+'</b><span class="kwPollRankMove"><button data-poll-rank-up>↑</button><button data-poll-rank-down>↓</button></span></div>').join('')+'</div><button class="kwPollStudentSubmit" data-poll-submit="ranking">Ranking senden</button></div>';
+ return '<div class="kwPollStudentAnswer">'+opts.map((o,i)=>'<button class="kwPollStudentOption" data-letter="'+String.fromCharCode(65+i)+'" data-poll-choice="'+i+'" data-poll-type="'+type+'">'+esc(o)+'</button>').join('')+(type==='multi'?'<button class="kwPollStudentSubmit" data-poll-submit="multi">Auswahl senden</button>':'')+'</div>'
+}
 function renderPoll(data,{mode,esc}){
- const {opts,counts,total}=pollCounts(data),teacher=mode==='teacher',student=mode==='student',open=!!data.open;
- const results=opts.map((o,i)=>{const pct=total?Math.round(counts[i]/total*100):0;return '<div class="kwPollOption">'+(student?'<button data-kw-action="poll-vote" data-kw-value="'+i+'" class="'+(+data.myVote===i?'voted':'')+'" '+(!open?'disabled':'')+'>'+esc(o)+'</button>':'<button disabled>'+esc(o)+'</button><div class="kwPollBar"><i style="width:'+pct+'%"></i></div><span class="kwPollCount">'+counts[i]+'</span>')+'</div>'}).join('');
- return '<div class="kwWidget '+(student?'kwPollStudent':'')+'" data-poll-key="'+esc(data.pollKey||'')+'"><div class="kwWidgetTop"><span class="kwWidgetIcon">📊</span><b>Live Poll</b><span class="kwWidgetState">'+(open?'OFFEN':data.question?'GESCHLOSSEN':'BEREIT')+'</span></div><div class="kwBody">'+
- (teacher?'<div class="kwPollSetup"><input data-kw-field="question" value="'+esc(data.question||'')+'" placeholder="Frage …">'+[0,1,2,3].map(i=>'<input data-kw-field="option_'+i+'" value="'+esc(opts[i]||'')+'" placeholder="Antwort '+(i+1)+'">').join('')+'</div>':'<div class="kwPollQuestion">'+esc(data.question||'Abstimmung')+'</div>')+
- ((!teacher||data.question)?results:'')+(student&&data.myVote!=null?'<div class="kwRandomMeta">Antwort gespeichert ✓</div>':'')+(teacher?'<div class="kwRandomMeta">'+total+' Stimmen</div>':'')+'</div>'+
- (teacher?'<div class="kwActions"><button class="primary" data-kw-action="'+(open?'poll-close':'poll-open')+'">'+(open?'■ Schließen':'▶ Starten')+'</button><button data-kw-action="poll-reset">↺ Reset</button></div>':'')+'</div>';
+ const teacher=mode==='teacher',student=mode==='student',type=data.pollType||'choice',meta=pollTypeMeta(type),resultsAllowed=teacher||mode==='presentation'||data.revealResults;
+ const body=teacher?pollTeacherSetup(data,esc):'<div class="kwPollQuestion">'+esc(data.question||'Abstimmung')+'</div>';
+ const participation=student?pollStudentAnswer(data,esc):'';
+ const results=(data.question&&resultsAllowed)?pollSpecialResults(data,esc):'';
+ const status=data.open?'OFFEN':data.question?'GESCHLOSSEN':'BEREIT';
+ return '<div class="kwWidget '+(student?'kwPollStudent':'')+'" data-poll-key="'+esc(data.pollKey||'')+'" data-poll-type="'+esc(type)+'"><div class="kwWidgetTop"><span class="kwWidgetIcon">'+meta[1]+'</span><b>Live Poll</b><span class="kwWidgetState">'+status+'</span></div><div class="kwBody">'+body+(student?participation:results)+(teacher?'<div class="kwRandomMeta">'+(Number(data.total)||0)+' Antworten'+(data.revealResults?' · Ergebnis sichtbar':' · Ergebnis verborgen')+'</div>':'')+(student&&data.revealResults?'<div style="margin-top:8px">'+results+'</div>':'')+'</div>'+(teacher?'<div class="kwActions"><button class="primary" data-kw-action="'+(data.open?'poll-close':'poll-open')+'">'+(data.open?'■ Schließen':'▶ Starten')+'</button><button data-kw-action="poll-reveal">'+(data.revealResults?'🙈 Verbergen':'👁 Zeigen')+'</button><button data-kw-action="poll-reset">↺ Reset</button></div>':'')+'</div>'
 }
 const stickerSet=[['star','⭐','Stark!'],['heart','💖','Super!'],['fire','🔥','On fire!'],['party','🎉','Geschafft!'],['crown','👑','Top!'],['rocket','🚀','Weiter so!'],['brain','🧠','Clever!'],['hundred','💯','Perfekt!'],['sparkles','✨','Magisch!'],['trophy','🏆','Champion!'],['clap','👏','Bravo!'],['smile','😎','Cool!']];
 function renderSticker(data,{mode,esc}){
@@ -137,7 +177,7 @@ register({type:'timer',icon:'⌛',title:'Timer',defaultSize:{w:390,h:270},defaul
 register({type:'traffic',icon:'🚦',title:'Ampel',defaultSize:{w:430,h:325},defaultData:{title:'Ampel',active:'green',variant:'classic',labels:{red:'Nicht reden',yellow:'Flüsterstimme',green:'Innenstimme'},showLabels:true},render:renderTraffic});
 register({type:'random',icon:'🎯',title:'Zufallsgenerator',defaultSize:{w:380,h:285},defaultData:{names:[],sourceName:'',excludeDrawn:true,count:1,drawn:[],result:[]},render:renderRandom});
 register({type:'teams',icon:'👥',title:'Teamgenerator',defaultSize:{w:520,h:360},defaultData:{names:[],sourceName:'',mode:'count',teamCount:4,teams:[]},render:renderTeams});
-register({type:'poll',icon:'📊',title:'Live Poll',defaultSize:{w:460,h:370},defaultData:{pollKey:'',question:'',options:['Ja','Nein','',''],counts:[0,0,0,0],open:false,myVote:null},capabilities:{studentInteract:true},render:renderPoll});
+register({type:'poll',icon:'📊',title:'Live Poll',defaultSize:{w:560,h:470},defaultData:{pollKey:'',pollType:'choice',question:'',options:['Antwort A','Antwort B','Antwort C','Antwort D'],chartMode:'bar',counts:[0,0,0,0],answers:[],ranking:[],total:0,open:false,revealResults:false},capabilities:{studentInteract:true},render:renderPoll});
 register({type:'sticker',icon:'💖',title:'Sticker',defaultSize:{w:240,h:235},defaultData:{stickerId:'star',emoji:'⭐',label:'Stark!'},render:renderSticker});
 register({type:'sound',icon:'🎙️',title:'Sound-Pegel',defaultSize:{w:320,h:330},defaultData:{threshold:65,level:0,running:false,counter:0},render:renderSound});
 
