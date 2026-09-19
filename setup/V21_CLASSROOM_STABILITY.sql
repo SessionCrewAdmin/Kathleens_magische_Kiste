@@ -87,6 +87,7 @@ begin
      or coalesce(p_payload->>'type','') not in ('stroke','text','undo','clear','snapshot')
      or octet_length(p_payload::text)>5000000 then return false; end if;
   if p_payload->>'type'='snapshot' then
+    if coalesce((p_payload->>'workspace_revision')::bigint,-1) <> v_participant.workspace_revision then return false; end if;
     if jsonb_typeof(p_payload->'workspace')<>'object'
        or jsonb_typeof(coalesce(p_payload->'workspace'->'strokes','[]'::jsonb))<>'array'
        or jsonb_typeof(coalesce(p_payload->'workspace'->'items','[]'::jsonb))<>'array' then return false; end if;
