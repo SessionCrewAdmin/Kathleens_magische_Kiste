@@ -1,4 +1,4 @@
-(()=>{'use strict';window.addEventListener('error',e=>{const s=document.querySelector('#saveState');if(s){s.textContent='JS-Fehler · V18.1 · '+(e.message||'unbekannt');s.style.color='#b23b50'}console.error(e.error||e.message)});
+(()=>{'use strict';window.addEventListener('error',e=>{const s=document.querySelector('#saveState');if(s){s.textContent='JS-Fehler · V23 · '+(e.message||'unbekannt');s.style.color='#b23b50'}console.error(e.error||e.message)});
 const $=s=>document.querySelector(s),$$=s=>Array.from(document.querySelectorAll(s));
 const world=$('#world'),stage=$('#stage'),ink=$('#ink'),ctx=ink.getContext('2d',{alpha:true}),toastEl=$('#toast');
 const W=12000,H=8000,SB='https://fzqxnjhuvgpgovcovosl.supabase.co/rest/v1/rpc/',KEY='sb_publishable_GIyyWoyaQXipaA4S9OuTyQ_cZn7LUgV';
@@ -45,8 +45,8 @@ async function startSoundMeter(el){
  const id=el.id;if(soundRuntime.has(id))return;
  try{
   const stream=await navigator.mediaDevices.getUserMedia({audio:true}),ac=new (window.AudioContext||window.webkitAudioContext)(),src=ac.createMediaStreamSource(stream),an=ac.createAnalyser();an.fftSize=512;an.smoothingTimeConstant=.72;src.connect(an);const data=new Uint8Array(an.frequencyBinCount);
-  const rt={stream,ac,an,raf:null};soundRuntime.set(id,rt);widgetUpdate(el,{running:true});
-  const tick=()=>{if(!soundRuntime.has(id))return;an.getByteTimeDomainData(data);let sum=0;for(const v of data){const x=(v-128)/128;sum+=x*x}const rms=Math.sqrt(sum/data.length),level=Math.min(100,Math.round(rms*260));const fill=el.querySelector('[data-kw-sound-fill]'),out=el.querySelector('[data-kw-sound-value]');if(fill)fill.style.height=level+'%';if(out)out.firstChild.nodeValue=String(level);const cur=window.KathleenWidgets.itemFromElement(el)?.widgetData||{};el.classList.toggle('soundTooLoud',level>(cur.threshold||65));rt.raf=requestAnimationFrame(tick)};tick();
+  const rt={stream,ac,an,raf:null,lastSync:0,above:false};soundRuntime.set(id,rt);widgetUpdate(el,{running:true});
+  const tick=()=>{if(!soundRuntime.has(id))return;an.getByteTimeDomainData(data);let sum=0;for(const v of data){const x=(v-128)/128;sum+=x*x}const rms=Math.sqrt(sum/data.length),level=Math.min(100,Math.round(rms*260));const fill=el.querySelector('[data-kw-sound-fill]'),out=el.querySelector('[data-kw-sound-value]');if(fill)fill.style.height=level+'%';if(out)out.firstChild.nodeValue=String(level);const item=window.KathleenWidgets.itemFromElement(el),cur=item?.widgetData||{},above=level>(cur.threshold||65);el.classList.toggle('soundTooLoud',above);const now=Date.now();if(item&&now-rt.lastSync>800){const counter=(cur.counter||0)+(above&&!rt.above?1:0);item.widgetData={...cur,level,counter,running:true};window.KathleenWidgets.writeToElement(el,item);rt.lastSync=now;rt.above=above;if(classroom?.session_id)syncClassroom(false)}rt.raf=requestAnimationFrame(tick)};tick();
  }catch(err){toast('Mikrofon konnte nicht gestartet werden')}
 }
 function stopSoundMeter(el){const rt=soundRuntime.get(el.id);if(rt){cancelAnimationFrame(rt.raf);rt.stream.getTracks().forEach(t=>t.stop());rt.ac.close().catch(()=>{});soundRuntime.delete(el.id)}widgetUpdate(el,{running:false,level:0})}
