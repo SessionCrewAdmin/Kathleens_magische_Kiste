@@ -1,5 +1,5 @@
 -- ============================================================
--- Kathleens Classroom Board · V19 FINAL CLEAN
+-- Kathleens Classroom Board · V20 FINAL CLEAN
 -- Canonical Classroom backend for the current frontend.
 --
 -- Run ONCE in Supabase SQL Editor.
@@ -754,9 +754,21 @@ begin
 
   if p_payload is null
      or jsonb_typeof(p_payload) <> 'object'
-     or coalesce(p_payload->>'type','') not in ('stroke','text','undo','clear')
-     or octet_length(p_payload::text) > 200000 then
+     or coalesce(p_payload->>'type','') not in ('stroke','text','undo','clear','snapshot')
+     or octet_length(p_payload::text) > 1500000 then
     return false;
+  end if;
+
+  if p_payload->>'type' = 'snapshot' then
+    if jsonb_typeof(p_payload->'workspace') <> 'object'
+       or jsonb_typeof(coalesce(p_payload->'workspace'->'strokes','[]'::jsonb)) <> 'array'
+       or jsonb_typeof(coalesce(p_payload->'workspace'->'items','[]'::jsonb)) <> 'array' then
+      return false;
+    end if;
+
+    delete from public.classroom_student_events
+     where participant_id = v_participant.id
+       and payload->>'type' = 'snapshot';
   end if;
 
   insert into public.classroom_student_events(
