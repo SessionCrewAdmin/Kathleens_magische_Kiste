@@ -1,4 +1,4 @@
-const CACHE='kathleen-board-v22-3-2-bottom-structural-20260919';
+const CACHE='kathleen-board-v22-4-dynamic-island-20260919';
 const CORE=[
   './','./index.html','./manifest.webmanifest',
   './tools/english-world-quiz/index.html','./tools/english-world-quiz/bonus.html','./tools/homework-vouchers/index.html',
