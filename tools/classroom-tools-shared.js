@@ -116,10 +116,65 @@ async function importSecureBackup(text,pin){
   localStorage.setItem(VAULT_KEY,JSON.stringify(v));localStorage.removeItem(LEGACY_KEY);key=candidate;cache=restored;bindActivity();window.dispatchEvent(new CustomEvent('kathleen:classlists'));return true
 }
 async function changePin(newPin){
-  assertUnlocked();newPin=String(newPin||'');if(newPin.length<8)throw new Error('Die neue Lehrer-PIN muss mindestens 8 Zeichen haben.');
-  const lists=load(),salt=randomBytes(16),oldVault=localStorage.getItem(VAULT_KEY),oldKey=key;key=await deriveKey(newPin,salt);
-  localStorage.setItem(VAULT_KEY,JSON.stringify({version:2,cipher:'AES-256-GCM',kdf:'PBKDF2-SHA256',iterations:KDF_ITERATIONS,salt:bytesToB64(salt),iv:'',data:'',updatedAt:new Date().toISOString()}));
-  try{await persist(lists);return true}catch(e){if(oldVault)localStorage.setItem(VAULT_KEY,oldVault);key=oldKey;throw e}
+  assertUnlocked();
+  newPin=String(newPin||'');
+  if(newPin.length<8)throw new Error('Die neue Lehrer-PIN muss mindestens 8 Zeichen haben.');
+
+  const lists=load(),oldKey=key,oldVault=localStorage.getItem(VAULT_KEY),oldSecure=new Map(),securePlain=new Map();
+  const secureNames=[];
+  for(let i=0;i<localStorage.length;i++){
+    const storageKey=localStorage.key(i);
+    if(storageKey?.startsWith('kathleenSecure:'))secureNames.push(storageKey.slice('kathleenSecure:'.length));
+  }
+
+  // Decrypt every teacher-only secure store with the OLD key before rotating it.
+  for(const name of secureNames){
+    const storageKey='kathleenSecure:'+name,raw=localStorage.getItem(storageKey);
+    oldSecure.set(storageKey,raw);
+    if(!raw)continue;
+    try{
+      const box=JSON.parse(raw),aad=enc.encode('KathleenSecureStore:'+name);
+      const plain=await crypto.subtle.decrypt({name:'AES-GCM',iv:b64ToBytes(box.iv),additionalData:aad},oldKey,b64ToBytes(box.data));
+      securePlain.set(name,JSON.parse(dec.decode(plain))?.value??null);
+    }catch(e){
+      throw new Error('PIN-Wechsel abgebrochen: Geschützter Zusatzspeicher "'+name+'" konnte nicht gelesen werden.');
+    }
+  }
+
+  const salt=randomBytes(16),newKey=await deriveKey(newPin,salt);
+
+  // Prepare the new class vault in memory first.
+  const classIv=randomBytes(12),classPayload=enc.encode(JSON.stringify({version:2,classes:lists}));
+  const classCipher=new Uint8Array(await crypto.subtle.encrypt({name:'AES-GCM',iv:classIv,additionalData:AAD},newKey,classPayload));
+  const nextVault={version:2,cipher:'AES-256-GCM',kdf:'PBKDF2-SHA256',iterations:KDF_ITERATIONS,salt:bytesToB64(salt),iv:bytesToB64(classIv),data:bytesToB64(classCipher),updatedAt:new Date().toISOString()};
+
+  // Prepare re-encrypted additional stores before writing anything.
+  const nextSecure=new Map();
+  for(const [name,value] of securePlain){
+    const iv=randomBytes(12),aad=enc.encode('KathleenSecureStore:'+name),payload=enc.encode(JSON.stringify({version:1,value}));
+    const cipher=new Uint8Array(await crypto.subtle.encrypt({name:'AES-GCM',iv,additionalData:aad},newKey,payload));
+    nextSecure.set('kathleenSecure:'+name,JSON.stringify({version:1,iv:bytesToB64(iv),data:bytesToB64(cipher),updatedAt:new Date().toISOString()}));
+  }
+
+  try{
+    localStorage.setItem(VAULT_KEY,JSON.stringify(nextVault));
+    for(const [storageKey,raw] of nextSecure)localStorage.setItem(storageKey,raw);
+    key=newKey;cache=sanitizeLists(lists);localStorage.removeItem(LEGACY_KEY);touch();
+    window.dispatchEvent(new CustomEvent('kathleen:classlists'));
+    window.dispatchEvent(new CustomEvent('kathleen:secure-store-rekeyed',{detail:{stores:nextSecure.size}}));
+    const admin=sessionStorage.getItem('kathleenAdminPass')||'';
+    if(admin)await cloudPush(admin);
+    return true;
+  }catch(e){
+    key=oldKey;
+    if(oldVault)localStorage.setItem(VAULT_KEY,oldVault);
+    else localStorage.removeItem(VAULT_KEY);
+    for(const name of secureNames){
+      const storageKey='kathleenSecure:'+name,raw=oldSecure.get(storageKey);
+      if(raw==null)localStorage.removeItem(storageKey);else localStorage.setItem(storageKey,raw);
+    }
+    throw e;
+  }
 }
 async function secureSet(namespace,value){
   assertUnlocked();
