@@ -1,4 +1,4 @@
-const CACHE='kathleen-live-poll-v21-4-glass-20260919';
+const CACHE='kathleen-live-poll-v21-5-types-charts-20260919';
 const CORE=[
   './','./index.html','./manifest.webmanifest',
   './tools/english-world-quiz/index.html','./tools/english-world-quiz/bonus.html','./tools/homework-vouchers/index.html',
