@@ -160,3 +160,45 @@ body:not(.hasTextSelection) .bottombar #fontSize,body:not(.hasTextSelection) .bo
 .islandMoreWidgets{color:#d9cddd}
 .dynamicIsland[data-context="widgets"] .islandMoreWidgets{background:#fff;color:#3f3242}
 @media(max-width:1050px){.islandQuickWidget{width:34px;height:36px}.islandMainWidgets{gap:2px}.islandMoreWidgets span{display:none}}
+
+
+/* V22.4.4 Glass Dynamic Island */
+.dynamicIsland{
+  background:linear-gradient(180deg,rgba(255,255,255,.72),rgba(247,240,250,.58))!important;
+  color:#4f3d51!important;
+  border:1px solid rgba(255,255,255,.72)!important;
+  box-shadow:0 18px 60px rgba(74,51,82,.20),inset 0 1px 0 rgba(255,255,255,.94),inset 0 -1px 0 rgba(164,136,171,.10)!important;
+  backdrop-filter:blur(28px) saturate(165%)!important;
+  -webkit-backdrop-filter:blur(28px) saturate(165%)!important;
+}
+.dynamicIsland.expanded{
+  background:linear-gradient(180deg,rgba(255,255,255,.78),rgba(246,238,249,.64))!important;
+}
+.islandDivider{background:rgba(91,70,96,.14)!important}
+.islandBtn{color:#59465d!important}
+.islandBtn:hover{background:rgba(255,255,255,.58)!important}
+.islandBtn.active,.dynamicIsland[data-context="widgets"] .islandMoreWidgets{background:rgba(255,255,255,.92)!important;color:#4a3850!important;box-shadow:0 5px 16px rgba(74,51,82,.12)!important}
+.islandBtn.danger{color:#c24d63!important}.islandBtn.danger:hover{background:rgba(222,92,116,.10)!important}
+.islandSelect{background:rgba(255,255,255,.54)!important;color:#59465d!important;border:1px solid rgba(120,95,126,.12)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.75)!important}
+.islandContextLabel{color:#806d85!important}
+.islandColor{background:rgba(255,255,255,.56)!important;border:1px solid rgba(116,91,122,.10)!important}
+.islandSegment{background:rgba(255,255,255,.42)!important;border:1px solid rgba(116,91,122,.10)!important}
+.islandSegment button{color:#6a576e!important}.islandSegment button.active{background:rgba(255,255,255,.96)!important;color:#4d3a51!important;box-shadow:0 4px 12px rgba(74,51,82,.12)!important}
+.islandRange{color:#76647a!important}
+.islandZoom{border-left:1px solid rgba(91,70,96,.13)!important}.islandZoom span{color:#604d64!important}
+.islandQuickWidget{
+  background:rgba(255,255,255,.34)!important;
+  color:#4f3d51!important;
+  border:1px solid rgba(255,255,255,.48)!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.70)!important
+}
+.islandQuickWidget:hover{background:rgba(255,255,255,.74)!important;box-shadow:0 6px 18px rgba(74,51,82,.12),inset 0 1px 0 #fff!important}
+.islandMoreWidgets{color:#6c596f!important;background:rgba(255,255,255,.38)!important;border:1px solid rgba(255,255,255,.5)!important}
+.islandWidgetChoice{
+  background:rgba(255,255,255,.42)!important;
+  color:#4f3d51!important;
+  border:1px solid rgba(255,255,255,.52)!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.76)!important
+}
+.islandWidgetChoice:hover{background:rgba(255,255,255,.82)!important;box-shadow:0 7px 20px rgba(74,51,82,.12)!important}
+.islandWidgetChoice small{color:#7b687f!important}
