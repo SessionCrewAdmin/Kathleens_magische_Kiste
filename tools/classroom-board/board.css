@@ -150,3 +150,13 @@ body:not(.hasTextSelection) .bottombar #fontSize,body:not(.hasTextSelection) .bo
 .islandWidgetChoice span{font-size:18px;line-height:1}.islandWidgetChoice small{font-size:7px;font-weight:900;color:#d7cadb;line-height:1}
 .dynamicIsland[data-context="widgets"]{border-radius:25px}
 @media(max-width:900px){.islandWidgetStrip{gap:4px}.islandWidgetChoice{width:50px;height:44px}.islandWidgetChoice small{font-size:6px}}
+
+
+/* V22.4.3 Main Widgets permanently in Dynamic Island */
+.islandMainWidgets{display:flex;align-items:center;gap:4px}
+.islandQuickWidget{width:38px;height:38px;border:0;border-radius:13px;background:transparent;color:#fff;font-size:17px;display:grid;place-items:center;cursor:pointer;transition:background .15s ease,transform .15s ease}
+.islandQuickWidget:hover{background:rgba(255,255,255,.13);transform:translateY(-1px)}
+.islandQuickWidget:active{transform:scale(.93)}
+.islandMoreWidgets{color:#d9cddd}
+.dynamicIsland[data-context="widgets"] .islandMoreWidgets{background:#fff;color:#3f3242}
+@media(max-width:1050px){.islandQuickWidget{width:34px;height:36px}.islandMainWidgets{gap:2px}.islandMoreWidgets span{display:none}}
