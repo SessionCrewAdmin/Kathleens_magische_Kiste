@@ -121,6 +121,30 @@ async function changePin(newPin){
   localStorage.setItem(VAULT_KEY,JSON.stringify({version:2,cipher:'AES-256-GCM',kdf:'PBKDF2-SHA256',iterations:KDF_ITERATIONS,salt:bytesToB64(salt),iv:'',data:'',updatedAt:new Date().toISOString()}));
   try{await persist(lists);return true}catch(e){if(oldVault)localStorage.setItem(VAULT_KEY,oldVault);key=oldKey;throw e}
 }
+async function secureSet(namespace,value){
+  assertUnlocked();
+  const name=String(namespace||'').trim();
+  if(!name)throw new Error('Speichername fehlt.');
+  const iv=randomBytes(12),aad=enc.encode('KathleenSecureStore:'+name),payload=enc.encode(JSON.stringify({version:1,value}));
+  const cipher=new Uint8Array(await crypto.subtle.encrypt({name:'AES-GCM',iv,additionalData:aad},key,payload));
+  localStorage.setItem('kathleenSecure:'+name,JSON.stringify({version:1,iv:bytesToB64(iv),data:bytesToB64(cipher),updatedAt:new Date().toISOString()}));
+  touch();return true
+}
+async function secureGet(namespace,fallback=null){
+  assertUnlocked();
+  const name=String(namespace||'').trim(),raw=localStorage.getItem('kathleenSecure:'+name);
+  if(!raw)return fallback;
+  try{
+    const box=JSON.parse(raw),aad=enc.encode('KathleenSecureStore:'+name);
+    const plain=await crypto.subtle.decrypt({name:'AES-GCM',iv:b64ToBytes(box.iv),additionalData:aad},key,b64ToBytes(box.data));
+    return JSON.parse(dec.decode(plain))?.value??fallback
+  }catch(e){throw new Error('Geschützter Zusatzspeicher konnte nicht entschlüsselt werden.')}
+}
+function secureRemove(namespace){
+  assertUnlocked();
+  localStorage.removeItem('kathleenSecure:'+String(namespace||'').trim());
+  touch();return true
+}
 function ensureGuardStyles(){
   if(document.getElementById('kclGuardStyle'))return;
   const s=document.createElement('style');s.id='kclGuardStyle';
@@ -142,5 +166,5 @@ async function requireUnlock(){
   submit.onclick=run;pin.addEventListener('keydown',e=>{if(e.key==='Enter')run()});g.querySelector('#kclPin2')?.addEventListener('keydown',e=>{if(e.key==='Enter')run()});g.querySelector('#kclBack').onclick=()=>{location.href=new URL('../../#tools',location.href).toString()};setTimeout(()=>pin.focus(),60);
   return guardPromise
 }
-window.KathleenClassLists={load,persist,upsert,remove,get,cleanStudents,shuffle,parseDelimited,importCsv,exportCsv,templateCsv,importPlainJson,exportSecureBackup,importSecureBackup,changePin,setup,unlock,lock,requireUnlock,isUnlocked,hasVault,hasLegacy,autoLockMinutes:AUTO_LOCK_MS/60000,cloudPull,cloudPush,cloudVaultId:CLOUD_VAULT_ID,key:VAULT_KEY,legacyKey:LEGACY_KEY};
+window.KathleenClassLists={load,persist,upsert,remove,get,cleanStudents,shuffle,parseDelimited,importCsv,exportCsv,templateCsv,importPlainJson,exportSecureBackup,importSecureBackup,changePin,setup,unlock,lock,requireUnlock,isUnlocked,hasVault,hasLegacy,autoLockMinutes:AUTO_LOCK_MS/60000,secureSet,secureGet,secureRemove,cloudPull,cloudPush,cloudVaultId:CLOUD_VAULT_ID,key:VAULT_KEY,legacyKey:LEGACY_KEY};
 })();
