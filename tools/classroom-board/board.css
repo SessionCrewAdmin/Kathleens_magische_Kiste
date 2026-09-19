@@ -202,3 +202,11 @@ body:not(.hasTextSelection) .bottombar #fontSize,body:not(.hasTextSelection) .bo
 }
 .islandWidgetChoice:hover{background:rgba(255,255,255,.82)!important;box-shadow:0 7px 20px rgba(74,51,82,.12)!important}
 .islandWidgetChoice small{color:#7b687f!important}
+
+
+/* V23 Classroom Board 2.0 */
+.islandQuickWidget{width:52px!important;height:46px!important;display:grid!important;place-items:center!important;align-content:center!important;gap:1px!important;padding:4px 3px!important}
+.islandQuickWidget span{font-size:17px;line-height:1}.islandQuickWidget small{font-size:7px;line-height:1;font-weight:950;color:#78677c;letter-spacing:-.01em}
+.dynamicIsland{padding-left:10px!important;padding-right:10px!important}
+.item[data-widget-type="sound"].soundTooLoud{outline:3px solid rgba(221,74,101,.7)!important;box-shadow:0 0 0 8px rgba(221,74,101,.10)!important}
+@media(max-width:1100px){.islandQuickWidget{width:46px!important}.islandQuickWidget small{font-size:6px}}
