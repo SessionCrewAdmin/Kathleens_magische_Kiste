@@ -1,181 +1,127 @@
 (function(){
 'use strict';
-const VERSION='22.1';
-const SCHEMA=1;
+const VERSION='23.0';
+const SCHEMA=2;
 const defs=new Map();
 const clone=v=>v==null?v:JSON.parse(JSON.stringify(v));
 const esc=v=>String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+const arr=v=>Array.isArray(v)?v:[];
+const clamp=(n,a,b)=>Math.max(a,Math.min(b,Number(n)||0));
+const shuffle=input=>{const a=[...input];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+
+function ensureStyles(){
+ if(document.getElementById('kathleenWidgetStylesV23'))return;
+ const s=document.createElement('style');s.id='kathleenWidgetStylesV23';s.textContent=`
+.kwHost,.kwHost *{box-sizing:border-box}.kwHost{width:100%;height:100%;font-family:Inter,ui-rounded,"SF Pro Rounded",Arial,sans-serif;color:#4f3d51}
+.kwWidget{height:100%;display:flex;flex-direction:column;background:linear-gradient(160deg,rgba(255,255,255,.94),rgba(250,244,252,.86));border:1px solid rgba(196,174,201,.55);border-radius:18px;overflow:hidden;box-shadow:0 12px 30px rgba(84,57,88,.12)}
+.kwWidgetTop{display:flex;align-items:center;gap:7px;padding:9px 11px;border-bottom:1px solid #eee4ef;background:rgba(255,255,255,.64);min-height:38px}.kwWidgetTop b{font-size:11px;flex:1}.kwWidgetIcon{font-size:16px}.kwWidgetState{font-size:7px;font-weight:950;letter-spacing:.07em;text-transform:uppercase;color:#8e7694}
+.kwBody{flex:1;min-height:0;padding:10px;overflow:auto}.kwActions{display:flex;gap:6px;flex-wrap:wrap;padding:8px 10px;border-top:1px solid #eee4ef;background:rgba(255,255,255,.58)}
+.kwBtn,.kwActions button,.kwMiniBtn{border:1px solid #dfd0e1;background:rgba(255,255,255,.88);color:#654f69;border-radius:10px;min-height:32px;padding:6px 9px;font:inherit;font-size:9px;font-weight:900;cursor:pointer}.kwBtn:hover,.kwActions button:hover,.kwMiniBtn:hover{background:#fff}.kwBtn.primary,.kwActions button.primary{border:0;color:#fff;background:linear-gradient(135deg,#d58fb6,#ad91df)}.kwBtn.danger{color:#b64960;background:#fff7f8}
+.kwField{display:grid;gap:4px;font-size:8px;font-weight:900;color:#806c84}.kwField input,.kwField select,.kwField textarea,.kwInput{width:100%;border:1px solid #ded0e0;border-radius:9px;background:#fff;padding:7px;color:#58475b;font:inherit;font-size:9px}.kwField textarea{min-height:70px;resize:vertical}.kwGrid2{display:grid;grid-template-columns:1fr 1fr;gap:7px}.kwCheck{display:flex;align-items:center;gap:6px;font-size:8px;font-weight:900}.kwEmpty{height:100%;display:grid;place-items:center;text-align:center;color:#9a869e;font-size:10px;padding:14px}
+.kwTimerTime{font-size:clamp(42px,10vw,76px);font-weight:950;letter-spacing:-.06em;text-align:center;padding:10px}.kwTimerTrack{height:9px;background:#eee5ef;border-radius:999px;overflow:hidden;margin:0 12px 8px}.kwTimerTrack i{display:block;height:100%;background:linear-gradient(90deg,#d58fb6,#9c84d5);border-radius:inherit;transition:width .25s}.kwTimer.finished .kwTimerTime{animation:kwPulse .75s ease 2;color:#b54b61}.kwTimerPresets{display:flex;gap:5px;flex-wrap:wrap;padding:0 10px 7px}.kwTimerPresets button{flex:1;min-width:42px}.kwTimerAlarm{font-size:8px;display:flex;align-items:center;gap:5px}
+@keyframes kwPulse{50%{transform:scale(1.07)}}
+.kwTraffic{position:relative}.kwTrafficMain{display:flex;align-items:center;justify-content:center;gap:15px;padding:10px}.kwTrafficHousing{width:92px;padding:10px;border-radius:22px;background:#252229;display:grid;gap:8px;box-shadow:inset 0 0 0 2px #0003,0 8px 20px #0002}.kwTrafficHousing.rounded{border-radius:38px}.kwTrafficHousing.yellow{background:#e7b91d}.kwTrafficHousing.school{background:#5c4762}.kwTrafficLight{width:58px;height:58px;border-radius:50%;border:4px solid #0005;opacity:.28;cursor:pointer;box-shadow:inset 0 3px 8px #0006}.kwTrafficLight.red{background:#ef3040}.kwTrafficLight.yellow{background:#ffd02a}.kwTrafficLight.green{background:#28ce65}.kwTrafficLight.on{opacity:1;box-shadow:0 0 26px currentColor,inset 0 3px 8px #fff5}.kwTrafficLabels{display:grid;gap:12px;min-width:130px}.kwTrafficLabels>div{display:flex;align-items:center;gap:7px;padding:6px 8px;border-radius:10px;opacity:.45}.kwTrafficLabels>div.active{opacity:1;background:#fff;box-shadow:0 5px 15px #5d406117}.kwTrafficLabels .dot{width:10px;height:10px;border-radius:50%}.kwTrafficLabels .red{background:#ef3040}.kwTrafficLabels .yellow{background:#ffd02a}.kwTrafficLabels .green{background:#28ce65}.kwTrafficPresets{display:flex;gap:5px;padding:0 10px 8px}.kwTrafficPresets button{flex:1}.kwTrafficSettings{padding:7px 10px;border-top:1px solid #eee4ef;font-size:8px}.kwTrafficSettings summary{font-weight:900;cursor:pointer}.kwTrafficSettings label{display:grid;grid-template-columns:68px 1fr;gap:6px;align-items:center;margin-top:5px}.kwTrafficSettings input,.kwTrafficSettings select{min-width:0;border:1px solid #ddd0df;border-radius:7px;padding:5px;background:#fff}
+.kwRandomHero{min-height:92px;display:grid;place-items:center;text-align:center;border:1px solid #ebddeb;border-radius:14px;background:linear-gradient(145deg,#fff,#fbf4fd);padding:10px}.kwRandomHero strong{font-size:22px;line-height:1.1}.kwRandomHero.spinning strong{animation:kwSpinName .18s ease infinite alternate}@keyframes kwSpinName{to{transform:scale(1.05);filter:blur(.2px)}}.kwHistory{display:flex;gap:4px;flex-wrap:wrap;margin-top:8px}.kwChip{font-size:7px;font-weight:900;background:#f1e8f3;border-radius:999px;padding:4px 6px}.kwRandomMeta{font-size:8px;color:#8b778f;margin:7px 0}
+.kwTeamsGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:7px}.kwTeam{background:#fff;border:1px solid #eaddea;border-radius:12px;padding:7px;min-height:90px}.kwTeam h4{margin:0 0 6px;font-size:9px;display:flex;justify-content:space-between}.kwMember{display:block;width:100%;text-align:left;border:0;background:#fbf7fc;border-radius:7px;padding:5px 6px;margin:3px 0;font-size:8px;font-weight:800;color:#604c64;cursor:grab}.kwMember.dragging{opacity:.35}.kwTeam.drop{outline:2px solid #b58ed0}.kwTeamTools{display:grid;grid-template-columns:1fr 82px;gap:7px;margin-bottom:8px}
+.kwPollQuestion{font-size:16px;font-weight:950;text-align:center;margin:2px 0 10px}.kwPollOption{display:grid;grid-template-columns:minmax(70px,1fr) 2fr 34px;align-items:center;gap:6px;margin:6px 0}.kwPollOption button{border:1px solid #ded0e0;background:#fff;border-radius:9px;padding:7px;text-align:left;color:#58475b;font-weight:850;cursor:pointer}.kwPollBar{height:12px;background:#eee5ef;border-radius:999px;overflow:hidden}.kwPollBar i{display:block;height:100%;background:linear-gradient(90deg,#da91b9,#a78bdc);border-radius:999px;transition:width .35s}.kwPollCount{text-align:right;font-size:8px;font-weight:950}.kwPollStudent .kwPollOption{grid-template-columns:1fr}.kwPollStudent .kwPollOption button{min-height:38px}.kwPollStudent .kwPollOption button.voted{background:#eee4f4;border-color:#b99cc6}.kwPollSetup{display:grid;gap:6px}.kwPollSetup input{width:100%;border:1px solid #ded0e0;border-radius:8px;padding:7px;font:inherit;font-size:9px}
+.kwStickerMain{flex:1;display:grid;place-items:center;padding:8px;text-align:center}.kwStickerEmoji{font-size:68px;filter:drop-shadow(0 10px 10px #79587927);line-height:1}.kwStickerLabel{font-size:13px;font-weight:950;margin-top:5px}.kwStickerPicker{display:grid;grid-template-columns:repeat(6,1fr);gap:4px;padding:7px}.kwStickerPicker button{border:1px solid #e5d8e7;background:#fff;border-radius:9px;font-size:18px;min-height:34px;cursor:pointer}
+.kwSoundMeter{height:150px;display:flex;align-items:flex-end;justify-content:center;gap:14px;padding:10px}.kwSoundColumn{height:100%;width:55px;border-radius:18px;background:#eee5ef;overflow:hidden;display:flex;align-items:flex-end}.kwSoundFill{width:100%;height:0;background:linear-gradient(180deg,#e35a72,#efc755 52%,#62c58f);transition:height .08s}.kwSoundValue{font-size:34px;font-weight:950;align-self:center}.kwSoundValue small{font-size:9px;display:block;color:#8e7892}.kwSoundThreshold{display:flex;align-items:center;gap:6px;padding:0 10px 8px;font-size:8px;font-weight:900}.kwSoundThreshold input{flex:1}
+.kwShell{height:100%;display:grid;place-items:center;border:1px dashed #d9c8dc;border-radius:16px;color:#8b778f;background:#fffafd}
+`;
+ document.head.appendChild(s);
+}
 
 function register(def){
-  if(!def||!def.type) throw Error('Widget type required');
-  defs.set(def.type,Object.freeze({
-    type:def.type,
-    title:def.title||def.type,
-    icon:def.icon||'◇',
-    defaultSize:{w:320,h:200,...(def.defaultSize||{})},
-    defaultData:clone(def.defaultData||{}),
-    capabilities:{teacher:true,presentation:true,studentView:true,studentInteract:false,...(def.capabilities||{})},
-    render:typeof def.render==='function'?def.render:null
-  }));
+ if(!def||!def.type)throw Error('Widget type required');
+ defs.set(def.type,Object.freeze({type:def.type,title:def.title||def.type,icon:def.icon||'◇',defaultSize:{w:320,h:200,...(def.defaultSize||{})},defaultData:clone(def.defaultData||{}),capabilities:{teacher:true,presentation:true,studentView:true,studentInteract:false,...(def.capabilities||{})},render:typeof def.render==='function'?def.render:null}));
 }
 function definition(type){return defs.get(type)||null}
 function list(){return [...defs.values()].map(d=>({...d,defaultData:clone(d.defaultData),capabilities:{...d.capabilities}}))}
-function normalizeData(type,data){
-  const d=definition(type);
-  return {...clone(d?.defaultData||{}),...(data&&typeof data==='object'?clone(data):{})};
-}
-function create(type,overrides={}){
-  const d=definition(type);
-  if(!d) throw Error('Unknown widget: '+type);
-  return {
-    type:'widget',
-    widgetType:type,
-    widgetVersion:VERSION,
-    widgetSchema:SCHEMA,
-    widgetData:normalizeData(type,overrides.widgetData),
-    w:overrides.w||d.defaultSize.w,
-    h:overrides.h||d.defaultSize.h,
-    ...overrides
-  };
-}
-function fallbackHtml(item){
-  const d=definition(item.widgetType);
-  return '<div class="kwShell" data-kw-type="'+esc(item.widgetType)+'"><div class="kwShellHead"><span>'+esc(d?.icon||'◇')+'</span><b>'+esc(d?.title||item.widgetType||'Widget')+'</b><small>V'+VERSION+'</small></div><div class="kwShellBody"><span>Widget bereit</span></div></div>';
-}
-function renderHtml(item,ctx={}){
-  const d=definition(item.widgetType);
-  const data=normalizeData(item.widgetType,item.widgetData);
-  if(d?.render) return d.render(data,{...ctx,item,definition:d,esc});
-  return fallbackHtml({...item,widgetData:data});
-}
-function mount(container,item,ctx={}){
-  if(!container||!item?.widgetType) return false;
-  container.classList.add('kwHost');
-  container.dataset.widgetType=item.widgetType;
-  container.dataset.widgetVersion=item.widgetVersion||VERSION;
-  container.dataset.widgetSchema=String(item.widgetSchema||SCHEMA);
-  container.innerHTML=renderHtml(item,ctx);
-  container.querySelectorAll('[data-kw-action]').forEach(btn=>{
-    btn.addEventListener('click',ev=>{
-      ev.stopPropagation();
-      container.dispatchEvent(new CustomEvent('kathleen:widget-action',{bubbles:true,detail:{
-        type:item.widgetType,
-        action:btn.dataset.kwAction,
-        value:btn.dataset.kwValue??null
-      }}));
-    });
-  });
-  container.querySelectorAll('[data-kw-field]').forEach(input=>{
-    input.addEventListener('change',ev=>{
-      ev.stopPropagation();
-      container.dispatchEvent(new CustomEvent('kathleen:widget-action',{bubbles:true,detail:{
-        type:item.widgetType,
-        action:'field',
-        field:input.dataset.kwField,
-        value:input.type==='checkbox'?input.checked:input.value
-      }}));
-    });
-    input.addEventListener('click',ev=>ev.stopPropagation());
-  });
-  startRuntime(container,item,ctx);
-  return true;
-}
-function itemFromElement(el){
-  if(!el) return null;
-  const type=el.dataset.widgetType||'';
-  if(!type) return null;
-  let data={};try{data=JSON.parse(el.dataset.widgetData||'{}')}catch(e){}
-  return {
-    widgetType:type,
-    widgetVersion:el.dataset.widgetVersion||VERSION,
-    widgetSchema:+(el.dataset.widgetSchema||SCHEMA),
-    widgetData:normalizeData(type,data)
-  };
-}
-function writeToElement(el,item){
-  if(!el||!item?.widgetType) return;
-  el.dataset.widgetType=item.widgetType;
-  el.dataset.widgetVersion=item.widgetVersion||VERSION;
-  el.dataset.widgetSchema=String(item.widgetSchema||SCHEMA);
-  el.dataset.widgetData=JSON.stringify(normalizeData(item.widgetType,item.widgetData));
-}
-function setData(el,patch,ctx={}){
-  const item=itemFromElement(el);if(!item)return null;
-  item.widgetData={...item.widgetData,...clone(patch||{})};
-  writeToElement(el,item);
-  mount(el.querySelector('.body')||el,item,ctx);
-  el.dispatchEvent(new CustomEvent('kathleen:widget-change',{bubbles:true,detail:clone(item)}));
-  return item;
-}
-function migrate(item){
-  if(!item||item.type!=='widget'||!item.widgetType)return item;
-  return {...item,widgetVersion:item.widgetVersion||VERSION,widgetSchema:item.widgetSchema||SCHEMA,widgetData:normalizeData(item.widgetType,item.widgetData)};
-}
+function normalizeData(type,data){const d=definition(type);return {...clone(d?.defaultData||{}),...(data&&typeof data==='object'?clone(data):{})}}
+function create(type,overrides={}){const d=definition(type);if(!d)throw Error('Unknown widget: '+type);return{type:'widget',widgetType:type,widgetVersion:VERSION,widgetSchema:SCHEMA,widgetData:normalizeData(type,overrides.widgetData),w:overrides.w||d.defaultSize.w,h:overrides.h||d.defaultSize.h,...overrides}}
+function fallbackHtml(item){const d=definition(item.widgetType);return '<div class="kwShell">'+esc(d?.icon||'◇')+' '+esc(d?.title||item.widgetType||'Widget')+'</div>'}
+function renderHtml(item,ctx={}){const d=definition(item.widgetType),data=normalizeData(item.widgetType,item.widgetData);if(d?.render)return d.render(data,{...ctx,item,definition:d,esc});return fallbackHtml({...item,widgetData:data})}
 
-function padTime(sec){
-  sec=Math.max(0,Math.round(Number(sec)||0));
-  const h=Math.floor(sec/3600),m=Math.floor((sec%3600)/60),s=sec%60;
-  return h>0?String(h).padStart(2,'0')+':'+String(m).padStart(2,'0')+':'+String(s).padStart(2,'0'):String(m).padStart(2,'0')+':'+String(s).padStart(2,'0');
+function mount(container,item,ctx={}){
+ if(!container||!item?.widgetType)return false;ensureStyles();
+ container.classList.add('kwHost');container.dataset.widgetType=item.widgetType;container.dataset.widgetVersion=item.widgetVersion||VERSION;container.dataset.widgetSchema=String(item.widgetSchema||SCHEMA);
+ container.innerHTML=renderHtml(item,ctx);
+ container.querySelectorAll('[data-kw-action]').forEach(btn=>btn.addEventListener('click',ev=>{ev.stopPropagation();container.dispatchEvent(new CustomEvent('kathleen:widget-action',{bubbles:true,detail:{type:item.widgetType,action:btn.dataset.kwAction,value:btn.dataset.kwValue??null}}))}));
+ container.querySelectorAll('[data-kw-field]').forEach(input=>{const send=ev=>{ev.stopPropagation();container.dispatchEvent(new CustomEvent('kathleen:widget-action',{bubbles:true,detail:{type:item.widgetType,action:'field',field:input.dataset.kwField,value:input.type==='checkbox'?input.checked:input.value}}))};input.addEventListener(input.tagName==='INPUT'&&input.type==='range'?'input':'change',send);input.addEventListener('click',ev=>ev.stopPropagation())});
+ if(item.widgetType==='teams'&&ctx.mode==='teacher'){
+   container.querySelectorAll('.kwMember[draggable=true]').forEach(m=>m.addEventListener('dragstart',ev=>{m.classList.add('dragging');ev.dataTransfer.setData('application/x-kathleen-team-member',JSON.stringify({from:+m.dataset.team,index:+m.dataset.index,name:m.dataset.name}))}));
+   container.querySelectorAll('.kwTeam[data-team]').forEach(team=>{team.addEventListener('dragover',ev=>{ev.preventDefault();team.classList.add('drop')});team.addEventListener('dragleave',()=>team.classList.remove('drop'));team.addEventListener('drop',ev=>{ev.preventDefault();team.classList.remove('drop');let p=null;try{p=JSON.parse(ev.dataTransfer.getData('application/x-kathleen-team-member'))}catch(e){}if(p)container.dispatchEvent(new CustomEvent('kathleen:widget-action',{bubbles:true,detail:{type:'teams',action:'team-move',value:{...p,to:+team.dataset.team}}}))})});
+ }
+ startRuntime(container,item,ctx);return true;
 }
-function timerRemaining(data){
-  if(data.running&&data.endsAt){
-    return Math.max(0,Math.ceil((Number(data.endsAt)-Date.now())/1000));
-  }
-  return Math.max(0,Number(data.remaining??data.seconds??300)||0);
-}
+function itemFromElement(el){if(!el)return null;const type=el.dataset.widgetType||'';if(!type)return null;let data={};try{data=JSON.parse(el.dataset.widgetData||'{}')}catch(e){}return{widgetType:type,widgetVersion:el.dataset.widgetVersion||VERSION,widgetSchema:+(el.dataset.widgetSchema||SCHEMA),widgetData:normalizeData(type,data)}}
+function writeToElement(el,item){if(!el||!item?.widgetType)return;el.dataset.widgetType=item.widgetType;el.dataset.widgetVersion=item.widgetVersion||VERSION;el.dataset.widgetSchema=String(item.widgetSchema||SCHEMA);el.dataset.widgetData=JSON.stringify(normalizeData(item.widgetType,item.widgetData))}
+function setData(el,patch,ctx={}){const item=itemFromElement(el);if(!item)return null;item.widgetData={...item.widgetData,...clone(patch||{})};writeToElement(el,item);mount(el.querySelector('.body')||el,item,ctx);el.dispatchEvent(new CustomEvent('kathleen:widget-change',{bubbles:true,detail:clone(item)}));return item}
+function migrate(item){if(!item||item.type!=='widget'||!item.widgetType)return item;return{...item,widgetVersion:VERSION,widgetSchema:SCHEMA,widgetData:normalizeData(item.widgetType,item.widgetData)}}
+
+function padTime(sec){sec=Math.max(0,Math.round(Number(sec)||0));const h=Math.floor(sec/3600),m=Math.floor((sec%3600)/60),s=sec%60;return h>0?String(h).padStart(2,'0')+':'+String(m).padStart(2,'0')+':'+String(s).padStart(2,'0'):String(m).padStart(2,'0')+':'+String(s).padStart(2,'0')}
+function timerRemaining(data){if(data.running&&data.endsAt)return Math.max(0,Math.ceil((Number(data.endsAt)-Date.now())/1000));return Math.max(0,Number(data.remaining??data.seconds??300)||0)}
 function renderTimer(data,{mode,esc}){
-  const sec=timerRemaining(data),duration=Math.max(1,Number(data.duration??data.seconds??300)||300),pct=Math.max(0,Math.min(100,sec/duration*100));
-  const interactive=mode==='teacher';
-  return '<div class="kwTimer'+(sec===0?' finished':'')+'">'+
-    '<div class="kwWidgetTop"><span class="kwWidgetIcon">⌛</span><b>'+esc(data.title||'Timer')+'</b><span class="kwWidgetState">'+(data.running?'LÄUFT':'BEREIT')+'</span></div>'+
-    '<div class="kwTimerTime" data-kw-timer-time>'+padTime(sec)+'</div>'+
-    '<div class="kwTimerTrack"><i data-kw-timer-progress style="width:'+pct+'%"></i></div>'+
-    (interactive?'<div class="kwTimerPresets"><button data-kw-action="timer-add" data-kw-value="-60">−1 min</button><button data-kw-action="timer-add" data-kw-value="60">+1 min</button><button data-kw-action="timer-add" data-kw-value="300">+5 min</button></div><div class="kwTimerActions"><button class="primary" data-kw-action="timer-toggle">'+(data.running?'⏸ Pause':'▶ Start')+'</button><button data-kw-action="timer-reset">↺ Reset</button></div>':'')+
-  '</div>';
+ const sec=timerRemaining(data),duration=Math.max(1,Number(data.duration??data.seconds??300)||300),pct=clamp(sec/duration*100,0,100),teacher=mode==='teacher';
+ return '<div class="kwWidget kwTimer'+(sec===0?' finished':'')+'"><div class="kwWidgetTop"><span class="kwWidgetIcon">⌛</span><b>'+esc(data.title||'Timer')+'</b><span class="kwWidgetState">'+(sec===0?'FERTIG':data.running?'LÄUFT':'BEREIT')+'</span></div><div class="kwBody"><div class="kwTimerTime" data-kw-timer-time>'+padTime(sec)+'</div><div class="kwTimerTrack"><i data-kw-timer-progress style="width:'+pct+'%"></i></div>'+
+ (teacher?'<div class="kwTimerPresets">'+[60,180,300,600,900].map(s=>'<button class="kwMiniBtn" data-kw-action="timer-preset" data-kw-value="'+s+'">'+(s/60)+'m</button>').join('')+'</div>':'')+
+ '</div>'+(teacher?'<div class="kwActions"><button class="primary" data-kw-action="timer-toggle">'+(data.running?'⏸ Pause':'▶ Start')+'</button><button data-kw-action="timer-reset">↺ Reset</button><label class="kwTimerAlarm"><input type="checkbox" data-kw-field="alarm"'+(data.alarm!==false?' checked':'')+'> Ton</label></div>':'')+'</div>';
 }
-function trafficLabels(data){
-  return {...{red:'Nicht reden',yellow:'Flüsterstimme',green:'Innenstimme'},...(data.labels||{})};
-}
-function trafficHousing(variant){
-  const v=['classic','rounded','yellow','school'].includes(variant)?variant:'classic';
-  return 'kwTrafficHousing '+v;
-}
+function trafficLabels(data){return{red:'Nicht reden',yellow:'Flüsterstimme',green:'Innenstimme',...(data.labels||{})}}
 function renderTraffic(data,{mode,esc}){
-  const labels=trafficLabels(data),active=['red','yellow','green'].includes(data.active)?data.active:'green',interactive=mode==='teacher';
-  const lights=['red','yellow','green'].map(c=>'<button class="kwTrafficLight '+c+(active===c?' on':'')+'" '+(interactive?'data-kw-action="traffic-set" data-kw-value="'+c+'"':'disabled')+' aria-label="'+esc(labels[c])+'"></button>').join('');
-  const rows=data.showLabels===false?'':('<div class="kwTrafficLabels">'+['red','yellow','green'].map(c=>'<div class="'+(active===c?'active':'')+'"><span class="dot '+c+'"></span><b>'+esc(labels[c])+'</b></div>').join('')+'</div>');
-  const settings=interactive?'<details class="kwTrafficSettings"><summary>⚙ Einstellungen</summary><label>Design<select data-kw-field="variant"><option value="classic"'+(data.variant==='classic'?' selected':'')+'>Klassisch</option><option value="rounded"'+(data.variant==='rounded'?' selected':'')+'>Abgerundet</option><option value="yellow"'+(data.variant==='yellow'?' selected':'')+'>Gelb</option><option value="school"'+(data.variant==='school'?' selected':'')+'>Schule</option></select></label><label>Rot<input data-kw-field="label_red" value="'+esc(labels.red)+'"></label><label>Gelb<input data-kw-field="label_yellow" value="'+esc(labels.yellow)+'"></label><label>Grün<input data-kw-field="label_green" value="'+esc(labels.green)+'"></label><label class="check"><input type="checkbox" data-kw-field="showLabels"'+(data.showLabels!==false?' checked':'')+'> Beschriftungen anzeigen</label></details>':'';
-  return '<div class="kwTraffic"><div class="kwWidgetTop"><span class="kwWidgetIcon">🚦</span><b>'+esc(data.title||'Ampel')+'</b><span class="kwWidgetState">'+esc(labels[active])+'</span></div><div class="kwTrafficMain"><div class="'+trafficHousing(data.variant)+'">'+lights+'</div>'+rows+'</div>'+settings+'</div>';
+ const labels=trafficLabels(data),active=['red','yellow','green'].includes(data.active)?data.active:'green',teacher=mode==='teacher',variant=['classic','rounded','yellow','school'].includes(data.variant)?data.variant:'classic';
+ const lights=['red','yellow','green'].map(c=>'<button class="kwTrafficLight '+c+(active===c?' on':'')+'" '+(teacher?'data-kw-action="traffic-set" data-kw-value="'+c+'"':'disabled')+' aria-label="'+esc(labels[c])+'"></button>').join('');
+ const rows=data.showLabels===false?'':'<div class="kwTrafficLabels">'+['red','yellow','green'].map(c=>'<div class="'+(active===c?'active':'')+'"><span class="dot '+c+'"></span><b>'+esc(labels[c])+'</b></div>').join('')+'</div>';
+ return '<div class="kwWidget kwTraffic"><div class="kwWidgetTop"><span class="kwWidgetIcon">🚦</span><b>'+esc(data.title||'Ampel')+'</b><span class="kwWidgetState">'+esc(labels[active])+'</span></div><div class="kwBody"><div class="kwTrafficMain"><div class="kwTrafficHousing '+variant+'">'+lights+'</div>'+rows+'</div>'+
+ (teacher?'<div class="kwTrafficPresets"><button data-kw-action="traffic-preset" data-kw-value="quiet">🤫 Still</button><button data-kw-action="traffic-preset" data-kw-value="whisper">🗣 Flüstern</button><button data-kw-action="traffic-preset" data-kw-value="talk">💬 Austausch</button></div>':'')+
+ '</div>'+(teacher?'<details class="kwTrafficSettings"><summary>⚙ Einstellungen</summary><label>Design<select data-kw-field="variant"><option value="classic"'+(variant==='classic'?' selected':'')+'>Klassisch</option><option value="rounded"'+(variant==='rounded'?' selected':'')+'>Rund</option><option value="yellow"'+(variant==='yellow'?' selected':'')+'>Gelb</option><option value="school"'+(variant==='school'?' selected':'')+'>Schule</option></select></label>'+['red','yellow','green'].map(c=>'<label>'+c+'<input data-kw-field="label_'+c+'" value="'+esc(labels[c])+'"></label>').join('')+'<label><span>Labels</span><input type="checkbox" data-kw-field="showLabels"'+(data.showLabels!==false?' checked':'')+'></label></details>':'')+'</div>';
+}
+function renderRandom(data,{mode,esc}){
+ const teacher=mode==='teacher',names=arr(data.names),drawn=arr(data.drawn),result=arr(data.result),left=data.excludeDrawn===false?names.length:names.filter(n=>!drawn.includes(n)).length;
+ return '<div class="kwWidget"><div class="kwWidgetTop"><span class="kwWidgetIcon">🎯</span><b>Zufall</b><span class="kwWidgetState">'+esc(data.sourceName||names.length+' Namen')+'</span></div><div class="kwBody"><div class="kwRandomHero'+(data.spinning?' spinning':'')+'"><strong>'+(result.length?result.map(esc).join('<br>'):'Bereit?')+'</strong></div><div class="kwRandomMeta">'+names.length+' Schüler · '+(data.excludeDrawn===false?'Wiederholungen erlaubt':left+' im Pool')+'</div>'+(drawn.length?'<div class="kwHistory">'+drawn.slice(-12).map(n=>'<span class="kwChip">'+esc(n)+'</span>').join('')+'</div>':'')+
+ (teacher?'<div class="kwGrid2" style="margin-top:8px"><label class="kwField">Anzahl<select data-kw-field="count">'+[1,2,3,4].map(n=>'<option'+(+data.count===n?' selected':'')+'>'+n+'</option>').join('')+'</select></label><label class="kwCheck"><input type="checkbox" data-kw-field="excludeDrawn"'+(data.excludeDrawn!==false?' checked':'')+'> ohne Wiederholung</label></div>':'')+'</div>'+
+ (teacher?'<div class="kwActions"><button class="primary" data-kw-action="random-draw">🎲 Ziehen</button><button data-kw-action="random-reset">↺ Pool</button><button data-kw-action="source-refresh">↻ Klasse</button></div>':'')+'</div>';
+}
+function renderTeams(data,{mode,esc}){
+ const teacher=mode==='teacher',teams=arr(data.teams),names=arr(data.names),count=clamp(data.teamCount||4,2,12);
+ return '<div class="kwWidget"><div class="kwWidgetTop"><span class="kwWidgetIcon">👥</span><b>Teams</b><span class="kwWidgetState">'+esc(data.sourceName||names.length+' Namen')+'</span></div><div class="kwBody">'+(teacher?'<div class="kwTeamTools"><label class="kwField">Modus<select data-kw-field="mode"><option value="count"'+(data.mode!=='size'?' selected':'')+'>Anzahl Teams</option><option value="size"'+(data.mode==='size'?' selected':'')+'>Personen / Team</option></select></label><label class="kwField">Wert<input data-kw-field="teamCount" type="number" min="2" max="12" value="'+count+'"></label></div>':'')+
+ (teams.length?'<div class="kwTeamsGrid">'+teams.map((team,i)=>'<section class="kwTeam" data-team="'+i+'"><h4><span>Team '+(i+1)+'</span><span>'+arr(team).length+'</span></h4>'+arr(team).map((n,j)=>'<button class="kwMember" '+(teacher?'draggable="true" data-team="'+i+'" data-index="'+j+'" data-name="'+esc(n)+'"':'disabled')+'>'+esc(n)+'</button>').join('')+'</section>').join('')+'</div>':'<div class="kwEmpty">Noch keine Teams erstellt.</div>')+'</div>'+
+ (teacher?'<div class="kwActions"><button class="primary" data-kw-action="teams-generate">🧩 Erstellen</button><button data-kw-action="teams-generate">↻ Neu mischen</button><button data-kw-action="source-refresh">↻ Klasse</button></div>':'')+'</div>';
+}
+function pollCounts(data){const opts=arr(data.options).filter(x=>String(x).trim()),counts=arr(data.counts);return{opts,counts:opts.map((_,i)=>Number(counts[i])||0),total:opts.reduce((s,_,i)=>s+(Number(counts[i])||0),0)}}
+function renderPoll(data,{mode,esc}){
+ const {opts,counts,total}=pollCounts(data),teacher=mode==='teacher',student=mode==='student',open=!!data.open;
+ const results=opts.map((o,i)=>{const pct=total?Math.round(counts[i]/total*100):0;return '<div class="kwPollOption">'+(student?'<button data-kw-action="poll-vote" data-kw-value="'+i+'" class="'+(+data.myVote===i?'voted':'')+'" '+(!open?'disabled':'')+'>'+esc(o)+'</button>':'<button disabled>'+esc(o)+'</button><div class="kwPollBar"><i style="width:'+pct+'%"></i></div><span class="kwPollCount">'+counts[i]+'</span>')+'</div>'}).join('');
+ return '<div class="kwWidget '+(student?'kwPollStudent':'')+'"><div class="kwWidgetTop"><span class="kwWidgetIcon">📊</span><b>Live Poll</b><span class="kwWidgetState">'+(open?'OFFEN':data.question?'GESCHLOSSEN':'BEREIT')+'</span></div><div class="kwBody">'+
+ (teacher?'<div class="kwPollSetup"><input data-kw-field="question" value="'+esc(data.question||'')+'" placeholder="Frage …">'+[0,1,2,3].map(i=>'<input data-kw-field="option_'+i+'" value="'+esc(opts[i]||'')+'" placeholder="Antwort '+(i+1)+'">').join('')+'</div>':'<div class="kwPollQuestion">'+esc(data.question||'Abstimmung')+'</div>')+
+ ((!teacher||data.question)?results:'')+(student&&data.myVote!=null?'<div class="kwRandomMeta">Antwort gespeichert ✓</div>':'')+(teacher?'<div class="kwRandomMeta">'+total+' Stimmen</div>':'')+'</div>'+
+ (teacher?'<div class="kwActions"><button class="primary" data-kw-action="'+(open?'poll-close':'poll-open')+'">'+(open?'■ Schließen':'▶ Starten')+'</button><button data-kw-action="poll-reset">↺ Reset</button></div>':'')+'</div>';
+}
+const stickerSet=[['star','⭐','Stark!'],['heart','💖','Super!'],['fire','🔥','On fire!'],['party','🎉','Geschafft!'],['crown','👑','Top!'],['rocket','🚀','Weiter so!'],['brain','🧠','Clever!'],['hundred','💯','Perfekt!'],['sparkles','✨','Magisch!'],['trophy','🏆','Champion!'],['clap','👏','Bravo!'],['smile','😎','Cool!']];
+function renderSticker(data,{mode,esc}){
+ const teacher=mode==='teacher',found=stickerSet.find(x=>x[0]===data.stickerId)||stickerSet[0],emoji=data.emoji||found[1],label=data.label||found[2];
+ return '<div class="kwWidget"><div class="kwStickerMain"><div><div class="kwStickerEmoji">'+esc(emoji)+'</div><div class="kwStickerLabel">'+esc(label)+'</div></div></div>'+(teacher?'<div class="kwStickerPicker">'+stickerSet.map(s=>'<button data-kw-action="sticker-set" data-kw-value="'+s[0]+'" title="'+esc(s[2])+'">'+s[1]+'</button>').join('')+'</div><div class="kwActions"><input class="kwInput" data-kw-field="label" value="'+esc(label)+'" placeholder="Text"></div>':'')+'</div>';
+}
+function renderSound(data,{mode}){
+ const teacher=mode==='teacher',level=clamp(data.level||0,0,100),threshold=clamp(data.threshold||65,20,95),running=!!data.running;
+ return '<div class="kwWidget"><div class="kwWidgetTop"><span class="kwWidgetIcon">🎙️</span><b>Sound-Pegel</b><span class="kwWidgetState">'+(running?'LIVE':'BEREIT')+'</span></div><div class="kwBody"><div class="kwSoundMeter"><div class="kwSoundColumn"><i class="kwSoundFill" data-kw-sound-fill style="height:'+level+'%"></i></div><div class="kwSoundValue" data-kw-sound-value>'+Math.round(level)+'<small>Pegel</small></div></div><label class="kwSoundThreshold">Grenze <input type="range" min="20" max="95" value="'+threshold+'" data-kw-field="threshold"><span>'+threshold+'%</span></label></div>'+(teacher?'<div class="kwActions"><button class="primary" data-kw-action="sound-toggle">'+(running?'■ Stop':'🎙 Start')+'</button><button data-kw-action="sound-reset">↺ Reset</button></div>':'')+'</div>';
 }
 function startRuntime(container,item,ctx){
-  if(container._kwTimer){clearInterval(container._kwTimer);container._kwTimer=null}
-  if(item.widgetType!=='timer')return;
-  const tick=()=>{
-    const data=normalizeData('timer',item.widgetData),sec=timerRemaining(data),duration=Math.max(1,Number(data.duration??data.seconds??300)||300);
-    const out=container.querySelector('[data-kw-timer-time]'),bar=container.querySelector('[data-kw-timer-progress]');
-    if(out)out.textContent=padTime(sec);
-    if(bar)bar.style.width=Math.max(0,Math.min(100,sec/duration*100))+'%';
-    container.querySelector('.kwTimer')?.classList.toggle('finished',sec===0);
-    if(sec===0&&data.running&&container._kwTimer){clearInterval(container._kwTimer);container._kwTimer=null}
-  };
-  tick();
-  if(item.widgetData?.running)container._kwTimer=setInterval(tick,250);
+ if(container._kwTimer){clearInterval(container._kwTimer);container._kwTimer=null}
+ if(item.widgetType!=='timer')return;
+ let fired=false;
+ const tick=()=>{const data=normalizeData('timer',item.widgetData),sec=timerRemaining(data),duration=Math.max(1,Number(data.duration??data.seconds??300)||300),out=container.querySelector('[data-kw-timer-time]'),bar=container.querySelector('[data-kw-timer-progress]');if(out)out.textContent=padTime(sec);if(bar)bar.style.width=clamp(sec/duration*100,0,100)+'%';container.querySelector('.kwTimer')?.classList.toggle('finished',sec===0);if(sec===0&&data.running&&!fired){fired=true;if(ctx.mode==='teacher')container.dispatchEvent(new CustomEvent('kathleen:widget-action',{bubbles:true,detail:{type:'timer',action:'timer-finished'}}));if(container._kwTimer){clearInterval(container._kwTimer);container._kwTimer=null}}};
+ tick();if(item.widgetData?.running)container._kwTimer=setInterval(tick,250);
 }
 
-// First wave registrations. V22.1 ships Timer + Traffic Light as full widgets; the rest stay framework-ready.
-// feature-specific behavior is layered on in V22.1+ without changing board storage.
-register({type:'timer',icon:'⌛',title:'Timer / Countdown',defaultSize:{w:380,h:270},defaultData:{title:'Timer',seconds:300,duration:300,remaining:300,running:false,endsAt:null},render:renderTimer});
-register({type:'traffic',icon:'🚦',title:'Ampel',defaultSize:{w:430,h:320},defaultData:{title:'Ampel',active:'green',variant:'classic',labels:{red:'Nicht reden',yellow:'Flüsterstimme',green:'Innenstimme'},showLabels:true,labelPosition:'right'},render:renderTraffic});
-[
- ['random','🎯','Zufallsgenerator',{w:360,h:240},{mode:'student',excludeDrawn:true,drawn:[]}],
- ['teams','👥','Teamgenerator',{w:420,h:300},{teamCount:4,teams:[]}],
- ['poll','📊','Live-Abstimmung',{w:430,h:300},{question:'',options:[],open:false,showResults:true}],
- ['sticker','💖','Sticker',{w:220,h:180},{stickerId:'',sheet:'',label:''}],
- ['sound','🎙️','Sound-Pegel',{w:400,h:310},{threshold:65,sensitivity:1,smoothing:1,counter:0,theme:'dark'}]
-].forEach(([type,icon,title,defaultSize,defaultData])=>register({type,icon,title,defaultSize,defaultData}));
+register({type:'timer',icon:'⌛',title:'Timer',defaultSize:{w:390,h:270},defaultData:{title:'Timer',seconds:300,duration:300,remaining:300,running:false,endsAt:null,alarm:true},render:renderTimer});
+register({type:'traffic',icon:'🚦',title:'Ampel',defaultSize:{w:430,h:325},defaultData:{title:'Ampel',active:'green',variant:'classic',labels:{red:'Nicht reden',yellow:'Flüsterstimme',green:'Innenstimme'},showLabels:true},render:renderTraffic});
+register({type:'random',icon:'🎯',title:'Zufallsgenerator',defaultSize:{w:380,h:285},defaultData:{names:[],sourceName:'',excludeDrawn:true,count:1,drawn:[],result:[]},render:renderRandom});
+register({type:'teams',icon:'👥',title:'Teamgenerator',defaultSize:{w:520,h:360},defaultData:{names:[],sourceName:'',mode:'count',teamCount:4,teams:[]},render:renderTeams});
+register({type:'poll',icon:'📊',title:'Live Poll',defaultSize:{w:460,h:370},defaultData:{pollKey:'',question:'',options:['Ja','Nein','',''],counts:[0,0,0,0],open:false,myVote:null},capabilities:{studentInteract:true},render:renderPoll});
+register({type:'sticker',icon:'💖',title:'Sticker',defaultSize:{w:240,h:235},defaultData:{stickerId:'star',emoji:'⭐',label:'Stark!'},render:renderSticker});
+register({type:'sound',icon:'🎙️',title:'Sound-Pegel',defaultSize:{w:320,h:330},defaultData:{threshold:65,level:0,running:false,counter:0},render:renderSound});
 
-window.KathleenWidgets=Object.freeze({
-  VERSION,SCHEMA,register,definition,list,create,normalizeData,renderHtml,mount,
-  itemFromElement,writeToElement,setData,migrate,timerRemaining,padTime
-});
+window.KathleenWidgets=Object.freeze({VERSION,SCHEMA,register,definition,list,create,normalizeData,renderHtml,mount,itemFromElement,writeToElement,setData,migrate,timerRemaining,padTime,shuffle,stickerSet});
+ensureStyles();
 })();
