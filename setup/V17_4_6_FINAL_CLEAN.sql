@@ -1,5 +1,5 @@
 -- ============================================================
--- Kathleens Classroom Board · V18 FINAL CLEAN
+-- Kathleens Classroom Board · V19 FINAL CLEAN
 -- Canonical Classroom backend for the current frontend.
 --
 -- Run ONCE in Supabase SQL Editor.
@@ -752,7 +752,10 @@ begin
     return false;
   end if;
 
-  if p_payload is null or jsonb_typeof(p_payload) <> 'object' then
+  if p_payload is null
+     or jsonb_typeof(p_payload) <> 'object'
+     or coalesce(p_payload->>'type','') not in ('stroke','text','undo','clear')
+     or octet_length(p_payload::text) > 200000 then
     return false;
   end if;
 
@@ -776,7 +779,120 @@ end
 $$;
 
 -- ============================================================
--- 16) TEACHER STATE
+-- 16) STUDENT WORKSPACE SNAPSHOT
+-- ============================================================
+
+create or replace function public.classroom_student_workspace(
+  p_student_token uuid
+)
+returns jsonb
+language plpgsql
+security definer
+set search_path = public, pg_catalog
+as $
+declare
+  v_participant public.classroom_participants;
+  v_events jsonb;
+begin
+  select *
+    into v_participant
+    from public.classroom_participants
+   where student_token = p_student_token
+   limit 1;
+
+  if v_participant.id is null then
+    return jsonb_build_object('ok', false);
+  end if;
+
+  select coalesce(
+    jsonb_agg(
+      jsonb_build_object(
+        'id', e.id,
+        'payload', e.payload,
+        'created_at', e.created_at
+      )
+      order by e.id
+    ),
+    '[]'::jsonb
+  )
+  into v_events
+  from (
+    select id, payload, created_at
+      from public.classroom_student_events
+     where participant_id = v_participant.id
+     order by id desc
+     limit 1000
+  ) e;
+
+  update public.classroom_participants
+     set last_seen = now()
+   where id = v_participant.id;
+
+  return jsonb_build_object(
+    'ok', true,
+    'events', v_events
+  );
+end
+$;
+
+-- ============================================================
+-- 17) TEACHER LIVE CONTRIBUTIONS
+-- ============================================================
+
+create or replace function public.classroom_teacher_contributions(
+  p_session uuid,
+  p_teacher_token uuid,
+  p_after_id bigint default 0
+)
+returns jsonb
+language plpgsql
+security definer
+set search_path = public, pg_catalog
+as $
+declare
+  v_events jsonb;
+  v_last_id bigint;
+begin
+  if not exists (
+    select 1
+      from public.classroom_sessions
+     where id = p_session
+       and teacher_token = p_teacher_token
+  ) then
+    return jsonb_build_object('ok', false);
+  end if;
+
+  select coalesce(
+    jsonb_agg(
+      jsonb_build_object(
+        'id', e.id,
+        'participant_id', e.participant_id,
+        'name', p.display_name,
+        'payload', e.payload,
+        'created_at', e.created_at
+      )
+      order by e.id
+    ),
+    '[]'::jsonb
+  ),
+  coalesce(max(e.id), p_after_id)
+  into v_events, v_last_id
+  from public.classroom_student_events e
+  join public.classroom_participants p
+    on p.id = e.participant_id
+  where e.session_id = p_session
+    and e.id > greatest(0, coalesce(p_after_id,0));
+
+  return jsonb_build_object(
+    'ok', true,
+    'events', v_events,
+    'last_id', v_last_id
+  );
+end
+$;
+
+-- ============================================================
+-- 18) TEACHER STATE
 -- ============================================================
 
 create or replace function public.classroom_teacher_state(
@@ -968,6 +1084,16 @@ begin
              updated_at = now()
        where id = p_session;
 
+    when 'clear_contributions' then
+      if p_participant is null then
+        delete from public.classroom_student_events
+         where session_id = p_session;
+      else
+        delete from public.classroom_student_events
+         where session_id = p_session
+           and participant_id = p_participant;
+      end if;
+
     when 'close' then
       update public.classroom_sessions
          set status = 'closed',
@@ -1068,6 +1194,8 @@ revoke execute on function public.classroom_join(text,text,text) from public;
 revoke execute on function public.classroom_student_state(uuid) from public;
 revoke execute on function public.classroom_student_update(uuid,text) from public;
 revoke execute on function public.classroom_student_board_event(uuid,jsonb) from public;
+revoke execute on function public.classroom_student_workspace(uuid) from public;
+revoke execute on function public.classroom_teacher_contributions(uuid,uuid,bigint) from public;
 revoke execute on function public.classroom_teacher_state(uuid,uuid) from public;
 revoke execute on function public.classroom_teacher_command(uuid,uuid,text,uuid,jsonb) from public;
 revoke execute on function public.classroom_presentation_state(text) from public;
@@ -1100,6 +1228,12 @@ grant execute on function public.classroom_student_update(uuid,text)
   to anon, authenticated;
 
 grant execute on function public.classroom_student_board_event(uuid,jsonb)
+  to anon, authenticated;
+
+grant execute on function public.classroom_student_workspace(uuid)
+  to anon, authenticated;
+
+grant execute on function public.classroom_teacher_contributions(uuid,uuid,bigint)
   to anon, authenticated;
 
 grant execute on function public.classroom_teacher_state(uuid,uuid)
@@ -1160,6 +1294,12 @@ from (
     ('classroom_student_board_event',
       to_regprocedure('public.classroom_student_board_event(uuid,jsonb)')::text),
 
+    ('classroom_student_workspace',
+      to_regprocedure('public.classroom_student_workspace(uuid)')::text),
+
+    ('classroom_teacher_contributions',
+      to_regprocedure('public.classroom_teacher_contributions(uuid,uuid,bigint)')::text),
+
     ('classroom_teacher_state',
       to_regprocedure('public.classroom_teacher_state(uuid,uuid)')::text),
 
@@ -1188,6 +1328,8 @@ where n.nspname = 'public'
     'classroom_student_state',
     'classroom_student_update',
     'classroom_student_board_event',
+    'classroom_student_workspace',
+    'classroom_teacher_contributions',
     'classroom_teacher_state',
     'classroom_teacher_command',
     'classroom_presentation_state'
