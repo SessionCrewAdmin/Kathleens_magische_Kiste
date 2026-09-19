@@ -801,7 +801,7 @@ returns jsonb
 language plpgsql
 security definer
 set search_path = public, pg_catalog
-as $
+as $$
 declare
   v_participant public.classroom_participants;
   v_events jsonb;
@@ -845,7 +845,7 @@ begin
     'events', v_events
   );
 end
-$;
+$$;
 
 -- ============================================================
 -- 17) TEACHER LIVE CONTRIBUTIONS
@@ -860,7 +860,7 @@ returns jsonb
 language plpgsql
 security definer
 set search_path = public, pg_catalog
-as $
+as $$
 declare
   v_events jsonb;
   v_last_id bigint;
@@ -901,7 +901,7 @@ begin
     'last_id', v_last_id
   );
 end
-$;
+$$;
 
 -- ============================================================
 -- 18) TEACHER STATE
