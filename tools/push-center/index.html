@@ -67,8 +67,8 @@
 </div>
 <div class="field"><label>Nachricht</label><textarea id="reminderBody" maxlength="500" placeholder="Was möchtest du später sehen?"></textarea></div>
 <div class="three">
-<div class="field"><label>Wiederholung</label><select id="reminderRepeat"><option value="none">Einmalig</option><option value="daily">Täglich</option><option value="weekdays">Werktags Mo–Fr</option></select></div>
-<div class="field"><label>Beim Tippen öffnen</label><select id="reminderUrl"><option value="./">Kiste</option><option value="./tools/schulaufgabenrechner/">Notenrechner</option><option value="./tools/classroom-board/">Classroom Board</option><option value="./tools/live-poll/">Live Poll</option></select></div>
+<div class="field"><label>Wiederholung</label><select id="reminderRepeat"><option value="none">Einmalig</option><option value="daily">Täglich</option><option value="weekdays">Werktags Mo–Fr</option><option value="weekly">Wöchentlich</option></select></div>
+<div class="field"><label>Beim Tippen öffnen</label><select id="reminderUrl"><option value="./">Kiste</option><option value="./tools/schulaufgabenrechner/">Notenrechner</option><option value="./tools/classroom-board/">Classroom Board</option><option value="./tools/live-poll/">Live Poll</option><option value="./tools/timetable/">Stundenplan</option></select></div>
 <div class="field"><label>Zeitzone</label><input class="input" id="timezone" value="Europe/Berlin" readonly></div>
 </div>
 <div class="actions"><button class="btn primary" id="scheduleBtn">＋ Erinnerung planen</button><button class="btn" id="refreshBtn">↻ Aktualisieren</button></div>
@@ -93,7 +93,7 @@ let reg=null,status=null,pushToken=sessionStorage.getItem('kathleenPushAdminToke
 
 function notice(id,text,type=''){const e=$(id);e.textContent=text;e.className='notice'+(type?' '+type:'');e.classList.remove('hidden')}
 function fmtDate(v){if(!v)return'–';const d=new Date(v);return Number.isNaN(d.getTime())?'–':d.toLocaleString('de-DE',{dateStyle:'medium',timeStyle:'short'})}
-function recurrenceLabel(v){return v==='weekdays'?'werktags':v==='daily'?'täglich':'einmalig'}
+function recurrenceLabel(v){return v==='weekly'?'wöchentlich':v==='weekdays'?'werktags':v==='daily'?'täglich':'einmalig'}
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]))}
 async function rpc(name,body){
  const r=await fetch(SB+name,{method:'POST',headers:{apikey:KEY,'Content-Type':'application/json'},body:JSON.stringify(body||{})});
