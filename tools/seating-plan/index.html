@@ -4,66 +4,116 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#fff9fc"><title>Sitzplan · Kathleens Kiste</title>
 <style>
-:root{--ink:#4f3d63;--muted:#8d7898;--line:#e8dced;--purple:#7957d5;--purple2:#eee6ff;--pink:#f5b9d2;--mint:#bfe5d4;--blue:#bcd8f5;--wood:#efd0a1;--bg:#fff9fc}
-*{box-sizing:border-box}html,body{margin:0;height:100%;font-family:Inter,ui-rounded,"SF Pro Rounded",Arial,sans-serif;color:var(--ink);background:radial-gradient(circle at 8% 0%,#ffe7f1 0,transparent 28%),radial-gradient(circle at 92% 2%,#ece5ff 0,transparent 29%),linear-gradient(180deg,#fffafd,#fff8fc 54%,#faf8ff)}
-button,input,select{font:inherit}.app{height:100%;display:grid;grid-template-rows:66px 1fr 64px;overflow:hidden}
-.topbar{display:flex;align-items:center;gap:18px;padding:10px 22px;border-bottom:1px solid rgba(232,217,230,.9);background:rgba(255,255,255,.9);backdrop-filter:blur(14px);box-shadow:0 7px 26px #704f7b18;z-index:20}
-.brand{font-weight:950;font-size:22px;white-space:nowrap;letter-spacing:-.02em;color:#654768}.brand:before{content:"✦";display:inline-grid;place-items:center;width:36px;height:36px;margin-right:9px;border-radius:12px;background:linear-gradient(145deg,#f3acd0,#bca9e9);color:#fff;box-shadow:0 7px 16px #b980aa32}.brand small{display:block;font-size:8px;letter-spacing:.14em;color:#9b829d;margin:2px 0 0 46px}.nav{display:flex;gap:8px}.nav a{padding:10px 14px;border-radius:12px;color:var(--ink);text-decoration:none;font-weight:850;font-size:13px}.nav a.active{background:var(--purple2);color:#5d3cae}.welcome{margin-left:auto;font-family:cursive;color:#8666c6;font-size:18px}
-.main{display:grid;grid-template-columns:295px minmax(620px,1fr) 315px;gap:12px;padding:12px;min-height:0}
-.side,.right{background:rgba(255,255,255,.9);backdrop-filter:blur(12px);border:1px solid rgba(232,217,230,.95);border-radius:22px;padding:14px;overflow:auto;box-shadow:0 18px 48px rgba(116,76,112,.09)}.title{display:flex;align-items:center;gap:12px;margin-bottom:8px}.title .ico{font-size:38px}.title h1{font-size:32px;line-height:1;margin:0}.title p{margin:4px 0 0;color:var(--muted);font-size:12px}
-.classRow{display:grid;grid-template-columns:1fr 42px;gap:8px;margin:10px 0}.select,.search{height:42px;border:1px solid var(--line);border-radius:12px;background:#fff;padding:0 12px;color:var(--ink);font-weight:800}.gear{border:1px solid var(--line);border-radius:12px;background:#fff;font-size:18px}.search{width:100%;font-weight:600;margin-bottom:8px}
-.roster{display:grid;gap:6px;min-height:90px;padding:2px;border-radius:14px;transition:.16s}.roster.drop-target{background:#f0e9ff;box-shadow:inset 0 0 0 2px #9d78e6}.student{height:42px;display:flex;align-items:center;gap:9px;padding:0 11px;border:1px solid #eee4f1;border-radius:13px;background:#fff;font-size:13px;font-weight:800;cursor:grab;box-shadow:0 4px 12px #704f7b0d;transition:.14s}.student:hover{transform:translateY(-1px);border-color:#d7c2e4;box-shadow:0 7px 16px #704f7b14}.student:active{cursor:grabbing}.student.seated{opacity:.48;background:#faf7fb}.student.seated:after{content:"sitzt";margin-left:auto;font-size:9px;text-transform:uppercase;letter-spacing:.08em;color:#9b87a0}.student.drag-source{opacity:.35;transform:scale(.98)}.student .initial{width:31px;height:25px;border-radius:999px;background:#eee7f6;display:grid;place-items:center;font-size:10px;font-weight:950}.student .dot{margin-left:auto;width:9px;height:9px;border-radius:50%}.student.seated .dot{display:none}.dot.blue{background:#6aa8ef}.dot.pink{background:#ed78a7}.dot.green{background:#65b68f}.dot.orange{background:#f0a72f}
-.addStudent{margin-top:10px;width:100%;border:0;border-radius:13px;background:linear-gradient(90deg,#d8c0f6,#b999eb);padding:11px;font-weight:900;color:#563a91}
-.workspace{display:grid;grid-template-rows:54px 1fr;min-width:0;min-height:0}.workspaceTop{display:flex;align-items:center;justify-content:flex-end;gap:8px}.pill{border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 14px;font-weight:900;color:#675474}.pill.active{background:var(--purple2);color:#5b3ab3;border-color:#d4c3f6}.freeToggle{display:flex;align-items:center;gap:8px;border:1px solid #cdb8f3;border-radius:999px;padding:7px 10px;background:#fff;font-weight:900;color:#5f43bc}.switch{width:42px;height:23px;border-radius:999px;background:#cfc7d9;padding:3px;transition:.2s}.switch i{display:block;width:17px;height:17px;border-radius:50%;background:#fff;transition:.2s}.freeToggle.on .switch{background:#62b78d}.freeToggle.on .switch i{transform:translateX(19px)}
-.roomWrap{min-height:0;position:relative}.room{position:absolute;inset:0;border:1px solid #ddcedf;border-radius:18px;overflow:hidden;background:linear-gradient(90deg,#efd4ac 1px,transparent 1px),linear-gradient(#efd4ac 1px,transparent 1px),linear-gradient(180deg,#f7dfba,#edc99b);background-size:28px 28px;box-shadow:inset 0 0 50px #fff7}
-.board{position:absolute;left:23%;right:23%;top:12px;height:58px;border:8px solid #b18d65;background:#315840;border-radius:4px;color:#fff;display:grid;place-items:center;font-size:22px;font-weight:900;box-shadow:0 8px 13px #5b3e2a26}.teacher{position:absolute;left:50%;top:82px;transform:translateX(-50%);width:175px;height:58px;background:#d5a66d;border-radius:8px;display:grid;place-items:center;font-size:12px;font-weight:850;box-shadow:0 6px 10px #68452625}.teacher:after{content:"Lehrkraft";background:#fff;padding:5px 8px;border-radius:8px}
-.desk{position:absolute;width:170px;height:95px;transform-origin:center;touch-action:none;user-select:none}.desk.two{width:170px;height:96px}.desk.single{width:92px;height:96px}.desk.four{width:178px;height:150px}.deskShell{position:absolute;inset:12px 6px 8px;background:linear-gradient(180deg,#f7d7a8,#e7bd87);border:1px solid #d0a16b;border-radius:9px;box-shadow:0 7px 12px #76502b20;display:grid;gap:6px;padding:9px}.desk.two .deskShell{grid-template-columns:1fr 1fr}.desk.single .deskShell{grid-template-columns:1fr}.desk.four .deskShell{grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr}
-.seat{border:2px solid #e6d9ee;background:#fff;border-radius:10px;display:grid;place-items:center;font-size:12px;font-weight:900;min-width:0;padding:4px;text-align:center;box-shadow:0 3px 8px #6c4c7920;cursor:grab;transition:.14s}.seat:not(.empty):hover{border-color:#b99ce2;transform:translateY(-1px)}.seat.empty{color:#b6a7b9;font-weight:700;cursor:default;background:#fffdfd}.seat.drop-target{border-color:#8057d8!important;background:#f1eaff!important;box-shadow:0 0 0 4px #8c69df25,0 5px 12px #6c4c7920!important}.seat.drag-source{opacity:.35}.seat.drop-swap:after{content:"↔";position:absolute;font-size:20px;color:#6f4bc8;background:#fff;border-radius:999px;width:30px;height:30px;display:grid;place-items:center;box-shadow:0 4px 12px #6f4d8220}.desk.selected{outline:3px solid #8d64e7;outline-offset:4px;border-radius:14px}.desk.selected .handle,.desk.selected .moveHint{display:grid}
-.handle{display:none;position:absolute;left:50%;top:-22px;transform:translateX(-50%);width:28px;height:28px;border-radius:50%;background:#8156dd;color:white;place-items:center;font-size:16px;cursor:grab;z-index:5}.moveHint{display:none;position:absolute;right:-22px;top:50%;transform:translateY(-50%);width:28px;height:28px;border-radius:50%;background:#8156dd;color:white;place-items:center;font-size:16px}.desk.dragging{opacity:.88;filter:drop-shadow(0 12px 14px #7558a333);z-index:50}
-.ghost{position:absolute;border:2px dashed #8f66e8;background:#9a79e727;border-radius:12px;pointer-events:none}
-.rightTabs{display:flex;border-bottom:1px solid var(--line);margin:-12px -12px 12px}.rightTabs button{flex:1;border:0;background:#fff;padding:13px 5px;font-weight:850;color:#7d6886}.rightTabs button.active{color:#5634b3;border-bottom:3px solid #7957d5}.section h3{margin:12px 0 8px;font-size:15px}.tableGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.tableBtn{border:1px solid #eee5f1;background:#faf8fd;border-radius:12px;padding:9px 3px;font-size:11px;color:#5d4a66;font-weight:800}.tableBtn b{display:block;font-size:23px;margin-bottom:4px}.tableBtn.active{border:2px solid #8e65e7;background:#f4efff}
-.info{margin:12px 0;padding:11px;border-radius:12px;background:#f0ecff;color:#604bb1;font-size:11px;line-height:1.45}.toggleRow{display:flex;align-items:center;justify-content:space-between;padding:7px 0;font-size:12px;font-weight:700}.miniSwitch{width:38px;height:21px;border-radius:20px;background:#ddd3e7;padding:3px}.miniSwitch:after{content:"";display:block;width:15px;height:15px;background:white;border-radius:50%}.miniSwitch.on{background:#825add}.miniSwitch.on:after{transform:translateX(17px)}.actions{display:grid;gap:7px}.action{border:0;border-radius:10px;padding:10px;background:#eee4ff;color:#5b3aad;font-weight:900}.action.danger{background:#ffe8ef;color:#bd365b}
-.footer{display:flex;align-items:center;gap:10px;padding:9px 20px;border-top:1px solid var(--line);background:#fff}.footer button{border:1px solid var(--line);background:#fff;border-radius:11px;padding:10px 14px;color:#65516d;font-weight:850}.footer .primary{background:#8058d7;color:#fff;border-color:#8058d7}.footer .orange{background:#fff0df;color:#a55f25}.legend{margin-left:auto;display:flex;gap:12px;font-size:10px;color:#7e6b85}.legend span:before{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px}.legend .l1:before{background:#ed78a7}.legend .l2:before{background:#65b68f}.legend .l3:before{background:#6aa8ef}.legend .l4:before{background:#f0a72f}
-.toast{position:fixed;left:50%;bottom:82px;transform:translateX(-50%) translateY(20px);opacity:0;background:#4f3d63;color:#fff;padding:10px 14px;border-radius:999px;font-size:12px;font-weight:850;transition:.2s;z-index:99}.toast.show{opacity:1;transform:translateX(-50%)}
-.studentView .side,.studentView .right,.studentView .footer{display:none}.studentView .main{grid-template-columns:1fr}.studentView .workspaceTop{justify-content:center}.studentView .freeToggle{display:none}
-@media(max-width:1100px){.main{grid-template-columns:240px 1fr}.right{position:fixed;right:12px;top:78px;bottom:75px;width:300px;z-index:30;box-shadow:0 20px 60px #0002}.welcome{display:none}.legend{display:none}}
+:root{--bg:#fff9fc;--ink:#503d51;--muted:#8d788f;--line:#eadde9;--pink:#efa5c7;--lilac:#b9a6e8;--deep:#6f5276;--green:#67a98f;--amber:#d59c55;--red:#bd6174;--shadow:0 18px 54px rgba(116,76,112,.12)}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Inter,ui-rounded,"SF Pro Rounded",Arial,sans-serif;color:var(--ink);background:radial-gradient(circle at 8% 0%,#ffe7f1 0,transparent 28%),radial-gradient(circle at 90% 4%,#ece5ff 0,transparent 27%),linear-gradient(180deg,#fffafd,#fff8fc 52%,#faf8ff)}
+button,input,select,textarea{font:inherit}button{cursor:pointer}
+.shell{max-width:1500px;margin:auto;padding:22px;position:relative}.top{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:16px}.brand{display:flex;gap:13px;align-items:center}.ico{width:58px;height:58px;border-radius:18px;display:grid;place-items:center;font-size:28px;background:linear-gradient(145deg,#f2a5c8,#bba7e8);box-shadow:var(--shadow)}h1{margin:0;font-size:clamp(26px,3.5vw,42px);letter-spacing:-.04em;color:#674969}.sub{margin:5px 0 0;color:var(--muted);font-size:12px}
+.actions{display:flex;gap:8px;flex-wrap:wrap}.btn{border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:12px;padding:10px 13px;font-weight:900;cursor:pointer;min-height:42px}.btn.primary{border:0;color:#fff;background:linear-gradient(135deg,#d790b5,#aa8cde)}.btn.danger{color:#a54f64;background:#fff8fa}.btn.orange{background:#fff5e8;color:#9c6a35}.btn.active{background:#f3edff;border-color:#d7c6f2;color:#6746aa}
+.layout{display:grid;grid-template-columns:315px minmax(620px,1fr) 310px;gap:14px;align-items:start}.panel{background:rgba(255,255,255,.9);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);padding:16px}.panel h2{font-size:15px;margin:0 0 12px}.field{margin-bottom:11px}.field label{display:block;font-size:9px;font-weight:950;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:5px}.select,.input,textarea{width:100%;min-height:44px;border:1px solid var(--line);border-radius:11px;background:#fffafd;color:var(--ink);padding:10px 11px;outline:none}.select:focus,.input:focus,textarea:focus{border-color:#d5a7c5;box-shadow:0 0 0 4px rgba(239,181,210,.13)}
+.row{display:flex;gap:7px;align-items:center}.row>*{flex:1}.hint{font-size:10px;color:var(--muted);line-height:1.45}.divider{height:1px;background:#f0e7ee;margin:14px 0}
+.rosterHead{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:12px 0 8px}.rosterHead h2{margin:0}.countChip{font-size:9px;font-weight:950;border:1px solid var(--line);background:#fffafd;padding:5px 7px;border-radius:999px;color:var(--muted)}
+.roster{display:grid;gap:6px;max-height:56vh;overflow:auto;padding-right:2px;min-height:130px;border-radius:14px}.roster.drop-target{background:#f4efff;box-shadow:inset 0 0 0 2px #cbb5eb}.student{min-height:42px;display:flex;align-items:center;gap:9px;padding:8px 10px;border:1px solid #eee2ec;border-radius:12px;background:#fffafd;font-size:11px;font-weight:850;cursor:grab;transition:.14s}.student:hover{transform:translateY(-1px);border-color:#dcc5da;background:#fff}.student .initial{width:30px;height:26px;flex:0 0 30px;border-radius:999px;background:#efe8f8;display:grid;place-items:center;font-size:9px;font-weight:950}.student.seated{opacity:.54}.student.seated:after{content:"sitzt";margin-left:auto;font-size:8px;font-weight:950;text-transform:uppercase;letter-spacing:.08em;color:#a18da3}.student.drag-source{opacity:.3}.emptyList{padding:28px 12px;text-align:center;color:var(--muted);font-size:11px;border:1px dashed #dfcede;border-radius:14px}
+.boardPanel{padding:14px}.boardTools{display:flex;justify-content:space-between;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:12px}.toolGroup{display:flex;gap:7px;flex-wrap:wrap}.freeMove{display:flex;align-items:center;gap:8px}.switch{width:38px;height:21px;border-radius:20px;background:#ddd3e7;padding:3px;display:inline-block}.switch:after{content:"";display:block;width:15px;height:15px;background:#fff;border-radius:50%;transition:.2s}.switch.on{background:#67a98f}.switch.on:after{transform:translateX(17px)}
+.roomWrap{height:650px;position:relative}.room{position:absolute;inset:0;border:1px solid #ddcedf;border-radius:18px;overflow:hidden;background:linear-gradient(90deg,#efd4ac 1px,transparent 1px),linear-gradient(#efd4ac 1px,transparent 1px),linear-gradient(180deg,#f7dfba,#edc99b);background-size:28px 28px;box-shadow:inset 0 0 50px #fff7}
+.board{position:absolute;left:22%;right:22%;top:12px;height:58px;border:8px solid #b18d65;background:#315840;border-radius:4px;color:#fff;display:grid;place-items:center;font-size:21px;font-weight:950;box-shadow:0 8px 13px #5b3e2a26}.teacher{position:absolute;left:50%;top:82px;transform:translateX(-50%);width:174px;height:58px;background:#d5a66d;border-radius:8px;display:grid;place-items:center;font-size:11px;font-weight:850;box-shadow:0 6px 10px #68452625}.teacher:after{content:"Lehrkraft";background:#fff;padding:5px 8px;border-radius:8px}
+.desk{position:absolute;width:170px;height:96px;transform-origin:center;touch-action:none;user-select:none}.desk.single{width:92px}.desk.four{width:178px;height:150px}.deskShell{position:absolute;inset:12px 6px 8px;background:linear-gradient(180deg,#f7d7a8,#e7bd87);border:1px solid #d0a16b;border-radius:9px;box-shadow:0 7px 12px #76502b20;display:grid;gap:6px;padding:9px}.desk.two .deskShell{grid-template-columns:1fr 1fr}.desk.single .deskShell{grid-template-columns:1fr}.desk.four .deskShell{grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr}
+.seat{position:relative;border:2px solid #e6d9ee;background:#fff;border-radius:10px;display:grid;place-items:center;font-size:12px;font-weight:950;min-width:0;padding:4px;text-align:center;box-shadow:0 3px 8px #6c4c7920;cursor:grab;transition:.14s}.seat:not(.empty):hover{border-color:#b99ce2;transform:translateY(-1px)}.seat.empty{color:#b6a7b9;font-weight:750;cursor:default;background:#fffdfd}.seat.drop-target{border-color:#8057d8!important;background:#f1eaff!important;box-shadow:0 0 0 4px #8c69df25,0 5px 12px #6c4c7920!important}.seat.drag-source{opacity:.35}.seat.drop-swap:after{content:"↔";position:absolute;font-size:20px;color:#6f4bc8;background:#fff;border-radius:999px;width:30px;height:30px;display:grid;place-items:center;box-shadow:0 4px 12px #6f4d8220}
+.desk.selected{outline:3px solid #8d64e7;outline-offset:4px;border-radius:14px}.desk.selected .handle,.desk.selected .moveHint{display:grid}.handle{display:none;position:absolute;left:50%;top:-22px;transform:translateX(-50%);width:28px;height:28px;border-radius:50%;background:#8156dd;color:#fff;place-items:center;font-size:16px;cursor:grab;z-index:5}.moveHint{display:none;position:absolute;right:-22px;top:50%;transform:translateY(-50%);width:28px;height:28px;border-radius:50%;background:#8156dd;color:#fff;place-items:center;font-size:16px}.desk.dragging{opacity:.88;filter:drop-shadow(0 12px 14px #7558a333);z-index:50}
+.boardActions{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px}.boardActions .btn{font-size:11px}
+.tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;background:#f7f0f5;border-radius:12px;padding:4px;margin-bottom:14px}.tabs button{border:0;border-radius:9px;padding:9px;background:transparent;color:var(--muted);font-size:10px;font-weight:900}.tabs button.active{background:#fff;color:#765675;box-shadow:0 4px 12px rgba(120,75,115,.08)}.tabPane{display:none}.tabPane.active{display:block}
+.tableGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}.tableBtn{border:1px solid var(--line);background:#fffafd;border-radius:11px;padding:9px 5px;font-size:9px;color:var(--ink);font-weight:850;min-height:72px}.tableBtn b{display:block;font-size:22px;margin-bottom:5px}.tableBtn:hover{border-color:#d5c2d5}.tableBtn.active{background:#f3edff;border-color:#cfb9ee;color:#6e4daf}
+.optionRow{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid #f2e9f0;font-size:11px;font-weight:850}.optionRow:last-child{border:0}.optionRow .switch{flex:0 0 auto}
+.quick{display:grid;gap:7px}.quick .btn{width:100%;font-size:11px}.noteBox{min-height:240px;resize:vertical}.noteStatus{margin-top:8px;font-size:9px;color:var(--muted)}
+.status{font-size:9px;color:var(--muted);margin-top:8px}.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(20px);z-index:21000;background:#684d72;color:#fff;border-radius:999px;padding:10px 14px;font-size:11px;font-weight:850;opacity:0;transition:.2s}.toast.show{opacity:1;transform:translateX(-50%)}
+.studentView .leftPanel,.studentView .rightPanel,.studentView .boardTools,.studentView .boardActions,.studentView .top .actions{display:none}.studentView .layout{grid-template-columns:1fr}.studentView .roomWrap{height:calc(100vh - 150px)}
+@media(max-width:1180px){.layout{grid-template-columns:280px 1fr}.rightPanel{grid-column:1/-1}.roomWrap{height:610px}}
+@media(max-width:760px){.shell{padding:13px}.top{align-items:flex-start;flex-direction:column}.actions{width:100%;display:grid;grid-template-columns:1fr 1fr}.layout{grid-template-columns:1fr}.panel{padding:13px;border-radius:17px}.roomWrap{height:560px}.boardTools{align-items:flex-start}.toolGroup{width:100%}.toolGroup .btn{flex:1;font-size:10px}.roster{max-height:320px}.tableGrid{grid-template-columns:repeat(2,1fr)}}
 </style>
 </head>
 <body>
-<div class="app" id="app">
-<header class="topbar"><div class="brand">Kathleens Kiste<small>IDEEN. TOOLS. SCHULE. ♡</small></div><nav class="nav"><a class="active">🪑 Sitzplan</a><a href="../class-lists/">👥 Klassen</a><a href="../classroom-board/">🛠 Whiteboard</a><a href="../../#tools">✨ Tools</a></nav><div class="welcome">Schön, dass du hier bist! ♡</div></header>
-<main class="main">
-<aside class="side"><div class="title"><div class="ico">👥</div><div><h1>Sitzplan</h1><p>Einfach. Flexibel. Passt zu deiner Klasse. ♡</p></div></div>
-<div class="classRow"><select class="select" id="classSelect"></select><button class="gear" id="classGear">⚙</button></div><input class="search" id="search" placeholder="⌕  Schüler suchen …"><div style="font-size:10px;color:#9a849c;margin:-1px 3px 7px">Schüler auf einen Platz ziehen · zurück in die Liste = Platz leeren</div><div class="roster" id="roster"></div><button class="addStudent" id="addStudent">＋ Schüler hinzufügen</button></aside>
-<section class="workspace"><div class="workspaceTop"><button class="pill active" id="editMode">✎ Bearbeiten</button><button class="pill" id="studentMode">◉ Schüleransicht</button><button class="pill" id="fullscreen">⛶</button><button class="freeToggle on" id="freeToggle">✥ Freies Verschieben: <span id="freeState">Aktiv</span><span class="switch"><i></i></span></button></div>
-<div class="roomWrap"><div class="room" id="room"><div class="board" id="board">Tafel ♡</div><div class="teacher" id="teacher"></div></div></div></section>
-<aside class="right"><div class="rightTabs"><button class="active">Layout</button><button>Optionen</button><button>Notizen</button></div><div class="section"><h3>Tische hinzufügen</h3><div class="tableGrid">
-<button class="tableBtn" data-add="single"><b>▰</b>Einzeltisch</button><button class="tableBtn active" data-add="two"><b>▰▰</b>Zweiertisch</button><button class="tableBtn" data-add="four"><b>▦</b>Vierertisch</button>
-<button class="tableBtn" data-layout="rows"><b>▰▰▰</b>Reihe</button><button class="tableBtn" data-layout="u"><b>凵</b>U-Form</button><button class="tableBtn" data-layout="free"><b>◇</b>Freie Form</button></div>
-<div class="info">↕ <b>Tische frei im Raum platzierbar</b><br>Ziehe Tische an eine beliebige Position, rotiere sie und gestalte deinen Klassenraum individuell.</div>
-<h3>Raumoptionen</h3><div class="toggleRow">▣ Tafel anzeigen <span class="miniSwitch on" data-room="board"></span></div><div class="toggleRow">⚑ Lehrerpult anzeigen <span class="miniSwitch on" data-room="teacher"></span></div><div class="toggleRow">▤ Raumraster <span class="miniSwitch on" data-room="grid"></span></div>
-<h3>Schnellaktionen</h3><div class="actions"><button class="action" id="random">⤨ Zufällig verteilen</button><button class="action" id="shuffle">↻ Neu mischen</button><button class="action danger" id="clear">🗑 Alle Plätze leeren</button></div></div></aside>
+<main class="shell" id="app">
+<header class="top"><div class="brand"><div class="ico">🪑</div><div><h1>Sitzplan</h1><p class="sub">Klassenraum frei gestalten · Schüler per Drag & Drop setzen · pro Klasse speichern</p></div></div><div class="actions"><button class="btn" id="lockBtn">🔒 Sperren</button><button class="btn" id="backBtn">← Tools</button></div></header>
+
+<div class="layout">
+<aside class="panel leftPanel">
+  <h2>Klasse & Schüler</h2>
+  <div class="field"><label>Klasse</label><div class="row"><select class="select" id="classSelect"></select><button class="btn" id="classGear" style="flex:0 0 auto">Listen</button></div></div>
+  <div class="field"><label>Schüler suchen</label><input class="input" id="search" placeholder="Name filtern …"></div>
+  <p class="hint">Schüler auf einen Platz ziehen. Sitzende Schüler kannst du auf einen anderen Platz oder zurück in die Liste ziehen.</p>
+  <div class="rosterHead"><h2>Schülerliste</h2><span class="countChip" id="studentCount">0 Schüler</span></div>
+  <div class="roster" id="roster"><div class="emptyList">Klassenliste wird geladen …</div></div>
+</aside>
+
+<section class="panel boardPanel">
+  <div class="boardTools">
+    <div class="toolGroup"><button class="btn active" id="editMode">✎ Bearbeiten</button><button class="btn" id="studentMode">◉ Schüleransicht</button><button class="btn" id="fullscreen">⛶ Vollbild</button></div>
+    <button class="btn freeMove" id="freeToggle">✥ Freies Verschieben <span class="switch on" id="freeSwitch"></span></button>
+  </div>
+  <div class="roomWrap"><div class="room" id="room"><div class="board" id="board">Tafel ♡</div><div class="teacher" id="teacher"></div></div></div>
+  <div class="boardActions"><button class="btn primary" id="save">Sitzplan speichern</button><button class="btn" id="load">Neu laden</button><button class="btn" id="saveTpl">Als Vorlage</button><button class="btn" id="print">Drucken</button><button class="btn orange" id="toBoard">Ins Whiteboard</button></div>
+  <div class="status" id="status">–</div>
+</section>
+
+<aside class="panel rightPanel">
+  <div class="tabs"><button class="active" data-tab="layout">Layout</button><button data-tab="options">Optionen</button><button data-tab="notes">Notizen</button></div>
+
+  <div class="tabPane active" data-pane="layout">
+    <h2>Tische hinzufügen</h2>
+    <div class="tableGrid">
+      <button class="tableBtn" data-add="single"><b>▰</b>Einzeltisch</button>
+      <button class="tableBtn active" data-add="two"><b>▰▰</b>Zweiertisch</button>
+      <button class="tableBtn" data-add="four"><b>▦</b>Vierertisch</button>
+      <button class="tableBtn" data-layout="rows"><b>▰▰▰</b>Reihen</button>
+      <button class="tableBtn" data-layout="u"><b>凵</b>U-Form</button>
+      <button class="tableBtn" data-layout="free"><b>◇</b>Freie Form</button>
+    </div>
+    <div class="divider"></div>
+    <p class="hint"><b>Freies Layout:</b> Tische anklicken und ziehen. Am runden Griff oberhalb kannst du sie drehen. Markierten Tisch mit Entf löschen.</p>
+  </div>
+
+  <div class="tabPane" data-pane="options">
+    <h2>Raumoptionen</h2>
+    <div class="optionRow"><span>Tafel anzeigen</span><span class="switch on" data-room="board"></span></div>
+    <div class="optionRow"><span>Lehrerpult anzeigen</span><span class="switch on" data-room="teacher"></span></div>
+    <div class="optionRow"><span>Raumraster</span><span class="switch on" data-room="grid"></span></div>
+    <div class="divider"></div>
+    <h2>Schnellaktionen</h2>
+    <div class="quick"><button class="btn primary" id="random">Zufällig verteilen</button><button class="btn" id="shuffle">Neu mischen</button><button class="btn danger" id="clear">Alle Plätze leeren</button></div>
+  </div>
+
+  <div class="tabPane" data-pane="notes">
+    <h2>Notizen zur Klasse</h2>
+    <p class="hint">Nur in deiner Lehreransicht. Die Notizen werden zusammen mit dem Sitzplan dieser Klasse gespeichert.</p>
+    <textarea class="noteBox" id="notes" placeholder="z. B. Sitzwünsche, Beobachtungen oder Hinweise …"></textarea>
+    <div class="noteStatus" id="noteStatus">Noch keine Notiz.</div>
+  </div>
+</aside>
+</div>
 </main>
-<footer class="footer"><button class="primary" id="save">▣ Sitzplan speichern</button><button id="saveTpl">♡ Als Vorlage speichern</button><button id="load">▱ Sitzplan laden</button><button id="export">▧ Als Bild exportieren</button><button id="print">▣ Drucken</button><button class="orange" id="toBoard">▣ Ins Whiteboard</button><div class="legend"><span class="l1">Förderbedarf</span><span class="l2">Ruheplatz</span><span class="l3">Nähe Tafel</span><span class="l4">Nicht zusammen</span></div></footer>
-</div><div class="toast" id="toast"></div>
+<div class="toast" id="toast"></div>
+
 <script src="../classroom-tools-shared.js"></script>
 <script>
 (()=>{'use strict';
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],room=$('#room');
-let lists=[],current=null,freeMove=true,selected=null,drag=null,rot=null;
-const KEY='kathleenSeatPlansV1',TPL='kathleenSeatPlanTemplateV1';
-const palette=['blue','pink','green','orange'];
-const toast=t=>{const e=$('#toast');e.textContent=t;e.classList.add('show');setTimeout(()=>e.classList.remove('show'),1500)};
+let lists=[],current=null,freeMove=true,selected=null,drag=null,rot=null,studentDrag=null;
+const KEY='kathleenSeatPlansV2',LEGACY='kathleenSeatPlansV1',TPL='kathleenSeatPlanTemplateV1';
+const toast=t=>{const e=$('#toast');e.textContent=t;e.classList.add('show');setTimeout(()=>e.classList.remove('show'),1600)};
+const status=t=>$('#status').textContent=t;
 const safe=s=>String(s||'').replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
 const initials=n=>n.split(/\s+/).slice(0,2).map(x=>x[0]).join('').toUpperCase();
 const uid=()=>Date.now().toString(36)+Math.random().toString(36).slice(2,6);
 function students(){return current?.students||[]}
 function seatsFor(type){return type==='single'?1:type==='four'?4:2}
-function plans(){try{return JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){return{}}}
+function plans(){try{const v=JSON.parse(localStorage.getItem(KEY)||'null');if(v)return v;return JSON.parse(localStorage.getItem(LEGACY)||'{}')}catch(e){return{}}}
 function savePlans(v){localStorage.setItem(KEY,JSON.stringify(v))}
 function deskData(){return $$('.desk').map(d=>({id:d.dataset.id,type:d.dataset.type,x:parseFloat(d.style.left),y:parseFloat(d.style.top),r:+d.dataset.r||0,names:[...d.querySelectorAll('.seat')].map(s=>s.dataset.name||'')}))}
+function seatedNames(){return new Set($$('.seat').map(s=>s.dataset.name).filter(Boolean))}
 function applyRotation(d,r){d.dataset.r=Math.round(r);d.style.transform='rotate('+r+'deg)'}
 function clampDesk(d,x,y){const maxX=room.clientWidth-d.offsetWidth,maxY=room.clientHeight-d.offsetHeight;return{x:Math.max(8,Math.min(maxX-8,x)),y:Math.max(78,Math.min(maxY-8,y))}}
+function setSeat(seat,name){seat.dataset.name=name||'';seat.textContent=name||'Frei';seat.classList.toggle('empty',!name);seat.draggable=!!name}
+function clearDragState(){$$('.seat').forEach(s=>s.classList.remove('drop-target','drop-swap','drag-source'));$$('.student').forEach(s=>s.classList.remove('drag-source'));$('#roster').classList.remove('drop-target');studentDrag=null}
+function dragPayloadFromEvent(e){try{return JSON.parse(e.dataTransfer.getData('application/x-kathleen-student')||'null')}catch(err){return null}}
 function makeDesk(o){
  const d=document.createElement('div');d.className='desk '+o.type;d.dataset.id=o.id||uid();d.dataset.type=o.type;d.dataset.r=o.r||0;d.style.left=(o.x??100)+'px';d.style.top=(o.y??160)+'px';applyRotation(d,o.r||0);
  d.innerHTML='<div class="handle" title="Drehen">↻</div><div class="deskShell">'+Array.from({length:seatsFor(o.type)},(_,i)=>'<div class="seat '+((o.names||[])[i]?'':'empty')+'" data-name="'+safe((o.names||[])[i]||'')+'">'+safe((o.names||[])[i]||'Frei')+'</div>').join('')+'</div><div class="moveHint">↔</div>';
@@ -71,108 +121,64 @@ function makeDesk(o){
 }
 function selectDesk(d){$$('.desk').forEach(x=>x.classList.toggle('selected',x===d));selected=d}
 function bindDesk(d){
- d.addEventListener('pointerdown',e=>{
-  if(e.target.closest('.handle')||e.target.closest('.seat'))return;
-  selectDesk(d);if(!freeMove)return;
-  e.preventDefault();d.setPointerCapture(e.pointerId);const rr=room.getBoundingClientRect();drag={d,pid:e.pointerId,ox:e.clientX-rr.left-parseFloat(d.style.left),oy:e.clientY-rr.top-parseFloat(d.style.top)};d.classList.add('dragging')
- });
+ d.addEventListener('pointerdown',e=>{if(e.target.closest('.handle')||e.target.closest('.seat'))return;selectDesk(d);if(!freeMove)return;e.preventDefault();d.setPointerCapture(e.pointerId);const rr=room.getBoundingClientRect();drag={d,ox:e.clientX-rr.left-parseFloat(d.style.left),oy:e.clientY-rr.top-parseFloat(d.style.top)};d.classList.add('dragging')});
  d.addEventListener('pointermove',e=>{if(!drag||drag.d!==d)return;const rr=room.getBoundingClientRect(),p=clampDesk(d,e.clientX-rr.left-drag.ox,e.clientY-rr.top-drag.oy);d.style.left=p.x+'px';d.style.top=p.y+'px'});
- d.addEventListener('pointerup',e=>{if(drag?.d===d){d.classList.remove('dragging');drag=null;autoSave()}});
+ d.addEventListener('pointerup',()=>{if(drag?.d===d){d.classList.remove('dragging');drag=null;autoSave()}});
  const h=d.querySelector('.handle');h.addEventListener('pointerdown',e=>{e.stopPropagation();selectDesk(d);const b=d.getBoundingClientRect();rot={d,cx:b.left+b.width/2,cy:b.top+b.height/2,start:+d.dataset.r||0,a:Math.atan2(e.clientY-(b.top+b.height/2),e.clientX-(b.left+b.width/2))};h.setPointerCapture(e.pointerId)});
  h.addEventListener('pointermove',e=>{if(!rot||rot.d!==d)return;const a=Math.atan2(e.clientY-rot.cy,e.clientX-rot.cx);applyRotation(d,rot.start+(a-rot.a)*180/Math.PI)});
  h.addEventListener('pointerup',()=>{rot=null;autoSave()})
 }
-let studentDrag=null;
-function seatedNames(){return new Set($('.seat').map(s=>s.dataset.name).filter(Boolean))}
-function setSeat(seat,name){
- seat.dataset.name=name||'';seat.textContent=name||'Frei';seat.classList.toggle('empty',!name);seat.draggable=!!name
-}
-function clearDragState(){
- $('.seat').forEach(s=>s.classList.remove('drop-target','drop-swap','drag-source'));
- $('.student').forEach(s=>s.classList.remove('drag-source'));
- $('#roster').classList.remove('drop-target');studentDrag=null
-}
-function dragPayloadFromEvent(e){try{return JSON.parse(e.dataTransfer.getData('application/x-kathleen-student')||'null')}catch(err){return null}}
 function bindSeat(seat){
  seat.draggable=!!seat.dataset.name;
- seat.addEventListener('dragstart',e=>{
-  const name=seat.dataset.name;if(!name){e.preventDefault();return}
-  studentDrag={name,from:'seat',seat};seat.classList.add('drag-source');
-  e.dataTransfer.effectAllowed='move';e.dataTransfer.setData('application/x-kathleen-student',JSON.stringify({name,from:'seat'}));e.dataTransfer.setData('text/plain',name)
- });
- seat.addEventListener('dragend',()=>clearDragState());
- seat.addEventListener('dragover',e=>{
-  if(!studentDrag)return;e.preventDefault();e.dataTransfer.dropEffect='move';seat.classList.add('drop-target');seat.classList.toggle('drop-swap',!!seat.dataset.name&&seat.dataset.name!==studentDrag.name)
- });
+ seat.addEventListener('dragstart',e=>{const name=seat.dataset.name;if(!name){e.preventDefault();return}studentDrag={name,from:'seat',seat};seat.classList.add('drag-source');e.dataTransfer.effectAllowed='move';e.dataTransfer.setData('application/x-kathleen-student',JSON.stringify({name,from:'seat'}));e.dataTransfer.setData('text/plain',name)});
+ seat.addEventListener('dragend',clearDragState);
+ seat.addEventListener('dragover',e=>{if(!studentDrag)return;e.preventDefault();e.dataTransfer.dropEffect='move';seat.classList.add('drop-target');seat.classList.toggle('drop-swap',!!seat.dataset.name&&seat.dataset.name!==studentDrag.name)});
  seat.addEventListener('dragleave',()=>seat.classList.remove('drop-target','drop-swap'));
- seat.addEventListener('drop',e=>{
-  e.preventDefault();const p=dragPayloadFromEvent(e)||studentDrag;if(!p?.name)return;
-  const targetName=seat.dataset.name||'',sourceSeat=studentDrag?.from==='seat'?studentDrag.seat:null;
-  if(sourceSeat===seat){clearDragState();return}
-  if(studentDrag?.from==='roster'){const existing=$('.seat').find(s=>s!==seat&&s.dataset.name===p.name);if(existing)setSeat(existing,'')}
-  if(sourceSeat)setSeat(sourceSeat,targetName);else if(targetName){/* displaced student becomes unseated */}
-  setSeat(seat,p.name);clearDragState();autoSave();renderRoster();toast(targetName?(sourceSeat?'Plätze getauscht ↔':'Platz übernommen – '+targetName+' ist wieder frei'):'Platz zugewiesen ✓')
- });
+ seat.addEventListener('drop',e=>{e.preventDefault();const p=dragPayloadFromEvent(e)||studentDrag;if(!p?.name)return;const targetName=seat.dataset.name||'',sourceSeat=studentDrag?.from==='seat'?studentDrag.seat:null;if(sourceSeat===seat){clearDragState();return}if(studentDrag?.from==='roster'){const existing=$$('.seat').find(s=>s!==seat&&s.dataset.name===p.name);if(existing)setSeat(existing,'')}if(sourceSeat)setSeat(sourceSeat,targetName);setSeat(seat,p.name);clearDragState();autoSave();renderRoster();toast(targetName?(sourceSeat?'Plätze getauscht':'Platz übernommen'):'Platz zugewiesen')});
  seat.addEventListener('dblclick',()=>{if(seat.dataset.name){setSeat(seat,'');autoSave();renderRoster();toast('Platz geleert')}})
 }
-function bindRosterDnD(){
- const r=$('#roster');
- r.addEventListener('dragover',e=>{if(!studentDrag)return;e.preventDefault();e.dataTransfer.dropEffect='move';r.classList.add('drop-target')});
- r.addEventListener('dragleave',e=>{if(!r.contains(e.relatedTarget))r.classList.remove('drop-target')});
- r.addEventListener('drop',e=>{
-  e.preventDefault();if(studentDrag?.from==='seat'&&studentDrag.seat){setSeat(studentDrag.seat,'');autoSave();renderRoster();toast(studentDrag.name+' zurück in der Liste')}
-  clearDragState()
- });
-}
-function addDesk(type,x,y){const w=type==='single'?92:type==='four'?178:170,h=type==='four'?150:96;const o={type,x:x??room.clientWidth/2-w/2,y:y??room.clientHeight/2-h/2+40,names:[]};const d=makeDesk(o);selectDesk(d);autoSave()}
+function bindRosterDnD(){const r=$('#roster');r.addEventListener('dragover',e=>{if(!studentDrag)return;e.preventDefault();r.classList.add('drop-target')});r.addEventListener('dragleave',e=>{if(!r.contains(e.relatedTarget))r.classList.remove('drop-target')});r.addEventListener('drop',e=>{e.preventDefault();if(studentDrag?.from==='seat'&&studentDrag.seat){setSeat(studentDrag.seat,'');autoSave();renderRoster();toast(studentDrag.name+' ist wieder frei')}clearDragState()})}
+function addDesk(type,x,y){const w=type==='single'?92:type==='four'?178:170,h=type==='four'?150:96;const d=makeDesk({type,x:x??room.clientWidth/2-w/2,y:y??room.clientHeight/2-h/2+40,names:[]});selectDesk(d);autoSave()}
 function clearDesks(){$$('.desk').forEach(x=>x.remove());selected=null}
-function defaultLayout(){
- clearDesks();const W=room.clientWidth,H=room.clientHeight,cols=3,rows=3;for(let r=0;r<rows;r++)for(let c=0;c<cols;c++){const x=90+c*((W-260)/2),y=150+r*((H-260)/3);makeDesk({type:'two',x,y,names:[]})}
-}
-function layoutRows(){clearDesks();const W=room.clientWidth;for(let r=0;r<3;r++)for(let c=0;c<3;c++)makeDesk({type:'two',x:70+c*((W-250)/2),y:160+r*145,names:[]});assign(students())}
-function layoutU(){clearDesks();const W=room.clientWidth,H=room.clientHeight;for(let i=0;i<4;i++)makeDesk({type:'two',x:70+i*((W-250)/3),y:150,names:[]});for(let i=0;i<3;i++){makeDesk({type:'two',x:70,y:285+i*130,names:[]});makeDesk({type:'two',x:W-245,y:285+i*130,names:[]})}assign(students())}
-function assign(names){const ss=$('.seat'),arr=[...names];ss.forEach((s,i)=>setSeat(s,arr[i]||''));autoSave();renderRoster()}
+function defaultLayout(){clearDesks();const W=room.clientWidth,H=room.clientHeight;for(let r=0;r<3;r++)for(let c=0;c<3;c++)makeDesk({type:'two',x:70+c*((W-240)/2),y:150+r*((H-260)/3),names:[]})}
+function layoutRows(){clearDesks();const W=room.clientWidth;for(let r=0;r<3;r++)for(let c=0;c<3;c++)makeDesk({type:'two',x:55+c*((W-225)/2),y:160+r*145,names:[]});assign(students())}
+function layoutU(){clearDesks();const W=room.clientWidth;for(let i=0;i<4;i++)makeDesk({type:'two',x:55+i*((W-225)/3),y:160,names:[]});for(let i=0;i<2;i++){makeDesk({type:'two',x:55,y:315+i*150,names:[]});makeDesk({type:'two',x:W-225,y:315+i*150,names:[]})}assign(students())}
+function assign(names){const ss=$$('.seat'),arr=[...names];ss.forEach((s,i)=>setSeat(s,arr[i]||''));autoSave();renderRoster()}
 function shuffle(a){a=[...a];for(let i=a.length-1;i;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
 function renderRoster(){
- const q=$('#search').value.toLowerCase().trim(),seated=seatedNames();
- $('#roster').innerHTML=students().filter(n=>n.toLowerCase().includes(q)).map((n,i)=>'<div class="student '+(seated.has(n)?'seated':'')+'" draggable="true" data-name="'+safe(n)+'"><span class="initial">'+initials(n)+'</span><span>'+safe(n)+'</span>'+(i%4?'<span class="dot '+palette[i%4]+'"></span>':'')+'</div>').join('');
- $('.student').forEach(el=>{
-  el.addEventListener('dragstart',e=>{
-   const name=el.dataset.name;studentDrag={name,from:'roster',el};el.classList.add('drag-source');
-   e.dataTransfer.effectAllowed='move';e.dataTransfer.setData('application/x-kathleen-student',JSON.stringify({name,from:'roster'}));e.dataTransfer.setData('text/plain',name)
-  });
-  el.addEventListener('dragend',()=>clearDragState())
- })
+ const q=$('#search').value.trim().toLocaleLowerCase('de-DE'),seated=seatedNames(),arr=students().filter(n=>!q||n.toLocaleLowerCase('de-DE').includes(q));
+ $('#studentCount').textContent=students().length+' Schüler';
+ $('#roster').innerHTML=arr.length?arr.map(n=>'<div class="student '+(seated.has(n)?'seated':'')+'" draggable="true" data-name="'+safe(n)+'"><span class="initial">'+initials(n)+'</span><span>'+safe(n)+'</span></div>').join(''):'<div class="emptyList">'+(students().length?'Keine Treffer.':'Keine Schüler in dieser Klasse.')+'</div>';
+ $$('.student').forEach(el=>{el.addEventListener('dragstart',e=>{const name=el.dataset.name;studentDrag={name,from:'roster',el};el.classList.add('drag-source');e.dataTransfer.effectAllowed='move';e.dataTransfer.setData('application/x-kathleen-student',JSON.stringify({name,from:'roster'}));e.dataTransfer.setData('text/plain',name)});el.addEventListener('dragend',clearDragState)})
 }
 function renderClasses(){
- lists=KathleenClassLists.load();$('#classSelect').innerHTML=lists.map(c=>'<option value="'+c.id+'">'+safe(c.name)+'</option>').join('');
- const wanted=localStorage.getItem('kathleenSeatClass');current=lists.find(x=>x.id===wanted)||lists[0]||{id:'demo',name:'Demo',students:['Alina Schuster','Ben Fischer','Charlotte Lang','David Neumann','Emilia Lehmann','Finn Frey','Greta Richter','Hannes Sommer','Ida Lorenz','Jonas Kurz','Klara Vogel','Lukas Neuber','Mia Landmann','Niklas Koch','Olivia Peters','Paul Lorenz']};
- if(!lists.length){$('#classSelect').innerHTML='<option value="demo">Demo</option>'}else $('#classSelect').value=current.id;renderRoster();loadPlan()
+ lists=KathleenClassLists.load();
+ $('#classSelect').innerHTML=lists.length?lists.map(c=>'<option value="'+safe(c.id)+'">'+safe(c.name)+' · '+c.students.length+'</option>').join(''):'<option value="">Keine Klassenliste</option>';
+ const wanted=localStorage.getItem('kathleenSeatClass'),next=lists.find(x=>x.id===wanted)||lists[0]||null;current=next;
+ if(current){$('#classSelect').value=current.id;localStorage.setItem('kathleenSeatClass',current.id);loadPlan()}else{clearDesks();renderRoster();status('Lege zuerst eine Klassenliste an.')}
 }
-function savePlan(msg=true){
- const p=plans();p[current.id]={className:current.name,desks:deskData(),updatedAt:new Date().toISOString()};savePlans(p);if(msg)toast('Sitzplan gespeichert ✓')
-}
+function savePlan(msg=true){if(!current)return;const p=plans();p[current.id]={className:current.name,desks:deskData(),notes:$('#notes').value||'',updatedAt:new Date().toISOString()};savePlans(p);if(msg)toast('Sitzplan gespeichert');status('✓ Gespeichert')}
 function autoSave(){if(current)savePlan(false)}
-function loadPlan(){
- clearDesks();const p=plans()[current.id];if(p?.desks?.length)p.desks.forEach(makeDesk);else{defaultLayout();assign(students())}
-}
-$('#classSelect').onchange=()=>{autoSave();current=lists.find(x=>x.id===$('#classSelect').value)||current;localStorage.setItem('kathleenSeatClass',current.id);renderRoster();loadPlan()};
+function loadPlan(){clearDesks();const p=plans()[current.id];if(p?.desks?.length)p.desks.forEach(makeDesk);else{defaultLayout();assign(students())}$('#notes').value=p?.notes||'';$('#noteStatus').textContent=p?.notes?'Notiz gespeichert.':'Noch keine Notiz.';renderRoster();status(p?.updatedAt?'Gespeicherter Sitzplan geladen':'Neuer Sitzplan')}
+function setTab(name){$$('[data-tab]').forEach(b=>b.classList.toggle('active',b.dataset.tab===name));$$('[data-pane]').forEach(p=>p.classList.toggle('active',p.dataset.pane===name))}
+$$('[data-tab]').forEach(b=>b.onclick=()=>setTab(b.dataset.tab));
+$('#classSelect').onchange=()=>{autoSave();current=lists.find(x=>x.id===$('#classSelect').value)||null;if(current)localStorage.setItem('kathleenSeatClass',current.id);loadPlan()};
 $('#search').oninput=renderRoster;$('#classGear').onclick=()=>location.href='../class-lists/';
-$('#addStudent').onclick=()=>{const n=prompt('Name des Schülers / der Schülerin:');if(n)toast('Bitte in der Klassenliste ergänzen – Sitzplan nutzt die zentrale Liste.')};
 $$('[data-add]').forEach(b=>b.onclick=()=>addDesk(b.dataset.add));
-$$('[data-layout]').forEach(b=>b.onclick=()=>{if(b.dataset.layout==='rows')layoutRows();else if(b.dataset.layout==='u')layoutU();else toast('Freies Layout aktiv – Tische frei verschieben.')});
-$('#freeToggle').onclick=()=>{freeMove=!freeMove;$('#freeToggle').classList.toggle('on',freeMove);$('#freeState').textContent=freeMove?'Aktiv':'Aus';toast(freeMove?'Freies Verschieben aktiv':'Tische fixiert')};
+$$('[data-layout]').forEach(b=>b.onclick=()=>{if(b.dataset.layout==='rows')layoutRows();else if(b.dataset.layout==='u')layoutU();else toast('Freies Layout aktiv')});
+$('#freeToggle').onclick=()=>{freeMove=!freeMove;$('#freeSwitch').classList.toggle('on',freeMove);$('#freeToggle').classList.toggle('active',freeMove);toast(freeMove?'Freies Verschieben aktiv':'Tische fixiert')};
 $('#random').onclick=()=>assign(shuffle(students()));$('#shuffle').onclick=()=>assign(shuffle(students()));$('#clear').onclick=()=>assign([]);
-$('#save').onclick=()=>savePlan(true);$('#load').onclick=()=>{loadPlan();toast('Sitzplan geladen')};$('#saveTpl').onclick=()=>{localStorage.setItem(TPL,JSON.stringify(deskData().map(x=>({...x,names:[]}))));toast('Layout als Vorlage gespeichert')};
-$('#print').onclick=()=>window.print();$('#toBoard').onclick=()=>{savePlan(false);location.href='../classroom-board/';};
-$('#export').onclick=()=>{toast('Tipp: Browser-Drucken → als PDF/Bild speichern')};
+$('#save').onclick=()=>savePlan(true);$('#load').onclick=()=>{loadPlan();toast('Neu geladen')};$('#saveTpl').onclick=()=>{localStorage.setItem(TPL,JSON.stringify(deskData().map(x=>({...x,names:[]}))));toast('Vorlage gespeichert')};
+$('#print').onclick=()=>window.print();$('#toBoard').onclick=()=>{savePlan(false);location.href='../classroom-board/'};
 $('#studentMode').onclick=()=>{$('#app').classList.add('studentView');$('#studentMode').classList.add('active');$('#editMode').classList.remove('active')};$('#editMode').onclick=()=>{$('#app').classList.remove('studentView');$('#editMode').classList.add('active');$('#studentMode').classList.remove('active')};
 $('#fullscreen').onclick=()=>document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen();
 $$('[data-room]').forEach(t=>t.onclick=()=>{t.classList.toggle('on');const on=t.classList.contains('on'),v=t.dataset.room;if(v==='board')$('#board').style.display=on?'grid':'none';if(v==='teacher')$('#teacher').style.display=on?'grid':'none';if(v==='grid')room.style.backgroundSize=on?'28px 28px':'100% 100%'});
+$('#notes').addEventListener('input',()=>{$('#noteStatus').textContent='Änderungen …';clearTimeout(window.__seatNoteTimer);window.__seatNoteTimer=setTimeout(()=>{autoSave();$('#noteStatus').textContent='Notiz gespeichert.'},450)});
+$('#lockBtn').onclick=()=>KathleenClassLists.lock(true);$('#backBtn').onclick=()=>location.href='../../#tools';
 room.addEventListener('pointerdown',e=>{if(e.target===room)selectDesk(null)});
 window.addEventListener('keydown',e=>{if((e.key==='Delete'||e.key==='Backspace')&&selected&&!['INPUT','SELECT','TEXTAREA'].includes(document.activeElement.tagName)){selected.remove();selected=null;autoSave()}});
-window.addEventListener('resize',()=>{});bindRosterDnD();
-(async()=>{const ok=await KathleenClassLists.requireUnlock();if(ok)renderClasses();else renderClasses()})();
+window.addEventListener('kathleen:classlists',renderClasses);bindRosterDnD();
+(async()=>{status('Klassenlisten werden entsperrt …');const ok=await KathleenClassLists.requireUnlock();if(ok){renderClasses();status('Bereit')}})();
 })();
 </script>
 </body></html>
