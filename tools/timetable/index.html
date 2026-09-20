@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#fff9fc">
+<title>Stundenplan · Kathleens Kiste</title>
+<style>
+:root{--ink:#503d51;--muted:#8d788f;--line:#eadde9;--deep:#6f5276;--pink:#efa5c7;--lilac:#b9a6e8;--green:#67a98f;--amber:#d79f58;--red:#bf6175;--shadow:0 18px 54px rgba(116,76,112,.12)}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Inter,ui-rounded,"SF Pro Rounded",Arial,sans-serif;color:var(--ink);background:radial-gradient(circle at 8% 0%,#ffe7f1 0,transparent 28%),radial-gradient(circle at 90% 4%,#ece5ff 0,transparent 27%),linear-gradient(180deg,#fffafd,#fff8fc 52%,#faf8ff)}button,input,select{font:inherit}.shell{max-width:1560px;margin:auto;padding:22px}.top{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:16px}.brand{display:flex;align-items:center;gap:13px}.ico{width:58px;height:58px;border-radius:18px;display:grid;place-items:center;font-size:28px;background:linear-gradient(145deg,#e9e1ff,#ffdce9);box-shadow:var(--shadow)}h1{margin:0;font-size:clamp(27px,3.6vw,43px);letter-spacing:-.04em;color:#674969}.sub{margin:5px 0 0;color:var(--muted);font-size:12px}.actions{display:flex;gap:8px;flex-wrap:wrap}.btn{border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:12px;padding:10px 13px;font-weight:900;cursor:pointer;min-height:42px}.btn.primary{border:0;color:#fff;background:linear-gradient(135deg,#d790b5,#aa8cde)}.btn.danger{color:#a64f65;background:#fff8fa}.panel{background:rgba(255,255,255,.9);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);padding:16px}.heroGrid{display:grid;grid-template-columns:1.2fr .8fr;gap:12px;margin-bottom:12px}.todayCard,.nextCard{min-height:130px}.kicker{font-size:9px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:950}.big{font-size:clamp(24px,3vw,36px);font-weight:1000;margin-top:8px}.meta{margin-top:5px;color:var(--muted);font-size:11px}.notice{margin:0 0 12px;padding:11px 13px;border:1px solid #eadcbc;border-radius:14px;background:#fff8e8;color:#8b682f;font-size:10px;font-weight:800}.notice.ok{border-color:#d7ebe3;background:#f2fbf7;color:#56816f}.toolbar{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:12px;flex-wrap:wrap}.weekNav{display:flex;gap:6px;align-items:center}.weekTitle{font-weight:1000}.week{display:grid;grid-template-columns:repeat(5,minmax(220px,1fr));gap:10px;overflow:auto;padding-bottom:4px}.day{border:1px solid var(--line);border-radius:17px;background:#fff;min-height:420px;padding:10px}.dayHead{display:flex;justify-content:space-between;align-items:center;padding:5px 4px 10px}.dayHead b{font-size:13px}.dayHead span{font-size:9px;color:var(--muted)}.slot{position:relative;border:1px solid #e9deea;border-left:5px solid var(--accent,#b9a6e8);border-radius:13px;padding:10px;margin-bottom:8px;background:#fffafd;cursor:pointer;transition:.15s}.slot:hover{transform:translateY(-1px);box-shadow:0 9px 22px rgba(116,76,112,.09)}.slot.current{outline:2px solid #78bca2;outline-offset:1px}.slot.next{outline:2px solid #d8a25c;outline-offset:1px}.slotTime{font-size:10px;color:var(--muted);font-weight:900}.slotTitle{font-size:15px;font-weight:1000;margin:3px 0}.slotMeta{font-size:10px;color:var(--muted);display:flex;gap:7px;flex-wrap:wrap}.pushDot{position:absolute;right:9px;top:9px;font-size:11px}.emptyDay{border:1px dashed #decfdd;border-radius:13px;color:#a38fa4;text-align:center;padding:30px 10px;font-size:10px}.modal{position:fixed;inset:0;z-index:50;display:none;place-items:center;padding:18px;background:rgba(58,41,60,.35);backdrop-filter:blur(8px)}.modal.show{display:grid}.modalCard{width:min(620px,96vw);max-height:90vh;overflow:auto;background:#fff;border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:0 30px 100px rgba(70,46,72,.28)}.modalCard h2{margin:0 0 12px}.form{display:grid;grid-template-columns:1fr 1fr;gap:10px}.field.wide{grid-column:1/-1}.field label{display:block;font-size:9px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:950;margin-bottom:5px}.input,select{width:100%;min-height:44px;border:1px solid var(--line);border-radius:11px;background:#fffafd;color:var(--ink);padding:10px 11px}.check{display:flex;align-items:center;gap:8px;min-height:44px;border:1px solid var(--line);border-radius:11px;padding:10px;background:#fffafd;font-size:11px;font-weight:850}.modalActions{display:flex;justify-content:space-between;gap:8px;margin-top:14px;flex-wrap:wrap}.status{font-size:10px;color:var(--muted);margin-top:10px}
+@media(max-width:900px){.heroGrid{grid-template-columns:1fr 1fr}.week{grid-template-columns:repeat(5,minmax(260px,1fr))}}
+@media(max-width:700px){.shell{padding:13px}.top{flex-direction:column;align-items:flex-start}.actions{width:100%;display:grid;grid-template-columns:1fr 1fr}.heroGrid{grid-template-columns:1fr}.toolbar{align-items:stretch}.weekNav{justify-content:space-between}.week{scroll-snap-type:x proximity;grid-template-columns:repeat(5,82vw)}.day{scroll-snap-align:center;min-height:360px}.form{grid-template-columns:1fr}.field.wide{grid-column:auto}.btn,.input,select{min-height:46px}.modal{align-items:end;padding:0}.modalCard{width:100%;max-width:none;border-radius:22px 22px 0 0;padding-bottom:calc(18px + env(safe-area-inset-bottom))}}
+</style>
+</head>
+<body>
+<main class="shell">
+<header class="top">
+  <div class="brand"><div class="ico">📅</div><div><h1>Stundenplan</h1><p class="sub">Wochenansicht · MacBook & iPad · Push 10 Minuten vorher</p></div></div>
+  <div class="actions"><button class="btn primary" id="addBtn">＋ Stunde</button><button class="btn" id="syncBtn">🔔 Push synchronisieren</button><button class="btn" id="backBtn">← Tools</button></div>
+</header>
+
+<div class="notice" id="importNotice">Der konkrete Stundenplan-Screenshot ist in diesem Chat nicht mehr verfügbar. Das Tool ist fertig vorbereitet; die Stunden werden deshalb nicht geraten. Sobald der Screenshot erneut vorliegt, können die Einträge 1:1 übernommen werden.</div>
+
+<div class="heroGrid">
+  <section class="panel todayCard"><div class="kicker">Heute</div><div class="big" id="todayLabel">–</div><div class="meta" id="todayMeta">Keine Stunde eingetragen.</div></section>
+  <section class="panel nextCard"><div class="kicker">Nächste Stunde</div><div class="big" id="nextLabel">–</div><div class="meta" id="nextMeta">–</div></section>
+</div>
+
+<section class="panel">
+  <div class="toolbar"><div class="weekNav"><button class="btn" id="prevWeek">←</button><div class="weekTitle" id="weekTitle">Diese Woche</div><button class="btn" id="nextWeek">→</button><button class="btn" id="todayWeek">Heute</button></div><div class="status" id="status">✓ Lokal verschlüsselt</div></div>
+  <div class="week" id="week"></div>
+</section>
+</main>
+
+<div class="modal" id="editModal"><div class="modalCard">
+  <h2 id="modalTitle">Stunde</h2>
+  <div class="form">
+    <div class="field"><label>Wochentag</label><select id="day"><option value="1">Montag</option><option value="2">Dienstag</option><option value="3">Mittwoch</option><option value="4">Donnerstag</option><option value="5">Freitag</option></select></div>
+    <div class="field"><label>Klasse</label><select id="classId"></select></div>
+    <div class="field"><label>Beginn</label><input class="input" id="start" type="time" value="08:00"></div>
+    <div class="field"><label>Ende</label><input class="input" id="end" type="time" value="08:45"></div>
+    <div class="field"><label>Fach</label><input class="input" id="subject" list="subjectOptions" value="Englisch"><datalist id="subjectOptions"><option value="Englisch"><option value="Geschichte"></datalist></div>
+    <div class="field"><label>Raum / Hinweis</label><input class="input" id="room" placeholder="optional"></div>
+    <div class="field wide"><label class="check"><input type="checkbox" id="push" checked> Push-Erinnerung genau 10 Minuten vor Stundenbeginn</label></div>
+  </div>
+  <div class="modalActions"><div><button class="btn danger" id="deleteBtn">Löschen</button></div><div><button class="btn" id="cancelBtn">Abbrechen</button> <button class="btn primary" id="saveBtn">Speichern</button></div></div>
+</div></div>
+
+<script src="../classroom-tools-shared.js"></script>
+<script>
+(()=>{'use strict';
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const STORE='timetable-v1';
+const SB='https://fzqxnjhuvgpgovcovosl.supabase.co/rest/v1/rpc/';
+const KEY='sb_publishable_GIyyWoyaQXipaA4S9OuTyQ_cZn7LUgV';
+const EDGE='https://fzqxnjhuvgpgovcovosl.supabase.co/functions/v1/teacher-push';
+const DAYS=['','Montag','Dienstag','Mittwoch','Donnerstag','Freitag'];
+const COLORS=['#b9a6e8','#efa5c7','#84c8b0','#efba7c','#8eb8e8','#d39cc9'];
+let db={version:1,entries:[]},editing=null,weekOffset=0,pushToken=sessionStorage.getItem('kathleenPushAdminToken')||'';
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
+const uid=()=> 'slot-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,7);
+function cls(id){return KathleenClassLists.get(id)}
+function clsName(id){return cls(id)?.name||'Ohne Klasse'}
+function minutes(t){const [h,m]=String(t||'00:00').split(':').map(Number);return h*60+m}
+function todayIsoDow(d=new Date()){const x=d.getDay();return x===0?7:x}
+function mondayFor(offset=0){const d=new Date();d.setHours(12,0,0,0);d.setDate(d.getDate()-(todayIsoDow(d)-1)+offset*7);return d}
+function dateForDay(day,offset=weekOffset){const d=mondayFor(offset);d.setDate(d.getDate()+day-1);return d}
+function fmtDate(d){return d.toLocaleDateString('de-DE',{day:'2-digit',month:'2-digit'})}
+function toIsoLocal(d){return d.toISOString()}
+function setStatus(t){$('#status').textContent=t}
+async function saveLocal(){await KathleenClassLists.secureSet(STORE,db);setStatus('✓ Lokal verschlüsselt')}
+function nextOccurrence(entry){
+ const now=new Date();for(let add=0;add<14;add++){const d=new Date(now);d.setDate(now.getDate()+add);const dow=todayIsoDow(d);if(dow!==Number(entry.day))continue;const [h,m]=entry.start.split(':').map(Number);d.setHours(h,m,0,0);if(d>now)return d}return null
+}
+function reminderFor(entry){
+ const start=nextOccurrence(entry);if(!start)return null;const when=new Date(start.getTime()-10*60000);
+ return{key:entry.id,title:'In 10 Minuten: '+entry.subject,body:clsName(entry.classId)+' · '+entry.start+(entry.room?' · '+entry.room:''),scheduledFor:toIsoLocal(when),url:'./tools/timetable/'}
+}
+async function rpc(name,body){const r=await fetch(SB+name,{method:'POST',headers:{apikey:KEY,'Content-Type':'application/json'},body:JSON.stringify(body||{})});if(!r.ok)throw Error(await r.text());return r.json()}
+async function issuePushToken(){
+ let pass=sessionStorage.getItem('kathleenAdminPass')||'';if(!pass){pass=prompt('Kisten-Adminpasswort:')||'';if(!pass)throw Error('Admin-Passwort fehlt');sessionStorage.setItem('kathleenAdminPass',pass)}
+ const token=await rpc('teacher_push_issue_token',{p_passphrase:pass});if(!token){sessionStorage.removeItem('kathleenAdminPass');throw Error('Admin-Passwort falsch')}pushToken=String(token);sessionStorage.setItem('kathleenPushAdminToken',pushToken);return pushToken
+}
+async function call(action,payload={},retry=true){
+ if(!pushToken)await issuePushToken();const r=await fetch(EDGE,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action,...payload,adminToken:pushToken})});let d={};try{d=await r.json()}catch(e){}
+ if(r.status===401&&retry){pushToken='';sessionStorage.removeItem('kathleenPushAdminToken');await issuePushToken();return call(action,payload,false)}if(!r.ok||d?.ok===false)throw Error(d?.error||('HTTP '+r.status));return d
+}
+async function syncPush(){
+ const entries=db.entries.filter(e=>e.push).map(reminderFor).filter(Boolean);setStatus('🔔 Push wird synchronisiert …');
+ const cfg=await fetch(EDGE,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action:'config'})}).then(r=>r.json()).catch(()=>null);
+ if(!cfg?.configured)throw Error('Push-Backend ist noch nicht vollständig eingerichtet.');
+ const res=await call('sync_timetable',{entries,timezone:'Europe/Berlin'});setStatus('✓ '+(res.synced||entries.length)+' Stunden · Push jeweils 10 Min. vorher')
+}
+function fillClasses(){const all=KathleenClassLists.load();$('#classId').innerHTML='<option value="">–</option>'+all.map(c=>'<option value="'+esc(c.id)+'">'+esc(c.name)+'</option>').join('')}
+function render(){
+ const now=new Date(),dow=todayIsoDow(now),nowMin=now.getHours()*60+now.getMinutes(),today=db.entries.filter(e=>Number(e.day)===dow).sort((a,b)=>minutes(a.start)-minutes(b.start));
+ const current=today.find(e=>minutes(e.start)<=nowMin&&minutes(e.end)>nowMin),next=today.find(e=>minutes(e.start)>nowMin)||db.entries.map(e=>({e,d:nextOccurrence(e)})).filter(x=>x.d).sort((a,b)=>a.d-b.d)[0]?.e;
+ $('#todayLabel').textContent=current?current.subject:(today.length?today.length+' Unterrichtsstunde'+(today.length===1?'':'n'):'Unterrichtsfrei / nicht eingetragen');
+ $('#todayMeta').textContent=current?clsName(current.classId)+' · '+current.start+'–'+current.end+(current.room?' · '+current.room:''):(today.length?today.map(e=>e.start+' '+e.subject+' '+clsName(e.classId)).join(' · '):'Keine Stunde eingetragen.');
+ if(next){const d=nextOccurrence(next);$('#nextLabel').textContent=next.subject+' · '+clsName(next.classId);$('#nextMeta').textContent=DAYS[next.day]+' '+next.start+(d?' · '+d.toLocaleDateString('de-DE'):'')+' · Push '+(next.push?'AN':'AUS')}else{$('#nextLabel').textContent='–';$('#nextMeta').textContent='Keine weitere Stunde eingetragen.'}
+ const mon=mondayFor();const sun=new Date(mon);sun.setDate(mon.getDate()+4);$('#weekTitle').textContent=fmtDate(mon)+' – '+fmtDate(sun);
+ $('#week').innerHTML=[1,2,3,4,5].map(day=>{const date=dateForDay(day),slots=db.entries.filter(e=>Number(e.day)===day).sort((a,b)=>minutes(a.start)-minutes(b.start));return'<section class="day"><div class="dayHead"><b>'+DAYS[day]+'</b><span>'+fmtDate(date)+'</span></div>'+(slots.length?slots.map(e=>{const isCurrent=weekOffset===0&&day===dow&&minutes(e.start)<=nowMin&&minutes(e.end)>nowMin,isNext=weekOffset===0&&next?.id===e.id;return'<article class="slot '+(isCurrent?'current ':'')+(isNext?'next':'')+'" data-slot="'+e.id+'" style="--accent:'+COLORS[Math.abs(hash(e.subject))%COLORS.length]+'"><span class="pushDot">'+(e.push?'🔔':'')+'</span><div class="slotTime">'+esc(e.start)+'–'+esc(e.end)+'</div><div class="slotTitle">'+esc(e.subject)+'</div><div class="slotMeta"><span>'+esc(clsName(e.classId))+'</span>'+(e.room?'<span>'+esc(e.room)+'</span>':'')+'</div></article>'}).join(''):'<div class="emptyDay">Keine Stunde</div>')+'</section>'}).join('');
+ $$('[data-slot]').forEach(x=>x.onclick=()=>openEdit(x.dataset.slot))
+}
+function hash(s){let h=0;for(const ch of String(s||''))h=((h<<5)-h)+ch.charCodeAt(0)|0;return h}
+function openEdit(id=null){
+ editing=id;const e=id?db.entries.find(x=>x.id===id):{id:uid(),day:Math.min(5,Math.max(1,todayIsoDow())),start:'08:00',end:'08:45',classId:'',subject:'Englisch',room:'',push:true};
+ $('#modalTitle').textContent=id?'Stunde bearbeiten':'Stunde hinzufügen';$('#day').value=e.day;$('#start').value=e.start;$('#end').value=e.end;$('#classId').value=e.classId||'';$('#subject').value=e.subject||'';$('#room').value=e.room||'';$('#push').checked=e.push!==false;$('#deleteBtn').style.visibility=id?'visible':'hidden';$('#editModal').classList.add('show')
+}
+async function saveEdit(){
+ const item={id:editing||uid(),day:Number($('#day').value),start:$('#start').value,end:$('#end').value,classId:$('#classId').value,subject:$('#subject').value.trim()||'Unterricht',room:$('#room').value.trim(),push:$('#push').checked};
+ if(!item.start||!item.end||minutes(item.end)<=minutes(item.start))throw Error('Ende muss nach dem Beginn liegen.');const i=db.entries.findIndex(x=>x.id===item.id);if(i>=0)db.entries[i]=item;else db.entries.push(item);await saveLocal();closeModal();render()
+}
+async function deleteEdit(){if(!editing||!confirm('Diese Stunde löschen?'))return;db.entries=db.entries.filter(x=>x.id!==editing);await saveLocal();closeModal();render()}
+function closeModal(){$('#editModal').classList.remove('show');editing=null}
+$('#addBtn').onclick=()=>openEdit();$('#saveBtn').onclick=()=>saveEdit().catch(e=>alert(e.message));$('#deleteBtn').onclick=deleteEdit;$('#cancelBtn').onclick=closeModal;$('#editModal').onclick=e=>{if(e.target.id==='editModal')closeModal()};
+$('#syncBtn').onclick=()=>syncPush().catch(e=>{setStatus('⚠ '+e.message);alert(e.message)});$('#backBtn').onclick=()=>location.href='../../#tools';
+$('#prevWeek').onclick=()=>{weekOffset--;render()};$('#nextWeek').onclick=()=>{weekOffset++;render()};$('#todayWeek').onclick=()=>{weekOffset=0;render()};
+(async()=>{await KathleenClassLists.requireUnlock();db=await KathleenClassLists.secureGet(STORE,{version:1,entries:[]});if(!Array.isArray(db.entries))db={version:1,entries:[]};fillClasses();render()})().catch(e=>{console.error(e);setStatus('⚠ '+(e.message||'Fehler'))});
+})();
+</script>
+</body>
+</html>
