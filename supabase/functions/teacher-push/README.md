@@ -21,7 +21,8 @@ Den **Public Key** und **Private Key** getrennt aufbewahren. Den Private Key nie
 ```bash
 supabase secrets set VAPID_PUBLIC_KEY="DEIN_PUBLIC_KEY"
 supabase secrets set VAPID_PRIVATE_KEY="DEIN_PRIVATE_KEY"
-supabase secrets set VAPID_SUBJECT="mailto:DEINE_MAILADRESSE"
+# optional: eigener VAPID-Kontakt; ohne Angabe wird die Kisten-URL verwendet
+supabase secrets set VAPID_SUBJECT="https://sessioncrewadmin.github.io/Kathleens_magische_Kiste/"
 ```
 
 `SUPABASE_URL` und `SUPABASE_SERVICE_ROLE_KEY` werden von Supabase Edge Functions automatisch bereitgestellt.
