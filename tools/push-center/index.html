@@ -121,11 +121,12 @@ function standalone(){return matchMedia('(display-mode: standalone)').matches||n
 
 async function refreshDeviceState(){
  const supported='Notification'in window&&'serviceWorker'in navigator&&'PushManager'in window;
+ const permission=('Notification'in window)?Notification.permission:'unsupported';
  $('#supportText').textContent=supported?'unterstützt':'nicht unterstützt';$('#supportCard').className='statusCard '+(supported?'ok':'warn');
- $('#permissionText').textContent=('Notification'in window)?Notification.permission:'nicht verfügbar';$('#permissionCard').className='statusCard '+(Notification.permission==='granted'?'ok':'warn');
+ $('#permissionText').textContent=permission==='unsupported'?'nicht verfügbar':permission;$('#permissionCard').className='statusCard '+(permission==='granted'?'ok':'warn');
  let sub=null;try{sub=supported?await currentSub():null}catch(e){}
  $('#subscriptionText').textContent=sub?'registriert':'nicht registriert';$('#subscriptionCard').className='statusCard '+(sub?'ok':'warn');
- $('#disableBtn').disabled=!sub;$('#localTestBtn').disabled=Notification.permission!=='granted';$('#pushTestBtn').disabled=!sub;
+ $('#disableBtn').disabled=!sub;$('#localTestBtn').disabled=permission!=='granted';$('#pushTestBtn').disabled=!sub;
  if(/iPad|iPhone|iPod/.test(navigator.userAgent)&&!standalone())notice('#deviceNotice','Auf iPhone/iPad die Kiste zuerst über Safari zum Home-Bildschirm hinzufügen. Web Push steht dort nur für die installierte Web-App zur Verfügung.');
  return sub
 }
@@ -154,7 +155,22 @@ function renderStatus(){
  $('#reminderList').innerHTML=reminders.length?reminders.map(r=>'<div class="item"><div><b>'+esc(r.title)+'</b><small>'+fmtDate(r.scheduled_for)+' · '+recurrenceLabel(r.recurrence)+(r.body?' · '+esc(r.body):'')+'</small></div><button class="btn danger" data-cancel="'+r.id+'">Löschen</button></div>').join(''):'<div class="empty">Keine aktiven Erinnerungen.</div>';
  $$('[data-cancel]').forEach(b=>b.onclick=()=>cancelReminder(b.dataset.cancel))
 }
-async function loadStatus(){try{status=await call('status');renderStatus();if(!status.configured)notice('#deviceNotice','Backend erreichbar, aber VAPID-Schlüssel fehlen noch.')}catch(e){$('#deviceList').innerHTML='<div class="empty">Push-Backend noch nicht erreichbar.</div>';$('#reminderList').innerHTML='<div class="empty">Backend-Setup noch ausstehend.</div>';notice('#deviceNotice','Für echte Push-Nachrichten muss das V23.4 Supabase-Setup einmalig ausgeführt und die Edge Function deployed werden.')}}
+async function loadStatus(){
+ try{
+   const cfg=await call('config',{},false);
+   if(!cfg?.configured){
+     $('#deviceList').innerHTML='<div class="empty">Push-Backend ist erreichbar, VAPID ist aber noch nicht konfiguriert.</div>';
+     $('#reminderList').innerHTML='<div class="empty">Nach dem VAPID-Setup können Erinnerungen geplant werden.</div>';
+     notice('#deviceNotice','Backend erreichbar, aber VAPID-Schlüssel fehlen noch.');
+     return
+   }
+   status=await call('status');renderStatus()
+ }catch(e){
+   $('#deviceList').innerHTML='<div class="empty">Push-Backend noch nicht erreichbar.</div>';
+   $('#reminderList').innerHTML='<div class="empty">Backend-Setup noch ausstehend.</div>';
+   notice('#deviceNotice','Für echte Push-Nachrichten muss das V23.4 Supabase-Setup einmalig ausgeführt und die Edge Function deployed werden.')
+ }
+}
 async function refreshAll(){await refreshDeviceState();await loadStatus()}
 function err(e,target='#deviceNotice'){notice(target,e.message||String(e),'bad')}
 
