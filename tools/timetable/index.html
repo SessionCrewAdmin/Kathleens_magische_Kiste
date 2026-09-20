@@ -19,7 +19,7 @@
   <div class="actions"><button class="btn primary" id="addBtn">＋ Stunde</button><button class="btn" id="syncBtn">🔔 Push synchronisieren</button><button class="btn" id="backBtn">← Tools</button></div>
 </header>
 
-<div class="notice" id="importNotice">Der konkrete Stundenplan-Screenshot ist in diesem Chat nicht mehr verfügbar. Das Tool ist fertig vorbereitet; die Stunden werden deshalb nicht geraten. Sobald der Screenshot erneut vorliegt, können die Einträge 1:1 übernommen werden.</div>
+<div class="notice ok" id="importNotice">Stundenplan aus deinem Screenshot übernommen. Räume sind Teil jeder Stunde und werden bei Push-Erinnerungen als „Raum A-101“ usw. mitgesendet.</div>
 
 <div class="heroGrid">
   <section class="panel todayCard"><div class="kicker">Heute</div><div class="big" id="todayLabel">–</div><div class="meta" id="todayMeta">Keine Stunde eingetragen.</div></section>
@@ -36,7 +36,7 @@
   <h2 id="modalTitle">Stunde</h2>
   <div class="form">
     <div class="field"><label>Wochentag</label><select id="day"><option value="1">Montag</option><option value="2">Dienstag</option><option value="3">Mittwoch</option><option value="4">Donnerstag</option><option value="5">Freitag</option></select></div>
-    <div class="field"><label>Klasse</label><select id="classId"></select></div>
+    <div class="field"><label>Klasse</label><select id="classId"></select><input class="input" id="className" placeholder="Klasse / Bezeichnung" style="margin-top:6px"></div>
     <div class="field"><label>Beginn</label><input class="input" id="start" type="time" value="08:00"></div>
     <div class="field"><label>Ende</label><input class="input" id="end" type="time" value="08:45"></div>
     <div class="field"><label>Fach</label><input class="input" id="subject" list="subjectOptions" value="Englisch"><datalist id="subjectOptions"><option value="Englisch"><option value="Geschichte"></datalist></div>
@@ -55,12 +55,34 @@ const SB='https://fzqxnjhuvgpgovcovosl.supabase.co/rest/v1/rpc/';
 const KEY='sb_publishable_GIyyWoyaQXipaA4S9OuTyQ_cZn7LUgV';
 const EDGE='https://fzqxnjhuvgpgovcovosl.supabase.co/functions/v1/teacher-push';
 const DAYS=['','Montag','Dienstag','Mittwoch','Donnerstag','Freitag'];
+const DEFAULT_ENTRIES=[
+{id:'mo1',day:1,start:'07:55',end:'08:40',className:'9a',subject:'E',room:'A-101',push:true},
+{id:'mo2',day:1,start:'08:40',end:'09:25',className:'',subject:'Spr.st',room:'',push:true},
+{id:'mo3',day:1,start:'09:45',end:'10:30',className:'7f',subject:'E',room:'R-303',push:true},
+{id:'mo4',day:1,start:'10:30',end:'11:15',className:'RefB',subject:'RefB',room:'',push:true},
+{id:'mo5',day:1,start:'11:35',end:'12:15',className:'9d',subject:'G',room:'A-106',push:true},
+{id:'mo6',day:1,start:'12:15',end:'13:00',className:'9d',subject:'E',room:'A-106',push:true},
+{id:'mi1',day:3,start:'07:55',end:'08:40',className:'7f',subject:'E',room:'R-303',push:true},
+{id:'mi2',day:3,start:'08:40',end:'09:25',className:'RefB',subject:'RefB',room:'',push:true},
+{id:'mi3',day:3,start:'09:45',end:'10:30',className:'9a',subject:'E',room:'A-101',push:true},
+{id:'mi4',day:3,start:'10:30',end:'11:15',className:'9d',subject:'E',room:'A-106',push:true},
+{id:'mi5',day:3,start:'11:35',end:'12:15',className:'7a',subject:'E',room:'B-211',push:true},
+{id:'do2',day:4,start:'08:40',end:'09:25',className:'7f',subject:'E',room:'R-303',push:true},
+{id:'do3',day:4,start:'09:45',end:'10:30',className:'7a',subject:'E',room:'B-211',push:true},
+{id:'do4',day:4,start:'10:30',end:'11:15',className:'7a',subject:'E',room:'B-211',push:true},
+{id:'do5',day:4,start:'11:35',end:'12:15',className:'10c',subject:'G',room:'C-004',push:true},
+{id:'do6',day:4,start:'12:15',end:'13:00',className:'9d',subject:'G',room:'A-106',push:true},
+{id:'fr3',day:5,start:'09:45',end:'10:30',className:'7f',subject:'E',room:'R-303',push:true},
+{id:'fr4',day:5,start:'10:30',end:'11:15',className:'9d',subject:'E',room:'A-106',push:true},
+{id:'fr5',day:5,start:'11:35',end:'12:15',className:'7a',subject:'E',room:'B-211',push:true},
+{id:'fr6',day:5,start:'12:15',end:'13:00',className:'9a',subject:'E',room:'A-101',push:true}
+];
 const COLORS=['#b9a6e8','#efa5c7','#84c8b0','#efba7c','#8eb8e8','#d39cc9'];
 let db={version:1,entries:[]},editing=null,weekOffset=0,pushToken=sessionStorage.getItem('kathleenPushAdminToken')||'';
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
 const uid=()=> 'slot-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,7);
 function cls(id){return KathleenClassLists.get(id)}
-function clsName(id){return cls(id)?.name||'Ohne Klasse'}
+function clsName(id,fallback=''){return cls(id)?.name||String(fallback||'').trim()||'Ohne Klasse'}
 function minutes(t){const [h,m]=String(t||'00:00').split(':').map(Number);return h*60+m}
 function todayIsoDow(d=new Date()){const x=d.getDay();return x===0?7:x}
 function mondayFor(offset=0){const d=new Date();d.setHours(12,0,0,0);d.setDate(d.getDate()-(todayIsoDow(d)-1)+offset*7);return d}
@@ -74,7 +96,7 @@ function nextOccurrence(entry){
 }
 function reminderFor(entry){
  const start=nextOccurrence(entry);if(!start)return null;const when=new Date(start.getTime()-10*60000);
- return{key:entry.id,title:'In 10 Minuten: '+entry.subject,body:clsName(entry.classId)+' · '+entry.start+(entry.room?' · '+entry.room:''),scheduledFor:toIsoLocal(when),url:'./tools/timetable/'}
+ return{key:entry.id,title:'In 10 Minuten: '+entry.subject,body:clsName(entry.classId,entry.className)+' · '+entry.start+(entry.room?' · Raum '+entry.room:''),scheduledFor:toIsoLocal(when),url:'./tools/timetable/'}
 }
 async function rpc(name,body){const r=await fetch(SB+name,{method:'POST',headers:{apikey:KEY,'Content-Type':'application/json'},body:JSON.stringify(body||{})});if(!r.ok)throw Error(await r.text());return r.json()}
 async function issuePushToken(){
@@ -96,27 +118,34 @@ function render(){
  const now=new Date(),dow=todayIsoDow(now),nowMin=now.getHours()*60+now.getMinutes(),today=db.entries.filter(e=>Number(e.day)===dow).sort((a,b)=>minutes(a.start)-minutes(b.start));
  const current=today.find(e=>minutes(e.start)<=nowMin&&minutes(e.end)>nowMin),next=today.find(e=>minutes(e.start)>nowMin)||db.entries.map(e=>({e,d:nextOccurrence(e)})).filter(x=>x.d).sort((a,b)=>a.d-b.d)[0]?.e;
  $('#todayLabel').textContent=current?current.subject:(today.length?today.length+' Unterrichtsstunde'+(today.length===1?'':'n'):'Unterrichtsfrei / nicht eingetragen');
- $('#todayMeta').textContent=current?clsName(current.classId)+' · '+current.start+'–'+current.end+(current.room?' · '+current.room:''):(today.length?today.map(e=>e.start+' '+e.subject+' '+clsName(e.classId)).join(' · '):'Keine Stunde eingetragen.');
- if(next){const d=nextOccurrence(next);$('#nextLabel').textContent=next.subject+' · '+clsName(next.classId);$('#nextMeta').textContent=DAYS[next.day]+' '+next.start+(d?' · '+d.toLocaleDateString('de-DE'):'')+' · Push '+(next.push?'AN':'AUS')}else{$('#nextLabel').textContent='–';$('#nextMeta').textContent='Keine weitere Stunde eingetragen.'}
+ $('#todayMeta').textContent=current?clsName(current.classId,current.className)+' · '+current.start+'–'+current.end+(current.room?' · '+current.room:''):(today.length?today.map(e=>e.start+' '+e.subject+' '+clsName(e.classId,e.className)).join(' · '):'Keine Stunde eingetragen.');
+ if(next){const d=nextOccurrence(next);$('#nextLabel').textContent=next.subject+' · '+clsName(next.classId,next.className);$('#nextMeta').textContent=DAYS[next.day]+' '+next.start+(d?' · '+d.toLocaleDateString('de-DE'):'')+' · Push '+(next.push?'AN':'AUS')}else{$('#nextLabel').textContent='–';$('#nextMeta').textContent='Keine weitere Stunde eingetragen.'}
  const mon=mondayFor();const sun=new Date(mon);sun.setDate(mon.getDate()+4);$('#weekTitle').textContent=fmtDate(mon)+' – '+fmtDate(sun);
- $('#week').innerHTML=[1,2,3,4,5].map(day=>{const date=dateForDay(day),slots=db.entries.filter(e=>Number(e.day)===day).sort((a,b)=>minutes(a.start)-minutes(b.start));return'<section class="day"><div class="dayHead"><b>'+DAYS[day]+'</b><span>'+fmtDate(date)+'</span></div>'+(slots.length?slots.map(e=>{const isCurrent=weekOffset===0&&day===dow&&minutes(e.start)<=nowMin&&minutes(e.end)>nowMin,isNext=weekOffset===0&&next?.id===e.id;return'<article class="slot '+(isCurrent?'current ':'')+(isNext?'next':'')+'" data-slot="'+e.id+'" style="--accent:'+COLORS[Math.abs(hash(e.subject))%COLORS.length]+'"><span class="pushDot">'+(e.push?'🔔':'')+'</span><div class="slotTime">'+esc(e.start)+'–'+esc(e.end)+'</div><div class="slotTitle">'+esc(e.subject)+'</div><div class="slotMeta"><span>'+esc(clsName(e.classId))+'</span>'+(e.room?'<span>'+esc(e.room)+'</span>':'')+'</div></article>'}).join(''):'<div class="emptyDay">Keine Stunde</div>')+'</section>'}).join('');
+ $('#week').innerHTML=[1,2,3,4,5].map(day=>{const date=dateForDay(day),slots=db.entries.filter(e=>Number(e.day)===day).sort((a,b)=>minutes(a.start)-minutes(b.start));return'<section class="day"><div class="dayHead"><b>'+DAYS[day]+'</b><span>'+fmtDate(date)+'</span></div>'+(slots.length?slots.map(e=>{const isCurrent=weekOffset===0&&day===dow&&minutes(e.start)<=nowMin&&minutes(e.end)>nowMin,isNext=weekOffset===0&&next?.id===e.id;return'<article class="slot '+(isCurrent?'current ':'')+(isNext?'next':'')+'" data-slot="'+e.id+'" style="--accent:'+COLORS[Math.abs(hash(e.subject))%COLORS.length]+'"><span class="pushDot">'+(e.push?'🔔':'')+'</span><div class="slotTime">'+esc(e.start)+'–'+esc(e.end)+'</div><div class="slotTitle">'+esc(e.subject)+'</div><div class="slotMeta"><span>'+esc(clsName(e.classId,e.className))+'</span>'+(e.room?'<span>'+esc(e.room)+'</span>':'')+'</div></article>'}).join(''):'<div class="emptyDay">Keine Stunde</div>')+'</section>'}).join('');
  $$('[data-slot]').forEach(x=>x.onclick=()=>openEdit(x.dataset.slot))
 }
 function hash(s){let h=0;for(const ch of String(s||''))h=((h<<5)-h)+ch.charCodeAt(0)|0;return h}
 function openEdit(id=null){
  editing=id;const e=id?db.entries.find(x=>x.id===id):{id:uid(),day:Math.min(5,Math.max(1,todayIsoDow())),start:'08:00',end:'08:45',classId:'',subject:'Englisch',room:'',push:true};
- $('#modalTitle').textContent=id?'Stunde bearbeiten':'Stunde hinzufügen';$('#day').value=e.day;$('#start').value=e.start;$('#end').value=e.end;$('#classId').value=e.classId||'';$('#subject').value=e.subject||'';$('#room').value=e.room||'';$('#push').checked=e.push!==false;$('#deleteBtn').style.visibility=id?'visible':'hidden';$('#editModal').classList.add('show')
+ $('#modalTitle').textContent=id?'Stunde bearbeiten':'Stunde hinzufügen';$('#day').value=e.day;$('#start').value=e.start;$('#end').value=e.end;$('#classId').value=e.classId||'';$('#className').value=e.className||cls(e.classId)?.name||'';$('#subject').value=e.subject||'';$('#room').value=e.room||'';$('#push').checked=e.push!==false;$('#deleteBtn').style.visibility=id?'visible':'hidden';$('#editModal').classList.add('show')
 }
 async function saveEdit(){
- const item={id:editing||uid(),day:Number($('#day').value),start:$('#start').value,end:$('#end').value,classId:$('#classId').value,subject:$('#subject').value.trim()||'Unterricht',room:$('#room').value.trim(),push:$('#push').checked};
+ const selectedClass=$('#classId').value,selectedObj=cls(selectedClass);const item={id:editing||uid(),day:Number($('#day').value),start:$('#start').value,end:$('#end').value,classId:selectedClass,className:($('#className').value.trim()||selectedObj?.name||''),subject:$('#subject').value.trim()||'Unterricht',room:$('#room').value.trim(),push:$('#push').checked};
  if(!item.start||!item.end||minutes(item.end)<=minutes(item.start))throw Error('Ende muss nach dem Beginn liegen.');const i=db.entries.findIndex(x=>x.id===item.id);if(i>=0)db.entries[i]=item;else db.entries.push(item);await saveLocal();closeModal();render()
 }
 async function deleteEdit(){if(!editing||!confirm('Diese Stunde löschen?'))return;db.entries=db.entries.filter(x=>x.id!==editing);await saveLocal();closeModal();render()}
 function closeModal(){$('#editModal').classList.remove('show');editing=null}
+$('#classId').onchange=()=>{const x=cls($('#classId').value);if(x)$('#className').value=x.name};
 $('#addBtn').onclick=()=>openEdit();$('#saveBtn').onclick=()=>saveEdit().catch(e=>alert(e.message));$('#deleteBtn').onclick=deleteEdit;$('#cancelBtn').onclick=closeModal;$('#editModal').onclick=e=>{if(e.target.id==='editModal')closeModal()};
 $('#syncBtn').onclick=()=>syncPush().catch(e=>{setStatus('⚠ '+e.message);alert(e.message)});$('#backBtn').onclick=()=>location.href='../../#tools';
 $('#prevWeek').onclick=()=>{weekOffset--;render()};$('#nextWeek').onclick=()=>{weekOffset++;render()};$('#todayWeek').onclick=()=>{weekOffset=0;render()};
-(async()=>{await KathleenClassLists.requireUnlock();db=await KathleenClassLists.secureGet(STORE,{version:1,entries:[]});if(!Array.isArray(db.entries))db={version:1,entries:[]};fillClasses();render()})().catch(e=>{console.error(e);setStatus('⚠ '+(e.message||'Fehler'))});
+(async()=>{await KathleenClassLists.requireUnlock();db=await KathleenClassLists.secureGet(STORE,{version:1,entries:[]});if(!Array.isArray(db.entries))db={version:1,entries:[]};
+ if(db.entries.length===0){
+   const all=KathleenClassLists.load();
+   db.entries=DEFAULT_ENTRIES.map(e=>{const hit=all.find(c=>c.name.toLocaleLowerCase('de-DE')===String(e.className||'').toLocaleLowerCase('de-DE'));return{...e,classId:hit?.id||''}});
+   await saveLocal();
+ }
+ fillClasses();render()})().catch(e=>{console.error(e);setStatus('⚠ '+(e.message||'Fehler'))});
 })();
 </script>
 </body>
