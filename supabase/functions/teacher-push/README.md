@@ -32,7 +32,7 @@ supabase secrets set VAPID_SUBJECT="mailto:DEINE_MAILADRESSE"
 supabase functions deploy teacher-push --no-verify-jwt
 ```
 
-`--no-verify-jwt` ist hier beabsichtigt: Die Aktionen zum Registrieren, Senden und Planen prüfen zusätzlich das Kisten-Adminpasswort. Nur `config` und der idempotente Cron-Lauf `run_due` sind ohne Adminpasswort erreichbar.
+`--no-verify-jwt` ist hier beabsichtigt: Die Aktionen zum Registrieren, Senden und Planen verwenden ein kurzlebiges Push-Admin-Token. Dieses wird nach Prüfung des Kisten-Adminpassworts über die SQL-RPC `teacher_push_issue_token` ausgestellt; das Adminpasswort wird nicht an die Edge Function gesendet. Nur `config` und der idempotente Cron-Lauf `run_due` sind ohne Adminpasswort erreichbar.
 
 ## 5. In Kathleens Kiste
 **Push Center** öffnen → **Benachrichtigungen aktivieren** → Gerät registrieren → **Test-Push senden**.
