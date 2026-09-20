@@ -35,16 +35,14 @@
 .linearKeyGrid{display:grid;gap:6px}
 .linearKeyRow{display:grid;grid-template-columns:55px 1fr auto;align-items:center;gap:7px;border:1px solid #eee4ed;border-radius:10px;padding:7px 8px;background:#fff}
 .linearKeyRow b{font-size:10px}.linearKeyRow span{font-size:9px;color:var(--muted)}.linearKeyRow strong{font-size:10px}
-.homeworkControls{display:flex;gap:8px;align-items:end;flex-wrap:wrap;margin-bottom:12px}.homeworkControls .field{min-width:190px}
-.hwTable{width:100%;border-collapse:separate;border-spacing:0}.hwTable th,.hwTable td{border-bottom:1px solid #f0e7ee;padding:9px;text-align:left}.hwTable th{font-size:8px;text-transform:uppercase;color:var(--muted);letter-spacing:.06em}.hwCount{display:inline-grid;place-items:center;min-width:38px;height:32px;border-radius:10px;background:#fff2dc;color:#926a32;font-weight:1000}.hwActions{display:flex;gap:5px}.hwActions .btn{min-height:34px;padding:6px 10px}
 .resitNote{margin:8px 0 0;padding:8px 10px;border-radius:11px;background:#fff8e9;border:1px solid #f1dfba;color:#8c682f;font-size:9px;font-weight:800}
 .classbookKey{font-size:7px;color:#9b879d;font-weight:850}
 @media(max-width:1050px){.setup{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:760px){.setup{grid-template-columns:1fr 1fr}.field.wide{grid-column:span 2}.subjectBar,.homeworkControls{align-items:stretch}.subjectBar .field,.homeworkControls .field{min-width:0;flex:1 1 160px}.hwTable{font-size:11px}.hwActions .btn{min-width:42px}}
-@media(pointer:coarse){.btn,.input,select,.gradeSelect,.trendSelect{min-height:46px}.score{min-height:42px}.flagToggle{min-width:40px;height:38px}.hwActions .btn{min-height:42px}}
+@media(max-width:760px){.setup{grid-template-columns:1fr 1fr}.field.wide{grid-column:span 2}.subjectBar{align-items:stretch}.subjectBar .field{min-width:0;flex:1 1 160px}}
+@media(pointer:coarse){.btn,.input,select,.gradeSelect,.trendSelect{min-height:46px}.score{min-height:42px}.flagToggle{min-width:40px;height:38px}}
 
-</style></head><body><main class="shell"><header class="top"><div class="brand"><div class="ico">📝</div><div><h1>Schulaufgaben- &amp; Notenrechner</h1><p class="sub">Notenzentrale 23.5 · Schulaufgaben, mündliche Leistungen, Fächer und Hausaufgaben sicher an einem Ort. · V23.5</p></div></div><div class="row topActions"><span class="saveState" id="saveState" data-state="saved">✓ Gespeichert</span><button class="btn compact" id="undoBtn" title="Rückgängig · Strg/Cmd+Z">↶</button><button class="btn compact" id="redoBtn" title="Wiederholen · Strg/Cmd+Shift+Z">↷</button><button class="btn" id="duplicateBtn">⧉ Nachschrift</button><button class="btn" id="saveBtn">💾 Speichern</button><button class="btn" id="printBtn">🖨 Drucken / PDF</button><button class="btn" id="lockBtn">🔒 Sperren</button><button class="btn" id="backBtn">← Tools</button></div></header>
-<div class="toolbar"><div class="tabs"><button class="btn tab active" data-view="assessment">Aktuelle Leistung</button><button class="btn tab" data-view="archive">Leistungen</button><button class="btn tab" data-view="classbook">Klassennotenbogen</button><button class="btn tab" data-view="students">Schülernotenbogen</button><button class="btn tab" data-view="homework">Hausaufgaben</button></div><button class="btn primary" id="newAssessment">＋ Neue Leistung</button></div>
+</style></head><body><main class="shell"><header class="top"><div class="brand"><div class="ico">📝</div><div><h1>Schulaufgaben- &amp; Notenrechner</h1><p class="sub">Notenzentrale 23.5 · Schulaufgaben, mündliche Leistungen und Fächer sicher an einem Ort. · V23.5</p></div></div><div class="row topActions"><span class="saveState" id="saveState" data-state="saved">✓ Gespeichert</span><button class="btn compact" id="undoBtn" title="Rückgängig · Strg/Cmd+Z">↶</button><button class="btn compact" id="redoBtn" title="Wiederholen · Strg/Cmd+Shift+Z">↷</button><button class="btn" id="duplicateBtn">⧉ Nachschrift</button><button class="btn" id="saveBtn">💾 Speichern</button><button class="btn" id="printBtn">🖨 Drucken / PDF</button><button class="btn" id="lockBtn">🔒 Sperren</button><button class="btn" id="backBtn">← Tools</button></div></header>
+<div class="toolbar"><div class="tabs"><button class="btn tab active" data-view="assessment">Aktuelle Leistung</button><button class="btn tab" data-view="archive">Leistungen</button><button class="btn tab" data-view="classbook">Klassennotenbogen</button><button class="btn tab" data-view="students">Schülernotenbogen</button></div><button class="btn primary" id="newAssessment">＋ Neue Leistung</button></div>
 <section class="view active" id="assessmentView"><div class="panel setup">
 <div class="field"><label>Klasse</label><select id="classSelect"></select></div>
 <div class="field"><label>Fach</label><input class="input" id="subject" list="subjectOptions" value="Englisch"><datalist id="subjectOptions"><option value="Englisch"><option value="Geschichte"></datalist></div>
@@ -67,7 +65,6 @@
 <section class="view" id="archiveView"><div class="panel"><h2>Gespeicherte Leistungen</h2><div class="archive" id="archive"></div></div></section>
 <section class="view" id="classbookView"><div class="panel"><h2>Klassennotenbogen</h2><div class="subjectBar"><div class="field"><label>Fach</label><select id="bookSubject"></select></div><label class="hint">Große LN <input class="score" id="majorRatio" type="number" min=".1" step=".5" value="2"></label><label class="hint">Weitere LN <input class="score" id="minorRatio" type="number" min=".1" step=".5" value="1"></label></div><p class="hint">Fächer werden getrennt geführt. Nachschriften ersetzen für den jeweiligen Schüler die ursprüngliche Leistung und erzeugen keine zusätzliche Gewichtung.</p><div class="tableWrap" id="classbook"></div></div></section>
 <section class="view" id="studentsView"><div class="panel"><h2>Schülernotenbogen</h2><div class="subjectBar"><div class="field"><label>Fach</label><select id="studentSubject"></select></div></div><div class="studentCards" id="studentCards"></div></div></section>
-<section class="view" id="homeworkView"><div class="panel"><h2>Vergessene Hausaufgaben</h2><p class="hint">Strichliste pro Klasse und Fach. Jeder Eintrag speichert automatisch das Datum.</p><div class="homeworkControls"><div class="field"><label>Klasse</label><select id="homeworkClass"></select></div><div class="field"><label>Fach</label><input class="input" id="homeworkSubject" list="subjectOptions" value="Englisch"></div></div><div class="tableWrap" id="homeworkTable"></div></div></section>
 </main>
 <script src="../classroom-tools-shared.js"></script><script src="../presentation-mode.js"></script><script>
 (()=>{'use strict';
@@ -160,7 +157,7 @@ function syncInputs(render=true){
 }
 function fillClasses(){
  const all=classes(),opts=all.map(c=>'<option value="'+esc(c.id)+'">'+esc(c.name)+' · '+c.students.length+'</option>').join('');
- $('#classSelect').innerHTML=opts;$('#homeworkClass').innerHTML=opts;if(current&&all.some(c=>c.id===current.classId)){$('#classSelect').value=current.classId;$('#homeworkClass').value=current.classId}
+ $('#classSelect').innerHTML=opts;if(current&&all.some(c=>c.id===current.classId)){$('#classSelect').value=current.classId}
 }
 function subjectsForClass(classId){
  const out=new Map;['Englisch','Geschichte',current?.subject].filter(Boolean).forEach(s=>out.set(normalizeSubject(s).toLowerCase(),normalizeSubject(s)));
@@ -169,7 +166,6 @@ function subjectsForClass(classId){
 function fillSubjectSelectors(){
  const cid=$('#classSelect').value||current?.classId,subs=subjectsForClass(cid),preferred=normalizeSubject(current?.subject||subs[0]||'Englisch');
  for(const id of ['bookSubject','studentSubject']){const el=$('#'+id),old=el.value||preferred;el.innerHTML=subs.map(s=>'<option>'+esc(s)+'</option>').join('');el.value=subs.find(s=>subjectEquals(s,old))||subs.find(s=>subjectEquals(s,preferred))||subs[0]||''}
- if(!$('#homeworkSubject').value)$('#homeworkSubject').value=preferred
 }
 function applyPreset(){checkpoint();current.keyPreset=$('#keyPreset').value;if(current.keyPreset==='linear')current.thresholds=linearThresholds(current.cutoff);renderAll();scheduleSave()}
 function reconcileStudents(){
@@ -239,7 +235,7 @@ function renderWarnings(){
  const box=$('#gradeWarnings');box.innerHTML=msgs.join('<br>');box.classList.toggle('hidden',!msgs.length)
 }
 function renderAll(){
- if(!current)return;$('#assessmentView').classList.toggle('directGradeMode',current.entryMode==='grade');renderTasks();renderThresholds();renderTable();renderStats();renderWarnings();renderArchive();fillSubjectSelectors();renderClassbook();renderStudents();renderHomework();updateUndoButtons()
+ if(!current)return;$('#assessmentView').classList.toggle('directGradeMode',current.entryMode==='grade');renderTasks();renderThresholds();renderTable();renderStats();renderWarnings();renderArchive();fillSubjectSelectors();renderClassbook();renderStudents();updateUndoButtons()
 }
 
 function renderArchive(){
@@ -268,14 +264,7 @@ function renderStudents(){
  const c=selectedClass()||classes()[0];if(!c){$('#studentCards').innerHTML='<div class="empty">Keine Klasse.</div>';return}const subject=$('#studentSubject').value||current.subject,as=filteredBaseAssessments(subject),maj=Number($('#majorRatio').value)||2,min=Number($('#minorRatio').value)||1;
  $('#studentCards').innerHTML=c.students.map(name=>{const vals=as.map(a=>({a,...effectiveGrade(a,name)})).filter(x=>x.grade!=null),ga=weightedAvg(vals.filter(x=>kindGroup(x.a.kind)==='major').map(x=>({grade:x.grade,weight:Number(x.a.weight)||1}))),ka=weightedAvg(vals.filter(x=>kindGroup(x.a.kind)==='minor').map(x=>({grade:x.grade,weight:Number(x.a.weight)||1}))),avg=ga!=null&&ka!=null?(ga*maj+ka*min)/(maj+min):ga??ka;return'<article class="studentCard"><h3>'+esc(name)+'</h3><div class="miniGrades">'+vals.map(x=>'<span title="'+esc(x.a.title)+(x.resit?' · Nachschrift':'')+'">'+gradeCell(x.grade,x.trend)+'</span>').join('')+'</div><p class="hint">'+esc(subject)+' · gewichteter Stand: <b>'+fmt(avg,2)+'</b></p></article>'}).join('')
 }
-function homeworkKey(classId,subject){return classId+'::'+normalizeSubject(subject).toLocaleLowerCase('de-DE')}
-function renderHomework(){
- const cid=$('#homeworkClass').value||current.classId,c=KathleenClassLists.get(cid)||selectedClass();if(!c){$('#homeworkTable').innerHTML='<div class="empty">Keine Klasse.</div>';return}const subject=normalizeSubject($('#homeworkSubject').value||current.subject),key=homeworkKey(c.id,subject),rec=db.homework[key]||{};
- $('#homeworkTable').innerHTML='<table class="hwTable"><thead><tr><th>Schüler</th><th>Striche</th><th>Letzter Eintrag</th><th>Aktion</th></tr></thead><tbody>'+c.students.map((name,i)=>{const arr=Array.isArray(rec[name])?rec[name]:[];return'<tr><td><b>'+esc(name)+'</b></td><td><span class="hwCount">'+arr.length+'</span></td><td>'+(arr.length?esc(arr[arr.length-1]):'–')+'</td><td><div class="hwActions"><button class="btn" data-hw-add="'+i+'">＋1</button><button class="btn" data-hw-sub="'+i+'" '+(!arr.length?'disabled':'')+'>−1</button><button class="btn danger" data-hw-reset="'+i+'" '+(!arr.length?'disabled':'')+'>Reset</button></div></td></tr>'}).join('')+'</tbody></table>';
- const touch=(i,action)=>{checkpoint();db.homework[key]=db.homework[key]||{};const name=c.students[i],arr=Array.isArray(db.homework[key][name])?[...db.homework[key][name]]:[];if(action==='add')arr.push(new Date().toLocaleDateString('de-DE'));if(action==='sub')arr.pop();if(action==='reset')arr.length=0;db.homework[key][name]=arr;renderHomework();scheduleSave()};
- $$('[data-hw-add]').forEach(b=>b.onclick=()=>touch(+b.dataset.hwAdd,'add'));$$('[data-hw-sub]').forEach(b=>b.onclick=()=>touch(+b.dataset.hwSub,'sub'));$$('[data-hw-reset]').forEach(b=>b.onclick=()=>{if(confirm('Strichliste für diesen Schüler zurücksetzen?'))touch(+b.dataset.hwReset,'reset')})
-}
-function showView(v){$$('.view').forEach(x=>x.classList.toggle('active',x.id===v+'View'));$$('.tab').forEach(x=>x.classList.toggle('active',x.dataset.view===v));if(v==='classbook')renderClassbook();if(v==='students')renderStudents();if(v==='archive')renderArchive();if(v==='homework')renderHomework()}
+function showView(v){$$('.view').forEach(x=>x.classList.toggle('active',x.id===v+'View'));$$('.tab').forEach(x=>x.classList.toggle('active',x.dataset.view===v));if(v==='classbook')renderClassbook();if(v==='students')renderStudents();if(v==='archive')renderArchive()}
 function openDuplicate(source=current){if(!source)return;current=newModel(source);history=[];future=[];fillClasses();syncInputs();showView('assessment');scheduleSave();toast('Nachschrift angelegt · gleicher Schlüssel · keine Zusatzgewichtung')}
 async function newAssessment(){await saveNow(false);current=newModel();history=[];future=[];fillClasses();syncInputs();showView('assessment');scheduleSave()}
 function toast(t){let e=$('#gradeToast');if(!e){e=document.createElement('div');e.id='gradeToast';e.style='position:fixed;left:50%;bottom:22px;transform:translateX(-50%);z-index:22000;background:#684d72;color:#fff;border-radius:99px;padding:10px 14px;font:900 11px Inter,Arial;max-width:calc(100vw - 24px);text-align:center';document.body.appendChild(e)}e.textContent=t;clearTimeout(e._t);e._t=setTimeout(()=>e.remove(),2100)}
@@ -298,7 +287,7 @@ $('#kind').onchange=()=>{checkpoint();current.kind=$('#kind').value;if(['oral','
 $('#entryMode').onchange=()=>{checkpoint();current.entryMode=$('#entryMode').value;renderAll();scheduleSave()};
 $('#pointStep').onchange=()=>{checkpoint();current.pointStep=Number($('#pointStep').value)===1?1:.5;renderAll();scheduleSave()};
 $('#cutoff').onchange=()=>{checkpoint();current.cutoff=Math.max(0,Math.min(49.9,parseNum($('#cutoff').value)??33));if(current.keyPreset==='linear')current.thresholds=linearThresholds(current.cutoff);renderAll();scheduleSave()};
-$('#bookSubject').onchange=renderClassbook;$('#studentSubject').onchange=renderStudents;$('#homeworkClass').onchange=renderHomework;$('#homeworkSubject').addEventListener('change',renderHomework);
+$('#bookSubject').onchange=renderClassbook;$('#studentSubject').onchange=renderStudents;
 document.addEventListener('keydown',e=>{if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='z'){e.preventDefault();e.shiftKey?redo():undo()}else if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='y'){e.preventDefault();redo()}});
 document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='hidden'&&saveTimer)saveNow(false)});window.addEventListener('beforeunload',()=>clearTimeout(saveTimer));
 
