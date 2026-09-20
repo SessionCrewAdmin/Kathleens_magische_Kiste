@@ -5,20 +5,20 @@
 <meta name="theme-color" content="#fff9fc"><title>Sitzplan · Kathleens Kiste</title>
 <style>
 :root{--ink:#4f3d63;--muted:#8d7898;--line:#e8dced;--purple:#7957d5;--purple2:#eee6ff;--pink:#f5b9d2;--mint:#bfe5d4;--blue:#bcd8f5;--wood:#efd0a1;--bg:#fff9fc}
-*{box-sizing:border-box}html,body{margin:0;height:100%;font-family:Inter,ui-rounded,"SF Pro Rounded",Arial,sans-serif;color:var(--ink);background:linear-gradient(180deg,#fffafd,#faf7ff)}
+*{box-sizing:border-box}html,body{margin:0;height:100%;font-family:Inter,ui-rounded,"SF Pro Rounded",Arial,sans-serif;color:var(--ink);background:radial-gradient(circle at 8% 0%,#ffe7f1 0,transparent 28%),radial-gradient(circle at 92% 2%,#ece5ff 0,transparent 29%),linear-gradient(180deg,#fffafd,#fff8fc 54%,#faf8ff)}
 button,input,select{font:inherit}.app{height:100%;display:grid;grid-template-rows:66px 1fr 64px;overflow:hidden}
-.topbar{display:flex;align-items:center;gap:18px;padding:10px 22px;border-bottom:1px solid var(--line);background:#fff;box-shadow:0 4px 18px #6f4d8220;z-index:20}
-.brand{font-weight:950;font-size:21px;white-space:nowrap}.brand small{display:block;font-size:8px;letter-spacing:.12em;color:#8d7898;margin-top:2px}.nav{display:flex;gap:8px}.nav a{padding:10px 14px;border-radius:12px;color:var(--ink);text-decoration:none;font-weight:850;font-size:13px}.nav a.active{background:var(--purple2);color:#5d3cae}.welcome{margin-left:auto;font-family:cursive;color:#8666c6;font-size:18px}
+.topbar{display:flex;align-items:center;gap:18px;padding:10px 22px;border-bottom:1px solid rgba(232,217,230,.9);background:rgba(255,255,255,.9);backdrop-filter:blur(14px);box-shadow:0 7px 26px #704f7b18;z-index:20}
+.brand{font-weight:950;font-size:22px;white-space:nowrap;letter-spacing:-.02em;color:#654768}.brand:before{content:"✦";display:inline-grid;place-items:center;width:36px;height:36px;margin-right:9px;border-radius:12px;background:linear-gradient(145deg,#f3acd0,#bca9e9);color:#fff;box-shadow:0 7px 16px #b980aa32}.brand small{display:block;font-size:8px;letter-spacing:.14em;color:#9b829d;margin:2px 0 0 46px}.nav{display:flex;gap:8px}.nav a{padding:10px 14px;border-radius:12px;color:var(--ink);text-decoration:none;font-weight:850;font-size:13px}.nav a.active{background:var(--purple2);color:#5d3cae}.welcome{margin-left:auto;font-family:cursive;color:#8666c6;font-size:18px}
 .main{display:grid;grid-template-columns:295px minmax(620px,1fr) 315px;gap:12px;padding:12px;min-height:0}
-.side,.right{background:#fff;border:1px solid var(--line);border-radius:18px;padding:12px;overflow:auto}.title{display:flex;align-items:center;gap:12px;margin-bottom:8px}.title .ico{font-size:38px}.title h1{font-size:32px;line-height:1;margin:0}.title p{margin:4px 0 0;color:var(--muted);font-size:12px}
+.side,.right{background:rgba(255,255,255,.9);backdrop-filter:blur(12px);border:1px solid rgba(232,217,230,.95);border-radius:22px;padding:14px;overflow:auto;box-shadow:0 18px 48px rgba(116,76,112,.09)}.title{display:flex;align-items:center;gap:12px;margin-bottom:8px}.title .ico{font-size:38px}.title h1{font-size:32px;line-height:1;margin:0}.title p{margin:4px 0 0;color:var(--muted);font-size:12px}
 .classRow{display:grid;grid-template-columns:1fr 42px;gap:8px;margin:10px 0}.select,.search{height:42px;border:1px solid var(--line);border-radius:12px;background:#fff;padding:0 12px;color:var(--ink);font-weight:800}.gear{border:1px solid var(--line);border-radius:12px;background:#fff;font-size:18px}.search{width:100%;font-weight:600;margin-bottom:8px}
-.roster{display:grid;gap:5px}.student{height:38px;display:flex;align-items:center;gap:9px;padding:0 10px;border:1px solid #eee4f1;border-radius:12px;background:#fff;font-size:13px;font-weight:750}.student .initial{width:31px;height:24px;border-radius:999px;background:#eee7f6;display:grid;place-items:center;font-size:10px;font-weight:950}.student .dot{margin-left:auto;width:9px;height:9px;border-radius:50%}.dot.blue{background:#6aa8ef}.dot.pink{background:#ed78a7}.dot.green{background:#65b68f}.dot.orange{background:#f0a72f}
+.roster{display:grid;gap:6px;min-height:90px;padding:2px;border-radius:14px;transition:.16s}.roster.drop-target{background:#f0e9ff;box-shadow:inset 0 0 0 2px #9d78e6}.student{height:42px;display:flex;align-items:center;gap:9px;padding:0 11px;border:1px solid #eee4f1;border-radius:13px;background:#fff;font-size:13px;font-weight:800;cursor:grab;box-shadow:0 4px 12px #704f7b0d;transition:.14s}.student:hover{transform:translateY(-1px);border-color:#d7c2e4;box-shadow:0 7px 16px #704f7b14}.student:active{cursor:grabbing}.student.seated{opacity:.48;background:#faf7fb}.student.seated:after{content:"sitzt";margin-left:auto;font-size:9px;text-transform:uppercase;letter-spacing:.08em;color:#9b87a0}.student.drag-source{opacity:.35;transform:scale(.98)}.student .initial{width:31px;height:25px;border-radius:999px;background:#eee7f6;display:grid;place-items:center;font-size:10px;font-weight:950}.student .dot{margin-left:auto;width:9px;height:9px;border-radius:50%}.student.seated .dot{display:none}.dot.blue{background:#6aa8ef}.dot.pink{background:#ed78a7}.dot.green{background:#65b68f}.dot.orange{background:#f0a72f}
 .addStudent{margin-top:10px;width:100%;border:0;border-radius:13px;background:linear-gradient(90deg,#d8c0f6,#b999eb);padding:11px;font-weight:900;color:#563a91}
 .workspace{display:grid;grid-template-rows:54px 1fr;min-width:0;min-height:0}.workspaceTop{display:flex;align-items:center;justify-content:flex-end;gap:8px}.pill{border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 14px;font-weight:900;color:#675474}.pill.active{background:var(--purple2);color:#5b3ab3;border-color:#d4c3f6}.freeToggle{display:flex;align-items:center;gap:8px;border:1px solid #cdb8f3;border-radius:999px;padding:7px 10px;background:#fff;font-weight:900;color:#5f43bc}.switch{width:42px;height:23px;border-radius:999px;background:#cfc7d9;padding:3px;transition:.2s}.switch i{display:block;width:17px;height:17px;border-radius:50%;background:#fff;transition:.2s}.freeToggle.on .switch{background:#62b78d}.freeToggle.on .switch i{transform:translateX(19px)}
 .roomWrap{min-height:0;position:relative}.room{position:absolute;inset:0;border:1px solid #ddcedf;border-radius:18px;overflow:hidden;background:linear-gradient(90deg,#efd4ac 1px,transparent 1px),linear-gradient(#efd4ac 1px,transparent 1px),linear-gradient(180deg,#f7dfba,#edc99b);background-size:28px 28px;box-shadow:inset 0 0 50px #fff7}
 .board{position:absolute;left:23%;right:23%;top:12px;height:58px;border:8px solid #b18d65;background:#315840;border-radius:4px;color:#fff;display:grid;place-items:center;font-size:22px;font-weight:900;box-shadow:0 8px 13px #5b3e2a26}.teacher{position:absolute;left:50%;top:82px;transform:translateX(-50%);width:175px;height:58px;background:#d5a66d;border-radius:8px;display:grid;place-items:center;font-size:12px;font-weight:850;box-shadow:0 6px 10px #68452625}.teacher:after{content:"Lehrkraft";background:#fff;padding:5px 8px;border-radius:8px}
 .desk{position:absolute;width:170px;height:95px;transform-origin:center;touch-action:none;user-select:none}.desk.two{width:170px;height:96px}.desk.single{width:92px;height:96px}.desk.four{width:178px;height:150px}.deskShell{position:absolute;inset:12px 6px 8px;background:linear-gradient(180deg,#f7d7a8,#e7bd87);border:1px solid #d0a16b;border-radius:9px;box-shadow:0 7px 12px #76502b20;display:grid;gap:6px;padding:9px}.desk.two .deskShell{grid-template-columns:1fr 1fr}.desk.single .deskShell{grid-template-columns:1fr}.desk.four .deskShell{grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr}
-.seat{border:2px solid #e6d9ee;background:#fff;border-radius:9px;display:grid;place-items:center;font-size:12px;font-weight:900;min-width:0;padding:4px;text-align:center;box-shadow:0 3px 8px #6c4c7920}.seat.empty{color:#b6a7b9;font-weight:700}.desk.selected{outline:3px solid #8d64e7;outline-offset:4px;border-radius:14px}.desk.selected .handle,.desk.selected .moveHint{display:grid}
+.seat{border:2px solid #e6d9ee;background:#fff;border-radius:10px;display:grid;place-items:center;font-size:12px;font-weight:900;min-width:0;padding:4px;text-align:center;box-shadow:0 3px 8px #6c4c7920;cursor:grab;transition:.14s}.seat:not(.empty):hover{border-color:#b99ce2;transform:translateY(-1px)}.seat.empty{color:#b6a7b9;font-weight:700;cursor:default;background:#fffdfd}.seat.drop-target{border-color:#8057d8!important;background:#f1eaff!important;box-shadow:0 0 0 4px #8c69df25,0 5px 12px #6c4c7920!important}.seat.drag-source{opacity:.35}.seat.drop-swap:after{content:"↔";position:absolute;font-size:20px;color:#6f4bc8;background:#fff;border-radius:999px;width:30px;height:30px;display:grid;place-items:center;box-shadow:0 4px 12px #6f4d8220}.desk.selected{outline:3px solid #8d64e7;outline-offset:4px;border-radius:14px}.desk.selected .handle,.desk.selected .moveHint{display:grid}
 .handle{display:none;position:absolute;left:50%;top:-22px;transform:translateX(-50%);width:28px;height:28px;border-radius:50%;background:#8156dd;color:white;place-items:center;font-size:16px;cursor:grab;z-index:5}.moveHint{display:none;position:absolute;right:-22px;top:50%;transform:translateY(-50%);width:28px;height:28px;border-radius:50%;background:#8156dd;color:white;place-items:center;font-size:16px}.desk.dragging{opacity:.88;filter:drop-shadow(0 12px 14px #7558a333);z-index:50}
 .ghost{position:absolute;border:2px dashed #8f66e8;background:#9a79e727;border-radius:12px;pointer-events:none}
 .rightTabs{display:flex;border-bottom:1px solid var(--line);margin:-12px -12px 12px}.rightTabs button{flex:1;border:0;background:#fff;padding:13px 5px;font-weight:850;color:#7d6886}.rightTabs button.active{color:#5634b3;border-bottom:3px solid #7957d5}.section h3{margin:12px 0 8px;font-size:15px}.tableGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.tableBtn{border:1px solid #eee5f1;background:#faf8fd;border-radius:12px;padding:9px 3px;font-size:11px;color:#5d4a66;font-weight:800}.tableBtn b{display:block;font-size:23px;margin-bottom:4px}.tableBtn.active{border:2px solid #8e65e7;background:#f4efff}
@@ -31,10 +31,10 @@ button,input,select{font:inherit}.app{height:100%;display:grid;grid-template-row
 </head>
 <body>
 <div class="app" id="app">
-<header class="topbar"><div class="brand">📦 Kathleens Kiste<small>IDEEN. TOOLS. SCHULE. ♡</small></div><nav class="nav"><a class="active">🪑 Sitzplan</a><a href="../class-lists/">👥 Klassen</a><a href="../classroom-board/">🛠 Whiteboard</a><a href="../../#tools">✨ Tools</a></nav><div class="welcome">Schön, dass du hier bist! ♡</div></header>
+<header class="topbar"><div class="brand">Kathleens Kiste<small>IDEEN. TOOLS. SCHULE. ♡</small></div><nav class="nav"><a class="active">🪑 Sitzplan</a><a href="../class-lists/">👥 Klassen</a><a href="../classroom-board/">🛠 Whiteboard</a><a href="../../#tools">✨ Tools</a></nav><div class="welcome">Schön, dass du hier bist! ♡</div></header>
 <main class="main">
 <aside class="side"><div class="title"><div class="ico">👥</div><div><h1>Sitzplan</h1><p>Einfach. Flexibel. Passt zu deiner Klasse. ♡</p></div></div>
-<div class="classRow"><select class="select" id="classSelect"></select><button class="gear" id="classGear">⚙</button></div><input class="search" id="search" placeholder="⌕  Schüler suchen …"><div class="roster" id="roster"></div><button class="addStudent" id="addStudent">＋ Schüler hinzufügen</button></aside>
+<div class="classRow"><select class="select" id="classSelect"></select><button class="gear" id="classGear">⚙</button></div><input class="search" id="search" placeholder="⌕  Schüler suchen …"><div style="font-size:10px;color:#9a849c;margin:-1px 3px 7px">Schüler auf einen Platz ziehen · zurück in die Liste = Platz leeren</div><div class="roster" id="roster"></div><button class="addStudent" id="addStudent">＋ Schüler hinzufügen</button></aside>
 <section class="workspace"><div class="workspaceTop"><button class="pill active" id="editMode">✎ Bearbeiten</button><button class="pill" id="studentMode">◉ Schüleransicht</button><button class="pill" id="fullscreen">⛶</button><button class="freeToggle on" id="freeToggle">✥ Freies Verschieben: <span id="freeState">Aktiv</span><span class="switch"><i></i></span></button></div>
 <div class="roomWrap"><div class="room" id="room"><div class="board" id="board">Tafel ♡</div><div class="teacher" id="teacher"></div></div></div></section>
 <aside class="right"><div class="rightTabs"><button class="active">Layout</button><button>Optionen</button><button>Notizen</button></div><div class="section"><h3>Tische hinzufügen</h3><div class="tableGrid">
@@ -67,12 +67,12 @@ function clampDesk(d,x,y){const maxX=room.clientWidth-d.offsetWidth,maxY=room.cl
 function makeDesk(o){
  const d=document.createElement('div');d.className='desk '+o.type;d.dataset.id=o.id||uid();d.dataset.type=o.type;d.dataset.r=o.r||0;d.style.left=(o.x??100)+'px';d.style.top=(o.y??160)+'px';applyRotation(d,o.r||0);
  d.innerHTML='<div class="handle" title="Drehen">↻</div><div class="deskShell">'+Array.from({length:seatsFor(o.type)},(_,i)=>'<div class="seat '+((o.names||[])[i]?'':'empty')+'" data-name="'+safe((o.names||[])[i]||'')+'">'+safe((o.names||[])[i]||'Frei')+'</div>').join('')+'</div><div class="moveHint">↔</div>';
- room.appendChild(d);bindDesk(d);return d
+ room.appendChild(d);bindDesk(d);d.querySelectorAll('.seat').forEach(bindSeat);return d
 }
 function selectDesk(d){$$('.desk').forEach(x=>x.classList.toggle('selected',x===d));selected=d}
 function bindDesk(d){
  d.addEventListener('pointerdown',e=>{
-  if(e.target.closest('.handle'))return;
+  if(e.target.closest('.handle')||e.target.closest('.seat'))return;
   selectDesk(d);if(!freeMove)return;
   e.preventDefault();d.setPointerCapture(e.pointerId);const rr=room.getBoundingClientRect();drag={d,pid:e.pointerId,ox:e.clientX-rr.left-parseFloat(d.style.left),oy:e.clientY-rr.top-parseFloat(d.style.top)};d.classList.add('dragging')
  });
@@ -82,6 +82,48 @@ function bindDesk(d){
  h.addEventListener('pointermove',e=>{if(!rot||rot.d!==d)return;const a=Math.atan2(e.clientY-rot.cy,e.clientX-rot.cx);applyRotation(d,rot.start+(a-rot.a)*180/Math.PI)});
  h.addEventListener('pointerup',()=>{rot=null;autoSave()})
 }
+let studentDrag=null;
+function seatedNames(){return new Set($('.seat').map(s=>s.dataset.name).filter(Boolean))}
+function setSeat(seat,name){
+ seat.dataset.name=name||'';seat.textContent=name||'Frei';seat.classList.toggle('empty',!name);seat.draggable=!!name
+}
+function clearDragState(){
+ $('.seat').forEach(s=>s.classList.remove('drop-target','drop-swap','drag-source'));
+ $('.student').forEach(s=>s.classList.remove('drag-source'));
+ $('#roster').classList.remove('drop-target');studentDrag=null
+}
+function dragPayloadFromEvent(e){try{return JSON.parse(e.dataTransfer.getData('application/x-kathleen-student')||'null')}catch(err){return null}}
+function bindSeat(seat){
+ seat.draggable=!!seat.dataset.name;
+ seat.addEventListener('dragstart',e=>{
+  const name=seat.dataset.name;if(!name){e.preventDefault();return}
+  studentDrag={name,from:'seat',seat};seat.classList.add('drag-source');
+  e.dataTransfer.effectAllowed='move';e.dataTransfer.setData('application/x-kathleen-student',JSON.stringify({name,from:'seat'}));e.dataTransfer.setData('text/plain',name)
+ });
+ seat.addEventListener('dragend',()=>clearDragState());
+ seat.addEventListener('dragover',e=>{
+  if(!studentDrag)return;e.preventDefault();e.dataTransfer.dropEffect='move';seat.classList.add('drop-target');seat.classList.toggle('drop-swap',!!seat.dataset.name&&seat.dataset.name!==studentDrag.name)
+ });
+ seat.addEventListener('dragleave',()=>seat.classList.remove('drop-target','drop-swap'));
+ seat.addEventListener('drop',e=>{
+  e.preventDefault();const p=dragPayloadFromEvent(e)||studentDrag;if(!p?.name)return;
+  const targetName=seat.dataset.name||'',sourceSeat=studentDrag?.from==='seat'?studentDrag.seat:null;
+  if(sourceSeat===seat){clearDragState();return}
+  if(studentDrag?.from==='roster'){const existing=$('.seat').find(s=>s!==seat&&s.dataset.name===p.name);if(existing)setSeat(existing,'')}
+  if(sourceSeat)setSeat(sourceSeat,targetName);else if(targetName){/* displaced student becomes unseated */}
+  setSeat(seat,p.name);clearDragState();autoSave();renderRoster();toast(targetName?(sourceSeat?'Plätze getauscht ↔':'Platz übernommen – '+targetName+' ist wieder frei'):'Platz zugewiesen ✓')
+ });
+ seat.addEventListener('dblclick',()=>{if(seat.dataset.name){setSeat(seat,'');autoSave();renderRoster();toast('Platz geleert')}})
+}
+function bindRosterDnD(){
+ const r=$('#roster');
+ r.addEventListener('dragover',e=>{if(!studentDrag)return;e.preventDefault();e.dataTransfer.dropEffect='move';r.classList.add('drop-target')});
+ r.addEventListener('dragleave',e=>{if(!r.contains(e.relatedTarget))r.classList.remove('drop-target')});
+ r.addEventListener('drop',e=>{
+  e.preventDefault();if(studentDrag?.from==='seat'&&studentDrag.seat){setSeat(studentDrag.seat,'');autoSave();renderRoster();toast(studentDrag.name+' zurück in der Liste')}
+  clearDragState()
+ });
+}
 function addDesk(type,x,y){const w=type==='single'?92:type==='four'?178:170,h=type==='four'?150:96;const o={type,x:x??room.clientWidth/2-w/2,y:y??room.clientHeight/2-h/2+40,names:[]};const d=makeDesk(o);selectDesk(d);autoSave()}
 function clearDesks(){$$('.desk').forEach(x=>x.remove());selected=null}
 function defaultLayout(){
@@ -89,10 +131,18 @@ function defaultLayout(){
 }
 function layoutRows(){clearDesks();const W=room.clientWidth;for(let r=0;r<3;r++)for(let c=0;c<3;c++)makeDesk({type:'two',x:70+c*((W-250)/2),y:160+r*145,names:[]});assign(students())}
 function layoutU(){clearDesks();const W=room.clientWidth,H=room.clientHeight;for(let i=0;i<4;i++)makeDesk({type:'two',x:70+i*((W-250)/3),y:150,names:[]});for(let i=0;i<3;i++){makeDesk({type:'two',x:70,y:285+i*130,names:[]});makeDesk({type:'two',x:W-245,y:285+i*130,names:[]})}assign(students())}
-function assign(names){const ss=$$('.seat'),arr=[...names];ss.forEach((s,i)=>{const n=arr[i]||'';s.dataset.name=n;s.textContent=n||'Frei';s.classList.toggle('empty',!n)});autoSave()}
+function assign(names){const ss=$('.seat'),arr=[...names];ss.forEach((s,i)=>setSeat(s,arr[i]||''));autoSave();renderRoster()}
 function shuffle(a){a=[...a];for(let i=a.length-1;i;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
 function renderRoster(){
- const q=$('#search').value.toLowerCase().trim();$('#roster').innerHTML=students().filter(n=>n.toLowerCase().includes(q)).map((n,i)=>'<div class="student"><span class="initial">'+initials(n)+'</span><span>'+safe(n)+'</span>'+(i%4?'<span class="dot '+palette[i%4]+'"></span>':'')+'</div>').join('')
+ const q=$('#search').value.toLowerCase().trim(),seated=seatedNames();
+ $('#roster').innerHTML=students().filter(n=>n.toLowerCase().includes(q)).map((n,i)=>'<div class="student '+(seated.has(n)?'seated':'')+'" draggable="true" data-name="'+safe(n)+'"><span class="initial">'+initials(n)+'</span><span>'+safe(n)+'</span>'+(i%4?'<span class="dot '+palette[i%4]+'"></span>':'')+'</div>').join('');
+ $('.student').forEach(el=>{
+  el.addEventListener('dragstart',e=>{
+   const name=el.dataset.name;studentDrag={name,from:'roster',el};el.classList.add('drag-source');
+   e.dataTransfer.effectAllowed='move';e.dataTransfer.setData('application/x-kathleen-student',JSON.stringify({name,from:'roster'}));e.dataTransfer.setData('text/plain',name)
+  });
+  el.addEventListener('dragend',()=>clearDragState())
+ })
 }
 function renderClasses(){
  lists=KathleenClassLists.load();$('#classSelect').innerHTML=lists.map(c=>'<option value="'+c.id+'">'+safe(c.name)+'</option>').join('');
@@ -121,7 +171,7 @@ $('#fullscreen').onclick=()=>document.fullscreenElement?document.exitFullscreen(
 $$('[data-room]').forEach(t=>t.onclick=()=>{t.classList.toggle('on');const on=t.classList.contains('on'),v=t.dataset.room;if(v==='board')$('#board').style.display=on?'grid':'none';if(v==='teacher')$('#teacher').style.display=on?'grid':'none';if(v==='grid')room.style.backgroundSize=on?'28px 28px':'100% 100%'});
 room.addEventListener('pointerdown',e=>{if(e.target===room)selectDesk(null)});
 window.addEventListener('keydown',e=>{if((e.key==='Delete'||e.key==='Backspace')&&selected&&!['INPUT','SELECT','TEXTAREA'].includes(document.activeElement.tagName)){selected.remove();selected=null;autoSave()}});
-window.addEventListener('resize',()=>{});
+window.addEventListener('resize',()=>{});bindRosterDnD();
 (async()=>{const ok=await KathleenClassLists.requireUnlock();if(ok)renderClasses();else renderClasses()})();
 })();
 </script>
