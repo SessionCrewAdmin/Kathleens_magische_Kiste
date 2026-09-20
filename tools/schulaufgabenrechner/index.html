@@ -11,20 +11,70 @@
 .archiveCard .row{flex-wrap:wrap}
 @media(max-width:900px){.topActions{justify-content:flex-end;flex-wrap:wrap}.saveState{order:-1}}
 @media(max-width:650px){.top{display:grid;gap:10px}.topActions{display:grid!important;grid-template-columns:auto auto 1fr 1fr;gap:6px}.saveState{grid-column:1/-1;justify-self:start}.topActions .btn{min-height:42px}.topActions #duplicateBtn,.topActions #saveBtn,.topActions #printBtn,.topActions #lockBtn,.topActions #backBtn{font-size:9px;padding:7px}.thresholdVisual{height:25px}}
-</style></head><body><main class="shell"><header class="top"><div class="brand"><div class="ico">📝</div><div><h1>Schulaufgaben- &amp; Notenrechner</h1><p class="sub">Notenbogen 3.3 · Schulaufgaben, Notenschlüssel und Klassennoten sicher an einem Ort. · V23.3</p></div></div><div class="row topActions"><span class="saveState" id="saveState" data-state="saved">✓ Gespeichert</span><button class="btn compact" id="undoBtn" title="Rückgängig · Strg/Cmd+Z">↶</button><button class="btn compact" id="redoBtn" title="Wiederholen · Strg/Cmd+Shift+Z">↷</button><button class="btn" id="duplicateBtn">⧉ Nachschrift</button><button class="btn" id="saveBtn">💾 Speichern</button><button class="btn" id="printBtn">🖨 Drucken / PDF</button><button class="btn" id="lockBtn">🔒 Sperren</button><button class="btn" id="backBtn">← Tools</button></div></header>
-<div class="toolbar"><div class="tabs"><button class="btn tab active" data-view="assessment">Aktuelle Arbeit</button><button class="btn tab" data-view="archive">Arbeiten</button><button class="btn tab" data-view="classbook">Klassennotenbogen</button><button class="btn tab" data-view="students">Schülernotenbogen</button></div><button class="btn primary" id="newAssessment">＋ Neue Arbeit</button></div>
-<section class="view active" id="assessmentView"><div class="panel setup"><div class="field"><label>Klasse</label><select id="classSelect"></select></div><div class="field"><label>Bezeichnung</label><input class="input" id="title" value="Schriftliche Arbeit 1"></div><div class="field"><label>Art</label><select id="kind"><option value="major">Großer Leistungsnachweis</option><option value="minor">Kleiner Leistungsnachweis</option></select></div><div class="field"><label>Geschrieben am</label><input class="input" type="date" id="date"></div><div class="field"><label>Arbeitszeit (Min.)</label><input class="input" type="number" id="duration" min="1" value="45"></div><div class="field"><label>Gewichtung</label><input class="input" type="number" id="weight" min=".1" step=".1" value="1"></div><div class="field"><label>Fach</label><input class="input" id="subject" value="Englisch"></div><div class="field"><label>Lehrstoff</label><input class="input" id="topic" placeholder="z. B. Unit 3"></div><div class="field"><label>Zurückgegeben</label><input class="input" type="date" id="returned"></div><div class="field"><label>Direktorat</label><input class="input" type="date" id="directorate"></div><div class="field"><label>Notenliste</label><input class="input" type="date" id="gradebookDate"></div><div class="field"><label>Schlüssel</label><select id="keyPreset"><option value="excel">Excel-Standard 3.3</option><option value="50">Schlüssel 50 %</option><option value="55">Schlüssel 55 %</option><option value="60">Schlüssel 60 %</option><option value="custom">Eigener Schlüssel</option></select></div></div>
+
+/* V23.5 · Fachnoten, Direktnoten & Hausaufgaben */
+.hidden{display:none!important}
+.setup{grid-template-columns:repeat(6,minmax(118px,1fr))}
+.field.wide{grid-column:span 2}
+.selectWeight{font-weight:850}
+.modeBadge{display:inline-flex;align-items:center;gap:5px;border-radius:999px;padding:5px 8px;background:#f1ebf6;color:#725a79;font-size:8px;font-weight:950}
+.pointsOnly{}
+.directGradeMode .pointsOnly{display:none!important}
+.directGradeMode .work{grid-template-columns:1fr 280px}
+.directGradeMode .side{grid-template-columns:1fr}
+.directGradeMode .score{width:auto}
+.gradeSelect,.trendSelect{min-width:66px;border:1px solid var(--line);border-radius:9px;background:#fffafd;padding:7px;font-weight:900;color:var(--ink)}
+.trendSelect{min-width:54px}
+.gradeWithTrend{display:inline-flex;align-items:flex-start;justify-content:center;min-width:34px;font-weight:1000}
+.gradeWithTrend sup{font-size:8px;line-height:1;margin-left:1px}
+.subjectBar{display:flex;align-items:end;gap:9px;flex-wrap:wrap;margin:0 0 12px}
+.subjectBar .field{min-width:180px}
+.assessmentTag{display:inline-flex;border-radius:999px;padding:3px 6px;background:#f4eef6;color:#7c6780;font-size:7px;font-weight:950;margin-left:4px}
+.assessmentTag.resit{background:#fff1db;color:#936b34}
+.keySummary{font-size:8px;color:var(--muted);margin-top:4px}
+.linearKeyGrid{display:grid;gap:6px}
+.linearKeyRow{display:grid;grid-template-columns:55px 1fr auto;align-items:center;gap:7px;border:1px solid #eee4ed;border-radius:10px;padding:7px 8px;background:#fff}
+.linearKeyRow b{font-size:10px}.linearKeyRow span{font-size:9px;color:var(--muted)}.linearKeyRow strong{font-size:10px}
+.homeworkControls{display:flex;gap:8px;align-items:end;flex-wrap:wrap;margin-bottom:12px}.homeworkControls .field{min-width:190px}
+.hwTable{width:100%;border-collapse:separate;border-spacing:0}.hwTable th,.hwTable td{border-bottom:1px solid #f0e7ee;padding:9px;text-align:left}.hwTable th{font-size:8px;text-transform:uppercase;color:var(--muted);letter-spacing:.06em}.hwCount{display:inline-grid;place-items:center;min-width:38px;height:32px;border-radius:10px;background:#fff2dc;color:#926a32;font-weight:1000}.hwActions{display:flex;gap:5px}.hwActions .btn{min-height:34px;padding:6px 10px}
+.resitNote{margin:8px 0 0;padding:8px 10px;border-radius:11px;background:#fff8e9;border:1px solid #f1dfba;color:#8c682f;font-size:9px;font-weight:800}
+.classbookKey{font-size:7px;color:#9b879d;font-weight:850}
+@media(max-width:1050px){.setup{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:760px){.setup{grid-template-columns:1fr 1fr}.field.wide{grid-column:span 2}.subjectBar,.homeworkControls{align-items:stretch}.subjectBar .field,.homeworkControls .field{min-width:0;flex:1 1 160px}.hwTable{font-size:11px}.hwActions .btn{min-width:42px}}
+@media(pointer:coarse){.btn,.input,select,.gradeSelect,.trendSelect{min-height:46px}.score{min-height:42px}.flagToggle{min-width:40px;height:38px}.hwActions .btn{min-height:42px}}
+</style></head><body><main class="shell"><header class="top"><div class="brand"><div class="ico">📝</div><div><h1>Schulaufgaben- &amp; Notenrechner</h1><p class="sub">Notenzentrale 23.5 · Schulaufgaben, mündliche Leistungen, Fächer und Hausaufgaben sicher an einem Ort. · V23.5</p></div></div><div class="row topActions"><span class="saveState" id="saveState" data-state="saved">✓ Gespeichert</span><button class="btn compact" id="undoBtn" title="Rückgängig · Strg/Cmd+Z">↶</button><button class="btn compact" id="redoBtn" title="Wiederholen · Strg/Cmd+Shift+Z">↷</button><button class="btn" id="duplicateBtn">⧉ Nachschrift</button><button class="btn" id="saveBtn">💾 Speichern</button><button class="btn" id="printBtn">🖨 Drucken / PDF</button><button class="btn" id="lockBtn">🔒 Sperren</button><button class="btn" id="backBtn">← Tools</button></div></header>
+<div class="toolbar"><div class="tabs"><button class="btn tab active" data-view="assessment">Aktuelle Leistung</button><button class="btn tab" data-view="archive">Leistungen</button><button class="btn tab" data-view="classbook">Klassennotenbogen</button><button class="btn tab" data-view="students">Schülernotenbogen</button><button class="btn tab" data-view="homework">Hausaufgaben</button></div><button class="btn primary" id="newAssessment">＋ Neue Leistung</button></div>
+<section class="view active" id="assessmentView"><div class="panel setup">
+<div class="field"><label>Klasse</label><select id="classSelect"></select></div>
+<div class="field"><label>Fach</label><input class="input" id="subject" list="subjectOptions" value="Englisch"><datalist id="subjectOptions"><option value="Englisch"><option value="Geschichte"></datalist></div>
+<div class="field wide"><label>Bezeichnung</label><input class="input" id="title" value="Schriftliche Arbeit 1"></div>
+<div class="field"><label>Art</label><select id="kind"><option value="major">Großer Leistungsnachweis</option><option value="minor">Kleiner Leistungsnachweis</option><option value="oral">Mündliche Note</option><option value="quiz">Abfrage</option><option value="presentation">Referat</option><option value="vocab">Vokabeltest</option></select></div>
+<div class="field"><label>Eingabe</label><select id="entryMode"><option value="points">Punkte</option><option value="grade">Direktnote</option></select></div>
+<div class="field"><label>Geschrieben / erhoben am</label><input class="input" type="date" id="date"></div>
+<div class="field"><label>Arbeitszeit (Min.)</label><input class="input" type="number" id="duration" min="0" value="45"></div>
+<div class="field"><label>Gewichtung</label><select class="selectWeight" id="weight"><option value="1">1×</option><option value="1.5">1,5×</option><option value="2">2×</option></select></div>
+<div class="field"><label>Lehrstoff / Thema</label><input class="input" id="topic" placeholder="z. B. Unit 3"></div>
+<div class="field"><label>Zurückgegeben</label><input class="input" type="date" id="returned"></div>
+<div class="field"><label>Respizienz</label><input class="input" type="date" id="directorate"></div>
+<div class="field"><label>Notenliste</label><input class="input" type="date" id="gradebookDate"></div>
+<div class="field pointsOnly"><label>Notenschlüssel</label><select id="keyPreset"><option value="linear">Linear</option><option value="custom">Individuell</option></select></div>
+<div class="field pointsOnly"><label>Cut-off Note 5 (%)</label><input class="input" id="cutoff" type="number" min="0" max="49.9" step=".5" value="33"></div>
+<div class="field pointsOnly"><label>Punktegrenzen</label><select id="pointStep"><option value="0.5">Halbe Punkte</option><option value="1">Ganze Punkte</option></select></div>
+</div>
 <div class="kpis"><div class="kpi"><small>Gesamtpunkte</small><strong id="maxPoints">0</strong></div><div class="kpi"><small>Anwesend</small><strong id="presentCount">0</strong></div><div class="kpi"><small>Ø Note</small><strong id="avgGrade">–</strong></div><div class="kpi"><small>Ø Punkte</small><strong id="avgPoints">–</strong></div><div class="kpi"><small>5er + 6er</small><strong id="failShare">–</strong></div><div class="kpi"><small>Nachschriften</small><strong id="resitCount">0</strong></div></div><div class="gradeWarnings hidden" id="gradeWarnings"></div>
-<div class="work"><div class="panel"><div class="tableHelp"><span>Excel-Eingabe: Werte einfügen oder mehrere Zellen aus Excel kopieren.</span><span><kbd>Enter</kbd>/<kbd>↓</kbd> nächste Zeile · <kbd>←</kbd>/<kbd>→</kbd> Aufgabe · <kbd>Strg Z</kbd> Undo</span></div><div class="tableWrap" id="tableWrap"></div></div><aside class="side"><div class="panel"><h3>Aufgaben</h3><div id="taskEditor"></div><button class="btn" id="addTask">＋ Aufgabe</button><p class="hint">Wie in der Excel: Punkte je Aufgabe, Summe und automatische Note. Zusätzlich siehst du sofort, welche Aufgabe der Klasse schwerfiel.</p></div><div class="panel"><h3>Bewertungsschlüssel</h3><div class="thresholds" id="thresholds"></div><div class="thresholdVisual" id="thresholdVisual"></div><p class="hint">Prozent- und Punktegrenzen werden gleichzeitig angezeigt. Eigene Schlüssel werden auf Plausibilität geprüft.</p></div><div class="panel"><h3>Notenverteilung</h3><div class="bars" id="distribution"></div></div><div class="panel"><h3>Aufgabenanalyse</h3><div class="taskStats" id="taskStats"></div></div></aside></div></section>
-<section class="view" id="archiveView"><div class="panel"><h2>Gespeicherte Arbeiten</h2><div class="archive" id="archive"></div></div></section>
-<section class="view" id="classbookView"><div class="panel"><h2>Klassennotenbogen</h2><p class="hint">Große und kleine Leistungsnachweise werden getrennt gewichtet. Standard aus deiner Excel: große : kleine Leistungsnachweise = 2 : 1.</p><div class="row" style="margin-bottom:10px"><label class="hint">Groß <input class="score" id="majorRatio" type="number" min=".1" step=".1" value="2"></label><label class="hint">Klein <input class="score" id="minorRatio" type="number" min=".1" step=".1" value="1"></label></div><div class="tableWrap" id="classbook"></div></div></section>
-<section class="view" id="studentsView"><div class="panel"><h2>Schülernotenbogen</h2><div class="studentCards" id="studentCards"></div></div></section></main>
+<div class="work"><div class="panel"><div class="tableHelp"><span>Excel-Eingabe: Werte einfügen oder mehrere Zellen aus Excel kopieren.</span><span><kbd>Enter</kbd>/<kbd>↓</kbd> nächste Zeile · <kbd>←</kbd>/<kbd>→</kbd> Aufgabe · <kbd>Strg Z</kbd> Undo</span></div><div class="tableWrap" id="tableWrap"></div></div><aside class="side"><div class="panel pointsOnly"><h3>Aufgaben</h3><div id="taskEditor"></div><button class="btn" id="addTask">＋ Aufgabe</button><p class="hint">Wie in der Excel: Punkte je Aufgabe, Summe und automatische Note. Zusätzlich siehst du sofort, welche Aufgabe der Klasse schwerfiel.</p></div><div class="panel pointsOnly"><h3>Bewertungsschlüssel</h3><div class="thresholds" id="thresholds"></div><div class="thresholdVisual" id="thresholdVisual"></div><p class="hint">Prozent- und Punktegrenzen werden gleichzeitig angezeigt. Eigene Schlüssel werden auf Plausibilität geprüft.</p></div><div class="panel"><h3>Notenverteilung</h3><div class="bars" id="distribution"></div></div><div class="panel pointsOnly"><h3>Aufgabenanalyse</h3><div class="taskStats" id="taskStats"></div></div></aside></div></section>
+<section class="view" id="archiveView"><div class="panel"><h2>Gespeicherte Leistungen</h2><div class="archive" id="archive"></div></div></section>
+<section class="view" id="classbookView"><div class="panel"><h2>Klassennotenbogen</h2><div class="subjectBar"><div class="field"><label>Fach</label><select id="bookSubject"></select></div><label class="hint">Große LN <input class="score" id="majorRatio" type="number" min=".1" step=".5" value="2"></label><label class="hint">Weitere LN <input class="score" id="minorRatio" type="number" min=".1" step=".5" value="1"></label></div><p class="hint">Fächer werden getrennt geführt. Nachschriften ersetzen für den jeweiligen Schüler die ursprüngliche Leistung und erzeugen keine zusätzliche Gewichtung.</p><div class="tableWrap" id="classbook"></div></div></section>
+<section class="view" id="studentsView"><div class="panel"><h2>Schülernotenbogen</h2><div class="subjectBar"><div class="field"><label>Fach</label><select id="studentSubject"></select></div></div><div class="studentCards" id="studentCards"></div></div></section>
+<section class="view" id="homeworkView"><div class="panel"><h2>Vergessene Hausaufgaben</h2><p class="hint">Strichliste pro Klasse und Fach. Jeder Eintrag speichert automatisch das Datum.</p><div class="homeworkControls"><div class="field"><label>Klasse</label><select id="homeworkClass"></select></div><div class="field"><label>Fach</label><input class="input" id="homeworkSubject" list="subjectOptions" value="Englisch"></div></div><div class="tableWrap" id="homeworkTable"></div></div></section>
+</main>
 <script src="../classroom-tools-shared.js"></script><script src="../presentation-mode.js"></script><script>
 (()=>{'use strict';
-const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],STORE='gradebook-v1',HISTORY_MAX=60,AUTOSAVE_MS=650;
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const STORE='gradebook-v1',HISTORY_MAX=60,AUTOSAVE_MS=650;
 const clone=v=>typeof structuredClone==='function'?structuredClone(v):JSON.parse(JSON.stringify(v));
-let db={version:2,assessments:[],settings:{majorRatio:2,minorRatio:1}},current=null,history=[],future=[],saveTimer=null,saveBusy=false,saveQueued=false,lastSavedSignature='';
-const defaultThresholds=[.875,.75,.625,.5,.3472222222];
+const LINEAR_TOP=[.875,.75,.625,.5];
+let db={version:3,assessments:[],homework:{},settings:{majorRatio:2,minorRatio:1}},current=null,history=[],future=[],saveTimer=null,saveBusy=false,saveQueued=false;
 
 function uid(){return'ass-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,7)}
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]))}
@@ -32,209 +82,204 @@ function fmt(n,d=2){return Number.isFinite(Number(n))?Number(n).toLocaleString('
 function parseNum(v){if(v===''||v==null)return null;const n=Number(String(v).trim().replace(',','.'));return Number.isFinite(n)?n:null}
 function classes(){return KathleenClassLists.load()}
 function selectedClass(){return KathleenClassLists.get($('#classSelect').value)}
+function linearThresholds(cutoff=33){return[...LINEAR_TOP,Math.max(0,Math.min(49.9,Number(cutoff)||33))/100]}
 function maxPoints(a=current){return(a?.tasks||[]).reduce((n,t)=>n+(Number(t.max)||0),0)}
-function points(s,a=current){return(a?.tasks||[]).reduce((n,t)=>n+(Number(s.scores?.[t.id])||0),0)}
-function gradeFor(p,a=current){const m=maxPoints(a);if(!m||!a?.students?.length)return null;const x=p/m,th=a.thresholds||defaultThresholds;if(x>=th[0])return 1;if(x>=th[1])return 2;if(x>=th[2])return 3;if(x>=th[3])return 4;if(x>=th[4])return 5;return 6}
-function trendFor(p,g,a=current){if(!g||g===1)return'';const m=maxPoints(a),th=a.thresholds||defaultThresholds,upper=g===6?th[4]*m:th[g-2]*m,lower=g===6?0:th[g-1]*m;if(upper-p>0&&upper-p<1.5)return'+';if(p-lower>=0&&p-lower<1)return'-';return''}
+function points(s,a=current){return(a?.tasks||[]).reduce((n,t)=>n+(Number(s?.scores?.[t.id])||0),0)}
+function pointStep(a=current){return Number(a?.pointStep)===1?1:.5}
+function thresholdPoint(v,a=current){const m=maxPoints(a),step=pointStep(a);return Math.ceil((Number(v||0)*m-1e-9)/step)*step}
+function gradeFor(p,a=current){
+ if(a?.entryMode==='grade'){const n=Number(p);return n>=1&&n<=6?n:null}
+ const m=maxPoints(a);if(!m)return null;const th=a?.thresholds||linearThresholds(a?.cutoff);
+ if(p>=thresholdPoint(th[0],a))return 1;if(p>=thresholdPoint(th[1],a))return 2;if(p>=thresholdPoint(th[2],a))return 3;if(p>=thresholdPoint(th[3],a))return 4;if(p>=thresholdPoint(th[4],a))return 5;return 6
+}
+function hasPointEntry(s,a=current){return(a?.tasks||[]).some(t=>s?.scores?.[t.id]!==''&&s?.scores?.[t.id]!=null)}
+function studentRawGrade(a,s){if(!s||s.absent)return null;if(a.entryMode==='grade'){const g=Number(s.directGrade);return g>=1&&g<=6?g:null}if(!hasPointEntry(s,a))return null;return gradeFor(points(s,a),a)}
+function trendFor(p,g,a=current){
+ if(!g||a?.entryMode==='grade')return'';
+ const th=a?.thresholds||linearThresholds(a?.cutoff),upper=g===1?maxPoints(a):thresholdPoint(th[g-2],a),lower=g===6?0:thresholdPoint(th[g-1],a);
+ const step=pointStep(a);if(g>1&&upper-p>0&&upper-p<=step)return'+';if(g<6&&p-lower>=0&&p-lower<step)return'-';return''
+}
+function directTrend(s){return s?.gradeTrend==='+'?'+':s?.gradeTrend==='-'?'-':''}
+function displayGrade(g,t=''){return g==null?'–':String(g)+(t||'')}
+function kindLabel(k){return({major:'Großer Leistungsnachweis',minor:'Kleiner Leistungsnachweis',oral:'Mündliche Note',quiz:'Abfrage',presentation:'Referat',vocab:'Vokabeltest'})[k]||'Leistung'}
+function kindShort(k){return({major:'G',minor:'K',oral:'M',quiz:'A',presentation:'R',vocab:'V'})[k]||'L'}
+function kindGroup(k){return k==='major'?'major':'minor'}
+function normalizeSubject(v){return String(v||'').trim()||'Ohne Fach'}
+function subjectEquals(a,b){return normalizeSubject(a).toLocaleLowerCase('de-DE')===normalizeSubject(b).toLocaleLowerCase('de-DE')}
+function keySummary(a){if(a.entryMode==='grade')return'Direktnote';const cut=Math.round((a.thresholds?.[4]??.33)*1000)/10;return(a.keyPreset==='custom'?'Individuell':'Linear')+' · 5 ab '+fmt(cut,1)+' % · '+(pointStep(a)===1?'ganze':'halbe')+' P.'}
+
+function ensureStudent(s){return{...s,scores:s?.scores||{},absent:!!s?.absent,resit:!!s?.resit,directGrade:s?.directGrade??'',gradeTrend:s?.gradeTrend||''}}
+function migrateAssessment(a){
+ const x={...a};x.students=(x.students||[]).map(ensureStudent);x.subject=normalizeSubject(x.subject||'Englisch');x.kind=x.kind||'major';x.weight=[1,1.5,2].includes(Number(x.weight))?Number(x.weight):1;
+ x.entryMode=x.entryMode||'points';x.pointStep=Number(x.pointStep)===1?1:.5;x.cutoff=Number(x.cutoff)||Math.round(Number(x.thresholds?.[4]??.33)*1000)/10;
+ if(!Array.isArray(x.thresholds)||x.thresholds.length!==5)x.thresholds=linearThresholds(x.cutoff);
+ if(!['linear','custom'].includes(x.keyPreset)){const lin=linearThresholds(33);x.keyPreset=x.thresholds.every((v,i)=>Math.abs(v-lin[i])<.0001)?'linear':'custom'}
+ x.isResitAssessment=!!x.isResitAssessment;x.parentAssessmentId=x.parentAssessmentId||null;return x
+}
+function migrateDb(raw){
+ const d=raw&&typeof raw==='object'?raw:{};d.version=3;d.assessments=Array.isArray(d.assessments)?d.assessments.map(migrateAssessment):[];d.homework=d.homework&&typeof d.homework==='object'?d.homework:{};d.settings=d.settings||{};d.settings.majorRatio=Number(d.settings.majorRatio)||2;d.settings.minorRatio=Number(d.settings.minorRatio)||1;return d
+}
 function newModel(source=null){
  const c=selectedClass()||classes()[0],base=source?clone(source):null;
  if(base){
-   base.id=uid();base.title=(base.title||'Schriftliche Arbeit')+' – Nachschrift';base.date=new Date().toISOString().slice(0,10);base.returned='';base.directorate='';base.gradebookDate='';base.updatedAt=new Date().toISOString();
-   base.students=(base.students||[]).map(s=>({...s,scores:{},absent:false,resit:false}));
-   return base
+   const parent=base.parentAssessmentId||base.id;base.id=uid();base.parentAssessmentId=parent;base.isResitAssessment=true;base.title=(base.title||'Leistung').replace(/\s+– Nachschrift.*$/,'')+' – Nachschrift';base.date=new Date().toISOString().slice(0,10);base.returned='';base.directorate='';base.gradebookDate='';base.updatedAt=new Date().toISOString();
+   base.students=(base.students||[]).map(s=>({...ensureStudent(s),scores:{},directGrade:'',gradeTrend:'',absent:false,resit:true}));return base
  }
- return{id:uid(),classId:c?.id||'',className:c?.name||'',title:'Schriftliche Arbeit '+(db.assessments.filter(a=>a.classId===c?.id).length+1),kind:'major',date:new Date().toISOString().slice(0,10),duration:45,weight:1,subject:'Englisch',topic:'',returned:'',directorate:'',gradebookDate:'',keyPreset:'excel',thresholds:[...defaultThresholds],tasks:[{id:'t1',label:'1',max:10},{id:'t2',label:'2',max:10},{id:'t3',label:'3',max:10}],students:(c?.students||[]).map((name,i)=>({id:'s'+i+'-'+Date.now().toString(36),name,scores:{},absent:false,resit:false})),updatedAt:new Date().toISOString()}
+ const subject=normalizeSubject($('#subject')?.value||'Englisch'),n=db.assessments.filter(a=>a.classId===c?.id&&subjectEquals(a.subject,subject)&&!a.isResitAssessment).length+1;
+ return{id:uid(),classId:c?.id||'',className:c?.name||'',title:'Schriftliche Arbeit '+n,kind:'major',entryMode:'points',date:new Date().toISOString().slice(0,10),duration:45,weight:1,subject,topic:'',returned:'',directorate:'',gradebookDate:'',keyPreset:'linear',cutoff:33,pointStep:.5,thresholds:linearThresholds(33),tasks:[{id:'t1',label:'1',max:10},{id:'t2',label:'2',max:10},{id:'t3',label:'3',max:10}],students:(c?.students||[]).map((name,i)=>ensureStudent({id:'s'+i+'-'+Date.now().toString(36),name})),isResitAssessment:false,parentAssessmentId:null,updatedAt:new Date().toISOString()}
 }
-function stateSnapshot(){return current?{current:clone(current),settings:{majorRatio:Number($('#majorRatio')?.value)||db.settings.majorRatio||2,minorRatio:Number($('#minorRatio')?.value)||db.settings.minorRatio||1}}:null}
+
+function stateSnapshot(){return current?{current:clone(current),settings:{majorRatio:Number($('#majorRatio')?.value)||db.settings.majorRatio||2,minorRatio:Number($('#minorRatio')?.value)||db.settings.minorRatio||1},homework:clone(db.homework)}:null}
 function sig(v){try{return JSON.stringify(v)}catch(e){return''}}
 function pushHistorySnapshot(snap){if(!snap)return;const s=sig(snap);if(history.length&&sig(history[history.length-1])===s)return;history.push(snap);if(history.length>HISTORY_MAX)history.shift();future=[];updateUndoButtons()}
 function checkpoint(){pushHistorySnapshot(stateSnapshot())}
 function updateUndoButtons(){$('#undoBtn').disabled=!history.length;$('#redoBtn').disabled=!future.length}
-function restoreState(snap){if(!snap)return;current=clone(snap.current);db.settings={...db.settings,...snap.settings};$('#majorRatio').value=db.settings.majorRatio??2;$('#minorRatio').value=db.settings.minorRatio??1;fillClasses();syncInputs(false);scheduleSave()}
+function restoreState(snap){if(!snap)return;current=clone(snap.current);db.settings={...db.settings,...snap.settings};db.homework=clone(snap.homework||db.homework);$('#majorRatio').value=db.settings.majorRatio??2;$('#minorRatio').value=db.settings.minorRatio??1;fillClasses();syncInputs(false);renderAll();scheduleSave()}
 function undo(){if(!history.length)return;future.push(stateSnapshot());restoreState(history.pop());updateUndoButtons()}
 function redo(){if(!future.length)return;history.push(stateSnapshot());restoreState(future.pop());updateUndoButtons()}
 function setSaveState(state,text){const el=$('#saveState');if(!el)return;el.dataset.state=state;el.textContent=text}
-function markDirty(){setSaveState('dirty','• Änderungen…');scheduleSave()}
-function syncCurrentToDbMemory(){
- if(!current)return;
- const i=db.assessments.findIndex(a=>a.id===current.id),copy=clone(current);
- if(i>=0)db.assessments[i]=copy;else db.assessments.push(copy)
-}
+function markSaveDirtyOnly(){if($('#saveState')?.dataset.state!=='saving')setSaveState('dirty','• Änderungen…')}
+function scheduleSave(){clearTimeout(saveTimer);markSaveDirtyOnly();saveTimer=setTimeout(()=>saveNow(false),AUTOSAVE_MS)}
+function syncCurrentToDbMemory(){if(!current)return;const i=db.assessments.findIndex(a=>a.id===current.id),copy=clone(current);if(i>=0)db.assessments[i]=copy;else db.assessments.push(copy)}
 async function saveNow(showToast=false){
- clearTimeout(saveTimer);saveTimer=null;
- if(!current||!KathleenClassLists.isUnlocked())return;
- if(saveBusy){saveQueued=true;return}
- saveBusy=true;setSaveState('saving','↻ Speichert…');
- try{
-   readInputs(false);current.updatedAt=new Date().toISOString();syncCurrentToDbMemory();
-   db.version=2;db.settings.majorRatio=Number($('#majorRatio').value)||2;db.settings.minorRatio=Number($('#minorRatio').value)||1;
-   await KathleenClassLists.secureSet(STORE,db);lastSavedSignature=sig({current,settings:db.settings});
-   setSaveState('saved','✓ Gespeichert');if(showToast)toast('Verschlüsselt gespeichert ✓')
- }catch(e){console.error(e);setSaveState('error','! Speicherfehler');if(showToast)toast('Speichern fehlgeschlagen')}
+ clearTimeout(saveTimer);saveTimer=null;if(!current||!KathleenClassLists.isUnlocked())return;if(saveBusy){saveQueued=true;return}saveBusy=true;setSaveState('saving','↻ Speichert…');
+ try{readInputs(false);current.updatedAt=new Date().toISOString();syncCurrentToDbMemory();db.version=3;db.settings.majorRatio=Number($('#majorRatio').value)||2;db.settings.minorRatio=Number($('#minorRatio').value)||1;await KathleenClassLists.secureSet(STORE,db);setSaveState('saved','✓ Gespeichert');if(showToast)toast('Verschlüsselt gespeichert ✓')}
+ catch(e){console.error(e);setSaveState('error','! Speicherfehler');if(showToast)toast('Speichern fehlgeschlagen')}
  finally{saveBusy=false;if(saveQueued){saveQueued=false;saveNow(false)}}
 }
-function scheduleSave(){clearTimeout(saveTimer);markSaveDirtyOnly();saveTimer=setTimeout(()=>saveNow(false),AUTOSAVE_MS)}
-function markSaveDirtyOnly(){if($('#saveState')?.dataset.state!=='saving')setSaveState('dirty','• Änderungen…')}
 
 function readInputs(schedule=true){
- if(!current)return;
- for(const id of ['title','kind','date','subject','topic','returned','directorate','gradebookDate','keyPreset'])current[id]=$('#'+id).value;
- current.duration=Math.max(0,Number($('#duration').value)||0);current.weight=Math.max(.1,Number($('#weight').value)||1);
- const c=selectedClass();if(c){current.classId=c.id;current.className=c.name}
- if(schedule)scheduleSave()
+ if(!current)return;for(const id of ['title','kind','entryMode','date','subject','topic','returned','directorate','gradebookDate','keyPreset'])current[id]=$('#'+id).value;
+ current.duration=Math.max(0,Number($('#duration').value)||0);current.weight=Number($('#weight').value)||1;current.pointStep=Number($('#pointStep').value)===1?1:.5;current.cutoff=Math.max(0,Math.min(49.9,parseNum($('#cutoff').value)??33));
+ if(current.keyPreset==='linear')current.thresholds=linearThresholds(current.cutoff);const c=selectedClass();if(c){current.classId=c.id;current.className=c.name}if(schedule)scheduleSave()
 }
 function syncInputs(render=true){
- if(!current)return;
- $('#classSelect').value=current.classId;
- for(const id of ['title','kind','date','duration','weight','subject','topic','returned','directorate','gradebookDate','keyPreset'])$('#'+id).value=current[id]??'';
- if(render)renderAll()
+ if(!current)return;$('#classSelect').value=current.classId;for(const id of ['title','kind','entryMode','date','duration','weight','subject','topic','returned','directorate','gradebookDate','keyPreset','cutoff','pointStep']){const el=$('#'+id);if(el)el.value=current[id]??''}
+ fillSubjectSelectors();if(render)renderAll()
 }
-function applyPreset(){
- checkpoint();const p=$('#keyPreset').value;
- if(p==='excel')current.thresholds=[...defaultThresholds];else if(p==='50')current.thresholds=[.85,.7,.6,.5,.3];else if(p==='55')current.thresholds=[.86,.72,.62,.55,.32];else if(p==='60')current.thresholds=[.87,.75,.65,.6,.35];
- current.keyPreset=p;renderThresholds();renderTable();renderStats();renderWarnings();scheduleSave()
+function fillClasses(){
+ const all=classes(),opts=all.map(c=>'<option value="'+esc(c.id)+'">'+esc(c.name)+' · '+c.students.length+'</option>').join('');
+ $('#classSelect').innerHTML=opts;$('#homeworkClass').innerHTML=opts;if(current&&all.some(c=>c.id===current.classId)){$('#classSelect').value=current.classId;$('#homeworkClass').value=current.classId}
 }
+function subjectsForClass(classId){
+ const out=new Map;['Englisch','Geschichte',current?.subject].filter(Boolean).forEach(s=>out.set(normalizeSubject(s).toLowerCase(),normalizeSubject(s)));
+ db.assessments.filter(a=>a.classId===classId).forEach(a=>out.set(normalizeSubject(a.subject).toLowerCase(),normalizeSubject(a.subject)));return[...out.values()].sort((a,b)=>a.localeCompare(b,'de'))
+}
+function fillSubjectSelectors(){
+ const cid=$('#classSelect').value||current?.classId,subs=subjectsForClass(cid),preferred=normalizeSubject(current?.subject||subs[0]||'Englisch');
+ for(const id of ['bookSubject','studentSubject']){const el=$('#'+id),old=el.value||preferred;el.innerHTML=subs.map(s=>'<option>'+esc(s)+'</option>').join('');el.value=subs.find(s=>subjectEquals(s,old))||subs.find(s=>subjectEquals(s,preferred))||subs[0]||''}
+ if(!$('#homeworkSubject').value)$('#homeworkSubject').value=preferred
+}
+function applyPreset(){checkpoint();current.keyPreset=$('#keyPreset').value;if(current.keyPreset==='linear')current.thresholds=linearThresholds(current.cutoff);renderAll();scheduleSave()}
 function reconcileStudents(){
- const c=selectedClass();if(!c)return;checkpoint();
- const old=new Map((current.students||[]).map(s=>[s.name,s]));current.classId=c.id;current.className=c.name;
- current.students=c.students.map((name,i)=>old.get(name)||{id:'s'+i+'-'+Date.now().toString(36),name,scores:{},absent:false,resit:false});
- renderAll();scheduleSave()
+ const c=selectedClass();if(!c)return;checkpoint();const old=new Map((current.students||[]).map(s=>[s.name,s]));current.classId=c.id;current.className=c.name;current.students=c.students.map((name,i)=>ensureStudent(old.get(name)||{id:'s'+i+'-'+Date.now().toString(36),name}));fillSubjectSelectors();renderAll();scheduleSave()
 }
+function bindEditSession(el,onInput){if(!el)return;el.addEventListener('focus',()=>{el._before=stateSnapshot()});el.addEventListener('input',onInput);el.addEventListener('change',()=>{if(el._before)pushHistorySnapshot(el._before);el._before=null})}
 
 function renderTasks(){
- const box=$('#taskEditor');
- box.innerHTML=current.tasks.map(t=>'<div class="taskEditor"><input class="input" data-tlabel="'+t.id+'" value="'+esc(t.label)+'" aria-label="Aufgabenname"><input class="input" type="number" min="0" step=".5" data-tmax="'+t.id+'" value="'+t.max+'" aria-label="Maximalpunkte"><button class="btn danger" data-tdel="'+t.id+'" title="Aufgabe löschen">×</button></div>').join('');
+ const box=$('#taskEditor');box.innerHTML=current.tasks.map(t=>'<div class="taskEditor"><input class="input" data-tlabel="'+t.id+'" value="'+esc(t.label)+'" aria-label="Aufgabenname"><input class="input" type="number" min="0" step=".5" data-tmax="'+t.id+'" value="'+t.max+'" aria-label="Maximalpunkte"><button class="btn danger" data-tdel="'+t.id+'" title="Aufgabe löschen">×</button></div>').join('');
  $$('[data-tlabel]').forEach(x=>bindEditSession(x,()=>{current.tasks.find(t=>t.id===x.dataset.tlabel).label=x.value;renderTable();scheduleSave()}));
- $$('[data-tmax]').forEach(x=>bindEditSession(x,()=>{
-   const t=current.tasks.find(t=>t.id===x.dataset.tmax),before=Number(t.max)||0,next=Math.max(0,parseNum(x.value)||0);t.max=next;
-   const impacted=current.students.filter(s=>Number(s.scores?.[t.id])>next).length;
-   if(impacted)toast(impacted+' Punktwert'+(impacted===1?'':'e')+' liegen jetzt über dem Aufgabenmaximum.');
-   renderTable();renderThresholds();renderStats();renderWarnings();scheduleSave()
- }));
+ $$('[data-tmax]').forEach(x=>bindEditSession(x,()=>{const t=current.tasks.find(t=>t.id===x.dataset.tmax),next=Math.max(0,parseNum(x.value)||0);t.max=next;const impacted=current.students.filter(s=>Number(s.scores?.[t.id])>next).length;if(impacted)toast(impacted+' Punktwert'+(impacted===1?' liegt':'e liegen')+' über dem neuen Maximum.');renderTable();renderThresholds();renderStats();renderWarnings();scheduleSave()}));
  $$('[data-tdel]').forEach(x=>x.onclick=()=>{if(current.tasks.length<=1)return;checkpoint();current.tasks=current.tasks.filter(t=>t.id!==x.dataset.tdel);current.students.forEach(s=>delete s.scores[x.dataset.tdel]);renderAll();scheduleSave()})
 }
 function thresholdsValid(){const t=current.thresholds||[];return t.length===5&&t.every((v,i)=>v>=0&&v<=1&&(i===0||t[i-1]>v))}
 function renderThresholds(){
- const labels=['Note 1','Note 2','Note 3','Note 4','Note 5'],m=maxPoints();
- $('#thresholds').innerHTML=current.thresholds.map((v,i)=>'<label>'+labels[i]+' ab <small>'+fmt(v*m,1)+' / '+fmt(m,1)+' P.</small><input class="input" type="number" min="0" max="100" step=".1" data-th="'+i+'" value="'+fmt(v*100,1)+'"></label>').join('');
- $$('[data-th]').forEach(x=>bindEditSession(x,()=>{
-   current.keyPreset='custom';$('#keyPreset').value='custom';current.thresholds[Number(x.dataset.th)]=Math.max(0,Math.min(1,(parseNum(x.value)||0)/100));
-   updateAllDerived();renderThresholdVisual();renderWarnings();scheduleSave()
- }));
- renderThresholdVisual()
+ const labels=['Note 1','Note 2','Note 3','Note 4','Note 5'],m=maxPoints(),custom=current.keyPreset==='custom';
+ $('#thresholds').innerHTML='<div class="linearKeyGrid">'+(current.thresholds||linearThresholds(current.cutoff)).map((v,i)=>'<div class="linearKeyRow"><b>'+labels[i]+'</b><span>'+(custom?'<input class="input" type="number" min="0" max="100" step=".1" data-th="'+i+'" value="'+fmt(v*100,1)+'">':fmt(v*100,1)+' %')+'</span><strong>ab '+fmt(thresholdPoint(v),pointStep()===1?0:1)+' P.</strong></div>').join('')+'</div>';
+ $$('[data-th]').forEach(x=>bindEditSession(x,()=>{current.keyPreset='custom';$('#keyPreset').value='custom';current.thresholds[Number(x.dataset.th)]=Math.max(0,Math.min(1,(parseNum(x.value)||0)/100));renderTable();renderStats();renderThresholdVisual();renderWarnings();scheduleSave()}));renderThresholdVisual()
 }
 function renderThresholdVisual(){
- const th=current.thresholds||defaultThresholds,segments=[
-  {g:6,w:Math.max(0,th[4])},{g:5,w:Math.max(0,th[3]-th[4])},{g:4,w:Math.max(0,th[2]-th[3])},{g:3,w:Math.max(0,th[1]-th[2])},{g:2,w:Math.max(0,th[0]-th[1])},{g:1,w:Math.max(0,1-th[0])}
- ];
+ const th=current.thresholds||linearThresholds(current.cutoff),segments=[{g:6,w:Math.max(0,th[4])},{g:5,w:Math.max(0,th[3]-th[4])},{g:4,w:Math.max(0,th[2]-th[3])},{g:3,w:Math.max(0,th[1]-th[2])},{g:2,w:Math.max(0,th[0]-th[1])},{g:1,w:Math.max(0,1-th[0])}];
  $('#thresholdVisual').innerHTML=segments.map(s=>'<div class="thresholdSeg g'+s.g+'" style="width:'+(s.w*100)+'%">N'+s.g+'</div>').join('')
 }
+function gradeCell(g,t=''){return g?'<span class="gradeWithTrend"><span class="grade g'+g+'">'+g+'</span>'+(t?'<sup>'+esc(t)+'</sup>':'')+'</span>':'–'}
 function renderTable(){
- const m=maxPoints(),heads=current.tasks.map(t=>'<th>'+esc(t.label)+'<br><span class="hint">/'+fmt(Number(t.max)||0,1)+'</span></th>').join('');
- $('#tableWrap').innerHTML='<table class="gradeTable"><thead><tr><th>Schüler</th>'+heads+'<th>Summe<br>/ '+fmt(m,1)+'</th><th>%</th><th>Note</th><th>Tendenz</th><th>Nachschrift</th><th>Fehlt</th></tr></thead><tbody>'+current.students.map((s,si)=>'<tr data-student-row="'+si+'"><td>'+esc(s.name)+'</td>'+current.tasks.map((t,ci)=>'<td><input class="score '+(Number(s.scores?.[t.id])>Number(t.max)?'invalidScore':'')+'" '+(s.absent?'disabled':'')+' inputmode="decimal" type="text" data-score="'+si+'|'+t.id+'" data-row="'+si+'" data-col="'+ci+'" value="'+esc(s.scores?.[t.id]??'')+'" aria-label="'+esc(s.name)+' Aufgabe '+esc(t.label)+'"></td>').join('')+'<td data-sum="'+si+'"></td><td data-pct="'+si+'"></td><td data-grade="'+si+'"></td><td data-trend="'+si+'"></td><td><label class="flagToggle '+(s.resit?'on':'')+'" title="Nachschrift"><input type="checkbox" data-resit="'+si+'" '+(s.resit?'checked':'')+'>N</label></td><td><label class="flagToggle absent '+(s.absent?'on':'')+'" title="Fehlt"><input type="checkbox" data-absent="'+si+'" '+(s.absent?'checked':'')+'>F</label></td></tr>').join('')+'</tbody></table>';
- $$('.score[data-score]').forEach(input=>bindScoreInput(input));
- $$('[data-resit]').forEach(x=>x.onchange=()=>{checkpoint();current.students[Number(x.dataset.resit)].resit=x.checked;x.closest('.flagToggle').classList.toggle('on',x.checked);renderStats();scheduleSave()});
- $$('[data-absent]').forEach(x=>x.onchange=()=>{checkpoint();current.students[Number(x.dataset.absent)].absent=x.checked;renderTable();renderStats();renderWarnings();scheduleSave()});
- updateAllDerived()
+ const direct=current.entryMode==='grade',m=maxPoints();
+ if(direct){
+   $('#tableWrap').innerHTML='<table class="gradeTable"><thead><tr><th>Schüler</th><th>Note</th><th>Tendenz</th><th>Nachschrift</th><th>Fehlt</th></tr></thead><tbody>'+current.students.map((s,si)=>'<tr><td>'+esc(s.name)+'</td><td><select class="gradeSelect" data-direct-grade="'+si+'" '+(s.absent?'disabled':'')+'><option value="">–</option>'+[1,2,3,4,5,6].map(g=>'<option value="'+g+'" '+(Number(s.directGrade)===g?'selected':'')+'>'+g+'</option>').join('')+'</select></td><td><select class="trendSelect" data-direct-trend="'+si+'" '+(s.absent?'disabled':'')+'><option value="">–</option><option value="+" '+(s.gradeTrend==='+'?'selected':'')+'>+</option><option value="-" '+(s.gradeTrend==='-'?'selected':'')+'>−</option></select></td><td><label class="flagToggle '+(s.resit?'on':'')+'"><input type="checkbox" data-resit="'+si+'" '+(s.resit?'checked':'')+'>N</label></td><td><label class="flagToggle absent '+(s.absent?'on':'')+'"><input type="checkbox" data-absent="'+si+'" '+(s.absent?'checked':'')+'>F</label></td></tr>').join('')+'</tbody></table>';
+   $$('[data-direct-grade]').forEach(x=>x.onchange=()=>{checkpoint();current.students[+x.dataset.directGrade].directGrade=x.value===''?'':Number(x.value);renderStats();renderArchive();scheduleSave()});
+   $$('[data-direct-trend]').forEach(x=>x.onchange=()=>{checkpoint();current.students[+x.dataset.directTrend].gradeTrend=x.value;renderStats();scheduleSave()});
+ }else{
+   const heads=current.tasks.map(t=>'<th>'+esc(t.label)+'<br><span class="hint">/'+fmt(Number(t.max)||0,1)+'</span></th>').join('');
+   $('#tableWrap').innerHTML='<table class="gradeTable"><thead><tr><th>Schüler</th>'+heads+'<th>Summe<br>/ '+fmt(m,1)+'</th><th>%</th><th>Note</th><th>Tendenz</th><th>Nachschrift</th><th>Fehlt</th></tr></thead><tbody>'+current.students.map((s,si)=>'<tr><td>'+esc(s.name)+'</td>'+current.tasks.map((t,ci)=>'<td><input class="score '+(Number(s.scores?.[t.id])>Number(t.max)?'invalidScore':'')+'" '+(s.absent?'disabled':'')+' inputmode="decimal" type="text" data-score="'+si+'|'+t.id+'" data-row="'+si+'" data-col="'+ci+'" value="'+esc(s.scores?.[t.id]??'')+'"></td>').join('')+'<td data-sum="'+si+'"></td><td data-pct="'+si+'"></td><td data-grade="'+si+'"></td><td data-trend="'+si+'"></td><td><label class="flagToggle '+(s.resit?'on':'')+'"><input type="checkbox" data-resit="'+si+'" '+(s.resit?'checked':'')+'>N</label></td><td><label class="flagToggle absent '+(s.absent?'on':'')+'"><input type="checkbox" data-absent="'+si+'" '+(s.absent?'checked':'')+'>F</label></td></tr>').join('')+'</tbody></table>';
+   $$('.score[data-score]').forEach(bindScoreInput);current.students.forEach((_,i)=>updateRow(i))
+ }
+ $$('[data-resit]').forEach(x=>x.onchange=()=>{checkpoint();current.students[+x.dataset.resit].resit=x.checked;x.closest('.flagToggle').classList.toggle('on',x.checked);renderStats();scheduleSave()});
+ $$('[data-absent]').forEach(x=>x.onchange=()=>{checkpoint();current.students[+x.dataset.absent].absent=x.checked;renderTable();renderStats();scheduleSave()});
 }
 function bindScoreInput(input){
  input.addEventListener('focus',()=>{input._before=stateSnapshot();input.select()});
  input.addEventListener('input',()=>{const [ri,id]=input.dataset.score.split('|'),v=parseNum(input.value);current.students[+ri].scores[id]=input.value===''?'':(v==null?'':Math.max(0,v));input.classList.toggle('invalidScore',v!=null&&v>Number(current.tasks.find(t=>t.id===id)?.max||0));updateRow(+ri);renderStats();renderWarnings();scheduleSave()});
- input.addEventListener('change',()=>{const [ri,id]=input.dataset.score.split('|'),t=current.tasks.find(t=>t.id===id),v=parseNum(input.value);if(input._before)pushHistorySnapshot(input._before);input._before=null;if(v!=null&&v>Number(t.max||0)){current.students[+ri].scores[id]=Number(t.max)||0;input.value=current.students[+ri].scores[id];input.classList.remove('invalidScore');toast('Maximal '+fmt(Number(t.max)||0,1)+' Punkte für Aufgabe '+t.label)}else if(v!=null&&v<0){current.students[+ri].scores[id]=0;input.value=0}updateRow(+ri);renderStats();renderWarnings();scheduleSave()});
- input.addEventListener('keydown',e=>scoreKeydown(e,input));
- input.addEventListener('paste',e=>pasteScores(e,input))
+ input.addEventListener('change',()=>{const [ri,id]=input.dataset.score.split('|'),t=current.tasks.find(t=>t.id===id),v=parseNum(input.value);if(input._before)pushHistorySnapshot(input._before);input._before=null;if(v!=null&&v>Number(t.max||0)){current.students[+ri].scores[id]=Number(t.max)||0;input.value=current.students[+ri].scores[id];input.classList.remove('invalidScore');toast('Maximal '+fmt(Number(t.max)||0,1)+' Punkte')}else if(v!=null&&v<0){current.students[+ri].scores[id]=0;input.value=0}updateRow(+ri);renderStats();renderWarnings();scheduleSave()});
+ input.addEventListener('keydown',e=>scoreKeydown(e,input));input.addEventListener('paste',e=>pasteScores(e,input))
 }
-function moveScore(row,col,dr,dc){
- let r=row+dr,c=col+dc;
- while(r>=0&&r<current.students.length&&c>=0&&c<current.tasks.length){
-  const el=$('[data-row="'+r+'"][data-col="'+c+'"]');if(el&&!el.disabled){el.focus();el.select();return}r+=dr;c+=dc
- }
-}
-function focusScoreCell(row,col){
- if(row<0||row>=current.students.length||col<0||col>=current.tasks.length)return false;
- const el=$('[data-row="'+row+'"][data-col="'+col+'"]');if(!el||el.disabled)return false;el.focus();el.select();return true
-}
-function tabScore(row,col,back=false){
- let r=row,c=col+(back?-1:1);
- if(c>=current.tasks.length){c=0;r++}else if(c<0){c=current.tasks.length-1;r--}
- while(r>=0&&r<current.students.length){
-   if(focusScoreCell(r,c))return;
-   c+=back?-1:1;
-   if(c>=current.tasks.length){c=0;r++}else if(c<0){c=current.tasks.length-1;r--}
- }
-}
-function scoreKeydown(e,input){
- const row=+input.dataset.row,col=+input.dataset.col;
- if(e.key==='Tab'){e.preventDefault();tabScore(row,col,e.shiftKey)}
- else if(e.key==='Enter'){e.preventDefault();moveScore(row,col,e.shiftKey?-1:1,0)}
- else if(e.key==='ArrowDown'){e.preventDefault();moveScore(row,col,1,0)}
- else if(e.key==='ArrowUp'){e.preventDefault();moveScore(row,col,-1,0)}
- else if(e.key==='ArrowRight'&&input.selectionStart===input.value.length){e.preventDefault();moveScore(row,col,0,1)}
- else if(e.key==='ArrowLeft'&&input.selectionStart===0){e.preventDefault();moveScore(row,col,0,-1)}
-}
+function focusScoreCell(r,c){if(r<0||r>=current.students.length||c<0||c>=current.tasks.length)return false;const el=$('[data-row="'+r+'"][data-col="'+c+'"]');if(!el||el.disabled)return false;el.focus();el.select();return true}
+function moveScore(r,c,dr,dc){let nr=r+dr,nc=c+dc;while(nr>=0&&nr<current.students.length&&nc>=0&&nc<current.tasks.length){if(focusScoreCell(nr,nc))return;nr+=dr;nc+=dc}}
+function tabScore(r,c,back=false){let nr=r,nc=c+(back?-1:1);if(nc>=current.tasks.length){nc=0;nr++}else if(nc<0){nc=current.tasks.length-1;nr--}while(nr>=0&&nr<current.students.length){if(focusScoreCell(nr,nc))return;nc+=back?-1:1;if(nc>=current.tasks.length){nc=0;nr++}else if(nc<0){nc=current.tasks.length-1;nr--}}}
+function scoreKeydown(e,input){const r=+input.dataset.row,c=+input.dataset.col;if(e.key==='Tab'){e.preventDefault();tabScore(r,c,e.shiftKey)}else if(e.key==='Enter'){e.preventDefault();moveScore(r,c,e.shiftKey?-1:1,0)}else if(e.key==='ArrowDown'){e.preventDefault();moveScore(r,c,1,0)}else if(e.key==='ArrowUp'){e.preventDefault();moveScore(r,c,-1,0)}}
 function pasteScores(e,input){
- const text=e.clipboardData?.getData('text/plain')||'';if(!text)return;
- const rows=text.replace(/\r/g,'').split('\n').filter((x,i,a)=>x!==''||i<a.length-1).map(line=>line.includes('\t')?line.split('\t'):(line.includes(';')?line.split(';'):[line]));
- if(rows.length===1&&rows[0].length===1){e.preventDefault();const v=parseNum(rows[0][0]);if(v==null)return;checkpoint();const [ri,id]=input.dataset.score.split('|'),t=current.tasks.find(t=>t.id===id);current.students[+ri].scores[id]=Math.max(0,Math.min(Number(t.max)||0,v));renderTable();renderStats();renderWarnings();scheduleSave();setTimeout(()=>$('[data-row="'+ri+'"][data-col="'+input.dataset.col+'"]')?.focus(),0);return}
- e.preventDefault();checkpoint();const sr=+input.dataset.row,sc=+input.dataset.col;let last={r:sr,c:sc},clamped=0;
- rows.forEach((vals,rr)=>vals.forEach((raw,cc)=>{const r=sr+rr,c=sc+cc;if(r>=current.students.length||c>=current.tasks.length)return;const v=parseNum(raw);if(v==null)return;const t=current.tasks[c],n=Math.max(0,Math.min(Number(t.max)||0,v));if(n!==v)clamped++;current.students[r].scores[t.id]=n;last={r,c}}));
- renderTable();renderStats();renderWarnings();scheduleSave();if(clamped)toast(clamped+' Wert'+(clamped===1?' wurde':'e wurden')+' auf Maximalpunkte begrenzt.');setTimeout(()=>{const el=$('[data-row="'+last.r+'"][data-col="'+last.c+'"]');el?.focus();el?.select()},0)
+ const text=e.clipboardData?.getData('text/plain')||'';if(!text)return;const rows=text.replace(/\r/g,'').split('\n').filter((x,i,a)=>x!==''||i<a.length-1).map(line=>line.includes('\t')?line.split('\t'):(line.includes(';')?line.split(';'):[line]));e.preventDefault();checkpoint();const sr=+input.dataset.row,sc=+input.dataset.col;
+ rows.forEach((vals,rr)=>vals.forEach((raw,cc)=>{const r=sr+rr,c=sc+cc;if(r>=current.students.length||c>=current.tasks.length)return;const v=parseNum(raw);if(v==null)return;const t=current.tasks[c];current.students[r].scores[t.id]=Math.max(0,Math.min(Number(t.max)||0,v))}));renderTable();renderStats();renderWarnings();scheduleSave()
 }
 function updateRow(si){
- const s=current.students[si],m=maxPoints(),p=points(s),g=s.absent?null:gradeFor(p),pct=m?p/m*100:0;
- const sum=$('[data-sum="'+si+'"]'),pc=$('[data-pct="'+si+'"]'),gr=$('[data-grade="'+si+'"]'),tr=$('[data-trend="'+si+'"]');
- if(sum)sum.innerHTML='<b>'+(s.absent?'–':fmt(p,1))+'</b>';if(pc)pc.textContent=s.absent?'–':fmt(pct,1)+' %';if(gr)gr.innerHTML=g?'<span class="grade g'+g+'">'+g+'</span>':'–';if(tr)tr.textContent=g?trendFor(p,g):''
+ if(current.entryMode==='grade')return;const s=current.students[si],m=maxPoints(),entered=hasPointEntry(s),p=points(s),g=s.absent||!entered?null:gradeFor(p),pct=m?p/m*100:0;
+ const sum=$('[data-sum="'+si+'"]'),pc=$('[data-pct="'+si+'"]'),gr=$('[data-grade="'+si+'"]'),tr=$('[data-trend="'+si+'"]');if(sum)sum.innerHTML='<b>'+(s.absent||!entered?'–':fmt(p,1))+'</b>';if(pc)pc.textContent=s.absent||!entered?'–':fmt(pct,1)+' %';if(gr)gr.innerHTML=gradeCell(g);if(tr)tr.textContent=g?trendFor(p,g):''
 }
-function updateAllDerived(){current.students.forEach((_,i)=>updateRow(i));renderStats()}
 function renderStats(){
- const present=current.students.filter(s=>!s.absent),grades=present.map(s=>gradeFor(points(s))).filter(Boolean),pts=present.map(s=>points(s));
- $('#maxPoints').textContent=fmt(maxPoints(),1);$('#presentCount').textContent=present.length;$('#avgGrade').textContent=grades.length?fmt(grades.reduce((a,b)=>a+b,0)/grades.length,2):'–';$('#avgPoints').textContent=pts.length?fmt(pts.reduce((a,b)=>a+b,0)/pts.length,1):'–';
+ const eligible=current.students.filter(s=>!s.absent),graded=eligible.map(s=>({s,g:studentRawGrade(current,s)})).filter(x=>x.g!=null),grades=graded.map(x=>x.g),pts=current.entryMode==='points'?eligible.filter(s=>hasPointEntry(s)).map(s=>points(s)):[];
+ $('#maxPoints').textContent=current.entryMode==='grade'?'Direkt':fmt(maxPoints(),1);$('#presentCount').textContent=eligible.length;$('#avgGrade').textContent=grades.length?fmt(grades.reduce((a,b)=>a+b,0)/grades.length,2):'–';$('#avgPoints').textContent=current.entryMode==='grade'?'–':(pts.length?fmt(pts.reduce((a,b)=>a+b,0)/pts.length,1):'–');
  const fails=grades.filter(g=>g>=5).length;$('#failShare').textContent=grades.length?fmt(fails/grades.length*100,1)+' %':'–';$('#resitCount').textContent=current.students.filter(s=>s.resit).length;
- const counts=[1,2,3,4,5,6].map(g=>grades.filter(x=>x===g).length),mx=Math.max(1,...counts);
- $('#distribution').innerHTML=counts.map((n,i)=>'<div class="barrow"><b>Note '+(i+1)+'</b><div class="track"><div class="fill" style="width:'+n/mx*100+'%"></div></div><b>'+n+'</b></div>').join('');
- $('#taskStats').innerHTML=current.tasks.map(t=>{const vals=present.map(s=>s.scores[t.id]).filter(v=>v!==''&&v!=null).map(Number),pct=vals.length&&Number(t.max)>0?vals.reduce((a,b)=>a+b,0)/(vals.length*Number(t.max))*100:0;return'<div class="taskStat"><div><b>Aufgabe '+esc(t.label)+'</b><div class="taskTrack"><div class="taskFill" style="width:'+Math.min(100,pct)+'%"></div></div></div><b>'+fmt(pct,0)+'%</b></div>'}).join('')
+ const counts=[1,2,3,4,5,6].map(g=>grades.filter(x=>x===g).length),mx=Math.max(1,...counts);$('#distribution').innerHTML=counts.map((n,i)=>'<div class="barrow"><b>Note '+(i+1)+'</b><div class="track"><div class="fill" style="width:'+n/mx*100+'%"></div></div><b>'+n+'</b></div>').join('');
+ if(current.entryMode==='points')$('#taskStats').innerHTML=current.tasks.map(t=>{const vals=eligible.map(s=>s.scores[t.id]).filter(v=>v!==''&&v!=null).map(Number),pct=vals.length&&Number(t.max)>0?vals.reduce((a,b)=>a+b,0)/(vals.length*Number(t.max))*100:0;return'<div class="taskStat"><div><b>Aufgabe '+esc(t.label)+'</b><div class="taskTrack"><div class="taskFill" style="width:'+Math.min(100,pct)+'%"></div></div></div><b>'+fmt(pct,0)+'%</b></div>'}).join('')
 }
 function renderWarnings(){
- const msgs=[],over=[];
- current.tasks.forEach(t=>current.students.forEach(s=>{if(Number(s.scores?.[t.id])>Number(t.max))over.push(s.name+' · Aufgabe '+t.label)}));
- if(over.length)msgs.push('<strong>'+over.length+' Punktwert'+(over.length===1?'':'e')+' über Aufgabenmaximum.</strong> Beim Verlassen der Zelle wird auf das Maximum begrenzt.');
- if(!thresholdsValid())msgs.push('<strong>Bewertungsschlüssel prüfen:</strong> Die Prozentgrenzen müssen von Note 1 bis 5 streng absteigend sein.');
- if(maxPoints()<=0)msgs.push('<strong>Keine Gesamtpunkte:</strong> Mindestens eine Aufgabe benötigt Maximalpunkte.');
+ const msgs=[];if(current.entryMode==='points'){const over=[];current.tasks.forEach(t=>current.students.forEach(s=>{if(Number(s.scores?.[t.id])>Number(t.max))over.push(1)}));if(over.length)msgs.push('<strong>'+over.length+' Punktwert'+(over.length===1?'':'e')+' über Aufgabenmaximum.</strong>');if(!thresholdsValid())msgs.push('<strong>Notenschlüssel prüfen:</strong> Grenzen müssen streng absteigend sein.');if(maxPoints()<=0)msgs.push('<strong>Keine Gesamtpunkte:</strong> Mindestens eine Aufgabe benötigt Maximalpunkte.')}
+ if(current.isResitAssessment)msgs.push('<strong>Nachschrift:</strong> Sie ersetzt beim betroffenen Schüler die ursprüngliche Leistung und zählt nicht als zusätzliche Leistung in den Gesamtschnitt.');
  const box=$('#gradeWarnings');box.innerHTML=msgs.join('<br>');box.classList.toggle('hidden',!msgs.length)
 }
-function renderAll(){if(!current)return;renderTasks();renderThresholds();renderTable();renderStats();renderWarnings();renderArchive();renderClassbook();renderStudents();updateUndoButtons()}
+function renderAll(){
+ if(!current)return;$('#assessmentView').classList.toggle('directGradeMode',current.entryMode==='grade');renderTasks();renderThresholds();renderTable();renderStats();renderWarnings();renderArchive();fillSubjectSelectors();renderClassbook();renderStudents();renderHomework();updateUndoButtons()
+}
 
 function renderArchive(){
  syncCurrentToDbMemory();const all=[...db.assessments].sort((x,y)=>(y.date||'').localeCompare(x.date||''));
- $('#archive').innerHTML=all.length?all.map(x=>'<div class="archiveCard"><div><b>'+esc(x.title)+'</b><div class="hint">'+esc(x.className)+' · '+esc(x.subject||'')+' · '+esc(x.date||'')+' · '+(x.kind==='major'?'groß':'klein')+' × '+x.weight+'</div></div><div class="row"><button class="btn" data-open="'+x.id+'">Öffnen</button><button class="btn" data-dup="'+x.id+'">⧉ Nachschrift</button><button class="btn danger" data-delete="'+x.id+'">Löschen</button></div></div>').join(''):'<div class="empty">Noch keine Arbeiten gespeichert.</div>';
+ $('#archive').innerHTML=all.length?all.map(x=>'<div class="archiveCard"><div><b>'+esc(x.title)+'</b>'+(x.isResitAssessment?'<span class="assessmentTag resit">Nachschrift</span>':'')+'<div class="hint">'+esc(x.className)+' · '+esc(x.subject)+' · '+esc(x.date||'')+' · '+esc(kindLabel(x.kind))+' · '+x.weight+'×</div><div class="keySummary">'+esc(keySummary(x))+'</div></div><div class="row"><button class="btn" data-open="'+x.id+'">Öffnen</button><button class="btn" data-dup="'+x.id+'">⧉ Nachschrift</button><button class="btn danger" data-delete="'+x.id+'">Löschen</button></div></div>').join(''):'<div class="empty">Noch keine Leistungen gespeichert.</div>';
  $$('[data-open]').forEach(b=>b.onclick=async()=>{await saveNow(false);current=clone(db.assessments.find(a=>a.id===b.dataset.open));history=[];future=[];fillClasses();syncInputs();showView('assessment')});
  $$('[data-dup]').forEach(b=>b.onclick=async()=>{await saveNow(false);const src=db.assessments.find(a=>a.id===b.dataset.dup);if(src)openDuplicate(src)});
- $$('[data-delete]').forEach(b=>b.onclick=async()=>{if(!confirm('Arbeit wirklich löschen?'))return;db.assessments=db.assessments.filter(a=>a.id!==b.dataset.delete);if(current?.id===b.dataset.delete)current=db.assessments[0]?clone(db.assessments[0]):newModel();await KathleenClassLists.secureSet(STORE,db);history=[];future=[];fillClasses();syncInputs();renderArchive()})
+ $$('[data-delete]').forEach(b=>b.onclick=async()=>{if(!confirm('Leistung wirklich löschen?'))return;db.assessments=db.assessments.filter(a=>a.id!==b.dataset.delete);if(current?.id===b.dataset.delete)current=db.assessments[0]?clone(db.assessments[0]):newModel();await KathleenClassLists.secureSet(STORE,db);history=[];future=[];fillClasses();syncInputs();renderArchive()})
 }
-function studentAssessmentGrade(a,name){const s=a.students.find(x=>x.name===name);if(!s||s.absent)return null;return gradeFor(points(s,a),a)}
+function studentAssessmentGrade(a,name){const s=(a.students||[]).find(x=>x.name===name);return studentRawGrade(a,s)}
+function linkedResits(parent){return db.assessments.filter(a=>a.isResitAssessment&&a.parentAssessmentId===parent.id).sort((a,b)=>(a.date||'').localeCompare(b.date||''))}
+function effectiveGrade(a,name){
+ const original=studentAssessmentGrade(a,name),rs=linkedResits(a);let replacement=null,replacementTrend='';
+ for(const r of rs){const s=(r.students||[]).find(x=>x.name===name),g=studentRawGrade(r,s);if(g!=null){replacement=g;replacementTrend=r.entryMode==='grade'?directTrend(s):trendFor(points(s,r),g,r)}}
+ const os=(a.students||[]).find(x=>x.name===name),ot=a.entryMode==='grade'?directTrend(os):(original!=null?trendFor(points(os,a),original,a):'');
+ return replacement!=null?{grade:replacement,trend:replacementTrend,resit:true}:{grade:original,trend:ot,resit:false}
+}
 function weightedAvg(items){let n=0,d=0;for(const x of items){if(x.grade==null)continue;n+=x.grade*x.weight;d+=x.weight}return d?n/d:null}
+function filteredBaseAssessments(subject){return db.assessments.filter(a=>a.classId===$('#classSelect').value&&!a.isResitAssessment&&subjectEquals(a.subject,subject))}
 function renderClassbook(){
- syncCurrentToDbMemory();const c=selectedClass()||classes()[0];if(!c){$('#classbook').innerHTML='<div class="empty">Keine Klasse.</div>';return}
- const as=db.assessments.filter(a=>a.classId===c.id),maj=Number($('#majorRatio').value)||2,min=Number($('#minorRatio').value)||1,head=as.map(a=>'<th>'+esc(a.title)+'<br><span class="hint">'+(a.kind==='major'?'G':'K')+'×'+a.weight+'</span></th>').join('');
- $('#classbook').innerHTML='<table class="gradeTable"><thead><tr><th>Schüler</th>'+head+'<th>Ø groß</th><th>Ø klein</th><th>Gesamt</th></tr></thead><tbody>'+c.students.map(name=>{const vals=as.map(a=>({a,grade:studentAssessmentGrade(a,name)})),ga=weightedAvg(vals.filter(x=>x.a.kind==='major').map(x=>({grade:x.grade,weight:Number(x.a.weight)||1}))),ka=weightedAvg(vals.filter(x=>x.a.kind==='minor').map(x=>({grade:x.grade,weight:Number(x.a.weight)||1}))),overall=ga!=null&&ka!=null?(ga*maj+ka*min)/(maj+min):ga??ka;return'<tr><td>'+esc(name)+'</td>'+vals.map(x=>'<td>'+(x.grade??'–')+'</td>').join('')+'<td>'+fmt(ga,2)+'</td><td>'+fmt(ka,2)+'</td><td><b>'+fmt(overall,2)+'</b></td></tr>'}).join('')+'</tbody></table>'
+ const c=selectedClass()||classes()[0];if(!c){$('#classbook').innerHTML='<div class="empty">Keine Klasse.</div>';return}const subject=$('#bookSubject').value||current.subject,as=filteredBaseAssessments(subject),maj=Number($('#majorRatio').value)||2,min=Number($('#minorRatio').value)||1;
+ const head=as.map(a=>'<th>'+esc(a.title)+'<br><span class="hint">'+kindShort(a.kind)+' × '+a.weight+'</span><div class="classbookKey">'+esc(keySummary(a))+'</div></th>').join('');
+ $('#classbook').innerHTML='<table class="gradeTable"><thead><tr><th>Schüler</th>'+head+'<th>Ø groß</th><th>Ø weitere</th><th>Gesamt</th></tr></thead><tbody>'+c.students.map(name=>{const vals=as.map(a=>({a,...effectiveGrade(a,name)})),ga=weightedAvg(vals.filter(x=>kindGroup(x.a.kind)==='major').map(x=>({grade:x.grade,weight:Number(x.a.weight)||1}))),ka=weightedAvg(vals.filter(x=>kindGroup(x.a.kind)==='minor').map(x=>({grade:x.grade,weight:Number(x.a.weight)||1}))),overall=ga!=null&&ka!=null?(ga*maj+ka*min)/(maj+min):ga??ka;return'<tr><td>'+esc(name)+'</td>'+vals.map(x=>'<td title="'+(x.resit?'Nachschrift ersetzt Original':'')+'">'+gradeCell(x.grade,x.trend)+(x.resit?'<span class="assessmentTag resit">N</span>':'')+'</td>').join('')+'<td>'+fmt(ga,2)+'</td><td>'+fmt(ka,2)+'</td><td><b>'+fmt(overall,2)+'</b></td></tr>'}).join('')+'</tbody></table>'
 }
 function renderStudents(){
- syncCurrentToDbMemory();const c=selectedClass()||classes()[0];if(!c){$('#studentCards').innerHTML='<div class="empty">Keine Klasse.</div>';return}
- const as=db.assessments.filter(a=>a.classId===c.id);
- $('#studentCards').innerHTML=c.students.map(name=>{const vals=as.map(a=>({a,grade:studentAssessmentGrade(a,name)})).filter(x=>x.grade!=null),avg=weightedAvg(vals.map(x=>({grade:x.grade,weight:(x.a.kind==='major'?Number($('#majorRatio').value)||2:Number($('#minorRatio').value)||1)*(Number(x.a.weight)||1)})));return'<article class="studentCard"><h3>'+esc(name)+'</h3><div class="miniGrades">'+vals.map(x=>'<span class="grade g'+x.grade+'" title="'+esc(x.a.title)+'">'+x.grade+'</span>').join('')+'</div><p class="hint">Gewichteter Stand: <b>'+fmt(avg,2)+'</b></p></article>'}).join('')
+ const c=selectedClass()||classes()[0];if(!c){$('#studentCards').innerHTML='<div class="empty">Keine Klasse.</div>';return}const subject=$('#studentSubject').value||current.subject,as=filteredBaseAssessments(subject),maj=Number($('#majorRatio').value)||2,min=Number($('#minorRatio').value)||1;
+ $('#studentCards').innerHTML=c.students.map(name=>{const vals=as.map(a=>({a,...effectiveGrade(a,name)})).filter(x=>x.grade!=null),ga=weightedAvg(vals.filter(x=>kindGroup(x.a.kind)==='major').map(x=>({grade:x.grade,weight:Number(x.a.weight)||1}))),ka=weightedAvg(vals.filter(x=>kindGroup(x.a.kind)==='minor').map(x=>({grade:x.grade,weight:Number(x.a.weight)||1}))),avg=ga!=null&&ka!=null?(ga*maj+ka*min)/(maj+min):ga??ka;return'<article class="studentCard"><h3>'+esc(name)+'</h3><div class="miniGrades">'+vals.map(x=>'<span title="'+esc(x.a.title)+(x.resit?' · Nachschrift':'')+'">'+gradeCell(x.grade,x.trend)+'</span>').join('')+'</div><p class="hint">'+esc(subject)+' · gewichteter Stand: <b>'+fmt(avg,2)+'</b></p></article>'}).join('')
 }
-function showView(v){$$('.view').forEach(x=>x.classList.toggle('active',x.id===v+'View'));$$('.tab').forEach(x=>x.classList.toggle('active',x.dataset.view===v));if(v==='classbook')renderClassbook();if(v==='students')renderStudents();if(v==='archive')renderArchive()}
-function fillClasses(){const all=classes();$('#classSelect').innerHTML=all.map(c=>'<option value="'+esc(c.id)+'">'+esc(c.name)+' · '+c.students.length+'</option>').join('');if(current&&all.some(c=>c.id===current.classId))$('#classSelect').value=current.classId}
-function bindEditSession(el,onInput){
- el.addEventListener('focus',()=>{el._before=stateSnapshot()});
- el.addEventListener('input',onInput);
- el.addEventListener('change',()=>{if(el._before)pushHistorySnapshot(el._before);el._before=null})
+function homeworkKey(classId,subject){return classId+'::'+normalizeSubject(subject).toLocaleLowerCase('de-DE')}
+function renderHomework(){
+ const cid=$('#homeworkClass').value||current.classId,c=KathleenClassLists.get(cid)||selectedClass();if(!c){$('#homeworkTable').innerHTML='<div class="empty">Keine Klasse.</div>';return}const subject=normalizeSubject($('#homeworkSubject').value||current.subject),key=homeworkKey(c.id,subject),rec=db.homework[key]||{};
+ $('#homeworkTable').innerHTML='<table class="hwTable"><thead><tr><th>Schüler</th><th>Striche</th><th>Letzter Eintrag</th><th>Aktion</th></tr></thead><tbody>'+c.students.map((name,i)=>{const arr=Array.isArray(rec[name])?rec[name]:[];return'<tr><td><b>'+esc(name)+'</b></td><td><span class="hwCount">'+arr.length+'</span></td><td>'+(arr.length?esc(arr[arr.length-1]):'–')+'</td><td><div class="hwActions"><button class="btn" data-hw-add="'+i+'">＋1</button><button class="btn" data-hw-sub="'+i+'" '+(!arr.length?'disabled':'')+'>−1</button><button class="btn danger" data-hw-reset="'+i+'" '+(!arr.length?'disabled':'')+'>Reset</button></div></td></tr>'}).join('')+'</tbody></table>';
+ const touch=(i,action)=>{checkpoint();db.homework[key]=db.homework[key]||{};const name=c.students[i],arr=Array.isArray(db.homework[key][name])?[...db.homework[key][name]]:[];if(action==='add')arr.push(new Date().toLocaleDateString('de-DE'));if(action==='sub')arr.pop();if(action==='reset')arr.length=0;db.homework[key][name]=arr;renderHomework();scheduleSave()};
+ $$('[data-hw-add]').forEach(b=>b.onclick=()=>touch(+b.dataset.hwAdd,'add'));$$('[data-hw-sub]').forEach(b=>b.onclick=()=>touch(+b.dataset.hwSub,'sub'));$$('[data-hw-reset]').forEach(b=>b.onclick=()=>{if(confirm('Strichliste für diesen Schüler zurücksetzen?'))touch(+b.dataset.hwReset,'reset')})
 }
-function openDuplicate(source=current){if(!source)return;current=newModel(source);history=[];future=[];fillClasses();syncInputs();showView('assessment');scheduleSave();toast('Nachschrift angelegt · Punkte sind leer')}
+function showView(v){$$('.view').forEach(x=>x.classList.toggle('active',x.id===v+'View'));$$('.tab').forEach(x=>x.classList.toggle('active',x.dataset.view===v));if(v==='classbook')renderClassbook();if(v==='students')renderStudents();if(v==='archive')renderArchive();if(v==='homework')renderHomework()}
+function openDuplicate(source=current){if(!source)return;current=newModel(source);history=[];future=[];fillClasses();syncInputs();showView('assessment');scheduleSave();toast('Nachschrift angelegt · gleicher Schlüssel · keine Zusatzgewichtung')}
 async function newAssessment(){await saveNow(false);current=newModel();history=[];future=[];fillClasses();syncInputs();showView('assessment');scheduleSave()}
-function toast(t){let e=$('#gradeToast');if(!e){e=document.createElement('div');e.id='gradeToast';e.style='position:fixed;left:50%;bottom:22px;transform:translateX(-50%);z-index:22000;background:#684d72;color:#fff;border-radius:99px;padding:10px 14px;font:900 11px Inter,Arial;max-width:calc(100vw - 24px);text-align:center';document.body.appendChild(e)}e.textContent=t;clearTimeout(e._t);e._t=setTimeout(()=>e.remove(),1900)}
+function toast(t){let e=$('#gradeToast');if(!e){e=document.createElement('div');e.id='gradeToast';e.style='position:fixed;left:50%;bottom:22px;transform:translateX(-50%);z-index:22000;background:#684d72;color:#fff;border-radius:99px;padding:10px 14px;font:900 11px Inter,Arial;max-width:calc(100vw - 24px);text-align:center';document.body.appendChild(e)}e.textContent=t;clearTimeout(e._t);e._t=setTimeout(()=>e.remove(),2100)}
 
-$('#addTask').onclick=()=>{checkpoint();const n=current.tasks.length+1;current.tasks.push({id:'t'+Date.now().toString(36),label:String(n),max:10});renderAll();scheduleSave()};
+$('#addTask').onclick=()=>{checkpoint();current.tasks.push({id:'t'+Date.now().toString(36),label:String(current.tasks.length+1),max:10});renderAll();scheduleSave()};
 $('#keyPreset').onchange=applyPreset;
 $('#classSelect').onchange=reconcileStudents;
 $('#saveBtn').onclick=()=>saveNow(true);
@@ -245,18 +290,20 @@ $('#lockBtn').onclick=async()=>{await saveNow(false);KathleenClassLists.lock(tru
 $('#backBtn').onclick=async()=>{await saveNow(false);location.href='../../#tools'};
 $('#newAssessment').onclick=newAssessment;
 $$('.tab').forEach(b=>b.onclick=()=>showView(b.dataset.view));
-
 ['majorRatio','minorRatio'].forEach(id=>bindEditSession($('#'+id),()=>{db.settings.majorRatio=Number($('#majorRatio').value)||2;db.settings.minorRatio=Number($('#minorRatio').value)||1;renderClassbook();renderStudents();scheduleSave()}));
-['title','kind','date','duration','weight','subject','topic','returned','directorate','gradebookDate'].forEach(id=>bindEditSession($('#'+id),()=>readInputs(true)));
+['title','date','duration','weight','topic','returned','directorate','gradebookDate'].forEach(id=>bindEditSession($('#'+id),()=>readInputs(true)));
+bindEditSession($('#subject'),()=>{readInputs(true);fillSubjectSelectors();renderArchive()});
+$('#kind').onchange=()=>{checkpoint();current.kind=$('#kind').value;if(['oral','presentation'].includes(current.kind))current.entryMode='grade';$('#entryMode').value=current.entryMode;renderAll();scheduleSave()};
+$('#entryMode').onchange=()=>{checkpoint();current.entryMode=$('#entryMode').value;renderAll();scheduleSave()};
+$('#pointStep').onchange=()=>{checkpoint();current.pointStep=Number($('#pointStep').value)===1?1:.5;renderAll();scheduleSave()};
+$('#cutoff').onchange=()=>{checkpoint();current.cutoff=Math.max(0,Math.min(49.9,parseNum($('#cutoff').value)??33));if(current.keyPreset==='linear')current.thresholds=linearThresholds(current.cutoff);renderAll();scheduleSave()};
+$('#bookSubject').onchange=renderClassbook;$('#studentSubject').onchange=renderStudents;$('#homeworkClass').onchange=renderHomework;$('#homeworkSubject').addEventListener('change',renderHomework);
 document.addEventListener('keydown',e=>{if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='z'){e.preventDefault();e.shiftKey?redo():undo()}else if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==='y'){e.preventDefault();redo()}});
-document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='hidden'&&saveTimer)saveNow(false)});window.addEventListener('beforeunload',()=>{clearTimeout(saveTimer)});
+document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='hidden'&&saveTimer)saveNow(false)});window.addEventListener('beforeunload',()=>clearTimeout(saveTimer));
 
 (async()=>{
- await KathleenClassLists.requireUnlock();
- if(typeof KathleenClassLists.secureGet!=='function'){toast('Sicherer Notenspeicher nicht verfügbar. Bitte Seite neu laden.');return}
- db=await KathleenClassLists.secureGet(STORE,db)||db;db.version=2;db.assessments=Array.isArray(db.assessments)?db.assessments:[];db.settings=db.settings||{majorRatio:2,minorRatio:1};
- $('#majorRatio').value=db.settings.majorRatio??2;$('#minorRatio').value=db.settings.minorRatio??1;
- fillClasses();current=db.assessments[0]?clone(db.assessments[0]):newModel();fillClasses();syncInputs();history=[];future=[];updateUndoButtons();lastSavedSignature=sig({current,settings:db.settings});setSaveState('saved','✓ Gespeichert')
-})().catch(e=>{console.error(e);setSaveState('error','! Fehler');toast(e.message||'Notenrechner konnte nicht geladen werden')});
+ await KathleenClassLists.requireUnlock();if(typeof KathleenClassLists.secureGet!=='function'){toast('Sicherer Notenspeicher nicht verfügbar.');return}
+ db=migrateDb(await KathleenClassLists.secureGet(STORE,db));$('#majorRatio').value=db.settings.majorRatio;$('#minorRatio').value=db.settings.minorRatio;fillClasses();current=db.assessments[0]?clone(db.assessments[0]):newModel();fillClasses();syncInputs();history=[];future=[];updateUndoButtons();setSaveState('saved','✓ Gespeichert')
+})().catch(e=>{console.error(e);setSaveState('error','! Fehler');toast(e.message||'Notenzentrale konnte nicht geladen werden')});
 })();
 </script></body></html>
