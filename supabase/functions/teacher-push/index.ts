@@ -107,6 +107,70 @@ Deno.serve(async (req) => {
     const adminToken = String(body?.adminToken || "");
     if (!(await hasAdminToken(adminToken))) return json({ ok: false, error: "admin_required" }, 401);
 
+    if (action === "sync_timetable") {
+      const timezone = cleanText(body?.timezone, 80) || "Europe/Berlin";
+      const rawEntries = Array.isArray(body?.entries) ? body.entries.slice(0, 100) : [];
+      const keepKeys: string[] = [];
+      let synced = 0;
+
+      for (const raw of rawEntries) {
+        const sourceKey = cleanText(raw?.key, 120);
+        const title = cleanText(raw?.title, 120);
+        const message = cleanText(raw?.body, 500);
+        const scheduledFor = new Date(String(raw?.scheduledFor || ""));
+        if (!sourceKey || !title || Number.isNaN(scheduledFor.getTime())) continue;
+        if (scheduledFor.getTime() < Date.now() - 60000) continue;
+
+        keepKeys.push(sourceKey);
+        const payload = {
+          title,
+          body: message,
+          target_url: safeTarget(raw?.url),
+          scheduled_for: scheduledFor.toISOString(),
+          recurrence: "weekly",
+          timezone_name: timezone,
+          active: true,
+          processing_at: null,
+          source: "timetable",
+          source_key: sourceKey,
+          updated_at: new Date().toISOString(),
+        };
+
+        const { data: existing, error: findError } = await db.from("teacher_push_reminders")
+          .select("id")
+          .eq("source", "timetable")
+          .eq("source_key", sourceKey)
+          .limit(1)
+          .maybeSingle();
+        if (findError) throw findError;
+
+        if (existing?.id) {
+          const { error } = await db.from("teacher_push_reminders").update(payload).eq("id", existing.id);
+          if (error) throw error;
+        } else {
+          const { error } = await db.from("teacher_push_reminders").insert(payload);
+          if (error) throw error;
+        }
+        synced++;
+      }
+
+      const { data: activeTimetable, error: listError } = await db.from("teacher_push_reminders")
+        .select("id,source_key")
+        .eq("source", "timetable")
+        .eq("active", true);
+      if (listError) throw listError;
+
+      const stale = (activeTimetable || []).filter((r: any) => !keepKeys.includes(String(r.source_key || "")));
+      for (const row of stale) {
+        const { error } = await db.from("teacher_push_reminders")
+          .update({ active: false, processing_at: null, updated_at: new Date().toISOString() })
+          .eq("id", row.id);
+        if (error) throw error;
+      }
+
+      return json({ ok: true, synced, disabled: stale.length });
+    }
+
     if (action === "subscribe") {
       const s = body?.subscription || {};
       const endpoint = cleanText(s.endpoint, 4000);
@@ -138,7 +202,7 @@ Deno.serve(async (req) => {
         .order("updated_at", { ascending: false });
       if (e1) throw e1;
       const { data: reminders, error: e2 } = await db.from("teacher_push_reminders")
-        .select("id,title,body,target_url,scheduled_for,recurrence,timezone_name,active,last_sent_at")
+        .select("id,title,body,target_url,scheduled_for,recurrence,timezone_name,active,last_sent_at,source,source_key")
         .eq("active", true).order("scheduled_for", { ascending: true }).limit(100);
       if (e2) throw e2;
       return json({ ok: true, configured: configured(), devices: devices || [], reminders: reminders || [] });
@@ -155,7 +219,7 @@ Deno.serve(async (req) => {
       const title = cleanText(body?.title, 120);
       const message = cleanText(body?.body, 500);
       const scheduledFor = new Date(String(body?.scheduledFor || ""));
-      const recurrence = ["none", "daily", "weekdays"].includes(String(body?.recurrence)) ? String(body.recurrence) : "none";
+      const recurrence = ["none", "daily", "weekdays", "weekly"].includes(String(body?.recurrence)) ? String(body.recurrence) : "none";
       if (!title || Number.isNaN(scheduledFor.getTime())) return json({ ok: false, error: "invalid_reminder" }, 400);
       if (scheduledFor.getTime() < Date.now() - 60000) return json({ ok: false, error: "reminder_in_past" }, 400);
 
