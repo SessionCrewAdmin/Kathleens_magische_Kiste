@@ -1,22 +1,15 @@
-<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="theme-color" content="#fff9fc"><title>Kathleens magische Tool und Aufgaben Kiste</title><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="assets/icons/app-180.png"><meta name="mobile-web-app-capable" content="yes"><script>(()=>{try{const BOAT_SESSION_KEY='kathleenBoatRevealSeenThisSession';if(sessionStorage.getItem(BOAT_SESSION_KEY)!=='1')document.documentElement.classList.add('boat-reveal-pending');const p=new URLSearchParams(location.search),m=p.get('reveal'),seen=localStorage.getItem('kathleenLaunchRevealSeen')==='1';if(m==='preview'||(m==='magic'&&!seen))document.documentElement.classList.add('launch-reveal-pending')}catch(e){document.documentElement.classList.add('boat-reveal-pending')}})();</script>
-<!-- V23.4 Exact Boat Image -->
-<script src="assets/reveal/boat-image-0.js"></script>
-<script src="assets/reveal/boat-data-01.js"></script>
-<script src="assets/reveal/boat-data-02.js"></script>
-<script src="assets/reveal/boat-data-03.js"></script>
-<script src="assets/reveal/boat-data-04.js"></script>
-<script src="assets/reveal/boat-data-05.js"></script>
-<script src="assets/reveal/boat-data-06.js"></script>
-<script src="assets/reveal/boat-data-07.js"></script>
-<script src="assets/reveal/boat-data-08.js"></script>
-<script src="assets/reveal/boat-data-09.js"></script>
-<script src="assets/reveal/boat-data-10a.js"></script>
-<script src="assets/reveal/boat-data-10b.js"></script>
-<script src="assets/reveal/boat-data-10c.js"></script>
-<script src="assets/reveal/boat-data-11a.js"></script>
-<script src="assets/reveal/boat-data-11b.js"></script>
-<script src="assets/reveal/boat-data-11c.js"></script>
-<script>(()=>{try{window.__kBoatImage='data:image/webp;base64,'+(window.__kBoat||'');window.__kBoat=''}catch(e){window.__kBoatImage=''}})();</script>
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="theme-color" content="#fff9fc"><title>Kathleens magische Tool und Aufgaben Kiste</title><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="assets/icons/app-180.png"><meta name="mobile-web-app-capable" content="yes"><script>(()=>{try{
+  const KEY='kathleenWelcomeSeenThisSession';
+  const OLD_KEY='kathleenBoatRevealSeenThisSession';
+  const p=new URLSearchParams(location.search);
+  const forced=p.get('welcome');
+  const preview=['morning','lunch','evening'].includes(forced);
+  const m=p.get('reveal'),legacySeen=localStorage.getItem('kathleenLaunchRevealSeen')==='1';
+  const legacy=m==='preview'||(m==='magic'&&!legacySeen);
+  const seen=sessionStorage.getItem(KEY)==='1'||sessionStorage.getItem(OLD_KEY)==='1';
+  if(!legacy&&(preview||!seen))document.documentElement.classList.add('welcome-pending');
+  if(legacy)document.documentElement.classList.add('launch-reveal-pending');
+}catch(e){document.documentElement.classList.add('welcome-pending')}})();</script>
 <style>
 :root{--bg:#fff9fc;--ink:#503d51;--muted:#8d788f;--line:#eadde9;--pink:#efa5c7;--pink2:#ffe2ef;--lilac:#b9a6e8;--lilac2:#eee8ff;--mint:#bee5d7;--peach:#ffd3b7;--deep:#6f5276;--green:#67a98f;--amber:#d7a05e;--red:#c6677b;--shadow:0 18px 54px rgba(116,76,112,.12)}
 *{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Inter,ui-rounded,"SF Pro Rounded",Arial,sans-serif;color:var(--ink);background:radial-gradient(circle at 8% 0%,#ffe7f1 0,transparent 28%),radial-gradient(circle at 90% 4%,#ece5ff 0,transparent 27%),linear-gradient(180deg,#fffafd,#fff8fc 52%,#faf8ff)}button,input,select,textarea{font:inherit}button{cursor:pointer}.sparkles{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}.sparkles i{position:absolute;font-style:normal;color:#e9a3c1;opacity:.28;animation:float 8s ease-in-out infinite}.sparkles i:nth-child(1){left:4%;top:8%;font-size:24px}.sparkles i:nth-child(2){left:90%;top:13%;font-size:30px;animation-delay:-2s;color:#bca8e6}.sparkles i:nth-child(3){left:77%;top:68%;font-size:21px;animation-delay:-5s;color:#e7b28f}.sparkles i:nth-child(4){left:13%;top:75%;font-size:18px;animation-delay:-3s;color:#9dd4c2}@keyframes float{50%{transform:translateY(-12px) rotate(8deg);opacity:.48}}.shell{position:relative;z-index:1;max-width:1520px;margin:0 auto;padding:22px}.hero{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;margin-bottom:16px}.title-wrap{display:flex;gap:14px;align-items:center;min-width:0}.magic-icon{width:58px;height:58px;flex:0 0 58px;border-radius:18px;background:linear-gradient(145deg,#f2a5c8,#bba7e8);display:grid;place-items:center;font-size:28px;box-shadow:0 12px 30px rgba(190,121,164,.20);transform:rotate(-3deg)}h1{font-size:clamp(28px,4vw,47px);line-height:1.02;margin:0;letter-spacing:-.045em;color:#674969}.subtitle{margin:6px 0 0;color:var(--muted);font-size:13px}.hero-actions{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}.btn{border:1px solid var(--line);background:rgba(255,255,255,.92);color:var(--ink);border-radius:12px;padding:10px 13px;font-weight:850;transition:.16s}.btn:hover{transform:translateY(-1px);border-color:#d6c3d7}.btn.primary{background:linear-gradient(135deg,#d58eb4,#a98bdd);border:0;color:#fff}.btn.danger{color:#a8556a;border-color:#edc8d2;background:#fff8fb}.panel{background:rgba(255,255,255,.88);backdrop-filter:blur(12px);border:1px solid rgba(232,217,230,.92);border-radius:20px;box-shadow:var(--shadow)}
@@ -246,39 +239,52 @@ button,.btn,.tab,.grade,.tagbtn,.iconbtn,.open{touch-action:manipulation}
 .push-center-card{background:linear-gradient(145deg,rgba(255,255,255,.96),rgba(244,242,255,.88));border-color:#ddd5ef}
 .push-center-card .tool-icon{background:linear-gradient(135deg,#eee7ff,#ffe5f1)}
 
-/* V23.4 · Exact Approved Boat Launch Reveal */
-.boat-reveal-pending body{overflow:hidden}
-.boat-reveal{position:fixed;inset:0;z-index:22000;overflow:hidden;isolation:isolate;display:none;place-items:center;background:#172c58;color:#fff}
-.boat-reveal-pending .boat-reveal{display:grid;animation:boatRevealAutoOut 4.25s ease forwards}
-.boat-reveal.done{opacity:0;visibility:hidden;pointer-events:none;transition:opacity .58s ease,visibility .58s ease}
-.boat-reveal-backdrop{position:absolute;z-index:0;width:112%;height:112%;object-fit:cover;object-position:center;filter:blur(26px) brightness(.62) saturate(.92);transform:scale(1.08);opacity:.9}
-.boat-reveal-approved{position:absolute;z-index:1;inset:0;width:100%;height:100%;object-fit:contain;object-position:center;filter:drop-shadow(0 18px 46px rgba(5,12,28,.22));animation:boatExactDrift 4.25s ease-out both}
-.boat-reveal-edge{position:absolute;z-index:2;inset:0;pointer-events:none;background:radial-gradient(circle at center,transparent 42%,rgba(7,14,32,.08) 78%,rgba(6,13,30,.24) 100%)}
-.boat-reveal-skip{position:absolute;z-index:5;right:max(12px,calc(8px + env(safe-area-inset-right)));top:max(12px,calc(8px + env(safe-area-inset-top)));border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:9px 12px;background:rgba(18,27,51,.38);color:#fff;font-size:9px;font-weight:900;box-shadow:0 8px 24px rgba(5,12,28,.2);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+/* V23.7 · Kathleen Welcome Experience */
+.welcome-pending body{overflow:hidden}
+.k-welcome{--welcome-accent:#f2a4c8;--welcome-accent-2:#cfb7ff;--welcome-text:#fff;position:fixed;inset:0;z-index:22000;display:none;overflow:hidden;isolation:isolate;background:#281d27;color:var(--welcome-text)}
+.welcome-pending .k-welcome{display:block;animation:kWelcomeAutoOut 4.55s ease forwards}
+.k-welcome.done{opacity:0;visibility:hidden;pointer-events:none;transition:opacity .58s ease,visibility .58s ease}
+.k-welcome-art{position:absolute;z-index:0;inset:0;background-image:url('assets/reveal/kathleen-welcome-desktop.webp');background-repeat:no-repeat;background-size:auto 300%;background-position:6% 0%;transform:scale(1.015);animation:kWelcomeDrift 4.35s ease-out both}
+.k-welcome.time-lunch{--welcome-accent:#f2bf83;--welcome-accent-2:#f0a8c9}.k-welcome.time-lunch .k-welcome-art{background-position:6% 50%}
+.k-welcome.time-evening{--welcome-accent:#d49cff;--welcome-accent-2:#f2acd0}.k-welcome.time-evening .k-welcome-art{background-position:6% 100%}
+.k-welcome-shade{position:absolute;z-index:1;inset:0;background:linear-gradient(90deg,rgba(28,20,26,.04) 0%,rgba(27,18,25,.08) 46%,rgba(24,16,26,.58) 61%,rgba(18,12,23,.88) 100%)}
+.k-welcome.time-lunch .k-welcome-shade{background:linear-gradient(90deg,rgba(57,38,20,.02) 0%,rgba(56,34,22,.07) 47%,rgba(61,37,26,.5) 61%,rgba(46,28,27,.83) 100%)}
+.k-welcome.time-evening .k-welcome-shade{background:linear-gradient(90deg,rgba(16,15,28,.03) 0%,rgba(17,14,29,.12) 46%,rgba(21,16,34,.64) 60%,rgba(15,11,28,.92) 100%)}
+.k-welcome-logo{position:absolute;z-index:4;top:max(22px,calc(12px + env(safe-area-inset-top)));right:max(28px,calc(18px + env(safe-area-inset-right)));text-align:right;text-shadow:0 2px 18px rgba(0,0,0,.3)}
+.k-welcome-logo strong{display:block;font-family:"Segoe Script","Bradley Hand",cursive;font-size:clamp(20px,2.1vw,34px);font-weight:500;line-height:1}.k-welcome-logo span{display:block;margin-top:5px;font-size:9px;font-weight:850;letter-spacing:.18em;text-transform:uppercase;opacity:.86}
+.k-welcome-skip{position:absolute;z-index:6;right:max(28px,calc(18px + env(safe-area-inset-right)));top:max(86px,calc(76px + env(safe-area-inset-top)));border:1px solid rgba(255,255,255,.28);border-radius:999px;padding:9px 13px;background:rgba(21,17,27,.32);color:#fff;font-size:9px;font-weight:900;box-shadow:0 8px 24px rgba(5,8,18,.18);backdrop-filter:blur(13px);-webkit-backdrop-filter:blur(13px)}
+.k-welcome-content{position:absolute;z-index:4;left:61%;right:5.5%;top:50%;transform:translateY(-47%);text-align:center;text-shadow:0 2px 24px rgba(12,7,16,.36)}
+.k-welcome-kicker{font-size:10px;font-weight:900;letter-spacing:.18em;text-transform:uppercase;opacity:.8;margin-bottom:12px}
+.k-welcome-title{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(36px,4vw,68px);font-weight:500;line-height:.95;letter-spacing:-.04em}
+.k-welcome-title .name{display:block;margin-top:9px;font-family:"Segoe Script","Bradley Hand",cursive;font-size:1.15em;font-weight:500;color:#fff}
+.k-welcome-icon{display:inline-block;margin-left:9px;font-size:.72em;vertical-align:.08em}
+.k-welcome-sub{max-width:520px;margin:24px auto 0;font-size:clamp(13px,1.2vw,18px);line-height:1.5;font-weight:650;color:rgba(255,255,255,.9)}
+.k-welcome-loader{width:min(520px,100%);margin:30px auto 0;padding:14px 16px 15px;border:1px solid rgba(255,255,255,.22);border-radius:18px;background:rgba(25,18,28,.31);box-shadow:0 18px 50px rgba(5,7,17,.2);backdrop-filter:blur(18px) saturate(1.15);-webkit-backdrop-filter:blur(18px) saturate(1.15);text-shadow:none}
+.k-welcome-loader-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:9px;font-size:10px;font-weight:900}.k-welcome-loader-head span:first-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.k-welcome-loader-head span:last-child{min-width:38px;text-align:right;font-variant-numeric:tabular-nums;color:rgba(255,255,255,.82)}
+.k-welcome-track{height:8px;border-radius:999px;overflow:hidden;background:rgba(255,255,255,.18);box-shadow:inset 0 1px 2px rgba(0,0,0,.2)}
+.k-welcome-progress{width:0;height:100%;border-radius:inherit;background:linear-gradient(90deg,var(--welcome-accent),var(--welcome-accent-2),#fff3cd);box-shadow:0 0 16px rgba(244,179,216,.55);will-change:width}
+.k-welcome-tagline{margin-top:12px;font-size:9px;letter-spacing:.17em;text-transform:uppercase;font-weight:800;opacity:.66}
+@keyframes kWelcomeDrift{from{transform:scale(1.028)}to{transform:scale(1.015)}}
+@keyframes kWelcomeAutoOut{0%,87%{opacity:1;visibility:visible}100%{opacity:0;visibility:hidden;pointer-events:none}}
 
-.boat-reveal-loader{position:absolute;z-index:6;left:50%;bottom:max(24px,calc(16px + env(safe-area-inset-bottom)));transform:translateX(-50%);width:min(430px,calc(100vw - 38px));padding:11px 13px 12px;border:1px solid rgba(255,255,255,.22);border-radius:16px;background:rgba(14,25,49,.38);box-shadow:0 12px 38px rgba(4,11,27,.25);backdrop-filter:blur(16px) saturate(1.15);-webkit-backdrop-filter:blur(16px) saturate(1.15)}
-.boat-reveal-loader-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:8px;font-size:10px;font-weight:900;letter-spacing:.02em;text-shadow:0 1px 10px rgba(0,0,0,.3)}
-.boat-reveal-loader-head span:last-child{font-variant-numeric:tabular-nums;min-width:34px;text-align:right;color:rgba(255,255,255,.8)}
-.boat-reveal-track{height:7px;border-radius:999px;overflow:hidden;background:rgba(255,255,255,.18);box-shadow:inset 0 1px 2px rgba(0,0,0,.16)}
-.boat-reveal-progress{width:0;height:100%;border-radius:inherit;background:linear-gradient(90deg,#ffd7e9 0%,#f6b8d6 38%,#c6b6ff 72%,#fff4c7 100%);box-shadow:0 0 15px rgba(255,213,236,.58);animation:boatLoadProgress 3.55s cubic-bezier(.18,.72,.2,1) .15s forwards}
-@keyframes boatLoadProgress{0%{width:0}18%{width:18%}52%{width:57%}78%{width:82%}100%{width:100%}}
-@keyframes boatExactDrift{from{transform:scale(1.018);opacity:.92}to{transform:scale(1);opacity:1}}
-@keyframes boatRevealAutoOut{0%,84%{opacity:1;visibility:visible}100%{opacity:0;visibility:hidden;pointer-events:none}}
-@media(max-width:720px){
-  .boat-reveal{background:#172c58}
-  .boat-reveal-approved{object-fit:contain;object-position:center}
-  .boat-reveal-backdrop{width:122%;height:122%;filter:blur(30px) brightness(.56) saturate(.9);opacity:.95}
-  .boat-reveal-edge{background:linear-gradient(180deg,rgba(7,14,32,.18),transparent 18%,transparent 82%,rgba(7,14,32,.2))}
-  .boat-reveal-loader{bottom:max(16px,calc(10px + env(safe-area-inset-bottom)));width:min(390px,calc(100vw - 24px));padding:10px 11px 11px;border-radius:14px}
-  .boat-reveal-loader-head{font-size:9px;margin-bottom:7px}
-  .boat-reveal-track{height:6px}
+@media(max-width:980px){
+  .k-welcome-art{background-position:24% 0%;background-size:auto 300%}
+  .k-welcome.time-lunch .k-welcome-art{background-position:24% 50%}
+  .k-welcome.time-evening .k-welcome-art{background-position:24% 100%}
+  .k-welcome-shade,.k-welcome.time-lunch .k-welcome-shade,.k-welcome.time-evening .k-welcome-shade{background:linear-gradient(180deg,rgba(16,11,20,.03) 0%,rgba(16,11,20,.08) 38%,rgba(16,11,20,.72) 66%,rgba(14,9,20,.94) 100%)}
+  .k-welcome-content{left:7%;right:7%;top:auto;bottom:max(28px,calc(18px + env(safe-area-inset-bottom)));transform:none}
+  .k-welcome-title{font-size:clamp(34px,8vw,58px)}.k-welcome-title .name{margin-top:4px}.k-welcome-sub{margin-top:14px;font-size:14px}.k-welcome-loader{margin-top:18px}
 }
-@media(prefers-reduced-motion:reduce){
-  .boat-reveal{animation-duration:1.8s}
-  .boat-reveal-approved{animation:none}
-  .boat-reveal-progress{animation-duration:1.25s;animation-delay:.05s}
+@media(max-width:620px){
+  .k-welcome-art{background-position:26% 0%}.k-welcome.time-lunch .k-welcome-art{background-position:26% 50%}.k-welcome.time-evening .k-welcome-art{background-position:26% 100%}
+  .k-welcome-logo{top:max(14px,calc(8px + env(safe-area-inset-top)));right:16px}.k-welcome-logo strong{font-size:20px}.k-welcome-logo span{font-size:7px}
+  .k-welcome-skip{top:max(64px,calc(56px + env(safe-area-inset-top)));right:14px;padding:8px 11px;font-size:8px}
+  .k-welcome-content{left:12px;right:12px;bottom:max(14px,calc(8px + env(safe-area-inset-bottom)))}
+  .k-welcome-kicker{font-size:8px;margin-bottom:8px}.k-welcome-title{font-size:35px}.k-welcome-sub{font-size:12px;line-height:1.4;margin-top:10px}
+  .k-welcome-loader{margin-top:13px;padding:11px 12px 12px;border-radius:15px}.k-welcome-loader-head{font-size:9px;margin-bottom:7px}.k-welcome-track{height:7px}.k-welcome-tagline{font-size:7px;margin-top:9px}
 }
-</style></head><body><section class="boat-reveal" id="boatReveal" aria-label="Startanimation von Kathleens Kiste"><img class="boat-reveal-backdrop" id="boatRevealBackdrop" alt="" aria-hidden="true"><img class="boat-reveal-approved" id="boatRevealApproved" alt="Kathleens Kiste – Segelboot mit Mann, blonder Frau und Katze bei Sonnenuntergang"><div class="boat-reveal-edge" aria-hidden="true"></div><div class="boat-reveal-loader" aria-live="polite"><div class="boat-reveal-loader-head"><span id="boatRevealLoadText">Kathleens Kiste wird geladen …</span><span id="boatRevealLoadPct">0%</span></div><div class="boat-reveal-track" role="progressbar" aria-label="Kathleens Kiste wird geladen" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="boatRevealProgressTrack"><div class="boat-reveal-progress"></div></div></div><button class="boat-reveal-skip" id="boatRevealSkip" type="button">Überspringen</button></section><section class="launch-reveal" id="launchReveal" aria-label="Überraschungs-Launch"><button class="reveal-skip" id="revealSkip" type="button">Überspringen</button><div class="reveal-glow g1"></div><div class="reveal-glow g2"></div><div class="reveal-glow g3"></div><div class="reveal-stars" aria-hidden="true"><i>✦</i><i>✧</i><i>✦</i><i>✧</i><i>✦</i></div><div class="reveal-confetti" id="revealConfetti" aria-hidden="true"></div><div class="reveal-stage"><section class="reveal-scene active" data-reveal-scene="0"><div class="reveal-kicker">Eine kleine Überraschung</div><h2 class="reveal-main">Für Kathleen ✨</h2><p class="reveal-copy">Ich hab da mal was für dich gebastelt 😊</p><button class="reveal-button" id="revealStart" type="button">Öffnen ✨</button><div class="reveal-note">Ton am besten kurz anlassen.</div></section><section class="reveal-scene" data-reveal-scene="1"><div class="reveal-kicker">Weil wir es beide wissen</div><h2 class="reveal-main">Unterricht vorbereiten kann nerven.</h2></section><section class="reveal-scene" data-reveal-scene="2"><div class="reveal-kicker">Also dachte ich …</div><h2 class="reveal-main">Warum nicht eine eigene kleine Zentrale?</h2></section><section class="reveal-scene" data-reveal-scene="3"><div class="reveal-box-wrap" aria-hidden="true"><div class="reveal-tool-cloud"><span class="reveal-tool">📚</span><span class="reveal-tool">💬</span><span class="reveal-tool">🎲</span><span class="reveal-tool">📊</span><span class="reveal-tool">🎟</span></div><div class="reveal-lid"></div><div class="reveal-box"></div></div><div class="reveal-title-wrap"><div class="reveal-kicker">Willkommen in deiner eigenen Unterrichtszentrale</div><h2 class="reveal-main">Kathleens magische<br>Tool- &amp; Aufgaben-Kiste ✨</h2><div class="reveal-feature-row"><span class="reveal-feature">📚 Geschichte</span><span class="reveal-feature">💬 English</span><span class="reveal-feature">🎲 Classroom Tools</span><span class="reveal-feature">📊 Live Poll</span><span class="reveal-feature">🎟 Homework Vouchers</span></div></div></section><section class="reveal-scene" data-reveal-scene="4"><span class="reveal-heart">💗</span><div class="reveal-kicker">Nur für dich</div><h2 class="reveal-main">Gebaut für deinen Unterricht.</h2><p class="reveal-copy">Und ein bisschen dafür, dass Vorbereitung weniger nervt.</p><button class="reveal-button" id="revealOpenApp" type="button">Kathleens Kiste öffnen ✨</button></section></div><div class="reveal-progress" aria-hidden="true"><i class="active"></i><i></i><i></i><i></i><i></i></div></section><div class="sparkles" aria-hidden="true"><i>✦</i><i>✧</i><i>✿</i><i>✦</i></div><main class="shell">
+@media(prefers-reduced-motion:reduce){.welcome-pending .k-welcome{animation-duration:1.85s}.k-welcome-art{animation:none}}
+</style></head><body><section class="k-welcome time-morning" id="kWelcome" aria-label="Willkommen in Kathleens Kiste"><div class="k-welcome-art" aria-hidden="true"></div><div class="k-welcome-shade" aria-hidden="true"></div><div class="k-welcome-logo"><strong>Kathleens</strong><span>magische Kiste ♡</span></div><button class="k-welcome-skip" id="kWelcomeSkip" type="button">Überspringen</button><div class="k-welcome-content"><div class="k-welcome-kicker" id="kWelcomeKicker">Deine Unterrichtszentrale</div><h2 class="k-welcome-title"><span id="kWelcomeGreeting">Guten Morgen,</span><span class="name">Kathleen <span class="k-welcome-icon" id="kWelcomeIcon">☀️</span></span></h2><p class="k-welcome-sub" id="kWelcomeSub">Deine magische Kiste wird für den Schultag vorbereitet.</p><div class="k-welcome-loader" aria-live="polite"><div class="k-welcome-loader-head"><span id="kWelcomeStatus">Materialien werden sortiert …</span><span id="kWelcomePct">0%</span></div><div class="k-welcome-track" role="progressbar" aria-label="Kathleens Kiste wird geladen" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" id="kWelcomeTrack"><div class="k-welcome-progress" id="kWelcomeProgress"></div></div><div class="k-welcome-tagline">Gemeinsam Großes möglich machen ♡</div></div></div></section><section class="launch-reveal" id="launchReveal" aria-label="Überraschungs-Launch"><button class="reveal-skip" id="revealSkip" type="button">Überspringen</button><div class="reveal-glow g1"></div><div class="reveal-glow g2"></div><div class="reveal-glow g3"></div><div class="reveal-stars" aria-hidden="true"><i>✦</i><i>✧</i><i>✦</i><i>✧</i><i>✦</i></div><div class="reveal-confetti" id="revealConfetti" aria-hidden="true"></div><div class="reveal-stage"><section class="reveal-scene active" data-reveal-scene="0"><div class="reveal-kicker">Eine kleine Überraschung</div><h2 class="reveal-main">Für Kathleen ✨</h2><p class="reveal-copy">Ich hab da mal was für dich gebastelt 😊</p><button class="reveal-button" id="revealStart" type="button">Öffnen ✨</button><div class="reveal-note">Ton am besten kurz anlassen.</div></section><section class="reveal-scene" data-reveal-scene="1"><div class="reveal-kicker">Weil wir es beide wissen</div><h2 class="reveal-main">Unterricht vorbereiten kann nerven.</h2></section><section class="reveal-scene" data-reveal-scene="2"><div class="reveal-kicker">Also dachte ich …</div><h2 class="reveal-main">Warum nicht eine eigene kleine Zentrale?</h2></section><section class="reveal-scene" data-reveal-scene="3"><div class="reveal-box-wrap" aria-hidden="true"><div class="reveal-tool-cloud"><span class="reveal-tool">📚</span><span class="reveal-tool">💬</span><span class="reveal-tool">🎲</span><span class="reveal-tool">📊</span><span class="reveal-tool">🎟</span></div><div class="reveal-lid"></div><div class="reveal-box"></div></div><div class="reveal-title-wrap"><div class="reveal-kicker">Willkommen in deiner eigenen Unterrichtszentrale</div><h2 class="reveal-main">Kathleens magische<br>Tool- &amp; Aufgaben-Kiste ✨</h2><div class="reveal-feature-row"><span class="reveal-feature">📚 Geschichte</span><span class="reveal-feature">💬 English</span><span class="reveal-feature">🎲 Classroom Tools</span><span class="reveal-feature">📊 Live Poll</span><span class="reveal-feature">🎟 Homework Vouchers</span></div></div></section><section class="reveal-scene" data-reveal-scene="4"><span class="reveal-heart">💗</span><div class="reveal-kicker">Nur für dich</div><h2 class="reveal-main">Gebaut für deinen Unterricht.</h2><p class="reveal-copy">Und ein bisschen dafür, dass Vorbereitung weniger nervt.</p><button class="reveal-button" id="revealOpenApp" type="button">Kathleens Kiste öffnen ✨</button></section></div><div class="reveal-progress" aria-hidden="true"><i class="active"></i><i></i><i></i><i></i><i></i></div></section><div class="sparkles" aria-hidden="true"><i>✦</i><i>✧</i><i>✿</i><i>✦</i></div><main class="shell">
 <header class="hero"><div class="title-wrap"><div class="magic-icon">🪄</div><div><h1>Kathleens magische Tool und Aufgaben Kiste</h1><p class="subtitle">Kathleens Unterrichtszentrale · schnell starten, gezielt finden, getrennt verwalten.</p></div></div></header>
 <nav class="app-nav" aria-label="Hauptnavigation">
 <button class="nav-btn active" data-view="home"><span>⌂</span>Start</button><button class="nav-btn" data-view="library"><span>▦</span>Bibliothek</button><button class="nav-btn" data-view="tools"><span>🧰</span>Tools</button><button class="nav-btn" data-view="favorites"><span>★</span>Favoriten</button><button class="nav-btn" data-view="manage"><span>⚙</span>Verwalten</button>
@@ -376,49 +382,60 @@ $('#moduleSave').onclick=()=>{const title=$('#fTitle').value.trim(),href=$('#fHr
 $('#exportBtn').onclick=async()=>{const data={version:21,exportedAt:new Date().toISOString(),modules};const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='Kathleens_Tool_Kiste_Backup.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),400)};$('#importBtn').onclick=()=>$('#importFile').click();$('#importFile').onchange=async e=>{const f=e.target.files?.[0];if(!f)return;try{const d=JSON.parse(await f.text());if(!Array.isArray(d.modules))throw Error();await ensureAdmin(async()=>{const ok=await rpc('toolbox_replace_modules',{p_passphrase:adminPass(),p_modules:d.modules.map(cleanModule)});if(!ok)throw Error();toast('Backup importiert ✨');await load()})}catch(err){toast('Backup ungültig oder Import fehlgeschlagen')}e.target.value=''};
 async function activeSession(){try{const r=await fetch(`${SUPABASE_URL}/rest/v1/quiz_session_public?select=code,status,start_at,created_at&status=in.(waiting,armed,paused)&order=created_at.desc&limit=1`,{headers:{apikey:SUPABASE_KEY}});if(!r.ok)return;const s=(await r.json())[0];if(!s)return;$('#activeSession').innerHTML=`<div class="session-code">${esc(s.code)}</div><div class="session-sub">Status: ${esc(s.status)} · <a href="tools/kalter-krieg/lehrer.html" style="color:#8a5876;font-weight:900">Control Room öffnen →</a></div>`}catch(e){}}
 
-const BOAT_SESSION_KEY='kathleenBoatRevealSeenThisSession';
-function finishBoatReveal(){
-  const r=document.getElementById('boatReveal');
-  document.documentElement.classList.remove('boat-reveal-pending');
-  try{sessionStorage.setItem(BOAT_SESSION_KEY,'1')}catch(e){}
+const WELCOME_SESSION_KEY='kathleenWelcomeSeenThisSession';
+const WELCOME_OLD_SESSION_KEY='kathleenBoatRevealSeenThisSession';
+const WELCOME_MODES={
+  morning:{className:'time-morning',greeting:'Guten Morgen,',icon:'☀️',sub:'Deine magische Kiste wird für den Schultag vorbereitet.',statuses:['Materialien werden sortiert …','Stundenplan wird geladen …','Unterricht wird vorbereitet …','Bereit ✨']},
+  lunch:{className:'time-lunch',greeting:'Mahlzeit,',icon:'🌼',sub:'Alles wird für den nächsten Unterrichtsblock bereitgemacht.',statuses:['Aufgaben werden gesammelt …','Tools werden vorbereitet …','Der nächste Block wird geladen …','Bereit ✨']},
+  evening:{className:'time-evening',greeting:'Guten Abend,',icon:'🌙',sub:'Deine Kiste bringt noch schnell Ordnung in den Abend.',statuses:['Ideen werden sortiert …','Morgen wird vorbereitet …','Deine Tools machen sich bereit …','Bereit ✨']}
+};
+function welcomeMode(){
+  const forced=new URLSearchParams(location.search).get('welcome');
+  if(WELCOME_MODES[forced])return forced;
+  const h=new Date().getHours();
+  return h>=5&&h<11?'morning':h>=11&&h<17?'lunch':'evening'
+}
+function finishWelcome(){
+  const r=document.getElementById('kWelcome');
+  document.documentElement.classList.remove('welcome-pending');
   if(!r)return;
   r.classList.add('done');
   setTimeout(()=>r.remove(),650)
 }
-function initBoatReveal(){
-  const r=document.getElementById('boatReveal');
+function initWelcome(){
+  const r=document.getElementById('kWelcome');
+  const forced=new URLSearchParams(location.search).get('welcome');
+  const preview=!!WELCOME_MODES[forced];
   let alreadySeen=false;
-  try{alreadySeen=sessionStorage.getItem(BOAT_SESSION_KEY)==='1'}catch(e){}
-  if(alreadySeen||!document.documentElement.classList.contains('boat-reveal-pending')){
-    document.documentElement.classList.remove('boat-reveal-pending');
-    r?.remove();
-    return
+  try{alreadySeen=sessionStorage.getItem(WELCOME_SESSION_KEY)==='1'||sessionStorage.getItem(WELCOME_OLD_SESSION_KEY)==='1'}catch(e){}
+  if((alreadySeen&&!preview)||!document.documentElement.classList.contains('welcome-pending')){
+    document.documentElement.classList.remove('welcome-pending');r?.remove();return
   }
-  if(!r){document.documentElement.classList.remove('boat-reveal-pending');return}
-  try{sessionStorage.setItem(BOAT_SESSION_KEY,'1')}catch(e){}
-  const src=window.__kBoatImage||'assets/reveal/kathleen-boat-reveal.svg';
-  const main=document.getElementById('boatRevealApproved'),back=document.getElementById('boatRevealBackdrop');
-  if(main)main.src=src;if(back)back.src=src;
-  const pct=document.getElementById('boatRevealLoadPct'),track=document.getElementById('boatRevealProgressTrack'),label=document.getElementById('boatRevealLoadText');
+  if(!r){document.documentElement.classList.remove('welcome-pending');return}
+  if(!preview)try{sessionStorage.setItem(WELCOME_SESSION_KEY,'1')}catch(e){}
+  const mode=welcomeMode(),cfg=WELCOME_MODES[mode];
+  r.classList.remove('time-morning','time-lunch','time-evening');r.classList.add(cfg.className);
+  document.getElementById('kWelcomeGreeting').textContent=cfg.greeting;
+  document.getElementById('kWelcomeIcon').textContent=cfg.icon;
+  document.getElementById('kWelcomeSub').textContent=cfg.sub;
+  const status=document.getElementById('kWelcomeStatus'),pct=document.getElementById('kWelcomePct'),track=document.getElementById('kWelcomeTrack'),bar=document.getElementById('kWelcomeProgress');
   const reduced=window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
-  const duration=reduced?1350:3700,start=performance.now();
-  let raf=0;
+  const duration=reduced?1350:3850,start=performance.now();
+  let raf=0,lastStatus=-1,done=false;
   const tick=now=>{
-    const elapsed=Math.max(0,now-start),raw=Math.min(1,elapsed/duration);
-    const eased=1-Math.pow(1-raw,2.15),value=Math.min(100,Math.round(eased*100));
-    if(pct)pct.textContent=value+'%';
-    track?.setAttribute('aria-valuenow',String(value));
-    if(value>=100){if(label)label.textContent='Bereit ✨';return}
-    raf=requestAnimationFrame(tick)
+    const raw=Math.min(1,Math.max(0,(now-start)/duration));
+    const eased=1-Math.pow(1-raw,2.05),value=Math.min(100,Math.round(eased*100));
+    if(pct)pct.textContent=value+'%';if(bar)bar.style.width=value+'%';track?.setAttribute('aria-valuenow',String(value));
+    const si=value>=100?3:value>=72?2:value>=36?1:0;if(si!==lastStatus&&status){status.textContent=cfg.statuses[si];lastStatus=si}
+    if(raw<1)raf=requestAnimationFrame(tick)
   };
   raf=requestAnimationFrame(tick);
-  let done=false;
-  const finish=()=>{if(done)return;done=true;if(raf)cancelAnimationFrame(raf);if(pct)pct.textContent='100%';track?.setAttribute('aria-valuenow','100');if(label)label.textContent='Bereit ✨';finishBoatReveal()};
-  document.getElementById('boatRevealSkip')?.addEventListener('click',finish);
-  r.addEventListener('animationend',e=>{if(e.animationName==='boatRevealAutoOut')finish()});
-  setTimeout(finish,reduced?2000:4550)
+  const finish=()=>{if(done)return;done=true;if(raf)cancelAnimationFrame(raf);if(pct)pct.textContent='100%';if(bar)bar.style.width='100%';track?.setAttribute('aria-valuenow','100');if(status)status.textContent=cfg.statuses[3];finishWelcome()};
+  document.getElementById('kWelcomeSkip')?.addEventListener('click',finish);
+  r.addEventListener('animationend',e=>{if(e.animationName==='kWelcomeAutoOut')finish()});
+  setTimeout(finish,reduced?2050:4850)
 }
-initBoatReveal();
+initWelcome();
 
 const REVEAL_SEEN_KEY='kathleenLaunchRevealSeen';
 let revealTimers=[],revealAudioCtx=null;
