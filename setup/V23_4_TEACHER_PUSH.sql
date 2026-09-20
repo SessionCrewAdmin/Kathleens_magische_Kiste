@@ -27,6 +27,12 @@ create table if not exists public.teacher_push_subscriptions (
   updated_at timestamptz not null default now()
 );
 
+create table if not exists public.teacher_push_admin_tokens (
+  token_hash text primary key,
+  expires_at timestamptz not null,
+  created_at timestamptz not null default now()
+);
+
 create table if not exists public.teacher_push_reminders (
   id uuid primary key default gen_random_uuid(),
   title text not null check (char_length(title) between 1 and 120),
@@ -49,9 +55,53 @@ create index if not exists teacher_push_reminders_due_idx
 
 alter table public.teacher_push_subscriptions enable row level security;
 alter table public.teacher_push_reminders enable row level security;
+alter table public.teacher_push_admin_tokens enable row level security;
 
 revoke all on public.teacher_push_subscriptions from anon, authenticated;
 revoke all on public.teacher_push_reminders from anon, authenticated;
+revoke all on public.teacher_push_admin_tokens from anon, authenticated;
+
+create or replace function public.teacher_push_issue_token(p_passphrase text)
+returns text
+language plpgsql
+security definer
+set search_path=public,pg_catalog
+as $
+declare
+  ok boolean := false;
+  raw_token text;
+begin
+  select public.toolbox_verify_admin(p_passphrase) into ok;
+  if not coalesce(ok,false) then return null; end if;
+
+  delete from public.teacher_push_admin_tokens where expires_at < now();
+  raw_token := translate(encode(gen_random_bytes(32),'base64'), E'+/=\n\r', '-_');
+  insert into public.teacher_push_admin_tokens(token_hash,expires_at)
+  values(encode(digest(raw_token,'sha256'),'hex'), now()+interval '30 minutes')
+  on conflict(token_hash) do update set expires_at=excluded.expires_at;
+  return raw_token;
+end;
+$;
+
+create or replace function public.teacher_push_check_token(p_token text)
+returns boolean
+language plpgsql
+security definer
+set search_path=public,pg_catalog
+as $
+declare
+  h text;
+  ok boolean;
+begin
+  if length(coalesce(p_token,'')) < 20 then return false; end if;
+  h := encode(digest(p_token,'sha256'),'hex');
+  select exists(
+    select 1 from public.teacher_push_admin_tokens
+    where token_hash=h and expires_at > now()
+  ) into ok;
+  return coalesce(ok,false);
+end;
+$;
 
 create or replace function public.teacher_push_claim_due(p_limit integer default 20)
 returns setof public.teacher_push_reminders
@@ -135,8 +185,12 @@ begin
 end;
 $$;
 
+revoke all on function public.teacher_push_issue_token(text) from public;
+revoke all on function public.teacher_push_check_token(text) from public;
 revoke all on function public.teacher_push_claim_due(integer) from public;
 revoke all on function public.teacher_push_finish_reminder(uuid,boolean) from public;
+grant execute on function public.teacher_push_issue_token(text) to anon, authenticated;
+grant execute on function public.teacher_push_check_token(text) to service_role;
 grant execute on function public.teacher_push_claim_due(integer) to service_role;
 grant execute on function public.teacher_push_finish_reminder(uuid,boolean) to service_role;
 
