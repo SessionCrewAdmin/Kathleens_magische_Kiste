@@ -35,7 +35,7 @@ function ensureStyles(){
 .kwPollStars{display:grid;grid-template-columns:repeat(5,1fr);gap:5px}.kwPollStar{border:1px solid #e3d6e4;background:#fff;border-radius:10px;min-height:46px;font-size:21px;color:#d1c3d4}.kwPollStar.selected{background:#fff7dc;color:#e0a52d;border-color:#ead18b}
 .kwPollRankList{display:grid;gap:5px}.kwPollRankItem{display:grid;grid-template-columns:28px 1fr auto;gap:5px;align-items:center;border:1px solid #e3d6e4;background:#fff;border-radius:9px;padding:5px}.kwPollRankItem i{width:25px;height:25px;border-radius:8px;background:#eee5f2;display:grid;place-items:center;font-style:normal;font-size:8px;font-weight:950}.kwPollRankMove{display:flex;gap:3px}.kwPollRankMove button{width:27px;height:27px;border:1px solid #e2d5e4;background:#fff;border-radius:7px;color:#6b566f}
 .kwPollStudentInput{width:100%;border:1px solid #dfd2e2;border-radius:10px;padding:9px;background:#fff;color:#58475b;font:inherit;font-size:9px;min-height:58px;resize:vertical}.kwPollStudentSubmit{width:100%;margin-top:7px;border:0;border-radius:10px;padding:9px;background:linear-gradient(135deg,#d790b5,#aa8cde);color:#fff;font-size:9px;font-weight:950}.kwPollSaved{font-size:8px;text-align:center;color:#5e8d78;font-weight:900;margin-top:6px}
-.kwStickerMain{flex:1;display:grid;place-items:center;padding:8px;text-align:center}.kwStickerEmoji{font-size:68px;filter:drop-shadow(0 10px 10px #79587927);line-height:1}.kwStickerLabel{font-size:13px;font-weight:950;margin-top:5px}.kwStickerPicker{display:grid;grid-template-columns:repeat(6,1fr);gap:4px;padding:7px}.kwStickerPicker button{border:1px solid #e5d8e7;background:#fff;border-radius:9px;font-size:18px;min-height:34px;cursor:pointer}
+.kwStickerCanvas{width:100%;height:100%;display:grid;place-items:center;overflow:visible}.kwStickerEmoji{font-size:min(82cqw,82cqh);filter:drop-shadow(0 10px 12px #51365030);line-height:1;user-select:none;-webkit-user-select:none;pointer-events:none;transform:translateZ(0)}
 .kwSoundMeter{height:150px;display:flex;align-items:flex-end;justify-content:center;gap:14px;padding:10px}.kwSoundColumn{height:100%;width:55px;border-radius:18px;background:#eee5ef;overflow:hidden;display:flex;align-items:flex-end}.kwSoundFill{width:100%;height:0;background:linear-gradient(180deg,#e35a72,#efc755 52%,#62c58f);transition:height .08s}.kwSoundValue{font-size:34px;font-weight:950;align-self:center}.kwSoundValue small{font-size:9px;display:block;color:#8e7892}.kwSoundThreshold{display:flex;align-items:center;gap:6px;padding:0 10px 8px;font-size:8px;font-weight:900}.kwSoundThreshold input{flex:1}
 .kwShell{height:100%;display:grid;place-items:center;border:1px dashed #d9c8dc;border-radius:16px;color:#8b778f;background:#fffafd}
 `;
@@ -156,10 +156,19 @@ function renderPoll(data,{mode,esc}){
  const status=data.open?'OFFEN':data.question?'GESCHLOSSEN':'BEREIT';
  return '<div class="kwWidget '+(student?'kwPollStudent':'')+'" data-poll-key="'+esc(data.pollKey||'')+'" data-poll-type="'+esc(type)+'"><div class="kwWidgetTop"><span class="kwWidgetIcon">'+meta[1]+'</span><b>Live Poll</b><span class="kwWidgetState">'+status+'</span></div><div class="kwBody">'+body+(student?participation:results)+(teacher?'<div class="kwRandomMeta">'+(Number(data.total)||0)+' Antworten'+(data.revealResults?' · Ergebnis sichtbar':' · Ergebnis verborgen')+'</div>':'')+(student&&data.revealResults?'<div style="margin-top:8px">'+results+'</div>':'')+'</div>'+(teacher?'<div class="kwActions"><button class="primary" data-kw-action="'+(data.open?'poll-close':'poll-open')+'">'+(data.open?'■ Schließen':'▶ Starten')+'</button><button data-kw-action="poll-reveal">'+(data.revealResults?'🙈 Verbergen':'👁 Zeigen')+'</button><button data-kw-action="poll-reset">↺ Reset</button></div>':'')+'</div>'
 }
-const stickerSet=[['star','⭐','Stark!'],['heart','💖','Super!'],['fire','🔥','On fire!'],['party','🎉','Geschafft!'],['crown','👑','Top!'],['rocket','🚀','Weiter so!'],['brain','🧠','Clever!'],['hundred','💯','Perfekt!'],['sparkles','✨','Magisch!'],['trophy','🏆','Champion!'],['clap','👏','Bravo!'],['smile','😎','Cool!']];
-function renderSticker(data,{mode,esc}){
- const teacher=mode==='teacher',found=stickerSet.find(x=>x[0]===data.stickerId)||stickerSet[0],emoji=data.emoji||found[1],label=data.label||found[2];
- return '<div class="kwWidget"><div class="kwStickerMain"><div><div class="kwStickerEmoji">'+esc(emoji)+'</div><div class="kwStickerLabel">'+esc(label)+'</div></div></div>'+(teacher?'<div class="kwStickerPicker">'+stickerSet.map(s=>'<button data-kw-action="sticker-set" data-kw-value="'+s[0]+'" title="'+esc(s[2])+'">'+s[1]+'</button>').join('')+'</div><div class="kwActions"><input class="kwInput" data-kw-field="label" value="'+esc(label)+'" placeholder="Text"></div>':'')+'</div>';
+const stickerSet=[
+ ['star','⭐','Stern'],['heart','💖','Herz'],['fire','🔥','Feuer'],['party','🎉','Konfetti'],
+ ['crown','👑','Krone'],['rocket','🚀','Rakete'],['brain','🧠','Gehirn'],['hundred','💯','100'],
+ ['sparkles','✨','Glitzer'],['trophy','🏆','Pokal'],['clap','👏','Applaus'],['smile','😎','Cool'],
+ ['book','📚','Bücher'],['pencil','✏️','Stift'],['bulb','💡','Idee'],['check','✅','Erledigt'],
+ ['rainbow','🌈','Regenbogen'],['sun','☀️','Sonne'],['moon','🌙','Mond'],['apple','🍎','Apfel'],
+ ['bee','🐝','Biene'],['butterfly','🦋','Schmetterling'],['flower','🌸','Blume'],['bow','🎀','Schleife'],
+ ['coffee','☕️','Kaffee'],['pin','📌','Pin'],['warning','❗️','Ausrufezeichen'],['question','❓','Frage'],
+ ['puzzle','🧩','Puzzle'],['target','🎯','Ziel'],['lightning','⚡️','Blitz'],['medal','🥇','Medaille']
+];
+function renderSticker(data,{esc}){
+ const found=stickerSet.find(x=>x[0]===data.stickerId)||stickerSet[0],emoji=data.emoji||found[1];
+ return '<div class="kwStickerCanvas" aria-label="Sticker '+esc(found[2])+'"><span class="kwStickerEmoji">'+esc(emoji)+'</span></div>';
 }
 function renderSound(data,{mode}){
  const teacher=mode==='teacher',level=clamp(data.level||0,0,100),threshold=clamp(data.threshold||65,20,95),running=!!data.running;
@@ -178,7 +187,7 @@ register({type:'traffic',icon:'🚦',title:'Ampel',defaultSize:{w:610,h:460},def
 register({type:'random',icon:'🎯',title:'Zufallsgenerator',defaultSize:{w:560,h:420},defaultData:{names:[],sourceName:'',excludeDrawn:true,count:1,drawn:[],result:[]},render:renderRandom});
 register({type:'teams',icon:'👥',title:'Teamgenerator',defaultSize:{w:740,h:530},defaultData:{names:[],sourceName:'',mode:'count',teamCount:4,teams:[]},render:renderTeams});
 register({type:'poll',icon:'📊',title:'Live Poll',defaultSize:{w:800,h:610},defaultData:{pollKey:'',pollType:'choice',question:'',options:['Antwort A','Antwort B','Antwort C','Antwort D'],chartMode:'bar',counts:[0,0,0,0],answers:[],ranking:[],total:0,open:false,revealResults:false},capabilities:{studentInteract:true},render:renderPoll});
-register({type:'sticker',icon:'💖',title:'Sticker',defaultSize:{w:370,h:340},defaultData:{stickerId:'star',emoji:'⭐',label:'Stark!'},render:renderSticker});
+register({type:'sticker',icon:'💖',title:'Sticker',defaultSize:{w:150,h:150},defaultData:{stickerId:'star',emoji:'⭐'},render:renderSticker});
 register({type:'sound',icon:'🎙️',title:'Sound-Pegel',defaultSize:{w:510,h:450},defaultData:{threshold:65,level:0,running:false,counter:0},render:renderSound});
 
 window.KathleenWidgets=Object.freeze({VERSION,SCHEMA,register,definition,list,create,normalizeData,renderHtml,mount,itemFromElement,writeToElement,setData,migrate,timerRemaining,padTime,shuffle,stickerSet});
