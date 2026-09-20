@@ -56,26 +56,26 @@ const KEY='sb_publishable_GIyyWoyaQXipaA4S9OuTyQ_cZn7LUgV';
 const EDGE='https://fzqxnjhuvgpgovcovosl.supabase.co/functions/v1/teacher-push';
 const DAYS=['','Montag','Dienstag','Mittwoch','Donnerstag','Freitag'];
 const DEFAULT_ENTRIES=[
-{id:'mo1',day:1,start:'07:55',end:'08:40',className:'9a',subject:'E',room:'A-101',push:true},
+{id:'mo1',day:1,start:'07:55',end:'08:40',className:'9a',subject:'Englisch',room:'A-101',push:true},
 {id:'mo2',day:1,start:'08:40',end:'09:25',className:'',subject:'Spr.st',room:'',push:true},
-{id:'mo3',day:1,start:'09:45',end:'10:30',className:'7f',subject:'E',room:'R-303',push:true},
+{id:'mo3',day:1,start:'09:45',end:'10:30',className:'7f',subject:'Englisch',room:'R-303',push:true},
 {id:'mo4',day:1,start:'10:30',end:'11:15',className:'RefB',subject:'RefB',room:'',push:true},
-{id:'mo5',day:1,start:'11:35',end:'12:15',className:'9d',subject:'G',room:'A-106',push:true},
-{id:'mo6',day:1,start:'12:15',end:'13:00',className:'9d',subject:'E',room:'A-106',push:true},
-{id:'mi1',day:3,start:'07:55',end:'08:40',className:'7f',subject:'E',room:'R-303',push:true},
+{id:'mo5',day:1,start:'11:35',end:'12:15',className:'9d',subject:'Geschichte',room:'A-106',push:true},
+{id:'mo6',day:1,start:'12:15',end:'13:00',className:'9d',subject:'Englisch',room:'A-106',push:true},
+{id:'mi1',day:3,start:'07:55',end:'08:40',className:'7f',subject:'Englisch',room:'R-303',push:true},
 {id:'mi2',day:3,start:'08:40',end:'09:25',className:'RefB',subject:'RefB',room:'',push:true},
-{id:'mi3',day:3,start:'09:45',end:'10:30',className:'9a',subject:'E',room:'A-101',push:true},
-{id:'mi4',day:3,start:'10:30',end:'11:15',className:'9d',subject:'E',room:'A-106',push:true},
-{id:'mi5',day:3,start:'11:35',end:'12:15',className:'7a',subject:'E',room:'B-211',push:true},
-{id:'do2',day:4,start:'08:40',end:'09:25',className:'7f',subject:'E',room:'R-303',push:true},
-{id:'do3',day:4,start:'09:45',end:'10:30',className:'7a',subject:'E',room:'B-211',push:true},
-{id:'do4',day:4,start:'10:30',end:'11:15',className:'7a',subject:'E',room:'B-211',push:true},
-{id:'do5',day:4,start:'11:35',end:'12:15',className:'10c',subject:'G',room:'C-004',push:true},
-{id:'do6',day:4,start:'12:15',end:'13:00',className:'9d',subject:'G',room:'A-106',push:true},
-{id:'fr3',day:5,start:'09:45',end:'10:30',className:'7f',subject:'E',room:'R-303',push:true},
-{id:'fr4',day:5,start:'10:30',end:'11:15',className:'9d',subject:'E',room:'A-106',push:true},
-{id:'fr5',day:5,start:'11:35',end:'12:15',className:'7a',subject:'E',room:'B-211',push:true},
-{id:'fr6',day:5,start:'12:15',end:'13:00',className:'9a',subject:'E',room:'A-101',push:true}
+{id:'mi3',day:3,start:'09:45',end:'10:30',className:'9a',subject:'Englisch',room:'A-101',push:true},
+{id:'mi4',day:3,start:'10:30',end:'11:15',className:'9d',subject:'Englisch',room:'A-106',push:true},
+{id:'mi5',day:3,start:'11:35',end:'12:15',className:'7a',subject:'Englisch',room:'B-211',push:true},
+{id:'do2',day:4,start:'08:40',end:'09:25',className:'7f',subject:'Englisch',room:'R-303',push:true},
+{id:'do3',day:4,start:'09:45',end:'10:30',className:'7a',subject:'Englisch',room:'B-211',push:true},
+{id:'do4',day:4,start:'10:30',end:'11:15',className:'7a',subject:'Englisch',room:'B-211',push:true},
+{id:'do5',day:4,start:'11:35',end:'12:15',className:'10c',subject:'Geschichte',room:'C-004',push:true},
+{id:'do6',day:4,start:'12:15',end:'13:00',className:'9d',subject:'Geschichte',room:'A-106',push:true},
+{id:'fr3',day:5,start:'09:45',end:'10:30',className:'7f',subject:'Englisch',room:'R-303',push:true},
+{id:'fr4',day:5,start:'10:30',end:'11:15',className:'9d',subject:'Englisch',room:'A-106',push:true},
+{id:'fr5',day:5,start:'11:35',end:'12:15',className:'7a',subject:'Englisch',room:'B-211',push:true},
+{id:'fr6',day:5,start:'12:15',end:'13:00',className:'9a',subject:'Englisch',room:'A-101',push:true}
 ];
 const COLORS=['#b9a6e8','#efa5c7','#84c8b0','#efba7c','#8eb8e8','#d39cc9'];
 let db={version:1,entries:[]},editing=null,weekOffset=0,pushToken=sessionStorage.getItem('kathleenPushAdminToken')||'';
