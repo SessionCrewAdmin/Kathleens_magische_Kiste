@@ -1,9 +1,9 @@
-const CACHE='kathleen-v23-3-gradebook-stability-20260919';
+const CACHE='kathleen-v23-4-teacher-push-20260920';
 const CORE=[
   './','./index.html','./manifest.webmanifest',
   './tools/english-world-quiz/index.html','./tools/english-world-quiz/bonus.html','./tools/homework-vouchers/index.html',
   './tools/classroom-tools-shared.js','./tools/randomizer/index.html','./tools/classroom-timer/index.html','./tools/team-generator/index.html',
-  './tools/class-lists/index.html','./tools/schulaufgabenrechner/index.html','./tools/presentation-mode.js','./tools/classroom-board/index.html','./tools/classroom-board/board.css','./tools/classroom-board/widget-framework.js','./tools/classroom-board/board-app.js','./tools/classroom-board/student.html','./tools/classroom-board/present.html','./tools/live-poll/index.html','./tools/live-poll/student.html',
+  './tools/class-lists/index.html','./tools/schulaufgabenrechner/index.html','./tools/push-center/index.html','./tools/presentation-mode.js','./tools/classroom-board/index.html','./tools/classroom-board/board.css','./tools/classroom-board/widget-framework.js','./tools/classroom-board/board-app.js','./tools/classroom-board/student.html','./tools/classroom-board/present.html','./tools/live-poll/index.html','./tools/live-poll/student.html',
   './tools/kalter-krieg/index.html','./tools/kalter-krieg/lehrer.html',
   './assets/covers/cold-war.svg','./assets/covers/english-world.svg',
   './assets/icons/app-180.png','./assets/icons/app-512.png'
@@ -88,4 +88,33 @@ self.addEventListener('fetch',event=>{
       }
     })());
   }
+});
+
+self.addEventListener('push',event=>{
+  let data={};
+  try{data=event.data?event.data.json():{}}catch(e){data={body:event.data?.text?.()||''}}
+  const title=data.title||'Kathleens Kiste';
+  const options={
+    body:data.body||'',
+    icon:'./assets/icons/app-180.png',
+    badge:'./assets/icons/app-180.png',
+    tag:data.tag||'kathleen-teacher-push',
+    renotify:true,
+    data:{url:data.url||'./'}
+  };
+  event.waitUntil(self.registration.showNotification(title,options));
+});
+
+self.addEventListener('notificationclick',event=>{
+  event.notification.close();
+  event.waitUntil((async()=>{
+    const raw=event.notification?.data?.url||'./';
+    const target=new URL(raw,self.registration.scope).href;
+    const windows=await self.clients.matchAll({type:'window',includeUncontrolled:true});
+    const exact=windows.find(c=>c.url===target);
+    if(exact){await exact.focus();return}
+    const sameOrigin=windows.find(c=>{try{return new URL(c.url).origin===new URL(target).origin}catch(e){return false}});
+    if(sameOrigin&&sameOrigin.navigate){await sameOrigin.navigate(target);await sameOrigin.focus();return}
+    await self.clients.openWindow(target);
+  })());
 });
