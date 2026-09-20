@@ -1,4 +1,4 @@
-const CACHE='kathleen-v23-4-exact-boat-reveal-20260920';
+const CACHE='kathleen-v23-5-notenzentrale-20260920';
 const CORE=[
   './','./index.html','./manifest.webmanifest',
   './tools/english-world-quiz/index.html','./tools/english-world-quiz/bonus.html','./tools/homework-vouchers/index.html',
