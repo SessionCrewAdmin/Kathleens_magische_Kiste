@@ -38,6 +38,57 @@ function ensureStyles(){
 .kwStickerCanvas{width:100%;height:100%;display:grid;place-items:center;overflow:visible;container-type:size}.kwStickerEmoji{font-size:min(82cqw,82cqh);filter:drop-shadow(0 10px 12px #51365030);line-height:1;user-select:none;-webkit-user-select:none;pointer-events:none;transform:translateZ(0)}
 .kwSoundMeter{height:150px;display:flex;align-items:flex-end;justify-content:center;gap:14px;padding:10px}.kwSoundColumn{height:100%;width:55px;border-radius:18px;background:#eee5ef;overflow:hidden;display:flex;align-items:flex-end}.kwSoundFill{width:100%;height:0;background:linear-gradient(180deg,#e35a72,#efc755 52%,#62c58f);transition:height .08s}.kwSoundValue{font-size:34px;font-weight:950;align-self:center}.kwSoundValue small{font-size:9px;display:block;color:#8e7892}.kwSoundThreshold{display:flex;align-items:center;gap:6px;padding:0 10px 8px;font-size:8px;font-weight:900}.kwSoundThreshold input{flex:1}
 .kwShell{height:100%;display:grid;place-items:center;border:1px dashed #d9c8dc;border-radius:16px;color:#8b778f;background:#fffafd}
+
+/* V24 · Beamer typography: readable from the back row */
+.kwWidgetTop{min-height:52px;padding:11px 14px}
+.kwWidgetTop b{font-size:clamp(18px,3.8cqw,30px)!important}
+.kwWidgetIcon{font-size:clamp(24px,4.4cqw,36px)!important}
+.kwWidgetState{font-size:clamp(12px,2.1cqw,17px)!important;letter-spacing:.04em}
+.kwBody{padding:14px}
+.kwBtn,.kwActions button,.kwMiniBtn{min-height:42px!important;padding:9px 13px!important;font-size:clamp(14px,2.7cqw,20px)!important}
+.kwField,.kwCheck{font-size:clamp(13px,2.2cqw,18px)!important}
+.kwField input,.kwField select,.kwField textarea,.kwInput{font-size:clamp(15px,2.5cqw,20px)!important;padding:9px 10px!important}
+.kwEmpty{font-size:clamp(16px,3cqw,24px)!important}
+.kwTimerTime{font-size:clamp(64px,12cqw,104px)!important}
+.kwTimerAlarm{font-size:clamp(13px,2.2cqw,18px)!important}
+.kwTrafficLabels{min-width:190px;gap:14px}
+.kwTrafficLabels>div{font-size:clamp(17px,3cqw,24px)!important;padding:8px 10px}
+.kwTrafficLabels .dot{width:14px;height:14px}
+.kwTrafficSettings{font-size:clamp(13px,2.1cqw,17px)!important}
+.kwTrafficSettings label{grid-template-columns:100px 1fr}
+.kwTrafficSettings input,.kwTrafficSettings select{font-size:clamp(14px,2.2cqw,18px)!important;padding:7px}
+.kwRandomHero strong{font-size:clamp(34px,7cqw,58px)!important}
+.kwChip{font-size:clamp(13px,2.3cqw,18px)!important;padding:6px 9px}
+.kwRandomMeta{font-size:clamp(14px,2.4cqw,19px)!important}
+.kwTeamsGrid{grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}
+.kwTeam{padding:10px;min-height:120px}
+.kwTeam h4{font-size:clamp(17px,2.8cqw,23px)!important;margin-bottom:8px}
+.kwMember{font-size:clamp(15px,2.5cqw,20px)!important;padding:8px 9px;margin:5px 0}
+.kwPollQuestion{font-size:clamp(28px,5cqw,44px)!important;line-height:1.12;margin:6px 0 16px}
+.kwPollSetup input,.kwPollSetup select,.kwPollSetup textarea{font-size:clamp(15px,2.3cqw,19px)!important;padding:9px}
+.kwPollTypeHint{font-size:clamp(13px,2cqw,17px)!important}
+.kwPollChartSwitch button{font-size:clamp(13px,2.1cqw,17px)!important;padding:7px 10px}
+.kwPollOption{grid-template-columns:38px minmax(110px,1.25fr) 2fr 48px;gap:8px;padding:8px}
+.kwPollKey{width:38px;height:38px;font-size:clamp(14px,2.2cqw,18px)!important}
+.kwPollLabel,.kwPollCount{font-size:clamp(15px,2.4cqw,20px)!important}
+.kwPollBar{height:16px}
+.kwPollCard{padding:10px;min-height:92px}
+.kwPollCard b{font-size:clamp(15px,2.3cqw,19px)!important}
+.kwPollCard strong{font-size:clamp(30px,5cqw,46px)!important}
+.kwPollCard small{font-size:clamp(13px,2cqw,17px)!important}
+.kwPollPieCenter{font-size:clamp(20px,3.4cqw,30px)!important}
+.kwPollLegendRow{font-size:clamp(14px,2.2cqw,18px)!important;grid-template-columns:12px 1fr auto;gap:7px}
+.kwPollLegendDot{width:12px;height:12px}
+.kwPollAnswer{font-size:clamp(15px,2.4cqw,20px)!important;padding:9px 10px}
+.kwPollRank b{font-size:clamp(15px,2.4cqw,20px)!important}
+.kwPollRank small{font-size:clamp(13px,2cqw,17px)!important}
+.kwPollRank i,.kwPollRankItem i{font-size:clamp(13px,2cqw,17px)!important}
+.kwPollStudentOption{font-size:clamp(17px,2.8cqw,22px)!important;min-height:50px;padding:11px 12px 11px 48px}
+.kwPollStudentOption:before{width:31px;height:31px;font-size:14px!important}
+.kwPollStudentInput,.kwPollStudentSubmit{font-size:clamp(16px,2.5cqw,20px)!important}
+.kwPollSaved{font-size:clamp(13px,2cqw,17px)!important}
+.kwSoundValue{font-size:clamp(48px,8cqw,72px)!important}
+.kwSoundValue small,.kwSoundThreshold{font-size:clamp(14px,2.3cqw,19px)!important}
 `;
  document.head.appendChild(s);
 }
