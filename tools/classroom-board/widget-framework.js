@@ -46,7 +46,12 @@ function ensureStyles(){
 .kwWidgetState{font-size:clamp(12px,2.1cqw,17px)!important;letter-spacing:.04em}
 .kwBody{padding:14px}
 .kwBtn,.kwActions button,.kwMiniBtn{min-height:42px!important;padding:9px 13px!important;font-size:clamp(14px,2.7cqw,20px)!important}
-.kwField,.kwCheck{font-size:clamp(13px,2.2cqw,18px)!important}
+.kwField,.kwCheck{font-size:clamp(18px,3cqw,24px)!important;line-height:1.2}
+.kwField{gap:8px!important}
+.kwField>select,.kwField>input,.kwField>textarea{font-size:clamp(20px,3.3cqw,28px)!important;font-weight:850;min-height:52px}
+.kwTeamTools{grid-template-columns:minmax(0,1fr) minmax(110px,.28fr)!important;gap:14px!important;margin-bottom:14px!important}
+.kwTeamTools .kwField{font-weight:950;color:#67546b}
+.kwTeamTools .kwField select,.kwTeamTools .kwField input{padding:10px 12px!important}
 .kwField input,.kwField select,.kwField textarea,.kwInput{font-size:clamp(15px,2.5cqw,20px)!important;padding:9px 10px!important}
 .kwEmpty{font-size:clamp(16px,3cqw,24px)!important}
 .kwTimerTime{font-size:clamp(64px,12cqw,104px)!important}
