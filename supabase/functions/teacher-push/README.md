@@ -48,3 +48,19 @@ Der SQL-Patch richtet einen Cronjob ein, der einmal pro Minute fällige Erinneru
 - werktags (Mo–Fr)
 
 Die Zeitzone ist standardmäßig `Europe/Berlin`.
+
+
+## V23.6 · Stundenplan-Erinnerungen
+
+Für den Stundenplan kommt zusätzlich der nicht-destruktive SQL-Patch:
+
+`setup/V23_6_TIMETABLE_PUSH.sql`
+
+Er erweitert Teacher Push um **wöchentliche Erinnerungen** und um die Quelle `timetable`.
+Danach die Edge Function erneut deployen:
+
+```bash
+supabase functions deploy teacher-push --no-verify-jwt
+```
+
+Im Stundenplan-Tool werden aktivierte Unterrichtsstunden über **Push synchronisieren** als wöchentliche Erinnerungen gespeichert. Der Zeitpunkt wird automatisch auf **10 Minuten vor Stundenbeginn** gesetzt.
