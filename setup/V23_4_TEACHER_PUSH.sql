@@ -66,7 +66,7 @@ returns text
 language plpgsql
 security definer
 set search_path=public,pg_catalog
-as $
+as $push$
 declare
   ok boolean := false;
   raw_token text;
@@ -81,14 +81,14 @@ begin
   on conflict(token_hash) do update set expires_at=excluded.expires_at;
   return raw_token;
 end;
-$;
+$push$;
 
 create or replace function public.teacher_push_check_token(p_token text)
 returns boolean
 language plpgsql
 security definer
 set search_path=public,pg_catalog
-as $
+as $push$
 declare
   h text;
   ok boolean;
@@ -101,7 +101,7 @@ begin
   ) into ok;
   return coalesce(ok,false);
 end;
-$;
+$push$;
 
 create or replace function public.teacher_push_claim_due(p_limit integer default 20)
 returns setof public.teacher_push_reminders
