@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#fff9fc">
+<meta name="description" content="Teacher Push Center für Kathleens Kiste">
+<link rel="manifest" href="../../manifest.webmanifest">
+<link rel="apple-touch-icon" href="../../assets/icons/app-180.png">
+<title>Push Center · Kathleens Kiste</title>
+<style>
+:root{--ink:#503d51;--muted:#8d788f;--line:#eadde9;--pink:#d790b5;--lilac:#aa8cde;--green:#67a98f;--red:#bd6678;--shadow:0 18px 54px rgba(100,66,104,.12)}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Inter,ui-rounded,"SF Pro Rounded",Arial,sans-serif;color:var(--ink);background:radial-gradient(circle at 8% 0,#ffe7f1 0,transparent 28%),radial-gradient(circle at 92% 3%,#ece5ff 0,transparent 28%),#fffafd}button,input,select,textarea{font:inherit}.hidden{display:none!important}
+.shell{max-width:1180px;margin:auto;padding:22px}.top{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;margin-bottom:18px}.brand{display:flex;gap:12px;align-items:center}.ico{width:58px;height:58px;border-radius:19px;display:grid;place-items:center;font-size:28px;background:linear-gradient(145deg,#ffe2ef,#e9e3ff);border:1px solid #fff;box-shadow:var(--shadow)}h1{margin:0;font-size:clamp(29px,4vw,43px);letter-spacing:-.04em}.sub{margin:5px 0 0;color:var(--muted);font-size:11px;line-height:1.45}
+.btn{border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:12px;padding:10px 13px;min-height:43px;font-weight:900;cursor:pointer}.btn.primary{border:0;color:#fff;background:linear-gradient(135deg,var(--pink),var(--lilac))}.btn.green{background:#eff9f5;color:#4f806c;border-color:#d5ebe1}.btn.danger{background:#fff6f8;color:#a95669;border-color:#ecced6}.btn:disabled{opacity:.45;cursor:not-allowed}
+.grid{display:grid;grid-template-columns:1.05fr .95fr;gap:14px}.panel{background:linear-gradient(155deg,rgba(255,255,255,.9),rgba(251,246,252,.76));border:1px solid rgba(224,207,227,.82);border-radius:21px;padding:16px;box-shadow:var(--shadow);backdrop-filter:blur(18px)}.panel.wide{grid-column:1/-1}.panel h2{font-size:17px;margin:0 0 4px}.panel p{font-size:10px;color:var(--muted);line-height:1.5;margin:4px 0 12px}
+.statusGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:12px 0}.statusCard{border:1px solid var(--line);background:#fff;border-radius:14px;padding:11px}.statusCard small{display:block;font-size:8px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:950}.statusCard strong{display:block;font-size:13px;margin-top:4px}.statusCard.ok strong{color:#4d826b}.statusCard.warn strong{color:#956b35}
+.actions{display:flex;gap:7px;flex-wrap:wrap}.field{margin-bottom:10px}.field label{display:block;font-size:8px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:950;margin-bottom:4px}.input,select,textarea{width:100%;border:1px solid var(--line);border-radius:11px;background:#fff;padding:10px;color:var(--ink);outline:none}.input:focus,select:focus,textarea:focus{border-color:#d6a6c5;box-shadow:0 0 0 4px rgba(215,144,181,.12)}textarea{min-height:88px;resize:vertical}.two{display:grid;grid-template-columns:1fr 1fr;gap:9px}.three{display:grid;grid-template-columns:1fr 1fr 1fr;gap:9px}
+.notice{border:1px solid #efdcc2;background:#fff8eb;color:#876238;border-radius:13px;padding:10px 11px;font-size:9px;line-height:1.45;margin-top:10px}.notice.ok{border-color:#d5ebe1;background:#f1faf6;color:#557d6c}.notice.bad{border-color:#eccbd4;background:#fff5f7;color:#a04f63}
+.quick{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin:9px 0 12px}.quick button{text-align:left;border:1px solid var(--line);background:#fff;border-radius:13px;padding:10px;color:var(--ink);cursor:pointer}.quick b{display:block;font-size:10px}.quick small{display:block;font-size:8px;color:var(--muted);margin-top:3px}
+.list{display:grid;gap:8px}.item{display:flex;justify-content:space-between;gap:10px;align-items:center;border:1px solid var(--line);background:#fff;border-radius:14px;padding:10px}.item b{font-size:10px}.item small{display:block;font-size:8px;color:var(--muted);margin-top:3px}.pill{display:inline-flex;border:1px solid #e6d9e7;border-radius:999px;padding:5px 7px;font-size:7px;font-weight:950;background:#fffafd;color:#765e7a}.pill.on{background:#edf8f3;color:#557f6c;border-color:#d3eadf}.empty{padding:25px 12px;text-align:center;color:var(--muted);font-size:10px;border:1px dashed #decfdf;border-radius:14px}.footer{text-align:center;color:var(--muted);font-size:8px;margin-top:14px}
+@media(max-width:780px){.shell{padding:12px 10px calc(20px + env(safe-area-inset-bottom))}.top{display:grid}.top>.btn{justify-self:start}.grid{grid-template-columns:1fr}.panel.wide{grid-column:auto}.statusGrid,.two,.three{grid-template-columns:1fr}.quick{grid-template-columns:1fr}.input,select,textarea{font-size:16px}.item{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<main class="shell">
+<header class="top">
+<div class="brand"><div class="ico">🔔</div><div><h1>Teacher Push Center</h1><p class="sub">Persönliche Push-Benachrichtigungen nur für Kathleen · V23.4</p></div></div>
+<button class="btn" id="backBtn">← Kathleens Kiste</button>
+</header>
+
+<div class="grid">
+<section class="panel">
+<h2>Dieses Gerät</h2>
+<p>Benachrichtigungen werden nur auf Geräten aktiviert, die Kathleen selbst registriert.</p>
+<div class="statusGrid">
+<div class="statusCard" id="supportCard"><small>Web Push</small><strong id="supportText">Prüfen …</strong></div>
+<div class="statusCard" id="permissionCard"><small>Berechtigung</small><strong id="permissionText">–</strong></div>
+<div class="statusCard" id="subscriptionCard"><small>Dieses Gerät</small><strong id="subscriptionText">–</strong></div>
+</div>
+<div class="field"><label>Gerätename</label><input class="input" id="deviceLabel" maxlength="80" value="Kathleens Gerät" placeholder="z. B. iPhone Schule"></div>
+<div class="actions">
+<button class="btn primary" id="enableBtn">🔔 Benachrichtigungen aktivieren</button>
+<button class="btn" id="localTestBtn">Lokalen Test anzeigen</button>
+<button class="btn green" id="pushTestBtn">Echten Push testen</button>
+<button class="btn danger" id="disableBtn">Gerät abmelden</button>
+</div>
+<div class="notice hidden" id="deviceNotice"></div>
+</section>
+
+<section class="panel">
+<h2>Push-Status</h2>
+<p>Registrierte Lehrergeräte und Backend-Status. Schülergeräte sind in V23.4 nicht Teil des Push-Systems.</p>
+<div class="list" id="deviceList"><div class="empty">Status wird geladen …</div></div>
+</section>
+
+<section class="panel wide">
+<h2>Erinnerung planen</h2>
+<p>Die Nachricht wird serverseitig geplant und kann auch erscheinen, wenn die Kiste geschlossen ist.</p>
+<div class="quick">
+<button type="button" data-preset="morning"><b>☀️ Morgenbriefing</b><small>Werktags um 07:15</small></button>
+<button type="button" data-preset="correction"><b>📝 Korrektur erinnern</b><small>Morgen um 18:00</small></button>
+</div>
+<div class="two">
+<div class="field"><label>Titel</label><input class="input" id="reminderTitle" maxlength="120" value="Kathleens Kiste"></div>
+<div class="field"><label>Zeitpunkt</label><input class="input" id="reminderWhen" type="datetime-local"></div>
+</div>
+<div class="field"><label>Nachricht</label><textarea id="reminderBody" maxlength="500" placeholder="Was möchtest du später sehen?"></textarea></div>
+<div class="three">
+<div class="field"><label>Wiederholung</label><select id="reminderRepeat"><option value="none">Einmalig</option><option value="daily">Täglich</option><option value="weekdays">Werktags Mo–Fr</option></select></div>
+<div class="field"><label>Beim Tippen öffnen</label><select id="reminderUrl"><option value="../../">Kiste</option><option value="../schulaufgabenrechner/">Notenrechner</option><option value="../classroom-board/">Classroom Board</option><option value="../live-poll/">Live Poll</option></select></div>
+<div class="field"><label>Zeitzone</label><input class="input" id="timezone" value="Europe/Berlin" readonly></div>
+</div>
+<div class="actions"><button class="btn primary" id="scheduleBtn">＋ Erinnerung planen</button><button class="btn" id="refreshBtn">↻ Aktualisieren</button></div>
+<div class="notice hidden" id="reminderNotice"></div>
+</section>
+
+<section class="panel wide">
+<h2>Geplante Erinnerungen</h2>
+<div class="list" id="reminderList"><div class="empty">Noch keine Daten geladen.</div></div>
+</section>
+</div>
+<div class="footer">Kathleens Kiste · Teacher Push Center · keine Schüler-Pushes</div>
+</main>
+
+<script>
+(()=>{'use strict';
+const SB='https://fzqxnjhuvgpgovcovosl.supabase.co/rest/v1/rpc/';
+const KEY='sb_publishable_GIyyWoyaQXipaA4S9OuTyQ_cZn7LUgV';
+const EDGE='https://fzqxnjhuvgpgovcovosl.supabase.co/functions/v1/teacher-push';
+const $=s=>document.querySelector(s),$$=s=>Array.from(document.querySelectorAll(s));
+let reg=null,status=null,pushToken=sessionStorage.getItem('kathleenPushAdminToken')||'';
+
+function notice(id,text,type=''){const e=$(id);e.textContent=text;e.className='notice'+(type?' '+type:'');e.classList.remove('hidden')}
+function fmtDate(v){if(!v)return'–';const d=new Date(v);return Number.isNaN(d.getTime())?'–':d.toLocaleString('de-DE',{dateStyle:'medium',timeStyle:'short'})}
+function recurrenceLabel(v){return v==='weekdays'?'werktags':v==='daily'?'täglich':'einmalig'}
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]))}
+async function rpc(name,body){
+ const r=await fetch(SB+name,{method:'POST',headers:{apikey:KEY,'Content-Type':'application/json'},body:JSON.stringify(body||{})});
+ if(!r.ok)throw Error(await r.text());return r.json()
+}
+async function issuePushToken(){
+ let pass=sessionStorage.getItem('kathleenAdminPass')||'';
+ if(!pass){pass=prompt('Kisten-Adminpasswort:')||'';if(!pass)throw Error('Admin-Passwort fehlt');sessionStorage.setItem('kathleenAdminPass',pass)}
+ const token=await rpc('teacher_push_issue_token',{p_passphrase:pass});
+ if(!token){sessionStorage.removeItem('kathleenAdminPass');throw Error('Admin-Passwort falsch')}
+ pushToken=String(token);sessionStorage.setItem('kathleenPushAdminToken',pushToken);return pushToken
+}
+async function call(action,payload={},needToken=true,retry=true){
+ const body={action,...payload};
+ if(needToken){if(!pushToken)await issuePushToken();body.adminToken=pushToken}
+ const r=await fetch(EDGE,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
+ let d={};try{d=await r.json()}catch(e){}
+ if(r.status===401&&needToken&&retry){pushToken='';sessionStorage.removeItem('kathleenPushAdminToken');await issuePushToken();return call(action,payload,needToken,false)}
+ if(!r.ok||d?.ok===false)throw Error(d?.error||('HTTP '+r.status));return d
+}
+function b64ToBytes(base64){const padding='='.repeat((4-base64.length%4)%4),safe=(base64+padding).replace(/-/g,'+').replace(/_/g,'/'),raw=atob(safe),out=new Uint8Array(raw.length);for(let i=0;i<raw.length;i++)out[i]=raw.charCodeAt(i);return out}
+async function ensureRegistration(){if(!('serviceWorker'in navigator))throw Error('Service Worker wird nicht unterstützt');reg=await navigator.serviceWorker.register('../../service-worker.js');await navigator.serviceWorker.ready;return reg}
+async function currentSub(){if(!reg)await ensureRegistration();return reg.pushManager?.getSubscription?.()}
+function standalone(){return matchMedia('(display-mode: standalone)').matches||navigator.standalone===true}
+
+async function refreshDeviceState(){
+ const supported='Notification'in window&&'serviceWorker'in navigator&&'PushManager'in window;
+ $('#supportText').textContent=supported?'unterstützt':'nicht unterstützt';$('#supportCard').className='statusCard '+(supported?'ok':'warn');
+ $('#permissionText').textContent=('Notification'in window)?Notification.permission:'nicht verfügbar';$('#permissionCard').className='statusCard '+(Notification.permission==='granted'?'ok':'warn');
+ let sub=null;try{sub=supported?await currentSub():null}catch(e){}
+ $('#subscriptionText').textContent=sub?'registriert':'nicht registriert';$('#subscriptionCard').className='statusCard '+(sub?'ok':'warn');
+ $('#disableBtn').disabled=!sub;$('#localTestBtn').disabled=Notification.permission!=='granted';$('#pushTestBtn').disabled=!sub;
+ if(/iPad|iPhone|iPod/.test(navigator.userAgent)&&!standalone())notice('#deviceNotice','Auf iPhone/iPad die Kiste zuerst über Safari zum Home-Bildschirm hinzufügen. Web Push steht dort nur für die installierte Web-App zur Verfügung.');
+ return sub
+}
+async function enablePush(){
+ if(!('Notification'in window)||!('PushManager'in window))throw Error('Dieser Browser unterstützt Web Push nicht.');
+ if(Notification.permission==='denied')throw Error('Benachrichtigungen sind im System blockiert.');
+ const permission=Notification.permission==='granted'?'granted':await Notification.requestPermission();if(permission!=='granted')throw Error('Benachrichtigungen wurden nicht erlaubt.');
+ await ensureRegistration();const cfg=await call('config',{},false);if(!cfg?.configured||!cfg?.publicKey)throw Error('Push-Backend ist noch nicht eingerichtet.');
+ let sub=await reg.pushManager.getSubscription();if(!sub)sub=await reg.pushManager.subscribe({userVisibleOnly:true,applicationServerKey:b64ToBytes(cfg.publicKey)});
+ await call('subscribe',{subscription:sub.toJSON(),deviceLabel:$('#deviceLabel').value.trim()||'Kathleens Gerät',userAgent:navigator.userAgent});
+ notice('#deviceNotice','Dieses Gerät ist jetzt registriert.','ok');await refreshAll()
+}
+async function disablePush(){const sub=await currentSub();if(!sub)return;try{await call('unsubscribe',{endpoint:sub.endpoint})}catch(e){}await sub.unsubscribe();notice('#deviceNotice','Dieses Gerät wurde abgemeldet.','ok');await refreshAll()}
+async function localTest(){await ensureRegistration();if(Notification.permission!=='granted')throw Error('Benachrichtigungen sind nicht freigegeben.');await reg.showNotification('Kathleens Kiste',{body:'Lokale Testbenachrichtigung funktioniert ✓',icon:'../../assets/icons/app-180.png',data:{url:'../../'}})}
+async function remoteTest(){const d=await call('test',{title:'Kathleens Kiste',body:'Echter Web Push funktioniert ✓',url:'../../'});notice('#deviceNotice','Push an '+(d.delivered||0)+' registrierte(s) Gerät(e) gesendet.','ok')}
+
+function nextDate(hour,minute,weekdayOnly=false){const d=new Date();d.setSeconds(0,0);d.setHours(hour,minute,0,0);if(d<=new Date())d.setDate(d.getDate()+1);if(weekdayOnly)while([0,6].includes(d.getDay()))d.setDate(d.getDate()+1);return d}
+function toLocalInput(d){const z=n=>String(n).padStart(2,'0');return d.getFullYear()+'-'+z(d.getMonth()+1)+'-'+z(d.getDate())+'T'+z(d.getHours())+':'+z(d.getMinutes())}
+function preset(kind){if(kind==='morning'){$('#reminderTitle').value='Guten Morgen';$('#reminderBody').value='Kurzer Blick auf den Unterrichtstag und die vorbereiteten Materialien.';$('#reminderWhen').value=toLocalInput(nextDate(7,15,true));$('#reminderRepeat').value='weekdays';$('#reminderUrl').value='../../'}else{$('#reminderTitle').value='Korrekturen';$('#reminderBody').value='Offene Korrekturen und Nachschriften prüfen.';$('#reminderWhen').value=toLocalInput(nextDate(18,0,false));$('#reminderRepeat').value='none';$('#reminderUrl').value='../schulaufgabenrechner/'}}
+async function schedule(){const raw=$('#reminderWhen').value;if(!raw)throw Error('Bitte einen Zeitpunkt wählen.');const when=new Date(raw);if(Number.isNaN(when.getTime())||when<=new Date())throw Error('Der Zeitpunkt muss in der Zukunft liegen.');const title=$('#reminderTitle').value.trim();if(!title)throw Error('Titel fehlt.');await call('schedule',{title,body:$('#reminderBody').value.trim(),scheduledFor:when.toISOString(),recurrence:$('#reminderRepeat').value,url:$('#reminderUrl').value,timezone:$('#timezone').value});notice('#reminderNotice','Erinnerung geplant ✓','ok');await loadStatus()}
+async function cancelReminder(id){if(!confirm('Erinnerung wirklich löschen?'))return;await call('cancel',{id});await loadStatus()}
+
+function renderStatus(){
+ const devices=status?.devices||[],reminders=status?.reminders||[];
+ $('#deviceList').innerHTML=devices.length?devices.map(d=>'<div class="item"><div><b>'+esc(d.device_label||'Gerät')+'</b><small>'+(d.active?'aktiv':'abgemeldet')+(d.last_success_at?' · letzter Push '+fmtDate(d.last_success_at):'')+'</small></div><span class="pill '+(d.active?'on':'')+'">'+(d.active?'AKTIV':'AUS')+'</span></div>').join(''):'<div class="empty">Noch kein Lehrergerät registriert.</div>';
+ $('#reminderList').innerHTML=reminders.length?reminders.map(r=>'<div class="item"><div><b>'+esc(r.title)+'</b><small>'+fmtDate(r.scheduled_for)+' · '+recurrenceLabel(r.recurrence)+(r.body?' · '+esc(r.body):'')+'</small></div><button class="btn danger" data-cancel="'+r.id+'">Löschen</button></div>').join(''):'<div class="empty">Keine aktiven Erinnerungen.</div>';
+ $$('[data-cancel]').forEach(b=>b.onclick=()=>cancelReminder(b.dataset.cancel))
+}
+async function loadStatus(){try{status=await call('status');renderStatus();if(!status.configured)notice('#deviceNotice','Backend erreichbar, aber VAPID-Schlüssel fehlen noch.')}catch(e){$('#deviceList').innerHTML='<div class="empty">Push-Backend noch nicht erreichbar.</div>';$('#reminderList').innerHTML='<div class="empty">Backend-Setup noch ausstehend.</div>';notice('#deviceNotice','Für echte Push-Nachrichten muss das V23.4 Supabase-Setup einmalig ausgeführt und die Edge Function deployed werden.')}}
+async function refreshAll(){await refreshDeviceState();await loadStatus()}
+function err(e,target='#deviceNotice'){notice(target,e.message||String(e),'bad')}
+
+$('#backBtn').onclick=()=>location.href='../../#tools';
+$('#enableBtn').onclick=()=>enablePush().catch(e=>err(e));
+$('#disableBtn').onclick=()=>disablePush().catch(e=>err(e));
+$('#localTestBtn').onclick=()=>localTest().catch(e=>err(e));
+$('#pushTestBtn').onclick=()=>remoteTest().catch(e=>err(e));
+$('#scheduleBtn').onclick=()=>schedule().catch(e=>err(e,'#reminderNotice'));
+$('#refreshBtn').onclick=()=>refreshAll();
+$$('[data-preset]').forEach(b=>b.onclick=()=>preset(b.dataset.preset));
+preset('morning');refreshAll();
+})();
+</script>
+</body>
+</html>
