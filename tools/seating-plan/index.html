@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#fff9fc"><title>Sitzplan · Kathleens Kiste</title>
+<style>
+:root{--ink:#4f3d63;--muted:#8d7898;--line:#e8dced;--purple:#7957d5;--purple2:#eee6ff;--pink:#f5b9d2;--mint:#bfe5d4;--blue:#bcd8f5;--wood:#efd0a1;--bg:#fff9fc}
+*{box-sizing:border-box}html,body{margin:0;height:100%;font-family:Inter,ui-rounded,"SF Pro Rounded",Arial,sans-serif;color:var(--ink);background:linear-gradient(180deg,#fffafd,#faf7ff)}
+button,input,select{font:inherit}.app{height:100%;display:grid;grid-template-rows:66px 1fr 64px;overflow:hidden}
+.topbar{display:flex;align-items:center;gap:18px;padding:10px 22px;border-bottom:1px solid var(--line);background:#fff;box-shadow:0 4px 18px #6f4d8220;z-index:20}
+.brand{font-weight:950;font-size:21px;white-space:nowrap}.brand small{display:block;font-size:8px;letter-spacing:.12em;color:#8d7898;margin-top:2px}.nav{display:flex;gap:8px}.nav a{padding:10px 14px;border-radius:12px;color:var(--ink);text-decoration:none;font-weight:850;font-size:13px}.nav a.active{background:var(--purple2);color:#5d3cae}.welcome{margin-left:auto;font-family:cursive;color:#8666c6;font-size:18px}
+.main{display:grid;grid-template-columns:295px minmax(620px,1fr) 315px;gap:12px;padding:12px;min-height:0}
+.side,.right{background:#fff;border:1px solid var(--line);border-radius:18px;padding:12px;overflow:auto}.title{display:flex;align-items:center;gap:12px;margin-bottom:8px}.title .ico{font-size:38px}.title h1{font-size:32px;line-height:1;margin:0}.title p{margin:4px 0 0;color:var(--muted);font-size:12px}
+.classRow{display:grid;grid-template-columns:1fr 42px;gap:8px;margin:10px 0}.select,.search{height:42px;border:1px solid var(--line);border-radius:12px;background:#fff;padding:0 12px;color:var(--ink);font-weight:800}.gear{border:1px solid var(--line);border-radius:12px;background:#fff;font-size:18px}.search{width:100%;font-weight:600;margin-bottom:8px}
+.roster{display:grid;gap:5px}.student{height:38px;display:flex;align-items:center;gap:9px;padding:0 10px;border:1px solid #eee4f1;border-radius:12px;background:#fff;font-size:13px;font-weight:750}.student .initial{width:31px;height:24px;border-radius:999px;background:#eee7f6;display:grid;place-items:center;font-size:10px;font-weight:950}.student .dot{margin-left:auto;width:9px;height:9px;border-radius:50%}.dot.blue{background:#6aa8ef}.dot.pink{background:#ed78a7}.dot.green{background:#65b68f}.dot.orange{background:#f0a72f}
+.addStudent{margin-top:10px;width:100%;border:0;border-radius:13px;background:linear-gradient(90deg,#d8c0f6,#b999eb);padding:11px;font-weight:900;color:#563a91}
+.workspace{display:grid;grid-template-rows:54px 1fr;min-width:0;min-height:0}.workspaceTop{display:flex;align-items:center;justify-content:flex-end;gap:8px}.pill{border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 14px;font-weight:900;color:#675474}.pill.active{background:var(--purple2);color:#5b3ab3;border-color:#d4c3f6}.freeToggle{display:flex;align-items:center;gap:8px;border:1px solid #cdb8f3;border-radius:999px;padding:7px 10px;background:#fff;font-weight:900;color:#5f43bc}.switch{width:42px;height:23px;border-radius:999px;background:#cfc7d9;padding:3px;transition:.2s}.switch i{display:block;width:17px;height:17px;border-radius:50%;background:#fff;transition:.2s}.freeToggle.on .switch{background:#62b78d}.freeToggle.on .switch i{transform:translateX(19px)}
+.roomWrap{min-height:0;position:relative}.room{position:absolute;inset:0;border:1px solid #ddcedf;border-radius:18px;overflow:hidden;background:linear-gradient(90deg,#efd4ac 1px,transparent 1px),linear-gradient(#efd4ac 1px,transparent 1px),linear-gradient(180deg,#f7dfba,#edc99b);background-size:28px 28px;box-shadow:inset 0 0 50px #fff7}
+.board{position:absolute;left:23%;right:23%;top:12px;height:58px;border:8px solid #b18d65;background:#315840;border-radius:4px;color:#fff;display:grid;place-items:center;font-size:22px;font-weight:900;box-shadow:0 8px 13px #5b3e2a26}.teacher{position:absolute;left:50%;top:82px;transform:translateX(-50%);width:175px;height:58px;background:#d5a66d;border-radius:8px;display:grid;place-items:center;font-size:12px;font-weight:850;box-shadow:0 6px 10px #68452625}.teacher:after{content:"Lehrkraft";background:#fff;padding:5px 8px;border-radius:8px}
+.desk{position:absolute;width:170px;height:95px;transform-origin:center;touch-action:none;user-select:none}.desk.two{width:170px;height:96px}.desk.single{width:92px;height:96px}.desk.four{width:178px;height:150px}.deskShell{position:absolute;inset:12px 6px 8px;background:linear-gradient(180deg,#f7d7a8,#e7bd87);border:1px solid #d0a16b;border-radius:9px;box-shadow:0 7px 12px #76502b20;display:grid;gap:6px;padding:9px}.desk.two .deskShell{grid-template-columns:1fr 1fr}.desk.single .deskShell{grid-template-columns:1fr}.desk.four .deskShell{grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr}
+.seat{border:2px solid #e6d9ee;background:#fff;border-radius:9px;display:grid;place-items:center;font-size:12px;font-weight:900;min-width:0;padding:4px;text-align:center;box-shadow:0 3px 8px #6c4c7920}.seat.empty{color:#b6a7b9;font-weight:700}.desk.selected{outline:3px solid #8d64e7;outline-offset:4px;border-radius:14px}.desk.selected .handle,.desk.selected .moveHint{display:grid}
+.handle{display:none;position:absolute;left:50%;top:-22px;transform:translateX(-50%);width:28px;height:28px;border-radius:50%;background:#8156dd;color:white;place-items:center;font-size:16px;cursor:grab;z-index:5}.moveHint{display:none;position:absolute;right:-22px;top:50%;transform:translateY(-50%);width:28px;height:28px;border-radius:50%;background:#8156dd;color:white;place-items:center;font-size:16px}.desk.dragging{opacity:.88;filter:drop-shadow(0 12px 14px #7558a333);z-index:50}
+.ghost{position:absolute;border:2px dashed #8f66e8;background:#9a79e727;border-radius:12px;pointer-events:none}
+.rightTabs{display:flex;border-bottom:1px solid var(--line);margin:-12px -12px 12px}.rightTabs button{flex:1;border:0;background:#fff;padding:13px 5px;font-weight:850;color:#7d6886}.rightTabs button.active{color:#5634b3;border-bottom:3px solid #7957d5}.section h3{margin:12px 0 8px;font-size:15px}.tableGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.tableBtn{border:1px solid #eee5f1;background:#faf8fd;border-radius:12px;padding:9px 3px;font-size:11px;color:#5d4a66;font-weight:800}.tableBtn b{display:block;font-size:23px;margin-bottom:4px}.tableBtn.active{border:2px solid #8e65e7;background:#f4efff}
+.info{margin:12px 0;padding:11px;border-radius:12px;background:#f0ecff;color:#604bb1;font-size:11px;line-height:1.45}.toggleRow{display:flex;align-items:center;justify-content:space-between;padding:7px 0;font-size:12px;font-weight:700}.miniSwitch{width:38px;height:21px;border-radius:20px;background:#ddd3e7;padding:3px}.miniSwitch:after{content:"";display:block;width:15px;height:15px;background:white;border-radius:50%}.miniSwitch.on{background:#825add}.miniSwitch.on:after{transform:translateX(17px)}.actions{display:grid;gap:7px}.action{border:0;border-radius:10px;padding:10px;background:#eee4ff;color:#5b3aad;font-weight:900}.action.danger{background:#ffe8ef;color:#bd365b}
+.footer{display:flex;align-items:center;gap:10px;padding:9px 20px;border-top:1px solid var(--line);background:#fff}.footer button{border:1px solid var(--line);background:#fff;border-radius:11px;padding:10px 14px;color:#65516d;font-weight:850}.footer .primary{background:#8058d7;color:#fff;border-color:#8058d7}.footer .orange{background:#fff0df;color:#a55f25}.legend{margin-left:auto;display:flex;gap:12px;font-size:10px;color:#7e6b85}.legend span:before{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px}.legend .l1:before{background:#ed78a7}.legend .l2:before{background:#65b68f}.legend .l3:before{background:#6aa8ef}.legend .l4:before{background:#f0a72f}
+.toast{position:fixed;left:50%;bottom:82px;transform:translateX(-50%) translateY(20px);opacity:0;background:#4f3d63;color:#fff;padding:10px 14px;border-radius:999px;font-size:12px;font-weight:850;transition:.2s;z-index:99}.toast.show{opacity:1;transform:translateX(-50%)}
+.studentView .side,.studentView .right,.studentView .footer{display:none}.studentView .main{grid-template-columns:1fr}.studentView .workspaceTop{justify-content:center}.studentView .freeToggle{display:none}
+@media(max-width:1100px){.main{grid-template-columns:240px 1fr}.right{position:fixed;right:12px;top:78px;bottom:75px;width:300px;z-index:30;box-shadow:0 20px 60px #0002}.welcome{display:none}.legend{display:none}}
+</style>
+</head>
+<body>
+<div class="app" id="app">
+<header class="topbar"><div class="brand">📦 Kathleens Kiste<small>IDEEN. TOOLS. SCHULE. ♡</small></div><nav class="nav"><a class="active">🪑 Sitzplan</a><a href="../class-lists/">👥 Klassen</a><a href="../classroom-board/">🛠 Whiteboard</a><a href="../../#tools">✨ Tools</a></nav><div class="welcome">Schön, dass du hier bist! ♡</div></header>
+<main class="main">
+<aside class="side"><div class="title"><div class="ico">👥</div><div><h1>Sitzplan</h1><p>Einfach. Flexibel. Passt zu deiner Klasse. ♡</p></div></div>
+<div class="classRow"><select class="select" id="classSelect"></select><button class="gear" id="classGear">⚙</button></div><input class="search" id="search" placeholder="⌕  Schüler suchen …"><div class="roster" id="roster"></div><button class="addStudent" id="addStudent">＋ Schüler hinzufügen</button></aside>
+<section class="workspace"><div class="workspaceTop"><button class="pill active" id="editMode">✎ Bearbeiten</button><button class="pill" id="studentMode">◉ Schüleransicht</button><button class="pill" id="fullscreen">⛶</button><button class="freeToggle on" id="freeToggle">✥ Freies Verschieben: <span id="freeState">Aktiv</span><span class="switch"><i></i></span></button></div>
+<div class="roomWrap"><div class="room" id="room"><div class="board" id="board">Tafel ♡</div><div class="teacher" id="teacher"></div></div></div></section>
+<aside class="right"><div class="rightTabs"><button class="active">Layout</button><button>Optionen</button><button>Notizen</button></div><div class="section"><h3>Tische hinzufügen</h3><div class="tableGrid">
+<button class="tableBtn" data-add="single"><b>▰</b>Einzeltisch</button><button class="tableBtn active" data-add="two"><b>▰▰</b>Zweiertisch</button><button class="tableBtn" data-add="four"><b>▦</b>Vierertisch</button>
+<button class="tableBtn" data-layout="rows"><b>▰▰▰</b>Reihe</button><button class="tableBtn" data-layout="u"><b>凵</b>U-Form</button><button class="tableBtn" data-layout="free"><b>◇</b>Freie Form</button></div>
+<div class="info">↕ <b>Tische frei im Raum platzierbar</b><br>Ziehe Tische an eine beliebige Position, rotiere sie und gestalte deinen Klassenraum individuell.</div>
+<h3>Raumoptionen</h3><div class="toggleRow">▣ Tafel anzeigen <span class="miniSwitch on" data-room="board"></span></div><div class="toggleRow">⚑ Lehrerpult anzeigen <span class="miniSwitch on" data-room="teacher"></span></div><div class="toggleRow">▤ Raumraster <span class="miniSwitch on" data-room="grid"></span></div>
+<h3>Schnellaktionen</h3><div class="actions"><button class="action" id="random">⤨ Zufällig verteilen</button><button class="action" id="shuffle">↻ Neu mischen</button><button class="action danger" id="clear">🗑 Alle Plätze leeren</button></div></div></aside>
+</main>
+<footer class="footer"><button class="primary" id="save">▣ Sitzplan speichern</button><button id="saveTpl">♡ Als Vorlage speichern</button><button id="load">▱ Sitzplan laden</button><button id="export">▧ Als Bild exportieren</button><button id="print">▣ Drucken</button><button class="orange" id="toBoard">▣ Ins Whiteboard</button><div class="legend"><span class="l1">Förderbedarf</span><span class="l2">Ruheplatz</span><span class="l3">Nähe Tafel</span><span class="l4">Nicht zusammen</span></div></footer>
+</div><div class="toast" id="toast"></div>
+<script src="../classroom-tools-shared.js"></script>
+<script>
+(()=>{'use strict';
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],room=$('#room');
+let lists=[],current=null,freeMove=true,selected=null,drag=null,rot=null;
+const KEY='kathleenSeatPlansV1',TPL='kathleenSeatPlanTemplateV1';
+const palette=['blue','pink','green','orange'];
+const toast=t=>{const e=$('#toast');e.textContent=t;e.classList.add('show');setTimeout(()=>e.classList.remove('show'),1500)};
+const safe=s=>String(s||'').replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));
+const initials=n=>n.split(/\s+/).slice(0,2).map(x=>x[0]).join('').toUpperCase();
+const uid=()=>Date.now().toString(36)+Math.random().toString(36).slice(2,6);
+function students(){return current?.students||[]}
+function seatsFor(type){return type==='single'?1:type==='four'?4:2}
+function plans(){try{return JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){return{}}}
+function savePlans(v){localStorage.setItem(KEY,JSON.stringify(v))}
+function deskData(){return $$('.desk').map(d=>({id:d.dataset.id,type:d.dataset.type,x:parseFloat(d.style.left),y:parseFloat(d.style.top),r:+d.dataset.r||0,names:[...d.querySelectorAll('.seat')].map(s=>s.dataset.name||'')}))}
+function applyRotation(d,r){d.dataset.r=Math.round(r);d.style.transform='rotate('+r+'deg)'}
+function clampDesk(d,x,y){const maxX=room.clientWidth-d.offsetWidth,maxY=room.clientHeight-d.offsetHeight;return{x:Math.max(8,Math.min(maxX-8,x)),y:Math.max(78,Math.min(maxY-8,y))}}
+function makeDesk(o){
+ const d=document.createElement('div');d.className='desk '+o.type;d.dataset.id=o.id||uid();d.dataset.type=o.type;d.dataset.r=o.r||0;d.style.left=(o.x??100)+'px';d.style.top=(o.y??160)+'px';applyRotation(d,o.r||0);
+ d.innerHTML='<div class="handle" title="Drehen">↻</div><div class="deskShell">'+Array.from({length:seatsFor(o.type)},(_,i)=>'<div class="seat '+((o.names||[])[i]?'':'empty')+'" data-name="'+safe((o.names||[])[i]||'')+'">'+safe((o.names||[])[i]||'Frei')+'</div>').join('')+'</div><div class="moveHint">↔</div>';
+ room.appendChild(d);bindDesk(d);return d
+}
+function selectDesk(d){$$('.desk').forEach(x=>x.classList.toggle('selected',x===d));selected=d}
+function bindDesk(d){
+ d.addEventListener('pointerdown',e=>{
+  if(e.target.closest('.handle'))return;
+  selectDesk(d);if(!freeMove)return;
+  e.preventDefault();d.setPointerCapture(e.pointerId);const rr=room.getBoundingClientRect();drag={d,pid:e.pointerId,ox:e.clientX-rr.left-parseFloat(d.style.left),oy:e.clientY-rr.top-parseFloat(d.style.top)};d.classList.add('dragging')
+ });
+ d.addEventListener('pointermove',e=>{if(!drag||drag.d!==d)return;const rr=room.getBoundingClientRect(),p=clampDesk(d,e.clientX-rr.left-drag.ox,e.clientY-rr.top-drag.oy);d.style.left=p.x+'px';d.style.top=p.y+'px'});
+ d.addEventListener('pointerup',e=>{if(drag?.d===d){d.classList.remove('dragging');drag=null;autoSave()}});
+ const h=d.querySelector('.handle');h.addEventListener('pointerdown',e=>{e.stopPropagation();selectDesk(d);const b=d.getBoundingClientRect();rot={d,cx:b.left+b.width/2,cy:b.top+b.height/2,start:+d.dataset.r||0,a:Math.atan2(e.clientY-(b.top+b.height/2),e.clientX-(b.left+b.width/2))};h.setPointerCapture(e.pointerId)});
+ h.addEventListener('pointermove',e=>{if(!rot||rot.d!==d)return;const a=Math.atan2(e.clientY-rot.cy,e.clientX-rot.cx);applyRotation(d,rot.start+(a-rot.a)*180/Math.PI)});
+ h.addEventListener('pointerup',()=>{rot=null;autoSave()})
+}
+function addDesk(type,x,y){const w=type==='single'?92:type==='four'?178:170,h=type==='four'?150:96;const o={type,x:x??room.clientWidth/2-w/2,y:y??room.clientHeight/2-h/2+40,names:[]};const d=makeDesk(o);selectDesk(d);autoSave()}
+function clearDesks(){$$('.desk').forEach(x=>x.remove());selected=null}
+function defaultLayout(){
+ clearDesks();const W=room.clientWidth,H=room.clientHeight,cols=3,rows=3;for(let r=0;r<rows;r++)for(let c=0;c<cols;c++){const x=90+c*((W-260)/2),y=150+r*((H-260)/3);makeDesk({type:'two',x,y,names:[]})}
+}
+function layoutRows(){clearDesks();const W=room.clientWidth;for(let r=0;r<3;r++)for(let c=0;c<3;c++)makeDesk({type:'two',x:70+c*((W-250)/2),y:160+r*145,names:[]});assign(students())}
+function layoutU(){clearDesks();const W=room.clientWidth,H=room.clientHeight;for(let i=0;i<4;i++)makeDesk({type:'two',x:70+i*((W-250)/3),y:150,names:[]});for(let i=0;i<3;i++){makeDesk({type:'two',x:70,y:285+i*130,names:[]});makeDesk({type:'two',x:W-245,y:285+i*130,names:[]})}assign(students())}
+function assign(names){const ss=$$('.seat'),arr=[...names];ss.forEach((s,i)=>{const n=arr[i]||'';s.dataset.name=n;s.textContent=n||'Frei';s.classList.toggle('empty',!n)});autoSave()}
+function shuffle(a){a=[...a];for(let i=a.length-1;i;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function renderRoster(){
+ const q=$('#search').value.toLowerCase().trim();$('#roster').innerHTML=students().filter(n=>n.toLowerCase().includes(q)).map((n,i)=>'<div class="student"><span class="initial">'+initials(n)+'</span><span>'+safe(n)+'</span>'+(i%4?'<span class="dot '+palette[i%4]+'"></span>':'')+'</div>').join('')
+}
+function renderClasses(){
+ lists=KathleenClassLists.load();$('#classSelect').innerHTML=lists.map(c=>'<option value="'+c.id+'">'+safe(c.name)+'</option>').join('');
+ const wanted=localStorage.getItem('kathleenSeatClass');current=lists.find(x=>x.id===wanted)||lists[0]||{id:'demo',name:'Demo',students:['Alina Schuster','Ben Fischer','Charlotte Lang','David Neumann','Emilia Lehmann','Finn Frey','Greta Richter','Hannes Sommer','Ida Lorenz','Jonas Kurz','Klara Vogel','Lukas Neuber','Mia Landmann','Niklas Koch','Olivia Peters','Paul Lorenz']};
+ if(!lists.length){$('#classSelect').innerHTML='<option value="demo">Demo</option>'}else $('#classSelect').value=current.id;renderRoster();loadPlan()
+}
+function savePlan(msg=true){
+ const p=plans();p[current.id]={className:current.name,desks:deskData(),updatedAt:new Date().toISOString()};savePlans(p);if(msg)toast('Sitzplan gespeichert ✓')
+}
+function autoSave(){if(current)savePlan(false)}
+function loadPlan(){
+ clearDesks();const p=plans()[current.id];if(p?.desks?.length)p.desks.forEach(makeDesk);else{defaultLayout();assign(students())}
+}
+$('#classSelect').onchange=()=>{autoSave();current=lists.find(x=>x.id===$('#classSelect').value)||current;localStorage.setItem('kathleenSeatClass',current.id);renderRoster();loadPlan()};
+$('#search').oninput=renderRoster;$('#classGear').onclick=()=>location.href='../class-lists/';
+$('#addStudent').onclick=()=>{const n=prompt('Name des Schülers / der Schülerin:');if(n)toast('Bitte in der Klassenliste ergänzen – Sitzplan nutzt die zentrale Liste.')};
+$$('[data-add]').forEach(b=>b.onclick=()=>addDesk(b.dataset.add));
+$$('[data-layout]').forEach(b=>b.onclick=()=>{if(b.dataset.layout==='rows')layoutRows();else if(b.dataset.layout==='u')layoutU();else toast('Freies Layout aktiv – Tische frei verschieben.')});
+$('#freeToggle').onclick=()=>{freeMove=!freeMove;$('#freeToggle').classList.toggle('on',freeMove);$('#freeState').textContent=freeMove?'Aktiv':'Aus';toast(freeMove?'Freies Verschieben aktiv':'Tische fixiert')};
+$('#random').onclick=()=>assign(shuffle(students()));$('#shuffle').onclick=()=>assign(shuffle(students()));$('#clear').onclick=()=>assign([]);
+$('#save').onclick=()=>savePlan(true);$('#load').onclick=()=>{loadPlan();toast('Sitzplan geladen')};$('#saveTpl').onclick=()=>{localStorage.setItem(TPL,JSON.stringify(deskData().map(x=>({...x,names:[]}))));toast('Layout als Vorlage gespeichert')};
+$('#print').onclick=()=>window.print();$('#toBoard').onclick=()=>{savePlan(false);location.href='../classroom-board/';};
+$('#export').onclick=()=>{toast('Tipp: Browser-Drucken → als PDF/Bild speichern')};
+$('#studentMode').onclick=()=>{$('#app').classList.add('studentView');$('#studentMode').classList.add('active');$('#editMode').classList.remove('active')};$('#editMode').onclick=()=>{$('#app').classList.remove('studentView');$('#editMode').classList.add('active');$('#studentMode').classList.remove('active')};
+$('#fullscreen').onclick=()=>document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen();
+$$('[data-room]').forEach(t=>t.onclick=()=>{t.classList.toggle('on');const on=t.classList.contains('on'),v=t.dataset.room;if(v==='board')$('#board').style.display=on?'grid':'none';if(v==='teacher')$('#teacher').style.display=on?'grid':'none';if(v==='grid')room.style.backgroundSize=on?'28px 28px':'100% 100%'});
+room.addEventListener('pointerdown',e=>{if(e.target===room)selectDesk(null)});
+window.addEventListener('keydown',e=>{if((e.key==='Delete'||e.key==='Backspace')&&selected&&!['INPUT','SELECT','TEXTAREA'].includes(document.activeElement.tagName)){selected.remove();selected=null;autoSave()}});
+window.addEventListener('resize',()=>{});
+(async()=>{const ok=await KathleenClassLists.requireUnlock();if(ok)renderClasses();else renderClasses()})();
+})();
+</script>
+</body></html>
