@@ -1,9 +1,9 @@
-const CACHE='kathleen-v23-5-2-whiteboard-xl-20260920';
+const CACHE='kathleen-v23-6-timetable-homework-20260920';
 const CORE=[
   './','./index.html','./manifest.webmanifest',
   './tools/english-world-quiz/index.html','./tools/english-world-quiz/bonus.html','./tools/homework-vouchers/index.html',
   './tools/classroom-tools-shared.js','./tools/randomizer/index.html','./tools/classroom-timer/index.html','./tools/team-generator/index.html',
-  './tools/class-lists/index.html','./tools/schulaufgabenrechner/index.html','./tools/push-center/index.html','./tools/presentation-mode.js','./tools/classroom-board/index.html','./tools/classroom-board/board.css','./tools/classroom-board/widget-framework.js','./tools/classroom-board/board-app.js','./tools/classroom-board/student.html','./tools/classroom-board/present.html','./tools/live-poll/index.html','./tools/live-poll/student.html',
+  './tools/class-lists/index.html','./tools/schulaufgabenrechner/index.html','./tools/homework-strikes/index.html','./tools/timetable/index.html','./tools/push-center/index.html','./tools/presentation-mode.js','./tools/classroom-board/index.html','./tools/classroom-board/board.css','./tools/classroom-board/widget-framework.js','./tools/classroom-board/board-app.js','./tools/classroom-board/student.html','./tools/classroom-board/present.html','./tools/live-poll/index.html','./tools/live-poll/student.html',
   './tools/kalter-krieg/index.html','./tools/kalter-krieg/lehrer.html',
   './assets/covers/cold-war.svg','./assets/covers/english-world.svg','./assets/reveal/kathleen-boat-reveal.svg','./assets/reveal/boat-image-0.js','./assets/reveal/boat-data-01.js','./assets/reveal/boat-data-02.js','./assets/reveal/boat-data-03.js','./assets/reveal/boat-data-04.js','./assets/reveal/boat-data-05.js','./assets/reveal/boat-data-06.js','./assets/reveal/boat-data-07.js','./assets/reveal/boat-data-08.js','./assets/reveal/boat-data-09.js','./assets/reveal/boat-data-10a.js','./assets/reveal/boat-data-10b.js','./assets/reveal/boat-data-10c.js','./assets/reveal/boat-data-11a.js','./assets/reveal/boat-data-11b.js','./assets/reveal/boat-data-11c.js',
   './assets/icons/app-180.png','./assets/icons/app-512.png'
