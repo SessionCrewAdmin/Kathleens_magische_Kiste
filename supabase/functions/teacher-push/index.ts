@@ -20,9 +20,9 @@ function json(data: unknown, status = 200) {
 function configured() {
   return Boolean(SUPABASE_URL && SERVICE_KEY && VAPID_PUBLIC_KEY && VAPID_PRIVATE_KEY);
 }
-async function isAdmin(passphrase: string) {
-  if (!passphrase) return false;
-  const { data, error } = await db.rpc("toolbox_verify_admin", { p_passphrase: passphrase });
+async function hasAdminToken(token: string) {
+  if (!token) return false;
+  const { data, error } = await db.rpc("teacher_push_check_token", { p_token: token });
   return !error && data === true;
 }
 function cleanText(value: unknown, max: number) {
@@ -104,8 +104,8 @@ Deno.serve(async (req) => {
       return json({ ok: true, processed, delivered });
     }
 
-    const passphrase = String(body?.adminPass || "");
-    if (!(await isAdmin(passphrase))) return json({ ok: false, error: "admin_required" }, 401);
+    const adminToken = String(body?.adminToken || "");
+    if (!(await hasAdminToken(adminToken))) return json({ ok: false, error: "admin_required" }, 401);
 
     if (action === "subscribe") {
       const s = body?.subscription || {};
