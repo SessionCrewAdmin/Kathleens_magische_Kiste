@@ -1,4 +1,4 @@
-const CACHE='kathleen-v24-seating-ui-fix-20260921';
+const CACHE='kathleen-v24-seating-tags-20260921';
 const CORE=[
   './','./index.html','./manifest.webmanifest',
   './tools/english-world-quiz/index.html','./tools/english-world-quiz/bonus.html','./tools/homework-vouchers/index.html',
