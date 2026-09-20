@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#fff9fc">
+<title>Hausaufgaben-Striche · Kathleens Kiste</title>
+<style>
+:root{--bg:#fff9fc;--ink:#503d51;--muted:#8d788f;--line:#eadde9;--pink:#efa5c7;--lilac:#b9a6e8;--deep:#6f5276;--green:#67a98f;--amber:#d59c55;--red:#bd6174;--shadow:0 18px 54px rgba(116,76,112,.12)}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Inter,ui-rounded,"SF Pro Rounded",Arial,sans-serif;color:var(--ink);background:radial-gradient(circle at 8% 0%,#ffe7f1 0,transparent 28%),radial-gradient(circle at 90% 4%,#ece5ff 0,transparent 27%),linear-gradient(180deg,#fffafd,#fff8fc 52%,#faf8ff)}
+button,input,select{font:inherit}.shell{max-width:1500px;margin:auto;padding:22px;position:relative}.top{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:16px}.brand{display:flex;gap:13px;align-items:center}.ico{width:58px;height:58px;border-radius:18px;display:grid;place-items:center;font-size:28px;background:linear-gradient(145deg,#ffe1ad,#f0b8ce);box-shadow:var(--shadow)}h1{margin:0;font-size:clamp(26px,3.5vw,42px);letter-spacing:-.04em;color:#674969}.sub{margin:5px 0 0;color:var(--muted);font-size:12px}.actions,.filters{display:flex;gap:8px;flex-wrap:wrap;align-items:end}.btn{border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:12px;padding:10px 13px;font-weight:900;cursor:pointer;min-height:42px}.btn.primary{border:0;color:#fff;background:linear-gradient(135deg,#d790b5,#aa8cde)}.btn.danger{color:#a54f64;background:#fff8fa}.panel{background:rgba(255,255,255,.9);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);padding:16px}.filters{margin-bottom:14px}.field{min-width:180px}.field.grow{flex:1}.field label{display:block;font-size:9px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:950;margin:0 0 5px}.input,select{width:100%;min-height:44px;border:1px solid var(--line);border-radius:11px;background:#fffafd;color:var(--ink);padding:10px 11px;outline:none}.input:focus,select:focus{border-color:#d5a7c5;box-shadow:0 0 0 4px rgba(239,181,210,.13)}.summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:0 0 14px}.stat{padding:14px 15px;border:1px solid var(--line);border-radius:16px;background:#fff}.stat small{display:block;color:var(--muted);font-weight:850;font-size:9px}.stat strong{display:block;margin-top:4px;font-size:25px}.tableWrap{overflow:auto;border:1px solid var(--line);border-radius:16px}.tbl{width:100%;border-collapse:separate;border-spacing:0;min-width:720px}.tbl th,.tbl td{padding:11px 12px;border-bottom:1px solid #f1e7ef;text-align:left}.tbl th{position:sticky;top:0;background:#fffafd;z-index:2;font-size:9px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}.tbl tbody tr:last-child td{border-bottom:0}.student{font-weight:950}.count{display:inline-grid;place-items:center;min-width:46px;height:36px;border-radius:11px;background:#fff2dc;color:#90672e;font-weight:1000;font-size:15px}.rowBtns{display:flex;gap:6px;flex-wrap:wrap}.rowBtns .btn{min-width:44px;padding:8px 10px}.history{font-size:10px;color:var(--muted)}.empty{padding:38px;text-align:center;color:var(--muted)}.status{margin-top:10px;min-height:18px;font-size:10px;color:var(--muted)}.modal{position:fixed;inset:0;z-index:50;display:none;place-items:center;padding:18px;background:rgba(58,41,60,.35);backdrop-filter:blur(8px)}.modal.show{display:grid}.modalCard{width:min(540px,96vw);max-height:82vh;overflow:auto;background:#fff;border:1px solid var(--line);border-radius:20px;padding:18px;box-shadow:0 30px 100px rgba(70,46,72,.28)}.modalCard h2{margin:0 0 12px}.event{display:flex;justify-content:space-between;gap:10px;padding:10px;border-bottom:1px solid #f0e7ee;font-size:11px}.event:last-child{border:0}
+@media(max-width:760px){.shell{padding:13px}.top{align-items:flex-start;flex-direction:column}.actions{width:100%;display:grid;grid-template-columns:1fr 1fr}.filters{display:grid;grid-template-columns:1fr 1fr}.field,.field.grow{min-width:0}.field.grow{grid-column:1/-1}.summary{grid-template-columns:1fr 1fr}.summary .stat:last-child{grid-column:1/-1}.btn,.input,select{min-height:46px}.ico{width:48px;height:48px}.tbl th,.tbl td{padding:10px}.modal{align-items:end;padding:0}.modalCard{width:100%;max-width:none;border-radius:22px 22px 0 0;padding-bottom:calc(18px + env(safe-area-inset-bottom))}}
+</style>
+</head>
+<body>
+<main class="shell">
+<header class="top">
+  <div class="brand"><div class="ico">✓</div><div><h1>Hausaufgaben-Striche</h1><p class="sub">Eigenständige Strichliste · verschlüsselt · pro Klasse und Fach</p></div></div>
+  <div class="actions"><button class="btn" id="lockBtn">🔒 Sperren</button><button class="btn" id="backBtn">← Tools</button></div>
+</header>
+
+<section class="panel">
+  <div class="filters">
+    <div class="field"><label>Klasse</label><select id="classSelect"></select></div>
+    <div class="field"><label>Fach</label><input class="input" id="subject" list="subjectOptions" value="Englisch"><datalist id="subjectOptions"><option value="Englisch"><option value="Geschichte"></datalist></div>
+    <div class="field grow"><label>Schüler suchen</label><input class="input" id="search" placeholder="Name filtern …"></div>
+  </div>
+  <div class="summary">
+    <div class="stat"><small>Schüler</small><strong id="studentCount">0</strong></div>
+    <div class="stat"><small>Striche gesamt</small><strong id="strikeCount">0</strong></div>
+    <div class="stat"><small>Heute eingetragen</small><strong id="todayCount">0</strong></div>
+  </div>
+  <div class="tableWrap" id="tableWrap"></div>
+  <div class="status" id="status">–</div>
+</section>
+</main>
+
+<div class="modal" id="historyModal"><div class="modalCard"><div style="display:flex;justify-content:space-between;gap:12px;align-items:center"><h2 id="historyTitle">Verlauf</h2><button class="btn" id="historyClose">Schließen</button></div><div id="historyList"></div></div></div>
+
+<script src="../classroom-tools-shared.js"></script>
+<script>
+(()=>{'use strict';
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const STORE='homework-strikes-v1',LEGACY='gradebook-v1';
+let db={version:1,records:{}},saveTimer=null;
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
+const subject=()=>($('#subject').value||'').trim()||'Ohne Fach';
+const key=()=>$('#classSelect').value+'::'+subject().toLocaleLowerCase('de-DE');
+const today=()=>new Date().toISOString().slice(0,10);
+function classObj(){return KathleenClassLists.get($('#classSelect').value)}
+function entriesFor(name){const r=db.records[key()]||{};return Array.isArray(r[name])?r[name]:[]}
+function setStatus(t){$('#status').textContent=t}
+function normalizeEvent(v){if(typeof v==='string'){const m=v.match(/^(\d{1,2})\.(\d{1,2})\.(\d{4})$/);return{at:m?m[3]+'-'+m[2].padStart(2,'0')+'-'+m[1].padStart(2,'0'):v,note:''}}return{at:String(v?.at||today()).slice(0,10),note:String(v?.note||'')}}
+function scheduleSave(){clearTimeout(saveTimer);setStatus('Änderungen …');saveTimer=setTimeout(saveNow,350)}
+async function saveNow(){clearTimeout(saveTimer);saveTimer=null;await KathleenClassLists.secureSet(STORE,db);setStatus('✓ Verschlüsselt gespeichert')}
+async function migrateLegacy(){
+ const marker=await KathleenClassLists.secureGet('homework-strikes-migration-v1',false);if(marker)return;
+ const legacy=await KathleenClassLists.secureGet(LEGACY,null);
+ if(legacy?.homework&&typeof legacy.homework==='object'){
+   for(const [k,v] of Object.entries(legacy.homework)){
+     db.records[k]=db.records[k]||{};
+     for(const [name,arr] of Object.entries(v||{}))if(Array.isArray(arr)&&!db.records[k][name])db.records[k][name]=arr.map(normalizeEvent);
+   }
+   await KathleenClassLists.secureSet(STORE,db);
+ }
+ await KathleenClassLists.secureSet('homework-strikes-migration-v1',true)
+}
+function fillClasses(){
+ const all=KathleenClassLists.load();$('#classSelect').innerHTML=all.map(c=>'<option value="'+esc(c.id)+'">'+esc(c.name)+'</option>').join('');
+ if(!all.length)$('#tableWrap').innerHTML='<div class="empty">Noch keine Klassenliste vorhanden.</div>'
+}
+function render(){
+ const c=classObj(),q=$('#search').value.trim().toLocaleLowerCase('de-DE');if(!c){$('#tableWrap').innerHTML='<div class="empty">Keine Klasse ausgewählt.</div>';return}
+ const students=c.students.filter(n=>!q||n.toLocaleLowerCase('de-DE').includes(q)),allEvents=c.students.flatMap(entriesFor),d=today();
+ $('#studentCount').textContent=c.students.length;$('#strikeCount').textContent=allEvents.length;$('#todayCount').textContent=allEvents.filter(e=>normalizeEvent(e).at===d).length;
+ $('#tableWrap').innerHTML='<table class="tbl"><thead><tr><th>Schüler</th><th>Striche</th><th>Letzter Eintrag</th><th>Aktionen</th></tr></thead><tbody>'+students.map(name=>{const arr=entriesFor(name).map(normalizeEvent),last=arr.at(-1);return'<tr><td class="student">'+esc(name)+'</td><td><span class="count">'+arr.length+'</span></td><td class="history">'+(last?new Date(last.at+'T12:00:00').toLocaleDateString('de-DE'):'–')+'</td><td><div class="rowBtns"><button class="btn primary" data-add="'+esc(name)+'">＋1</button><button class="btn" data-sub="'+esc(name)+'" '+(!arr.length?'disabled':'')+'>−1</button><button class="btn" data-history="'+esc(name)+'" '+(!arr.length?'disabled':'')+'>Verlauf</button><button class="btn danger" data-reset="'+esc(name)+'" '+(!arr.length?'disabled':'')+'>Reset</button></div></td></tr>'}).join('')+'</tbody></table>';
+ $$('[data-add]').forEach(b=>b.onclick=()=>change(b.dataset.add,'add'));$$('[data-sub]').forEach(b=>b.onclick=()=>change(b.dataset.sub,'sub'));$$('[data-reset]').forEach(b=>b.onclick=()=>{if(confirm('Alle Hausaufgaben-Striche für '+b.dataset.reset+' in '+subject()+' löschen?'))change(b.dataset.reset,'reset')});$$('[data-history]').forEach(b=>b.onclick=()=>showHistory(b.dataset.history))
+}
+function change(name,mode){
+ const k=key();db.records[k]=db.records[k]||{};const arr=(db.records[k][name]||[]).map(normalizeEvent);
+ if(mode==='add')arr.push({at:today(),note:''});if(mode==='sub')arr.pop();if(mode==='reset')arr.length=0;db.records[k][name]=arr;render();scheduleSave()
+}
+function showHistory(name){
+ const arr=entriesFor(name).map(normalizeEvent).slice().reverse();$('#historyTitle').textContent=name+' · '+subject();$('#historyList').innerHTML=arr.length?arr.map((e,i)=>'<div class="event"><span>'+new Date(e.at+'T12:00:00').toLocaleDateString('de-DE')+'</span><button class="btn danger" data-del-event="'+(arr.length-1-i)+'">Löschen</button></div>').join(''):'<div class="empty">Keine Einträge.</div>';$('#historyModal').classList.add('show');
+ $$('[data-del-event]').forEach(b=>b.onclick=()=>{const k=key(),a=(db.records[k]?.[name]||[]).map(normalizeEvent);a.splice(+b.dataset.delEvent,1);db.records[k][name]=a;scheduleSave();showHistory(name);render()})
+}
+$('#historyClose').onclick=()=>$('#historyModal').classList.remove('show');$('#historyModal').onclick=e=>{if(e.target.id==='historyModal')$('#historyModal').classList.remove('show')};
+$('#classSelect').onchange=render;$('#subject').onchange=render;$('#search').oninput=render;
+$('#backBtn').onclick=async()=>{if(saveTimer)await saveNow();location.href='../../#tools'};
+$('#lockBtn').onclick=async()=>{if(saveTimer)await saveNow();KathleenClassLists.lock(true)};
+document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='hidden'&&saveTimer)saveNow()});
+(async()=>{await KathleenClassLists.requireUnlock();db=await KathleenClassLists.secureGet(STORE,{version:1,records:{}});if(!db?.records)db={version:1,records:{}};await migrateLegacy();fillClasses();render();setStatus('✓ Bereit')})().catch(e=>{console.error(e);setStatus(e.message||'Fehler')});
+})();
+</script>
+</body>
+</html>
