@@ -78,6 +78,21 @@
 
 /* V22.0 Widget Framework */
 .item[data-widget-type]{background:#fff;border:1px solid #e7dce8;box-shadow:0 10px 28px #49354a14}
+.item[data-widget-type="sticker"]{min-width:52px;min-height:52px;background:transparent!important;border-color:transparent!important;box-shadow:none!important;border-radius:10px;overflow:visible}
+.item[data-widget-type="sticker"]>.drag{position:absolute;inset:0;height:auto;z-index:2;padding:0;color:transparent;background:transparent;cursor:grab;border:0}
+.item[data-widget-type="sticker"]>.body{position:absolute;inset:0;height:100%;padding:0;overflow:visible;pointer-events:none}
+.item[data-widget-type="sticker"].selected{border-color:#b68ad1!important;box-shadow:0 0 0 3px #b68ad126!important}
+.item[data-widget-type="sticker"] .resize,.item[data-widget-type="sticker"] .rotateHandle{z-index:5}
+.stickerLibraryPanel{width:min(440px,calc(100vw - 24px))}
+.stickerLibraryHead{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:12px}
+.stickerLibraryHead h2{margin:0 0 4px}.stickerLibraryHead p{margin:0;color:#8d788f;font-size:11px;line-height:1.4}
+.stickerLibraryHead button{width:36px;height:36px;border:1px solid var(--line);background:#fff;border-radius:10px;font-size:20px;color:#6d5670}
+.stickerLibraryGrid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:7px}
+.stickerLibraryItem{aspect-ratio:1;border:1px solid #e6dbe8;background:#fff;border-radius:14px;display:grid;place-items:center;font-size:29px;cursor:grab;user-select:none;-webkit-user-select:none;transition:transform .14s,border-color .14s,background .14s}
+.stickerLibraryItem:hover{transform:translateY(-2px);border-color:#c9add3;background:#fffafd}
+.stickerLibraryItem:active{cursor:grabbing;transform:scale(.96)}
+.stickerLibraryHint{margin-top:12px;padding:10px 11px;border-radius:12px;background:#faf6fb;color:#846f87;font-size:10px;line-height:1.45}
+@media(max-width:700px){.stickerLibraryGrid{grid-template-columns:repeat(5,minmax(0,1fr))}.stickerLibraryItem{font-size:27px}}
 .item[data-widget-type]>.body{height:calc(100% - 28px);padding:0;overflow:hidden}
 .kwHost{width:100%;height:100%;min-width:0;min-height:0}
 .kwShell{width:100%;height:100%;display:flex;flex-direction:column;background:#fff;color:#4f3d51}
