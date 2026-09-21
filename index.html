@@ -522,9 +522,9 @@ function getGlobalClass(){
  try{const x=JSON.parse(localStorage.getItem('kathleenGlobalClassV1')||'null');if(x?.id)return x}catch(e){}
  const id=localStorage.getItem('kathleenGlobalClassId')||'',name=localStorage.getItem('kathleenGlobalClassName')||'';return id?{id,name}:null
 }
-function setGlobalClass(id,name=''){
+function setGlobalClass(id,name='',subject=''){
  if(!id)return;const meta=classMeta(),hit=meta.find(x=>String(x.id)===String(id)),value={id:String(id),name:hit?.name||name||'',updatedAt:new Date().toISOString()};
- localStorage.setItem('kathleenGlobalClassV1',JSON.stringify(value));localStorage.setItem('kathleenGlobalClassId',value.id);localStorage.setItem('kathleenGlobalClassName',value.name);renderGlobalClassPicker()
+ localStorage.setItem('kathleenGlobalClassV1',JSON.stringify(value));localStorage.setItem('kathleenGlobalClassId',value.id);localStorage.setItem('kathleenGlobalClassName',value.name);if(subject)localStorage.setItem('kathleenActiveSubjectV1',subject);renderGlobalClassPicker();window.KathleenI18n?.apply?.()
 }
 function classRefForLesson(e){
  const meta=classMeta();if(e.classId&&meta.some(x=>String(x.id)===String(e.classId)))return{id:String(e.classId),name:e.className||meta.find(x=>String(x.id)===String(e.classId))?.name||''};
@@ -537,7 +537,7 @@ function renderGlobalClassPicker(){
  chip.textContent=g?.name||'keine Klasse'
 }
 function goLessonAction(entry,action){
- const ref=classRefForLesson(entry);if(ref.id)setGlobalClass(ref.id,ref.name);
+ const ref=classRefForLesson(entry);if(ref.id)setGlobalClass(ref.id,ref.name,entry.subject);
  const routes={board:'tools/classroom-board/',seating:'tools/seating-plan/',random:'tools/randomizer/',teams:'tools/team-generator/',homework:'tools/homework-strikes/',grades:'tools/schulaufgabenrechner/',classlist:'tools/class-lists/'};
  if(routes[action])location.href=routes[action]
 }
@@ -575,7 +575,7 @@ function renderHomeSchedule(){
  let day=dow,rows=entries.filter(e=>Number(e.day)===day).sort((a,b)=>mins(a.start)-mins(b.start));
  if(!rows.length){for(let add=1;add<=7;add++){const d=((dow-1+add)%7)+1,found=entries.filter(e=>Number(e.day)===d).sort((a,b)=>mins(a.start)-mins(b.start));if(found.length){day=d;rows=found;break}}}
  label.textContent=day===dow?'Heute':DAYS[day];
- if(!getGlobalClass()){const candidate=rows.find(e=>day===dow&&mins(e.end)>nowMin)||rows[0];if(candidate?.className){const ref=classRefForLesson(candidate);if(ref.id)setGlobalClass(ref.id,ref.name)}}
+ if(!getGlobalClass()){const candidate=rows.find(e=>day===dow&&mins(e.end)>nowMin)||rows[0];if(candidate?.className){const ref=classRefForLesson(candidate);if(ref.id)setGlobalClass(ref.id,ref.name,candidate.subject)}}
  renderGlobalClassPicker();renderNextLessonCard();
  if(!rows.length){box.innerHTML='<div class="home-empty">Keine Stunden eingetragen.</div>';return}
  box.innerHTML=rows.map(e=>{const cur=day===dow&&mins(e.start)<=nowMin&&mins(e.end)>nowMin,sub=e.subject==='Englisch'?'E':e.subject==='Geschichte'?'G':e.subject;return '<div class="home-lesson-wrap" data-lesson-id="'+esc(e.id)+'"><div class="home-lesson '+(cur?'current':'')+'"><div class="home-lesson-time">'+esc(e.start)+'</div><div class="home-lesson-main"><b>'+esc(sub)+' · '+esc(e.className||'–')+'</b><small>'+esc(e.start)+'–'+esc(e.end)+'</small></div>'+(e.room?'<span class="home-room">'+esc(e.room)+'</span>':'<span></span>')+'<button class="lesson-more" title="Schnellaktionen">•••</button></div><div class="home-lesson-actions"><button class="lesson-action primary" data-lesson-action="board">✨ Whiteboard</button><button class="lesson-action" data-lesson-action="seating">🪑 Sitzplan</button><button class="lesson-action" data-lesson-action="random">🎲 Zufall</button><button class="lesson-action" data-lesson-action="teams">🧩 Teams</button><button class="lesson-action" data-lesson-action="homework">✓ Hausaufgaben</button><button class="lesson-action" data-lesson-action="grades">📝 Noten</button><button class="lesson-action" data-lesson-action="classlist">👥 Klasse</button></div></div>'}).join('');
