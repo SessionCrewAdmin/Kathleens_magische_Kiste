@@ -9,6 +9,7 @@ const SUPABASE_KEY='sb_publishable_GIyyWoyaQXipaA4S9OuTyQ_cZn7LUgV';
 const CLOUD_VAULT_ID='schoolyear-2026-27';
 const CLASS_META_KEY='kathleenClassMetaV1';
 const GLOBAL_CLASS_KEY='kathleenGlobalClassV1';
+const CLASSROOM_STATE_KEY='kathleenClassroomSharedV1';
 const enc=new TextEncoder(),dec=new TextDecoder(),AAD=enc.encode('KathleenClassListsVaultV2');
 let key=null,cache=[],guardPromise=null,guardResolve=null,lockTimer=null,activityBound=false;
 
@@ -42,6 +43,63 @@ function publishClassMeta(){try{localStorage.setItem(CLASS_META_KEY,JSON.stringi
 function classMeta(){try{const x=JSON.parse(localStorage.getItem(CLASS_META_KEY)||'[]');return Array.isArray(x)?x:[]}catch(e){return[]}}
 function getGlobalClass(){try{const x=JSON.parse(localStorage.getItem(GLOBAL_CLASS_KEY)||'null');if(x?.id){const id=String(x.id),name=String(x.name||'');if(key&&name&&!cache.some(c=>c.id===id)){const hit=cache.find(c=>c.name.toLocaleLowerCase('de-DE')===name.toLocaleLowerCase('de-DE'));if(hit)return{id:hit.id,name:hit.name}}return{id,name}}}catch(e){}const id=localStorage.getItem('kathleenGlobalClassId')||'',name=localStorage.getItem('kathleenGlobalClassName')||'';if(key&&name&&!cache.some(c=>c.id===id)){const hit=cache.find(c=>c.name.toLocaleLowerCase('de-DE')===name.toLocaleLowerCase('de-DE'));if(hit)return{id:hit.id,name:hit.name}}return id?{id,name}:null}
 function setGlobalClass(id,name=''){id=String(id||'');name=String(name||'');if(!id){localStorage.removeItem(GLOBAL_CLASS_KEY);localStorage.removeItem('kathleenGlobalClassId');localStorage.removeItem('kathleenGlobalClassName');window.dispatchEvent(new CustomEvent('kathleen:globalclass',{detail:null}));return null}const hit=cache.find(c=>c.id===id),value={id,name:hit?.name||name||classMeta().find(c=>c.id===id)?.name||'',updatedAt:new Date().toISOString()};localStorage.setItem(GLOBAL_CLASS_KEY,JSON.stringify(value));localStorage.setItem('kathleenGlobalClassId',value.id);localStorage.setItem('kathleenGlobalClassName',value.name);window.dispatchEvent(new CustomEvent('kathleen:globalclass',{detail:value}));return value}
+
+function getClassroomState(){
+  let x=null;
+  try{x=JSON.parse(localStorage.getItem(CLASSROOM_STATE_KEY)||'null')}catch(e){}
+  if(!x){try{x=JSON.parse(sessionStorage.getItem('kathleenClassroom')||'null')}catch(e){}}
+  return x&&x.session_id&&x.teacher_token?x:null
+}
+function setClassroomState(room,meta={}){
+  if(!room?.session_id||!room?.teacher_token)return null;
+  const global=getGlobalClass(),value={...room,...meta,classId:meta.classId||global?.id||room.classId||'',className:meta.className||global?.name||room.className||'',sessionState:meta.sessionState||room.sessionState||'open',connectedCount:Number(meta.connectedCount??room.connectedCount??0),rosterCount:Number(meta.rosterCount??room.rosterCount??0),updatedAt:new Date().toISOString()};
+  localStorage.setItem(CLASSROOM_STATE_KEY,JSON.stringify(value));
+  sessionStorage.setItem('kathleenClassroom',JSON.stringify(value));
+  window.dispatchEvent(new CustomEvent('kathleen:classroom',{detail:value}));
+  return value
+}
+function updateClassroomState(patch={}){
+  const cur=getClassroomState();if(!cur)return null;return setClassroomState(cur,{...cur,...patch})
+}
+function clearClassroomState(){
+  localStorage.removeItem(CLASSROOM_STATE_KEY);sessionStorage.removeItem('kathleenClassroom');
+  window.dispatchEvent(new CustomEvent('kathleen:classroom',{detail:null}));
+}
+function ensureTeacherUx(){
+  if(typeof document==='undefined'||document.getElementById('kclTeacherUxStyle'))return;
+  const path=location.pathname||'',isBoard=/\/classroom-board\/(?:index\.html)?$/.test(path),isStudent=/\/(?:student|present)\.html$/.test(path);
+  if(isStudent)return;
+  const standalone=window.matchMedia?.('(display-mode: standalone)').matches||navigator.standalone===true;
+  if(standalone)document.documentElement.classList.add('kcl-pwa');
+  const s=document.createElement('style');s.id='kclTeacherUxStyle';s.textContent=`
+  .kcl-context-chip{display:inline-flex;align-items:center;gap:6px;min-height:40px;border:1px solid #eadde9;background:rgba(255,255,255,.94);color:#654d69;border-radius:12px;padding:8px 11px;font:900 10px/1 Inter,ui-rounded,Arial,sans-serif;white-space:nowrap;box-shadow:0 7px 20px rgba(94,63,99,.08);cursor:pointer}
+  .kcl-context-chip .kcl-live{width:7px;height:7px;border-radius:50%;background:#66b08f;box-shadow:0 0 0 4px rgba(102,176,143,.12)}
+  .kcl-context-overlay{position:fixed;inset:0;z-index:25000;display:grid;place-items:center;padding:18px;background:rgba(58,41,60,.34);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+  .kcl-context-card{width:min(430px,94vw);background:#fff;border:1px solid #eadde9;border-radius:22px;padding:17px;box-shadow:0 28px 90px rgba(70,46,72,.25);color:#503d51}
+  .kcl-context-card h3{margin:0 0 4px;font:950 18px/1.15 Inter,ui-rounded,Arial}.kcl-context-card p{margin:0 0 13px;color:#8d788f;font:500 10px/1.45 Inter,Arial}
+  .kcl-context-card label{display:block;margin:8px 0 5px;color:#8d788f;font:950 9px/1 Inter,Arial;text-transform:uppercase;letter-spacing:.08em}
+  .kcl-context-card select{width:100%;min-height:46px;border:1px solid #eadde9;border-radius:12px;background:#fffafd;color:#503d51;padding:10px;font-size:16px}
+  .kcl-context-livebox{margin:11px 0;padding:10px 11px;border:1px solid #d7ebe3;background:#f3fbf8;border-radius:12px;font:800 10px/1.45 Inter,Arial;color:#527b69}
+  .kcl-context-actions{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:12px}.kcl-context-actions button,.kcl-context-actions a{min-height:42px;border:1px solid #eadde9;border-radius:11px;background:#fff;color:#503d51;padding:9px 10px;text-decoration:none;text-align:center;font:900 10px/1.2 Inter,Arial}.kcl-context-actions .primary{border:0;color:#fff;background:linear-gradient(135deg,#d790b5,#aa8cde)}
+  @media(max-width:820px){html.kcl-pwa,html.kcl-pwa body{max-width:100%;overflow-x:hidden}html.kcl-pwa .shell{padding-top:calc(12px + env(safe-area-inset-top));padding-bottom:calc(24px + env(safe-area-inset-bottom))}html.kcl-pwa .top{gap:10px;flex-wrap:wrap}html.kcl-pwa .top .actions,html.kcl-pwa .top .topActions,html.kcl-pwa .top-actions{max-width:100%}html.kcl-pwa button,html.kcl-pwa .btn,html.kcl-pwa select{min-height:44px}html.kcl-pwa input:not([type=checkbox]):not([type=radio]):not([type=color]),html.kcl-pwa textarea,html.kcl-pwa select{font-size:16px!important}html.kcl-pwa .modal,html.kcl-pwa .kcl-context-overlay{align-items:end;padding:0}html.kcl-pwa .modalCard,html.kcl-pwa .modal-card,html.kcl-pwa .kcl-context-card{width:100%;max-width:none;max-height:88dvh;overflow:auto;border-radius:22px 22px 0 0;padding-bottom:calc(18px + env(safe-area-inset-bottom))}.kcl-context-actions{grid-template-columns:1fr}}
+  `;document.head.appendChild(s);
+  if(isBoard)return;
+  const chip=document.createElement('button');chip.type='button';chip.id='kclContextChip';chip.className='kcl-context-chip';chip.onclick=openGlobalClassChooser;
+  const host=document.querySelector('.top .actions,.top .topActions,.top-actions,.top,.hero');if(host)host.appendChild(chip);else{chip.style.cssText='position:fixed;right:10px;top:calc(10px + env(safe-area-inset-top));z-index:18000';document.body.appendChild(chip)}
+  renderContextChip()
+}
+function renderContextChip(){
+  const chip=document.getElementById('kclContextChip');if(!chip)return;const g=getGlobalClass(),room=getClassroomState(),live=room?.sessionState!=='closed'&&room?.session_id;
+  chip.innerHTML=(live?'<span class="kcl-live"></span>':'')+'👥 '+(g?.name||room?.className||'Klasse')+(live?' · '+Number(room.connectedCount||0)+' live':'')
+}
+async function openGlobalClassChooser(){
+  if(document.getElementById('kclContextOverlay'))return;
+  try{if(!key)await requireUnlock()}catch(e){return}
+  const lists=load(),g=getGlobalClass(),room=getClassroomState(),o=document.createElement('div');o.id='kclContextOverlay';o.className='kcl-context-overlay';
+  o.innerHTML='<div class="kcl-context-card"><h3>Aktive Klasse</h3><p>Diese Auswahl wird von den Lehrer-Tools gemeinsam verwendet.</p><label>Klasse</label><select id="kclContextSelect">'+lists.map(c=>'<option value="'+String(c.id).replace(/"/g,'&quot;')+'"'+(g?.id===c.id?' selected':'')+'>'+String(c.name).replace(/[&<>]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[m]))+'</option>').join('')+'</select>'+(room?'<div class="kcl-context-livebox">● Classroom '+String(room.className||g?.name||'')+' aktiv · Raum '+String(room.room_code||'')+' · '+Number(room.connectedCount||0)+' / '+Number(room.rosterCount||0)+' verbunden</div>':'')+'<div class="kcl-context-actions"><button class="primary" id="kclContextApply">Übernehmen</button><button id="kclContextClose">Schließen</button><a href="'+new URL('../seating-plan/',location.href)+'">🪑 Sitzplan</a><a href="'+new URL('../classroom-board/',location.href)+'">✨ Whiteboard</a></div></div>';
+  document.body.appendChild(o);o.querySelector('#kclContextClose').onclick=()=>o.remove();o.onclick=e=>{if(e.target===o)o.remove()};o.querySelector('#kclContextApply').onclick=()=>{const id=o.querySelector('#kclContextSelect').value,c=lists.find(x=>x.id===id);if(c)setGlobalClass(c.id,c.name);o.remove();renderContextChip()}
+}
+if(typeof document!=='undefined'){if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',ensureTeacherUx,{once:true});else setTimeout(ensureTeacherUx,0);window.addEventListener('kathleen:globalclass',renderContextChip);window.addEventListener('kathleen:classroom',renderContextChip);window.addEventListener('kathleen:classlists-unlocked',renderContextChip)}
 function load(){return key?cache.map(c=>({...c,students:[...c.students]})):[]}
 function get(id){return key?(cache.find(x=>x.id===id)||null):null}
 function assertUnlocked(){if(!key)throw new Error('Klassenlisten sind gesperrt.')}
@@ -227,5 +285,5 @@ async function requireUnlock(){
   submit.onclick=run;pin.addEventListener('keydown',e=>{if(e.key==='Enter')run()});g.querySelector('#kclPin2')?.addEventListener('keydown',e=>{if(e.key==='Enter')run()});g.querySelector('#kclBack').onclick=()=>{location.href=new URL('../../#tools',location.href).toString()};setTimeout(()=>pin.focus(),60);
   return guardPromise
 }
-window.KathleenClassLists={load,persist,upsert,remove,get,cleanStudents,shuffle,parseDelimited,importCsv,exportCsv,templateCsv,importPlainJson,exportSecureBackup,importSecureBackup,changePin,setup,unlock,lock,requireUnlock,isUnlocked,hasVault,hasLegacy,autoLockMinutes:AUTO_LOCK_MS/60000,secureSet,secureGet,secureRemove,cloudPull,cloudPush,classMeta,getGlobalClass,setGlobalClass,cloudVaultId:CLOUD_VAULT_ID,key:VAULT_KEY,legacyKey:LEGACY_KEY};
+window.KathleenClassLists={load,persist,upsert,remove,get,cleanStudents,shuffle,parseDelimited,importCsv,exportCsv,templateCsv,importPlainJson,exportSecureBackup,importSecureBackup,changePin,setup,unlock,lock,requireUnlock,isUnlocked,hasVault,hasLegacy,autoLockMinutes:AUTO_LOCK_MS/60000,secureSet,secureGet,secureRemove,cloudPull,cloudPush,classMeta,getGlobalClass,setGlobalClass,getClassroomState,setClassroomState,updateClassroomState,clearClassroomState,openGlobalClassChooser,renderContextChip,cloudVaultId:CLOUD_VAULT_ID,key:VAULT_KEY,legacyKey:LEGACY_KEY};
 })();
