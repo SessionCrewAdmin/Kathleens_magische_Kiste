@@ -17,4 +17,4 @@ async function poll(){try{const s=await rpc('classroom_presentation_state',{p_ro
 async function keepAwake(){try{if('wakeLock' in navigator&&!wakeLock)wakeLock=await navigator.wakeLock.request('screen')}catch(e){}}
 $('#fullscreenBtn').onclick=async()=>{try{if(!document.fullscreenElement)await document.documentElement.requestFullscreen();else await document.exitFullscreen()}catch(e){}};
 document.addEventListener('fullscreenchange',()=>$('#fullscreenBtn').textContent=document.fullscreenElement?'⤢ Vollbild verlassen':'⛶ Vollbild');document.addEventListener('visibilitychange',()=>{if(!document.hidden)keepAwake()});window.addEventListener('keydown',e=>{if(e.key.toLowerCase()==='f')$('#fullscreenBtn').click()});keepAwake();poll();setInterval(poll,1200)})();
-</script></body></html>
+</script><script src="student-i18n.js?v=20260921-1830"></script></body></html>
