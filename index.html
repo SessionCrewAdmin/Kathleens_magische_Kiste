@@ -538,7 +538,7 @@ function renderGlobalClassPicker(){
 }
 function goLessonAction(entry,action){
  const ref=classRefForLesson(entry);if(ref.id)setGlobalClass(ref.id,ref.name,entry.subject);
- const routes={board:'tools/classroom-board/',seating:'tools/seating-plan/',random:'tools/randomizer/',teams:'tools/team-generator/',homework:'tools/homework-strikes/',grades:'tools/schulaufgabenrechner/',classlist:'tools/class-lists/'};
+ const routes={board:'tools/classroom-board/',seating:'tools/seating-plan/',random:'tools/randomizer/',teams:'tools/team-generator/',homework:'tools/homework-strikes/',grades:'tools/schulaufgabenrechner/',classlist:'tools/class-lists/',cockpit:'tools/class-cockpit/'};
  if(routes[action])location.href=routes[action]
 }
 function bindLessonActions(entries){
@@ -566,8 +566,8 @@ function renderNextLessonCard(){
  else{live.classList.remove('show');live.onclick=null}
  if(!data){kicker.textContent='Stundenplan';title.textContent='Keine weitere Stunde eingetragen';meta.innerHTML='';actions.innerHTML='<button class="primary" data-next-action="timetable">📅 Stundenplan öffnen</button>';return}
  const e=data.entry,sub=e.subject==='Englisch'?'E':e.subject==='Geschichte'?'G':e.subject;kicker.textContent=data.label;title.textContent=sub+' · '+(e.className||'–');meta.innerHTML='<span>🕒 '+esc(e.start)+'–'+esc(e.end)+'</span>'+(e.room?'<span>📍 '+esc(e.room)+'</span>':'')+'<span>👥 '+esc(e.className||'–')+'</span>';
- actions.innerHTML='<button class="primary" data-next-action="board">✨ Whiteboard öffnen</button><button data-next-action="seating">🪑 Sitzplan</button><button data-next-action="random">🎲 Zufall</button><button data-next-action="homework">✓ Hausaufgaben</button><button data-next-action="grades">📝 Noten</button>'+(room?'<button class="live" data-next-action="classroom">● Classroom '+esc(room.room_code||'')+'</button>':'');
- actions.querySelectorAll('[data-next-action]').forEach(b=>b.onclick=()=>{const a=b.dataset.nextAction;if(a==='classroom'){location.href='tools/classroom-board/';return}if(a==='timetable'){location.href='tools/timetable/';return}goLessonAction(e,a)})
+ actions.innerHTML='<button class="primary" data-next-action="lesson">▶ Stunde starten</button><button data-next-action="cockpit">👥 Cockpit</button><button data-next-action="board">✨ Whiteboard öffnen</button><button data-next-action="seating">🪑 Sitzplan</button><button data-next-action="random">🎲 Zufall</button><button data-next-action="homework">✓ Hausaufgaben</button><button data-next-action="grades">📝 Noten</button>'+(room?'<button class="live" data-next-action="classroom">● Classroom '+esc(room.room_code||'')+'</button>':'');
+ actions.querySelectorAll('[data-next-action]').forEach(b=>b.onclick=()=>{const a=b.dataset.nextAction;if(a==='lesson'){KathleenLessonMode?.start?.(e,{route:'tools/classroom-board/'});return}if(a==='classroom'){location.href='tools/classroom-board/';return}if(a==='timetable'){location.href='tools/timetable/';return}goLessonAction(e,a)})
 }
 function renderHomeSchedule(){
  const box=document.getElementById('homeSchedule'),label=document.getElementById('homeScheduleLabel');if(!box)return;
@@ -590,4 +590,4 @@ document.getElementById('globalClassSelect')?.addEventListener('change',e=>{cons
 document.getElementById('todoAdd')?.addEventListener('click',addTodo);document.getElementById('todoInput')?.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();addTodo()}});
 renderHomeSchedule();renderNextLessonCard();renderTodos();setInterval(()=>{renderHomeSchedule();renderNextLessonCard()},60000);window.addEventListener('storage',e=>{if(['kathleenClassroomSharedV1','kathleenGlobalClassV1','kathleenTimetableSnapshotV1'].includes(e.key)){renderHomeSchedule();renderNextLessonCard()}});
 })();
-</script><script src="home-todo-v2.js?v=20260921-1700"></script><script src="tools/kathleen-i18n.js?v=20260921-1800"></script></body></html>
+</script><script src="home-todo-v2.js?v=20260921-1700"></script><script src="tools/lesson-mode.js?v=20260921-1900"></script><script src="tools/kathleen-i18n.js?v=20260921-1800"></script></body></html>
