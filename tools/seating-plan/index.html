@@ -32,7 +32,7 @@ button,input,select,textarea{font:inherit}button{cursor:pointer}
 .studentView .leftPanel,.studentView .rightPanel,.studentView .boardTools,.studentView .boardActions,.studentView .top .actions{display:none}.studentView .layout{grid-template-columns:1fr}.studentView .roomWrap{height:calc(100vh - 150px)}
 @media(max-width:1180px){.layout{grid-template-columns:280px 1fr}.rightPanel{grid-column:1/-1}.roomWrap{height:610px}}
 @media(max-width:760px){.shell{padding:13px}.top{align-items:flex-start;flex-direction:column}.actions{width:100%;display:grid;grid-template-columns:1fr 1fr}.layout{grid-template-columns:1fr}.panel{padding:13px;border-radius:17px}.roomWrap{height:560px;width:1400px;min-width:1400px}.boardTools{align-items:flex-start}.toolGroup{width:100%}.toolGroup .btn{flex:1;font-size:10px}.roster{max-height:320px}.tableGrid{grid-template-columns:repeat(2,1fr)}}
-</style>
+</style><link rel="stylesheet" href="v27.css?v=20260921-1700">
 </head>
 <body>
 <main class="shell" id="app">
@@ -246,4 +246,5 @@ window.addEventListener('kathleen:classlists',renderClasses);bindRosterDnD();
 (async()=>{status('Klassenlisten werden entsperrt …');const ok=await KathleenClassLists.requireUnlock();if(ok){await loadTags();renderClasses();try{classroom=KathleenClassLists.getClassroomState?.()||JSON.parse(sessionStorage.getItem('kathleenClassroom')||'null')}catch(e){classroom=null}updateLiveBar();if(classroom)startTeacherPolling();status('Bereit')}})();
 })();
 </script>
+<script src="v27.js?v=20260921-1700"></script>
 </body></html>
