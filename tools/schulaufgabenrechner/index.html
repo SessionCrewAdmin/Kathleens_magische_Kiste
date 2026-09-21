@@ -156,8 +156,8 @@ function syncInputs(render=true){
  fillSubjectSelectors();if(render)renderAll()
 }
 function fillClasses(){
- const all=classes(),opts=all.map(c=>'<option value="'+esc(c.id)+'">'+esc(c.name)+' · '+c.students.length+'</option>').join('');
- $('#classSelect').innerHTML=opts;if(current&&all.some(c=>c.id===current.classId)){$('#classSelect').value=current.classId}
+ const all=classes(),opts=all.map(c=>'<option value="'+esc(c.id)+'">'+esc(c.name)+' · '+c.students.length+'</option>').join(''),global=KathleenClassLists.getGlobalClass?.();
+ $('#classSelect').innerHTML=opts;if(current&&all.some(c=>c.id===current.classId)){$('#classSelect').value=current.classId}else if(global&&all.some(c=>c.id===global.id)){$('#classSelect').value=global.id}
 }
 function subjectsForClass(classId){
  const out=new Map;['Englisch','Geschichte',current?.subject].filter(Boolean).forEach(s=>out.set(normalizeSubject(s).toLowerCase(),normalizeSubject(s)));
@@ -271,7 +271,7 @@ function toast(t){let e=$('#gradeToast');if(!e){e=document.createElement('div');
 
 $('#addTask').onclick=()=>{checkpoint();current.tasks.push({id:'t'+Date.now().toString(36),label:String(current.tasks.length+1),max:10});renderAll();scheduleSave()};
 $('#keyPreset').onchange=applyPreset;
-$('#classSelect').onchange=reconcileStudents;
+$('#classSelect').onchange=()=>{const c=selectedClass();if(c)KathleenClassLists.setGlobalClass?.(c.id,c.name);reconcileStudents()};
 $('#saveBtn').onclick=()=>saveNow(true);
 $('#duplicateBtn').onclick=()=>openDuplicate(current);
 $('#undoBtn').onclick=undo;$('#redoBtn').onclick=redo;
@@ -293,7 +293,7 @@ document.addEventListener('visibilitychange',()=>{if(document.visibilityState===
 
 (async()=>{
  await KathleenClassLists.requireUnlock();if(typeof KathleenClassLists.secureGet!=='function'){toast('Sicherer Notenspeicher nicht verfügbar.');return}
- db=migrateDb(await KathleenClassLists.secureGet(STORE,db));$('#majorRatio').value=db.settings.majorRatio;$('#minorRatio').value=db.settings.minorRatio;fillClasses();current=db.assessments[0]?clone(db.assessments[0]):newModel();fillClasses();syncInputs();history=[];future=[];updateUndoButtons();setSaveState('saved','✓ Gespeichert')
+ db=migrateDb(await KathleenClassLists.secureGet(STORE,db));$('#majorRatio').value=db.settings.majorRatio;$('#minorRatio').value=db.settings.minorRatio;fillClasses();const global=KathleenClassLists.getGlobalClass?.(),globalAssessment=global?db.assessments.find(a=>a.classId===global.id):null;current=globalAssessment?clone(globalAssessment):(global?newModel():(db.assessments[0]?clone(db.assessments[0]):newModel()));fillClasses();syncInputs();history=[];future=[];updateUndoButtons();setSaveState('saved','✓ Gespeichert')
 })().catch(e=>{console.error(e);setSaveState('error','! Fehler');toast(e.message||'Notenzentrale konnte nicht geladen werden')});
 })();
 </script></body></html>
