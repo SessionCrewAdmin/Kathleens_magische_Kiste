@@ -1,4 +1,4 @@
-<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="theme-color" content="#fff9fc"><title>Kathleens magische Tool und Aufgaben Kiste</title><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="assets/icons/app-180.png"><meta name="mobile-web-app-capable" content="yes"><script>(()=>{try{
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="theme-color" content="#fff9fc"><title>Kathleens magische Tool und Aufgaben Kiste</title><link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="assets/icons/app-180.png"><meta name="mobile-web-app-capable" content="yes"><script>(()=>{try{if(window.matchMedia?.('(display-mode: standalone)').matches||navigator.standalone===true)document.documentElement.classList.add('pwa-standalone')}catch(e){}})();</script><script>(()=>{try{
   const KEY='kathleenWelcomeSeenThisSession';
   const OLD_KEY='kathleenBoatRevealSeenThisSession';
   const p=new URLSearchParams(location.search);
@@ -183,7 +183,29 @@ button,.btn,.tab,.grade,.tagbtn,.iconbtn,.open{touch-action:manipulation}
   .detail-cover{height:170px}.detail-actions{grid-template-columns:1fr}.detail-actions .wide{grid-column:auto}
 }
 
-@media (display-mode:standalone) and (max-width:700px){:root{--mobile-browser-clearance:0px!important}.app-nav{bottom:calc(8px + env(safe-area-inset-bottom))}.shell{padding-bottom:calc(92px + env(safe-area-inset-bottom))}}
+@media (display-mode:standalone) and (max-width:700px){:root{--mobile-browser-clearance:0px!important}}
+@media(max-width:700px){
+  html.pwa-standalone,html.pwa-standalone body{height:100%;min-height:100%;overflow:hidden}
+  html.pwa-standalone .shell{
+    height:100dvh;max-height:100dvh;min-height:0;
+    display:flex;flex-direction:column;overflow:hidden;
+    padding:calc(10px + env(safe-area-inset-top)) 11px calc(7px + env(safe-area-inset-bottom));
+  }
+  html.pwa-standalone .hero{order:1;flex:0 0 auto}
+  html.pwa-standalone .view{order:2;min-height:0}
+  html.pwa-standalone .view.active{
+    display:block;flex:1 1 auto;min-height:0;overflow-y:auto;overflow-x:hidden;
+    -webkit-overflow-scrolling:touch;overscroll-behavior-y:contain;
+    padding-bottom:18px;scroll-padding-bottom:22px
+  }
+  html.pwa-standalone .app-nav{
+    order:3;position:static;left:auto;right:auto;bottom:auto;
+    flex:0 0 auto;width:100%;margin:8px 0 0;
+    padding:5px;transform:none;-webkit-transform:none;
+    box-shadow:0 8px 28px rgba(92,58,91,.16)
+  }
+  html.pwa-standalone .toast{bottom:calc(82px + env(safe-area-inset-bottom))}
+}
 
 
 .view-topbar{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:0 0 12px}
