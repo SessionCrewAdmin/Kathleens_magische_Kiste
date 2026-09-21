@@ -114,7 +114,7 @@ async function syncPush(){
  if(!cfg?.configured)throw Error('Push-Backend ist noch nicht vollständig eingerichtet.');
  const res=await call('sync_timetable',{entries,timezone:'Europe/Berlin'});setStatus('✓ '+(res.synced||entries.length)+' Stunden · Push jeweils 10 Min. vorher')
 }
-function fillClasses(){const all=KathleenClassLists.load();$('#classId').innerHTML='<option value="">–</option>'+all.map(c=>'<option value="'+esc(c.id)+'">'+esc(c.name)+'</option>').join('')}
+function fillClasses(){const all=KathleenClassLists.load(),global=KathleenClassLists.getGlobalClass?.();$('#classId').innerHTML='<option value="">–</option>'+all.map(c=>'<option value="'+esc(c.id)+'">'+esc(c.name)+'</option>').join('');if(global&&all.some(c=>c.id===global.id))$('#classId').value=global.id}
 function render(){
  const now=new Date(),dow=todayIsoDow(now),nowMin=now.getHours()*60+now.getMinutes(),today=db.entries.filter(e=>Number(e.day)===dow).sort((a,b)=>minutes(a.start)-minutes(b.start));
  const current=today.find(e=>minutes(e.start)<=nowMin&&minutes(e.end)>nowMin),next=today.find(e=>minutes(e.start)>nowMin)||db.entries.map(e=>({e,d:nextOccurrence(e)})).filter(x=>x.d).sort((a,b)=>a.d-b.d)[0]?.e;
@@ -127,7 +127,7 @@ function render(){
 }
 function hash(s){let h=0;for(const ch of String(s||''))h=((h<<5)-h)+ch.charCodeAt(0)|0;return h}
 function openEdit(id=null){
- editing=id;const e=id?db.entries.find(x=>x.id===id):{id:uid(),day:Math.min(5,Math.max(1,todayIsoDow())),start:'08:00',end:'08:45',classId:'',subject:'Englisch',room:'',push:true};
+ editing=id;const global=KathleenClassLists.getGlobalClass?.();const e=id?db.entries.find(x=>x.id===id):{id:uid(),day:Math.min(5,Math.max(1,todayIsoDow())),start:'08:00',end:'08:45',classId:global?.id||'',className:global?.name||'',subject:'Englisch',room:'',push:true};
  $('#modalTitle').textContent=id?'Stunde bearbeiten':'Stunde hinzufügen';$('#day').value=e.day;$('#start').value=e.start;$('#end').value=e.end;$('#classId').value=e.classId||'';$('#className').value=e.className||cls(e.classId)?.name||'';$('#subject').value=e.subject||'';$('#room').value=e.room||'';$('#push').checked=e.push!==false;$('#deleteBtn').style.visibility=id?'visible':'hidden';$('#editModal').classList.add('show')
 }
 async function saveEdit(){
@@ -136,7 +136,7 @@ async function saveEdit(){
 }
 async function deleteEdit(){if(!editing||!confirm('Diese Stunde löschen?'))return;db.entries=db.entries.filter(x=>x.id!==editing);await saveLocal();closeModal();render()}
 function closeModal(){$('#editModal').classList.remove('show');editing=null}
-$('#classId').onchange=()=>{const x=cls($('#classId').value);if(x)$('#className').value=x.name};
+$('#classId').onchange=()=>{const x=cls($('#classId').value);if(x){$('#className').value=x.name;KathleenClassLists.setGlobalClass?.(x.id,x.name)}};
 $('#addBtn').onclick=()=>openEdit();$('#saveBtn').onclick=()=>saveEdit().catch(e=>alert(e.message));$('#deleteBtn').onclick=deleteEdit;$('#cancelBtn').onclick=closeModal;$('#editModal').onclick=e=>{if(e.target.id==='editModal')closeModal()};
 $('#syncBtn').onclick=()=>syncPush().catch(e=>{setStatus('⚠ '+e.message);alert(e.message)});$('#backBtn').onclick=()=>location.href='../../#tools';
 $('#prevWeek').onclick=()=>{weekOffset--;render()};$('#nextWeek').onclick=()=>{weekOffset++;render()};$('#todayWeek').onclick=()=>{weekOffset=0;render()};
