@@ -66,7 +66,7 @@
 <section class="view" id="classbookView"><div class="panel"><h2>Klassennotenbogen</h2><div class="subjectBar"><div class="field"><label>Fach</label><select id="bookSubject"></select></div><label class="hint">Große LN <input class="score" id="majorRatio" type="number" min=".1" step=".5" value="2"></label><label class="hint">Weitere LN <input class="score" id="minorRatio" type="number" min=".1" step=".5" value="1"></label></div><p class="hint">Fächer werden getrennt geführt. Nachschriften ersetzen für den jeweiligen Schüler die ursprüngliche Leistung und erzeugen keine zusätzliche Gewichtung.</p><div class="tableWrap" id="classbook"></div></div></section>
 <section class="view" id="studentsView"><div class="panel"><h2>Schülernotenbogen</h2><div class="subjectBar"><div class="field"><label>Fach</label><select id="studentSubject"></select></div></div><div class="studentCards" id="studentCards"></div></div></section>
 </main>
-<script src="../classroom-tools-shared.js?v=20260921-1315"></script><script src="../presentation-mode.js"></script><script>
+<script src="../classroom-tools-shared.js?v=20260921-1345"></script><script src="../presentation-mode.js"></script><script>
 (()=>{'use strict';
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 const STORE='gradebook-v1',HISTORY_MAX=60,AUTOSAVE_MS=650;
