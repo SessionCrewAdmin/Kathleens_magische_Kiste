@@ -1,4 +1,4 @@
-const CACHE='kathleen-v30-seating-todo-presets-observations-20260921';
+const CACHE='kathleen-v31-v27-final-20260921';
 const CORE=[
   './','./index.html','./home-todo-v2.js','./manifest.webmanifest',
   './tools/english-world-quiz/index.html','./tools/english-world-quiz/bonus.html','./tools/homework-vouchers/index.html',
