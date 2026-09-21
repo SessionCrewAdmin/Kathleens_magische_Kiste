@@ -90,7 +90,7 @@ function dateForDay(day,offset=weekOffset){const d=mondayFor(offset);d.setDate(d
 function fmtDate(d){return d.toLocaleDateString('de-DE',{day:'2-digit',month:'2-digit'})}
 function toIsoLocal(d){return d.toISOString()}
 function setStatus(t){$('#status').textContent=t}
-function publishSnapshot(){try{localStorage.setItem('kathleenTimetableSnapshotV1',JSON.stringify({version:1,entries:(db.entries||[]).map(e=>({id:e.id,day:e.day,start:e.start,end:e.end,className:clsName(e.classId,e.className),subject:e.subject,room:e.room||''}))}))}catch(e){}}
+function publishSnapshot(){try{localStorage.setItem('kathleenTimetableSnapshotV1',JSON.stringify({version:1,entries:(db.entries||[]).map(e=>({id:e.id,day:e.day,start:e.start,end:e.end,classId:e.classId||'',className:clsName(e.classId,e.className),subject:e.subject,room:e.room||''}))}))}catch(e){}}
 async function saveLocal(){await KathleenClassLists.secureSet(STORE,db);publishSnapshot();setStatus('✓ Lokal verschlüsselt')}
 function nextOccurrence(entry){
  const now=new Date();for(let add=0;add<14;add++){const d=new Date(now);d.setDate(now.getDate()+add);const dow=todayIsoDow(d);if(dow!==Number(entry.day))continue;const [h,m]=entry.start.split(':').map(Number);d.setHours(h,m,0,0);if(d>now)return d}return null
