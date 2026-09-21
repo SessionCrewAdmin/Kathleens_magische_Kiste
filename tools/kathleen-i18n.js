@@ -76,7 +76,7 @@ function updateSwitcher(){const d=document.getElementById('kathleenLangSwitch');
 function apply(){
  const lang=resolve();localStorage.setItem(LANG_KEY,lang);document.documentElement.lang=lang;if(document.body){if(lang==='en')translateNode(document.body,lang);else restoreNode(document.body);ensureSwitcher();updateSwitcher();observe()}return lang
 }
-function init(){apply();setInterval(()=>{const l=resolve();if(l!==localStorage.getItem(LANG_KEY)){localStorage.setItem(LANG_KEY,l);apply()}},30000);window.addEventListener('storage',e=>{if([LANG_KEY,OVERRIDE_KEY,SUBJECT_KEY,SNAP,'kathleenGlobalClassV1'].includes(e.key))apply()});window.addEventListener('kathleen:globalclass',()=>apply())}
+function init(){apply();setInterval(()=>{const l=resolve();if(l!==localStorage.getItem(LANG_KEY)){localStorage.setItem(LANG_KEY,l);apply()}},30000);window.addEventListener('storage',e=>{if([LANG_KEY,OVERRIDE_KEY,SUBJECT_KEY,SNAP,'kathleenGlobalClassV1','kathleenLessonModeV1'].includes(e.key))apply()});window.addEventListener('kathleen:globalclass',()=>apply())}
 window.KathleenI18n={resolve,apply,setLanguage,setSubject,auto,t:translateString,activeLesson,subjectForClass};
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
 })();
