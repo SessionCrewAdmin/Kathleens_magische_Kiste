@@ -45,10 +45,32 @@ function add(type,html,w=300,h=170){snapshot();const o={id:'i'+Date.now()+Math.r
 function widgetClassSeed(){try{const lists=window.KathleenClassLists?.load?.()||[],last=localStorage.getItem('kathleenLastClassroomClass'),match=lists.find(x=>x.id===last)||lists.find(x=>x.name===teacherControlState?.class_name)||lists[0];if(match)return{names:[...(match.students||[])],sourceName:match.name||'Klasse'}}catch(e){}const ps=(teacherControlState?.participants||[]).map(p=>p.name).filter(Boolean);return{names:ps,sourceName:teacherControlState?.class_name||(ps.length?'Klassenraum':'')}}
 function seatingWidgetSeed(){
  try{
-  const lists=window.KathleenClassLists?.load?.()||[],last=localStorage.getItem('kathleenLastClassroomClass'),match=lists.find(x=>x.id===last)||lists.find(x=>x.name===teacherControlState?.class_name)||lists[0];
-  const plans=JSON.parse(localStorage.getItem('kathleenSeatPlansV2')||localStorage.getItem('kathleenSeatPlansV1')||'{}'),plan=match?plans[match.id]:null,ps=teacherControlState?.participants||[];
-  return{className:match?.name||teacherControlState?.class_name||'',classId:match?.id||'',desks:plan?.desks||[],participants:ps,rosterCount:Number(teacherControlState?.roster_count)||match?.students?.length||0,classroomActive:!!classroom?.session_id,roomCode:classroom?.room_code||''}
- }catch(e){return{className:teacherControlState?.class_name||'',desks:[],participants:teacherControlState?.participants||[],classroomActive:!!classroom?.session_id,roomCode:classroom?.room_code||''}}
+  const plans=JSON.parse(localStorage.getItem('kathleenSeatPlansV2')||localStorage.getItem('kathleenSeatPlansV1')||'{}')||{};
+  const lists=window.KathleenClassLists?.load?.()||[];
+  const preferredId=localStorage.getItem('kathleenSeatClass')||localStorage.getItem('kathleenLastClassroomClass')||'';
+  let match=lists.find(x=>x.id===preferredId)||lists.find(x=>x.name===teacherControlState?.class_name)||lists[0]||null;
+  let classId=match?.id||preferredId||'',plan=classId?plans[classId]:null;
+  if(!plan){
+   const entries=Object.entries(plans);
+   const byName=entries.find(([,p])=>p?.className&&p.className===teacherControlState?.class_name);
+   const fallback=byName||entries.sort((a,b)=>String(b[1]?.updatedAt||'').localeCompare(String(a[1]?.updatedAt||'')))[0];
+   if(fallback){classId=fallback[0];plan=fallback[1]}
+  }
+  if(!match&&classId)match=lists.find(x=>x.id===classId)||null;
+  const ps=teacherControlState?.participants||[];
+  return{
+   className:match?.name||plan?.className||teacherControlState?.class_name||'Klasse',
+   classId:classId||match?.id||'',
+   desks:Array.isArray(plan?.desks)?plan.desks:[],
+   participants:ps,
+   rosterCount:Number(teacherControlState?.roster_count)||match?.students?.length||0,
+   classroomActive:!!classroom?.session_id,
+   roomCode:classroom?.room_code||''
+  }
+ }catch(e){
+  console.warn('Sitzplan-Widget konnte gespeicherten Plan nicht laden',e);
+  return{className:teacherControlState?.class_name||'Klasse',desks:[],participants:teacherControlState?.participants||[],classroomActive:!!classroom?.session_id,roomCode:classroom?.room_code||''}
+ }
 }
 function refreshSeatingWidgets(){for(const el of $('.item[data-widget-type="seating"]'))widgetUpdate(el,seatingWidgetSeed())}
 function widgetSeedData(type){if(type==='random'||type==='teams')return widgetClassSeed();if(type==='seating')return seatingWidgetSeed();if(type==='poll')return{pollKey:'poll_'+Date.now().toString(36)+Math.random().toString(36).slice(2,7)};return{}}
