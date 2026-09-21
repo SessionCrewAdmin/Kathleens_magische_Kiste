@@ -549,7 +549,7 @@ function bindLessonActions(entries){
  })
 }
 function sharedClassroom(){
- try{const x=JSON.parse(localStorage.getItem('kathleenClassroomSharedV1')||'null');return x?.session_id&&x.sessionState!=='closed'?x:null}catch(e){return null}
+ try{const x=JSON.parse(localStorage.getItem('kathleenClassroomSharedV1')||'null');if(!x?.session_id||x.sessionState==='closed')return null;const age=Date.now()-new Date(x.updatedAt||0).getTime();return Number.isFinite(age)&&age<8*60*60*1000?x:null}catch(e){return null}
 }
 function upcomingLesson(entries,now=new Date()){
  const dow=now.getDay()===0?7:now.getDay(),nowMin=now.getHours()*60+now.getMinutes();
