@@ -40,7 +40,7 @@ function applyGroupLabels(){
 function zoneData(el){return{id:el.dataset.zoneId,label:el.dataset.label||'Zone',x:parseFloat(el.style.left)||0,y:parseFloat(el.style.top)||0,w:el.offsetWidth,h:el.offsetHeight}}
 function syncZones(){classMeta().zones=$$('.v27-zone').map(zoneData);queueMetaSave()}
 function addZone(data=null){
- const z=data||{id:'z'+uid(),label:(prompt('Bezeichnung der freien Fläche:','Gang')||'Gang').slice(0,28),x:650,y:300,w:250,h:90};if(!z.label)return;
+ let z=data;if(!z){const raw=prompt('Bezeichnung der freien Fläche:','Gang');if(raw===null)return;const label=(raw.trim()||'Gang').slice(0,28);z={id:'z'+uid(),label,x:650,y:300,w:250,h:90}}if(!z.label)return;
  const el=document.createElement('div');el.className='v27-zone';el.dataset.zoneId=z.id||('z'+uid());el.dataset.label=z.label||'Zone';el.style.left=(z.x??650)+'px';el.style.top=(z.y??300)+'px';el.style.width=(z.w??250)+'px';el.style.height=(z.h??90)+'px';el.innerHTML='<span>'+esc(z.label||'Zone')+'</span><button class="del" title="Zone löschen">×</button><i class="resize">↘</i>';
  const firstDesk=$('.desk');room.insertBefore(el,firstDesk||null);bindZone(el);if(!data){syncZones();selectZone(el)}return el
 }
@@ -97,8 +97,9 @@ function tagsFor(name){return(tagDb?.[classId()]?.[name]||[])}
 function tagDots(name){
  const ids=tagsFor(name),colors={support:'#e77ca3',classrep:'#8b6bd3',front:'#6ba8df',quiet:'#65b68f',apart:'#e2a14d',helper:'#c9ad34'};return ids.map(id=>{const c=colors[id]||customTags.find(t=>t.id===id)?.color||'#9b7bd3';return'<span class="seatTagDot" style="background:'+esc(c)+'"></span>'}).join('')
 }
-function setSeat(seat,name){seat.dataset.name=name||'';seat.title=name||'';seat.classList.toggle('empty',!name);seat.draggable=!!name;seat.innerHTML=name?'<span class="seatStatusDot"></span><span class="seatName">'+esc(firstName(name))+'</span><span class="seatTags">'+tagDots(name)+'</span>':'<span class="seatName">Frei</span>'}
-function assignNames(names){const ss=seats().sort((a,b)=>{const A=seatCenter(a),B=seatCenter(b);return A.y-B.y||A.x-B.x});ss.forEach(s=>setSeat(s,''));names.slice(0,ss.length).forEach((n,i)=>setSeat(ss[i],n));$('#save')?.click()}
+function setSeat(seat,name){seat.dataset.name=name||'';seat.title=name||'';seat.classList.remove('live-online','live-offline','live-waiting','live-help','live-locked');seat.classList.toggle('empty',!name);seat.draggable=!!name;seat.innerHTML=name?'<span class="seatStatusDot"></span><span class="seatName">'+esc(firstName(name))+'</span><span class="seatTags">'+tagDots(name)+'</span>':'<span class="seatName">Frei</span>'}
+function refreshRosterState(){const seated=new Set(seats().map(s=>s.dataset.name).filter(Boolean));$('.student[data-name]').forEach(el=>el.classList.toggle('seated',seated.has(el.dataset.name)))}
+function assignNames(names){const ss=seats().sort((a,b)=>{const A=seatCenter(a),B=seatCenter(b);return A.y-B.y||A.x-B.x});ss.forEach(s=>setSeat(s,''));names.slice(0,ss.length).forEach((n,i)=>setSeat(ss[i],n));refreshRosterState();$('#save')?.click()}
 function templateNormal(){const b=$('[data-layout="rows"]');if(b){b.click();setTimeout(()=>{applyGroupLabels();renderZones();fitRoom()},60)}}
 function templateGroup(){
  const cls=currentClass(),names=cls?.students||[];removeDesks();const count=Math.max(1,Math.ceil(names.length/4)),cols=Math.min(4,count),x0=130,y0=180,xGap=330,yGap=205;
@@ -110,7 +111,7 @@ function templateExam(){
  for(let i=0;i<names.length;i++){const c=i%cols,r=Math.floor(i/cols),aisle=c>=4?70:0;addDeskByCore('single',x0+c*(w+gap)+aisle,y0+r*rowGap)}
  assignNames(names);fitRoom()
 }
-function applyTemplate(type){if(type==='fit')return fitRoom();if(!confirm('Aktuelles Tischlayout durch Vorlage ersetzen? Die Schüler werden neu verteilt.'))return;if(type==='normal')templateNormal();if(type==='group')templateGroup();if(type==='exam')templateExam();toast(type==='exam'?'Prüfungsordnung erstellt':type==='group'?'Gruppenarbeits-Layout erstellt':'Normales Layout erstellt')}
+function applyTemplate(type){if(type==='fit')return fitRoom();if(!confirm('Aktuelles Tischlayout durch Vorlage ersetzen? Die Schüler werden neu verteilt.'))return;classMeta().groups={};queueMetaSave();if(type==='normal')templateNormal();if(type==='group')templateGroup();if(type==='exam')templateExam();toast(type==='exam'?'Prüfungsordnung erstellt':type==='group'?'Gruppenarbeits-Layout erstellt':'Normales Layout erstellt')}
 function dist(a,b){return Math.hypot(a.x-b.x,a.y-b.y)}
 async function autoArrangeTags(){
  const cls=currentClass();if(!cls)return toast('Keine Klasse gewählt');try{tagDb=await KathleenClassLists.secureGet(TAG_STORE,{})||tagDb;customTags=await KathleenClassLists.secureGet(CUSTOM_TAG_STORE,[])||customTags}catch(e){}
@@ -124,7 +125,7 @@ async function autoArrangeTags(){
  const helpers=names.filter(n=>has(n,'helper')&&!assigned.has(n)),supportSeats=[...assigned.entries()].filter(([n])=>has(n,'support')).map(([,s])=>s);
  helpers.forEach(n=>choose(n,(a,b)=>{const da=supportSeats.length?Math.min(...supportSeats.map(x=>dist(info.get(a),info.get(x)))):info.get(a).y,db=supportSeats.length?Math.min(...supportSeats.map(x=>dist(info.get(b),info.get(x)))):info.get(b).y;return da-db}));
  const rest=names.filter(n=>!assigned.has(n)).sort(()=>Math.random()-.5);for(const n of rest){const arr=[...free];if(!arr.length)break;const s=arr[Math.floor(Math.random()*arr.length)];free.delete(s);assigned.set(n,s)}
- ss.forEach(s=>setSeat(s,''));for(const[n,s]of assigned)setSeat(s,n);$('#save')?.click();toast('Sitzordnung nach Tags erstellt')
+ ss.forEach(s=>setSeat(s,''));for(const[n,s]of assigned)setSeat(s,n);refreshRosterState();$('#save')?.click();toast('Sitzordnung nach Tags erstellt')
 }
 async function restoreMeta(){clearMulti();await loadStores();renderZones();applyGroupLabels()}
 $('#classSelect')?.addEventListener('change',()=>setTimeout(restoreMeta,80));
