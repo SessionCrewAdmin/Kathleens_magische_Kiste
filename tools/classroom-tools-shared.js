@@ -44,18 +44,23 @@ function classMeta(){try{const x=JSON.parse(localStorage.getItem(CLASS_META_KEY)
 function getGlobalClass(){try{const x=JSON.parse(localStorage.getItem(GLOBAL_CLASS_KEY)||'null');if(x?.id){const id=String(x.id),name=String(x.name||'');if(key&&name&&!cache.some(c=>c.id===id)){const hit=cache.find(c=>c.name.toLocaleLowerCase('de-DE')===name.toLocaleLowerCase('de-DE'));if(hit)return{id:hit.id,name:hit.name}}return{id,name}}}catch(e){}const id=localStorage.getItem('kathleenGlobalClassId')||'',name=localStorage.getItem('kathleenGlobalClassName')||'';if(key&&name&&!cache.some(c=>c.id===id)){const hit=cache.find(c=>c.name.toLocaleLowerCase('de-DE')===name.toLocaleLowerCase('de-DE'));if(hit)return{id:hit.id,name:hit.name}}return id?{id,name}:null}
 function setGlobalClass(id,name=''){id=String(id||'');name=String(name||'');if(!id){localStorage.removeItem(GLOBAL_CLASS_KEY);localStorage.removeItem('kathleenGlobalClassId');localStorage.removeItem('kathleenGlobalClassName');window.dispatchEvent(new CustomEvent('kathleen:globalclass',{detail:null}));return null}const hit=cache.find(c=>c.id===id),value={id,name:hit?.name||name||classMeta().find(c=>c.id===id)?.name||'',updatedAt:new Date().toISOString()};localStorage.setItem(GLOBAL_CLASS_KEY,JSON.stringify(value));localStorage.setItem('kathleenGlobalClassId',value.id);localStorage.setItem('kathleenGlobalClassName',value.name);window.dispatchEvent(new CustomEvent('kathleen:globalclass',{detail:value}));return value}
 
+function getClassroomSummary(){
+  try{const x=JSON.parse(localStorage.getItem(CLASSROOM_STATE_KEY)||'null');return x?.session_id?x:null}catch(e){return null}
+}
 function getClassroomState(){
-  let x=null;
-  try{x=JSON.parse(localStorage.getItem(CLASSROOM_STATE_KEY)||'null')}catch(e){}
-  if(!x){try{x=JSON.parse(sessionStorage.getItem('kathleenClassroom')||'null')}catch(e){}}
-  return x&&x.session_id&&x.teacher_token?x:null
+  let runtime=null;
+  try{runtime=JSON.parse(sessionStorage.getItem('kathleenClassroom')||'null')}catch(e){}
+  if(!runtime?.session_id||!runtime?.teacher_token)return null;
+  const summary=getClassroomSummary()||{};
+  return{...summary,...runtime}
 }
 function setClassroomState(room,meta={}){
   if(!room?.session_id||!room?.teacher_token)return null;
   const global=getGlobalClass(),value={...room,...meta,classId:meta.classId||global?.id||room.classId||'',className:meta.className||global?.name||room.className||'',sessionState:meta.sessionState||room.sessionState||'open',connectedCount:Number(meta.connectedCount??room.connectedCount??0),rosterCount:Number(meta.rosterCount??room.rosterCount??0),updatedAt:new Date().toISOString()};
-  localStorage.setItem(CLASSROOM_STATE_KEY,JSON.stringify(value));
   sessionStorage.setItem('kathleenClassroom',JSON.stringify(value));
-  window.dispatchEvent(new CustomEvent('kathleen:classroom',{detail:value}));
+  const {teacher_token,...summary}=value;
+  localStorage.setItem(CLASSROOM_STATE_KEY,JSON.stringify(summary));
+  window.dispatchEvent(new CustomEvent('kathleen:classroom',{detail:summary}));
   return value
 }
 function updateClassroomState(patch={}){
@@ -89,13 +94,13 @@ function ensureTeacherUx(){
   renderContextChip()
 }
 function renderContextChip(){
-  const chip=document.getElementById('kclContextChip');if(!chip)return;const g=getGlobalClass(),room=getClassroomState(),live=room?.sessionState!=='closed'&&room?.session_id;
+  const chip=document.getElementById('kclContextChip');if(!chip)return;const g=getGlobalClass(),room=getClassroomState()||getClassroomSummary(),live=room?.sessionState!=='closed'&&room?.session_id;
   chip.innerHTML=(live?'<span class="kcl-live"></span>':'')+'👥 '+(g?.name||room?.className||'Klasse')+(live?' · '+Number(room.connectedCount||0)+' live':'')
 }
 async function openGlobalClassChooser(){
   if(document.getElementById('kclContextOverlay'))return;
   try{if(!key)await requireUnlock()}catch(e){return}
-  const lists=load(),g=getGlobalClass(),room=getClassroomState(),o=document.createElement('div');o.id='kclContextOverlay';o.className='kcl-context-overlay';
+  const lists=load(),g=getGlobalClass(),room=getClassroomState()||getClassroomSummary(),o=document.createElement('div');o.id='kclContextOverlay';o.className='kcl-context-overlay';
   o.innerHTML='<div class="kcl-context-card"><h3>Aktive Klasse</h3><p>Diese Auswahl wird von den Lehrer-Tools gemeinsam verwendet.</p><label>Klasse</label><select id="kclContextSelect">'+lists.map(c=>'<option value="'+String(c.id).replace(/"/g,'&quot;')+'"'+(g?.id===c.id?' selected':'')+'>'+String(c.name).replace(/[&<>]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[m]))+'</option>').join('')+'</select>'+(room?'<div class="kcl-context-livebox">● Classroom '+String(room.className||g?.name||'')+' aktiv · Raum '+String(room.room_code||'')+' · '+Number(room.connectedCount||0)+' / '+Number(room.rosterCount||0)+' verbunden</div>':'')+'<div class="kcl-context-actions"><button class="primary" id="kclContextApply">Übernehmen</button><button id="kclContextClose">Schließen</button><a href="'+new URL('../seating-plan/',location.href)+'">🪑 Sitzplan</a><a href="'+new URL('../classroom-board/',location.href)+'">✨ Whiteboard</a></div></div>';
   document.body.appendChild(o);o.querySelector('#kclContextClose').onclick=()=>o.remove();o.onclick=e=>{if(e.target===o)o.remove()};o.querySelector('#kclContextApply').onclick=()=>{const id=o.querySelector('#kclContextSelect').value,c=lists.find(x=>x.id===id);if(c)setGlobalClass(c.id,c.name);o.remove();renderContextChip()}
 }
@@ -285,5 +290,5 @@ async function requireUnlock(){
   submit.onclick=run;pin.addEventListener('keydown',e=>{if(e.key==='Enter')run()});g.querySelector('#kclPin2')?.addEventListener('keydown',e=>{if(e.key==='Enter')run()});g.querySelector('#kclBack').onclick=()=>{location.href=new URL('../../#tools',location.href).toString()};setTimeout(()=>pin.focus(),60);
   return guardPromise
 }
-window.KathleenClassLists={load,persist,upsert,remove,get,cleanStudents,shuffle,parseDelimited,importCsv,exportCsv,templateCsv,importPlainJson,exportSecureBackup,importSecureBackup,changePin,setup,unlock,lock,requireUnlock,isUnlocked,hasVault,hasLegacy,autoLockMinutes:AUTO_LOCK_MS/60000,secureSet,secureGet,secureRemove,cloudPull,cloudPush,classMeta,getGlobalClass,setGlobalClass,getClassroomState,setClassroomState,updateClassroomState,clearClassroomState,openGlobalClassChooser,renderContextChip,cloudVaultId:CLOUD_VAULT_ID,key:VAULT_KEY,legacyKey:LEGACY_KEY};
+window.KathleenClassLists={load,persist,upsert,remove,get,cleanStudents,shuffle,parseDelimited,importCsv,exportCsv,templateCsv,importPlainJson,exportSecureBackup,importSecureBackup,changePin,setup,unlock,lock,requireUnlock,isUnlocked,hasVault,hasLegacy,autoLockMinutes:AUTO_LOCK_MS/60000,secureSet,secureGet,secureRemove,cloudPull,cloudPush,classMeta,getGlobalClass,setGlobalClass,getClassroomSummary,getClassroomState,setClassroomState,updateClassroomState,clearClassroomState,openGlobalClassChooser,renderContextChip,cloudVaultId:CLOUD_VAULT_ID,key:VAULT_KEY,legacyKey:LEGACY_KEY};
 })();
