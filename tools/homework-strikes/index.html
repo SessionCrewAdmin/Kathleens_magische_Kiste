@@ -93,5 +93,5 @@ document.addEventListener('visibilitychange',()=>{if(document.visibilityState===
 (async()=>{await KathleenClassLists.requireUnlock();db=await KathleenClassLists.secureGet(STORE,{version:1,records:{}});if(!db?.records)db={version:1,records:{}};await migrateLegacy();fillClasses();render();setStatus('✓ Bereit')})().catch(e=>{console.error(e);setStatus(e.message||'Fehler')});
 })();
 </script>
-</body>
+<script src="../kathleen-i18n.js?v=20260921-1800"></script></body>
 </html>
