@@ -24,7 +24,7 @@
 .map-card{position:relative;flex:1;min-height:0;background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 18px 60px rgba(23,50,72,.10)}
 svg{width:100%;height:100%;display:block;background:var(--water);touch-action:none;cursor:grab}svg:active{cursor:grabbing}
 .map-controls{position:absolute;right:16px;top:16px;z-index:12;display:flex;flex-direction:column;gap:8px}.map-controls button{width:46px;height:46px;border:1px solid #d8e0e5;border-radius:12px;background:rgba(255,255,255,.96);color:var(--ink);font-size:24px;font-weight:900;line-height:1;cursor:pointer;box-shadow:0 4px 16px rgba(23,50,72,.12)}.map-controls .reset-zoom{font-size:15px}
-.graticule{fill:none;stroke:#dbe7ec;stroke-width:.7}.sphere{fill:var(--water)}.country{fill:var(--land);stroke:#fff;stroke-width:.7;cursor:pointer;transition:.12s}.country:hover{fill:var(--land-hover)}.country.correct-country{fill:#79b493!important;stroke:#2f7d5a;stroke-width:1.7}
+.graticule{fill:none;stroke:#dbe7ec;stroke-width:.7}.sphere{fill:var(--water)}.country{fill:var(--land);stroke:#fff;stroke-width:.7;cursor:pointer;transition:.12s}.country-hit{fill:transparent;stroke:none;pointer-events:all;cursor:pointer}.country:hover{fill:var(--land-hover)}.country.correct-country{fill:#79b493!important;stroke:#2f7d5a;stroke-width:1.7}
 .loading{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.95);z-index:20;font-size:22px;font-weight:800;text-align:center;padding:30px}.loading.hidden{display:none}
 .feedback{position:absolute;inset:0;display:none;align-items:center;justify-content:center;background:rgba(245,241,232,.82);backdrop-filter:blur(4px);z-index:30}.feedback.show{display:flex}.feedback-card{min-width:330px;text-align:center;background:#fff;border-radius:20px;padding:28px 32px;box-shadow:0 18px 60px rgba(0,0,0,.15)}.feedback-card .title{font-size:44px;font-weight:900;margin-bottom:6px}.feedback.correct .title{color:var(--ok)}.feedback.wrong .title{color:var(--bad)}.feedback-card p{font-size:21px;color:var(--muted);margin:0 0 20px}
 .win-card{text-align:center}.trophy{font-size:70px;margin-bottom:10px}.win-card h1{font-size:clamp(52px,7vw,96px)}.pass{margin:28px auto 18px;max-width:650px;border:3px dashed var(--accent);border-radius:22px;padding:24px;background:#fffaf0}.pass .small{font-size:15px;text-transform:uppercase;letter-spacing:.16em;color:#8c6a1b;font-weight:900}.pass .title{font-size:clamp(36px,5vw,64px);font-weight:900;margin:8px 0}.pass .code{font-size:28px;font-weight:900;color:var(--ink);letter-spacing:.12em}.pass .time{font-size:15px;color:var(--muted);margin-top:10px}.note{font-size:18px!important}
@@ -73,7 +73,7 @@ html,body{height:100%;height:100dvh}.app{height:100%;height:100dvh}
 <section id="intro" class="screen active"><div class="card"><h1>Bonus Round</h1><p>How well do you know the English-speaking world?</p><div class="rules"><strong>Challenge:</strong> Find all <span id="countryCount">12</span> countries in a row.<br>One wrong click resets your streak to zero.</div><div class="reward">Complete the challenge to unlock a surprise reward.</div><div style="margin-top:28px"><button class="btn btn-primary" id="startBtn">Start challenge</button></div></div></section>
 <section id="quiz" class="screen"><div class="quiz-head"><div><div class="eyebrow">Click on the correct country.</div><div class="country-name" id="promptCountry">United Kingdom</div></div><div class="progress"><strong id="progressText">0 / 12</strong><span>correct in a row</span><div class="combo-wrap"><span class="combo-label">COMBO</span><span class="combo-badge" id="comboBadge">×0</span></div></div></div>
 <div class="map-card"><svg id="mapSvg" viewBox="0 0 1400 720" aria-label="Bonus world map"></svg>
-<div id="comboBurst" class="combo-burst"></div><div class="map-controls" aria-label="Map zoom controls"><button id="zoomInBtn" aria-label="Zoom in">+</button><button id="zoomOutBtn" aria-label="Zoom out">−</button><button id="zoomResetBtn" class="reset-zoom" aria-label="Reset map zoom">1×</button></div>
+<div id="comboBurst" class="combo-burst"></div><div class="map-controls" aria-label="Map zoom controls"><button id="zoomInBtn" aria-label="Zoom in">+</button><button id="zoomOutBtn" aria-label="Zoom out">−</button><button id="zoomResetBtn" class="reset-zoom" aria-label="Reset map zoom">1×</button></div><div class="map-note" style="position:absolute;left:14px;bottom:14px;padding:7px 10px;border-radius:10px;background:rgba(255,255,255,.92);font-size:12px;font-weight:800;pointer-events:none;z-index:11">Pinch to zoom up to 16× · Drag to move</div>
 <div id="loading" class="loading">Loading world map…</div>
 <div id="wrongFeedback" class="feedback wrong"><div class="feedback-card"><div class="title">Streak reset!</div><p id="wrongText">That was not the right country.</p><button class="btn btn-primary" id="restartBtn">Start again</button></div></div>
 <div id="correctFeedback" class="feedback correct"><div class="feedback-card"><div class="title">Correct!</div><p id="correctText">Keep going.</p><button class="btn btn-primary" id="nextBtn">Next country</button></div></div>
@@ -95,9 +95,9 @@ function shuffle(arr){const a=[...arr];for(let i=a.length-1;i>0;i--){const j=Mat
 const normalizeName=name=>aliases[name]||name;const currentCountry=()=>order[index];
 const svg=d3.select("#mapSvg"),projection=d3.geoNaturalEarth1().fitExtent([[28,24],[1372,696]],{type:"Sphere"}),path=d3.geoPath(projection);
 const mapViewport=svg.append("g").attr("class","map-viewport");mapViewport.append("path").datum({type:"Sphere"}).attr("class","sphere").attr("d",path);mapViewport.append("path").datum(d3.geoGraticule10()).attr("class","graticule").attr("d",path);
-const zoom=d3.zoom().scaleExtent([1,8]).translateExtent([[0,0],[1400,720]]).extent([[0,0],[1400,720]]).on("zoom",e=>mapViewport.attr("transform",e.transform));svg.call(zoom);
+const zoom=d3.zoom().scaleExtent([1,16]).translateExtent([[0,0],[1400,720]]).extent([[0,0],[1400,720]]).on("zoom.base",e=>{currentZoomScale=e.transform.k;mapViewport.attr("transform",e.transform)});svg.call(zoom);
 function resetMapZoom(animate=true){const target=animate?svg.transition().duration(350):svg;target.call(zoom.transform,d3.zoomIdentity)}
-zoomInBtn.addEventListener("click",e=>{e.stopPropagation();svg.transition().duration(220).call(zoom.scaleBy,1.5)});zoomOutBtn.addEventListener("click",e=>{e.stopPropagation();svg.transition().duration(220).call(zoom.scaleBy,1/1.5)});zoomResetBtn.addEventListener("click",e=>{e.stopPropagation();resetMapZoom()});
+zoomInBtn.addEventListener("click",e=>{e.stopPropagation();svg.transition().duration(220).call(zoom.scaleBy,1.75)});zoomOutBtn.addEventListener("click",e=>{e.stopPropagation();svg.transition().duration(220).call(zoom.scaleBy,1/1.75)});zoomResetBtn.addEventListener("click",e=>{e.stopPropagation();resetMapZoom()});
 function comboText(n){
 if(n>=12)return "PERFECT!";
 if(n>=9)return "MAP MASTER!";
@@ -141,14 +141,21 @@ if(frame<230)requestAnimationFrame(draw);else ctx.clearRect(0,0,innerWidth,inner
 requestAnimationFrame(draw);
 }
 function issueReward(){const code="PASS-"+Math.floor(1000+Math.random()*9000),now=new Date();rewardCode.textContent=code;rewardTime.textContent=now.toLocaleDateString()+" · "+now.toLocaleTimeString([],{hour:"2-digit",minute:"2-digit"});localStorage.setItem("homeworkPassEarned",JSON.stringify({code,timestamp:now.toISOString()}));const claimUrl=new URL("../homework-vouchers/",location.href);claimUrl.searchParams.set("claim",code);claimUrl.searchParams.set("source","English World Quiz");rewardQr.innerHTML="";if(window.QRCode)new QRCode(rewardQr,{text:claimUrl.toString(),width:136,height:136,correctLevel:QRCode.CorrectLevel.M});else rewardQr.textContent=code;claimVoucherBtn.onclick=()=>location.href=claimUrl.toString();show("win");setTimeout(launchConfetti,180)}
-fetch("https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json").then(r=>{if(!r.ok)throw new Error();return r.json()}).then(world=>{
-const features=topojson.feature(world,world.objects.countries).features;
-mapViewport.selectAll("path.country").data(features).join("path").attr("class","country").attr("d",path).attr("data-name",d=>d.properties.name).on("click",function(event,d){
-event.stopPropagation();const clicked=normalizeName(d.properties.name),target=currentCountry();
+const tinyTouchCountries=new Set(["Barbados","Bahamas","Jamaica"]);
+let currentZoomScale=1;
+function handleCountryClick(event,d,node){
+ event.stopPropagation();const clicked=normalizeName(d.properties.name),target=currentCountry();
 if(clicked===target){d3.select(this).classed("correct-country",true);index++;progressText.textContent=`${index} / ${challengeCountries.length}`;updateCombo(true);
 if(index>=challengeCountries.length){correctText.textContent="That was the final country!";nextBtn.textContent="Claim Homework Voucher"}else{correctText.textContent=`${index} correct in a row.`;nextBtn.textContent="Next country"}setTimeout(()=>correctFeedback.classList.add("show"),650)}
 else{wrongText.textContent=`You clicked ${clicked||"the wrong place"}. Your streak returns to zero.`;wrongFeedback.classList.add("show")}
-});ready=true;loading.classList.add("hidden")
+}
+fetch("https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json").then(r=>{if(!r.ok)throw new Error();return r.json()}).then(world=>{
+ const features=topojson.feature(world,world.objects.countries).features;
+ mapViewport.selectAll("path.country").data(features).join("path").attr("class","country").attr("d",path).attr("data-name",d=>d.properties.name).on("click",function(event,d){handleCountryClick(event,d,this)});
+ const tinyFeatures=features.filter(d=>tinyTouchCountries.has(normalizeName(d.properties.name)));
+ const hit=mapViewport.selectAll("circle.country-hit").data(tinyFeatures,d=>normalizeName(d.properties.name)).join("circle").attr("class","country-hit").attr("data-name",d=>normalizeName(d.properties.name)).attr("cx",d=>path.centroid(d)[0]).attr("cy",d=>path.centroid(d)[1]).attr("r",34).on("click",function(event,d){handleCountryClick(event,d,this)});
+ zoom.on("zoom.hitTargets",e=>{currentZoomScale=e.transform.k;mapViewport.attr("transform",e.transform);hit.attr("r",34/currentZoomScale)});
+ ready=true;loading.classList.add("hidden")
 }).catch(()=>loading.innerHTML="The map could not be loaded.<br>Please check the internet connection.");
 svg.on("click",()=>{if(!ready)return;wrongText.textContent="That was not a country in the challenge. Your streak returns to zero.";wrongFeedback.classList.add("show")});
 startBtn.addEventListener("click",newGame);restartBtn.addEventListener("click",()=>{wrongFeedback.classList.remove("show");newGame()});
