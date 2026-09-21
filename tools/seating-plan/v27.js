@@ -35,7 +35,7 @@ function clearMulti(){multi.clear();updateMultiStatus()}
 function selectedDesks(){if(multi.size)return[...multi].filter(x=>x.isConnected);const core=$('.desk.selected');return core?[core]:[]}
 function setGroupLabel(){const ds=selectedDesks();if(!ds.length)return toast('Erst Tisch oder Tische auswählen');const cur=classMeta().groups?.[ds[0].dataset.id]||'',label=prompt('Name der Tischgruppe:',cur||'Gruppe 1');if(label===null)return;classMeta().groups=classMeta().groups||{};ds.forEach(d=>{if(label.trim())classMeta().groups[d.dataset.id]=label.trim().slice(0,28);else delete classMeta().groups[d.dataset.id]});applyGroupLabels();queueMetaSave()}
 function applyGroupLabels(){
- const groups=classMeta().groups||{};$$('.desk').forEach(d=>{d.querySelector('.v27-group-label')?.remove();const label=groups[d.dataset.id];if(label){const e=document.createElement('span');e.className='v27-group-label';e.textContent=label;d.appendChild(e)}})
+ const groups=classMeta().groups||{};$('.desk').forEach(d=>{const label=groups[d.dataset.id]||'',old=d.querySelector('.v27-group-label');if(!label){old?.remove();return}if(old&&old.textContent===label)return;if(old)old.remove();const e=document.createElement('span');e.className='v27-group-label';e.textContent=label;d.appendChild(e)})
 }
 function zoneData(el){return{id:el.dataset.zoneId,label:el.dataset.label||'Zone',x:parseFloat(el.style.left)||0,y:parseFloat(el.style.top)||0,w:el.offsetWidth,h:el.offsetHeight}}
 function syncZones(){classMeta().zones=$$('.v27-zone').map(zoneData);queueMetaSave()}
