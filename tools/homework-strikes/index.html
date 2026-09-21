@@ -66,7 +66,8 @@ async function migrateLegacy(){
  await KathleenClassLists.secureSet('homework-strikes-migration-v1',true)
 }
 function fillClasses(){
- const all=KathleenClassLists.load();$('#classSelect').innerHTML=all.map(c=>'<option value="'+esc(c.id)+'">'+esc(c.name)+'</option>').join('');
+ const all=KathleenClassLists.load(),global=KathleenClassLists.getGlobalClass?.();$('#classSelect').innerHTML=all.map(c=>'<option value="'+esc(c.id)+'">'+esc(c.name)+'</option>').join('');
+ if(global&&all.some(c=>c.id===global.id))$('#classSelect').value=global.id;
  if(!all.length)$('#tableWrap').innerHTML='<div class="empty">Noch keine Klassenliste vorhanden.</div>'
 }
 function render(){
@@ -85,7 +86,7 @@ function showHistory(name){
  $$('[data-del-event]').forEach(b=>b.onclick=()=>{const k=key(),a=(db.records[k]?.[name]||[]).map(normalizeEvent);a.splice(+b.dataset.delEvent,1);db.records[k][name]=a;scheduleSave();showHistory(name);render()})
 }
 $('#historyClose').onclick=()=>$('#historyModal').classList.remove('show');$('#historyModal').onclick=e=>{if(e.target.id==='historyModal')$('#historyModal').classList.remove('show')};
-$('#classSelect').onchange=render;$('#subject').onchange=render;$('#search').oninput=render;
+$('#classSelect').onchange=()=>{const c=classObj();if(c)KathleenClassLists.setGlobalClass?.(c.id,c.name);render()};$('#subject').onchange=render;$('#search').oninput=render;
 $('#backBtn').onclick=async()=>{if(saveTimer)await saveNow();location.href='../../#tools'};
 $('#lockBtn').onclick=async()=>{if(saveTimer)await saveNow();KathleenClassLists.lock(true)};
 document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='hidden'&&saveTimer)saveNow()});
