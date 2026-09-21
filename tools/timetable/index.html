@@ -136,7 +136,7 @@ async function saveEdit(){
 }
 async function deleteEdit(){if(!editing||!confirm('Diese Stunde löschen?'))return;db.entries=db.entries.filter(x=>x.id!==editing);await saveLocal();closeModal();render()}
 function closeModal(){$('#editModal').classList.remove('show');editing=null}
-$('#classId').onchange=()=>{const x=cls($('#classId').value);if(x){$('#className').value=x.name;KathleenClassLists.setGlobalClass?.(x.id,x.name)}};
+$('#classId').onchange=()=>{const x=cls($('#classId').value);if(x){$('#className').value=x.name;KathleenClassLists.setGlobalClass?.(x.id,x.name);KathleenI18n?.setSubject?.($('#subject').value||'')}};$('#subject').onchange=()=>KathleenI18n?.setSubject?.($('#subject').value||'');
 $('#addBtn').onclick=()=>openEdit();$('#saveBtn').onclick=()=>saveEdit().catch(e=>alert(e.message));$('#deleteBtn').onclick=deleteEdit;$('#cancelBtn').onclick=closeModal;$('#editModal').onclick=e=>{if(e.target.id==='editModal')closeModal()};
 $('#syncBtn').onclick=()=>syncPush().catch(e=>{setStatus('⚠ '+e.message);alert(e.message)});$('#backBtn').onclick=()=>location.href='../../#tools';
 $('#prevWeek').onclick=()=>{weekOffset--;render()};$('#nextWeek').onclick=()=>{weekOffset++;render()};$('#todayWeek').onclick=()=>{weekOffset=0;render()};
