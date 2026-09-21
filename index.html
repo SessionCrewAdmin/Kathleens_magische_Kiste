@@ -590,4 +590,4 @@ document.getElementById('globalClassSelect')?.addEventListener('change',e=>{cons
 document.getElementById('todoAdd')?.addEventListener('click',addTodo);document.getElementById('todoInput')?.addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();addTodo()}});
 renderHomeSchedule();renderNextLessonCard();renderTodos();setInterval(()=>{renderHomeSchedule();renderNextLessonCard()},60000);window.addEventListener('storage',e=>{if(['kathleenClassroomSharedV1','kathleenGlobalClassV1','kathleenTimetableSnapshotV1'].includes(e.key)){renderHomeSchedule();renderNextLessonCard()}});
 })();
-</script></body></html>
+</script><script src="home-todo-v2.js?v=20260921-1700"></script></body></html>
