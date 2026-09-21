@@ -7,6 +7,8 @@ const AUTO_LOCK_MS=15*60*1000;
 const SUPABASE_URL='https://fzqxnjhuvgpgovcovosl.supabase.co';
 const SUPABASE_KEY='sb_publishable_GIyyWoyaQXipaA4S9OuTyQ_cZn7LUgV';
 const CLOUD_VAULT_ID='schoolyear-2026-27';
+const CLASS_META_KEY='kathleenClassMetaV1';
+const GLOBAL_CLASS_KEY='kathleenGlobalClassV1';
 const enc=new TextEncoder(),dec=new TextDecoder(),AAD=enc.encode('KathleenClassListsVaultV2');
 let key=null,cache=[],guardPromise=null,guardResolve=null,lockTimer=null,activityBound=false;
 
@@ -36,12 +38,16 @@ async function cloudPush(passphrase){if(!navigator.onLine||!passphrase)return fa
 function hasVault(){return !!localStorage.getItem(VAULT_KEY)}
 function hasLegacy(){return !!localStorage.getItem(LEGACY_KEY)}
 function isUnlocked(){return !!key}
+function publishClassMeta(){try{localStorage.setItem(CLASS_META_KEY,JSON.stringify(cache.map(c=>({id:c.id,name:c.name,updatedAt:c.updatedAt||''}))))}catch(e){}}
+function classMeta(){try{const x=JSON.parse(localStorage.getItem(CLASS_META_KEY)||'[]');return Array.isArray(x)?x:[]}catch(e){return[]}}
+function getGlobalClass(){try{const x=JSON.parse(localStorage.getItem(GLOBAL_CLASS_KEY)||'null');if(x?.id)return{id:String(x.id),name:String(x.name||'')}}catch(e){}const id=localStorage.getItem('kathleenGlobalClassId')||'',name=localStorage.getItem('kathleenGlobalClassName')||'';return id?{id,name}:null}
+function setGlobalClass(id,name=''){id=String(id||'');name=String(name||'');if(!id){localStorage.removeItem(GLOBAL_CLASS_KEY);localStorage.removeItem('kathleenGlobalClassId');localStorage.removeItem('kathleenGlobalClassName');window.dispatchEvent(new CustomEvent('kathleen:globalclass',{detail:null}));return null}const hit=cache.find(c=>c.id===id),value={id,name:hit?.name||name||classMeta().find(c=>c.id===id)?.name||'',updatedAt:new Date().toISOString()};localStorage.setItem(GLOBAL_CLASS_KEY,JSON.stringify(value));localStorage.setItem('kathleenGlobalClassId',value.id);localStorage.setItem('kathleenGlobalClassName',value.name);window.dispatchEvent(new CustomEvent('kathleen:globalclass',{detail:value}));return value}
 function load(){return key?cache.map(c=>({...c,students:[...c.students]})):[]}
 function get(id){return key?(cache.find(x=>x.id===id)||null):null}
 function assertUnlocked(){if(!key)throw new Error('Klassenlisten sind gesperrt.')}
 function readLegacy(){try{return sanitizeLists(JSON.parse(localStorage.getItem(LEGACY_KEY)||'[]'))}catch(e){return[]}}
 async function persist(lists=cache){
-  assertUnlocked();cache=sanitizeLists(lists);
+  assertUnlocked();cache=sanitizeLists(lists);publishClassMeta();
   let vault;try{vault=JSON.parse(localStorage.getItem(VAULT_KEY)||'null')}catch(e){vault=null}
   if(!vault?.salt)throw new Error('Verschlüsselung ist nicht eingerichtet.');
   const iv=randomBytes(12),payload=enc.encode(JSON.stringify({version:2,classes:cache}));
@@ -66,7 +72,7 @@ async function unlock(pin){
   const candidate=await deriveKey(pin,b64ToBytes(vault.salt),vaultIterations(vault));
   try{
     const plain=await crypto.subtle.decrypt({name:'AES-GCM',iv:b64ToBytes(vault.iv),additionalData:AAD},candidate,b64ToBytes(vault.data));
-    const parsed=JSON.parse(dec.decode(plain));key=candidate;cache=sanitizeLists(parsed?.classes||[]);localStorage.removeItem(LEGACY_KEY);bindActivity();
+    const parsed=JSON.parse(dec.decode(plain));key=candidate;cache=sanitizeLists(parsed?.classes||[]);publishClassMeta();localStorage.removeItem(LEGACY_KEY);bindActivity();
     window.dispatchEvent(new CustomEvent('kathleen:classlists-unlocked'));return true
   }catch(e){key=null;cache=[];throw new Error('Lehrer-PIN falsch oder Backup beschädigt.')}
 }
@@ -221,5 +227,5 @@ async function requireUnlock(){
   submit.onclick=run;pin.addEventListener('keydown',e=>{if(e.key==='Enter')run()});g.querySelector('#kclPin2')?.addEventListener('keydown',e=>{if(e.key==='Enter')run()});g.querySelector('#kclBack').onclick=()=>{location.href=new URL('../../#tools',location.href).toString()};setTimeout(()=>pin.focus(),60);
   return guardPromise
 }
-window.KathleenClassLists={load,persist,upsert,remove,get,cleanStudents,shuffle,parseDelimited,importCsv,exportCsv,templateCsv,importPlainJson,exportSecureBackup,importSecureBackup,changePin,setup,unlock,lock,requireUnlock,isUnlocked,hasVault,hasLegacy,autoLockMinutes:AUTO_LOCK_MS/60000,secureSet,secureGet,secureRemove,cloudPull,cloudPush,cloudVaultId:CLOUD_VAULT_ID,key:VAULT_KEY,legacyKey:LEGACY_KEY};
+window.KathleenClassLists={load,persist,upsert,remove,get,cleanStudents,shuffle,parseDelimited,importCsv,exportCsv,templateCsv,importPlainJson,exportSecureBackup,importSecureBackup,changePin,setup,unlock,lock,requireUnlock,isUnlocked,hasVault,hasLegacy,autoLockMinutes:AUTO_LOCK_MS/60000,secureSet,secureGet,secureRemove,cloudPull,cloudPush,classMeta,getGlobalClass,setGlobalClass,cloudVaultId:CLOUD_VAULT_ID,key:VAULT_KEY,legacyKey:LEGACY_KEY};
 })();
