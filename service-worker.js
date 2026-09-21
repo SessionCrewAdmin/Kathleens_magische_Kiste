@@ -1,5 +1,5 @@
-const CACHE='kathleen-v33-1-general-todos-20260921';
-const CORE=[
+const CACHE='kathleen-v34-mobile-teacher-20260921';
+const CORE=['./mobile-teacher-v34.js',
   './','./index.html','./home-todo-v2.js','./manifest.webmanifest',
   './tools/english-world-quiz/index.html','./tools/english-world-quiz/bonus.html','./tools/homework-vouchers/index.html',
   './tools/classroom-tools-shared.js','./tools/kathleen-i18n.js','./tools/lesson-mode.js','./tools/class-cockpit/index.html','./tools/randomizer/index.html','./tools/classroom-timer/index.html','./tools/team-generator/index.html',
