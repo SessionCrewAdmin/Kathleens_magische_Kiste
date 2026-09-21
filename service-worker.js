@@ -1,4 +1,4 @@
-const CACHE='kathleen-v33-lesson-cockpit-teacher-center-20260921';
+const CACHE='kathleen-v33-1-general-todos-20260921';
 const CORE=[
   './','./index.html','./home-todo-v2.js','./manifest.webmanifest',
   './tools/english-world-quiz/index.html','./tools/english-world-quiz/bonus.html','./tools/homework-vouchers/index.html',
