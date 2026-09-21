@@ -485,7 +485,9 @@ const DAYS=['','Montag','Dienstag','Mittwoch','Donnerstag','Freitag'],esc=s=>Str
 function scheduleData(){try{const x=JSON.parse(localStorage.getItem('kathleenTimetableSnapshotV1')||'null');if(Array.isArray(x?.entries)&&x.entries.length)return x.entries}catch(e){}return FALLBACK}
 function classMeta(){
  try{const x=JSON.parse(localStorage.getItem('kathleenClassMetaV1')||'[]');if(Array.isArray(x)&&x.length)return x}catch(e){}
- const seen=new Map;for(const e of scheduleData()){if(e.classId||e.className){const id=e.classId||('name:'+e.className);if(!seen.has(id))seen.set(id,{id,name:e.className||id})}}return[...seen.values()]
+ const seen=new Map;
+ try{const plans=JSON.parse(localStorage.getItem('kathleenSeatPlansV2')||localStorage.getItem('kathleenSeatPlansV1')||'{}')||{};for(const [id,p] of Object.entries(plans)){if(p?.className&&!seen.has(id))seen.set(id,{id,name:p.className})}}catch(e){}
+ for(const e of scheduleData()){if(e.classId||e.className){const byName=[...seen.values()].find(x=>String(x.name).toLocaleLowerCase('de-DE')===String(e.className||'').toLocaleLowerCase('de-DE')),id=e.classId||byName?.id||('name:'+e.className);if(!seen.has(id))seen.set(id,{id,name:e.className||id})}}return[...seen.values()]
 }
 function getGlobalClass(){
  try{const x=JSON.parse(localStorage.getItem('kathleenGlobalClassV1')||'null');if(x?.id)return x}catch(e){}
