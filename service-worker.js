@@ -1,4 +1,4 @@
-const CACHE='kathleen-v25-whiteboard-seating-fix-20260921';
+const CACHE='kathleen-v25-seating-widget-planload-20260921';
 const CORE=[
   './','./index.html','./manifest.webmanifest',
   './tools/english-world-quiz/index.html','./tools/english-world-quiz/bonus.html','./tools/homework-vouchers/index.html',
