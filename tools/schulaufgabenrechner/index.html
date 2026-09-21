@@ -296,4 +296,4 @@ document.addEventListener('visibilitychange',()=>{if(document.visibilityState===
  db=migrateDb(await KathleenClassLists.secureGet(STORE,db));$('#majorRatio').value=db.settings.majorRatio;$('#minorRatio').value=db.settings.minorRatio;fillClasses();const global=KathleenClassLists.getGlobalClass?.(),globalAssessment=global?db.assessments.find(a=>a.classId===global.id):null;current=globalAssessment?clone(globalAssessment):(global?newModel():(db.assessments[0]?clone(db.assessments[0]):newModel()));fillClasses();syncInputs();history=[];future=[];updateUndoButtons();setSaveState('saved','✓ Gespeichert')
 })().catch(e=>{console.error(e);setSaveState('error','! Fehler');toast(e.message||'Notenzentrale konnte nicht geladen werden')});
 })();
-</script></body></html>
+</script><script src="observations.js?v=20260921-1700"></script></body></html>
