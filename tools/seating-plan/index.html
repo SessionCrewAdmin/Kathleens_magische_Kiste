@@ -204,7 +204,7 @@ async function loadTags(){tagDb=await KathleenClassLists.secureGet(TAG_STORE,{})
 function renderClasses(){
  lists=KathleenClassLists.load();
  $('#classSelect').innerHTML=lists.length?lists.map(c=>'<option value="'+safe(c.id)+'">'+safe(c.name)+' · '+c.students.length+'</option>').join(''):'<option value="">Keine Klassenliste</option>';
- const wanted=localStorage.getItem('kathleenSeatClass'),next=lists.find(x=>x.id===wanted)||lists[0]||null;current=next;
+ const global=KathleenClassLists.getGlobalClass?.(),wanted=global?.id||localStorage.getItem('kathleenSeatClass'),next=lists.find(x=>x.id===wanted)||lists[0]||null;current=next;
  if(current){$('#classSelect').value=current.id;localStorage.setItem('kathleenSeatClass',current.id);loadPlan()}else{clearDesks();renderRoster();status('Lege zuerst eine Klassenliste an.')}
 }
 function savePlan(msg=true){if(!current)return;const p=plans();p[current.id]={className:current.name,desks:deskData(),notes:$('#notes').value||'',updatedAt:new Date().toISOString()};savePlans(p);if(msg)toast('Sitzplan gespeichert');status('✓ Gespeichert')}
@@ -212,7 +212,7 @@ function autoSave(){if(current)savePlan(false)}
 function loadPlan(){clearDesks();const p=plans()[current.id];if(p?.desks?.length)p.desks.forEach(makeDesk);else{defaultLayout();assign(students())}$('#notes').value=p?.notes||'';$('#noteStatus').textContent=p?.notes?'Notiz gespeichert.':'Noch keine Notiz.';renderRoster();status(p?.updatedAt?'Gespeicherter Sitzplan geladen':'Neuer Sitzplan')}
 function setTab(name){$$('[data-tab]').forEach(b=>b.classList.toggle('active',b.dataset.tab===name));$$('[data-pane]').forEach(p=>p.classList.toggle('active',p.dataset.pane===name))}
 $$('[data-tab]').forEach(b=>b.onclick=()=>setTab(b.dataset.tab));
-$('#classSelect').onchange=()=>{autoSave();current=lists.find(x=>x.id===$('#classSelect').value)||null;if(current)localStorage.setItem('kathleenSeatClass',current.id);loadPlan()};
+$('#classSelect').onchange=()=>{autoSave();current=lists.find(x=>x.id===$('#classSelect').value)||null;if(current){localStorage.setItem('kathleenSeatClass',current.id);KathleenClassLists.setGlobalClass?.(current.id,current.name)}loadPlan()};
 $('#search').oninput=renderRoster;$('#classGear').onclick=()=>location.href='../class-lists/';
 $$('[data-add]').forEach(b=>b.onclick=()=>addDesk(b.dataset.add));
 $$('[data-layout]').forEach(b=>b.onclick=()=>{if(b.dataset.layout==='rows')layoutRows();else if(b.dataset.layout==='u')layoutU();else toast('Freies Layout aktiv')});
