@@ -1,8 +1,8 @@
-const CACHE='kathleen-v31-v27-final-20260921';
+const CACHE='kathleen-v32-auto-language-20260921';
 const CORE=[
   './','./index.html','./home-todo-v2.js','./manifest.webmanifest',
   './tools/english-world-quiz/index.html','./tools/english-world-quiz/bonus.html','./tools/homework-vouchers/index.html',
-  './tools/classroom-tools-shared.js','./tools/randomizer/index.html','./tools/classroom-timer/index.html','./tools/team-generator/index.html',
+  './tools/classroom-tools-shared.js','./tools/kathleen-i18n.js','./tools/randomizer/index.html','./tools/classroom-timer/index.html','./tools/team-generator/index.html',
   './tools/class-lists/index.html','./tools/seating-plan/index.html','./tools/seating-plan/v27.css','./tools/seating-plan/v27.js','./tools/schulaufgabenrechner/index.html','./tools/schulaufgabenrechner/observations.js','./tools/homework-strikes/index.html','./tools/timetable/index.html','./tools/push-center/index.html','./tools/presentation-mode.js','./tools/classroom-board/index.html','./tools/classroom-board/board.css','./tools/classroom-board/widget-framework.js','./tools/classroom-board/board-app.js','./tools/classroom-board/presets.js','./tools/classroom-board/student.html','./tools/classroom-board/present.html','./tools/live-poll/index.html','./tools/live-poll/student.html',
   './tools/kalter-krieg/index.html','./tools/kalter-krieg/lehrer.html',
   './assets/covers/cold-war.svg','./assets/covers/english-world.svg','./assets/reveal/kathleen-welcome-desktop.webp',
