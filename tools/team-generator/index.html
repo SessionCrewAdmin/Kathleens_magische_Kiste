@@ -17,4 +17,4 @@ $('#saveListBtn').onclick=async()=>{try{const item=await window.KathleenClassLis
 $('#deleteListBtn').onclick=async()=>{if(!editingId||!confirm('Klassenliste wirklich löschen?'))return;await window.KathleenClassLists.remove(editingId);editingId=null;newEditor();refreshSelect();lastTeams=[];render();toast('Liste gelöscht')};
 $('#vaultLockBtn').onclick=()=>window.KathleenClassLists.lock(true);$('#backBtn').onclick=()=>location.href='../../#tools';window.addEventListener('kathleen:classlists',()=>refreshSelect());
 (async()=>{const ok=await window.KathleenClassLists.requireUnlock();if(ok)refreshSelect()})();if('serviceWorker' in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('../../service-worker.js').catch(()=>{}));})();;
-</script></body></html>
+</script><script src="../kathleen-i18n.js?v=20260921-1800"></script></body></html>
