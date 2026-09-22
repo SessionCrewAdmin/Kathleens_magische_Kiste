@@ -4,6 +4,7 @@ const LEGACY_KEY='kathleenClassListsV1';
 const VAULT_KEY='kathleenClassListsVaultV2';
 const KDF_ITERATIONS=250000;
 const AUTO_LOCK_MS=60*60*1000;
+const CLASS_CACHE_KEY='kathleenClassRosterCacheV37',CLASS_CACHE_MS=24*60*60*1000;
 const TEACHER_SESSION_KEY='kathleenTeacherUnlockV36',TEACHER_SESSION_MS=60*60*1000;
 const SUPABASE_URL='https://fzqxnjhuvgpgovcovosl.supabase.co';
 const SUPABASE_KEY='sb_publishable_GIyyWoyaQXipaA4S9OuTyQ_cZn7LUgV';
@@ -110,12 +111,14 @@ async function openGlobalClassChooser(){
   document.body.appendChild(o);o.querySelector('#kclContextClose').onclick=()=>o.remove();o.onclick=e=>{if(e.target===o)o.remove()};o.querySelector('#kclContextApply').onclick=()=>{const id=o.querySelector('#kclContextSelect').value,c=lists.find(x=>x.id===id);if(c)setGlobalClass(c.id,c.name);o.remove();renderContextChip()}
 }
 if(typeof document!=='undefined'){if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',ensureTeacherUx,{once:true});else setTimeout(ensureTeacherUx,0);window.addEventListener('kathleen:globalclass',renderContextChip);window.addEventListener('kathleen:classroom',renderContextChip);window.addEventListener('kathleen:classlists-unlocked',renderContextChip)}
-function load(){return key?cache.map(c=>({...c,students:[...c.students]})):[]}
+function rosterCache(){try{const x=JSON.parse(sessionStorage.getItem(CLASS_CACHE_KEY)||'null');return x&&Date.now()<Number(x.expiresAt||0)&&Array.isArray(x.classes)?sanitizeLists(x.classes):[]}catch(e){return[]}}
+function publishRosterCache(){if(!key)return;try{sessionStorage.setItem(CLASS_CACHE_KEY,JSON.stringify({expiresAt:Date.now()+CLASS_CACHE_MS,classes:cache}))}catch(e){}}
+function load(){const src=key?cache:rosterCache();return src.map(c=>({...c,students:[...c.students]}))}
 function get(id){return key?(cache.find(x=>x.id===id)||null):null}
 function assertUnlocked(){if(!key)throw new Error('Klassenlisten sind gesperrt.')}
 function readLegacy(){try{return sanitizeLists(JSON.parse(localStorage.getItem(LEGACY_KEY)||'[]'))}catch(e){return[]}}
 async function persist(lists=cache){
-  assertUnlocked();cache=sanitizeLists(lists);publishClassMeta();
+  assertUnlocked();cache=sanitizeLists(lists);publishClassMeta();publishRosterCache();
   let vault;try{vault=JSON.parse(localStorage.getItem(VAULT_KEY)||'null')}catch(e){vault=null}
   if(!vault?.salt)throw new Error('Verschlüsselung ist nicht eingerichtet.');
   const iv=randomBytes(12),payload=enc.encode(JSON.stringify({version:2,classes:cache}));
@@ -130,7 +133,7 @@ async function setup(pin){
   const salt=randomBytes(16);key=await deriveKey(pin,salt);cache=readLegacy();
   localStorage.setItem(VAULT_KEY,JSON.stringify({version:2,cipher:'AES-256-GCM',kdf:'PBKDF2-SHA256',iterations:KDF_ITERATIONS,salt:bytesToB64(salt),iv:'',data:'',updatedAt:new Date().toISOString()}));
   try{await persist(cache)}catch(e){localStorage.removeItem(VAULT_KEY);key=null;cache=[];throw e}
-  bindActivity();rememberTeacherPin(pin);window.dispatchEvent(new CustomEvent('kathleen:classlists-unlocked'));return true
+  bindActivity();rememberTeacherPin(pin);publishRosterCache();window.dispatchEvent(new CustomEvent('kathleen:classlists-unlocked'));return true
 }
 async function unlock(pin){
   pin=String(pin||'');if(!hasVault())return setup(pin);
@@ -141,10 +144,10 @@ async function unlock(pin){
   try{
     const plain=await crypto.subtle.decrypt({name:'AES-GCM',iv:b64ToBytes(vault.iv),additionalData:AAD},candidate,b64ToBytes(vault.data));
     const parsed=JSON.parse(dec.decode(plain));key=candidate;cache=sanitizeLists(parsed?.classes||[]);publishClassMeta();localStorage.removeItem(LEGACY_KEY);bindActivity();
-    rememberTeacherPin(pin);window.dispatchEvent(new CustomEvent('kathleen:classlists-unlocked'));return true
+    rememberTeacherPin(pin);publishRosterCache();window.dispatchEvent(new CustomEvent('kathleen:classlists-unlocked'));return true
   }catch(e){key=null;cache=[];throw new Error('Lehrer-PIN falsch oder Backup beschädigt.')}
 }
-function lock(reload=false){clearTeacherSession();key=null;cache=[];clearTimeout(lockTimer);lockTimer=null;window.dispatchEvent(new CustomEvent('kathleen:classlists-locked'));if(reload)setTimeout(()=>location.reload(),20)}
+function lock(reload=false){clearTeacherSession();try{sessionStorage.removeItem(CLASS_CACHE_KEY)}catch(e){}key=null;cache=[];clearTimeout(lockTimer);lockTimer=null;window.dispatchEvent(new CustomEvent('kathleen:classlists-locked'));if(reload)setTimeout(()=>location.reload(),20)}
 function touch(){if(!key)return;refreshTeacherSession();clearTimeout(lockTimer);lockTimer=setTimeout(()=>lock(true),AUTO_LOCK_MS)}
 function bindActivity(){touch();if(activityBound)return;activityBound=true;['pointerdown','keydown','touchstart'].forEach(ev=>window.addEventListener(ev,touch,{passive:true}))}
 async function upsert(data){
