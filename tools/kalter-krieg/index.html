@@ -2193,7 +2193,7 @@ function scoreFx(n){
 }
 function verifyFx(){const s=$("#verifyStamp");if(!s)return;s.classList.remove("show");void s.offsetWidth;s.classList.add("show");stampSound()}
 function glitchFx(){if(!motionOK)return;document.body.classList.remove("glitching");void document.body.offsetWidth;document.body.classList.add("glitching");setTimeout(()=>document.body.classList.remove("glitching"),240)}
-function addScore(n){const old=score;score+=n;combo++;bestCombo=Math.max(bestCombo,combo);animateNumber($("#score"),old,score);$("#combo").textContent=combo;scoreFx(n);beep(true);const cp=$("#combo")?.closest(".pill");if(cp){cp.classList.remove("pulse");void cp.offsetWidth;cp.classList.add("pulse")}}
+function kgEvent(type,detail={}){window.dispatchEvent(new CustomEvent("kathleen:game-action",{detail:{source:"kalter-krieg",type,...detail}}))}\nfunction addScore(n){const old=score;score+=n;combo++;bestCombo=Math.max(bestCombo,combo);kgEvent("correct",{score:n,combo});animateNumber($("#score"),old,score);$("#combo").textContent=combo;scoreFx(n);beep(true);const cp=$("#combo")?.closest(".pill");if(cp){cp.classList.remove("pulse");void cp.offsetWidth;cp.classList.add("pulse")}}
 function miss(fb,msg){
   mistakes++;combo=0;$("#mistakes").textContent=mistakes;$("#combo").textContent=combo;
   if(currentMission>=1&&currentMission<=8){missionErrors[currentMission]++;weakTopics[currentMission]=(weakTopics[currentMission]||0)+1;maybeShowHint(currentMission)}
@@ -2953,5 +2953,5 @@ decorateSpeakerChoices();drawStartWorld();updateMissionRail(0);
 if($("#createSession")) $("#createSession").dataset.bound="1";
 })();
 </script>
-<script>if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('../../service-worker.js').catch(console.warn))}</script></body>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('../../service-worker.js').catch(console.warn))}</script><script src="../gamification-preview.js"></script></body>
 </html>
