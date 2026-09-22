@@ -1,0 +1,10 @@
+/* V46 — screenshot polish */
+.start-hero{min-height:220px!important;height:220px!important;background-image:url('../tools/quest-mode/landscape.webp')!important;background-position:center!important;background-size:100% 100%!important}
+.start-hero-copy{padding:32px 28px!important}.start-hero h1{font-size:32px!important}.start-hero p{margin:4px 0 13px!important}
+.start-hero-copy a{gap:8px}.start-hero-copy a:not(:has(svg)){padding-left:15px}
+.start-customize{display:inline-flex;align-items:center;gap:8px}.start-customize svg+svg,.start-hero-copy a svg+svg{display:none}
+.start-classbar{min-height:48px!important;padding:7px 13px!important;box-shadow:0 3px 12px #b89eb40a!important}.start-classbar .label{font-size:11px!important}.start-classbar select{min-height:34px!important;border-radius:9px!important}.start-classbar small{font-size:9px!important}
+.start-layout{grid-template-columns:1.05fr .95fr!important}.start-panel{min-height:305px!important;padding:17px!important}.start-panel header{min-height:54px!important}.schedule-panel .today-schedule{gap:6px!important}.schedule-panel .home-lesson{min-height:45px!important;border-radius:10px!important}.todos-panel .todo-row{min-height:48px!important}.todos-panel .todo-list{gap:7px!important}
+.start-box{padding:17px!important}.start-tool{min-height:88px!important}
+@media(max-width:850px){.start-hero{height:210px!important;min-height:210px!important;background-size:cover!important}.start-layout{grid-template-columns:1fr!important}}
+@media(max-width:560px){.start-hero{height:230px!important;min-height:230px!important;background-position:68% center!important}.start-hero-copy{padding:52px 17px 18px!important}}
