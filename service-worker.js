@@ -1,6 +1,6 @@
-const CACHE='kathleen-v37-5-observation-undo-20260922';
+const CACHE='kathleen-v38-workflow-stability-20260922';
 const CORE=['./tools/mobile-observations/index.html','./tools/seating-plan/mobile-view.js','./mobile-teacher-v34.js',
-  './','./index.html','./home-todo-v2.js','./manifest.webmanifest',
+  './','./index.html','./home-todo-v2.js','./tools/todo-store.js','./tools/teacher-shell.js','./manifest.webmanifest',
   './tools/english-world-quiz/index.html','./tools/english-world-quiz/bonus.html','./tools/homework-vouchers/index.html',
   './tools/classroom-tools-shared.js','./tools/kathleen-i18n.js','./tools/lesson-mode.js','./tools/class-cockpit/index.html','./tools/randomizer/index.html','./tools/classroom-timer/index.html','./tools/team-generator/index.html',
   './tools/class-lists/index.html','./tools/seating-plan/index.html','./tools/seating-plan/v27.css','./tools/seating-plan/v27.js','./tools/seating-plan/teacher-center.js','./tools/schulaufgabenrechner/index.html','./tools/schulaufgabenrechner/observations.js','./tools/homework-strikes/index.html','./tools/timetable/index.html','./tools/push-center/index.html','./tools/presentation-mode.js','./tools/classroom-board/index.html','./tools/classroom-board/board.css','./tools/classroom-board/widget-framework.js','./tools/classroom-board/board-app.js','./tools/classroom-board/presets.js','./tools/classroom-board/student.html','./tools/classroom-board/student-i18n.js','./tools/classroom-board/present.html','./tools/live-poll/index.html','./tools/live-poll/student.html',
