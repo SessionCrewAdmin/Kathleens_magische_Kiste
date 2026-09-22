@@ -1,5 +1,5 @@
-const CACHE='kathleen-v37-1-mobile-observations-fix-20260922';
-const CORE=['./tools/seating-plan/mobile-view.js','./mobile-teacher-v34.js',
+const CACHE='kathleen-v37-2-mobile-observations-20260922';
+const CORE=['./tools/mobile-observations/index.html','./tools/seating-plan/mobile-view.js','./mobile-teacher-v34.js',
   './','./index.html','./home-todo-v2.js','./manifest.webmanifest',
   './tools/english-world-quiz/index.html','./tools/english-world-quiz/bonus.html','./tools/homework-vouchers/index.html',
   './tools/classroom-tools-shared.js','./tools/kathleen-i18n.js','./tools/lesson-mode.js','./tools/class-cockpit/index.html','./tools/randomizer/index.html','./tools/classroom-timer/index.html','./tools/team-generator/index.html',
