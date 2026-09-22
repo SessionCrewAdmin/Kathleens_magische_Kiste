@@ -5,7 +5,7 @@ const ROOT='kathleenMobileTeacherV36',TODO='kathleen-home-todos-v1',SNAP='kathle
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const read=(k,f)=>{try{return JSON.parse(localStorage.getItem(k)||'null')??f}catch(e){return f}};
 const mins=t=>{const[a,b]=String(t||'0:0').split(':').map(Number);return a*60+b};
-const routes={board:'tools/classroom-board/',seating:'tools/seating-plan/?mobile=1',random:'tools/randomizer/',teams:'tools/team-generator/',timer:'tools/classroom-timer/',poll:'tools/live-poll/',cockpit:'tools/class-cockpit/',classes:'tools/class-lists/',homework:'tools/homework-strikes/',observations:'tools/mobile-observations/',grades:'tools/schulaufgabenrechner/',schedule:'tools/timetable/',push:'tools/push-center/',voucher:'tools/homework-vouchers/'};
+const routes={board:'tools/classroom-board/',seating:'tools/seating-plan/?mobile=1',random:'tools/randomizer/',teams:'tools/team-generator/',timer:'tools/classroom-timer/',poll:'tools/live-poll/',cockpit:'tools/class-cockpit/',classes:'tools/class-lists/',homework:'tools/homework-strikes/',observations:'tools/mobile-observations/?v=20260922-1610',grades:'tools/schulaufgabenrechner/',schedule:'tools/timetable/',push:'tools/push-center/',voucher:'tools/homework-vouchers/'};
 function go(k){if(routes[k])location.href=routes[k]}
 function lessons(){const x=read(SNAP,{entries:[]}),d=new Date().getDay()||7;return(x.entries||[]).filter(e=>Number(e.day)===d).sort((a,b)=>mins(a.start)-mins(b.start))}
 function currentOrNext(){const a=lessons(),m=new Date().getHours()*60+new Date().getMinutes();return a.find(e=>mins(e.start)<=m&&mins(e.end)>m)||a.find(e=>mins(e.start)>m)||null}
