@@ -14,6 +14,7 @@ function setup(){
   dashboard:view.querySelector('.dashboard-grid.v21'),board:view.querySelector('.board-home-card'),subjects:view.querySelector('.subject-launchers')
  };
  if(Object.values(map).some(x=>!x))return;
+ const subjectKicker=map.subjects.previousElementSibling;if(subjectKicker?.classList?.contains('view-kicker')&&subjectKicker.textContent.trim()==='Bereiche')subjectKicker.style.display='none';
  const anchor=map.workbench;
  const host=document.createElement('div');host.className='home-layout-host';host.id='homeLayoutHost';anchor.parentNode.insertBefore(host,anchor);
  DEFAULT.forEach(id=>{const el=map[id];el.dataset.homeBlock=id;el.classList.add('home-block');host.appendChild(el)});
