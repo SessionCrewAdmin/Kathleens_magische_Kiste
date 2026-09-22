@@ -1,4 +1,4 @@
-const CACHE='kathleen-v37-iphone-remote-20260922';
+const CACHE='kathleen-v37-1-mobile-observations-20260922';
 const CORE=['./tools/seating-plan/mobile-view.js','./mobile-teacher-v34.js',
   './','./index.html','./home-todo-v2.js','./manifest.webmanifest',
   './tools/english-world-quiz/index.html','./tools/english-world-quiz/bonus.html','./tools/homework-vouchers/index.html',
