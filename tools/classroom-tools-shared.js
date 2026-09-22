@@ -3,7 +3,8 @@
 const LEGACY_KEY='kathleenClassListsV1';
 const VAULT_KEY='kathleenClassListsVaultV2';
 const KDF_ITERATIONS=250000;
-const AUTO_LOCK_MS=15*60*1000;
+const AUTO_LOCK_MS=60*60*1000;
+const TEACHER_SESSION_KEY='kathleenTeacherUnlockV36',TEACHER_SESSION_MS=60*60*1000;
 const SUPABASE_URL='https://fzqxnjhuvgpgovcovosl.supabase.co';
 const SUPABASE_KEY='sb_publishable_GIyyWoyaQXipaA4S9OuTyQ_cZn7LUgV';
 const CLOUD_VAULT_ID='schoolyear-2026-27';
@@ -12,6 +13,10 @@ const GLOBAL_CLASS_KEY='kathleenGlobalClassV1';
 const CLASSROOM_STATE_KEY='kathleenClassroomSharedV1';
 const enc=new TextEncoder(),dec=new TextDecoder(),AAD=enc.encode('KathleenClassListsVaultV2');
 let key=null,cache=[],guardPromise=null,guardResolve=null,lockTimer=null,activityBound=false;
+function teacherSession(){try{const x=JSON.parse(sessionStorage.getItem(TEACHER_SESSION_KEY)||'null');return x&&Date.now()<Number(x.expiresAt||0)?x:null}catch(e){return null}}
+function rememberTeacherPin(pin){try{sessionStorage.setItem(TEACHER_SESSION_KEY,JSON.stringify({pin:String(pin),expiresAt:Date.now()+TEACHER_SESSION_MS}))}catch(e){}}
+function clearTeacherSession(){try{sessionStorage.removeItem(TEACHER_SESSION_KEY)}catch(e){}}
+function refreshTeacherSession(){const x=teacherSession();if(x)rememberTeacherPin(x.pin)}
 
 function uid(){return 'class-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,7)}
 function cleanStudents(v){
@@ -125,7 +130,7 @@ async function setup(pin){
   const salt=randomBytes(16);key=await deriveKey(pin,salt);cache=readLegacy();
   localStorage.setItem(VAULT_KEY,JSON.stringify({version:2,cipher:'AES-256-GCM',kdf:'PBKDF2-SHA256',iterations:KDF_ITERATIONS,salt:bytesToB64(salt),iv:'',data:'',updatedAt:new Date().toISOString()}));
   try{await persist(cache)}catch(e){localStorage.removeItem(VAULT_KEY);key=null;cache=[];throw e}
-  bindActivity();window.dispatchEvent(new CustomEvent('kathleen:classlists-unlocked'));return true
+  bindActivity();rememberTeacherPin(pin);window.dispatchEvent(new CustomEvent('kathleen:classlists-unlocked'));return true
 }
 async function unlock(pin){
   pin=String(pin||'');if(!hasVault())return setup(pin);
@@ -136,11 +141,11 @@ async function unlock(pin){
   try{
     const plain=await crypto.subtle.decrypt({name:'AES-GCM',iv:b64ToBytes(vault.iv),additionalData:AAD},candidate,b64ToBytes(vault.data));
     const parsed=JSON.parse(dec.decode(plain));key=candidate;cache=sanitizeLists(parsed?.classes||[]);publishClassMeta();localStorage.removeItem(LEGACY_KEY);bindActivity();
-    window.dispatchEvent(new CustomEvent('kathleen:classlists-unlocked'));return true
+    rememberTeacherPin(pin);window.dispatchEvent(new CustomEvent('kathleen:classlists-unlocked'));return true
   }catch(e){key=null;cache=[];throw new Error('Lehrer-PIN falsch oder Backup beschädigt.')}
 }
-function lock(reload=false){key=null;cache=[];clearTimeout(lockTimer);lockTimer=null;window.dispatchEvent(new CustomEvent('kathleen:classlists-locked'));if(reload)setTimeout(()=>location.reload(),20)}
-function touch(){if(!key)return;clearTimeout(lockTimer);lockTimer=setTimeout(()=>lock(true),AUTO_LOCK_MS)}
+function lock(reload=false){clearTeacherSession();key=null;cache=[];clearTimeout(lockTimer);lockTimer=null;window.dispatchEvent(new CustomEvent('kathleen:classlists-locked'));if(reload)setTimeout(()=>location.reload(),20)}
+function touch(){if(!key)return;refreshTeacherSession();clearTimeout(lockTimer);lockTimer=setTimeout(()=>lock(true),AUTO_LOCK_MS)}
 function bindActivity(){touch();if(activityBound)return;activityBound=true;['pointerdown','keydown','touchstart'].forEach(ev=>window.addEventListener(ev,touch,{passive:true}))}
 async function upsert(data){
   assertUnlocked();const lists=load(),id=data.id||uid(),item={id,name:String(data.name||'').trim(),students:cleanStudents(data.students),updatedAt:new Date().toISOString()};
@@ -278,12 +283,13 @@ function ensureGuardStyles(){
 function closeGuard(){document.getElementById('kclGuard')?.remove();const r=guardResolve;guardPromise=null;guardResolve=null;if(r)r(true)}
 async function requireUnlock(){
   if(key){touch();return true}
+  const remembered=teacherSession();if(remembered?.pin){try{await unlock(remembered.pin);touch();return true}catch(e){clearTeacherSession()}}
   const admin=sessionStorage.getItem('kathleenAdminPass')||'';
   if(!hasVault()&&admin)await cloudPull(admin);
   if(hasVault()&&admin){try{await unlock(admin);return true}catch(e){}}
   if(guardPromise)return guardPromise;ensureGuardStyles();guardPromise=new Promise(resolve=>{guardResolve=resolve});
   const setupMode=!hasVault(),g=document.createElement('div');g.id='kclGuard';g.className='kcl-guard';
-  g.innerHTML='<div class="kcl-guard-card"><div class="kcl-lock-icon">🔐</div><h2>'+(setupMode?'Klassenlisten schützen':'Klassenlisten entsperren')+'</h2><p>'+(setupMode?'Lege einmalig eine lokale Lehrer-PIN fest. Vorhandene unverschlüsselte Listen werden automatisch verschlüsselt und danach aus dem alten Speicher entfernt.':'Die Namen sind auf diesem Gerät AES-256-GCM-verschlüsselt. Zum Verwenden der Klassenlisten bitte entsperren.')+'</p><p class="kcl-security-note">🔒 Ende-zu-Ende verschlüsselt · Supabase speichert nur Ciphertext · automatische Sperre nach 15 Minuten.</p><label>Lehrer-PIN</label><input id="kclPin" type="password" autocomplete="'+(setupMode?'new-password':'current-password')+'" placeholder="Mindestens 8 Zeichen">'+(setupMode?'<label>PIN wiederholen</label><input id="kclPin2" type="password" autocomplete="new-password" placeholder="PIN wiederholen">':'')+'<div class="kcl-guard-msg" id="kclMsg"></div><div class="kcl-guard-actions"><button class="primary" id="kclUnlock">'+(setupMode?'Verschlüsselung aktivieren':'Entsperren')+'</button><button id="kclBack">← Tools</button></div>'+(setupMode?'<p>Die PIN wird nicht gespeichert und kann nicht wiederhergestellt werden. Du kannst dieselbe wie dein Kisten-Admin-Passwort verwenden.</p>':'')+'</div>';
+  g.innerHTML='<div class="kcl-guard-card"><div class="kcl-lock-icon">🔐</div><h2>'+(setupMode?'Klassenlisten schützen':'Klassenlisten entsperren')+'</h2><p>'+(setupMode?'Lege einmalig eine lokale Lehrer-PIN fest. Vorhandene unverschlüsselte Listen werden automatisch verschlüsselt und danach aus dem alten Speicher entfernt.':'Die Namen sind auf diesem Gerät AES-256-GCM-verschlüsselt. Zum Verwenden der Klassenlisten bitte entsperren.')+'</p><p class="kcl-security-note">🔒 Ende-zu-Ende verschlüsselt · Supabase speichert nur Ciphertext · automatische Sperre nach 60 Minuten Inaktivität.</p><label>Lehrer-PIN</label><input id="kclPin" type="password" autocomplete="'+(setupMode?'new-password':'current-password')+'" placeholder="Mindestens 8 Zeichen">'+(setupMode?'<label>PIN wiederholen</label><input id="kclPin2" type="password" autocomplete="new-password" placeholder="PIN wiederholen">':'')+'<div class="kcl-guard-msg" id="kclMsg"></div><div class="kcl-guard-actions"><button class="primary" id="kclUnlock">'+(setupMode?'Verschlüsselung aktivieren':'Entsperren')+'</button><button id="kclBack">← Tools</button></div>'+(setupMode?'<p>Die PIN wird nicht gespeichert und kann nicht wiederhergestellt werden. Du kannst dieselbe wie dein Kisten-Admin-Passwort verwenden.</p>':'')+'</div>';
   document.body.appendChild(g);
   const pin=g.querySelector('#kclPin'),msg=g.querySelector('#kclMsg'),submit=g.querySelector('#kclUnlock');
   const run=async()=>{msg.textContent='';submit.disabled=true;try{if(setupMode){const p2=g.querySelector('#kclPin2').value;if(pin.value!==p2)throw new Error('Die beiden PINs stimmen nicht überein.');const pulled=await cloudPull(pin.value);if(pulled)await unlock(pin.value);else await setup(pin.value)}else await unlock(pin.value);closeGuard()}catch(e){msg.textContent=e.message||'Entsperren fehlgeschlagen.';submit.disabled=false;pin.focus()}};
