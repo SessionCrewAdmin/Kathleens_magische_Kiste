@@ -1,0 +1,12 @@
+(()=>{
+'use strict';
+const widgets=window.KathleenWidgets;
+if(!widgets)return;
+const safeSlide=s=>typeof s==='string' && /^data:image\/(jpeg|png|webp);base64,[A-Za-z0-9+/=]+$/.test(s);
+widgets.register({type:'canva',title:'Canva',icon:'C',defaultSize:{w:960,h:620},defaultData:{title:'Canva-Präsentation',designId:'',slides:[],page:0,importedAt:''},render(data,ctx){
+  const slides=Array.isArray(data.slides)?data.slides:[],page=Math.max(0,Math.min(slides.length-1,Math.trunc(Number(data.page)||0))),teacher=ctx.mode==='teacher';
+  return `<section class="kwWidget canvaSlides"><header class="kwWidgetTop"><strong class="kwTitle">${ctx.esc(data.title||'Canva-Präsentation')}</strong><span>${slides.length?page+1+' / '+slides.length:''}</span></header><div class="canvaSlideImage">${safeSlide(slides[page])?`<img src="${slides[page]}" alt="${ctx.esc(data.title||'Canva')} – Folie ${page+1}">`:'<p>Noch keine Präsentation ausgewählt.</p>'}</div><footer class="canvaSlideControls">${teacher?`<button type="button" data-kw-action="canva-prev" ${page<=0?'disabled':''} aria-label="Vorherige Folie">← Zurück</button><button type="button" data-kw-action="canva-next" ${page>=slides.length-1?'disabled':''} aria-label="Nächste Folie">Weiter →</button><button type="button" data-kw-action="canva-choose">${slides.length?'Ersetzen / aktualisieren':'Präsentation auswählen'}</button>`:'<span>Die Lehrkraft blättert die Folien weiter.</span>'}</footer></section>`;
+}});
+const style=document.createElement('style');style.textContent=`.canvaSlides{background:#fffafd}.canvaSlideImage{flex:1;min-height:0;display:flex;align-items:center;justify-content:center;background:#f6f0f7;overflow:hidden}.canvaSlideImage img{width:100%;height:100%;object-fit:contain;pointer-events:none}.canvaSlideControls{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap;padding:10px;font:14px system-ui;color:#6b5674}.canvaSlideControls button{font:inherit;min-height:40px;padding:8px 14px;border:1px solid #ddcde4;border-radius:12px;background:#f0e4f6;color:#594263;cursor:pointer}.canvaSlideControls button:disabled{opacity:.4;cursor:default}.canvaSlides .kwWidgetTop{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 14px;flex-wrap:wrap;font:16px system-ui}.canvaSlides .kwTitle{font-size:20px;font-weight:700}.canvaSlides .kwTitle{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}`;document.head.append(style);
+window.KathleenCanvaSlides=Object.freeze({safeSlide});
+})();
