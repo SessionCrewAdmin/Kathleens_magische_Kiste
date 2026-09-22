@@ -113,7 +113,7 @@ zoomResetBtn.addEventListener("click",e=>{e.stopPropagation();resetMapZoom()});
 fetch("https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json").then(r=>{if(!r.ok)throw new Error();return r.json()}).then(world=>{
 const features=topojson.feature(world,world.objects.countries).features;
 mapViewport.selectAll("path.country").data(features).join("path").attr("class","country").attr("d",path).attr("data-name",d=>d.properties.name).on("click",function(event,d){
-event.stopPropagation();if(d.properties.name===targetCountry){d3.select(this).classed("correct-country",true);correctFeedback.classList.add("show")}else wrongFeedback.classList.add("show")});
+event.stopPropagation();if(d.properties.name===targetCountry){d3.select(this).classed("correct-country",true);correctFeedback.classList.add("show");window.dispatchEvent(new CustomEvent("kathleen:game-action",{detail:{source:"english-world-quiz",type:"correct",country:targetCountry}}))}else{wrongFeedback.classList.add("show");window.dispatchEvent(new CustomEvent("kathleen:game-action",{detail:{source:"english-world-quiz",type:"wrong",country:targetCountry}}))}});
 ready=true;loading.classList.add("hidden")
 }).catch(()=>loading.innerHTML="The country boundary file could not be loaded.<br>Please check the internet connection.");
 svg.on("click",()=>{if(ready)wrongFeedback.classList.add("show")});
@@ -126,5 +126,5 @@ fullscreenBtn.addEventListener("click",async()=>{try{if(!document.fullscreenElem
 })();
 </script>
 <script>if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('../../service-worker.js').catch(console.warn))}</script>
-</body>
+<script src="../gamification-preview.js"></script></body>
 </html>
