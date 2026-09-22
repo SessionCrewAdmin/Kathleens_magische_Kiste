@@ -1,4 +1,4 @@
-const CACHE='kathleen-v36-2-mobile-quickadd-20260922';
+const CACHE='kathleen-v36-3-mobile-quickadd-polish-20260922';
 const CORE=['./mobile-teacher-v34.js',
   './','./index.html','./home-todo-v2.js','./manifest.webmanifest',
   './tools/english-world-quiz/index.html','./tools/english-world-quiz/bonus.html','./tools/homework-vouchers/index.html',
