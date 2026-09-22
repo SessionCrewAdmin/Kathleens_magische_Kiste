@@ -323,6 +323,7 @@ button,.btn,.tab,.grade,.tagbtn,.iconbtn,.open{touch-action:manipulation}
 </nav>
 <section class="view active" id="view-home"><div class="view-kicker">Heute</div><h2 class="home-title">Was möchtest du als Nächstes machen?</h2>
 <div class="global-class-bar"><span class="label">👥 Aktive Klasse</span><select id="globalClassSelect"><option value="">Klasse wählen …</option></select><span class="global-class-chip" id="globalClassChip">keine Klasse</span><span class="spacer"></span><small>Wird von Whiteboard, Sitzplan, Randomizer, Teams, Noten und Hausaufgaben übernommen.</small></div>
+<section id="questBetaCard" style="display:none;margin:14px 0 18px;padding:18px;border:1px solid #eadde9;border-radius:24px;background:linear-gradient(135deg,#fff8fc,#f3edff);box-shadow:0 12px 32px #74507014"><div style="display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap"><div><small style="font-weight:950;letter-spacing:.13em;color:#a07e9a">🧪 BETA · KLASSENQUEST</small><h2 style="margin:5px 0 3px;color:#624b65">✨ Quest Mode</h2><span style="font-size:12px;color:#927e91">XP, Klassenfortschritt, Combo und Boss-Challenge.</span></div><button id="questBetaOpen" type="button" style="border:0;border-radius:15px;padding:13px 18px;background:linear-gradient(135deg,#d58eb4,#a98bdd);color:#fff;font-weight:950">Quest starten →</button></div></section>
 <section class="next-lesson-card" id="nextLessonCard"><div class="next-lesson-top"><div><div class="next-lesson-kicker" id="nextLessonKicker">Nächste Stunde</div><div class="next-lesson-title" id="nextLessonTitle">Stundenplan wird geladen …</div><div class="next-lesson-meta" id="nextLessonMeta"></div></div><button class="classroom-live-home" id="classroomLiveHome"><i></i><span>Classroom aktiv</span></button></div><div class="next-lesson-actions" id="nextLessonActions"></div></section>
 <section class="dashboard-grid v21"><div class="panel dash-card"><div class="dash-head"><h2>Zuletzt verwendet</h2><span>direkt weiter</span></div><div class="quick-list" id="recentList"></div></div><div class="panel dash-card"><div class="dash-head"><h2>★ Favoriten</h2><span id="favCount"></span></div><div class="quick-list" id="favList"></div></div></section>
 <section class="home-workbench">
@@ -592,15 +593,12 @@ renderHomeSchedule();renderNextLessonCard();renderTodos();setInterval(()=>{rende
 })();
 </script><script src="tools/todo-store.js?v=20260922-1900"></script><script src="home-todo-v2.js?v=20260922-1900"></script><script src="tools/lesson-mode.js?v=20260921-2224"></script><script src="tools/kathleen-i18n.js?v=20260922-0723"></script><script src="mobile-teacher-v34.js?v=20260922-1900"></script><script src="tools/gamification-preview.js"></script><script>
 (()=>{if(new URLSearchParams(location.search).get('gamification')!=='preview')return;
-function mountQuest(){
- let b=document.getElementById('questBetaLauncher');
- if(!b){b=document.createElement('button');b.type='button';b.id='questBetaLauncher';b.innerHTML='✨ <span>Quest Mode</span><small>BETA</small>';
- b.style.cssText='position:fixed!important;right:16px!important;bottom:calc(86px + env(safe-area-inset-bottom))!important;z-index:2147483647!important;border:1px solid #eadde9!important;border-radius:20px!important;padding:13px 16px!important;background:linear-gradient(135deg,#fff,#ffe8f2 52%,#eee9ff)!important;color:#5b445c!important;box-shadow:0 12px 34px #674c6a3d!important;font:900 14px Inter,system-ui,-apple-system,sans-serif!important;display:flex!important;visibility:visible!important;opacity:1!important;align-items:center!important;gap:7px!important;width:auto!important;height:auto!important;transform:none!important';
- b.querySelector('small').style.cssText='font-size:8px;letter-spacing:.12em;background:#fff;border-radius:99px;padding:4px 6px';
- b.onclick=()=>{sessionStorage.setItem('kathleenGamificationPreviewV1','1');window.KathleenGamification?.render?.()};}
- if(b.parentNode!==document.body)document.body.appendChild(b);else document.body.appendChild(b);
+sessionStorage.setItem('kathleenGamificationPreviewV1','1');
+function mountQuestCard(){
+ const card=document.getElementById('questBetaCard'),btn=document.getElementById('questBetaOpen');
+ if(card)card.style.display='block';
+ if(btn&&!btn.dataset.bound){btn.dataset.bound='1';btn.onclick=()=>window.KathleenGamification?.render?.()}
 }
-mountQuest();setTimeout(mountQuest,350);setTimeout(mountQuest,1200);
-new MutationObserver(()=>mountQuest()).observe(document.body,{childList:true,subtree:false});
+mountQuestCard();setTimeout(mountQuestCard,400);setTimeout(mountQuestCard,1200);
 })();
 </script></body></html>
