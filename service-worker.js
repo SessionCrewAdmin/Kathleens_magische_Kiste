@@ -1,4 +1,4 @@
-const CACHE='kathleen-v36-mobile-session-20260922';
+const CACHE='kathleen-v36-1-mobile-nav-fix-20260922';
 const CORE=['./mobile-teacher-v34.js',
   './','./index.html','./home-todo-v2.js','./manifest.webmanifest',
   './tools/english-world-quiz/index.html','./tools/english-world-quiz/bonus.html','./tools/homework-vouchers/index.html',
