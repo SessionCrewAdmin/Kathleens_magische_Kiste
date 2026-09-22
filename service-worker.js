@@ -1,4 +1,4 @@
-const CACHE='kathleen-v37-3-mobile-observations-hardroute-20260922';
+const CACHE='kathleen-v37-4-mobile-observations-create-20260922';
 const CORE=['./tools/mobile-observations/index.html','./tools/seating-plan/mobile-view.js','./mobile-teacher-v34.js',
   './','./index.html','./home-todo-v2.js','./manifest.webmanifest',
   './tools/english-world-quiz/index.html','./tools/english-world-quiz/bonus.html','./tools/homework-vouchers/index.html',
