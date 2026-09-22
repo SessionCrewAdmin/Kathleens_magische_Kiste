@@ -247,5 +247,5 @@ window.addEventListener('kathleen:classlists',renderClasses);bindRosterDnD();
 (async()=>{status('Klassenlisten werden entsperrt …');const ok=await KathleenClassLists.requireUnlock();if(ok){await loadTags();renderClasses();try{classroom=KathleenClassLists.getClassroomState?.()||JSON.parse(sessionStorage.getItem('kathleenClassroom')||'null')}catch(e){classroom=null}updateLiveBar();if(classroom)startTeacherPolling();status('Bereit')}})();
 })();
 </script>
-<script src="v27.js?v=20260921-1710"></script><script src="mobile-view.js?v=20260922-0748"></script><script src="teacher-center.js?v=20260921-2224"></script><script src="../lesson-mode.js?v=20260921-2224"></script>
+<script src="v27.js?v=20260921-1710"></script><script src="mobile-view.js?v=20260922-0748"></script><script src="teacher-center.js?v=20260921-2224"></script><script src="../lesson-mode.js?v=20260922-lessonfinish1"></script>
 <script src="../kathleen-i18n.js?v=20260921-2224"></script><script src="../teacher-shell.js?v=20260922-1900"></script></body></html>

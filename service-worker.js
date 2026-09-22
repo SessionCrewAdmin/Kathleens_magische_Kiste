@@ -1,4 +1,4 @@
-const CACHE='kathleen-v38-5-firstnames-20260922';
+const CACHE='kathleen-v38-6-lessonfinish-20260922';
 const CORE=['./tools/quest-mode/index.html','./tools/quest-mode/quest.js','./tools/quest-mode/quest.css','./tools/quest-mode/landscape.webp','./tools/mobile-observations/index.html','./tools/seating-plan/mobile-view.js','./mobile-teacher-v34.js',
   './','./index.html','./tools/gamification-preview.js','./tools/gamification-beamer/index.html','./home-todo-v2.js','./tools/todo-store.js','./tools/teacher-shell.js','./manifest.webmanifest',
   './tools/english-world-quiz/index.html','./tools/english-world-quiz/bonus.html','./tools/homework-vouchers/index.html',

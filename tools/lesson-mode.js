@@ -7,13 +7,42 @@ function get(){try{return JSON.parse(localStorage.getItem(KEY)||'null')}catch(e)
 function put(x){if(x)localStorage.setItem(KEY,JSON.stringify(x));else localStorage.removeItem(KEY);window.dispatchEvent(new CustomEvent('kathleen:lessonmode',{detail:x}));return x}
 function events(){try{const a=JSON.parse(localStorage.getItem(LOG)||'[]');return Array.isArray(a)?a:[]}catch(e){return[]}}
 function log(type,data={}){const x=get();if(!x)return null;const a=events(),e={id:'le-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,6),lessonId:x.id,type,at:new Date().toISOString(),...data};a.push(e);localStorage.setItem(LOG,JSON.stringify(a.slice(-1200)));window.dispatchEvent(new CustomEvent('kathleen:lessonevent',{detail:e}));return e}
-function lessonEvents(x=get()){return x?events().filter(e=>e.lessonId===x.id):[]}
-function summary(x=get()){const ev=lessonEvents(x),obs=ev.filter(e=>e.type==='observation'),hw=ev.filter(e=>e.type==='homework'),cs=window.KathleenClassLists?.getClassroomState?.()||{};return{x,events:ev,observations:obs.length,observedStudents:new Set(obs.map(e=>e.student)).size,homework:hw.length,homeworkStudents:new Set(hw.map(e=>e.student)).size,connected:Number(cs.connectedCount||0),roster:Number(cs.rosterCount||0)}}
+function lessonEvents(x=get()){return x?events().filter(e=>e?.lessonId===x.id):[]}
+// Persist lesson data, never the live object containing this summary.
+function lessonSnapshot(x){if(!x)return null;const data={};for(const key of ['id','lessonId','classId','className','subject','room','start','end','startedAt','endedAt','status']){const value=x[key];if(typeof value==='string')data[key]=value}return data}
+function buildSummary(x,ev){const obs=ev.filter(e=>e.type==='observation'),hw=ev.filter(e=>e.type==='homework');let cs={};try{cs=window.KathleenClassLists?.getClassroomState?.()||{}}catch(e){console.warn('Classroom summary unavailable',e)}const count=value=>Number.isFinite(Number(value))?Math.max(0,Number(value)):0;return{x:lessonSnapshot(x),events:ev,observations:obs.length,observedStudents:new Set(obs.map(e=>e.student)).size,homework:hw.length,homeworkStudents:new Set(hw.map(e=>e.student)).size,connected:count(cs.connectedCount),roster:count(cs.rosterCount)}}
+function summary(x=get()){return buildSummary(x,lessonEvents(x))}
 function classRef(e){let meta=[];try{meta=JSON.parse(localStorage.getItem('kathleenClassMetaV1')||'[]')}catch(_){}const hit=meta.find(x=>String(x.id)===String(e.classId))||meta.find(x=>norm(x.name)===norm(e.className));return{id:String(hit?.id||e.classId||('name:'+e.className)),name:hit?.name||e.className||''}}
 function start(entry,opts={}){if(!entry)return null;const ref=classRef(entry),x={id:'lesson-'+Date.now().toString(36),lessonId:String(entry.id||''),classId:ref.id,className:ref.name,subject:entry.subject||'',room:entry.room||'',start:entry.start||'',end:entry.end||'',startedAt:new Date().toISOString(),status:'active'};put(x);log('lesson_start',{className:x.className,subject:x.subject,room:x.room});try{localStorage.setItem('kathleenGlobalClassV1',JSON.stringify({id:ref.id,name:ref.name,updatedAt:new Date().toISOString()}));localStorage.setItem('kathleenGlobalClassId',ref.id);localStorage.setItem('kathleenGlobalClassName',ref.name);localStorage.setItem('kathleenActiveSubjectV1',x.subject)}catch(_){}window.KathleenI18n?.setSubject?.(x.subject);window.KathleenI18n?.apply?.();if(opts.navigate!==false)location.href=opts.route||'tools/classroom-board/';return x}
-function finish(){const x=get();if(!x)return;log('lesson_end');x.status='ended';x.endedAt=new Date().toISOString();x.summary=summary(x);localStorage.setItem('kathleenLastLessonV1',JSON.stringify(x));put(null);document.getElementById('lessonEndModal')?.remove()}
+function finish(){
+ const x=get();if(!x)return false;
+ const finished={...lessonSnapshot(x),status:'ended',endedAt:new Date().toISOString()};
+ // A previous failed finish may already have written an end event. Reuse it.
+ const all=events(),previous=all.find(e=>e?.lessonId===x.id&&e.type==='lesson_end');
+ const completion={id:previous?.id||('le-end-'+x.id),lessonId:x.id,type:'lesson_end',at:previous?.at||finished.endedAt,classId:x.classId,className:x.className};
+ const next=[...all.filter(e=>!(e?.lessonId===x.id&&e.type==='lesson_end')),completion].slice(-1200);
+ finished.summary=buildSummary(finished,next.filter(e=>e?.lessonId===x.id));
+ try{
+  const archive=JSON.stringify(finished),eventLog=JSON.stringify(next);
+  localStorage.setItem('kathleenLastLessonV1',archive);
+  localStorage.setItem(LOG,eventLog);
+  localStorage.removeItem(KEY);
+ }catch(error){
+  console.error('Lesson could not be saved',error);
+  const modal=document.getElementById('lessonEndModal');
+  if(modal){let note=modal.querySelector('[data-lesson-error]');if(!note){note=document.createElement('p');note.dataset.lessonError='';note.setAttribute('role','alert');modal.querySelector('.lesson-end-actions').before(note)}note.textContent='Der Stundenabschluss konnte nicht gespeichert werden. Die Stunde bleibt aktiv. Bitte erneut versuchen.'}
+  return false;
+ }
+ document.getElementById('lessonEndModal')?.remove();
+ render();
+ // Optional integrations run only after the completed lesson has been saved.
+ for(const [type,detail] of [['kathleen:lessonmode',null],['kathleen:lessonevent',completion]]){
+  try{window.dispatchEvent(new CustomEvent(type,{detail}))}catch(error){console.warn('Optional lesson integration failed',error)}
+ }
+ return true;
+}
 function end(){const x=get();if(!x)return;showEndSummary(x)}
-function showEndSummary(x=get()){if(!x)return;document.getElementById('lessonEndModal')?.remove();const s=summary(x),started=new Date(x.startedAt),dur=Math.max(1,Math.round((Date.now()-started)/60000)),d=document.createElement('div');d.id='lessonEndModal';d.className='lesson-end-modal';d.innerHTML='<div class="lesson-end-card"><div class="lesson-end-kicker">STUNDENABSCHLUSS</div><h2>'+esc(x.subject)+' · '+esc(x.className)+'</h2><p>'+dur+' Min.'+(x.room?' · '+esc(x.room):'')+'</p><div class="lesson-end-stats"><div><b>👁 '+s.observations+'</b><span>Beobachtungen</span></div><div><b>✓ '+s.homework+'</b><span>HA-Striche</span></div><div><b>👥 '+s.connected+(s.roster?'/'+s.roster:'')+'</b><span>Classroom</span></div><div><b>📝 '+s.events.length+'</b><span>Aktivitäten</span></div></div><div class="lesson-end-actions"><button data-le="cancel">Zurück</button><button data-le="prep">Nächste Stunde vorbereiten</button><button class="primary" data-le="finish">Fertig</button></div></div>';document.body.appendChild(d);d.querySelector('[data-le="cancel"]').onclick=()=>d.remove();d.querySelector('[data-le="finish"]').onclick=finish;d.querySelector('[data-le="prep"]').onclick=()=>{finish();location.href=location.pathname.includes('/tools/')?'../../':'./'} }
+function showEndSummary(x=get()){if(!x)return;document.getElementById('lessonEndModal')?.remove();const s=summary(x),started=new Date(x.startedAt),dur=Math.max(1,Math.round((Date.now()-started)/60000)),d=document.createElement('div');d.id='lessonEndModal';d.className='lesson-end-modal';d.innerHTML='<div class="lesson-end-card"><div class="lesson-end-kicker">STUNDENABSCHLUSS</div><h2>'+esc(x.subject)+' · '+esc(x.className)+'</h2><p>'+dur+' Min.'+(x.room?' · '+esc(x.room):'')+'</p><div class="lesson-end-stats"><div><b>👁 '+s.observations+'</b><span>Beobachtungen</span></div><div><b>✓ '+s.homework+'</b><span>HA-Striche</span></div><div><b>👥 '+s.connected+(s.roster?'/'+s.roster:'')+'</b><span>Classroom</span></div><div><b>📝 '+s.events.length+'</b><span>Aktivitäten</span></div></div><div class="lesson-end-actions"><button data-le="cancel">Zurück</button><button data-le="prep">Nächste Stunde vorbereiten</button><button class="primary" data-le="finish">Fertig</button></div></div>';document.body.appendChild(d);d.querySelector('[data-le="cancel"]').onclick=()=>d.remove();d.querySelector('[data-le="finish"]').onclick=finish;d.querySelector('[data-le="prep"]').onclick=()=>{if(finish())location.href=location.pathname.includes('/tools/')?'../../':'./'} }
 function esc(s){return String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}
 function currentSchedule(now=new Date()){const d=now.getDay()===0?7:now.getDay(),m=now.getHours()*60+now.getMinutes();return schedule().filter(e=>Number(e.day)===d).find(e=>mins(e.start)<=m&&mins(e.end)>m)||null}
 function remaining(x){if(!x?.end)return'';const [h,m]=x.end.split(':').map(Number),now=new Date(),end=new Date(now);end.setHours(h,m,0,0);const n=Math.ceil((end-now)/60000);return n>0?n+' min':'Ende'}
