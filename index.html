@@ -592,11 +592,15 @@ renderHomeSchedule();renderNextLessonCard();renderTodos();setInterval(()=>{rende
 })();
 </script><script src="tools/todo-store.js?v=20260922-1900"></script><script src="home-todo-v2.js?v=20260922-1900"></script><script src="tools/lesson-mode.js?v=20260921-2224"></script><script src="tools/kathleen-i18n.js?v=20260922-0723"></script><script src="mobile-teacher-v34.js?v=20260922-1900"></script><script src="tools/gamification-preview.js"></script><script>
 (()=>{if(new URLSearchParams(location.search).get('gamification')!=='preview')return;
-const b=document.createElement('button');b.type='button';b.id='questBetaLauncher';b.innerHTML='✨ <span>Quest Mode</span><small>BETA</small>';
-b.style.cssText='position:fixed;right:18px;bottom:calc(22px + env(safe-area-inset-bottom));z-index:2147483000;border:1px solid #eadde9;border-radius:22px;padding:14px 18px;background:linear-gradient(135deg,#fff,#ffe8f2 52%,#eee9ff);color:#5b445c;box-shadow:0 14px 40px #674c6a35;font:900 16px Inter,system-ui,-apple-system,sans-serif;display:flex;align-items:center;gap:8px';
-b.querySelector('small').style.cssText='font-size:9px;letter-spacing:.12em;background:#fff;border-radius:99px;padding:4px 6px';
-b.onclick=()=>{sessionStorage.setItem('kathleenGamificationPreviewV1','1');window.KathleenGamification?.render?.()};
-document.body.appendChild(b);
-setTimeout(()=>window.KathleenGamification?.render?.(),150);
+function mountQuest(){
+ let b=document.getElementById('questBetaLauncher');
+ if(!b){b=document.createElement('button');b.type='button';b.id='questBetaLauncher';b.innerHTML='✨ <span>Quest Mode</span><small>BETA</small>';
+ b.style.cssText='position:fixed!important;right:16px!important;bottom:calc(86px + env(safe-area-inset-bottom))!important;z-index:2147483647!important;border:1px solid #eadde9!important;border-radius:20px!important;padding:13px 16px!important;background:linear-gradient(135deg,#fff,#ffe8f2 52%,#eee9ff)!important;color:#5b445c!important;box-shadow:0 12px 34px #674c6a3d!important;font:900 14px Inter,system-ui,-apple-system,sans-serif!important;display:flex!important;visibility:visible!important;opacity:1!important;align-items:center!important;gap:7px!important;width:auto!important;height:auto!important;transform:none!important';
+ b.querySelector('small').style.cssText='font-size:8px;letter-spacing:.12em;background:#fff;border-radius:99px;padding:4px 6px';
+ b.onclick=()=>{sessionStorage.setItem('kathleenGamificationPreviewV1','1');window.KathleenGamification?.render?.()};}
+ if(b.parentNode!==document.body)document.body.appendChild(b);else document.body.appendChild(b);
+}
+mountQuest();setTimeout(mountQuest,350);setTimeout(mountQuest,1200);
+new MutationObserver(()=>mountQuest()).observe(document.body,{childList:true,subtree:false});
 })();
 </script></body></html>
