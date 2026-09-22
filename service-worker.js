@@ -1,4 +1,4 @@
-const CACHE='kathleen-v37-2-mobile-notes-20260922';
+const CACHE='kathleen-v37-3-mobile-observations-hardroute-20260922';
 const CORE=['./tools/mobile-observations/index.html','./tools/seating-plan/mobile-view.js','./mobile-teacher-v34.js',
   './','./index.html','./home-todo-v2.js','./manifest.webmanifest',
   './tools/english-world-quiz/index.html','./tools/english-world-quiz/bonus.html','./tools/homework-vouchers/index.html',
@@ -77,6 +77,9 @@ self.addEventListener('fetch',event=>{
   if(url.origin===self.location.origin){
     event.respondWith((async()=>{
       const cache=await caches.open(CACHE);
+      if(url.searchParams.has('v')){
+        try{const fresh=await fetch(req,{cache:'no-store'});if(fresh.ok)await cache.put(req,fresh.clone());return fresh}catch(e){const fallback=await cache.match(req);if(fallback)return fallback;return Response.error()}
+      }
       const hit=await cache.match(req);
       if(hit) return hit;
       try{
