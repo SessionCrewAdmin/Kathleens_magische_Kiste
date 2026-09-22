@@ -592,7 +592,7 @@ document.getElementById('todoAdd')?.addEventListener('click',addTodo);document.g
 renderHomeSchedule();renderNextLessonCard();renderTodos();setInterval(()=>{renderHomeSchedule();renderNextLessonCard()},60000);window.addEventListener('storage',e=>{if(['kathleenClassroomSharedV1','kathleenGlobalClassV1','kathleenTimetableSnapshotV1'].includes(e.key)){renderHomeSchedule();renderNextLessonCard()}});
 })();
 </script><script src="tools/todo-store.js?v=20260922-1900"></script><script src="home-todo-v2.js?v=20260922-1900"></script><script src="tools/lesson-mode.js?v=20260921-2224"></script><script src="tools/kathleen-i18n.js?v=20260922-0723"></script><script src="mobile-teacher-v34.js?v=20260922-1900"></script><script src="tools/gamification-preview.js"></script><script>
-(()=>{if(new URLSearchParams(location.search).get('gamification')!=='preview')return;
+(()=>{const q=new URLSearchParams(location.search),enabled=q.get('gamification')==='off'?false:true;if(!enabled)return;
 sessionStorage.setItem('kathleenGamificationPreviewV1','1');
 function mountQuestCard(){
  const card=document.getElementById('questBetaCard'),btn=document.getElementById('questBetaOpen');
