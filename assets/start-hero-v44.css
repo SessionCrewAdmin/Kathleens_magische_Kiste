@@ -1,0 +1,6 @@
+/* V44: use the finished Quest Mode illustration instead of placeholder CSS scenery */
+.start-hero{background:#e7dfee url('tools/quest-mode/landscape.webp') center/cover no-repeat!important}
+.start-hero-scene{display:none!important}
+.start-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#f5eafaeb 0%,#f5eafa80 40%,#f5eafa12 73%);pointer-events:none}
+.start-hero-copy,.start-customize{position:relative;z-index:2}.start-customize{position:absolute}
+@media(max-width:560px){.start-hero{background-position:68% center!important}.start-hero:before{background:linear-gradient(90deg,#f5eafaf2 0%,#f5eafaa5 62%,#f5eafa25 100%)}}
