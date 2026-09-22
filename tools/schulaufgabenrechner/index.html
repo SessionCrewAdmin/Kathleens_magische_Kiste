@@ -66,7 +66,7 @@
 <section class="view" id="classbookView"><div class="panel"><h2>Klassennotenbogen</h2><div class="subjectBar"><div class="field"><label>Fach</label><select id="bookSubject"></select></div><label class="hint">Große LN <input class="score" id="majorRatio" type="number" min=".1" step=".5" value="2"></label><label class="hint">Weitere LN <input class="score" id="minorRatio" type="number" min=".1" step=".5" value="1"></label></div><p class="hint">Fächer werden getrennt geführt. Nachschriften ersetzen für den jeweiligen Schüler die ursprüngliche Leistung und erzeugen keine zusätzliche Gewichtung.</p><div class="tableWrap" id="classbook"></div></div></section>
 <section class="view" id="studentsView"><div class="panel"><h2>Schülernotenbogen</h2><div class="subjectBar"><div class="field"><label>Fach</label><select id="studentSubject"></select></div></div><div class="studentCards" id="studentCards"></div></div></section>
 </main>
-<script src="../classroom-tools-shared.js?v=20260922-0713"></script><script src="../presentation-mode.js"></script><script>
+<script src="../classroom-tools-shared.js?v=20260922-0810"></script><script src="../presentation-mode.js"></script><script>
 (()=>{'use strict';
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 const STORE='gradebook-v1',HISTORY_MAX=60,AUTOSAVE_MS=650;
@@ -296,4 +296,4 @@ document.addEventListener('visibilitychange',()=>{if(document.visibilityState===
  db=migrateDb(await KathleenClassLists.secureGet(STORE,db));$('#majorRatio').value=db.settings.majorRatio;$('#minorRatio').value=db.settings.minorRatio;fillClasses();const global=KathleenClassLists.getGlobalClass?.(),globalAssessment=global?db.assessments.find(a=>a.classId===global.id):null;current=globalAssessment?clone(globalAssessment):(global?newModel():(db.assessments[0]?clone(db.assessments[0]):newModel()));fillClasses();syncInputs();history=[];future=[];updateUndoButtons();setSaveState('saved','✓ Gespeichert')
 })().catch(e=>{console.error(e);setSaveState('error','! Fehler');toast(e.message||'Notenzentrale konnte nicht geladen werden')});
 })();
-</script><script src="observations.js?v=20260921-1700"></script><script src="../kathleen-i18n.js?v=20260921-1800"></script></body></html>
+</script><script src="observations.js?v=20260922-0810"></script><script src="../kathleen-i18n.js?v=20260921-1800"></script></body></html>
