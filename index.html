@@ -512,7 +512,7 @@ const FALLBACK=[
 {id:'fr5',day:5,start:'11:35',end:'12:15',className:'7a',subject:'Englisch',room:'B-211'},
 {id:'fr6',day:5,start:'12:15',end:'13:00',className:'9a',subject:'Englisch',room:'A-101'}];
 const DAYS=['','Montag','Dienstag','Mittwoch','Donnerstag','Freitag'],esc=s=>String(s??'').replace(/[&<>"]/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m])),mins=t=>{const [h,m]=String(t||'0:0').split(':').map(Number);return h*60+m};
-function scheduleData(){try{const x=JSON.parse(localStorage.getItem('kathleenTimetableSnapshotV1')||'null');if(Array.isArray(x?.entries)&&x.entries.length)return x.entries}catch(e){}return FALLBACK}
+function scheduleData(){try{const raw=localStorage.getItem('kathleenTimetableSnapshotV1');if(raw!==null){const x=JSON.parse(raw);if(Array.isArray(x?.entries))return x.entries}}catch(e){}return FALLBACK}
 function classMeta(){
  try{const x=JSON.parse(localStorage.getItem('kathleenClassMetaV1')||'[]');if(Array.isArray(x)&&x.length)return x}catch(e){}
  const seen=new Map;
