@@ -2066,7 +2066,7 @@ async function createTeacherSession(){
 function teacherActivateUI(){
   $("#teacherCode").textContent=teacherSessionCode||"------";
   $("#teacherJoinUrl").textContent=teacherSessionCode?`Schüler scannen den QR-Code und geben ${teacherSessionCode} ein.`:"Der Klassen-Code erscheint hier.";
-  ["releaseSession","resetSession","closeSession","refreshTeacher","exportClassCsv","pauseSession","resumeSession","add1Min","add2Min","add5Min","endNow","saveQuestionEdit","resetQuestionEdit","previewQuestionEdit","duplicateQuestionEdit","newQuestionEdit","deleteQuestionEdit"].forEach(id=>$("#"+id).disabled=!teacherSessionCode)
+  ["releaseSession","resetSession","closeSession","refreshTeacher","exportClassCsv","awardTop3","pauseSession","resumeSession","add1Min","add2Min","add5Min","endNow","saveQuestionEdit","resetQuestionEdit","previewQuestionEdit","duplicateQuestionEdit","newQuestionEdit","deleteQuestionEdit"].forEach(id=>$("#"+id).disabled=!teacherSessionCode)
 }
 async function controlTeacher(action){
   if(!teacherSessionCode||!teacherKey)return;
