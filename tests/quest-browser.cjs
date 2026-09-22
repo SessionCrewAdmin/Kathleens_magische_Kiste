@@ -50,6 +50,10 @@ const fs=require('node:fs');
  await page.goto('http://127.0.0.1:8765/?welcome=off');
  const link=page.locator('#questBetaOpen');assert.equal(await link.getAttribute('href'),'tools/quest-mode/');await link.click();await page.waitForURL('**/tools/quest-mode/');assert.equal(await page.locator('.student-card').count(),12);
  await page.setViewportSize({width:390,height:844});await page.goto('http://127.0.0.1:8765/?welcome=off');await page.locator('#mobileQuestOpen').click();await page.waitForURL('**/tools/quest-mode/');assert.equal(await page.locator('.student-card').count(),12);
+ const beforeReset=await page.evaluate(()=>KathleenGamification.current().weekly.progress);
+ page.once('dialog',d=>d.dismiss());await page.getByRole('button',{name:'Wochenziel zurücksetzen'}).click();assert.equal(await page.evaluate(()=>KathleenGamification.current().weekly.progress),beforeReset);
+ page.once('dialog',async d=>{assert.ok(d.message().includes('Klasse QA A'));await d.accept()});await page.getByRole('button',{name:'Wochenziel zurücksetzen'}).click();assert.equal(await page.evaluate(()=>KathleenGamification.current().weekly.progress),0);assert.equal(await page.evaluate(()=>KathleenGamification.current().classXp),25);
+ await page.reload();assert.equal(await page.evaluate(()=>KathleenGamification.current().weekly.progress),0);await page.getByRole('button',{name:'Letzte Aktion zurück'}).click();assert.equal(await page.evaluate(()=>KathleenGamification.current().weekly.progress),beforeReset);
  const screenshot=page.locator('.sidebar nav a');for(const a of await screenshot.all()){const href=await a.getAttribute('href');if(href){const res=await context.request.get(new URL(href,page.url()).href);assert.equal(res.status(),200,href)}}
  assert.deepEqual(errors,[]);
  console.log(JSON.stringify({browser:await browser.version(),platform:process.platform,layouts,checks:['empty state','home entry','class isolation','XP','undo','boss','beamer privacy','beamer live update','beamer class pin','reload persistence','search','navigation routes'],pageErrors:errors},null,2));

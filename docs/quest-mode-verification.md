@@ -12,7 +12,7 @@ An existing home To-do filter bug (`querySelector(...).forEach`) encountered in 
 
 ## Validation on Windows, 22 September 2026
 
-- Node regression suite: 8 passed, 0 failed.
+- Node regression suite: 12 passed, 0 failed.
 - Microsoft Edge 153.0.4234.48 and Google Chrome 151.0.7922.72, running on win32.
 - Browser flow: empty state; desktop and mobile Quest entry; selected class and roster; class/student XP; undo; boss progress and undo; class isolation; reload persistence; student search; navigation routes.
 - Beamer: no student names or student cards in the DOM; XP/boss updates from the teacher tab; stays pinned when the teacher switches class.
@@ -40,3 +40,9 @@ File: `tools/quest-mode/landscape.webp`. Generated with the built-in image gener
 Generation prompt:
 
 > Use case: stylized-concept. Create a single wide panoramic decorative background image for an educational fantasy quest dashboard, 1536 by 512 if possible. A richly detailed painterly 3D storybook landscape: a magical stone castle on the RIGHTMOST quarter on a small island/clifftop, slender towers with lavender roofs and blush pink pennants, mint green pine trees, a tranquil pale teal lake, soft layered distant mountains on the left, clouds. Match a polished fantasy game world map backdrop but recolor everything into gentle Kathleen pastel colors: dusty blush pink, lavender, cream, sage and mint. Bright soft daylight, sophisticated muted colors, dimensional materials, atmospheric depth, not flat vector artwork. Composition is crucial: left 65% stays visually quiet, mostly hazy lavender sky and faint distant mountain/lake with no foreground objects, for real UI overlay. Castle should occupy right quarter between vertical 15% and 85% and be completely visible in a wide banner crop. No people, NO text, NO lettering, NO UI, NO numbers, NO progress bars, NO logo, NO watermark. This is only an atmospheric background asset, not a screenshot or a whole interface.
+
+## Manual weekly reset
+
+The weekly card now has a reset button with a confirmation naming the active class and week. It resets only weekly progress and completion; class XP, student XP, combo and boss stay intact. A paid weekly reward stays claimed, including legacy completed weeks. Completing the goal again cannot award it twice. The next calendar week is eligible for its own reward. Reset uses the existing bounded undo history and is reversible through Last action back, even after reload. Calls guard against class or week changes while confirming.
+
+Regression checks cover cancellation, confirmed reset, reload and undo in Windows Edge, plus class isolation, unchanged student/class/boss data, legacy rewards, repeated completion, new weeks and empty-state no-ops in the core tests. No live classroom progress was reset during testing.
