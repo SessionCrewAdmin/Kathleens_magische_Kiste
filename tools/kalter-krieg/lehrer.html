@@ -1010,7 +1010,7 @@ body.glitching .glitch-layer,body.glitching .app{animation-duration:.46s!importa
           <p class="small">CSV enthält Name, Punkte, Fehler, beste Serie, Bearbeitungszeit und Fehler je Mission. Die Datei lässt sich direkt in Excel öffnen.</p>
           <div class="teacher-actions">
             <button class="btn btn-secondary" id="refreshTeacher" type="button" disabled>Aktualisieren</button>
-            <button class="btn btn-primary" id="exportClassCsv" type="button" disabled>Klassen-Ergebnisse als CSV</button>
+            <button class="btn btn-primary" id="exportClassCsv" type="button" disabled>Klassen-Ergebnisse als CSV</button><button class="btn btn-primary" id="awardTop3" type="button" disabled>🏆 Top 3 → Homework Voucher</button>
           </div>
         </div>
       </div>
@@ -2174,6 +2174,18 @@ function exportClassCSV(){
   downloadText(`Kalter_Krieg_${teacherSessionCode}_Ergebnisse.csv`,[head,...rows].map(r=>r.map(csvEscape).join(";")).join("\n"))
 }
 
+async function awardTop3Vouchers(){
+  if(!teacherResultsCache.length){alert("Noch keine Ergebnisse vorhanden.");return}
+  const winners=[...teacherResultsCache].sort((a,b)=>Number(b.score||0)-Number(a.score||0)||Number(a.mistakes||0)-Number(b.mistakes||0)||Number(b.best_combo||0)-Number(a.best_combo||0)).slice(0,3);
+  let g=null;try{g=JSON.parse(localStorage.getItem("kathleenGlobalClassV1")||"null")}catch(e){}
+  const className=String(g?.name||prompt("Für welche Klasse sollen die drei Voucher erstellt werden?")||"").trim();if(!className)return;
+  let pass=sessionStorage.getItem("kathleenAdminPass")||"";if(!pass){pass=prompt("Kisten-Adminpasswort zum Ausstellen der Homework Voucher:")||"";if(!pass)return}
+  try{const ok=await sbRpc("toolbox_verify_admin",{p_passphrase:pass});if(!ok)throw new Error("Admin-Passwort falsch");sessionStorage.setItem("kathleenAdminPass",pass)}catch(e){alert("Voucher konnten nicht erstellt werden: "+(e.message||e));return}
+  const btn=$("#awardTop3");if(btn){btn.disabled=true;btn.textContent="Voucher werden erstellt …"}
+  let made=0,skipped=0;
+  for(let i=0;i<winners.length;i++){const w=winners[i],claim=("coldwar-"+teacherSessionCode+"-"+(i+1)+"-"+String(w.client_id||w.player_name||"x")).slice(0,100);try{await sbRpc("voucher_create",{p_passphrase:pass,p_student_name:String(w.player_name||"").trim(),p_class_name:className,p_reason:"Operation Kalter Krieg · Platz "+(i+1),p_expires_at:null,p_note:"Automatisch aus der Klassenrangliste · "+Number(w.score||0)+" Punkte",p_source_tool:"Operation Kalter Krieg",p_source_session:null,p_claim_code:claim});made++}catch(e){if(String(e).includes("claim_already_used"))skipped++;else{console.error(e);alert("Voucher für "+w.player_name+" konnte nicht erstellt werden.");}}}
+  if(btn){btn.disabled=false;btn.textContent="🏆 Top 3 → Homework Voucher"}alert(made+" Homework Voucher erstellt"+(skipped?" · "+skipped+" bereits vorhanden":"")+".");
+}
 function buildCertificate(){
  const badges=[];if(mistakes===0)badges.push("Fehlerfreie Akte");if(bestCombo>=5)badges.push("Serienprofi");if([1,5,6].filter(n=>activeMissions.includes(n)).every(n=>missionErrors[n]===0))badges.push("Kartograf");if([3,5,7,8].filter(n=>activeMissions.includes(n)).every(n=>missionErrors[n]===0))badges.push("Quellenanalyst");if(!badges.length)badges.push("Archiv abgeschlossen");
  $("#certName").textContent=playerName;$("#certScore").textContent=score;$("#certMistakes").textContent=mistakes;$("#certCombo").textContent=bestCombo;$("#certStrong").textContent=$("#strongTopic").textContent;$("#certWeak").textContent=$("#revisitTopic").textContent;$("#certSession").textContent=currentSessionCode||"Übungsmodus";$("#certTeam").textContent=studentTeam||"Einzel";$("#certDate").textContent=new Date().toLocaleDateString("de-DE");$("#certBadges").innerHTML=badges.map(b=>`<span class="cert-badge">${b}</span>`).join("");$("#certificateOverlay").classList.add("show")
@@ -2933,7 +2945,7 @@ $("#add1Min").addEventListener("click",()=>teacherAddTime(60));
 $("#add2Min").addEventListener("click",()=>teacherAddTime(120));
 $("#add5Min").addEventListener("click",()=>teacherAddTime(300));
 $("#refreshTeacher").addEventListener("click",refreshTeacherPanel);
-$("#exportClassCsv").addEventListener("click",exportClassCSV);
+$("#exportClassCsv").addEventListener("click",exportClassCSV);$("#awardTop3")?.addEventListener("click",awardTop3Vouchers);
 $("#exportOwnCsv").addEventListener("click",exportOwnCSV);
 $("#saveQuestionEdit").addEventListener("click",saveQuestionEdit);
 $("#resetQuestionEdit").addEventListener("click",resetQuestionEdit);
