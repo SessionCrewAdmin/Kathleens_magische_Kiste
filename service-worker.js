@@ -1,4 +1,4 @@
-const CACHE='kathleen-v38-workflow-stability-20260922';
+const CACHE='kathleen-v38-1-workflow-stability-20260922';
 const CORE=['./tools/mobile-observations/index.html','./tools/seating-plan/mobile-view.js','./mobile-teacher-v34.js',
   './','./index.html','./home-todo-v2.js','./tools/todo-store.js','./tools/teacher-shell.js','./manifest.webmanifest',
   './tools/english-world-quiz/index.html','./tools/english-world-quiz/bonus.html','./tools/homework-vouchers/index.html',
