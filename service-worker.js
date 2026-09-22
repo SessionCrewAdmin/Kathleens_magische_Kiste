@@ -1,5 +1,5 @@
-const CACHE='kathleen-v38-2-quest-beta-20260922';
-const CORE=['./tools/mobile-observations/index.html','./tools/seating-plan/mobile-view.js','./mobile-teacher-v34.js',
+const CACHE='kathleen-v38-3-quest-dashboard-20260922';
+const CORE=['./tools/quest-mode/index.html','./tools/quest-mode/quest.js','./tools/quest-mode/quest.css','./tools/quest-mode/landscape.webp','./tools/mobile-observations/index.html','./tools/seating-plan/mobile-view.js','./mobile-teacher-v34.js',
   './','./index.html','./tools/gamification-preview.js','./tools/gamification-beamer/index.html','./home-todo-v2.js','./tools/todo-store.js','./tools/teacher-shell.js','./manifest.webmanifest',
   './tools/english-world-quiz/index.html','./tools/english-world-quiz/bonus.html','./tools/homework-vouchers/index.html',
   './tools/classroom-tools-shared.js','./tools/kathleen-i18n.js','./tools/lesson-mode.js','./tools/class-cockpit/index.html','./tools/randomizer/index.html','./tools/classroom-timer/index.html','./tools/team-generator/index.html',

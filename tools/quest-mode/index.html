@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f7eff7">
+  <title>Quest Mode · Kathleens magische Kiste</title>
+  <link rel="stylesheet" href="quest.css?v=20260922-1">
+</head>
+<body>
+  <aside class="sidebar" aria-label="Kisten-Navigation">
+    <a class="brand" href="../../"><span class="brand-icon">✧</span><span>Kathleens<br><strong>magische Kiste</strong></span></a>
+    <span class="nav-label">DEIN UNTERRICHT</span>
+    <nav>
+      <a href="../../" aria-label="Start">⌂ <span>Start</span></a>
+      <a href="../class-cockpit/" aria-label="Klassen">♧ <span>Klassen</span></a>
+      <a href="./" aria-current="page" aria-label="Quest Mode">✧ <span>Quest Mode</span></a>
+      <a href="../classroom-board/" aria-label="Whiteboard">▣ <span>Whiteboard</span></a>
+      <a href="../seating-plan/" aria-label="Sitzplan">▦ <span>Sitzplan</span></a>
+      <a href="../mobile-observations/" aria-label="Beobachtungen">◉ <span>Beobachtungen</span></a>
+      <a href="../homework-strikes/" aria-label="Hausaufgaben">✓ <span>Hausaufgaben</span></a>
+      <a href="../english-world-quiz/" aria-label="Quiz & Spiele">◎ <span>Quiz & Spiele</span></a>
+      <a href="../team-generator/" aria-label="Team Generator">♧ <span>Team Generator</span></a>
+      <a href="../classroom-timer/" aria-label="Timer">◷ <span>Timer</span></a>
+      <a href="../timetable/" aria-label="Stundenplan">▤ <span>Stundenplan</span></a>
+    </nav>
+    <div class="sidebar-foot"><span>Gemeinsam lernen.<br>Gemeinsam wachsen.</span><span class="mini-stars">✦ ✧</span></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><span>Unterricht <i>/</i> <strong>Quest Mode</strong></span><span class="teacher">✦ Frau Müller</span></header>
+    <main id="quest" aria-label="Quest-Lehrerdashboard"><p class="loading">Deine Klassenquest wird geladen …</p></main>
+    <div id="notice" role="status" aria-live="polite"></div>
+  </div>
+  <script src="../classroom-tools-shared.js"></script>
+  <script src="../lesson-mode.js"></script>
+  <script src="../gamification-preview.js?v=20260922-quest3"></script>
+  <script src="quest.js?v=20260922-1"></script>
+</body>
+</html>
