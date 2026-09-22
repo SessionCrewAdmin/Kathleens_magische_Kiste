@@ -21,7 +21,7 @@ function inject(){
   if(document.getElementById('kTeacherShell'))return;
   document.documentElement.classList.add('k-teacher-shell');
   const s=document.createElement('style');s.id='kTeacherShellStyle';s.textContent=`
-  .k-teacher-shell .kathleen-lang-switch{display:none!important}
+  .k-teacher-shell .kathleen-lang-switch,.k-teacher-shell .k-present-btn{display:none!important}
   #kTeacherShell{position:fixed;left:max(12px,env(safe-area-inset-left));top:max(12px,env(safe-area-inset-top));z-index:23500;display:flex;gap:6px;font-family:Inter,ui-rounded,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
   #kTeacherShell button{border:1px solid #eadde9;background:rgba(255,255,255,.96);color:#654d69;border-radius:13px;min-height:42px;padding:9px 12px;font:900 10px/1 Inter,Arial;box-shadow:0 8px 24px rgba(80,57,82,.12);backdrop-filter:blur(10px)}
   #kTeacherShell .kts-home{font-size:18px;width:44px;padding:0}
