@@ -1,14 +1,13 @@
+@import url('./teacher-shell-overrides-v54.css?v=20260923-v54');
 /* Shared compatibility layer: Quest Mode is the visual master, page logic stays untouched. */
 html.k-teacher-shell body.kds-content-offset{margin:0 0 0 var(--kds-sidebar)!important;padding:var(--kds-top) 0 0!important;min-height:100vh!important;background:var(--kds-bg)!important}
 html.k-teacher-shell body.kds-content-offset>main.shell,html.k-teacher-shell body.kds-content-offset>main.app{position:relative;z-index:1}
 html.k-teacher-shell:not([data-kds-page="whiteboard"]) body.kds-content-offset>main.shell{width:auto!important;max-width:1536px!important;margin-left:auto!important;margin-right:auto!important;padding:28px 30px 48px!important}
 html.k-teacher-shell .workspace>main,html.k-teacher-shell .workspace main#quest{max-width:1536px!important;margin:0 auto!important;padding:26px 30px 36px!important}
-/* Local page headings become content headers, not competing app chrome. */
 html.k-teacher-shell main>.top,html.k-teacher-shell main>.head,html.k-teacher-shell .shell>.top{min-height:62px!important;margin:0 0 18px!important;padding:0!important;border:0!important;background:transparent!important;box-shadow:none!important}
 html.k-teacher-shell main>.top h1,html.k-teacher-shell main>.head h1,html.k-teacher-shell .shell>.top h1{margin:0!important;color:#4e3c59!important;font:700 clamp(25px,2.3vw,34px)/1.05 Georgia,'Times New Roman',serif!important;letter-spacing:-.02em!important}
 html.k-teacher-shell main>.top .sub,html.k-teacher-shell main>.head p,html.k-teacher-shell .shell>.top .sub{color:var(--kds-muted)!important;font-size:11px!important;line-height:1.45!important}
 html.k-teacher-shell .top .brand .icon,html.k-teacher-shell .top .brand .ico,html.k-teacher-shell .head .brand .icon{width:48px!important;height:48px!important;border-radius:15px!important;background:linear-gradient(145deg,#f2e9f7,#eadff1)!important;color:#9d78b5!important;box-shadow:0 5px 16px #ad94b313!important;border:1px solid #e2d8e7!important}
-/* Shared cards and controls. */
 html.k-teacher-shell .panel,html.k-teacher-shell .context,html.k-teacher-shell .day,html.k-teacher-shell .class-card,html.k-teacher-shell .row:not(.actions):not(.cta){border-color:var(--kds-line)!important;box-shadow:0 4px 15px #b89eb408!important}
 html.k-teacher-shell .panel{background:rgba(255,253,253,.96)!important;border-radius:16px!important}
 html.k-teacher-shell .btn,html.k-teacher-shell button.btn{border-radius:11px!important;box-shadow:none!important}
@@ -16,23 +15,16 @@ html.k-teacher-shell .btn:hover,html.k-teacher-shell button.btn:hover{transform:
 html.k-teacher-shell input:not([type=checkbox]):not([type=radio]):not([type=color]),html.k-teacher-shell select,html.k-teacher-shell textarea{border-color:var(--kds-line)!important;border-radius:11px!important;background:#fffdfd!important;color:var(--kds-ink)!important;box-shadow:none!important}
 html.k-teacher-shell input:focus,html.k-teacher-shell select:focus,html.k-teacher-shell textarea:focus{outline:none!important;border-color:#cdb9d9!important;box-shadow:0 0 0 3px #bda6ce1a!important}
 html.k-teacher-shell .modalCard,html.k-teacher-shell .modal-card{border-color:var(--kds-line)!important;border-radius:18px!important;background:#fffdfd!important}
-/* Timetable: calmer premium cards, same editing behavior. */
 html.k-teacher-shell[data-kds-page="timetable"] .heroGrid{gap:12px!important}html.k-teacher-shell[data-kds-page="timetable"] .todayCard,html.k-teacher-shell[data-kds-page="timetable"] .nextCard{background:linear-gradient(140deg,#fffdfd,#faf5fb)!important}html.k-teacher-shell[data-kds-page="timetable"] .week{gap:10px!important}html.k-teacher-shell[data-kds-page="timetable"] .day{background:#fffdfd!important;border-radius:16px!important}html.k-teacher-shell[data-kds-page="timetable"] .slot{background:#fffafd!important;border-radius:12px!important}
-/* Classes / lists / tools share the same spacing scale. */
 html.k-teacher-shell[data-kds-page="classes"] .context{border-radius:16px!important;background:#fffdfd!important}html.k-teacher-shell[data-kds-page="classes"] .tool{border-radius:13px!important;box-shadow:none!important}html.k-teacher-shell[data-kds-page="classes"] .student{border-radius:10px!important}html.k-teacher-shell[data-kds-page="games"] .winner{border-radius:14px!important;box-shadow:0 5px 16px #a884aa12!important}
-/* Observations stays phone-fast, but earns a real desktop workspace. */
 html.k-teacher-shell[data-kds-page="observations"] body.kds-content-offset>main.app{max-width:980px!important;margin:0 auto!important;padding:28px 24px 48px!important}html.k-teacher-shell[data-kds-page="observations"] main.app header{margin-bottom:16px!important}html.k-teacher-shell[data-kds-page="observations"] main.app h1{font:700 30px/1.05 Georgia,'Times New Roman',serif!important;color:#4e3c59!important}html.k-teacher-shell[data-kds-page="observations"] .row{border-radius:13px!important}
-/* Whiteboard keeps its canvas semantics and only adopts the app frame. */
 html.k-teacher-shell[data-kds-page="whiteboard"],html.k-teacher-shell[data-kds-page="whiteboard"] body{overflow:hidden!important}
 html.k-teacher-shell[data-kds-page="whiteboard"] body.kds-content-offset{margin-left:var(--kds-sidebar)!important;padding-top:var(--kds-top)!important;width:calc(100vw - var(--kds-sidebar))!important;height:100vh!important;overflow:hidden!important}
 html.k-teacher-shell[data-kds-page="whiteboard"] .app{height:calc(100vh - var(--kds-top))!important;width:100%!important}
 html.k-teacher-shell[data-kds-page="whiteboard"] .top{border-bottom:1px solid var(--kds-line)!important;background:#fffdfdf5!important;margin:0!important;padding:8px 12px!important;min-height:58px!important}
 html.k-teacher-shell[data-kds-page="whiteboard"] .leftbar{top:76px}html.k-teacher-shell[data-kds-page="whiteboard"] .panel{max-height:calc(100vh - 170px)}
-/* Quest Mode already defines the target language; only remove duplicate shell offsets. */
 html.k-teacher-shell[data-kds-page="quest"] .workspace{margin:0!important;min-height:calc(100vh - var(--kds-top))!important}html.k-teacher-shell[data-kds-page="quest"] #quest{padding-top:26px!important}
-/* Root start page must use exactly the shared navigation geometry. */
 html.k-teacher-shell[data-kds-page="home"] body.kds-content-offset>main.shell,html.k-teacher-shell body.home47.kds-content-offset>.shell{margin:0!important;max-width:none!important;padding:0!important}
-/* Presentation mode removes app chrome and restores full canvas/content width. */
 html.k-teacher-shell body.k-presenting.kds-content-offset{margin-left:0!important;padding-top:0!important;width:100%!important}html.k-teacher-shell[data-kds-page="whiteboard"] body.k-presenting.kds-content-offset{margin-left:0!important;padding-top:0!important;width:100vw!important}html.k-teacher-shell[data-kds-page="whiteboard"] body.k-presenting .app{height:100vh!important}
 @media(max-width:1180px){html.k-teacher-shell:not([data-kds-page="whiteboard"]) body.kds-content-offset>main.shell{padding-left:22px!important;padding-right:22px!important}.k-teacher-shell .workspace>main,.k-teacher-shell .workspace main#quest{padding-left:22px!important;padding-right:22px!important}}
 @media(max-width:850px){html.k-teacher-shell:not([data-kds-page="whiteboard"]) body.kds-content-offset>main.shell{padding-left:18px!important;padding-right:18px!important}.k-teacher-shell .workspace>main,.k-teacher-shell .workspace main#quest{padding-left:18px!important;padding-right:18px!important}html.k-teacher-shell[data-kds-page="whiteboard"] .leftbar{top:68px}}
