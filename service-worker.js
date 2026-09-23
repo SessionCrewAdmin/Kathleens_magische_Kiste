@@ -1,7 +1,7 @@
-const CACHE='kathleen-v63-greeting-visible-20260923';
+const CACHE='kathleen-v64-quick-games-20260923';
 const CORE=['./tools/quest-mode/index.html','./tools/quest-mode/quest.js','./tools/quest-mode/quest.css','./tools/quest-mode/landscape.webp','./tools/mobile-observations/index.html','./tools/seating-plan/mobile-view.js','./mobile-teacher-v34.js',
-  './','./index.html','./assets/home-native-v47.css','./home-native-v47.js','./tools/gamification-preview.js','./tools/gamification-beamer/index.html','./home-todo-v2.js','./tools/todo-store.js','./tools/teacher-shell.js','./tools/teacher-design-v50.css','./tools/teacher-page-adapters-v50.css','./tools/teacher-shell-overrides-v54.css','./tools/teacher-premium-pages-v57.css','./tools/classroom-session.js','./tools/teacher-runtime-v54.js','./manifest.webmanifest',
-  './tools/english-world-quiz/index.html','./tools/english-world-quiz/bonus.html','./tools/homework-vouchers/index.html','./tools/escape-room/index.html','./tools/teacher-command/index.html',
+  './','./index.html','./assets/home-native-v47.css','./home-native-v47.js','./tools/gamification-preview.js','./tools/gamification-beamer/index.html','./home-todo-v2.js','./tools/todo-store.js','./tools/teacher-shell.js','./tools/teacher-design-v50.css','./tools/teacher-page-adapters-v50.css','./tools/teacher-shell-overrides-v54.css','./tools/teacher-premium-pages-v57.css','./tools/classroom-session.js','./tools/teacher-runtime-v54.js','./tools/quick-games-integration.js','./manifest.webmanifest',
+  './tools/english-world-quiz/index.html','./tools/english-world-quiz/bonus.html','./tools/quick-games/index.html','./tools/homework-vouchers/index.html','./tools/escape-room/index.html','./tools/teacher-command/index.html',
   './tools/classroom-tools-shared.js','./tools/kathleen-i18n.js','./tools/lesson-mode.js','./tools/class-cockpit/index.html','./tools/randomizer/index.html','./tools/classroom-timer/index.html','./tools/team-generator/index.html',
   './tools/class-lists/index.html','./tools/seating-plan/index.html','./tools/seating-plan/v27.css','./tools/seating-plan/v27.js','./tools/seating-plan/teacher-center.js','./tools/schulaufgabenrechner/index.html','./tools/schulaufgabenrechner/observations.js','./tools/homework-strikes/index.html','./tools/timetable/index.html','./tools/push-center/index.html','./tools/presentation-mode.js','./tools/classroom-board/index.html','./tools/classroom-board/board.css','./tools/classroom-board/widget-framework.js','./tools/classroom-board/board-app.js','./tools/classroom-board/presets.js','./tools/classroom-board/student.html','./tools/classroom-board/student-i18n.js','./tools/classroom-board/present.html','./tools/live-poll/index.html','./tools/live-poll/student.html',
   './tools/kalter-krieg/index.html','./tools/kalter-krieg/lehrer.html',
@@ -27,16 +27,20 @@ async function decorateTeacherPage(url,res){
   const type=res.headers.get('content-type')||'';if(!type.includes('text/html'))return res;
   let html=await res.text();
   const scope=self.registration.scope;
-  const baseDesign=new URL('tools/teacher-design-v50.css?v=20260923-v63',scope).href;
-  const adapter=new URL('tools/teacher-page-adapters-v50.css?v=20260923-v63',scope).href;
-  const premium=new URL('tools/teacher-premium-pages-v57.css?v=20260923-v63',scope).href;
-  const shell=new URL('tools/teacher-shell.js?v=20260923-v63',scope).href;
+  const baseDesign=new URL('tools/teacher-design-v50.css?v=20260923-v64',scope).href;
+  const adapter=new URL('tools/teacher-page-adapters-v50.css?v=20260923-v64',scope).href;
+  const premium=new URL('tools/teacher-premium-pages-v57.css?v=20260923-v64',scope).href;
+  const shell=new URL('tools/teacher-shell.js?v=20260923-v64',scope).href;
+  const quickGames=new URL('tools/quick-games-integration.js?v=20260923-v64',scope).href;
   let head='';
   if(!html.includes('teacher-design-v50.css'))head+='<link id="kdsDesign" rel="stylesheet" href="'+baseDesign+'">';
   if(!html.includes('teacher-page-adapters-v50.css'))head+='<link id="kdsAdapters" rel="stylesheet" href="'+adapter+'">';
   if(!html.includes('teacher-premium-pages-v57.css'))head+='<link id="kdsPremiumPages" rel="stylesheet" href="'+premium+'">';
   if(head)html=html.replace(/<\/head>/i,head+'</head>');
-  if(!html.includes('teacher-shell.js'))html=html.replace(/<\/body>/i,'<script src="'+shell+'"></script></body>');
+  let scripts='';
+  if(!html.includes('teacher-shell.js'))scripts+='<script src="'+shell+'"></script>';
+  if(!html.includes('quick-games-integration.js'))scripts+='<script src="'+quickGames+'"></script>';
+  if(scripts)html=html.replace(/<\/body>/i,scripts+'</body>');
   const headers=new Headers(res.headers);headers.delete('content-length');headers.delete('content-encoding');
   return new Response(html,{status:res.status,statusText:res.statusText,headers});
 }
