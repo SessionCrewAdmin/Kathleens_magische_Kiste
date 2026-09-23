@@ -1,6 +1,6 @@
-const CACHE='kathleen-v82-history-grade7-complete-20260923';
+const CACHE='kathleen-v83-quick-games-premium-v1-20260923';
 const CORE=['./tools/quest-mode/index.html','./tools/quest-mode/quest.js','./tools/quest-mode/quest.css','./tools/quest-mode/landscape.webp','./tools/mobile-observations/index.html','./tools/seating-plan/mobile-view.js','./mobile-teacher-v34.js',
-  './','./index.html','./assets/home-native-v47.css','./home-native-v47.js','./tools/gamification-preview.js','./tools/gamification-beamer/index.html','./home-todo-v2.js','./tools/todo-store.js','./tools/todo-page-integration.js','./tools/teacher-shell.js','./tools/teacher-design-v50.css','./tools/teacher-page-adapters-v50.css','./tools/teacher-shell-overrides-v54.css','./tools/teacher-premium-pages-v57.css','./tools/classroom-session.js','./tools/teacher-runtime-v54.js','./tools/quick-games-integration.js','./tools/country-hunt-integration.js','./tools/history-content-center-integration.js','./tools/quick-games/demo-packs-v66.js','./tools/quick-games/quick-games-v68.js','./manifest.webmanifest',
+  './','./index.html','./assets/home-native-v47.css','./home-native-v47.js','./tools/gamification-preview.js','./tools/gamification-beamer/index.html','./home-todo-v2.js','./tools/todo-store.js','./tools/todo-page-integration.js','./tools/teacher-shell.js','./tools/teacher-design-v50.css','./tools/teacher-page-adapters-v50.css','./tools/teacher-shell-overrides-v54.css','./tools/teacher-premium-pages-v57.css','./tools/classroom-session.js','./tools/teacher-runtime-v54.js','./tools/quick-games-integration.js','./tools/country-hunt-integration.js','./tools/history-content-center-integration.js','./tools/quick-games/demo-packs-v66.js','./tools/quick-games/quick-games-v68.js','./tools/quick-games/quick-games-premium-v1.css','./tools/quick-games/quick-games-premium-v1.js','./manifest.webmanifest',
   './tools/english-world-quiz/index.html','./tools/english-world-quiz/bonus.html','./tools/quick-games/index.html','./tools/quick-games/country-hunt/index.html','./tools/quick-games/history-hunt/index.html','./tools/quick-games/timeline-challenge/index.html','./tools/history-content-center/index.html','./tools/todos/index.html','./tools/todos/todos-v69.js','./tools/homework-vouchers/index.html','./tools/escape-room/index.html','./tools/teacher-command/index.html',
   './data/history/schema-v1.json','./data/history/catalog.json','./data/history/grade-7/chapter-1.json','./data/history/grade-7/chapter-2.json','./data/history/grade-7/chapter-3.json','./data/history/grade-7/chapter-4.json','./data/history/grade-7/chapter-5.json','./data/history/grade-7/chapter-6.json','./data/history/grade-7/chapter-7.json','./data/history/grade-7/review.json',
   './tools/classroom-tools-shared.js','./tools/kathleen-i18n.js','./tools/lesson-mode.js','./tools/class-cockpit/index.html','./tools/randomizer/index.html','./tools/classroom-timer/index.html','./tools/team-generator/index.html',
@@ -19,18 +19,22 @@ async function decorateTeacherPage(url,res){
   const type=res.headers.get('content-type')||'';if(!type.includes('text/html'))return res;
   let html=await res.text();
   const scope=self.registration.scope;
-  const baseDesign=new URL('tools/teacher-design-v50.css?v=20260923-v82',scope).href;
-  const adapter=new URL('tools/teacher-page-adapters-v50.css?v=20260923-v82',scope).href;
-  const premium=new URL('tools/teacher-premium-pages-v57.css?v=20260923-v82',scope).href;
-  const shell=new URL('tools/teacher-shell.js?v=20260923-v82',scope).href;
-  const quickGames=new URL('tools/quick-games-integration.js?v=20260923-v82',scope).href;
-  const premiumGames=new URL('tools/country-hunt-integration.js?v=20260923-v82',scope).href;
-  const historyCenter=new URL('tools/history-content-center-integration.js?v=20260923-v82',scope).href;
-  const todoPage=new URL('tools/todo-page-integration.js?v=20260923-v82',scope).href;
+  const baseDesign=new URL('tools/teacher-design-v50.css?v=20260923-v83',scope).href;
+  const adapter=new URL('tools/teacher-page-adapters-v50.css?v=20260923-v83',scope).href;
+  const premium=new URL('tools/teacher-premium-pages-v57.css?v=20260923-v83',scope).href;
+  const shell=new URL('tools/teacher-shell.js?v=20260923-v83',scope).href;
+  const quickGames=new URL('tools/quick-games-integration.js?v=20260923-v83',scope).href;
+  const premiumGames=new URL('tools/country-hunt-integration.js?v=20260923-v83',scope).href;
+  const historyCenter=new URL('tools/history-content-center-integration.js?v=20260923-v83',scope).href;
+  const todoPage=new URL('tools/todo-page-integration.js?v=20260923-v83',scope).href;
+  const quickPremiumCss=new URL('tools/quick-games/quick-games-premium-v1.css?v=20260923-v83',scope).href;
+  const quickPremiumJs=new URL('tools/quick-games/quick-games-premium-v1.js?v=20260923-v83',scope).href;
+  const isQuickGamesRoot=/\/tools\/quick-games\/(?:index\.html)?$/i.test(url.pathname);
   let head='';
   if(!html.includes('teacher-design-v50.css'))head+='<link id="kdsDesign" rel="stylesheet" href="'+baseDesign+'">';
   if(!html.includes('teacher-page-adapters-v50.css'))head+='<link id="kdsAdapters" rel="stylesheet" href="'+adapter+'">';
   if(!html.includes('teacher-premium-pages-v57.css'))head+='<link id="kdsPremiumPages" rel="stylesheet" href="'+premium+'">';
+  if(isQuickGamesRoot&&!html.includes('quick-games-premium-v1.css'))head+='<link id="qgPremiumV1" rel="stylesheet" href="'+quickPremiumCss+'">';
   if(head)html=html.replace(/<\/head>/i,head+'</head>');
   let scripts='';
   if(!html.includes('teacher-shell.js'))scripts+='<script src="'+shell+'"></script>';
@@ -38,6 +42,7 @@ async function decorateTeacherPage(url,res){
   if(!html.includes('country-hunt-integration.js'))scripts+='<script src="'+premiumGames+'"></script>';
   if(!html.includes('history-content-center-integration.js'))scripts+='<script src="'+historyCenter+'"></script>';
   if(!html.includes('todo-page-integration.js'))scripts+='<script src="'+todoPage+'"></script>';
+  if(isQuickGamesRoot&&!html.includes('quick-games-premium-v1.js'))scripts+='<script src="'+quickPremiumJs+'"></script>';
   if(scripts)html=html.replace(/<\/body>/i,scripts+'</body>');
   const headers=new Headers(res.headers);headers.delete('content-length');headers.delete('content-encoding');
   return new Response(html,{status:res.status,statusText:res.statusText,headers});
