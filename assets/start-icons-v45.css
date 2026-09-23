@@ -1,9 +1,0 @@
-/* V45 — consistent outline pictograms, matching the approved dashboard */
-.start-sidebar svg,.start-tool svg,.start-heading svg,.start-hero-copy svg,.start-customize svg{display:block;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.start-sidebar nav svg,.start-side-bottom svg{width:20px;height:20px;flex:0 0 20px;color:#7960ae}
-.start-brand svg{width:29px;height:29px;color:#b38ac2}
-.start-heading>svg{width:29px;height:29px;flex:0 0 29px;color:#9a62c5}
-.start-tool>svg{position:absolute;left:18px;width:38px;height:38px;color:#8d5fc0;stroke-width:1.65}
-.start-tool.green>svg{color:#278765}.start-tool.pink>svg{color:#d44392}.start-tool.yellow>svg{color:#df9417}.start-tool.blue>svg{color:#5545c7}.start-tool.peach>svg{color:#e64b9c}
-.start-hero-copy a svg,.start-customize svg{width:17px;height:17px}
-.start-tool>i,.start-heading>span,.start-sidebar nav i,.start-side-bottom i{display:none!important}
