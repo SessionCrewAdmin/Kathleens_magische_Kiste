@@ -21,7 +21,7 @@ Kathleens magische Kiste wird von einer historisch gewachsenen Sammlung einzelne
 - `tools/quest-mode/` – Gamification
 - `tools/timetable/`, `tools/class-cockpit/`, `tools/class-lists/`, `tools/seating-plan/`, `tools/mobile-observations/`, `tools/schulaufgabenrechner/` – Klassen- und Unterrichtsorganisation
 
-## Phase A · bereits bereinigt
+## Phase A · erster Cleanup-Pass abgeschlossen
 
 Folgende Dateien waren weder im aktuellen `index.html` noch im aktuellen Service-Worker-CORE eingebunden und stammen aus ersetzten Start-/Dashboard-Iterationen. Sie wurden entfernt:
 
@@ -40,6 +40,16 @@ Folgende Dateien waren weder im aktuellen `index.html` noch im aktuellen Service
 - `assets/start-hero-v44.css`
 - `assets/start-icons-v45.css`
 - `assets/start-polish-v46.css`
+
+Zusätzlich wurden die nicht mehr referenzierten Assets des alten Boat-Reveal-Prototyps entfernt:
+
+- `assets/reveal/boat-data-01.js` bis `boat-data-10.js`
+- `assets/reveal/boat-data-10a.js` bis `boat-data-10c.js`
+- `assets/reveal/boat-data-11a.js` bis `boat-data-11c.js`
+- `assets/reveal/boat-image-0.js`
+- `assets/reveal/kathleen-boat-reveal.svg`
+
+Die aktuellen Welcome-Screens (`welcome-morning.webp`, `welcome-lunch.webp`, `welcome-evening.webp`, `kathleen-welcome-desktop.webp`) bleiben erhalten.
 
 ## Noch nicht löschen
 
