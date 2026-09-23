@@ -6,5 +6,11 @@ html.k-teacher-shell.kds-sidebar-collapsed .kds-sidebar-toggle{display:grid!impo
 html.k-teacher-shell.kds-sidebar-collapsed .kds-sidebar-toggle svg{transform:rotate(180deg)!important}
 html.k-teacher-shell.kds-sidebar-collapsed .kds-topbar{left:0!important}
 html.k-teacher-shell.kds-sidebar-collapsed body.kds-content-offset{margin-left:0!important}
-@media(max-width:850px) and (min-width:561px){html.k-teacher-shell.kds-sidebar-collapsed{--kds-sidebar:0px!important}html.k-teacher-shell.kds-sidebar-collapsed .kds-sidebar-toggle{top:66px!important}}
-@media(max-width:560px){html.k-teacher-shell.kds-sidebar-collapsed .kds-sidebar-toggle{display:none!important}}
+/* Back-to-tools buttons are redundant once the shared navigation is present. */
+html.k-teacher-shell #backBtn,html.k-teacher-shell #back{display:none!important}
+/* The global class context belongs to the app bar, not to individual page headers. */
+html.k-teacher-shell .kds-top-actions>.kcl-context-chip{min-height:40px!important;border-color:var(--kds-line)!important;background:#fff!important;box-shadow:none!important;font-size:10px!important;color:#6f5b79!important}
+html.k-teacher-shell .kds-top-actions>.kcl-context-chip .kcl-live{width:7px;height:7px}
+@media(max-width:1180px){html.k-teacher-shell .kds-search{width:210px}.kds-top-actions>.kcl-context-chip{max-width:150px;overflow:hidden;text-overflow:ellipsis}}
+@media(max-width:850px) and (min-width:561px){html.k-teacher-shell.kds-sidebar-collapsed{--kds-sidebar:0px!important}html.k-teacher-shell.kds-sidebar-collapsed .kds-sidebar-toggle{top:66px!important}html.k-teacher-shell .kds-top-actions>.kcl-context-chip{display:none!important}}
+@media(max-width:560px){html.k-teacher-shell.kds-sidebar-collapsed .kds-sidebar-toggle{display:none!important}html.k-teacher-shell .kds-top-actions>.kcl-context-chip{display:none!important}}
