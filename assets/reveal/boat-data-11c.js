@@ -1,1 +1,0 @@
-window.__kBoat=(window.__kBoat||'')+'S+ZpFimmsY0lP68zByFd9R5oAAA=';
