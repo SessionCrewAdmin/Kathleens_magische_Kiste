@@ -1,4 +1,4 @@
-const CACHE='kathleen-v55-premium-session-final-20260923';
+const CACHE='kathleen-v56-premium-session-shell-20260923';
 const CORE=['./tools/quest-mode/index.html','./tools/quest-mode/quest.js','./tools/quest-mode/quest.css','./tools/quest-mode/landscape.webp','./tools/mobile-observations/index.html','./tools/seating-plan/mobile-view.js','./mobile-teacher-v34.js',
   './','./index.html','./assets/home-native-v47.css','./home-native-v47.js','./tools/gamification-preview.js','./tools/gamification-beamer/index.html','./home-todo-v2.js','./tools/todo-store.js','./tools/teacher-shell.js','./tools/teacher-design-v50.css','./tools/teacher-page-adapters-v50.css','./tools/teacher-shell-overrides-v54.css','./tools/classroom-session.js','./tools/teacher-runtime-v54.js','./manifest.webmanifest',
   './tools/english-world-quiz/index.html','./tools/english-world-quiz/bonus.html','./tools/homework-vouchers/index.html','./tools/escape-room/index.html','./tools/teacher-command/index.html',
@@ -26,12 +26,12 @@ async function decorateTeacherPage(url,res){
   const type=res.headers.get('content-type')||'';if(!type.includes('text/html'))return res;
   let html=await res.text();
   const scope=self.registration.scope;
-  const baseDesign=new URL('tools/teacher-design-v50.css?v=20260923-v55',scope).href;
-  const adapter=new URL('tools/teacher-page-adapters-v50.css?v=20260923-v55',scope).href;
-  const shell=new URL('tools/teacher-shell.js?v=20260923-v55',scope).href;
+  const baseDesign=new URL('tools/teacher-design-v50.css?v=20260923-v56',scope).href;
+  const adapter=new URL('tools/teacher-page-adapters-v50.css?v=20260923-v56',scope).href;
+  const shell=new URL('tools/teacher-shell.js?v=20260923-v56',scope).href;
   let head='';
-  if(!html.includes('teacher-design-v50.css'))head+='<link rel="stylesheet" href="'+baseDesign+'">';
-  if(!html.includes('teacher-page-adapters-v50.css'))head+='<link rel="stylesheet" href="'+adapter+'">';
+  if(!html.includes('teacher-design-v50.css'))head+='<link id="kdsDesign" rel="stylesheet" href="'+baseDesign+'">';
+  if(!html.includes('teacher-page-adapters-v50.css'))head+='<link id="kdsAdapters" rel="stylesheet" href="'+adapter+'">';
   if(head)html=html.replace(/<\/head>/i,head+'</head>');
   if(!html.includes('teacher-shell.js'))html=html.replace(/<\/body>/i,'<script src="'+shell+'"></script></body>');
   const headers=new Headers(res.headers);headers.delete('content-length');headers.delete('content-encoding');
