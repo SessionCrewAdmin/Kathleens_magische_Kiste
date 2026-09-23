@@ -1,4 +1,4 @@
-/* Final shell refinements: the desktop sidebar can fully disappear to the left. */
+/* Final shell refinements: the desktop/sidebar can fully disappear to the left. */
 html.k-teacher-shell.kds-sidebar-collapsed{--kds-sidebar:0px!important}
 html.k-teacher-shell.kds-sidebar-collapsed .kds-sidebar{width:0!important;padding:0!important;border-right:0!important;box-shadow:none!important;overflow:visible!important;background:transparent!important}
 html.k-teacher-shell.kds-sidebar-collapsed .kds-sidebar>*:not(.kds-sidebar-toggle){display:none!important}
@@ -12,5 +12,5 @@ html.k-teacher-shell .kds-top-actions>.kcl-context-chip .kcl-live{width:7px;heig
 html.k-teacher-shell .kds-qr-actions{grid-template-columns:repeat(3,minmax(0,1fr))!important}
 html.k-teacher-shell .kds-qr-actions [data-present]{border:0!important;background:linear-gradient(120deg,#c986ab,#9f87bc)!important;color:#fff!important}
 @media(max-width:1180px){html.k-teacher-shell .kds-search{width:210px}.kds-top-actions>.kcl-context-chip{max-width:150px;overflow:hidden;text-overflow:ellipsis}}
-@media(max-width:850px) and (min-width:561px){html.k-teacher-shell.kds-sidebar-collapsed{--kds-sidebar:0px!important}html.k-teacher-shell.kds-sidebar-collapsed .kds-sidebar-toggle{top:66px!important}html.k-teacher-shell .kds-top-actions>.kcl-context-chip{display:none!important}}
-@media(max-width:560px){html.k-teacher-shell.kds-sidebar-collapsed .kds-sidebar-toggle{display:none!important}html.k-teacher-shell .kds-top-actions>.kcl-context-chip{display:none!important}html.k-teacher-shell .kds-qr-actions{grid-template-columns:1fr!important}}
+@media(max-width:850px) and (min-width:561px){html.k-teacher-shell .kds-sidebar-toggle{display:grid!important;top:66px!important}html.k-teacher-shell.kds-sidebar-collapsed{--kds-sidebar:0px!important}html.k-teacher-shell.kds-sidebar-collapsed .kds-sidebar-toggle{top:66px!important}html.k-teacher-shell .kds-top-actions>.kcl-context-chip{display:none!important}}
+@media(max-width:560px){html.k-teacher-shell .kds-sidebar-toggle,html.k-teacher-shell.kds-sidebar-collapsed .kds-sidebar-toggle{display:none!important}html.k-teacher-shell .kds-top-actions>.kcl-context-chip{display:none!important}html.k-teacher-shell .kds-qr-actions{grid-template-columns:1fr!important}}
