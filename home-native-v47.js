@@ -4,6 +4,8 @@ const I={home:'<path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v10h13V10M9.5 20v-6
 const svg=k=>'<svg viewBox="0 0 24 24" aria-hidden="true">'+(I[k]||I.spark)+'</svg>';
 function ensureSharedShell(){if(window.KathleenTeacherShell)return;const old=[...document.scripts].find(s=>s.src.includes('/tools/teacher-shell.js'));if(old)return;const s=document.createElement('script');s.src='tools/teacher-shell.js?v=20260923-v59';document.body.appendChild(s)}
 function icons(){document.querySelectorAll('[data-icon]').forEach(e=>e.innerHTML=svg(e.dataset.icon))}
+function greetingFor(date=new Date()){const h=date.getHours();if(h<5)return'Gute Nacht, Kathleen.';if(h<11)return'Guten Morgen, Kathleen.';if(h<14)return'Mahlzeit, Kathleen.';if(h<18)return'Einen schönen Nachmittag, Kathleen.';return'Guten Abend, Kathleen.'}
+function updateGreeting(){const h=document.querySelector('.home47-hero h1');if(!h)return;const next=greetingFor();if(h.textContent!==next)h.textContent=next;h.dataset.dynamicGreeting='1'}
 function recent(){const box=document.getElementById('home47Recent');if(!box)return;let r=[];try{r=JSON.parse(localStorage.getItem(REC)||'[]')}catch(e){}if(!r.length)r=[{name:'Sitzplan',href:'tools/seating-plan/',icon:'users'},{name:'Timer',href:'tools/classroom-timer/',icon:'clock'},{name:'Team Generator',href:'tools/team-generator/',icon:'users'}];box.innerHTML=r.slice(0,3).map(x=>'<a class="home47-recent-row" href="'+x.href+'">'+svg(x.icon||'clock')+'<span>'+x.name+'</span><span>›</span></a>').join('')}
 function pushRecent(name,href,icon='clock'){let r=[];try{r=JSON.parse(localStorage.getItem(REC)||'[]')}catch(e){}r=[{name,href,icon},...r.filter(x=>x.name!==name)].slice(0,6);localStorage.setItem(REC,JSON.stringify(r));recent()}
 function gap(a,b){const m=x=>{const [h,n]=x.split(':').map(Number);return h*60+n};return m(b)-m(a)}
@@ -22,7 +24,7 @@ function loadOrder(){let order=[];try{order=JSON.parse(localStorage.getItem(orde
 function saveOrder(){localStorage.setItem(orderKey(),JSON.stringify([...document.querySelectorAll('#view-home>[data-home47-block]')].map(x=>x.dataset.home47Block)))}
 function toggleEdit(){edit=!edit;document.body.classList.toggle('home47-edit',edit);document.querySelectorAll('#view-home>[data-home47-block]').forEach(el=>{el.draggable=edit;el.ondragstart=e=>{if(edit)e.dataTransfer.setData('text/plain',el.dataset.home47Block)};el.ondragover=e=>{if(edit)e.preventDefault()};el.ondrop=e=>{if(!edit)return;e.preventDefault();const from=document.querySelector('[data-home47-block="'+e.dataTransfer.getData('text/plain')+'"]');if(from&&from!==el){el.before(from);saveOrder()}}})}
 function restoreSearch(){const q=sessionStorage.getItem('kathleenHomeSearchV53');if(!q)return;sessionStorage.removeItem('kathleenHomeSearchV53');const s=document.getElementById('search');if(s){s.value=q;s.dispatchEvent(new Event('input'));document.querySelector('.nav-btn[data-view="library"]')?.click()}}
-function init(){document.body.classList.add('home47');ensureSharedShell();icons();views();recent();loadOrder();watch();restoreSearch()}
-window.KathleenHome47={toggleEdit,startLesson:openStart,enhanceSchedule};
+function init(){document.body.classList.add('home47');updateGreeting();ensureSharedShell();icons();views();recent();loadOrder();watch();restoreSearch();setInterval(updateGreeting,60000);window.addEventListener('focus',updateGreeting);document.addEventListener('visibilitychange',()=>{if(!document.hidden)updateGreeting()})}
+window.KathleenHome47={toggleEdit,startLesson:openStart,enhanceSchedule,updateGreeting,greetingFor};
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>setTimeout(init,0));else setTimeout(init,0);
 })();
