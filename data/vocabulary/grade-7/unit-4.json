@@ -1,1 +1,2493 @@
-{"schema_version":"1.0","subject":"English","grade":7,"unit":4,"title":"In the Desert Southwest","import_status":"full_import","entry_count":97,"sections":["Across cultures 3: Dos and don'ts","Check-in","Check-out","Skills: Reading techniques - Skimming and scanning","Station 1: If I said no, I'd give up a big chance","Station 2: Adam's travel blog [eskandıfan]","Station 3: The gunfight at the O.K. Corral","Story: An Arizona adventure","Unit task: My travel blog"],"audit":{"source_format":"screenshots","binary_in_repo":false,"examples_in_repo":false},"parts":["unit-4-part-1.json","unit-4-part-2.json"],"storage":"compact-array-v1"}
+{
+  "schema_version": "2.0",
+  "grade": 7,
+  "unit": 4,
+  "title": "In the Desert Southwest",
+  "entry_count": 107,
+  "entries": [
+    {
+      "id": "g7-u4-0001",
+      "english": "Pueblo",
+      "german": "Bezeichnung fūr die im Sūdwesten der USA lebenden Ureinwohner",
+      "phonetic": "ˈpwebləʊ",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Check-in",
+      "page": 213,
+      "source": {
+        "page": 213,
+        "half": "R",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "In the Southwest there are 19 Pueblo settlements which are still inhabited."
+    },
+    {
+      "id": "g7-u4-0002",
+      "english": "settlement",
+      "german": "Siedlung",
+      "phonetic": "ˈsetlmənt",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Check-in",
+      "page": 213,
+      "source": {
+        "page": 213,
+        "half": "R",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "This settlement later became an important town. settlement → to settle → a settler"
+    },
+    {
+      "id": "g7-u4-0003",
+      "english": "to be inhabited",
+      "german": "bewohnt sein",
+      "phonetic": "bi ɪnˈhæbɪtɪd",
+      "part_of_speech": "verb",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Check-in",
+      "page": 213,
+      "source": {
+        "page": 213,
+        "half": "R",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4",
+        "difficult"
+      ],
+      "source_note": "If you inhabit a country, you live there. Fr. habiter; Lat. abitare in"
+    },
+    {
+      "id": "g7-u4-0004",
+      "english": "adobe (no pl)",
+      "german": "Lehmziegel",
+      "phonetic": "əˈdəʊbi",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Check-in",
+      "page": 213,
+      "source": {
+        "page": 213,
+        "half": "R",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "The buildings are made of adobe."
+    },
+    {
+      "id": "g7-u4-0005",
+      "english": "speed",
+      "german": "Geschwindigkeit",
+      "phonetic": "spiːd",
+      "part_of_speech": "adjective",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Check-in",
+      "page": 213,
+      "source": {
+        "page": 213,
+        "half": "R",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "Josh didn't just win the race. He also broke the speed record."
+    },
+    {
+      "id": "g7-u4-0006",
+      "english": "record",
+      "german": "Rekord",
+      "phonetic": "ˈrekɔːd",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Check-in",
+      "page": 213,
+      "source": {
+        "page": 213,
+        "half": "R",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "If you do something in record time, nobody has ever done it as fast as that before. Fr. record (m)"
+    },
+    {
+      "id": "g7-u4-0007",
+      "english": "miles per hour (mph)",
+      "german": "Meilen pro Stunde",
+      "phonetic": "ˌmaɪlz pər ˈaʊə",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Check-in",
+      "page": 213,
+      "source": {
+        "page": 213,
+        "half": "R",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "Near this school, you aren't allowed to drive more than 15 mph."
+    },
+    {
+      "id": "g7-u4-0008",
+      "english": "kilometres per hour (km/h)",
+      "german": "Stundenkilometer",
+      "phonetic": "kɪˌlɒmɪtəz pər ˈaʊə",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Check-in",
+      "page": 213,
+      "source": {
+        "page": 213,
+        "half": "R",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4",
+        "difficult"
+      ],
+      "source_note": "In German cities, you aren't allowed to drive more than 50 km/h."
+    },
+    {
+      "id": "g7-u4-0009",
+      "english": "extreme",
+      "german": "Extrem",
+      "phonetic": "ɪkˈstriːm",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Check-in",
+      "page": 213,
+      "source": {
+        "page": 213,
+        "half": "R",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "The Southwest is a land of extremes. Fr. extrême; Lat. extremus"
+    },
+    {
+      "id": "g7-u4-0010",
+      "english": "cool",
+      "german": "kühl",
+      "phonetic": "kuːl",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Check-in",
+      "page": 213,
+      "source": {
+        "page": 213,
+        "half": "R",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "The weather can be cold, cool, warm or hot."
+    },
+    {
+      "id": "g7-u4-0011",
+      "english": "wide-open",
+      "german": "weit und flach",
+      "phonetic": "ˌwaɪd ˈəʊpən",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Check-in",
+      "page": 213,
+      "source": {
+        "page": 213,
+        "half": "R",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "There aren't many cities in this region, but lots of wide-open spaces."
+    },
+    {
+      "id": "g7-u4-0012",
+      "english": "cultural",
+      "german": "kulturell",
+      "phonetic": "ˈkʌltʃrəl",
+      "part_of_speech": "adjective",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Check-in",
+      "page": 213,
+      "source": {
+        "page": 213,
+        "half": "R",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "There are cultura/ differences between people who come from different countries. cultural → culture Fr. culturel/-le"
+    },
+    {
+      "id": "g7-u4-0013",
+      "english": "gigantic",
+      "german": "gigantisch; riesig",
+      "phonetic": "dʒaɪˈɡæntɪk",
+      "part_of_speech": "adjective",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Check-in",
+      "page": 213,
+      "source": {
+        "page": 213,
+        "half": "R",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "Those mountains are gigantic! Fr. gigantesque"
+    },
+    {
+      "id": "g7-u4-0014",
+      "english": "climate",
+      "german": "Klima",
+      "phonetic": "ˈklaɪmət",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Check-in",
+      "page": 213,
+      "source": {
+        "page": 213,
+        "half": "R",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "The climate in the Desert Southwest region is hot and dry. - the kind of weather that is typical of a country or area"
+    },
+    {
+      "id": "g7-u4-0015",
+      "english": "destruction",
+      "german": "Zerstörung",
+      "phonetic": "dɪˈstrʌkʃn",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Check-in",
+      "page": 213,
+      "source": {
+        "page": 213,
+        "half": "R",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "We must stop the destruction of the environment. Fr. destruction (f)"
+    },
+    {
+      "id": "g7-u4-0016",
+      "english": "civilization",
+      "german": "Kultur; Zivilisation",
+      "phonetic": "ˌsɪvɪlaɪˈzeɪʃn",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Check-in",
+      "page": 213,
+      "source": {
+        "page": 213,
+        "half": "R",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "The Romans brought civilization to many parts of Europe. Fr. civilisation (f); Lat. civilis"
+    },
+    {
+      "id": "g7-u4-0017",
+      "english": "site",
+      "german": "Ort; Gelände; Schauplatz",
+      "phonetic": "saɪt",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Check-in",
+      "page": 213,
+      "source": {
+        "page": 213,
+        "half": "R",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "We visited lots of historical sites."
+    },
+    {
+      "id": "g7-u4-0018",
+      "english": "natural",
+      "german": "natürlich; Natur-",
+      "phonetic": "ˈnætʃrəl",
+      "part_of_speech": "adjective",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Check-in",
+      "page": 213,
+      "source": {
+        "page": 213,
+        "half": "R",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "We must protect the natural environment. natural → nature Fr. naturel/-le; Lat. naturalis"
+    },
+    {
+      "id": "g7-u4-0019",
+      "english": "gym",
+      "german": "Turnhalle; Fitnessstudio",
+      "phonetic": "dʒɪm",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 1: If I said no, I'd give up a big chance",
+      "page": 214,
+      "source": {
+        "page": 214,
+        "half": "L",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "I go to the gym twice a week because I want to stay fit. 'Gym' is short for gymnasium'. It doesn't mean the same as German'Gymnasium'."
+    },
+    {
+      "id": "g7-u4-0020",
+      "english": "tryout",
+      "german": "Aufnahmetest (für eine Mannschaft)",
+      "phonetic": "ˈtraɪaʊt",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 1: If I said no, I'd give up a big chance",
+      "page": 214,
+      "source": {
+        "page": 214,
+        "half": "L",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "When are the tryouts for the college football team? tryout → to try out"
+    },
+    {
+      "id": "g7-u4-0021",
+      "english": "by",
+      "german": "(spätestens) bis",
+      "phonetic": "baɪ",
+      "part_of_speech": "preposition",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 1: If I said no, I'd give up a big chance",
+      "page": 214,
+      "source": {
+        "page": 214,
+        "half": "L",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "We have to finish our project by Friday. by tomorrow morning - not later than tomorrow morning ! by Friday ≠ until Friday"
+    },
+    {
+      "id": "g7-u4-0022",
+      "english": "to try out for",
+      "german": "am Auswahlverfahren teilnehmen",
+      "phonetic": "ˌtraɪ ˈaʊt fə",
+      "part_of_speech": "verb",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 1: If I said no, I'd give up a big chance",
+      "page": 214,
+      "source": {
+        "page": 214,
+        "half": "L",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4",
+        "difficult"
+      ],
+      "source_note": "Brenda is trying out for cheerleading this year. to try out for → a tryout"
+    },
+    {
+      "id": "g7-u4-0023",
+      "english": "cheerleading",
+      "german": "Cheerleading (Aktivitäten der Cheerleader)",
+      "phonetic": "ˈtʃɪəliːdɪŋ",
+      "part_of_speech": "adjective",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 1: If I said no, I'd give up a big chance",
+      "page": 214,
+      "source": {
+        "page": 214,
+        "half": "L",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "Would you like to try out for cheerleading, Sarah? – No, I'd like to try out for basketball. cheerleading → to cheer"
+    },
+    {
+      "id": "g7-u4-0024",
+      "english": "to get over sth",
+      "german": "über etw. hinwegkommen; mit etw. fertigwerden",
+      "phonetic": "ˌɡet ˈəʊvə",
+      "part_of_speech": "verb",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 1: If I said no, I'd give up a big chance",
+      "page": 214,
+      "source": {
+        "page": 214,
+        "half": "L",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4",
+        "difficult"
+      ],
+      "source_note": "It took me a long time to get over my grandpa's death."
+    },
+    {
+      "id": "g7-u4-0025",
+      "english": "to wish",
+      "german": "(sich) wünschen",
+      "phonetic": "wɪʃ",
+      "part_of_speech": "verb",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 1: If I said no, I'd give up a big chance",
+      "page": 214,
+      "source": {
+        "page": 214,
+        "half": "L",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4",
+        "difficult"
+      ],
+      "source_note": "I wish you wouldn't move away. to wish → a wish"
+    },
+    {
+      "id": "g7-u4-0026",
+      "english": "scout",
+      "german": "Talentsucher/-in",
+      "phonetic": "skaʊt",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 1: If I said no, I'd give up a big chance",
+      "page": 214,
+      "source": {
+        "page": 214,
+        "half": "L",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "This match is important because a talent scout is watching."
+    },
+    {
+      "id": "g7-u4-0027",
+      "english": "scholarship",
+      "german": "Stipendium",
+      "phonetic": "ˈskɒləʃɪp",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 1: If I said no, I'd give up a big chance",
+      "page": 214,
+      "source": {
+        "page": 214,
+        "half": "L",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "If you can win a scholarship to a school or college, your parents don't have to pay."
+    },
+    {
+      "id": "g7-u4-0028",
+      "english": "to graduate",
+      "german": "einen Schul-/Hochschulabschluss machen; einen akademischen Grad erwerben",
+      "phonetic": "ˈɡrædʒueɪt",
+      "part_of_speech": "verb",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 1: If I said no, I'd give up a big chance",
+      "page": 214,
+      "source": {
+        "page": 214,
+        "half": "L",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4",
+        "difficult"
+      ],
+      "source_note": "My brother graduated from UCLA."
+    },
+    {
+      "id": "g7-u4-0029",
+      "english": "good luck",
+      "german": "(viel) Glück",
+      "phonetic": "ˌɡʊd ˈlʌk",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 1: If I said no, I'd give up a big chance",
+      "page": 214,
+      "source": {
+        "page": 214,
+        "half": "L",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "Good luck with your test!"
+    },
+    {
+      "id": "g7-u4-0030",
+      "english": "tonight",
+      "german": "heute Abend; heute Nacht",
+      "phonetic": "təˈnaɪt",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 1: If I said no, I'd give up a big chance",
+      "page": 214,
+      "source": {
+        "page": 214,
+        "half": "L",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "Let's watch a movie tonight. tonight - this evening"
+    },
+    {
+      "id": "g7-u4-0031",
+      "english": "to volunteer",
+      "german": "sich freiwillig melden; eine ehrenamtliche Tätigkeit übernehmen",
+      "phonetic": "ˌvɒlənˈtɪə",
+      "part_of_speech": "verb",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 1: If I said no, I'd give up a big chance",
+      "page": 214,
+      "source": {
+        "page": 214,
+        "half": "L",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4",
+        "difficult"
+      ],
+      "source_note": "He volunteered to work with children in Africa. Lat. voluntarius"
+    },
+    {
+      "id": "g7-u4-0032",
+      "english": "food bank",
+      "german": "Tafel (Essensausgabe für sozial Schwächere)",
+      "phonetic": "ˈfuːd ˌbæŋk",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 1: If I said no, I'd give up a big chance",
+      "page": 214,
+      "source": {
+        "page": 214,
+        "half": "L",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "If you haven't got enough money to buy food, you can go to a food bank."
+    },
+    {
+      "id": "g7-u4-0033",
+      "english": "to make a team",
+      "german": "sich für ein Team qualifizieren",
+      "phonetic": "ˌmeɪk ə ˈtiːm",
+      "part_of_speech": "verb",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 1: If I said no, I'd give up a big chance",
+      "page": 214,
+      "source": {
+        "page": 214,
+        "half": "L",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4",
+        "difficult"
+      ],
+      "source_note": "I tried out for football, but I didn't make the team."
+    },
+    {
+      "id": "g7-u4-0034",
+      "english": "to pack",
+      "german": "packen; einpacken",
+      "phonetic": "pæk",
+      "part_of_speech": "verb",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 1: If I said no, I'd give up a big chance",
+      "page": 215,
+      "source": {
+        "page": 215,
+        "half": "R",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4",
+        "difficult"
+      ],
+      "source_note": "Have you packed everything for your holiday?"
+    },
+    {
+      "id": "g7-u4-0035",
+      "english": "career",
+      "german": "Beruf; Laufbahn; Karriere",
+      "phonetic": "kəˈrɪə",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 1: If I said no, I'd give up a big chance",
+      "page": 215,
+      "source": {
+        "page": 215,
+        "half": "R",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "What are your career plans? – I want to become a doctor. Fr. carrière (f)"
+    },
+    {
+      "id": "g7-u4-0036",
+      "english": "likely",
+      "german": "wahrscheinlich",
+      "phonetic": "ˈlaɪkli",
+      "part_of_speech": "adverb",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 1: If I said no, I'd give up a big chance",
+      "page": 215,
+      "source": {
+        "page": 215,
+        "half": "R",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "It's likely that the beach will be crowded in August."
+    },
+    {
+      "id": "g7-u4-0037",
+      "english": "impossible",
+      "german": "unmöglich",
+      "phonetic": "ɪmˈpɒsəbl",
+      "part_of_speech": "adjective",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 1: If I said no, I'd give up a big chance",
+      "page": 215,
+      "source": {
+        "page": 215,
+        "half": "R",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "Nobody can do that. It's impossible. impossible ↔ possible Fr. impossible; Lat. impossibilis"
+    },
+    {
+      "id": "g7-u4-0038",
+      "english": "athlete",
+      "german": "Sportler/-in",
+      "phonetic": "ˈæθliːt",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 1: If I said no, I'd give up a big chance",
+      "page": 215,
+      "source": {
+        "page": 215,
+        "half": "R",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "She's a great ath/ete. She runs in a marathon every year. Fr. athlète (m)/(f); Lat. athleta (m)"
+    },
+    {
+      "id": "g7-u4-0039",
+      "english": "pro",
+      "german": "Profi; Profi-",
+      "phonetic": "prəʊ",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 1: If I said no, I'd give up a big chance",
+      "page": 215,
+      "source": {
+        "page": 215,
+        "half": "R",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "Surfing isn't just her hobby.She's a pro."
+    },
+    {
+      "id": "g7-u4-0040",
+      "english": "to mean",
+      "german": "meinen",
+      "phonetic": "miːn",
+      "part_of_speech": "verb",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 2: Adam's travel blog",
+      "page": 215,
+      "source": {
+        "page": 215,
+        "half": "R",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4",
+        "difficult"
+      ],
+      "source_note": "What do you mean? !I mean - ich meine it means - es bedeutet"
+    },
+    {
+      "id": "g7-u4-0041",
+      "english": "heat (no pl)",
+      "german": "Hitze; Wärme",
+      "phonetic": "hiːt",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 2: Adam's travel blog",
+      "page": 215,
+      "source": {
+        "page": 215,
+        "half": "R",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "Death Valley is famous for its heat"
+    },
+    {
+      "id": "g7-u4-0042",
+      "english": "air-conditioning",
+      "german": "Klimaanlage",
+      "phonetic": "ˈeəkəndɪʃnɪŋ",
+      "part_of_speech": "adjective",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 2: Adam's travel blog",
+      "page": 215,
+      "source": {
+        "page": 215,
+        "half": "R",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "I'm cold. Please turn off the air-cor"
+    },
+    {
+      "id": "g7-u4-0043",
+      "english": "to wonder",
+      "german": "sich Gedanken machen; sich fragen",
+      "phonetic": "ˈwʌndə",
+      "part_of_speech": "verb",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 2: Adam's travel blog",
+      "page": 216,
+      "source": {
+        "page": 216,
+        "half": "L",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4",
+        "difficult"
+      ],
+      "source_note": "I often wonder why ..."
+    },
+    {
+      "id": "g7-u4-0044",
+      "english": "traffic",
+      "german": "Verkehr",
+      "phonetic": "ˈtræfɪk",
+      "part_of_speech": "adjective",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 2: Adam's travel blog",
+      "page": 216,
+      "source": {
+        "page": 216,
+        "half": "L",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "There's too much traffic. It'll be faster if we walk. Fr. trafic (m)"
+    },
+    {
+      "id": "g7-u4-0045",
+      "english": "power",
+      "german": "Strom; Elektrizität; Energie",
+      "phonetic": "ˈpaʊə",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 2: Adam's travel blog",
+      "page": 216,
+      "source": {
+        "page": 216,
+        "half": "L",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "Electricity is a form of power."
+    },
+    {
+      "id": "g7-u4-0046",
+      "english": "even though",
+      "german": "auch wenn; obwohl",
+      "phonetic": "ˌiːvn ˈðəʊ",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 2: Adam's travel blog",
+      "page": 216,
+      "source": {
+        "page": 216,
+        "half": "L",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "I love my brother even though he isn't always nice to me."
+    },
+    {
+      "id": "g7-u4-0047",
+      "english": "running water",
+      "german": "fließendes Wasser",
+      "phonetic": "ˌrʌnɪŋ ˈwɔːtə",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 2: Adam's travel blog",
+      "page": 216,
+      "source": {
+        "page": 216,
+        "half": "L",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "A lot of people still live without electricity and running water."
+    },
+    {
+      "id": "g7-u4-0048",
+      "english": "straw (no pl)",
+      "german": "Stroh",
+      "phonetic": "strɔː",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 2: Adam's travel blog",
+      "page": 216,
+      "source": {
+        "page": 216,
+        "half": "L",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "Farm animals need straw to feel comfortable."
+    },
+    {
+      "id": "g7-u4-0049",
+      "english": "sacred",
+      "german": "heilig",
+      "phonetic": "ˈseɪkrɪd",
+      "part_of_speech": "adjective",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 2: Adam's travel blog",
+      "page": 216,
+      "source": {
+        "page": 216,
+        "half": "L",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "Pueblo Peak is a sacred mountain. Fr. sacré/-e; Lat. sacer"
+    },
+    {
+      "id": "g7-u4-0050",
+      "english": "saguaro",
+      "german": "Saguaro",
+      "phonetic": "səˈweərəʊ",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 2: Adam's travel blog",
+      "page": 216,
+      "source": {
+        "page": 216,
+        "half": "L",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "Saguaros are the largest cacti in the US."
+    },
+    {
+      "id": "g7-u4-0051",
+      "english": "venomous",
+      "german": "giftig",
+      "phonetic": "ˈvenəməs",
+      "part_of_speech": "adjective",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 2: Adam's travel blog",
+      "page": 216,
+      "source": {
+        "page": 216,
+        "half": "L",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "Some spiders and snakes are venomous. Fr. venimeux/-euse; Lat. venenatus"
+    },
+    {
+      "id": "g7-u4-0052",
+      "english": "lizard",
+      "german": "Echse; Eidechse",
+      "phonetic": "ˈlɪzəd",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 2: Adam's travel blog",
+      "page": 216,
+      "source": {
+        "page": 216,
+        "half": "L",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "The gila monster is a venomous lizard."
+    },
+    {
+      "id": "g7-u4-0053",
+      "english": "tarantula",
+      "german": "Tarantel (Spinnenart)",
+      "phonetic": "təˈræntjələ",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 2: Adam's travel blog",
+      "page": 216,
+      "source": {
+        "page": 216,
+        "half": "L",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "A tarantula is a is a kind of spider. Fr. tarentule (f)"
+    },
+    {
+      "id": "g7-u4-0054",
+      "english": "scorpion",
+      "german": "Skorpion",
+      "phonetic": "ˈskɔːpiən",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 2: Adam's travel blog",
+      "page": 216,
+      "source": {
+        "page": 216,
+        "half": "L",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "Scorpions often hide in shoes. Fr. scorpion (m); Lat. scorpio (m)"
+    },
+    {
+      "id": "g7-u4-0055",
+      "english": "rattlesnake",
+      "german": "Klapperschlange",
+      "phonetic": "ˈrætlsneɪk",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 2: Adam's travel blog",
+      "page": 216,
+      "source": {
+        "page": 216,
+        "half": "L",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "You have to wear hiking boots because there could be rattlesnakes."
+    },
+    {
+      "id": "g7-u4-0056",
+      "english": "venom (no pl)",
+      "german": "Gift",
+      "phonetic": "ˈvenəm",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 2: Adam's travel blog",
+      "page": 216,
+      "source": {
+        "page": 216,
+        "half": "L",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "This snake has got a very strong venom. venom → venomous Fr. venin (m); Lat. venenum (nt)"
+    },
+    {
+      "id": "g7-u4-0057",
+      "english": "spicy",
+      "german": "würzig: pikant",
+      "phonetic": "ˈspaɪsi",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 2: Adam's travel blog",
+      "page": 216,
+      "source": {
+        "page": 216,
+        "half": "L",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "Indian food is usually very spicy."
+    },
+    {
+      "id": "g7-u4-0058",
+      "english": "at one's own risk",
+      "german": "auf eigene Gefahr",
+      "phonetic": "æt wʌnz ˌəʊn ˈrɪsk",
+      "part_of_speech": "phrase",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 2: Adam's travel blog",
+      "page": 216,
+      "source": {
+        "page": 216,
+        "half": "L",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "If you want to hike here, it's at your own risk."
+    },
+    {
+      "id": "g7-u4-0059",
+      "english": "however",
+      "german": "jedoch",
+      "phonetic": "haʊˈevə",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 2: Adam's travel blog",
+      "page": 216,
+      "source": {
+        "page": 216,
+        "half": "L",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "The man had lots of money. However, he wasn't happy."
+    },
+    {
+      "id": "g7-u4-0060",
+      "english": "focus",
+      "german": "Blickpunkt; Schwerpunkt; Fokus",
+      "phonetic": "ˈfəʊkəs",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 2: Adam's travel blog",
+      "page": 216,
+      "source": {
+        "page": 216,
+        "half": "L",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "The focus of this text lies on the character's feelings. focus → to focus (on)"
+    },
+    {
+      "id": "g7-u4-0061",
+      "english": "flavor (AE)",
+      "german": "Geschmack; Aroma",
+      "phonetic": "ˈfleɪvə",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 2: Adam's travel blog",
+      "page": 216,
+      "source": {
+        "page": 216,
+        "half": "L",
+        "row": 19
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "What's your favorite ice-cream flavor? - Chocolate."
+    },
+    {
+      "id": "g7-u4-0062",
+      "english": "onion",
+      "german": "Zwiebel",
+      "phonetic": "ˈʌnjən",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 2: Adam's travel blog",
+      "page": 216,
+      "source": {
+        "page": 216,
+        "half": "L",
+        "row": 20
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "One burger without onions, please. Fr. oignon (m)"
+    },
+    {
+      "id": "g7-u4-0063",
+      "english": "dentist",
+      "german": "Zahnarzt/Zahnärztin",
+      "phonetic": "ˈdentɪst",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 3: The gunfight at the O.K. Corral",
+      "page": 216,
+      "source": {
+        "page": 216,
+        "half": "L",
+        "row": 21
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "I go to the dentist every six months. Fr. dentiste (m)/(f) ; Lat. dens, dentis (f)"
+    },
+    {
+      "id": "g7-u4-0064",
+      "english": "bank",
+      "german": "Bank",
+      "phonetic": "bæŋk",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 3: The gunfight at the O.K. Corral",
+      "page": 216,
+      "source": {
+        "page": 216,
+        "half": "L",
+        "row": 22
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "He's got lots of money in the bank. bank (Geldinstitut) ≠ bench (Bank zum Sitzen)."
+    },
+    {
+      "id": "g7-u4-0065",
+      "english": "conflict",
+      "german": "Konflikt; Auseinandersetzung",
+      "phonetic": "ˈkɒnflɪkt",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 3: The gunfight at the O.K. Corral",
+      "page": 216,
+      "source": {
+        "page": 216,
+        "half": "L",
+        "row": 23
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "The conflict ended in a gunfight. ! Stress conflict - fight Fr. conflit (m); Lat. conflictus (m)"
+    },
+    {
+      "id": "g7-u4-0066",
+      "english": "quite",
+      "german": "ziemlich; ganz; völlig",
+      "phonetic": "kwaɪt",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 3: The gunfight at the O.K. Corral",
+      "page": 217,
+      "source": {
+        "page": 217,
+        "half": "R",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "This story is quite interesting. - The story is pretty interesting."
+    },
+    {
+      "id": "g7-u4-0067",
+      "english": "law",
+      "german": "Gesetz; Recht",
+      "phonetic": "lɔː",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 3: The gunfight at the O.K. Corral",
+      "page": 217,
+      "source": {
+        "page": 217,
+        "half": "R",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "He's a criminal. He broke the law. against the law - illegal Fr. loi (f); Lat. lex (f)"
+    },
+    {
+      "id": "g7-u4-0068",
+      "english": "to threaten",
+      "german": "drohen; bedrohen",
+      "phonetic": "ˈθretn",
+      "part_of_speech": "verb",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 3: The gunfight at the O.K. Corral",
+      "page": 217,
+      "source": {
+        "page": 217,
+        "half": "R",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4",
+        "difficult"
+      ],
+      "source_note": "The criminal threatened me with a gun."
+    },
+    {
+      "id": "g7-u4-0069",
+      "english": "to accuse (sb of sth)",
+      "german": "beschuldigen; anklagen",
+      "phonetic": "əˈkjuːz",
+      "part_of_speech": "verb",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 3: The gunfight at the O.K. Corral",
+      "page": 217,
+      "source": {
+        "page": 217,
+        "half": "R",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4",
+        "difficult"
+      ],
+      "source_note": "The police accused him of murder. Fr. accuser; Lat. accusare"
+    },
+    {
+      "id": "g7-u4-0070",
+      "english": "to contradict",
+      "german": "widersprechen",
+      "phonetic": "ˌkɒntrəˈdɪkt",
+      "part_of_speech": "verb",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 3: The gunfight at the O.K. Corral",
+      "page": 217,
+      "source": {
+        "page": 217,
+        "half": "R",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4",
+        "difficult"
+      ],
+      "source_note": "Contradict me if I'm wrong. Fr. contredire; Lat. contradicere"
+    },
+    {
+      "id": "g7-u4-0071",
+      "english": "to take revenge",
+      "german": "(sich) rächen",
+      "phonetic": "ˌteɪk rɪˈvendʒ",
+      "part_of_speech": "verb",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 3: The gunfight at the O.K. Corral",
+      "page": 217,
+      "source": {
+        "page": 217,
+        "half": "R",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4",
+        "difficult"
+      ],
+      "source_note": "He took revenge for his friend's death. Fr. se venger"
+    },
+    {
+      "id": "g7-u4-0072",
+      "english": "to fascinate",
+      "german": "faszinieren",
+      "phonetic": "ˈfæsɪneɪt",
+      "part_of_speech": "verb",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 3: The gunfight at the O.K. Corral",
+      "page": 217,
+      "source": {
+        "page": 217,
+        "half": "R",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4",
+        "difficult"
+      ],
+      "source_note": "Stories about outlaws fascinate me. Fr. fasciner"
+    },
+    {
+      "id": "g7-u4-0073",
+      "english": "documentary",
+      "german": "Dokumentarfilm; Dokumentation; Dokumentar-",
+      "phonetic": "ˌdɒkjəˈmentri",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 3: The gunfight at the O.K. Corral",
+      "page": 217,
+      "source": {
+        "page": 217,
+        "half": "R",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "I love watching documentaries about historical events. Fr. documentaire (m)"
+    },
+    {
+      "id": "g7-u4-0074",
+      "english": "production",
+      "german": "Produktion; Inszenierung",
+      "phonetic": "prəˈdʌkʃn",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Station 3: The gunfight at the O.K. Corral",
+      "page": 217,
+      "source": {
+        "page": 217,
+        "half": "R",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "This film was an expensive production. production → to produce Fr. production (f)"
+    },
+    {
+      "id": "g7-u4-0075",
+      "english": "Italian",
+      "german": "Italiener/-in; italienisch; Italienisch; aus Italien",
+      "phonetic": "ɪˈtæliən",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Skills: Reading techniques – Skimming and scanning",
+      "page": 217,
+      "source": {
+        "page": 217,
+        "half": "R",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "I love Italian food, especially pizza."
+    },
+    {
+      "id": "g7-u4-0076",
+      "english": "anniversary",
+      "german": "Jubiläum; Jahrestag",
+      "phonetic": "ˌænɪˈvɜːsri",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Skills: Reading techniques – Skimming and scanning",
+      "page": 217,
+      "source": {
+        "page": 217,
+        "half": "R",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "We celebrated our group's fifth anniversary. Fr. anniversaire (m); Lat. anniversarium (nt)"
+    },
+    {
+      "id": "g7-u4-0077",
+      "english": "controversial",
+      "german": "umstritten; kontrovers",
+      "phonetic": "ˌkɒntrəˈvɜːʃl",
+      "part_of_speech": "adjective",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Skills: Reading techniques – Skimming and scanning",
+      "page": 217,
+      "source": {
+        "page": 217,
+        "half": "R",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "This topic is controversial. People have been fighting over it. Fr. controversé/-e; Lat. controversus"
+    },
+    {
+      "id": "g7-u4-0078",
+      "english": "disease",
+      "german": "Krankheit",
+      "phonetic": "dɪˈziːz",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Skills: Reading techniques – Skimming and scanning",
+      "page": 217,
+      "source": {
+        "page": 217,
+        "half": "R",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "The Europeans brought diseases the Indians didn't know."
+    },
+    {
+      "id": "g7-u4-0079",
+      "english": "independence (no pl)",
+      "german": "Unabhängigkeit",
+      "phonetic": "ˌɪndɪˈpendəns",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Skills: Reading techniques – Skimming and scanning",
+      "page": 217,
+      "source": {
+        "page": 217,
+        "half": "R",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "The colonies wanted their independence. independence → independent Fr. indépendance (f)"
+    },
+    {
+      "id": "g7-u4-0080",
+      "english": "therefore",
+      "german": "deshalb; deswegen; daher; somit",
+      "phonetic": "ˈðeəfɔː",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Skills: Reading techniques – Skimming and scanning",
+      "page": 217,
+      "source": {
+        "page": 217,
+        "half": "R",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "There was a terrible thunderstorm flight was delayed."
+    },
+    {
+      "id": "g7-u4-0081",
+      "english": "people",
+      "german": "Volk",
+      "phonetic": "ˈpiːpl",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Skills: Reading techniques – Skimming and scanning",
+      "page": 218,
+      "source": {
+        "page": 218,
+        "half": "L",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "The indigenous peoples would like to celebrate their heritage."
+    },
+    {
+      "id": "g7-u4-0082",
+      "english": "arrival",
+      "german": "Ankunft",
+      "phonetic": "əˈraɪvl",
+      "part_of_speech": "adjective",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Skills: Reading techniques – Skimming and scanning",
+      "page": 218,
+      "source": {
+        "page": 218,
+        "half": "L",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "The arriva/ of the Europeans brought many problems. arrival → to arrive Fr. arriveé (f)"
+    },
+    {
+      "id": "g7-u4-0083",
+      "english": "specific",
+      "german": "spezifisch; speziell",
+      "phonetic": "spəˈsɪfɪk",
+      "part_of_speech": "adjective",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Skills: Reading techniques – Skimming and scanning",
+      "page": 218,
+      "source": {
+        "page": 218,
+        "half": "L",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "There's no specific information on diseases in the text."
+    },
+    {
+      "id": "g7-u4-0084",
+      "english": "neutral",
+      "german": "neutral",
+      "phonetic": "ˈnjuːtrəl",
+      "part_of_speech": "adjective",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Skills: Reading techniques – Skimming and scanning",
+      "page": 218,
+      "source": {
+        "page": 218,
+        "half": "L",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "The text explains the ideas in a neutral way. Fr. neutre; Lat. neuter"
+    },
+    {
+      "id": "g7-u4-0085",
+      "english": "guidebook",
+      "german": "Reiseführer",
+      "phonetic": "ˈɡaɪdbʊk",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Unit task: My travel blog",
+      "page": 218,
+      "source": {
+        "page": 218,
+        "half": "L",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "In a guidebook you can find all the important sights of a city."
+    },
+    {
+      "id": "g7-u4-0086",
+      "english": "to publish",
+      "german": "veröffentlichen; publizieren; verlegen",
+      "phonetic": "ˈpʌblɪʃ",
+      "part_of_speech": "verb",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Unit task: My travel blog",
+      "page": 218,
+      "source": {
+        "page": 218,
+        "half": "L",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4",
+        "difficult"
+      ],
+      "source_note": "The author published her first novel in 2003. Fr. publier"
+    },
+    {
+      "id": "g7-u4-0087",
+      "english": "private",
+      "german": "privat",
+      "phonetic": "ˈpraɪvɪt",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Unit task: My travel blog",
+      "page": 218,
+      "source": {
+        "page": 218,
+        "half": "L",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "I can't write private e-mails at work. Fr. privé/-e; Lat. privatus"
+    },
+    {
+      "id": "g7-u4-0088",
+      "english": "to shop",
+      "german": "einkaufen; shoppen",
+      "phonetic": "ʃɒp",
+      "part_of_speech": "verb",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Story: An Arizona adventure",
+      "page": 218,
+      "source": {
+        "page": 218,
+        "half": "L",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4",
+        "difficult"
+      ],
+      "source_note": "New York City is a great place to shop. to shop → shopping → a shop"
+    },
+    {
+      "id": "g7-u4-0089",
+      "english": "narrow",
+      "german": "eng; schmal",
+      "phonetic": "ˈnærəʊ",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Story: An Arizona adventure",
+      "page": 218,
+      "source": {
+        "page": 218,
+        "half": "L",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "a narrow street, a narrow bridge"
+    },
+    {
+      "id": "g7-u4-0090",
+      "english": "opening",
+      "german": "Öffnung; Beginn",
+      "phonetic": "ˈəʊpənɪŋ",
+      "part_of_speech": "adjective",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Story: An Arizona adventure",
+      "page": 218,
+      "source": {
+        "page": 218,
+        "half": "L",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "There was a small opening at the top of the cave. opening → to open"
+    },
+    {
+      "id": "g7-u4-0091",
+      "english": "soft",
+      "german": "weich; sanft",
+      "phonetic": "sɒft",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Story: An Arizona adventure",
+      "page": 218,
+      "source": {
+        "page": 218,
+        "half": "L",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "Your sofa is quite hard. Mine is softer. soft ↔ hard"
+    },
+    {
+      "id": "g7-u4-0092",
+      "english": "cathedral",
+      "german": "Kathedrale",
+      "phonetic": "kəˈθiːdrəl",
+      "part_of_speech": "adjective",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Story: An Arizona adventure",
+      "page": 218,
+      "source": {
+        "page": 218,
+        "half": "L",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "People often go to churches and cathedrals to worship God. Fr. cathédrale (f)"
+    },
+    {
+      "id": "g7-u4-0093",
+      "english": "to treat",
+      "german": "behandeln",
+      "phonetic": "triːt",
+      "part_of_speech": "verb",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Story: An Arizona adventure",
+      "page": 218,
+      "source": {
+        "page": 218,
+        "half": "L",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4",
+        "difficult"
+      ],
+      "source_note": "If you don't treat your dog right, you'll have trouble with it."
+    },
+    {
+      "id": "g7-u4-0094",
+      "english": "off",
+      "german": "(von ...) weg/ab/herunter",
+      "phonetic": "ɒf",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Story: An Arizona adventure",
+      "page": 218,
+      "source": {
+        "page": 218,
+        "half": "L",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "He laughed so hard that he fell off the chair."
+    },
+    {
+      "id": "g7-u4-0095",
+      "english": "to fill up",
+      "german": "(sich) füllen",
+      "phonetic": "ˌfɪl ˈʌp",
+      "part_of_speech": "verb",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Story: An Arizona adventure",
+      "page": 218,
+      "source": {
+        "page": 218,
+        "half": "L",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4",
+        "difficult"
+      ],
+      "source_note": "The canyon quickly filled up with water."
+    },
+    {
+      "id": "g7-u4-0096",
+      "english": "to scratch",
+      "german": "kratzen; kritzeln",
+      "phonetic": "",
+      "part_of_speech": "verb",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Story: An Arizona adventure",
+      "page": 218,
+      "source": {
+        "page": 218,
+        "half": "L",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4",
+        "difficult"
+      ],
+      "source_note": "Could you scratch my back, please?"
+    },
+    {
+      "id": "g7-u4-0097",
+      "english": "a while",
+      "german": "eine Weile",
+      "phonetic": "ə ˈwaɪl",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Story: An Arizona adventure",
+      "page": 218,
+      "source": {
+        "page": 218,
+        "half": "L",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "We had chatted with each other for a while before we met. a while = a little time"
+    },
+    {
+      "id": "g7-u4-0098",
+      "english": "raindrop",
+      "german": "Regentropfen",
+      "phonetic": "ˈreɪndrɒp",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Story: An Arizona adventure",
+      "page": 218,
+      "source": {
+        "page": 218,
+        "half": "L",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "I think it's starting to rain. I can already feel afew raindrops. raindrop → to rain → rainy → rain"
+    },
+    {
+      "id": "g7-u4-0099",
+      "english": "out of breath",
+      "german": "außer Atem",
+      "phonetic": "ˌaʊt əv ˈbreθ",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Story: An Arizona adventure",
+      "page": 218,
+      "source": {
+        "page": 218,
+        "half": "L",
+        "row": 19
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "After the race she was out of breath."
+    },
+    {
+      "id": "g7-u4-0100",
+      "english": "glad",
+      "german": "froh",
+      "phonetic": "ɡlæd",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Story: An Arizona adventure",
+      "page": 218,
+      "source": {
+        "page": 218,
+        "half": "L",
+        "row": 20
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "I'm glad you aren't angry with me."
+    },
+    {
+      "id": "g7-u4-0101",
+      "english": "thunderstorm",
+      "german": "Gewitter",
+      "phonetic": "ˈθʌndəstɔːm",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Story: An Arizona adventure",
+      "page": 218,
+      "source": {
+        "page": 218,
+        "half": "L",
+        "row": 21
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "It wasn't just a little rain - it was a heavy thunderstorm."
+    },
+    {
+      "id": "g7-u4-0102",
+      "english": "flash flood",
+      "german": "Sturzflut",
+      "phonetic": "ˌflæʃ ˈflʌd",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Story: An Arizona adventure",
+      "page": 218,
+      "source": {
+        "page": 218,
+        "half": "L",
+        "row": 22
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "When there's heavy rain in the desert, there can be dangerous flash floods."
+    },
+    {
+      "id": "g7-u4-0103",
+      "english": "headband",
+      "german": "Stirnband",
+      "phonetic": "ˈhedbænd",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Story: An Arizona adventure",
+      "page": 219,
+      "source": {
+        "page": 219,
+        "half": "R",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "The members of some Indian tribes wear headbands."
+    },
+    {
+      "id": "g7-u4-0104",
+      "english": "weak",
+      "german": "schwach",
+      "phonetic": "wiːk",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Story: An Arizona adventure",
+      "page": 219,
+      "source": {
+        "page": 219,
+        "half": "R",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "When you're sick, you often feel weak. weak↔ strong"
+    },
+    {
+      "id": "g7-u4-0105",
+      "english": "to hold on",
+      "german": "durchhalten",
+      "phonetic": "ˌhəʊld ˈɒn",
+      "part_of_speech": "verb",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Story: An Arizona adventure",
+      "page": 219,
+      "source": {
+        "page": 219,
+        "half": "R",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4",
+        "difficult"
+      ],
+      "source_note": "Hold on, the doctor will be here soon."
+    },
+    {
+      "id": "g7-u4-0106",
+      "english": "buffalo (sg or pl)",
+      "german": "Büffel",
+      "phonetic": "ˈbʌfələʊ",
+      "part_of_speech": "noun",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Check-out",
+      "page": 219,
+      "source": {
+        "page": 219,
+        "half": "R",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4"
+      ],
+      "source_note": "In the past, Native Americans shot buffalo for food. Fr. buffle (m); Lat. bubalus (m)"
+    },
+    {
+      "id": "g7-u4-0107",
+      "english": "to step",
+      "german": "treten; steigen",
+      "phonetic": "step",
+      "part_of_speech": "verb",
+      "unit": 4,
+      "unit_title": "In the Desert Southwest",
+      "section": "Check-out",
+      "page": 219,
+      "source": {
+        "page": 219,
+        "half": "R",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-4",
+        "difficult"
+      ],
+      "source_note": "Don't step on my glasses. to step → step"
+    }
+  ]
+}

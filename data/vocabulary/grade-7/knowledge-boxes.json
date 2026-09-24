@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.0",
+  "grade": 7,
+  "box_count": 13,
+  "boxes": [
+    {"id":"g7-box-186","page":186,"unit":1,"title":"Describing developments","type":"collocations","groups":[
+      {"head":"become","items":["active","angry","clear","difficult","extinct","great","independent","large","necessary","popular","possible","quiet","rich"],"notes":["become extinct = aussterben","become = werden"]},
+      {"head":"get","items":["easy","fit","hurt","ill","ready","real","rich","scared","tired","well"],"notes":["get ready = sich bereit machen","get scared = Angst bekommen","get well = gesund werden"]},
+      {"head":"go","items":["bad","black","green","red (any colour)","wrong"],"notes":["go wrong = schiefgehen"]},
+      {"head":"grow","items":["old","rich","tired"]},
+      {"head":"turn","items":["fifteen (any age)","bad","black","green","red (any colour)","bitter","sour"],"notes":["turn sour = sauer/schlecht werden; umschlagen"]}
+    ]},
+    {"id":"g7-box-187","page":187,"unit":1,"title":"Nouns and adjectives","type":"word-families","rows":[
+      ["anger","angry"],["cloud","cloudy"],["day","daily"],["friend","friendly"],["fun","funny"],["health","healthy"],["mud","muddy"],
+      ["centre","central"],["history","historical"],["music","musical"],["person","personal"],["tradition","traditional"],
+      ["excitement","exciting"],["interest","interesting"],["surprise","surprising"],["colour","colourful / colourless"],["help","helpful / helpless"],["hope","hopeful / hopeless"],["power","powerful / powerless"],["success","successful / unsuccessful"],
+      ["competition","competitive"],["crowd","crowded"],["danger","dangerous"],["difference","different"],["freedom","free"],["independence","independent"],["possibility","possible"],["vegetarian","vegetarian"],["wood","wooden"]
+    ]},
+    {"id":"g7-box-190","page":190,"unit":1,"title":"Nouns and verbs with the same form","type":"word-families","items":["answer","change","compromise","dance","dream","drink","drive","e-mail","end","exchange","film","fight","guide","help","hope","interest","interview","joke","judge","land","link","look","love","name","plan","plant","rain","reply","rescue","run","search","show","smile","surprise","talk","taste","test","travel","trust","use","visit","walk","waste"]},
+    {"id":"g7-box-192","page":192,"unit":1,"title":"Media collocations","type":"collocations","groups":[
+      {"head":"print media","items":["read/prefer books, comics, magazines, newspapers","be interested in facts, background information, local news, celebrity news, reviews"]},
+      {"head":"TV","items":["watch news, films, TV series, documentaries, talk shows"]},
+      {"head":"radio","items":["listen to news, music, call-ins, radio plays"]},
+      {"head":"online","items":["watch music videos, funny video clips, instructional videos","listen to music, podcasts","follow bloggers, vloggers","read/write/make/create a blog, vlog, post","look for advice"]},
+      {"head":"social","items":["communicate with people","build/keep up relationships","share content","create a new/fake/perfect image of yourself"]}
+    ]},
+    {"id":"g7-box-194","page":194,"unit":2,"title":"Typically Welsh","type":"culture","items":["Welsh dragon","Welsh castles","sheep","coal mining","rugby","Welsh","leeks","daffodils"]},
+    {"id":"g7-box-201","page":201,"unit":2,"title":"Nouns and adjectives with the same form","type":"usage","rows":[
+      ["African","an African woman = eine Afrikanerin / eine afrikanische Frau"],["Cuban","a Cuban dancer = ein/-e kubanische/-r Tänzer/-in"],["English","stress distinguishes English teacher meanings"],["German","deutsch / a German = Deutscher"],["classic","Klassiker; classic car = Oldtimer"],["small talk","small-talk skills"],["free time","free-time activities"]
+    ],"notes":["Use a hyphen in multi-part adjectives before a noun."]},
+    {"id":"g7-box-205","page":205,"unit":3,"title":"Words with silent letters","type":"pronunciation","rows":[["answer","w"],["autumn","n"],["business","i"],["castle","t"],["climb","b"],["could","l"],["dialogue","ue"],["honest","h"],["island","s"],["knight","k, gh"],["listen","t"],["psychological","p"],["reign","g"],["scissors","c"],["sword","w"],["thumb","b"]]},
+    {"id":"g7-box-206","page":206,"unit":3,"title":"Talking history","type":"topic-vocabulary","groups":[
+      {"head":"systems and periods","items":["empire = (Kaiser-)Reich","monarchy = Monarchie","kingdom = Königreich","democracy = Demokratie","army = Armee","war = Krieg","peace = Frieden"]},
+      {"head":"people","items":["emperor/empress = Kaiser/-in","monarch = Monarch/-in","king/queen = König/-in","nobleman/noblewoman = Adlige/-r","lord/lady = Herr/Dame","servant = Bedienstete/-r","peasant = Kleinbauer/-bäuerin"]},
+      {"head":"verbs","items":["to be born = geboren werden","be famous for = berühmt sein für","invent = erfinden","reign/rule = regieren, herrschen","conquer = erobern","defeat = besiegen","invade = einmarschieren","colonise = kolonisieren, besiedeln","settle = siedeln"]},
+      {"head":"time phrases","items":["in the 16th century","in the Elizabethan/Victorian age, period or era","under Spanish rule","during the reign of Queen Victoria","back then = damals"]}
+    ]},
+    {"id":"g7-box-211","page":211,"unit":3,"title":"What you can be thankful for","type":"speaking-support","groups":[
+      {"head":"be","items":["happy","fit","healthy","intelligent","successful","good at …"]},
+      {"head":"have","items":["your own room","enough to eat","a WC/bathroom with shower","pocket money","a bicycle/pet/own TV/smartphone/computer/tablet"]},
+      {"head":"be able to","items":["read/write","go to school","talk to parents/friends"]},
+      {"head":"be allowed to","items":["go out","see friends","play football","go to the cinema","say what you think"]},
+      {"head":"live","items":["in peaceful times"]}
+    ]},
+    {"id":"g7-box-212","page":212,"unit":4,"title":"Typically New England","type":"culture","items":["fall colors","seafood","ports and harbors","famous universities","early colonial history","Cape Cod landscape","lighthouses","architecture"]},
+    {"id":"g7-box-214","page":214,"unit":4,"title":"Names that are difficult to pronounce","type":"pronunciation","rows":[["Birmingham","ˈbɜːmɪŋəm"],["Edinburgh","ˈedɪnbrə"],["Greenwich","ˈɡrenɪdʒ"],["Phoenix","ˈfiːnɪks"],["Tucson","ˈtuːsɒn"],["Wednesday","ˈwenzdeɪ"]]},
+    {"id":"g7-box-215","page":215,"unit":4,"title":"School words","type":"topic-vocabulary","rows":[
+      ["elementary school (AE) / primary school (BE)","Grundschule"],["middle school / junior high school (AE)","weiterführende Schule, Mittelstufe USA"],["high school / secondary school","weiterführende Schule, Oberstufe USA"],["comprehensive school (BE)","Gesamtschule"],["grammar school (BE)","Gymnasium"],["college / university","Hochschule / Universität"],["6th grade (AE) / Year 6 (BE)","Klassenstufe"],["6th form (BE)","Oberstufe UK"],["report (card)","Zeugnis"],["grade (AE) / mark (BE)","Note"],["timetable (BE) / schedule","Stundenplan"],["study for a test","für eine Klassenarbeit lernen"],["learn (by heart)","(auswendig) lernen"],["take/pass/fail a test","teilnehmen / bestehen / nicht bestehen"],["graduate (from)","Abschluss machen"],["apply for a scholarship","sich um ein Stipendium bewerben"]
+    ]},
+    {"id":"g7-box-217","page":217,"unit":4,"title":"Introductory verbs","type":"writing-support","groups":[{"head":"neutral","items":["say","tell sb","answer","inform sb"]},{"head":"manner","items":["boom","cry","shout","whisper"]},{"head":"doing","items":["agree","complain","explain","promise"]},{"head":"thinking","items":["think","believe","feel","know"]}]}
+  ]
+}

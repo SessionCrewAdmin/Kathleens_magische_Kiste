@@ -1,0 +1,613 @@
+{
+  "schema_version": "1.0",
+  "audited_at": "2026-09-24",
+  "result": "pass",
+  "method": [
+    "82 prepared page halves inventoried by SHA-256",
+    "row boundaries compared with visually reviewed English headwords and IPA",
+    "German source column and notes retained from column OCR",
+    "knowledge boxes transcribed as structured relationships",
+    "JSON schema, counts, unique IDs and source locators validated"
+  ],
+  "grades": {
+    "7": {
+      "screenshot_count": 19,
+      "page_half_count": 38,
+      "main_entry_count": 658,
+      "knowledge_box_count": 13,
+      "halves": [
+        {
+          "half": "01_L",
+          "page": 182,
+          "kind": "introductory",
+          "entry_count": 0,
+          "sha256": "4e8110a2d4c0c58db8935734a562ec227f0073b5ea1e333079679381d789250c"
+        },
+        {
+          "half": "01_R",
+          "page": 183,
+          "kind": "entries",
+          "entry_count": 19,
+          "sha256": "4fd3e13be4c6a40627fa1fcd4e88bc0e2d5b4bbe7afb03e8a242643bb672fd39"
+        },
+        {
+          "half": "02_L",
+          "page": 184,
+          "kind": "entries",
+          "entry_count": 20,
+          "sha256": "193d1c86237ed70cc7dfd1c9dad48abff22e3092436018c320969d7a37f3c0e4"
+        },
+        {
+          "half": "02_R",
+          "page": 185,
+          "kind": "entries",
+          "entry_count": 20,
+          "sha256": "ed2b03c9ba36b1bbbfd176d95bc6f53ca0547fec18f10b1fc224eb31b2686580"
+        },
+        {
+          "half": "03_L",
+          "page": 186,
+          "kind": "entries",
+          "entry_count": 14,
+          "sha256": "d11601af0b3a5f2fb2b9e63b371f61cf98e5dec009c06cb363319081a85765e9"
+        },
+        {
+          "half": "03_R",
+          "page": 187,
+          "kind": "entries",
+          "entry_count": 10,
+          "sha256": "b8d022a98fc890ee9706668479ff4f708bd328c1e6e4e89334a6798979d1d6fa"
+        },
+        {
+          "half": "04_L",
+          "page": 188,
+          "kind": "entries",
+          "entry_count": 19,
+          "sha256": "cd7c0949fc70e405544b42a6c53180a7f9e834bdf5af26d47002b6a2ad20d48a"
+        },
+        {
+          "half": "04_R",
+          "page": 189,
+          "kind": "entries",
+          "entry_count": 24,
+          "sha256": "ec7abbed14608df86b460c196a3f3b70f999b8745c73cf6dca5b46997c419aac"
+        },
+        {
+          "half": "05_L",
+          "page": 190,
+          "kind": "entries",
+          "entry_count": 13,
+          "sha256": "a184820451f5d5854f85091e65e67aa1d7861779ae3c0fa35df8937a82582040"
+        },
+        {
+          "half": "05_R",
+          "page": 191,
+          "kind": "entries",
+          "entry_count": 20,
+          "sha256": "f62990dd169a75870642226ff912986e077ad0eabf31a0a4507ed201c4e100ed"
+        },
+        {
+          "half": "06_L",
+          "page": 192,
+          "kind": "entries",
+          "entry_count": 11,
+          "sha256": "60aa0635009f1dc10e9606dad5d4b8b88b9c1b9e07e25c51a6f9dcc03930ecf5"
+        },
+        {
+          "half": "06_R",
+          "page": 193,
+          "kind": "entries",
+          "entry_count": 16,
+          "sha256": "ddf8f2f95a126727f81ef89d8de20f2ce36ad98f553157c94f9d20ae278118b2"
+        },
+        {
+          "half": "07_L",
+          "page": 194,
+          "kind": "entries",
+          "entry_count": 10,
+          "sha256": "a8122c1f45fa214b4d456796bbccfddc023fffa9edf77a9011333dcb035173cf"
+        },
+        {
+          "half": "07_R",
+          "page": 195,
+          "kind": "entries",
+          "entry_count": 23,
+          "sha256": "010cae33212a924909cf95db35982c728c88edf102e86644e8996db6e55a5ce4"
+        },
+        {
+          "half": "08_L",
+          "page": 196,
+          "kind": "entries",
+          "entry_count": 22,
+          "sha256": "d586bd3e582b641ebbdb4f0d79769aa00cc7f573c1a0d8a95cf30b436da524b3"
+        },
+        {
+          "half": "08_R",
+          "page": 197,
+          "kind": "entries",
+          "entry_count": 21,
+          "sha256": "a45bd18e8ae24dc7ccad7ca84596fb8313b7e160689fc50ef7505436222a33cb"
+        },
+        {
+          "half": "09_L",
+          "page": 198,
+          "kind": "entries",
+          "entry_count": 23,
+          "sha256": "0e7f6af094faf98776e2086f13f9cc13ff02f591a2c9386d6b6f0c328da2657b"
+        },
+        {
+          "half": "09_R",
+          "page": 199,
+          "kind": "entries",
+          "entry_count": 21,
+          "sha256": "b7d4e90e87e61e87bc6d225104f0f907fdb41b08ee8f6a0d0498f769da0dbd3c"
+        },
+        {
+          "half": "10_L",
+          "page": 200,
+          "kind": "entries",
+          "entry_count": 25,
+          "sha256": "c885cc6b8c1264ead24e9fff99ec8b96a28cb0c20572aa0bbeb97a1b13d48b03"
+        },
+        {
+          "half": "10_R",
+          "page": 201,
+          "kind": "entries",
+          "entry_count": 12,
+          "sha256": "3b5b4466956c90164e413633f0c4647bc1d3df95136150e45fb242666558f35d"
+        },
+        {
+          "half": "11_L",
+          "page": 202,
+          "kind": "entries",
+          "entry_count": 22,
+          "sha256": "edafaa88f105fb8903818d4549af788054fbc7efe624a1b3b21150398c17a337"
+        },
+        {
+          "half": "11_R",
+          "page": 203,
+          "kind": "entries",
+          "entry_count": 20,
+          "sha256": "16792f2d5b6a51e6cf564cd5f196db44a2e241815a786bec20316b26ff5d0924"
+        },
+        {
+          "half": "12_L",
+          "page": 204,
+          "kind": "entries",
+          "entry_count": 22,
+          "sha256": "48fef9bf57122a8f01fe394b0345b8b9de6694bdc4ad7ddc7aabc71c238a54e2"
+        },
+        {
+          "half": "12_R",
+          "page": 205,
+          "kind": "entries",
+          "entry_count": 11,
+          "sha256": "7ac31e9d19168ac90d2002ec22e07449f776c215c49b0885e12f4a74ec12f059"
+        },
+        {
+          "half": "13_L",
+          "page": 206,
+          "kind": "entries",
+          "entry_count": 10,
+          "sha256": "2c07988ab7cee91e835e7577bd3b8a25e290bee386a37abf5e34f806fa0f3e03"
+        },
+        {
+          "half": "13_R",
+          "page": 207,
+          "kind": "entries",
+          "entry_count": 22,
+          "sha256": "c4efe6d65a9f692d50b1c037d7e4bbd64f9b39f5b98e00a3c9e18ad7b1bd0982"
+        },
+        {
+          "half": "14_L",
+          "page": 208,
+          "kind": "entries",
+          "entry_count": 20,
+          "sha256": "bb41ab6a298d4e4fb91a844cf8937290a3a5f8dc8e8287cd48f830008dd580b8"
+        },
+        {
+          "half": "14_R",
+          "page": 209,
+          "kind": "entries",
+          "entry_count": 26,
+          "sha256": "3af9a6559d8e2f5ba09200c39629a56642341b153ccfaa2d3c699d25b0a17feb"
+        },
+        {
+          "half": "15_L",
+          "page": 210,
+          "kind": "entries",
+          "entry_count": 19,
+          "sha256": "53a6d2448d8ecc7e53c8401be8f47abae6640625fd648b8040732c432c6513bb"
+        },
+        {
+          "half": "15_R",
+          "page": 211,
+          "kind": "entries",
+          "entry_count": 21,
+          "sha256": "5aee6e976403e9b43922ee319f3b552248292511e4769bac194e65ed6431a43e"
+        },
+        {
+          "half": "16_L",
+          "page": 212,
+          "kind": "entries",
+          "entry_count": 15,
+          "sha256": "29a7c1810c40a2e303f9f3e666a9846e149b9e286418f7e2e941d0d0d15f831e"
+        },
+        {
+          "half": "16_R",
+          "page": 213,
+          "kind": "entries",
+          "entry_count": 18,
+          "sha256": "b8bf5c7c5df8db46098a5dddedcde0e3e2adf400c061f0a5e3a29a78ed480c10"
+        },
+        {
+          "half": "17_L",
+          "page": 214,
+          "kind": "entries",
+          "entry_count": 15,
+          "sha256": "be2cfae41831472b13712dd9fe820f2ee9cee5671c4a9de8ba7251203d576c8f"
+        },
+        {
+          "half": "17_R",
+          "page": 215,
+          "kind": "entries",
+          "entry_count": 9,
+          "sha256": "c3e933b151737456b50c67bee8af9e7d89fccc424b4316af0e2a5b1558dad218"
+        },
+        {
+          "half": "18_L",
+          "page": 216,
+          "kind": "entries",
+          "entry_count": 23,
+          "sha256": "476f8247be3496269dfdc5b3f12f03f9dc850da99ad7caa000de3d218931ceb4"
+        },
+        {
+          "half": "18_R",
+          "page": 217,
+          "kind": "entries",
+          "entry_count": 15,
+          "sha256": "b2cd05e67042617cc5aa48d92e3a0542b004d0ef92ad55f223e0cb43f43dae9d"
+        },
+        {
+          "half": "19_L",
+          "page": 218,
+          "kind": "entries",
+          "entry_count": 22,
+          "sha256": "47a950e22f8cc73bed47a3f28090679b2e2e85039f2da548a0bac8130bfb2619"
+        },
+        {
+          "half": "19_R",
+          "page": 219,
+          "kind": "entries",
+          "entry_count": 5,
+          "sha256": "5bc2ebc2e587fe393bf415042639a8c34372c266111bae067cde21badd4b2d3f"
+        }
+      ]
+    },
+    "9": {
+      "screenshot_count": 22,
+      "page_half_count": 44,
+      "main_entry_count": 682,
+      "knowledge_box_count": 14,
+      "halves": [
+        {
+          "half": "01_L",
+          "page": 182,
+          "kind": "introductory",
+          "entry_count": 0,
+          "sha256": "ad9d99d71029f51e4f81bfaf636736f71cf4e34b99efd258e9392799d1fa401a"
+        },
+        {
+          "half": "01_R",
+          "page": 183,
+          "kind": "entries",
+          "entry_count": 24,
+          "sha256": "abe05cc91f0fe78c40699d328f3a3630455ce0e3972531d944fdc3b081568e32"
+        },
+        {
+          "half": "02_L",
+          "page": 184,
+          "kind": "entries",
+          "entry_count": 21,
+          "sha256": "ac0678b0e0ecb429be50279042cabf31e1f5cb06ebe6b152aa9ba2d1c68a51e6"
+        },
+        {
+          "half": "02_R",
+          "page": 185,
+          "kind": "entries",
+          "entry_count": 15,
+          "sha256": "c41ad6bfe845e68fe8be535b917e9445c112278874794f8021cff5b5e72b6a5e"
+        },
+        {
+          "half": "03_L",
+          "page": 186,
+          "kind": "knowledge-box",
+          "entry_count": 0,
+          "sha256": "04fd7087c802f169fb2e57c95073091d829377a08c350566177dc9ec6941bfde"
+        },
+        {
+          "half": "03_R",
+          "page": 187,
+          "kind": "entries",
+          "entry_count": 19,
+          "sha256": "e8184f7811213ed2f4bf15c78d783e1b5907f25843605e77e3b590d7632c3446"
+        },
+        {
+          "half": "04_L",
+          "page": 188,
+          "kind": "entries",
+          "entry_count": 23,
+          "sha256": "40bd36998487e8dab0b5ecdde2cd1819ddd33dbe348188091bdd25e936ca43d2"
+        },
+        {
+          "half": "04_R",
+          "page": 189,
+          "kind": "entries",
+          "entry_count": 24,
+          "sha256": "7b29cbf3b499292d52463822f234c09d8bd8e9c88e27ccaed82e643fe4e496ab"
+        },
+        {
+          "half": "05_L",
+          "page": 190,
+          "kind": "entries",
+          "entry_count": 19,
+          "sha256": "677f5b5a92c2e576e921e7eca50896b8988cdbd874ca9200239c7832b29ac83f"
+        },
+        {
+          "half": "05_R",
+          "page": 191,
+          "kind": "entries",
+          "entry_count": 13,
+          "sha256": "60730368b34ffde8551b354cd2050aa00b8fcf9f6d96a2cf9821042410b30f1f"
+        },
+        {
+          "half": "06_L",
+          "page": 192,
+          "kind": "entries",
+          "entry_count": 23,
+          "sha256": "3747209a86fce41c38331817438fcc9749b0e8876054d974e0d0ea0c715362ec"
+        },
+        {
+          "half": "06_R",
+          "page": 193,
+          "kind": "entries",
+          "entry_count": 20,
+          "sha256": "1c596b188bcba57e96aa0795202387694ce2e44cda997fa4b26d38b0b4045082"
+        },
+        {
+          "half": "07_L",
+          "page": 194,
+          "kind": "entries",
+          "entry_count": 12,
+          "sha256": "fb22b1ceaa8f65f2d52b65c0b531670f212214a5fa4f911fad02c837c4120d32"
+        },
+        {
+          "half": "07_R",
+          "page": 195,
+          "kind": "entries",
+          "entry_count": 21,
+          "sha256": "f2d1179e7c998e6fa5ce183f7f21583d5ba964eb1002758a5b9592bd7427e3f0"
+        },
+        {
+          "half": "08_L",
+          "page": 196,
+          "kind": "entries",
+          "entry_count": 4,
+          "sha256": "fbd1facaa95e3030d1add73506cc29fd30f43040601025d22280f2579bd89f89"
+        },
+        {
+          "half": "08_R",
+          "page": 197,
+          "kind": "entries",
+          "entry_count": 19,
+          "sha256": "28b2479f540b1599086ac24b12b7b0991eb12ea83ae6a0dca0d40e5c082ccc05"
+        },
+        {
+          "half": "09_L",
+          "page": 198,
+          "kind": "entries",
+          "entry_count": 8,
+          "sha256": "46b6c1bf587adde111d5106fe300fd5d76941f21a7fb6f4ecbe58697c350abe1"
+        },
+        {
+          "half": "09_R",
+          "page": 199,
+          "kind": "entries",
+          "entry_count": 21,
+          "sha256": "1b550494a740fad86953515bcd0e20683b41c07b940432d74ab80a7bdece9002"
+        },
+        {
+          "half": "10_L",
+          "page": 200,
+          "kind": "entries",
+          "entry_count": 16,
+          "sha256": "d1852d21aaa9ffc5df9ce21c76269593e5e5fe24e1913a1d1e3d1f1bc60be11b"
+        },
+        {
+          "half": "10_R",
+          "page": 201,
+          "kind": "entries",
+          "entry_count": 19,
+          "sha256": "d7dd9e2ef49356241751bc08124f35d96abf600e4ae416674286e1d40445477b"
+        },
+        {
+          "half": "11_L",
+          "page": 202,
+          "kind": "entries",
+          "entry_count": 17,
+          "sha256": "8b1cda9d01f211106ac91d88b37f165ee07ba5febc70af11591423ebd6750547"
+        },
+        {
+          "half": "11_R",
+          "page": 203,
+          "kind": "entries",
+          "entry_count": 18,
+          "sha256": "40f75dc2290e2eb2a9c4090f45ff73f7b85e3e46f2d1d4b60599a5d4fb3ac329"
+        },
+        {
+          "half": "12_L",
+          "page": 204,
+          "kind": "entries",
+          "entry_count": 6,
+          "sha256": "7e27e64a590783aef16199b463e1f838e423c216990f560b164fe4b9741c9c51"
+        },
+        {
+          "half": "12_R",
+          "page": 205,
+          "kind": "entries",
+          "entry_count": 19,
+          "sha256": "038c132af18a05cc16866532586f95e957b38cdf432ef7b8f42ad6fef7f7825f"
+        },
+        {
+          "half": "13_L",
+          "page": 206,
+          "kind": "entries",
+          "entry_count": 13,
+          "sha256": "c61b3aafbfe6c55b863063fabb1bca0a569fda1a49b01a6bb221fa2abded3a2f"
+        },
+        {
+          "half": "13_R",
+          "page": 207,
+          "kind": "entries",
+          "entry_count": 20,
+          "sha256": "2509830d9b3d43eb381dd6e481e7e2b3b852c9f9bde0235594d5a349ade66b33"
+        },
+        {
+          "half": "14_L",
+          "page": 208,
+          "kind": "entries",
+          "entry_count": 21,
+          "sha256": "ca66ff290244fee57b41d229250415a0e2ba6b009481e600b96e6024a7d02c91"
+        },
+        {
+          "half": "14_R",
+          "page": 209,
+          "kind": "entries",
+          "entry_count": 11,
+          "sha256": "d4617da98cbec8562b4da0beecc4f349d6120a17b9a2273c17deb07b5d537ee9"
+        },
+        {
+          "half": "15_L",
+          "page": 210,
+          "kind": "entries",
+          "entry_count": 22,
+          "sha256": "3652231c724ce3ae70ad32a08903c64fde1065a0bc7f073bc90df8cd8f26033c"
+        },
+        {
+          "half": "15_R",
+          "page": 211,
+          "kind": "entries",
+          "entry_count": 8,
+          "sha256": "f2849bd8bc1ef9a96a6660da6dd631f366f91eec24188c870a06932e76f29f81"
+        },
+        {
+          "half": "16_L",
+          "page": 212,
+          "kind": "entries",
+          "entry_count": 26,
+          "sha256": "bd41e92344369720670d21b1e2650a0003ebdd9bd73f90659afd6c5e789c23b3"
+        },
+        {
+          "half": "16_R",
+          "page": 213,
+          "kind": "entries",
+          "entry_count": 7,
+          "sha256": "8b1817e3d8bd16aa839dbce74996190411f9bc87a8ba0e5b7b9f87a6c7903194"
+        },
+        {
+          "half": "17_L",
+          "page": 214,
+          "kind": "entries",
+          "entry_count": 16,
+          "sha256": "cf30c89d3a5cf52380c15b8d9c2d379ec4fdddc81edfcfcb5b266155ed8e9b03"
+        },
+        {
+          "half": "17_R",
+          "page": 215,
+          "kind": "entries",
+          "entry_count": 16,
+          "sha256": "edeb0f186c6691ed781dcfba6c380773c48d4ee12b210620577d6e0ca158db18"
+        },
+        {
+          "half": "18_L",
+          "page": 216,
+          "kind": "entries",
+          "entry_count": 10,
+          "sha256": "95b42af0f8f4e353b3e4829c2f31c40c10c3480279990d9a3b149a326b24a256"
+        },
+        {
+          "half": "18_R",
+          "page": 217,
+          "kind": "entries",
+          "entry_count": 16,
+          "sha256": "9a4efbb8fcb2e3ff2c0adb3b182ff4559cc44501500c8801d851eeb131a75cd4"
+        },
+        {
+          "half": "19_L",
+          "page": 218,
+          "kind": "entries",
+          "entry_count": 19,
+          "sha256": "31467bad492fe35b1510b0ea3bea04179e7b225d7f6a96249d95cd44c61857d9"
+        },
+        {
+          "half": "19_R",
+          "page": 219,
+          "kind": "entries",
+          "entry_count": 20,
+          "sha256": "6ebe1d47a8b67bcd9a17cbcc664d9ef118deab292b42ab13f68b8a34dd9aeff9"
+        },
+        {
+          "half": "20_L",
+          "page": 220,
+          "kind": "entries",
+          "entry_count": 10,
+          "sha256": "7d786324800e278e1e024eff0f7734be25bab93576c85b908f9d5acc941e9b75"
+        },
+        {
+          "half": "20_R",
+          "page": 221,
+          "kind": "entries",
+          "entry_count": 4,
+          "sha256": "cd5aeaab1e6ca58a345aea1a7bb35f1c2d2d892b841bc1c1148d093315093cd6"
+        },
+        {
+          "half": "21_L",
+          "page": 222,
+          "kind": "entries",
+          "entry_count": 17,
+          "sha256": "922681a10f3a941e6e84082fe1d0643031aba07825679091099ad251c7b0e504"
+        },
+        {
+          "half": "21_R",
+          "page": 223,
+          "kind": "entries",
+          "entry_count": 18,
+          "sha256": "3b89264b788aed9e008913d9c2b3fe74bacc46d36bcebb569eb45a836b4e442d"
+        },
+        {
+          "half": "22_L",
+          "page": 224,
+          "kind": "entries",
+          "entry_count": 12,
+          "sha256": "a0c384fbce7db01331d78291592f208b002c8278d97f3fe27d7194fda82de5d5"
+        },
+        {
+          "half": "22_R",
+          "page": 225,
+          "kind": "entries",
+          "entry_count": 15,
+          "sha256": "e230aa807e8be433ff121e21034ac6604bc3031ecdbb601734f76830b1141790"
+        }
+      ]
+    }
+  },
+  "totals": {
+    "screenshots": 41,
+    "page_halves": 82,
+    "main_entries": 1340,
+    "knowledge_boxes": 27
+  },
+  "privacy": {
+    "raw_images_committed": false
+  }
+}
