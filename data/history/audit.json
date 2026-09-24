@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "result": "pass",
+  "audited_at": "2026-09-25",
+  "source_root": "Lokale Geschichtsdatenbank; Originaldateien werden nicht veröffentlicht.",
+  "grades": {
+    "9": {
+      "files_expected": 49,
+      "files_audited": 49,
+      "chapters": 5,
+      "supplements": 1
+    },
+    "10": {
+      "files_expected": 38,
+      "files_audited": 38,
+      "chapters": 2,
+      "supplements": 1
+    },
+    "12": {
+      "files_expected": 46,
+      "files_audited": 46,
+      "chapters": 7,
+      "supplements": 0
+    }
+  },
+  "totals": {
+    "files": 133,
+    "topics": 130,
+    "terms": 119,
+    "people": 76,
+    "events": 115,
+    "questions": 310,
+    "assignments": 117,
+    "media": 38
+  },
+  "checks": [
+    "133/133 Quelldateien lesbar",
+    "Alle Kapitel im Katalog",
+    "Quelleninventar je Kapitel",
+    "Keine Originaldateien veröffentlicht",
+    "Fragen und Spiel-Payloads je Inhaltskapitel"
+  ]
+}
