@@ -1,1 +1,6998 @@
-{"schema_version":"1.0","subject":"English","grade":9,"unit":1,"title":"G’day Australia!","import_status":"full_import","entry_count":276,"sections":["Across cultures 2 The language of tolerance and respect","Check-in","Focus 1 Aotearoa - the 'land of the long white cloud'","Skills: How to give a group presentation","Station 1: Just me and my backpack","Station 2: When did your folks get here?","Station 3: The land owns us","Text smart 1 Text analysis"],"audit":{"source_format":"screenshots","binary_in_repo":false,"examples_in_repo":false},"parts":["unit-1-part-1.json","unit-1-part-2.json","unit-1-part-3.json"],"storage":"compact-array-v1"}
+{
+  "schema_version": "2.0",
+  "grade": 9,
+  "unit": 1,
+  "title": "G’day Australia!",
+  "entry_count": 300,
+  "entries": [
+    {
+      "id": "g9-u1-0001",
+      "english": "G'day! (= Good day!)",
+      "german": "Guten Tag.; Hallo.; Hi. (Begrüßung in Australien)",
+      "phonetic": "ɡəˈdeɪ",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Check-in",
+      "page": 187,
+      "source": {
+        "page": 187,
+        "half": "R",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "G'day!- This is how Australians say hello."
+    },
+    {
+      "id": "g9-u1-0002",
+      "english": "coral reef",
+      "german": "Korallenriff",
+      "phonetic": "ˌkɒrəl ˈriːf",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Check-in",
+      "page": 187,
+      "source": {
+        "page": 187,
+        "half": "R",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "The Great Barrier Reef is a huge coral reef."
+    },
+    {
+      "id": "g9-u1-0003",
+      "english": "purpose",
+      "german": "Ziel; Absicht; Zweck",
+      "phonetic": "ˈpɜːpəs",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Check-in",
+      "page": 187,
+      "source": {
+        "page": 187,
+        "half": "R",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "If you have a purpose, you have a reason to do something."
+    },
+    {
+      "id": "g9-u1-0004",
+      "english": "basically",
+      "german": "eigentlich; grundsätzlich; im Grunde genommen",
+      "phonetic": "ˈbeɪsɪkli",
+      "part_of_speech": "adverb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Check-in",
+      "page": 187,
+      "source": {
+        "page": 187,
+        "half": "R",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "The definitions were basically the same, except for one aspect."
+    },
+    {
+      "id": "g9-u1-0005",
+      "english": "climatic",
+      "german": "klimatisch",
+      "phonetic": "klaɪˈmætɪk",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Check-in",
+      "page": 187,
+      "source": {
+        "page": 187,
+        "half": "R",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "People cannot live in the outback because of the extreme climatic conditions. climatic → climate"
+    },
+    {
+      "id": "g9-u1-0006",
+      "english": "virtually",
+      "german": "praktisch; so gut wie",
+      "phonetic": "ˈvɜːtʃuəli",
+      "part_of_speech": "adverb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Check-in",
+      "page": 187,
+      "source": {
+        "page": 187,
+        "half": "R",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "It's virtually impossible to live on the moon. virtually - nearly, almost"
+    },
+    {
+      "id": "g9-u1-0007",
+      "english": "uninhabitable",
+      "german": "unbewohnbar",
+      "phonetic": "ˌʌnɪnˈhæbɪtəbl",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Check-in",
+      "page": 187,
+      "source": {
+        "page": 187,
+        "half": "R",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Large parts of the outback are uninhabitable. uninhabitable → inhabitable→ to be inhabited"
+    },
+    {
+      "id": "g9-u1-0008",
+      "english": "enormous",
+      "german": "enorm; gewaltig",
+      "phonetic": "ɪˈnɔːməs",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Check-in",
+      "page": 187,
+      "source": {
+        "page": 187,
+        "half": "R",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "The distance between Los Angeles and New York is enormous."
+    },
+    {
+      "id": "g9-u1-0009",
+      "english": "debt",
+      "german": "Schuld; Verschuldung; Verpflichtung",
+      "phonetic": "det",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Check-in",
+      "page": 187,
+      "source": {
+        "page": 187,
+        "half": "R",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "I've lost my job and now I don't know how to pay my debts. Fr. dette (f); Lat. debitum (nt)"
+    },
+    {
+      "id": "g9-u1-0010",
+      "english": "per capita",
+      "german": "pro Kopf; Pro-Kopf-; pro Person",
+      "phonetic": "pə ˈkæpɪtə",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Check-in",
+      "page": 187,
+      "source": {
+        "page": 187,
+        "half": "R",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "per capita income, the household debt per capita"
+    },
+    {
+      "id": "g9-u1-0011",
+      "english": "poverty",
+      "german": "Armut",
+      "phonetic": "ˈpɒvəti",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Check-in",
+      "page": 187,
+      "source": {
+        "page": 187,
+        "half": "R",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Almost a fifth of the children in Australia live below the poverty line. poverty → poor Fr. pauvreté (f); Lat. paupertas (f)"
+    },
+    {
+      "id": "g9-u1-0012",
+      "english": "currently",
+      "german": "momentan; aktuell",
+      "phonetic": "ˈkʌrəntli",
+      "part_of_speech": "adverb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Check-in",
+      "page": 187,
+      "source": {
+        "page": 187,
+        "half": "R",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "The weather is currently extremely bad. It's rainy and stormy. currently - now; at this moment in time Lat. currere, currens"
+    },
+    {
+      "id": "g9-u1-0013",
+      "english": "unique",
+      "german": "einzigartig",
+      "phonetic": "juːˈniːk",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Check-in",
+      "page": 187,
+      "source": {
+        "page": 187,
+        "half": "R",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "This necklace is unique. unique - being the only one of a kind Fr. unique; Lat. unicus"
+    },
+    {
+      "id": "g9-u1-0014",
+      "english": "outstanding",
+      "german": "außergewöhnlich; herausragend",
+      "phonetic": "aʊtˈstændɪŋ",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Check-in",
+      "page": 187,
+      "source": {
+        "page": 187,
+        "half": "R",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Her career in politics is outs tanding. No woman has ever come so far."
+    },
+    {
+      "id": "g9-u1-0015",
+      "english": "exploitation",
+      "german": "Ausbeutung; Abbau",
+      "phonetic": "ˌeksplɔɪˈteɪʃn",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Check-in",
+      "page": 187,
+      "source": {
+        "page": 187,
+        "half": "R",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "The exploitation of natural resources causes more and more problems. Fr. exploitation (f)"
+    },
+    {
+      "id": "g9-u1-0016",
+      "english": "harmful",
+      "german": "schädlich",
+      "phonetic": "ˈhɑːmfl",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Check-in",
+      "page": 187,
+      "source": {
+        "page": 187,
+        "half": "R",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Too much sugar isn't good for you. It's harmful to your health."
+    },
+    {
+      "id": "g9-u1-0017",
+      "english": "to account for",
+      "german": "ausmachen; verantwortlich sein für",
+      "phonetic": "əˈkaʊnt fə",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Check-in",
+      "page": 187,
+      "source": {
+        "page": 187,
+        "half": "R",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Latin and French words account for most English words."
+    },
+    {
+      "id": "g9-u1-0018",
+      "english": "to gleam",
+      "german": "glänzen; schimmern",
+      "phonetic": "ɡliːm",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 1: Just me and my backpack",
+      "page": 187,
+      "source": {
+        "page": 187,
+        "half": "R",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "The lake gleams in the sun."
+    },
+    {
+      "id": "g9-u1-0019",
+      "english": "cluster",
+      "german": "Bündel; Anhäufung",
+      "phonetic": "ˈklʌstə",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 1: Just me and my backpack",
+      "page": 187,
+      "source": {
+        "page": 187,
+        "half": "R",
+        "row": 19
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "This cluster of rocks looks like a dir"
+    },
+    {
+      "id": "g9-u1-0020",
+      "english": "seashell",
+      "german": "Muschel",
+      "phonetic": "ˈsiːʃel",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 1: Just me and my backpack",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "The roof of the Sydney Opera House looks like a cluster of seashells. seashell → shell → shellfish"
+    },
+    {
+      "id": "g9-u1-0021",
+      "english": "the day after tomorrow",
+      "german": "übermorgen",
+      "phonetic": "ðə ˌdeɪ ˌɑːftə təˈmɒrəʊ",
+      "part_of_speech": "phrase",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 1: Just me and my backpack",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Today is Friday, so the day after tomorrow is Sunday."
+    },
+    {
+      "id": "g9-u1-0022",
+      "english": "to overhear",
+      "german": "belauschen; zufällig mit anhören",
+      "phonetic": "ˌəʊvəˈhɪə",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 1: Just me and my backpack",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "I overheard a conversation between my parents when they were talking about moving to another country. ! False friend: to overhear + überhören"
+    },
+    {
+      "id": "g9-u1-0023",
+      "english": "terrace",
+      "german": "Terrasse",
+      "phonetic": "ˈterəs",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 1: Just me and my backpack",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Our hostel in Sydney had a roof terrace. From there we could see the whole city. Fr. terrasse (f)"
+    },
+    {
+      "id": "g9-u1-0024",
+      "english": "bloke (fam)",
+      "german": "Typ (ugs.)",
+      "phonetic": "bləʊk",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 1: Just me and my backpack",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Have you seen the bloke over there? I think he stole the lady's bag."
+    },
+    {
+      "id": "g9-u1-0025",
+      "english": "air ambulance",
+      "german": "Rettungshubschrauber",
+      "phonetic": "ˈeər ˌæmbjələns",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 1: Just me and my backpack",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "When there's an accident in the outback, you need an air ambulance. !Pronunciation and stress"
+    },
+    {
+      "id": "g9-u1-0026",
+      "english": "satellite",
+      "german": "Satellit",
+      "phonetic": "ˈsætəlaɪt",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 1: Just me and my backpack",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "There are thousands of satellites in space. Fr. satellite; (m); Lat. satelles; (m)/(f)"
+    },
+    {
+      "id": "g9-u1-0027",
+      "english": "to cancel",
+      "german": "absagen; stornieren",
+      "phonetic": "ˈkænsl",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 1: Just me and my backpack",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "One of the singers was ill, so the concert was cancelled."
+    },
+    {
+      "id": "g9-u1-0028",
+      "english": "hopefully",
+      "german": "hoffentlich",
+      "phonetic": "ˈhəʊpfli",
+      "part_of_speech": "adverb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 1: Just me and my backpack",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "I really want this job, so hopefully I'll get it! hopefully → hope, to hope"
+    },
+    {
+      "id": "g9-u1-0029",
+      "english": "to sting",
+      "german": "stechen",
+      "phonetic": "stɪŋ",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 1: Just me and my backpack",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Bees can sting."
+    },
+    {
+      "id": "g9-u1-0030",
+      "english": "box jellyfish",
+      "german": "würfelqualle",
+      "phonetic": "ˈbɒks ˌdʒelifɪʃ",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 1: Just me and my backpack",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Box jellyfish live in warm sea water and are very dangerous."
+    },
+    {
+      "id": "g9-u1-0031",
+      "english": "to beware",
+      "german": "sich in Acht nehmen",
+      "phonetic": "bɪˈweə",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 1: Just me and my backpack",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "! Only used in the infinitive or imperative form: Beware of the dog."
+    },
+    {
+      "id": "g9-u1-0032",
+      "english": "shark",
+      "german": "Hai",
+      "phonetic": "ʃɑːk",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 1: Just me and my backpack",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "You can't swim here. There are sharks in the area. 21"
+    },
+    {
+      "id": "g9-u1-0033",
+      "english": "rip current",
+      "german": "Brandungsrückströmung",
+      "phonetic": "ˈrɪp ˌkʌrənt",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 1: Just me and my backpack",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Rip currents can carry swimmers out to sea."
+    },
+    {
+      "id": "g9-u1-0034",
+      "english": "to sweep",
+      "german": "fegen; wegspülen",
+      "phonetic": "swiːp",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 1: Just me and my backpack",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "1. We take turns to sweep the hall. 2. The sand castles were all swept away by the waves."
+    },
+    {
+      "id": "g9-u1-0035",
+      "english": "comforting",
+      "german": "tröstlich; ermutigend",
+      "phonetic": "ˈkʌmfətɪŋ",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 1: Just me and my backpack",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "She's sad and needs some comforting words."
+    },
+    {
+      "id": "g9-u1-0036",
+      "english": "opal",
+      "german": "Opal",
+      "phonetic": "ˈəʊpl",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 1: Just me and my backpack",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "My boyfriend gave me an opal ring. I think he loves me."
+    },
+    {
+      "id": "g9-u1-0037",
+      "english": "to succeed (in)",
+      "german": "Erfolg haben (in/bei/mit) ; gelingen",
+      "phonetic": "səkˈsiːd ɪn",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 1: Just me and my backpack",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Did you succeed in educating your dog? - At least he sits when I say \"Sit!\". to succeed → success"
+    },
+    {
+      "id": "g9-u1-0038",
+      "english": "to prevent",
+      "german": "verhindern; abhalten",
+      "phonetic": "prɪˈvent",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 1: Just me and my backpack",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 19
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "1. The government has tried to prevent new attacks. 2. A thunderstorm prevented me from sleeping last night."
+    },
+    {
+      "id": "g9-u1-0039",
+      "english": "to trample (on)",
+      "german": "zertrampeln; herumtrampeln",
+      "phonetic": "ˈtræmpl",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 1: Just me and my backpack",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 20
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Don't trample on the flowers. I planted them only yesterday."
+    },
+    {
+      "id": "g9-u1-0040",
+      "english": "That's fair enough.",
+      "german": "Das ist nur recht und billig.",
+      "phonetic": "ˌðæts feər ɪˈnʌf",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 1: Just me and my backpack",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 21
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "I've paid for the pizza so I get the first piece. - That's fair enough."
+    },
+    {
+      "id": "g9-u1-0041",
+      "english": "barbie (Aus) (infml) (= barbecue)",
+      "german": "Grillparty",
+      "phonetic": "ˈbɑːbi",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 1: Just me and my backpack",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 22
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Let's have a barbie on the beach."
+    },
+    {
+      "id": "g9-u1-0042",
+      "english": "deadly",
+      "german": "tödlich",
+      "phonetic": "ˈdedli",
+      "part_of_speech": "adverb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 1: Just me and my backpack",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 23
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Some snakes' venom is deadly. deadly → death, dead"
+    },
+    {
+      "id": "g9-u1-0043",
+      "english": "spider",
+      "german": "Spinne",
+      "phonetic": "ˈspaɪdə",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 1: Just me and my backpack",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "The deadliest spider in the world lives in Australia."
+    },
+    {
+      "id": "g9-u1-0044",
+      "english": "heatwave",
+      "german": "Hitzewelle",
+      "phonetic": "ˈhiːtweɪv",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 1: Just me and my backpack",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Heatwaves often cause bushfires."
+    },
+    {
+      "id": "g9-u1-0045",
+      "english": "folks (infml) (pl)",
+      "german": "Leute",
+      "phonetic": "fəʊks",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 2: When did your folks get here?",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Hi folks, what's going on?"
+    },
+    {
+      "id": "g9-u1-0046",
+      "english": "No worries.",
+      "german": "Kein Problem.; Gern geschehen.",
+      "phonetic": "ˌnəʊ ˈwʌriz",
+      "part_of_speech": "phrase",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 2: When did your folks get here?",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Thank you for your help. - No worries."
+    },
+    {
+      "id": "g9-u1-0047",
+      "english": "How are you doing?",
+      "german": "Wie geht es dir /euch/Ihnen?",
+      "phonetic": "ˌhaʊ ɑː jə ˈduːɪŋ",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 2: When did your folks get here?",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "How are you doing? - OK, thanks. What about you?"
+    },
+    {
+      "id": "g9-u1-0048",
+      "english": "to trace back",
+      "german": "zurückverfolgen",
+      "phonetic": "ˌtreɪs ˈbæk",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 2: When did your folks get here?",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "I can trace my family back to the 16th century."
+    },
+    {
+      "id": "g9-u1-0049",
+      "english": "convict",
+      "german": "Sträfling",
+      "phonetic": "ˈkɒnvɪkt",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 2: When did your folks get here?",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Many British convicts were sent to Australia."
+    },
+    {
+      "id": "g9-u1-0050",
+      "english": "to bump into sb",
+      "german": "jmdn. zufällig treffen; hier: jmdn. anrempeln",
+      "phonetic": "ˌbʌmp ˈɪntə",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 2: When did your folks get here?",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "I was walking down the street when somebody bumped into me and I fell over."
+    },
+    {
+      "id": "g9-u1-0051",
+      "english": "sentence",
+      "german": "Strafe; Strafmaß; Urteil",
+      "phonetic": "ˈsentəns",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 2: When did your folks get here?",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "The convict's sentence was five years in prison. Lat. sententia (f)"
+    },
+    {
+      "id": "g9-u1-0052",
+      "english": "victim",
+      "german": "Opfer",
+      "phonetic": "ˈvɪktɪm",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 2: When did your folks get here?",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Bill wasn't the criminal. He was the victim of the crime. Fr. victime (f)"
+    },
+    {
+      "id": "g9-u1-0053",
+      "english": "to oppress",
+      "german": "unterdrücken",
+      "phonetic": "əˈpres",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 2: When did your folks get here?",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Back then the government oppressed the people."
+    },
+    {
+      "id": "g9-u1-0054",
+      "english": "to manage (to do sth)",
+      "german": "schaffen (etw.zu tun)",
+      "phonetic": "ˈmænɪdʒ",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 2: When did your folks get here?",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Thanks, I don't need any help. I can manage on my own."
+    },
+    {
+      "id": "g9-u1-0055",
+      "english": "tiny",
+      "german": "klein; winzig",
+      "phonetic": "ˈtaɪni",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 2: When did your folks get here?",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "A mouse looks tiny next to a horse. tiny ↔huge"
+    },
+    {
+      "id": "g9-u1-0056",
+      "english": "to have sth done",
+      "german": "etw. machen lassen",
+      "phonetic": "hæv",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 2: When did your folks get here?",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "You've had your hair cut, haven't you?"
+    },
+    {
+      "id": "g9-u1-0057",
+      "english": "to renovate",
+      "german": "renovieren",
+      "phonetic": "ˈrenəveɪt",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 2: When did your folks get here?",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "My parents are renovating our house at the moment."
+    },
+    {
+      "id": "g9-u1-0058",
+      "english": "to irritate",
+      "german": "verärgern; reizen",
+      "phonetic": "ˈɪrɪteɪt",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 2: When did your folks get here?",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Mark's parents were irritated because he didn't say hello when he came home. !False friend: dt. irritiert ≠ irritated, - confused"
+    },
+    {
+      "id": "g9-u1-0059",
+      "english": "to be in progress",
+      "german": "ablaufen; im Gange sein",
+      "phonetic": "bi ɪn ˈprəʊɡres",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 2: When did your folks get here?",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Don't disturb your colleagues, there's a meeting in progress."
+    },
+    {
+      "id": "g9-u1-0060",
+      "english": "movement",
+      "german": "Bewegung",
+      "phonetic": "ˈmuːvmənt",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 2: When did your folks get here?",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "The family is out. There's no movement in the house. movement → to move Fr. mouvement (m)"
+    },
+    {
+      "id": "g9-u1-0061",
+      "english": "perception",
+      "german": "Wahrnehmung",
+      "phonetic": "pəˈsepʃn",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 2: When did your folks get here?",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 19
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Verbs like'see, 'watch', 'hear', 'feel' are verbs of perception. Fr. perception (f); Lat. percipere, perceptum"
+    },
+    {
+      "id": "g9-u1-0062",
+      "english": "state",
+      "german": "Zustand",
+      "phonetic": "steɪt",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 2: When did your folks get here?",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 20
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "My bike is old but its state is very good. Lat. status (m)"
+    },
+    {
+      "id": "g9-u1-0063",
+      "english": "knowledge (no pl)",
+      "german": "Wissen; Kenntnisse",
+      "phonetic": "ˈnɒlɪdʒ",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 2: When did your folks get here?",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 21
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "My knowledge of computers is limited. knowledge → to know"
+    },
+    {
+      "id": "g9-u1-0064",
+      "english": "the Dutch",
+      "german": "das niederländische Volk",
+      "phonetic": "ðə ˈdʌtʃ",
+      "part_of_speech": "phrase",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 2: When did your folks get here?",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 22
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "The Dutch come from Holland."
+    },
+    {
+      "id": "g9-u1-0065",
+      "english": "none",
+      "german": "keine/-r/-s",
+      "phonetic": "nʌn",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 2: When did your folks get here?",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 23
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "None of the class want to go to th"
+    },
+    {
+      "id": "g9-u1-0066",
+      "english": "penal colony",
+      "german": "Strafkolonie",
+      "phonetic": "ˈpiːnl ˌkɒləni",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 2: When did your folks get here?",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 24
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "White Australia began as a penal Lat. poena (f); colonia (f)"
+    },
+    {
+      "id": "g9-u1-0067",
+      "english": "Jewish",
+      "german": "jüdisch",
+      "phonetic": "ˈdʒuːɪʃ",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 2: When did your folks get here?",
+      "page": 190,
+      "source": {
+        "page": 190,
+        "half": "L",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "A lot of /ewish people went to Australia during the 1930s and 1940s."
+    },
+    {
+      "id": "g9-u1-0068",
+      "english": "refugee",
+      "german": "Geflüchtete/-r",
+      "phonetic": "ˌrefjuˈdʒiː",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 2: When did your folks get here?",
+      "page": 190,
+      "source": {
+        "page": 190,
+        "half": "L",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "In 2015 a lot of refugees came to live in our town. Fr. réfugié/-e; Lat. refugere"
+    },
+    {
+      "id": "g9-u1-0069",
+      "english": "significant",
+      "german": "signifikant; bedeutend; wesentlich",
+      "phonetic": "sɪɡˈnɪfɪkənt",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 2: When did your folks get here?",
+      "page": 190,
+      "source": {
+        "page": 190,
+        "half": "L",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Climate change has led to a significant rise in temperatures. Fr. significatif/-ive; Lat. significare"
+    },
+    {
+      "id": "g9-u1-0070",
+      "english": "farewell",
+      "german": "Abschied; Abschieds-",
+      "phonetic": "ˌfeəˈwel",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 2: When did your folks get here?",
+      "page": 190,
+      "source": {
+        "page": 190,
+        "half": "L",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "When our teacher moved to another town, we gave her a farewell present."
+    },
+    {
+      "id": "g9-u1-0071",
+      "english": "to restrict",
+      "german": "begrenzen; beschränken",
+      "phonetic": "rɪˈstrɪkt",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 2: When did your folks get here?",
+      "page": 190,
+      "source": {
+        "page": 190,
+        "half": "L",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "In Australia and the US, immigration is restricted. Fr. réstrictif/-ive; Lat. restringere, restrictum"
+    },
+    {
+      "id": "g9-u1-0072",
+      "english": "overseas",
+      "german": "in Übersee; im Ausland",
+      "phonetic": "ˌəʊvəˈsiːz",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 2: When did your folks get here?",
+      "page": 190,
+      "source": {
+        "page": 190,
+        "half": "L",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Would you like to do an overseas job?"
+    },
+    {
+      "id": "g9-u1-0073",
+      "english": "variety (of)",
+      "german": "Vielzahl (an); Vielfalt (von)",
+      "phonetic": "vəˈraɪəti əv",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 2: When did your folks get here?",
+      "page": 190,
+      "source": {
+        "page": 190,
+        "half": "L",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "The local vegetable market often has more variety than the supermarkets. Fr. varié/-e; Lat. varietas (f)"
+    },
+    {
+      "id": "g9-u1-0074",
+      "english": "to apply (for)",
+      "german": "sich bewerben (um); beantragen",
+      "phonetic": "əˈplaɪ fə",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 2: When did your folks get here?",
+      "page": 190,
+      "source": {
+        "page": 190,
+        "half": "L",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "I had to apply for my visa online."
+    },
+    {
+      "id": "g9-u1-0075",
+      "english": "visa",
+      "german": "Visum, Visa (PL); Einreisebewilligung",
+      "phonetic": "ˈviːzə",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 2: When did your folks get here?",
+      "page": 190,
+      "source": {
+        "page": 190,
+        "half": "L",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "You can't enter the US without a visa. Fr. visa (m); Lat. videre, visum"
+    },
+    {
+      "id": "g9-u1-0076",
+      "english": "occupation",
+      "german": "Beruf; Beschäftigung",
+      "phonetic": "ˌɒkjəˈpeɪʃn",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 2: When did your folks get here?",
+      "page": 190,
+      "source": {
+        "page": 190,
+        "half": "L",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "What's your father's occupation? Fr. occupaton (f); Lat. occupatio (f)"
+    },
+    {
+      "id": "g9-u1-0077",
+      "english": "valid",
+      "german": "gültig",
+      "phonetic": "ˈvælɪd",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 2: When did your folks get here?",
+      "page": 190,
+      "source": {
+        "page": 190,
+        "half": "L",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "You need a valid visa to travel to Australia. Fr. valide (m)/(f)"
+    },
+    {
+      "id": "g9-u1-0078",
+      "english": "immigration detention centre",
+      "german": "Auffanglager (fūr illegal Eingewanderte)",
+      "phonetic": "ˌɪmɪˌɡreɪʃn dɪˈtenʃn ˌsentə",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 2: When did your folks get here?",
+      "page": 190,
+      "source": {
+        "page": 190,
+        "half": "L",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Refugees who come to Europe usually live in immigration detention centres for the first weeks or months."
+    },
+    {
+      "id": "g9-u1-0079",
+      "english": "to clear a case",
+      "german": "einen Fall klären",
+      "phonetic": "ˌklɪər ə ˈkeɪs",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 2: When did your folks get here?",
+      "page": 190,
+      "source": {
+        "page": 190,
+        "half": "L",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "The government tries to clear the case of each immigrant as fast as possible."
+    },
+    {
+      "id": "g9-u1-0080",
+      "english": "since",
+      "german": "da",
+      "phonetic": "sɪns",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 2: When did your folks get here?",
+      "page": 190,
+      "source": {
+        "page": 190,
+        "half": "L",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "'Since' has two meanings: 1. Since I was little, ... (seit) 2. Since it's too late, ... (da)"
+    },
+    {
+      "id": "g9-u1-0081",
+      "english": "policy",
+      "german": "Politik; politische Linie",
+      "phonetic": "ˈpɒləsi",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 2: When did your folks get here?",
+      "page": 190,
+      "source": {
+        "page": 190,
+        "half": "L",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "!Careful, don't mix up: 1. The government's policies have increased the gap between rich and poor. 2. Young people seem interested in politics these days."
+    },
+    {
+      "id": "g9-u1-0082",
+      "english": "restrictive",
+      "german": "beschränkend; einengend",
+      "phonetic": "rɪˈstrɪktɪv",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 2: When did your folks get here?",
+      "page": 190,
+      "source": {
+        "page": 190,
+        "half": "L",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "When a country is restrictive about immigration, it wants to keep immigration numbers low. Lat. restrictus"
+    },
+    {
+      "id": "g9-u1-0083",
+      "english": "to increase",
+      "german": "steigen; erhöhen; zunehmen; wachsen",
+      "phonetic": "ɪnˈkriːs",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 2: When did your folks get here?",
+      "page": 190,
+      "source": {
+        "page": 190,
+        "half": "L",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "The world's population is increasing year after year. to increase - to grow in size or number Lat. increscere"
+    },
+    {
+      "id": "g9-u1-0084",
+      "english": "to decrease",
+      "german": "abnehmen; reduzieren",
+      "phonetic": "dɪˈkriːs",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 2: When did your folks get here?",
+      "page": 190,
+      "source": {
+        "page": 190,
+        "half": "L",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Our town's population has decreased over the last years. to decrease ↔ to increase Lat. decrescere"
+    },
+    {
+      "id": "g9-u1-0085",
+      "english": "slight",
+      "german": "leicht; gering",
+      "phonetic": "slaɪt",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 2: When did your folks get here?",
+      "page": 190,
+      "source": {
+        "page": 190,
+        "half": "L",
+        "row": 19
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "A slight difference between two things is a very small one."
+    },
+    {
+      "id": "g9-u1-0086",
+      "english": "to own",
+      "german": "besitzen",
+      "phonetic": "əʊn",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 3: The land owns us",
+      "page": 191,
+      "source": {
+        "page": 191,
+        "half": "R",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "This is our own house. We own it. to own → owner"
+    },
+    {
+      "id": "g9-u1-0087",
+      "english": "to illustrate",
+      "german": "veranschaulichen; darstellen; illustrieren",
+      "phonetic": "ˈɪləstreɪt",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 3: The land owns us",
+      "page": 191,
+      "source": {
+        "page": 191,
+        "half": "R",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "What does this picture illustrate? - It shows the relationship between two people. Fr. illustrer; Lat. illustrare"
+    },
+    {
+      "id": "g9-u1-0088",
+      "english": "on the contrary",
+      "german": "im Gegenteil",
+      "phonetic": "ˌɒn ðə ˈkɒntrəri",
+      "part_of_speech": "phrase",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 3: The land owns us",
+      "page": 191,
+      "source": {
+        "page": 191,
+        "half": "R",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "The story doesn't just describe the main character's life. On the contrary, it shows her inner thoughts. Fr. au contraire; Lat. contrarius"
+    },
+    {
+      "id": "g9-u1-0089",
+      "english": "soil",
+      "german": "Erde; Boden",
+      "phonetic": "sɔɪl",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 3: The land owns us",
+      "page": 191,
+      "source": {
+        "page": 191,
+        "half": "R",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Cacti even grow in very dry soil. soi/ - the (brown) earth that plants grow in Fr. sol (m); Lat. solum (nt)"
+    },
+    {
+      "id": "g9-u1-0090",
+      "english": "surface",
+      "german": "Oberfläche",
+      "phonetic": "ˈsɜːfɪs",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 3: The land owns us",
+      "page": 191,
+      "source": {
+        "page": 191,
+        "half": "R",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "On the surface of the moon you can see valleys and mountains. Fr. surface (f) ; Lat. superficies (f)"
+    },
+    {
+      "id": "g9-u1-0091",
+      "english": "harsh",
+      "german": "rau; hart",
+      "phonetic": "hɑːʃ",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 3: The land owns us",
+      "page": 191,
+      "source": {
+        "page": 191,
+        "half": "R",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Don't be so harsh with him. He already feels bad enough."
+    },
+    {
+      "id": "g9-u1-0092",
+      "english": "universal",
+      "german": "allgemein; universell",
+      "phonetic": "ˌjuːnɪˈvɜːsl",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 3: The land owns us",
+      "page": 191,
+      "source": {
+        "page": 191,
+        "half": "R",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "English is a universa/ language because people from many different countries in the world speak it. Fr. universel/-le; Lat. universalis"
+    },
+    {
+      "id": "g9-u1-0093",
+      "english": "seasonal",
+      "german": "saisonal; jahreszeitlich bedingt",
+      "phonetic": "ˈsiːznl",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 3: The land owns us",
+      "page": 191,
+      "source": {
+        "page": 191,
+        "half": "R",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "In agriculture you do a lot of seasonal work. seasona/→ season Fr. saisonnier/-ière"
+    },
+    {
+      "id": "g9-u1-0094",
+      "english": "to pass (on)",
+      "german": "weitergeben",
+      "phonetic": "ˌpɑːs ˈɒn",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 3: The land owns us",
+      "page": 191,
+      "source": {
+        "page": 191,
+        "half": "R",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "I've got a message for your brother. Can you pass it on, please?"
+    },
+    {
+      "id": "g9-u1-0095",
+      "english": "gatherer",
+      "german": "Sammler/-in",
+      "phonetic": "ˈɡæðərə",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 3: The land owns us",
+      "page": 191,
+      "source": {
+        "page": 191,
+        "half": "R",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "In ancient times the people were hunters and gatherers. gatherer → to gather"
+    },
+    {
+      "id": "g9-u1-0096",
+      "english": "common",
+      "german": "gemeinsam; gewöhnlich",
+      "phonetic": "ˈkɒmən",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 3: The land owns us",
+      "page": 191,
+      "source": {
+        "page": 191,
+        "half": "R",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "!1. English is our common language. 2. The animal looked special, but it was just a common bird. common ↔ separate; different Fr. commun/-e; Lat. communis"
+    },
+    {
+      "id": "g9-u1-0097",
+      "english": "temporary",
+      "german": "vorübergehend; temporär",
+      "phonetic": "ˈtemprəri",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 3: The land owns us",
+      "page": 191,
+      "source": {
+        "page": 191,
+        "half": "R",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "The person you are calling is temp Fr. temporaire; Lat. tempus, tempo e"
+    },
+    {
+      "id": "g9-u1-0098",
+      "english": "boomerang",
+      "german": "Bumerang",
+      "phonetic": "ˈbuːməræŋ",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 3: The land owns us",
+      "page": 191,
+      "source": {
+        "page": 191,
+        "half": "R",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "If you throw the boomerang in the it comes back to you."
+    },
+    {
+      "id": "g9-u1-0099",
+      "english": "responsibility",
+      "german": "Aufgabe",
+      "phonetic": "rɪˌspɒnsəˈbɪləti",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 3: The land owns us",
+      "page": 192,
+      "source": {
+        "page": 192,
+        "half": "L",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "That job includes a lot of interesting areas of responsibility. Fr. responsabilité (f)"
+    },
+    {
+      "id": "g9-u1-0100",
+      "english": "to instruct",
+      "german": "arweisen; beauftragen",
+      "phonetic": "ɪnˈstrʌkt",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 3: The land owns us",
+      "page": 192,
+      "source": {
+        "page": 192,
+        "half": "L",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "If you instruct sb to do sth, you tell them what to do. to instruct → instruction Fr. instruction (f); Lat. instruere, instructum"
+    },
+    {
+      "id": "g9-u1-0101",
+      "english": "to establish",
+      "german": "einrichten; gründen; herstellen",
+      "phonetic": "ɪˈstæblɪʃ",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 3: The land owns us",
+      "page": 192,
+      "source": {
+        "page": 192,
+        "half": "L",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "They established a new camp for the immigrants. Fr. établir; Lat. stabilire"
+    },
+    {
+      "id": "g9-u1-0102",
+      "english": "I'd rather",
+      "german": "ich würde lieber",
+      "phonetic": "aɪd ˈrɑːðə",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 3: The land owns us",
+      "page": 192,
+      "source": {
+        "page": 192,
+        "half": "L",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "I don't want to watch the film on TV. I'd rather watch it at the cinema."
+    },
+    {
+      "id": "g9-u1-0103",
+      "english": "descent",
+      "german": "Abstammung",
+      "phonetic": "dɪˈsent",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 3: The land owns us",
+      "page": 192,
+      "source": {
+        "page": 192,
+        "half": "L",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "He is of Polish descent. His mother moved from Poland to Germany in her twenties. Fr. descendre; ascendance (f)"
+    },
+    {
+      "id": "g9-u1-0104",
+      "english": "to bring up",
+      "german": "großziehen",
+      "phonetic": "ˌbrɪŋ ˈʌp",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 3: The land owns us",
+      "page": 192,
+      "source": {
+        "page": 192,
+        "half": "L",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "My grandmother brought up her five children all alone after the death of my grandfather."
+    },
+    {
+      "id": "g9-u1-0105",
+      "english": "foster",
+      "german": "Pflege",
+      "phonetic": "ˈfɒstə",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 3: The land owns us",
+      "page": 192,
+      "source": {
+        "page": 192,
+        "half": "L",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "A lot of Aboriginal children grew up in white foster families."
+    },
+    {
+      "id": "g9-u1-0106",
+      "english": "orphanage",
+      "german": "Waisenhaus",
+      "phonetic": "ˈɔːfənɪdʒ",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 3: The land owns us",
+      "page": 192,
+      "source": {
+        "page": 192,
+        "half": "L",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "An orphanage is the home of children without parents."
+    },
+    {
+      "id": "g9-u1-0107",
+      "english": "to resent sb/sth",
+      "german": "sich ärgern über jmdn./etw.; jmdm.etw. übelnehmen",
+      "phonetic": "rɪˈzent",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 3: The land owns us",
+      "page": 192,
+      "source": {
+        "page": 192,
+        "half": "L",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "I still resent my parents for not supporting my career choice."
+    },
+    {
+      "id": "g9-u1-0108",
+      "english": "connection",
+      "german": "Verbindung",
+      "phonetic": "kəˈnekʃn",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 3: The land owns us",
+      "page": 192,
+      "source": {
+        "page": 192,
+        "half": "L",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "What connections are there from Sydney to Perth today?"
+    },
+    {
+      "id": "g9-u1-0109",
+      "english": "to place",
+      "german": "unterbringen",
+      "phonetic": "pleɪs",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 3: The land owns us",
+      "page": 192,
+      "source": {
+        "page": 192,
+        "half": "L",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "My Australian host family placed me in the attic."
+    },
+    {
+      "id": "g9-u1-0110",
+      "english": "permission",
+      "german": "Erlaubnis; Genehmigung",
+      "phonetic": "pəˈmɪʃn",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 3: The land owns us",
+      "page": 192,
+      "source": {
+        "page": 192,
+        "half": "L",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "There are many things children need their parents' permission for. Fr. permission (f); Lat. permissio (f)"
+    },
+    {
+      "id": "g9-u1-0111",
+      "english": "disrespectful",
+      "german": "respektlos",
+      "phonetic": "ˌdɪsrɪˈspektfl",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 3: The land owns us",
+      "page": 192,
+      "source": {
+        "page": 192,
+        "half": "L",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "It's disrespectful to take someone's things without asking first. disrespectful → respect → to respect"
+    },
+    {
+      "id": "g9-u1-0112",
+      "english": "guardian",
+      "german": "Hüter/-in; Wächter/-in",
+      "phonetic": "ˈɡɑːdiən",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 3: The land owns us",
+      "page": 192,
+      "source": {
+        "page": 192,
+        "half": "L",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Our dog is the guardian of our house and garden. ua ← un ← uonrd Fr. guardien/-ne"
+    },
+    {
+      "id": "g9-u1-0113",
+      "english": "plain",
+      "german": "Ebene",
+      "phonetic": "pleɪn",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 3: The land owns us",
+      "page": 192,
+      "source": {
+        "page": 192,
+        "half": "L",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Around Uluru there's a vast plain. Fr. plaine (f); Lat. planus; planities (f)"
+    },
+    {
+      "id": "g9-u1-0114",
+      "english": "way",
+      "german": "weit; lange",
+      "phonetic": "weɪ",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 3: The land owns us",
+      "page": 192,
+      "source": {
+        "page": 192,
+        "half": "L",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "way back = long ago"
+    },
+    {
+      "id": "g9-u1-0115",
+      "english": "to be short of sth",
+      "german": "knapp sein an",
+      "phonetic": "ˌbi ˈʃɔːt əv",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 3: The land owns us",
+      "page": 192,
+      "source": {
+        "page": 192,
+        "half": "L",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "When I was a child, my parents were always short of money."
+    },
+    {
+      "id": "g9-u1-0116",
+      "english": "well",
+      "german": "Brunnen; Quelle",
+      "phonetic": "wel",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 3: The land owns us",
+      "page": 192,
+      "source": {
+        "page": 192,
+        "half": "L",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "There's a well in our garden."
+    },
+    {
+      "id": "g9-u1-0117",
+      "english": "greedy",
+      "german": "habgierig; raffsüchtig",
+      "phonetic": "ˈɡriːdi",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 3: The land owns us",
+      "page": 192,
+      "source": {
+        "page": 192,
+        "half": "L",
+        "row": 19
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Greedy people are a problem for society."
+    },
+    {
+      "id": "g9-u1-0118",
+      "english": "cliff",
+      "german": "klippe; kliff",
+      "phonetic": "klɪf",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 3: The land owns us",
+      "page": 192,
+      "source": {
+        "page": 192,
+        "half": "L",
+        "row": 20
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "The views from the cliffs are spectacular."
+    },
+    {
+      "id": "g9-u1-0119",
+      "english": "to leak (out)",
+      "german": "auslaufen; durchsickern",
+      "phonetic": "ˌliːk ˈaʊt",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 3: The land owns us",
+      "page": 192,
+      "source": {
+        "page": 192,
+        "half": "L",
+        "row": 21
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "My bag was wet because the water bottle had leaked."
+    },
+    {
+      "id": "g9-u1-0120",
+      "english": "shame",
+      "german": "Scham; Schande; Schmach",
+      "phonetic": "ʃeɪm",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 3: The land owns us",
+      "page": 192,
+      "source": {
+        "page": 192,
+        "half": "L",
+        "row": 22
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "It's a shame I forgot my dad's birthday!"
+    },
+    {
+      "id": "g9-u1-0121",
+      "english": "to crawl",
+      "german": "kriechen; krabbeln",
+      "phonetic": "krɔːl",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 3: The land owns us",
+      "page": 192,
+      "source": {
+        "page": 192,
+        "half": "L",
+        "row": 23
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Very young children don't walk, they crawl."
+    },
+    {
+      "id": "g9-u1-0122",
+      "english": "shrub",
+      "german": "Strauch; Busch",
+      "phonetic": "ʃrʌb",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Station 3: The land owns us",
+      "page": 193,
+      "source": {
+        "page": 193,
+        "half": "R",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "On top of mountains there are often only shrubs and no trees. shrub - bush"
+    },
+    {
+      "id": "g9-u1-0123",
+      "english": "Californian",
+      "german": "kalifornisch; Kalifornier/-in",
+      "phonetic": "ˌkælɪˈfɔːniən",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Skills: How to give a group presentation",
+      "page": 193,
+      "source": {
+        "page": 193,
+        "half": "R",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Californian national parks are well-known."
+    },
+    {
+      "id": "g9-u1-0124",
+      "english": "smooth",
+      "german": "glatt; weich; geschmeidig",
+      "phonetic": "smuːð",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Skills: How to give a group presentation",
+      "page": 193,
+      "source": {
+        "page": 193,
+        "half": "R",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Feel this wood - it's really smooth."
+    },
+    {
+      "id": "g9-u1-0125",
+      "english": "transition",
+      "german": "Übergang",
+      "phonetic": "trænˈzɪʃn",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Skills: How to give a group presentation",
+      "page": 193,
+      "source": {
+        "page": 193,
+        "half": "R",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Transitions in a presentation should be smooth. Fr. transition (f); Lat. transire; transitio (f)"
+    },
+    {
+      "id": "g9-u1-0126",
+      "english": "handout",
+      "german": "Arbeitsblatt; Informationsblatt",
+      "phonetic": "ˈhændaʊt",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Skills: How to give a group presentation",
+      "page": 193,
+      "source": {
+        "page": 193,
+        "half": "R",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "handout - a piece of paper that gives important information (e.g. from a talk)"
+    },
+    {
+      "id": "g9-u1-0127",
+      "english": "Hawaiian",
+      "german": "Hawaiianer/-in; hawaiianisch",
+      "phonetic": "həˈwaɪən",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Skills: How to give a group presentation",
+      "page": 193,
+      "source": {
+        "page": 193,
+        "half": "R",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "The Hawaiian alphabet only has 13 letters."
+    },
+    {
+      "id": "g9-u1-0128",
+      "english": "to distract",
+      "german": "ablenken",
+      "phonetic": "dɪˈstrækt",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Skills: How to give a group presentation",
+      "page": 193,
+      "source": {
+        "page": 193,
+        "half": "R",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Don't distract me now. I have to concentrate on my work. Fr. distraire; Lat. distrahere"
+    },
+    {
+      "id": "g9-u1-0129",
+      "english": "chart",
+      "german": "Tabelle; Diagramm",
+      "phonetic": "tʃɑːt",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Skills: How to give a group presentation",
+      "page": 193,
+      "source": {
+        "page": 193,
+        "half": "R",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Write the information that you collected into a chart."
+    },
+    {
+      "id": "g9-u1-0130",
+      "english": "graph",
+      "german": "Diagramm; Schaubild",
+      "phonetic": "ɡrɑːf",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Skills: How to give a group presentation",
+      "page": 193,
+      "source": {
+        "page": 193,
+        "half": "R",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Graphs illustrate information (e.g. numbers)."
+    },
+    {
+      "id": "g9-u1-0131",
+      "english": "responsible",
+      "german": "verantwortlich;verantwortungsvoll",
+      "phonetic": "rɪˈspɒnsəbl",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Unit task: Who are the Aussies? A group presentation",
+      "page": 193,
+      "source": {
+        "page": 193,
+        "half": "R",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Who is responsible for the pets in your family? responsible - responsibility Fr. responsable"
+    },
+    {
+      "id": "g9-u1-0132",
+      "english": "recent",
+      "german": "kürzlich; neueste/-r/-s; letzte/-r/-s",
+      "phonetic": "ˈriːsnt",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Unit task: Who are the Aussies? A group presentation",
+      "page": 193,
+      "source": {
+        "page": 193,
+        "half": "R",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Recent events happened only a short time ago. Fr. récent/-e; Lat. recens"
+    },
+    {
+      "id": "g9-u1-0133",
+      "english": "overview",
+      "german": "Überblick",
+      "phonetic": "ˈəʊvəvjuː",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Unit task: Who are the Aussies? A group presentation",
+      "page": 193,
+      "source": {
+        "page": 193,
+        "half": "R",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "In this brochure you will find an overview of our services."
+    },
+    {
+      "id": "g9-u1-0134",
+      "english": "to enable sb to do sth",
+      "german": "jmdm. ermöglichen, etw. zu tun",
+      "phonetic": "ɪˈneɪbl tə",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Unit task: Who are the Aussies? A group presentation",
+      "page": 193,
+      "source": {
+        "page": 193,
+        "half": "R",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "My good grades enabled me to study at a good college."
+    },
+    {
+      "id": "g9-u1-0135",
+      "english": "determined",
+      "german": "(fest) entschlossen; entschieden; zielstrebig",
+      "phonetic": "dɪˈtɜːmɪnd",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Story: Nona and me",
+      "page": 193,
+      "source": {
+        "page": 193,
+        "half": "R",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "She's determined to pass her A-levels. Fr. déterminé/-e"
+    },
+    {
+      "id": "g9-u1-0136",
+      "english": "upright",
+      "german": "aufrecht",
+      "phonetic": "ˈʌpraɪt",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Story: Nona and me",
+      "page": 193,
+      "source": {
+        "page": 193,
+        "half": "R",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Stand upright, it's better for your back."
+    },
+    {
+      "id": "g9-u1-0137",
+      "english": "walk",
+      "german": "Gang",
+      "phonetic": "wɔːk",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Story: Nona and me",
+      "page": 193,
+      "source": {
+        "page": 193,
+        "half": "R",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Models need to have an upright walk. walk → to walk"
+    },
+    {
+      "id": "g9-u1-0138",
+      "english": "Miss",
+      "german": "Fräulein (Anrede)",
+      "phonetic": "mɪs",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Story: Nona and me",
+      "page": 193,
+      "source": {
+        "page": 193,
+        "half": "R",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Miss Gallagher is not married. ! Use Miss' to address unmarried women. 'Mrs' is used for married women. If you are unsure, you use 'Ms."
+    },
+    {
+      "id": "g9-u1-0139",
+      "english": "desperate",
+      "german": "verzweifelt; hoffnungslos; ausweglos",
+      "phonetic": "ˈdespərət",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Story: Nona and me",
+      "page": 193,
+      "source": {
+        "page": 193,
+        "half": "R",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "After his parents had died, he felt desperate. Fr. désespéré/-e; Lat. desperatus"
+    },
+    {
+      "id": "g9-u1-0140",
+      "english": "to glow",
+      "german": "leuchten; glühen",
+      "phonetic": "ɡləʊ",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Story: Nona and me",
+      "page": 193,
+      "source": {
+        "page": 193,
+        "half": "R",
+        "row": 19
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "The cat's eyes glowed in the dark"
+    },
+    {
+      "id": "g9-u1-0141",
+      "english": "to sigh",
+      "german": "seufzen",
+      "phonetic": "saɪ",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Story: Nona and me",
+      "page": 193,
+      "source": {
+        "page": 193,
+        "half": "R",
+        "row": 20
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "People often sigh if they feel disap"
+    },
+    {
+      "id": "g9-u1-0142",
+      "english": "to drop sb (off)",
+      "german": "jmdn. absetzen; jmdn. aussteigen lassen",
+      "phonetic": "ˌdrɒp ˈɒf",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Story: Nona and me",
+      "page": 194,
+      "source": {
+        "page": 194,
+        "half": "L",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "We were late for the train because the taxi dropped us off at the wrong station. to drop sb off↔ to pick sb up"
+    },
+    {
+      "id": "g9-u1-0143",
+      "english": "let alone",
+      "german": "geschweige denn",
+      "phonetic": "ˌlet əˈləʊn",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Story: Nona and me",
+      "page": 194,
+      "source": {
+        "page": 194,
+        "half": "L",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "On our holiday in the south of France I didn't understand the people because I don't speak French, let alone their dialect."
+    },
+    {
+      "id": "g9-u1-0144",
+      "english": "knock",
+      "german": "Klopfen; Schlag; Stoß",
+      "phonetic": "nɒk",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Story: Nona and me",
+      "page": 194,
+      "source": {
+        "page": 194,
+        "half": "L",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Listen, there's a knock at the door. knock→ to knock"
+    },
+    {
+      "id": "g9-u1-0145",
+      "english": "scar",
+      "german": "Narbe",
+      "phonetic": "skɑː",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Story: Nona and me",
+      "page": 194,
+      "source": {
+        "page": 194,
+        "half": "L",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Careful, that's hot! If you burn your skin badly, it could leave a scar."
+    },
+    {
+      "id": "g9-u1-0146",
+      "english": "desk",
+      "german": "Schreibtisch; Pult",
+      "phonetic": "desk",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Story: Nona and me",
+      "page": 194,
+      "source": {
+        "page": 194,
+        "half": "L",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "In the classroom there are 20 desks for 20 students."
+    },
+    {
+      "id": "g9-u1-0147",
+      "english": "nod",
+      "german": "Nicken",
+      "phonetic": "nɒd",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Story: Nona and me",
+      "page": 194,
+      "source": {
+        "page": 194,
+        "half": "L",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "With a nod he gave the signal to start the presentation."
+    },
+    {
+      "id": "g9-u1-0148",
+      "english": "to nod",
+      "german": "nicken",
+      "phonetic": "nɒd",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Story: Nona and me",
+      "page": 194,
+      "source": {
+        "page": 194,
+        "half": "L",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "to nod - to say yes' with your head"
+    },
+    {
+      "id": "g9-u1-0149",
+      "english": "university",
+      "german": "Universität",
+      "phonetic": "ˌjuːnɪˈvɜːsəti",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Story: Nona and me",
+      "page": 194,
+      "source": {
+        "page": 194,
+        "half": "L",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Harvard is a very famous American university. Fr. université (f)"
+    },
+    {
+      "id": "g9-u1-0150",
+      "english": "worksheet",
+      "german": "Arbeitsblatt",
+      "phonetic": "ˈwɜːkʃiːt",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Story: Nona and me",
+      "page": 194,
+      "source": {
+        "page": 194,
+        "half": "L",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Instead of doing the exercises on the worksheet, she drew circles."
+    },
+    {
+      "id": "g9-u1-0151",
+      "english": "to hesitate",
+      "german": "zögern; stocken",
+      "phonetic": "ˈhezɪteɪt",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Story: Nona and me",
+      "page": 194,
+      "source": {
+        "page": 194,
+        "half": "L",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "She hesitated for a few seconds, then she entered the room. Fr. hésiter; Lat. haesitare"
+    },
+    {
+      "id": "g9-u1-0152",
+      "english": "to lower one's voice",
+      "german": "die Stimme senken",
+      "phonetic": "ˌləʊə wʌnz ˈvɔɪs",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Story: Nona and me",
+      "page": 194,
+      "source": {
+        "page": 194,
+        "half": "L",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Please lower your voice. The baby is sleeping. to lower ↔ to raise to lower → low (adj)"
+    },
+    {
+      "id": "g9-u1-0153",
+      "english": "laughter",
+      "german": "Gelächter; Lachen",
+      "phonetic": "ˈlɑːftə",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Story: Nona and me",
+      "page": 194,
+      "source": {
+        "page": 194,
+        "half": "L",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "When they entered the house, they heard laughter from the living room. laughter→ to laugh"
+    },
+    {
+      "id": "g9-u1-0154",
+      "english": "primary school",
+      "german": "Grundschule",
+      "phonetic": "ˈpraɪmri ˌskuːl",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Story: Nona and me",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "My sister isn't in kindergarten now, she's at primary school."
+    },
+    {
+      "id": "g9-u1-0155",
+      "english": "turtle",
+      "german": "Schildkröte",
+      "phonetic": "ˈtɜːtl",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Story: Nona and me",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Over the winter we keep our turtle in the fridge. Fr. tortue (f); Lat. testudo (f)"
+    },
+    {
+      "id": "g9-u1-0156",
+      "english": "to catch sb (+ -ing)",
+      "german": "jmdn. erwischen, wie ...; jmdn. ertappen, wie ...",
+      "phonetic": "kætʃ",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Story: Nona and me",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "The teacher caught him cheating on the test."
+    },
+    {
+      "id": "g9-u1-0157",
+      "english": "previous",
+      "german": "früher; vorherig; vorhergehend",
+      "phonetic": "ˈpriːviəs",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Story: Nona and me",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "the previous night - the night before"
+    },
+    {
+      "id": "g9-u1-0158",
+      "english": "to frown",
+      "german": "die Stirn runzeln",
+      "phonetic": "fraʊn",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Story: Nona and me",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Her parents frowned when she told them about her plans."
+    },
+    {
+      "id": "g9-u1-0159",
+      "english": "to cling (to sb/sth)",
+      "german": "sich an jmdm./etw. festhalten; sich an jmdm./etw. festklammern",
+      "phonetic": "klɪŋ",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Story: Nona and me",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "When his mum wanted to leave, the boy clung to her and cried."
+    },
+    {
+      "id": "g9-u1-0160",
+      "english": "confusion",
+      "german": "Verwirrung",
+      "phonetic": "kənˈfjuːʒn",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Story: Nona and me",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "What's this confusion about? – We heard the fire alarm. confusion → confused Fr. confusion (f); Lat. confundere; confusio (f)"
+    },
+    {
+      "id": "g9-u1-0161",
+      "english": "bubble",
+      "german": "Blase",
+      "phonetic": "ˈbʌbl",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Story: Nona and me",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "If air is blown into water, it produces bubbles."
+    },
+    {
+      "id": "g9-u1-0162",
+      "english": "ceiling",
+      "german": "Zimmerdecke; Decke",
+      "phonetic": "ˈsiːlɪŋ",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Story: Nona and me",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "A room has four walls, a floor and a ceiling."
+    },
+    {
+      "id": "g9-u1-0163",
+      "english": "fan",
+      "german": "Ventilator",
+      "phonetic": "fæn",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Story: Nona and me",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Switch the fan on please. It's too hot in this room."
+    },
+    {
+      "id": "g9-u1-0164",
+      "english": "to sink",
+      "german": "sinken",
+      "phonetic": "sɪŋk",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Story: Nona and me",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "When my watch fell into the river, it sank to the ground immediately."
+    },
+    {
+      "id": "g9-u1-0165",
+      "english": "armchair",
+      "german": "Sessel",
+      "phonetic": "ˈɑːmtʃeə",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Story: Nona and me",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "You can't sit here, it's my grandma's armchair. armchair → chair"
+    },
+    {
+      "id": "g9-u1-0166",
+      "english": "feature",
+      "german": "Gesichtszug",
+      "phonetic": "ˈfiːtʃə",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Story: Nona and me",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "When you put on a poker face, your features shouldn't show any emotion."
+    },
+    {
+      "id": "g9-u1-0167",
+      "english": "darling",
+      "german": "Liebling",
+      "phonetic": "ˈdɑːlɪŋ",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Story: Nona and me",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "I love you, darling."
+    },
+    {
+      "id": "g9-u1-0168",
+      "english": "guilty",
+      "german": "schuldig",
+      "phonetic": "ˈɡɪlti",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Story: Nona and me",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "I didn't feel guilty because I hadn't done anything wrong."
+    },
+    {
+      "id": "g9-u1-0169",
+      "english": "to pop home",
+      "german": "schnell zu Hause vorbeigehen",
+      "phonetic": "ˌpɒp ˈhəʊm",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Story: Nona and me",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "to pop home - to come home for a very short time"
+    },
+    {
+      "id": "g9-u1-0170",
+      "english": "art print",
+      "german": "Kunstdruck",
+      "phonetic": "ˈɑːt ˌprɪnt",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Story: Nona and me",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "We have an art print of da Vinci's Mona Lisa at home."
+    },
+    {
+      "id": "g9-u1-0171",
+      "english": "shut",
+      "german": "zu; geschlossen",
+      "phonetic": "ʃʌt",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Story: Nona and me",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "She realised that she had forgotten her keys when the door banged shut behind her."
+    },
+    {
+      "id": "g9-u1-0172",
+      "english": "grateful",
+      "german": "dankbar",
+      "phonetic": "ˈɡreɪtfl",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Story: Nona and me",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 19
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "\"Dear Sir or Madam, I would be grateful if you could send me ... Lat. gratus"
+    },
+    {
+      "id": "g9-u1-0173",
+      "english": "to dare",
+      "german": "wagen",
+      "phonetic": "deə",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Story: Nona and me",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 20
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Nobody dares to go. – Everyone is too frightened to go."
+    },
+    {
+      "id": "g9-u1-0174",
+      "english": "to keep in mind",
+      "german": "beachten; im Gedächtnis behalten",
+      "phonetic": "ˌkiːp ɪn ˈmaɪnd",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Story: Nona and me",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 21
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Keep in mind that we need some milk. to keep in mind - to remember to keep in mind ↔ to forget"
+    },
+    {
+      "id": "g9-u1-0175",
+      "english": "to emigrate",
+      "german": "emigrieren; auswandern",
+      "phonetic": "ˈemɪɡreɪt",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 196,
+      "source": {
+        "page": 196,
+        "half": "L",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "to emigrate - to leave your own country in order to start a new life in another one. to emigrate ↔ to immigrate"
+    },
+    {
+      "id": "g9-u1-0176",
+      "english": "Maori",
+      "german": "Maori",
+      "phonetic": "ˈmaʊri",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 196,
+      "source": {
+        "page": 196,
+        "half": "L",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "The Maori are the native people of New Zealand. The spelling Mäori is often used to show where the stress is when you prononunce the word."
+    },
+    {
+      "id": "g9-u1-0177",
+      "english": "kiwi",
+      "german": "Kiwi (flugunfāhiger Vogel); Kiwi (Frucht)",
+      "phonetic": "ˈkiːwiː",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 196,
+      "source": {
+        "page": 196,
+        "half": "L",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "'Kiwi\" is the name of an Australian bird and a fruit."
+    },
+    {
+      "id": "g9-u1-0178",
+      "english": "to breed",
+      "german": "züchten",
+      "phonetic": "briːd",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 196,
+      "source": {
+        "page": 196,
+        "half": "L",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "We have bred race horses for 100 years."
+    },
+    {
+      "id": "g9-u1-0179",
+      "english": "wool",
+      "german": "Wolle",
+      "phonetic": "wʊl",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 197,
+      "source": {
+        "page": 197,
+        "half": "R",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "I us ually buy pullovers made of sheep woo/ because I think they're the warmest."
+    },
+    {
+      "id": "g9-u1-0180",
+      "english": "to limit (to)",
+      "german": "limitieren (auf); begrenzen (auf); beschränken (auf)",
+      "phonetic": "ˈlɪmɪt tə",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 197,
+      "source": {
+        "page": 197,
+        "half": "R",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "The guided tour is limited to 15 people. to limit → limit Fr. limiter; Lat. limes (m)"
+    },
+    {
+      "id": "g9-u1-0181",
+      "english": "boost",
+      "german": "Auftrieb",
+      "phonetic": "buːst",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 197,
+      "source": {
+        "page": 197,
+        "half": "R",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "The film star's visit gave a boost to the new restaurant."
+    },
+    {
+      "id": "g9-u1-0182",
+      "english": "dairy",
+      "german": "Molkerei; Molkerei-",
+      "phonetic": "ˈdeəri",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 197,
+      "source": {
+        "page": 197,
+        "half": "R",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Milk and butter are dairy products."
+    },
+    {
+      "id": "g9-u1-0183",
+      "english": "Kiwi (infml)",
+      "german": "Neuseeländer/-in",
+      "phonetic": "ˈkiːwiː",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 197,
+      "source": {
+        "page": 197,
+        "half": "R",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Kiwi - an informal word for a person from New Zealand"
+    },
+    {
+      "id": "g9-u1-0184",
+      "english": "passion",
+      "german": "Passion; Leidenschaft",
+      "phonetic": "ˈpæʃn",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 197,
+      "source": {
+        "page": 197,
+        "half": "R",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Singing is my passion. Fr. passion (f)"
+    },
+    {
+      "id": "g9-u1-0185",
+      "english": "gradual",
+      "german": "allmählich",
+      "phonetic": "ˈɡrædʒuəl",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 197,
+      "source": {
+        "page": 197,
+        "half": "R",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "A gradual change is a slow change. Fr. graduel/-le"
+    },
+    {
+      "id": "g9-u1-0186",
+      "english": "distant",
+      "german": "entfernt; distanziert",
+      "phonetic": "ˈdɪstənt",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 197,
+      "source": {
+        "page": 197,
+        "half": "R",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Most of my memories from childhood are very distant, but some feel like it was yesterday. distant → distance Fr. distant/-e"
+    },
+    {
+      "id": "g9-u1-0187",
+      "english": "i.e. (= that is)",
+      "german": "das heißt (Abk.: d.h.)",
+      "phonetic": "aɪˈiː; ðæt ˈɪz",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 197,
+      "source": {
+        "page": 197,
+        "half": "R",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Not all Kiwis, i.e. the people of New Zealand, speak Maori. Lat. id est"
+    },
+    {
+      "id": "g9-u1-0188",
+      "english": "temperate",
+      "german": "gemäßigt",
+      "phonetic": "ˈtemprət",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 197,
+      "source": {
+        "page": 197,
+        "half": "R",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "temperate - not too high and not too low temperate → temperature Fr. temperé/-e; Lat. temperatus"
+    },
+    {
+      "id": "g9-u1-0189",
+      "english": "to separate",
+      "german": "(sich) trennen",
+      "phonetic": "ˈsepreɪt",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 197,
+      "source": {
+        "page": 197,
+        "half": "R",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "!Careful with the pronunciation: separate (adj) - getrennt ['seprət] to separate - (sich) trennen ['sepreit] Fr. séparer; Lat. separare"
+    },
+    {
+      "id": "g9-u1-0190",
+      "english": "predator",
+      "german": "Raubtier",
+      "phonetic": "ˈpredətə",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 197,
+      "source": {
+        "page": 197,
+        "half": "R",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Wolves are predators. Fr. prédateur, prédatrice; Lat. praedator (m)"
+    },
+    {
+      "id": "g9-u1-0191",
+      "english": "parrot",
+      "german": "Papagei",
+      "phonetic": "ˈpærət",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 197,
+      "source": {
+        "page": 197,
+        "half": "R",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "We try to teach our parrot some words."
+    },
+    {
+      "id": "g9-u1-0192",
+      "english": "wealthy",
+      "german": "wohlhabend; reich",
+      "phonetic": "ˈwelθi",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 197,
+      "source": {
+        "page": 197,
+        "half": "R",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Wealthy people have big houses and drive expensive cars. wealthy↔ poor wealthy→ wealth"
+    },
+    {
+      "id": "g9-u1-0193",
+      "english": "to profit",
+      "german": "profitieren",
+      "phonetic": "ˈprɒfɪt",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 197,
+      "source": {
+        "page": 197,
+        "half": "R",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Our family profits from my sister's job: she works as a camerawoman and often gets free concert tickets."
+    },
+    {
+      "id": "g9-u1-0194",
+      "english": "to export",
+      "german": "exportieren; ausführen",
+      "phonetic": "ɪkˈspɔːt",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 197,
+      "source": {
+        "page": 197,
+        "half": "R",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "! Pronunciation: export (n) stressed on the first syllable, to export on the second syllable. to export → export Fr. exporter; Lat. exportare"
+    },
+    {
+      "id": "g9-u1-0195",
+      "english": "profitable",
+      "german": "profitabel; gewinnbringend",
+      "phonetic": "ˈprɒfɪtəbl",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 197,
+      "source": {
+        "page": 197,
+        "half": "R",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "The café closed because it wasn't profitable any more. profitable → to profit Fr. profitable"
+    },
+    {
+      "id": "g9-u1-0196",
+      "english": "agriculture",
+      "german": "Landwirtschaft",
+      "phonetic": "ˈæɡrɪkʌltʃə",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 197,
+      "source": {
+        "page": 197,
+        "half": "R",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Climate change is already affecting agriculture. Fr. l'agriculture (f); Lat. agricultura"
+    },
+    {
+      "id": "g9-u1-0197",
+      "english": "share",
+      "german": "Anteil",
+      "phonetic": "ʃeə",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 197,
+      "source": {
+        "page": 197,
+        "half": "R",
+        "row": 19
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "It's unfair, my brother never does h chores. share → to share"
+    },
+    {
+      "id": "g9-u1-0198",
+      "english": "machinery",
+      "german": "Maschinen",
+      "phonetic": "məˈʃiːnri",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 198,
+      "source": {
+        "page": 198,
+        "half": "L",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "When the factory closed, the machinery was sold. machinery→ machine Fr. machine (f); Lat. machina (f)"
+    },
+    {
+      "id": "g9-u1-0199",
+      "english": "proportion",
+      "german": "Anteil; Verhältnis",
+      "phonetic": "prəˈpɔːʃn",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 198,
+      "source": {
+        "page": 198,
+        "half": "L",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "The proportion of sheep to people is 6:1 in New Zealand. Fr. proportion (f); Lat proportio (f)"
+    },
+    {
+      "id": "g9-u1-0200",
+      "english": "renewable",
+      "german": "erneuerbar; verlängerbar",
+      "phonetic": "rɪˈnjuːəbl",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 198,
+      "source": {
+        "page": 198,
+        "half": "L",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Wind and water are renewable energies. renewable → new"
+    },
+    {
+      "id": "g9-u1-0201",
+      "english": "governor-general",
+      "german": "Generalgouverneur",
+      "phonetic": "ˌɡʌvənəˈdʒenrəl",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 198,
+      "source": {
+        "page": 198,
+        "half": "L",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "governor-general - the person who represents the British monarch in some countries of the Commonwealth governor-general → to govern, government"
+    },
+    {
+      "id": "g9-u1-0202",
+      "english": "ethnicity",
+      "german": "ethnische Zugehörigkeit; Volkszugehörigkeit",
+      "phonetic": "eθˈnɪsəti",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 198,
+      "source": {
+        "page": 198,
+        "half": "L",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Ethnicity is the fact of belonging to a group that has common national or cultural traditions. ethnicity → ethnic"
+    },
+    {
+      "id": "g9-u1-0203",
+      "english": "geographic",
+      "german": "geografisch",
+      "phonetic": "ˌdʒiːəˈɡræfɪk",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 198,
+      "source": {
+        "page": 198,
+        "half": "L",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "The USA has many places with special geographic features. eorhic ←eogi"
+    },
+    {
+      "id": "g9-u1-0204",
+      "english": "one-sided",
+      "german": "einseitig",
+      "phonetic": "ˌwʌnˈsaɪdɪd",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 198,
+      "source": {
+        "page": 198,
+        "half": "L",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "If an article features one-sided arguments, it isn't objective."
+    },
+    {
+      "id": "g9-u1-0205",
+      "english": "nun",
+      "german": "Nonne",
+      "phonetic": "nʌn",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 198,
+      "source": {
+        "page": 198,
+        "half": "L",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "I was born in a hospital where the nurses were nuns."
+    },
+    {
+      "id": "g9-u1-0206",
+      "english": "host",
+      "german": "Gastgeber/-in; Talkmaster/-in",
+      "phonetic": "həʊst",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "The host of the talk show asked a lot of questions. host↔ guest"
+    },
+    {
+      "id": "g9-u1-0207",
+      "english": "regional",
+      "german": "regional",
+      "phonetic": "ˈriːdʒənl",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "The regional weather forecast was less accurate than our local one. regional →region Fr. régional/-e; Lat. regio, regionis (f)"
+    },
+    {
+      "id": "g9-u1-0208",
+      "english": "screen",
+      "german": "Bildschirm",
+      "phonetic": "skriːn",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "TVs and computers have a screen."
+    },
+    {
+      "id": "g9-u1-0209",
+      "english": "heritage",
+      "german": "Erbe",
+      "phonetic": "ˈherɪtɪdʒ",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "We shouldn't forget our cultural heritage. Fr. héritage (m); Lat. hereditas (f)"
+    },
+    {
+      "id": "g9-u1-0210",
+      "english": "indeed",
+      "german": "in der Tat; tatsächlich; allerdings",
+      "phonetic": "ɪnˈdiːd",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Is this your dog? — it is indeed."
+    },
+    {
+      "id": "g9-u1-0211",
+      "english": "generic term",
+      "german": "Oberbegriff",
+      "phonetic": "dʒəˌnerɪk ˈtɜːm",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "In the Maori language 'haka' is the generic term for 'dance' Fr. terme générique (m)"
+    },
+    {
+      "id": "g9-u1-0212",
+      "english": "to mourn",
+      "german": "trauern",
+      "phonetic": "mɔːn",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "The family mourned for their dog."
+    },
+    {
+      "id": "g9-u1-0213",
+      "english": "funeral",
+      "german": "Beerdigung; Begräbnis",
+      "phonetic": "ˈfjuːnrəl",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "There were at least 100 people at my grandpa's funeral."
+    },
+    {
+      "id": "g9-u1-0214",
+      "english": "to indicate",
+      "german": "anzeigen; angeben",
+      "phonetic": "ˈɪndɪkeɪt",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "The numbers indicated a rise of the global temperature. Fr. indiquer; Lat. indicare"
+    },
+    {
+      "id": "g9-u1-0215",
+      "english": "ideal",
+      "german": "Ideal",
+      "phonetic": "aɪˈdɪəl",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "!Careful with the pronunciation. Fr. idéal (m)"
+    },
+    {
+      "id": "g9-u1-0216",
+      "english": "to incorporate",
+      "german": "berücksichtigen; integrieren",
+      "phonetic": "ɪnˈkɔːpəreɪt",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "The trip incorporates both time to study and time to relax."
+    },
+    {
+      "id": "g9-u1-0217",
+      "english": "needle",
+      "german": "Nadel",
+      "phonetic": "ˈniːdl",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Be careful not to sting your finger with the needle!"
+    },
+    {
+      "id": "g9-u1-0218",
+      "english": "ink",
+      "german": "Tinte",
+      "phonetic": "ɪŋk",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "To make a tattoo you need a needle and ink."
+    },
+    {
+      "id": "g9-u1-0219",
+      "english": "unlike",
+      "german": "anders als; im Gegensatz zu",
+      "phonetic": "ˌʌnˈlaɪk",
+      "part_of_speech": "preposition",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Unlike my parents I'm very musical. unlike ↔ like"
+    },
+    {
+      "id": "g9-u1-0220",
+      "english": "gap year",
+      "german": "ein Jahr Auszeit (zwischen Schule und Ausbildung/Studium), das oft für einen freiwilligen ökologischen oder sozialen Dienst genutzt wird",
+      "phonetic": "ˈɡæp jɪə",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "After finishing school many young people spend a gap year abroad."
+    },
+    {
+      "id": "g9-u1-0221",
+      "english": "mainstream",
+      "german": "Masse; Durchschnitt; Massen-; Durchschnitts-",
+      "phonetic": "ˈmeɪnstriːm",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "I don't like what everybody else likes. I'm not into the mainstream hobbies."
+    },
+    {
+      "id": "g9-u1-0222",
+      "english": "nowadays",
+      "german": "heutzutage",
+      "phonetic": "ˈnaʊədeɪz",
+      "part_of_speech": "adverb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Nowadays life without the internet seems to be almost impossible for many people."
+    },
+    {
+      "id": "g9-u1-0223",
+      "english": "to release",
+      "german": "herausbringen; veröffentlichen",
+      "phonetic": "rɪˈliːs",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "My favourite singer released two albums this year."
+    },
+    {
+      "id": "g9-u1-0224",
+      "english": "to condemn",
+      "german": "verurteilen; missbilligen",
+      "phonetic": "kənˈdem",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 19
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "The United Nations condemned apartheid politics. Fr. condamner; Lat. condemnare"
+    },
+    {
+      "id": "g9-u1-0225",
+      "english": "point",
+      "german": "Argument; Standpunkt",
+      "phonetic": "pɔɪnt",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 20
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "You're right. I agree with your point. point - argument; opinion"
+    },
+    {
+      "id": "g9-u1-0226",
+      "english": "bone",
+      "german": "Knochen",
+      "phonetic": "bəʊn",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Focus 1: Aotearoa – the 'land of the long white cloud'",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 21
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Dogs love bones."
+    },
+    {
+      "id": "g9-u1-0227",
+      "english": "fairy tale",
+      "german": "Märchen",
+      "phonetic": "ˈfeəri ˌteɪl",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Text smart 1 · Text analysis · Introduction",
+      "page": 200,
+      "source": {
+        "page": 200,
+        "half": "L",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "In fairy tales, the youngest of three sons is often the hero."
+    },
+    {
+      "id": "g9-u1-0228",
+      "english": "entire",
+      "german": "gesamt; ganz; komplett",
+      "phonetic": "ɪnˈtaɪə",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Text smart 1 · Text analysis · Station 1 · Analysis of a factual text",
+      "page": 200,
+      "source": {
+        "page": 200,
+        "half": "L",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "It wasn't just a bad day; it was the worst day in my entire life! entire - whole Fr. entier/-ière; Lat. integer"
+    },
+    {
+      "id": "g9-u1-0229",
+      "english": "to dress up",
+      "german": "sich verkleiden; sich herausputzen; sich feinmachen",
+      "phonetic": "ˌdres ˈʌp",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Text smart 1 · Text analysis · Station 1 · Analysis of a factual text",
+      "page": 200,
+      "source": {
+        "page": 200,
+        "half": "L",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "He dressed up as a wizard on Halloween. to dress up → dress"
+    },
+    {
+      "id": "g9-u1-0230",
+      "english": "amount (of)",
+      "german": "Menge",
+      "phonetic": "əˈmaʊnt",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Text smart 1 · Text analysis · Station 1 · Analysis of a factual text",
+      "page": 200,
+      "source": {
+        "page": 200,
+        "half": "L",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "When the washing machine broke, there was a large amount of water on the floor."
+    },
+    {
+      "id": "g9-u1-0231",
+      "english": "Japanese",
+      "german": "japanisch; Japanisch; Japaner/-in",
+      "phonetic": "ˌdʒæpəˈniːz",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Text smart 1 · Text analysis · Station 1 · Analysis of a factual text",
+      "page": 200,
+      "source": {
+        "page": 200,
+        "half": "L",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "I am learning /apanese to be able to understand anime series."
+    },
+    {
+      "id": "g9-u1-0232",
+      "english": "to strive (for/to)",
+      "german": "(an)streben; sich bemühen (um)",
+      "phonetic": "straɪv",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Text smart 1 · Text analysis · Station 1 · Analysis of a factual text",
+      "page": 200,
+      "source": {
+        "page": 200,
+        "half": "L",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "He's striving to be an English professor."
+    },
+    {
+      "id": "g9-u1-0233",
+      "english": "effort",
+      "german": "Bemühung; Mühe",
+      "phonetic": "ˈefət",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Text smart 1 · Text analysis · Station 1 · Analysis of a factual text",
+      "page": 200,
+      "source": {
+        "page": 200,
+        "half": "L",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "This project was so much effort! Fr. effort (m)"
+    },
+    {
+      "id": "g9-u1-0234",
+      "english": "to defend",
+      "german": "verteidigen",
+      "phonetic": "dɪˈfend",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Text smart 1 · Text analysis · Station 1 · Analysis of a factual text",
+      "page": 200,
+      "source": {
+        "page": 200,
+        "half": "L",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "I always defend my little sister when she's made a mistake. to attack ↔ to defend Fr. défendre; Lat. defendere"
+    },
+    {
+      "id": "g9-u1-0235",
+      "english": "to aim to do sth",
+      "german": "etw. anstreben; abzielen auf etw.",
+      "phonetic": "eɪm",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Text smart 1 · Text analysis · Station 1 · Analysis of a factual text",
+      "page": 200,
+      "source": {
+        "page": 200,
+        "half": "L",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "What do you aim to do in life?"
+    },
+    {
+      "id": "g9-u1-0236",
+      "english": "to put forward",
+      "german": "vorbringen",
+      "phonetic": "ˌpʊt ˈfɔːwəd",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Text smart 1 · Text analysis · Station 1 · Analysis of a factual text",
+      "page": 200,
+      "source": {
+        "page": 200,
+        "half": "L",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Before anybody else could say something, she put forward her arguments."
+    },
+    {
+      "id": "g9-u1-0237",
+      "english": "to intend",
+      "german": "beabsichtigen; intendieren",
+      "phonetic": "ɪnˈtend",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Text smart 1 · Text analysis · Station 1 · Analysis of a factual text",
+      "page": 200,
+      "source": {
+        "page": 200,
+        "half": "L",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "How do you intend to celebrate your 18th birthday? – I'd like to invite everybody I know. Fr. intention (f); Lat. intendere"
+    },
+    {
+      "id": "g9-u1-0238",
+      "english": "objective",
+      "german": "objektiv",
+      "phonetic": "əbˈdʒektɪv",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Text smart 1 · Text analysis · Station 1 · Analysis of a factual text",
+      "page": 200,
+      "source": {
+        "page": 200,
+        "half": "L",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "objective = not influenced by any personal opinion objective = neutral Fr. objectif/-ive"
+    },
+    {
+      "id": "g9-u1-0239",
+      "english": "complex",
+      "german": "komplexe/-r/-s",
+      "phonetic": "ˈkɒmpleks",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Text smart 1 · Text analysis · Station 1 · Analysis of a factual text",
+      "page": 200,
+      "source": {
+        "page": 200,
+        "half": "L",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "This text is full of complex sentences. complex ↔ simple"
+    },
+    {
+      "id": "g9-u1-0240",
+      "english": "plain",
+      "german": "klar; schlicht; einfach; deutlich",
+      "phonetic": "pleɪn",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Text smart 1 · Text analysis · Station 1 · Analysis of a factual text",
+      "page": 200,
+      "source": {
+        "page": 200,
+        "half": "L",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "There's a plain little restaurant in our street. plain = simple"
+    },
+    {
+      "id": "g9-u1-0241",
+      "english": "concise",
+      "german": "präzise; kurz; prägnant",
+      "phonetic": "kənˈsaɪs",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Text smart 1 · Text analysis · Station 1 · Analysis of a factual text",
+      "page": 200,
+      "source": {
+        "page": 200,
+        "half": "L",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "His orders were concise and clear. Fr. concis/-e"
+    },
+    {
+      "id": "g9-u1-0242",
+      "english": "scientific",
+      "german": "wissenschaftlich; naturwissenschaftlich",
+      "phonetic": "ˌsaɪənˈtɪfɪk",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Text smart 1 · Text analysis · Station 1 · Analysis of a factual text",
+      "page": 200,
+      "source": {
+        "page": 200,
+        "half": "L",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Doctors often use scientific words which normal people don't understand. sciitti ctit cictist Fr. scientifique"
+    },
+    {
+      "id": "g9-u1-0243",
+      "english": "imagery",
+      "german": "Bilder; Bildsprache; Metaphorik",
+      "phonetic": "ˈɪmɪdʒri",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Text smart 1 · Text analysis · Station 1 · Analysis of a factual text",
+      "page": 201,
+      "source": {
+        "page": 201,
+        "half": "R",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "There's a lot of imagery in this text. You could easily make a graphic novel out of it. imagery - pictures imagery → image"
+    },
+    {
+      "id": "g9-u1-0244",
+      "english": "quote",
+      "german": "Zltat",
+      "phonetic": "kwəʊt",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Text smart 1 · Text analysis · Station 1 · Analysis of a factual text",
+      "page": 201,
+      "source": {
+        "page": 201,
+        "half": "R",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "The journalist uses a lot of quotes from different experts. quote → to quote"
+    },
+    {
+      "id": "g9-u1-0245",
+      "english": "to conclude",
+      "german": "enden; schließen; schlussfolgern",
+      "phonetic": "kənˈkluːd",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Text smart 1 · Text analysis · Station 1 · Analysis of a factual text",
+      "page": 201,
+      "source": {
+        "page": 201,
+        "half": "R",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "At the end of the article the author concludes that it's too late to stop climate change. to conclude → conclusion Fr. conclure; Lat. concludere"
+    },
+    {
+      "id": "g9-u1-0246",
+      "english": "at the end of the day",
+      "german": "unterm Strich; letztendlich",
+      "phonetic": "æt ði ˌend əv ðə ˈdeɪ",
+      "part_of_speech": "phrase",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Text smart 1 · Text analysis · Station 1 · Analysis of a factual text",
+      "page": 201,
+      "source": {
+        "page": 201,
+        "half": "R",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "We worked really hard on the project but at the end of the day it wasn't profitable."
+    },
+    {
+      "id": "g9-u1-0247",
+      "english": "miracle",
+      "german": "Wunder; Wunder-",
+      "phonetic": "ˈmɪrəkl",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Text smart 1 · Text analysis · Station 2 · Analysis of a fictional text",
+      "page": 201,
+      "source": {
+        "page": 201,
+        "half": "R",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "It was a miracle that they survived the accident. Fr. miracle (m); Lat. miraculum (nt)"
+    },
+    {
+      "id": "g9-u1-0248",
+      "english": "label",
+      "german": "Etikett; Beschriftung",
+      "phonetic": "ˈleɪbl",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Text smart 1 · Text analysis · Station 2 · Analysis of a fictional text",
+      "page": 201,
+      "source": {
+        "page": 201,
+        "half": "R",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "labe/ - a piece of paper on a bottle, box etc. that tells you about what is inside."
+    },
+    {
+      "id": "g9-u1-0249",
+      "english": "to grant",
+      "german": "zusichern; gewähren",
+      "phonetic": "ɡrɑːnt",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Text smart 1 · Text analysis · Station 2 · Analysis of a fictional text",
+      "page": 201,
+      "source": {
+        "page": 201,
+        "half": "R",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "The teacher granted his students permission to leave the class at any time."
+    },
+    {
+      "id": "g9-u1-0250",
+      "english": "to acquire sth",
+      "german": "etw. erwerben; sich etw. aneignen",
+      "phonetic": "əˈkwaɪə",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Text smart 1 · Text analysis · Station 2 · Analysis of a fictional text",
+      "page": 201,
+      "source": {
+        "page": 201,
+        "half": "R",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "As people grow older, their faces acquire more character. to acquire - to get Fr. acquérir"
+    },
+    {
+      "id": "g9-u1-0251",
+      "english": "desire",
+      "german": "Wunsch; Sehnsucht; Verlangen",
+      "phonetic": "dɪˈzaɪə",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Text smart 1 · Text analysis · Station 2 · Analysis of a fictional text",
+      "page": 201,
+      "source": {
+        "page": 201,
+        "half": "R",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "His only desire was to become a pop star. Fr. désir (m)"
+    },
+    {
+      "id": "g9-u1-0252",
+      "english": "purse",
+      "german": "Geldbeutel",
+      "phonetic": "pɜːs",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Text smart 1 · Text analysis · Station 2 · Analysis of a fictional text",
+      "page": 201,
+      "source": {
+        "page": 201,
+        "half": "R",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "You can keep your money in a purse. ! Careful: A purse (AE) - a handbag (BE)"
+    },
+    {
+      "id": "g9-u1-0253",
+      "english": "identical",
+      "german": "identisch; gleich",
+      "phonetic": "aɪˈdentɪkl",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Text smart 1 · Text analysis · Station 2 · Analysis of a fictional text",
+      "page": 201,
+      "source": {
+        "page": 201,
+        "half": "R",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Look, the two boys look the same. They're identical twins."
+    },
+    {
+      "id": "g9-u1-0254",
+      "english": "to suffer (from)",
+      "german": "leiden (unter)",
+      "phonetic": "ˈsʌfə frəm",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Text smart 1 · Text analysis · Station 2 · Analysis of a fictional text",
+      "page": 201,
+      "source": {
+        "page": 201,
+        "half": "R",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "The Native Americans were treated badlly and had to suffer. Fr. souffrir; Lat. sufferre"
+    },
+    {
+      "id": "g9-u1-0255",
+      "english": "trauma, traumas/traumata (pl)",
+      "german": "Trauma; seelischer Schock",
+      "phonetic": "ˈtrɔːmə; ˈtrɔːmətə",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Text smart 1 · Text analysis · Station 2 · Analysis of a fictional text",
+      "page": 201,
+      "source": {
+        "page": 201,
+        "half": "R",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "The accident caused a trauma they could never get over."
+    },
+    {
+      "id": "g9-u1-0256",
+      "english": "rare",
+      "german": "rar; selten",
+      "phonetic": "reə",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Text smart 1 · Text analysis · Station 2 · Analysis of a fictional text",
+      "page": 201,
+      "source": {
+        "page": 201,
+        "half": "R",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Rare animals and plants are not often seen. rare ↔ common Fr. rare; Lat. rarus"
+    },
+    {
+      "id": "g9-u1-0257",
+      "english": "handsome",
+      "german": "attraktiv; gut aussehend",
+      "phonetic": "ˈhænsəm",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Text smart 1 · Text analysis · Station 2 · Analysis of a fictional text",
+      "page": 201,
+      "source": {
+        "page": 201,
+        "half": "R",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "I think my brother is the most handsome boy at school. handsome - good-looking"
+    },
+    {
+      "id": "g9-u1-0258",
+      "english": "to deny",
+      "german": "leugnen; abstreiten; verweigern",
+      "phonetic": "dɪˈnaɪ",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Text smart 1 · Text analysis · Station 2 · Analysis of a fictional text",
+      "page": 201,
+      "source": {
+        "page": 201,
+        "half": "R",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "You cannot deny the fact that you lied to me. to deny↔ to admit Fr. dénier"
+    },
+    {
+      "id": "g9-u1-0259",
+      "english": "sensible",
+      "german": "vernünftig",
+      "phonetic": "ˈsensɪbl",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Text smart 1 · Text analysis · Station 2 · Analysis of a fictional text",
+      "page": 201,
+      "source": {
+        "page": 201,
+        "half": "R",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Looking at the sky it would be sensib/e to take an umbrella. ! sensible ≠ dt. sensibel sensible ↔ stupid"
+    },
+    {
+      "id": "g9-u1-0260",
+      "english": "flesh",
+      "german": "Fleisch",
+      "phonetic": "fleʃ",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Text smart 1 · Text analysis · Station 2 · Analysis of a fictional text",
+      "page": 201,
+      "source": {
+        "page": 201,
+        "half": "R",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "My children are my own flesh and"
+    },
+    {
+      "id": "g9-u1-0261",
+      "english": "weary",
+      "german": "müde; überdrüssig",
+      "phonetic": "ˈwɪəri",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Text smart 1 · Text analysis · Station 2 · Analysis of a fictional text",
+      "page": 201,
+      "source": {
+        "page": 201,
+        "half": "R",
+        "row": 19
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "I'm weary of telling you the rules 0"
+    },
+    {
+      "id": "g9-u1-0262",
+      "english": "regret",
+      "german": "Bedauern; Reue",
+      "phonetic": "rɪˈɡret",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Text smart 1 · Text analysis · Station 2 · Analysis of a fictional text",
+      "page": 202,
+      "source": {
+        "page": 202,
+        "half": "L",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "After the death of my grandmother my only regret is that I didn't visit her more often. Fr. regret (m)"
+    },
+    {
+      "id": "g9-u1-0263",
+      "english": "to identify",
+      "german": "aufzeigen; (sich) identifizieren",
+      "phonetic": "aɪˈdentɪfaɪ",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Text smart 1 · Text analysis · Station 2 · Analysis of a fictional text",
+      "page": 202,
+      "source": {
+        "page": 202,
+        "half": "L",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "The new virus was first identified in China. Fr. identifier"
+    },
+    {
+      "id": "g9-u1-0264",
+      "english": "meaningful",
+      "german": "aussagekräftig; bedeuts am; wichtig",
+      "phonetic": "ˈmiːnɪŋfl",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Text smart 1 · Text analysis · Options",
+      "page": 202,
+      "source": {
+        "page": 202,
+        "half": "L",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Whether something is meaningful or not depends on one's perspective; people see things differently."
+    },
+    {
+      "id": "g9-u1-0265",
+      "english": "tolerance",
+      "german": "Toleranz",
+      "phonetic": "ˈtɒlərəns",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Across cultures 2 · The language of tolerance and respect",
+      "page": 202,
+      "source": {
+        "page": 202,
+        "half": "L",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "A democratic society is based on tolerance and respect. Fr. tolérance (f)"
+    },
+    {
+      "id": "g9-u1-0266",
+      "english": "to adapt to sth",
+      "german": "sich etw. anpassen",
+      "phonetic": "əˈdæpt tə",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Across cultures 2 · The language of tolerance and respect",
+      "page": 202,
+      "source": {
+        "page": 202,
+        "half": "L",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "It's not always easy to adapt to a new situation. Fr. s'adapter; Lat. aptare"
+    },
+    {
+      "id": "g9-u1-0267",
+      "english": "to integrate",
+      "german": "(sich) integrieren; (sich) einfügen; einbinden",
+      "phonetic": "ˈɪntɪɡreɪt",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Across cultures 2 · The language of tolerance and respect",
+      "page": 202,
+      "source": {
+        "page": 202,
+        "half": "L",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "If you integrate sth, you make it part of sth else. Fr. intégrer"
+    },
+    {
+      "id": "g9-u1-0268",
+      "english": "various",
+      "german": "verschieden; verschiedenartig",
+      "phonetic": "ˈveəriəs",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Across cultures 2 · The language of tolerance and respect",
+      "page": 202,
+      "source": {
+        "page": 202,
+        "half": "L",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "There are various ways of how to do this task. various → variety Fr. varié/-e; Lat. varius"
+    },
+    {
+      "id": "g9-u1-0269",
+      "english": "prejudice",
+      "german": "Vorurteil",
+      "phonetic": "ˈpredʒədɪs",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Across cultures 2 · The language of tolerance and respect",
+      "page": 202,
+      "source": {
+        "page": 202,
+        "half": "L",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "There are still many prejudices against minorities. prejudice - a negative opinion or feeling Fr. préjugé (m); Lat. opinio praeiudicata (f)"
+    },
+    {
+      "id": "g9-u1-0270",
+      "english": "tight",
+      "german": "eng",
+      "phonetic": "taɪt",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Across cultures 2 · The language of tolerance and respect",
+      "page": 202,
+      "source": {
+        "page": 202,
+        "half": "L",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "I can't wear this shirt. It's too tight."
+    },
+    {
+      "id": "g9-u1-0271",
+      "english": "to date",
+      "german": "ausgehen mit",
+      "phonetic": "deɪt",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Across cultures 2 · The language of tolerance and respect",
+      "page": 202,
+      "source": {
+        "page": 202,
+        "half": "L",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "I dated Tom for half a year before we started our relationship."
+    },
+    {
+      "id": "g9-u1-0272",
+      "english": "race",
+      "german": "Rasse",
+      "phonetic": "reɪs",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Across cultures 2 · The language of tolerance and respect",
+      "page": 202,
+      "source": {
+        "page": 202,
+        "half": "L",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "I love dogs, but I don't like every dog race. Fr. race (f)"
+    },
+    {
+      "id": "g9-u1-0273",
+      "english": "shallow",
+      "german": "oberflächlich; seicht; flach",
+      "phonetic": "ˈʃæləʊ",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Across cultures 2 · The language of tolerance and respect",
+      "page": 202,
+      "source": {
+        "page": 202,
+        "half": "L",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "The water is shallow on this side of the lake."
+    },
+    {
+      "id": "g9-u1-0274",
+      "english": "judgement",
+      "german": "Urteil; Beurteilung: Meinung",
+      "phonetic": "ˈdʒʌdʒmənt",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Across cultures 2 · The language of tolerance and respect",
+      "page": 202,
+      "source": {
+        "page": 202,
+        "half": "L",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "What influenced your judgement about your tutor? judgement → judge, to judge Fr. jugement (m); Lat. iudicium (nt)"
+    },
+    {
+      "id": "g9-u1-0275",
+      "english": "to be prejudiced against sb/sth",
+      "german": "voreingenommen sein gegenüber jmdm./etw.",
+      "phonetic": "bi ˈpredʒədɪst əɡenst",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Across cultures 2 · The language of tolerance and respect",
+      "page": 202,
+      "source": {
+        "page": 202,
+        "half": "L",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Why are you prejudiced against homosexual people? to be prejudiced against → prejudice"
+    },
+    {
+      "id": "g9-u1-0276",
+      "english": "gender",
+      "german": "Geschlecht",
+      "phonetic": "ˈdʒendə",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Across cultures 2 · The language of tolerance and respect",
+      "page": 202,
+      "source": {
+        "page": 202,
+        "half": "L",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Women often fill a traditional gender role when they do all the housework. Lat. genus, generis (nt)"
+    },
+    {
+      "id": "g9-u1-0277",
+      "english": "stereotype",
+      "german": "Klischee; Stereotyp",
+      "phonetic": "ˈsteriəʊtaɪp",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Across cultures 2 · The language of tolerance and respect",
+      "page": 202,
+      "source": {
+        "page": 202,
+        "half": "L",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "A stereotype is an (often wrong) idea about what you expect a person to be like before you even know him / her."
+    },
+    {
+      "id": "g9-u1-0278",
+      "english": "to provoke",
+      "german": "provozieren; hervorrufen",
+      "phonetic": "prəˈvəʊk",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Across cultures 2 · The language of tolerance and respect",
+      "page": 202,
+      "source": {
+        "page": 202,
+        "half": "L",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "The president's speech provoked a lot of protest. Fr. provoquer; Lat. provocare"
+    },
+    {
+      "id": "g9-u1-0279",
+      "english": "willingly",
+      "german": "gern; freiwillig",
+      "phonetic": "ˈwɪlɪŋli",
+      "part_of_speech": "adverb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Across cultures 2 · The language of tolerance and respect",
+      "page": 203,
+      "source": {
+        "page": 203,
+        "half": "R",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "I provoked my parents willingly because I wanted them to listen to me. willingly ↔unwillingly"
+    },
+    {
+      "id": "g9-u1-0280",
+      "english": "to offend",
+      "german": "beleidigen; verletzen",
+      "phonetic": "əˈfend",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Across cultures 2 · The language of tolerance and respect",
+      "page": 203,
+      "source": {
+        "page": 203,
+        "half": "R",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "It really offends me when you talk about me behind my back. Fr. offenser; Lat. offendere"
+    },
+    {
+      "id": "g9-u1-0281",
+      "english": "minority",
+      "german": "Minderheit",
+      "phonetic": "maɪˈnɒrəti",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Across cultures 2 · The language of tolerance and respect",
+      "page": 203,
+      "source": {
+        "page": 203,
+        "half": "R",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "minority - less than half of the people or things in a group Fr. minorité (f)"
+    },
+    {
+      "id": "g9-u1-0282",
+      "english": "diversity",
+      "german": "Vielfalt; Verschiedenheit",
+      "phonetic": "daɪˈvɜːsəti",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Across cultures 2 · The language of tolerance and respect",
+      "page": 203,
+      "source": {
+        "page": 203,
+        "half": "R",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Cultural diversity describes people with different ethnic, national, or language backgrounds living in one community. diversity→ diverse Fr. diversité (f)"
+    },
+    {
+      "id": "g9-u1-0283",
+      "english": "pedestrian zone",
+      "german": "Fußgängerzone",
+      "phonetic": "pɪˈdestriən zəʊn",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Across cultures 2 · The language of tolerance and respect",
+      "page": 203,
+      "source": {
+        "page": 203,
+        "half": "R",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "You won't find as many pedestrian zones in America as you can find in Europe."
+    },
+    {
+      "id": "g9-u1-0284",
+      "english": "kiss",
+      "german": "Kuss",
+      "phonetic": "kɪs",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Across cultures 2 · The language of tolerance and respect",
+      "page": 203,
+      "source": {
+        "page": 203,
+        "half": "R",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "When they said goodbye, she gave hima kiss."
+    },
+    {
+      "id": "g9-u1-0285",
+      "english": "respectful",
+      "german": "respektvoll",
+      "phonetic": "rɪˈspektfl",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Across cultures 2 · The language of tolerance and respect",
+      "page": 203,
+      "source": {
+        "page": 203,
+        "half": "R",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "People should always talk respectfully to each other. respectful → respect, to respect"
+    },
+    {
+      "id": "g9-u1-0286",
+      "english": "to judge a book by its cover",
+      "german": "jdn./etw. nach dem Äußeren beurteilen",
+      "phonetic": "ˌdʒʌdʒ ə ˌbʊk baɪ ɪts ˈkʌvə",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Across cultures 2 · The language of tolerance and respect",
+      "page": 203,
+      "source": {
+        "page": 203,
+        "half": "R",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "to judge a book by its coverto judge e.g. people by their clothes"
+    },
+    {
+      "id": "g9-u1-0287",
+      "english": "privacy",
+      "german": "Privatsphäre",
+      "phonetic": "ˈprɪvəsi",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Across cultures 2 · The language of tolerance and respect",
+      "page": 203,
+      "source": {
+        "page": 203,
+        "half": "R",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "You want people to respect your privacy, so it's only fair to respect theirs. privacy → private Fr. privé/-e; Lat. privatus"
+    },
+    {
+      "id": "g9-u1-0288",
+      "english": "to draw the line (at)",
+      "german": "bei etw. die Grenze ziehen",
+      "phonetic": "ˌdrɔː ðə ˈlaɪn",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Across cultures 2 · The language of tolerance and respect",
+      "page": 203,
+      "source": {
+        "page": 203,
+        "half": "R",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "I draw the line at lying. If you lie to me, I expect you to say sorry."
+    },
+    {
+      "id": "g9-u1-0289",
+      "english": "It's none of our business!",
+      "german": "Das geht uns nichts an!",
+      "phonetic": "ɪts ˌnʌn əv aʊə ˈbɪznɪs",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Across cultures 2 · The language of tolerance and respect",
+      "page": 203,
+      "source": {
+        "page": 203,
+        "half": "R",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "You think she is spending too much time with her boyfriend? That's none of your business!"
+    },
+    {
+      "id": "g9-u1-0290",
+      "english": "to bring up",
+      "german": "zur Sprache bringen",
+      "phonetic": "ˌbrɪŋ ˈʌp",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Across cultures 2 · The language of tolerance and respect",
+      "page": 203,
+      "source": {
+        "page": 203,
+        "half": "R",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "During the class discussion their teacher brought up all the problems there were among the students."
+    },
+    {
+      "id": "g9-u1-0291",
+      "english": "same-sex",
+      "german": "gleichgeschlechtlich",
+      "phonetic": "ˌseɪmˈseks",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Across cultures 2 · The language of tolerance and respect",
+      "page": 203,
+      "source": {
+        "page": 203,
+        "half": "R",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Many countries, including quite a few in Europe, do a lot for same-sex rights. Some do very little."
+    },
+    {
+      "id": "g9-u1-0292",
+      "english": "lesbian",
+      "german": "lesbisch; Lesbe",
+      "phonetic": "ˈlezbiən",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Across cultures 2 · The language of tolerance and respect",
+      "page": 203,
+      "source": {
+        "page": 203,
+        "half": "R",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Lesbians have same-sex relationships. lesbian - homosexual"
+    },
+    {
+      "id": "g9-u1-0293",
+      "english": "straight (infml)",
+      "german": "heterosexuell",
+      "phonetic": "streɪt",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Across cultures 2 · The language of tolerance and respect",
+      "page": 203,
+      "source": {
+        "page": 203,
+        "half": "R",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "Whether they are straight or homosexual, everyone should have the same rights everywhere. straight ↔gay, lesbian, homosexual"
+    },
+    {
+      "id": "g9-u1-0294",
+      "english": "to come out",
+      "german": "sich outen",
+      "phonetic": "ˌkʌm ˈaʊt",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Across cultures 2 · The language of tolerance and respect",
+      "page": 203,
+      "source": {
+        "page": 203,
+        "half": "R",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Her parents never really knew much about gays or lesbians, but when Lisa came out they had no problem with it at all."
+    },
+    {
+      "id": "g9-u1-0295",
+      "english": "curious",
+      "german": "neugierig",
+      "phonetic": "ˈkjʊəriəs",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Across cultures 2 · The language of tolerance and respect",
+      "page": 203,
+      "source": {
+        "page": 203,
+        "half": "R",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "My little brother always tries to listen to my private conversations. He's very curious. Fr. curieux/ curieuse; Lat. curiosus"
+    },
+    {
+      "id": "g9-u1-0296",
+      "english": "sensitive",
+      "german": "sensibel; empfindsam; heikel",
+      "phonetic": "ˈsensɪtɪv",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Across cultures 2 · The language of tolerance and respect",
+      "page": 203,
+      "source": {
+        "page": 203,
+        "half": "R",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "1. If you're sensitive, you're aware of other people's feelings. 2. A sensitive person can get annoyed very easily if sb says the wrong thing. 3. A situation can be sensitive too. Fr. sensitif/-ive"
+    },
+    {
+      "id": "g9-u1-0297",
+      "english": "problematic",
+      "german": "problematisch; schwierig",
+      "phonetic": "ˌprɒbləˈmætɪk",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Across cultures 2 · The language of tolerance and respect",
+      "page": 204,
+      "source": {
+        "page": 204,
+        "half": "L",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "He was in a problematic situation when she found out he had lied. problematic → problem Fr. problématique"
+    },
+    {
+      "id": "g9-u1-0298",
+      "english": "to embarrass",
+      "german": "in Verlegenheit bringen",
+      "phonetic": "ɪmˈbærəs",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Across cultures 2 · The language of tolerance and respect",
+      "page": 204,
+      "source": {
+        "page": 204,
+        "half": "L",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "My friend embarrassed me when he told my girlfriend about my real feelings. I wanted to tell her myself. to embarrass → embarrassing, embarrassed Fr. embarrasser"
+    },
+    {
+      "id": "g9-u1-0299",
+      "english": "rumour",
+      "german": "Gerücht",
+      "phonetic": "ˈruːmə",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Across cultures 2 · The language of tolerance and respect",
+      "page": 204,
+      "source": {
+        "page": 204,
+        "half": "L",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1"
+      ],
+      "source_note": "There are rumours that she's left him. - Well, don't believe everything you hear. Fr. rumeur (f); Lat. rumor (m)"
+    },
+    {
+      "id": "g9-u1-0300",
+      "english": "to take sth the wrong way",
+      "german": "etw. falsch auffassen; etw. in den falschen Hals bekommen",
+      "phonetic": "ˌteɪk ðə rɒŋ ˈweɪ",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "G’day Australia!",
+      "section": "Across cultures 2 · The language of tolerance and respect",
+      "page": 204,
+      "source": {
+        "page": 204,
+        "half": "L",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "He took my joke the wrong way and never talked to me again."
+    }
+  ]
+}

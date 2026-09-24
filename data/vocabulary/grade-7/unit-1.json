@@ -1,1 +1,4347 @@
-{"schema_version":"1.0","subject":"English","grade":7,"unit":1,"title":"Find your place","import_status":"full_import","entry_count":176,"sections":["Across cultures 1 Reacting to a new situation","Check-in","Focus 1 Young people and media","Skills: How to compromise","Station 1: You have to push yourself!","Station 2: DMS online - People and activities","Station 3: Language change"],"audit":{"source_format":"screenshots","binary_in_repo":false,"examples_in_repo":false},"parts":["unit-1-part-1.json","unit-1-part-2.json","unit-1-part-3.json"],"storage":"compact-array-v1"}
+{
+  "schema_version": "2.0",
+  "grade": 7,
+  "unit": 1,
+  "title": "Find your place",
+  "entry_count": 186,
+  "entries": [
+    {
+      "id": "g7-u1-0001",
+      "english": "personality",
+      "german": "Persönlichkeit",
+      "phonetic": "ˌpɜːsnˈæləti",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Check-in",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "She's got a strong personality. You can't tell her what to do. pern ← prsnn ← pernal Fr. personnalité (f)"
+    },
+    {
+      "id": "g7-u1-0002",
+      "english": "to disagree (with)",
+      "german": "anderer Meinung sein; nicht einverstanden sein (mit)",
+      "phonetic": "ˌdɪsəˈɡriː",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Check-in",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "I don't think what you say is right. I really disagree with you. to disagree ↔ to agree"
+    },
+    {
+      "id": "g7-u1-0003",
+      "english": "to compromise",
+      "german": "Kompromisse eingehen",
+      "phonetic": "ˈkɒmprəmaɪz",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Check-in",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "It isn't always easy to compromise. Fr. compromis (m); Lat. compromissum (nt)"
+    },
+    {
+      "id": "g7-u1-0004",
+      "english": "smart",
+      "german": "schlau; klug; intelligent",
+      "phonetic": "smɑːt",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Check-in",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "I often do my homework with my brother. He's so smart! smart = clever smart ↔ stupid"
+    },
+    {
+      "id": "g7-u1-0005",
+      "english": "self",
+      "german": "das Selbst",
+      "phonetic": "self",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Check-in",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Are you self smart or people smart?"
+    },
+    {
+      "id": "g7-u1-0006",
+      "english": "nature",
+      "german": "Natur",
+      "phonetic": "ˈneɪtʃə",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Check-in",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "I only watch films about nature. ! in der Natur = in the countryside, not: inthenature Fr. nature (f); Lat. natura (f)"
+    },
+    {
+      "id": "g7-u1-0007",
+      "english": "logic",
+      "german": "Logik",
+      "phonetic": "ˈlɒdʒɪk",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Check-in",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "With feelings, logic often doesn't play a big role. Fr. logique (f); Lat. logica (nt) (pl)"
+    },
+    {
+      "id": "g7-u1-0008",
+      "english": "body",
+      "german": "Körper",
+      "phonetic": "ˈbɒdi",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Check-in",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Arms and legs are parts of the body."
+    },
+    {
+      "id": "g7-u1-0009",
+      "english": "saying",
+      "german": "Redensart; Sprichwort",
+      "phonetic": "ˈseɪɪŋ",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Check-in",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "\"When the cat's away, the mice will play\" is an English saying. saying → to say"
+    },
+    {
+      "id": "g7-u1-0010",
+      "english": "practice",
+      "german": "Training; Übung",
+      "phonetic": "ˈpræktɪs",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Check-in",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "I'm not good at playing the sax. I need more practice. practice = training practice → to practise"
+    },
+    {
+      "id": "g7-u1-0011",
+      "english": "to judge",
+      "german": "beurteilen; bewerten",
+      "phonetic": "dʒʌdʒ",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Check-in",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Never judge people by their clothes. Fr. juger; Lat. iudicare"
+    },
+    {
+      "id": "g7-u1-0012",
+      "english": "cover",
+      "german": "Cover; Titelblatt",
+      "phonetic": "ˈkʌvə",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Check-in",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "I like the cover of this magazine - it's crazy!"
+    },
+    {
+      "id": "g7-u1-0013",
+      "english": "to matter",
+      "german": "von Bedeutung sein; etw. ausmachen",
+      "phonetic": "ˈmætə",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Check-in",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "It doesn't matter how much money you've got. What matters to me are my friends. to matter to sb = to be important for sb"
+    },
+    {
+      "id": "g7-u1-0014",
+      "english": "I don't care",
+      "german": "es ist mir egal",
+      "phonetic": "aɪ ˌdəʊnt ˈkeə",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Check-in",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "I don't care what other people think of me."
+    },
+    {
+      "id": "g7-u1-0015",
+      "english": "to be in",
+      "german": "in sein; angesagt sein",
+      "phonetic": "bi ˈɪn",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Check-in",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "If something is in, a lot of people like it."
+    },
+    {
+      "id": "g7-u1-0016",
+      "english": "to be out",
+      "german": "out sein",
+      "phonetic": "bi ˈaʊt",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Check-in",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Some things that were in last year are out again this year. to be out ↔ to be in"
+    },
+    {
+      "id": "g7-u1-0017",
+      "english": "as long as",
+      "german": "solange",
+      "phonetic": "əz ˈlɒŋ əz",
+      "part_of_speech": "phrase",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Check-in",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "As long as I'm with you, everything is OK."
+    },
+    {
+      "id": "g7-u1-0018",
+      "english": "call-in",
+      "german": "Sendung, bei der sich das Publikum telefonisch beteiligen kann",
+      "phonetic": "ˈkɔːlɪn",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Check-in",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "My favourite show on the radio is a call-in. call-in → to call"
+    },
+    {
+      "id": "g7-u1-0019",
+      "english": "imagination",
+      "german": "Fantasie; Vorstellungskraft",
+      "phonetic": "ɪˌmædʒɪˈneɪʃn",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Check-in",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 19
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "To be creative you have to use your imagination. imagination → to imagine Fr. imagination (f); Lat. imaginatio (f)"
+    },
+    {
+      "id": "g7-u1-0020",
+      "english": "to compete (with/against)",
+      "german": "konkurrieren (mit); sich messen (mit); in Wettbewerb treten (mit); antreten (gegen)",
+      "phonetic": "kəmˈpiːt",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Check-in",
+      "page": 184,
+      "source": {
+        "page": 184,
+        "half": "L",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "You're stronger than me. I can't compete with you. to compete (with/against) → a competition Fr. compétition (f); Lat. competere"
+    },
+    {
+      "id": "g7-u1-0021",
+      "english": "themselves",
+      "german": "sich selbst (3. P. PI.)",
+      "phonetic": "ðəmˈselvz",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Check-in",
+      "page": 184,
+      "source": {
+        "page": 184,
+        "half": "L",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Are they talking to themselves? – No, they're on the phone."
+    },
+    {
+      "id": "g7-u1-0022",
+      "english": "to push oneself",
+      "german": "sich alles abverlangen; sich Mühe geben",
+      "phonetic": "ˈpʊʃ wʌnˌself",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 1: You have to push yourself!",
+      "page": 184,
+      "source": {
+        "page": 184,
+        "half": "L",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "If you want to get good grades, you'll have to push yourself."
+    },
+    {
+      "id": "g7-u1-0023",
+      "english": "to study",
+      "german": "studieren; lernen",
+      "phonetic": "ˈstʌdi",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 1: You have to push yourself!",
+      "page": 184,
+      "source": {
+        "page": 184,
+        "half": "L",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "I study English and French at school. If you study a subject, you learn a lot about it."
+    },
+    {
+      "id": "g7-u1-0024",
+      "english": "to enjoy oneself",
+      "german": "Spaß haben; sich amüsieren",
+      "phonetic": "ɪnˈdʒɔɪ",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 1: You have to push yourself!",
+      "page": 184,
+      "source": {
+        "page": 184,
+        "half": "L",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "When I'm with my friends, I usually enjoy myself a lot. to enjoy oneself = to have a good time"
+    },
+    {
+      "id": "g7-u1-0025",
+      "english": "waste",
+      "german": "Verschwendung",
+      "phonetic": "weɪst",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 1: You have to push yourself!",
+      "page": 184,
+      "source": {
+        "page": 184,
+        "half": "L",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "It's a waste of time telling him what to do. He'll never change! waste → to waste"
+    },
+    {
+      "id": "g7-u1-0026",
+      "english": "to accept",
+      "german": "akzeptieren; hinnehmen; annehmen",
+      "phonetic": "əkˈsept",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 1: You have to push yourself!",
+      "page": 184,
+      "source": {
+        "page": 184,
+        "half": "L",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "I had to accept my parents' decision to move to Florida. If you accept an invitation, you say you'd like to come. Fr. accepter; Lat. accipere"
+    },
+    {
+      "id": "g7-u1-0027",
+      "english": "grade (AE)",
+      "german": "Note; Klasse",
+      "phonetic": "ɡreɪd",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 1: You have to push yourself!",
+      "page": 184,
+      "source": {
+        "page": 184,
+        "half": "L",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "The best grade in American schools is A+; the worst is F (there's no E). !1. grade (AE) - mark (BE) 2. grade (AE) - class/year (BE)"
+    },
+    {
+      "id": "g7-u1-0028",
+      "english": "to make it",
+      "german": "es schaffen",
+      "phonetic": "ˈmeɪk ɪt",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 1: You have to push yourself!",
+      "page": 184,
+      "source": {
+        "page": 184,
+        "half": "L",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "If I can make it here, I can make it anywhere."
+    },
+    {
+      "id": "g7-u1-0029",
+      "english": "to complain",
+      "german": "sich beschweren; sich beklagen",
+      "phonetic": "kəmˈpleɪn",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 1: You have to push yourself!",
+      "page": 184,
+      "source": {
+        "page": 184,
+        "half": "L",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "My food was cold, so I complained."
+    },
+    {
+      "id": "g7-u1-0030",
+      "english": "report card (AE)",
+      "german": "Zeugnis",
+      "phonetic": "rɪˈpɔːt",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 1: You have to push yourself!",
+      "page": 184,
+      "source": {
+        "page": 184,
+        "half": "L",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "At the end of the school year, students in the US get their report cards."
+    },
+    {
+      "id": "g7-u1-0031",
+      "english": "loser",
+      "german": "Verlierer/-in; Loser/-in",
+      "phonetic": "ˈluːzə",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 1: You have to push yourself!",
+      "page": 184,
+      "source": {
+        "page": 184,
+        "half": "L",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "When I get bad grades, I sometimes feel like a loser. loser → to lose"
+    },
+    {
+      "id": "g7-u1-0032",
+      "english": "to be hard on sb",
+      "german": "streng mit jmdm. sein; mit jmdm. hart ins Gericht gehen",
+      "phonetic": "bi ˈhɑːd ɒn",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 1: You have to push yourself!",
+      "page": 184,
+      "source": {
+        "page": 184,
+        "half": "L",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Don't be so hard on him."
+    },
+    {
+      "id": "g7-u1-0033",
+      "english": "to relax",
+      "german": "sich entspannen; sich ausruhen; sich beruhigen",
+      "phonetic": "rɪˈlæks",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 1: You have to push yourself!",
+      "page": 184,
+      "source": {
+        "page": 184,
+        "half": "L",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Just relax! Fr. relaxer; Lat. relaxare"
+    },
+    {
+      "id": "g7-u1-0034",
+      "english": "laid-back",
+      "german": "entspannt; locker",
+      "phonetic": "ˌleɪdˈbæk",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 1: You have to push yourself!",
+      "page": 184,
+      "source": {
+        "page": 184,
+        "half": "L",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "He's laid-back. He never worries about anything."
+    },
+    {
+      "id": "g7-u1-0035",
+      "english": "bossy",
+      "german": "herrisch; rechthaberisch",
+      "phonetic": "ˈbɒsi",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 1: You have to push yourself!",
+      "page": 184,
+      "source": {
+        "page": 184,
+        "half": "L",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "My sister always tells me what to do. She's very bossy."
+    },
+    {
+      "id": "g7-u1-0036",
+      "english": "rich",
+      "german": "reich",
+      "phonetic": "rɪtʃ",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 1: You have to push yourself!",
+      "page": 184,
+      "source": {
+        "page": 184,
+        "half": "L",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "If you're rich, you've got lots of money. rich ↔ poor Fr. riche"
+    },
+    {
+      "id": "g7-u1-0037",
+      "english": "college",
+      "german": "Universität (in den USA)",
+      "phonetic": "ˈkɒlɪdʒ",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 1: You have to push yourself!",
+      "page": 184,
+      "source": {
+        "page": 184,
+        "half": "L",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Em wants to go to college after school."
+    },
+    {
+      "id": "g7-u1-0038",
+      "english": "all by oneself",
+      "german": "ganz allein",
+      "phonetic": "ˌɔːl baɪ wʌnˈself",
+      "part_of_speech": "phrase",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 1: You have to push yourself!",
+      "page": 184,
+      "source": {
+        "page": 184,
+        "half": "L",
+        "row": 19
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "I can do it all by myself. You don't need to help me. all by oneself – all alone, without help"
+    },
+    {
+      "id": "g7-u1-0039",
+      "english": "successful",
+      "german": "erfolgreich",
+      "phonetic": "səkˈsesfl",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 1: You have to push yourself!",
+      "page": 184,
+      "source": {
+        "page": 184,
+        "half": "L",
+        "row": 20
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "You usually have to work hard to become rich and successful. successful → success"
+    },
+    {
+      "id": "g7-u1-0040",
+      "english": "stubborn",
+      "german": "eigensinnig; störrisch",
+      "phonetic": "ˈstʌbən",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 1: You have to push yourself!",
+      "page": 185,
+      "source": {
+        "page": 185,
+        "half": "R",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Jack doesn't accept advice or help from his cousins. He's really stubborn."
+    },
+    {
+      "id": "g7-u1-0041",
+      "english": "to make a decision",
+      "german": "eine Entscheidung treffen",
+      "phonetic": "ˌmeɪk ə dɪˈsɪʒn",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 1: You have to push yourself!",
+      "page": 185,
+      "source": {
+        "page": 185,
+        "half": "R",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "If you can choose between two things, you have to make a decision."
+    },
+    {
+      "id": "g7-u1-0042",
+      "english": "ambitious",
+      "german": "ehrgeizig",
+      "phonetic": "æmˈbɪʃəs",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 1: You have to push yourself!",
+      "page": 185,
+      "source": {
+        "page": 185,
+        "half": "R",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Em always wants to be the best. She's very ambitious. Fr. ambitieux/-euse; Lat. ambitiosus"
+    },
+    {
+      "id": "g7-u1-0043",
+      "english": "pushy",
+      "german": "aufdringlich; penetrant; aggressiv",
+      "phonetic": "ˈpʊʃi",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 1: You have to push yourself!",
+      "page": 185,
+      "source": {
+        "page": 185,
+        "half": "R",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Try to get what you want - but don't be too pushy!"
+    },
+    {
+      "id": "g7-u1-0044",
+      "english": "to react",
+      "german": "reagieren",
+      "phonetic": "riˈækt",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 1: You have to push yourself!",
+      "page": 185,
+      "source": {
+        "page": 185,
+        "half": "R",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "She reacted in a very stubborn way. to react → reaction Fr. réagir"
+    },
+    {
+      "id": "g7-u1-0045",
+      "english": "in sb's shoes",
+      "german": "an jmds. Stelle",
+      "phonetic": "ɪn ˌsʌmbədiz ˈʃuːz",
+      "part_of_speech": "phrase",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 1: You have to push yourself!",
+      "page": 185,
+      "source": {
+        "page": 185,
+        "half": "R",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Try to put yourself in Jack's shoes. Maybe you'll understand him then."
+    },
+    {
+      "id": "g7-u1-0046",
+      "english": "to criticize (AE)",
+      "german": "kritisieren",
+      "phonetic": "ˈkrɪtɪsaɪz",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 1: You have to push yourself!",
+      "page": 185,
+      "source": {
+        "page": 185,
+        "half": "R",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Put yourself in my shoes before you criticize me! Fr. critiquer"
+    },
+    {
+      "id": "g7-u1-0047",
+      "english": "to push sb",
+      "german": "jmdn. drängen",
+      "phonetic": "pʊʃ",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 1: You have to push yourself!",
+      "page": 185,
+      "source": {
+        "page": 185,
+        "half": "R",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Em's parents don't push her. She pushes herself. to push → pushy"
+    },
+    {
+      "id": "g7-u1-0048",
+      "english": "to motivate",
+      "german": "motivieren",
+      "phonetic": "ˈməʊtɪveɪt",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 1: You have to push yourself!",
+      "page": 185,
+      "source": {
+        "page": 185,
+        "half": "R",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Our teacher always motivates us to do our best. Fr. motiver"
+    },
+    {
+      "id": "g7-u1-0049",
+      "english": "chance",
+      "german": "Chance; Gelegenheit; Möglichkeit",
+      "phonetic": "tʃɑːns",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 1: You have to push yourself!",
+      "page": 185,
+      "source": {
+        "page": 185,
+        "half": "R",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Give me another chance, please! Fr. chance (f)"
+    },
+    {
+      "id": "g7-u1-0050",
+      "english": "middle school (AE)",
+      "german": "Mittelschule (weiterführende Schule in den USA, Mittelstufe)",
+      "phonetic": "ˈmɪdl ˌskuːl",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 2: DMS online – People and activities",
+      "page": 185,
+      "source": {
+        "page": 185,
+        "half": "R",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Children at middle schoo/ in the US are usually 13 to 14 years oldl."
+    },
+    {
+      "id": "g7-u1-0051",
+      "english": "trainer",
+      "german": "Trainer/-in",
+      "phonetic": "ˈtreɪnə",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 2: DMS online – People and activities",
+      "page": 185,
+      "source": {
+        "page": 185,
+        "half": "R",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Our basketball team is looking for a new trainer. trainer → to train → training"
+    },
+    {
+      "id": "g7-u1-0052",
+      "english": "safety",
+      "german": "Sicherheit",
+      "phonetic": "ˈseɪfti",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 2: DMS online – People and activities",
+      "page": 185,
+      "source": {
+        "page": 185,
+        "half": "R",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "When I ride my bike, I always wear a helmet for safety. safety → safe"
+    },
+    {
+      "id": "g7-u1-0053",
+      "english": "bond",
+      "german": "Bindung",
+      "phonetic": "bɒnd",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 2: DMS online – People and activities",
+      "page": 185,
+      "source": {
+        "page": 185,
+        "half": "R",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Riders often form strong bonds with their horses."
+    },
+    {
+      "id": "g7-u1-0054",
+      "english": "to come easily to sb",
+      "german": "jmdm. leichtfallen",
+      "phonetic": "ˌkʌm ˈiːzɪli",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 2: DMS online – People and activities",
+      "page": 185,
+      "source": {
+        "page": 185,
+        "half": "R",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "French has never come easily to me. It comes easily to me. = It isn't difficult for me."
+    },
+    {
+      "id": "g7-u1-0055",
+      "english": "influence",
+      "german": "Einfluss",
+      "phonetic": "ˈɪnfluəns",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 2: DMS online – People and activities",
+      "page": 185,
+      "source": {
+        "page": 185,
+        "half": "R",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "The French influence on the English language was huge. Fr. influence (f)"
+    },
+    {
+      "id": "g7-u1-0056",
+      "english": "Norman",
+      "german": "Normanne/Normannin; normannisch",
+      "phonetic": "ˈnɔːmən",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 2: DMS online – People and activities",
+      "page": 185,
+      "source": {
+        "page": 185,
+        "half": "R",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "The Normans came to Britain in the 11th century."
+    },
+    {
+      "id": "g7-u1-0057",
+      "english": "pork",
+      "german": "Schweinefleisch",
+      "phonetic": "pɔːk",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 2: DMS online – People and activities",
+      "page": 185,
+      "source": {
+        "page": 185,
+        "half": "R",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Some people don't eat pork for religious reasons. Fr. porc (m); Lat. porcus (m)"
+    },
+    {
+      "id": "g7-u1-0058",
+      "english": "beef",
+      "german": "Rindfleisch",
+      "phonetic": "biːf",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 2: DMS online – People and activities",
+      "page": 185,
+      "source": {
+        "page": 185,
+        "half": "R",
+        "row": 19
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Is this beef or pork? – It's chicken! Fr. b∞euf (m)"
+    },
+    {
+      "id": "g7-u1-0059",
+      "english": "to mix",
+      "german": "mixen; mischen; vermischen",
+      "phonetic": "mɪks",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 2: DMS online – People and activities",
+      "page": 185,
+      "source": {
+        "page": 185,
+        "half": "R",
+        "row": 20
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "If you mix blue and yellow, you get Fr. mixer; Lat. miscēre"
+    },
+    {
+      "id": "g7-u1-0060",
+      "english": "future",
+      "german": "zukünftig",
+      "phonetic": "ˈfjuːtʃə",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 2: DMS online – People and activities",
+      "page": 186,
+      "source": {
+        "page": 186,
+        "half": "L",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Talk about your future plans. future → a future Fr. futur/-e; Lat. futurus"
+    },
+    {
+      "id": "g7-u1-0061",
+      "english": "rural",
+      "german": "lāndlich",
+      "phonetic": "ˈrʊərəl",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 2: DMS online – People and activities",
+      "page": 186,
+      "source": {
+        "page": 186,
+        "half": "L",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "We live in a rura/ area with lots of fields. Fr. rural/-e; Lat. rurare"
+    },
+    {
+      "id": "g7-u1-0062",
+      "english": "responsibility",
+      "german": "Verantwortung",
+      "phonetic": "rɪˌspɒnsəˈbɪləti",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 2: DMS online – People and activities",
+      "page": 186,
+      "source": {
+        "page": 186,
+        "half": "L",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "You should learn that you have a responsibility for your actions. Fr. responsabilité (f)"
+    },
+    {
+      "id": "g7-u1-0063",
+      "english": "living",
+      "german": "Lebensweise",
+      "phonetic": "ˈlɪvɪŋ",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 2: DMS online – People and activities",
+      "page": 186,
+      "source": {
+        "page": 186,
+        "half": "L",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "For healthy living, it's important to do sports. living → to live → life"
+    },
+    {
+      "id": "g7-u1-0064",
+      "english": "to be grounded",
+      "german": "Hausarrest haben",
+      "phonetic": "bi ˈɡraʊndɪd",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 2: DMS online – People and activities",
+      "page": 186,
+      "source": {
+        "page": 186,
+        "half": "L",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Jack was grounded for five days."
+    },
+    {
+      "id": "g7-u1-0065",
+      "english": "to taste",
+      "german": "schmecken; probieren",
+      "phonetic": "teɪst",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 2: DMS online – People and activities",
+      "page": 186,
+      "source": {
+        "page": 186,
+        "half": "L",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Mmm! This cake tastes fantastic! Would you like to taste the pie?"
+    },
+    {
+      "id": "g7-u1-0066",
+      "english": "hot",
+      "german": "scharf",
+      "phonetic": "hɒt",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 2: DMS online – People and activities",
+      "page": 186,
+      "source": {
+        "page": 186,
+        "half": "L",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Curries are often very hot."
+    },
+    {
+      "id": "g7-u1-0067",
+      "english": "spectacular",
+      "german": "spektakulār",
+      "phonetic": "spekˈtækjələ",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 2: DMS online – People and activities",
+      "page": 186,
+      "source": {
+        "page": 186,
+        "half": "L",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "The Welsh landscape is spectacular. Fr. spectaculaire"
+    },
+    {
+      "id": "g7-u1-0068",
+      "english": "pot",
+      "german": "Topf",
+      "phonetic": "pɒt",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 2: DMS online – People and activities",
+      "page": 186,
+      "source": {
+        "page": 186,
+        "half": "L",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "If you want to cook, you need at least one pot."
+    },
+    {
+      "id": "g7-u1-0069",
+      "english": "tasty",
+      "german": "lecker; schmackhaft",
+      "phonetic": "ˈteɪsti",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 2: DMS online – People and activities",
+      "page": 186,
+      "source": {
+        "page": 186,
+        "half": "L",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "This sandwich is tasty. tasty → to taste → a taste"
+    },
+    {
+      "id": "g7-u1-0070",
+      "english": "dish",
+      "german": "Gericht; Speise",
+      "phonetic": "dɪʃ",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 2: DMS online – People and activities",
+      "page": 186,
+      "source": {
+        "page": 186,
+        "half": "L",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Fish and chips are a typical British dish."
+    },
+    {
+      "id": "g7-u1-0071",
+      "english": "vegetable",
+      "german": "Gemüse",
+      "phonetic": "ˈvedʒtəbl",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 2: DMS online – People and activities",
+      "page": 186,
+      "source": {
+        "page": 186,
+        "half": "L",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Carrots are vegetables."
+    },
+    {
+      "id": "g7-u1-0072",
+      "english": "to seem",
+      "german": "scheinen",
+      "phonetic": "siːm",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 2: DMS online – People and activities",
+      "page": 186,
+      "source": {
+        "page": 186,
+        "half": "L",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "The dog seemed friendly at first, but then it suddenly became aggressive."
+    },
+    {
+      "id": "g7-u1-0073",
+      "english": "certain",
+      "german": "bestimmt; sicher; gewiss",
+      "phonetic": "ˈsɜːtn",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 2: DMS online – People and activities",
+      "page": 186,
+      "source": {
+        "page": 186,
+        "half": "L",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "There are certain things we need to talk about. I'm certain that I'mgoing to win. Fr. certain/e; Lat. certus"
+    },
+    {
+      "id": "g7-u1-0074",
+      "english": "recipe",
+      "german": "Rezept",
+      "phonetic": "ˈresɪpi",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 2: DMS online – People and activities",
+      "page": 187,
+      "source": {
+        "page": 187,
+        "half": "R",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "This food tastes great. Could you give me the recipe? !Pronunciation Fr. recette (f)"
+    },
+    {
+      "id": "g7-u1-0075",
+      "english": "to drive",
+      "german": "fahren",
+      "phonetic": "draɪv",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 2: DMS online – People and activities",
+      "page": 187,
+      "source": {
+        "page": 187,
+        "half": "R",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Don't drive too fast, please. to drive → a drive"
+    },
+    {
+      "id": "g7-u1-0076",
+      "english": "to put sth right",
+      "german": "etw. richtigstellen",
+      "phonetic": "pʊt",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 2: DMS online – People and activities",
+      "page": 187,
+      "source": {
+        "page": 187,
+        "half": "R",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "This isn't correct. Let me put the facts right."
+    },
+    {
+      "id": "g7-u1-0077",
+      "english": "understandable",
+      "german": "verständlich",
+      "phonetic": "ˌʌndəˈstændəbl",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 2: DMS online – People and activities",
+      "page": 187,
+      "source": {
+        "page": 187,
+        "half": "R",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "I think his reaction in this situation was understandable. understandable → to understand"
+    },
+    {
+      "id": "g7-u1-0078",
+      "english": "dream",
+      "german": "Traum",
+      "phonetic": "driːm",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 2: DMS online – People and activities",
+      "page": 187,
+      "source": {
+        "page": 187,
+        "half": "R",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "In my dream I was James Bond."
+    },
+    {
+      "id": "g7-u1-0079",
+      "english": "extreme",
+      "german": "extrem; radikal; äußerste/-r/-s",
+      "phonetic": "ɪkˈstriːm",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 2: DMS online – People and activities",
+      "page": 187,
+      "source": {
+        "page": 187,
+        "half": "R",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "I can't do this. It's too extreme. Fr. extrême; Lat. extremus"
+    },
+    {
+      "id": "g7-u1-0080",
+      "english": "comparable",
+      "german": "vergleichbar",
+      "phonetic": "ˈkɒmprəbl",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 2: DMS online – People and activities",
+      "page": 187,
+      "source": {
+        "page": 187,
+        "half": "R",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "The weather here isn't comparable to the weather in Florida. comparable → to compare Fr. comparable; Lat. comparabilis"
+    },
+    {
+      "id": "g7-u1-0081",
+      "english": "to develop",
+      "german": "(sich) entwickeln; (sich) entwickeln",
+      "phonetic": "dɪˈveləp",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 3: Language change",
+      "page": 187,
+      "source": {
+        "page": 187,
+        "half": "R",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "English developed from different languages. Fr. (se) développer"
+    },
+    {
+      "id": "g7-u1-0082",
+      "english": "Saxon",
+      "german": "Sachse/Sächsin; sächsisch",
+      "phonetic": "ˈsæksn",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 3: Language change",
+      "page": 187,
+      "source": {
+        "page": 187,
+        "half": "R",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Saxon people came to England fro now Germany."
+    },
+    {
+      "id": "g7-u1-0083",
+      "english": "Anglo-Saxon",
+      "german": "Angelsachse; Angelsächsin; angelsächsisch",
+      "phonetic": "ˌæŋɡləʊˈsæksn",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 3: Language change",
+      "page": 187,
+      "source": {
+        "page": 187,
+        "half": "R",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Before the Normans invaded Engl spoke Old English."
+    },
+    {
+      "id": "g7-u1-0084",
+      "english": "to defeat",
+      "german": "besiegen",
+      "phonetic": "dɪˈfiːt",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 3: Language change",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "William the Conqueror defeated King Harold at the Battle of Hastings in 1066. to defeat = to beat"
+    },
+    {
+      "id": "g7-u1-0085",
+      "english": "meat (no pl)",
+      "german": "Fleisch",
+      "phonetic": "miːt",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 3: Language change",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "The meat from pigs is called pork."
+    },
+    {
+      "id": "g7-u1-0086",
+      "english": "to remain",
+      "german": "bleiben",
+      "phonetic": "rɪˈmeɪn",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 3: Language change",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Things that don't change remain the same. to remain = to stay Lat. manēre"
+    },
+    {
+      "id": "g7-u1-0087",
+      "english": "Greek",
+      "german": "Griechisch; griechisch; aus Griechenland",
+      "phonetic": "ɡriːk",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Station 3: Language change",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "In science there are a lot of Greek and Latin names."
+    },
+    {
+      "id": "g7-u1-0088",
+      "english": "to have a point",
+      "german": "nicht ganz Unrecht haben",
+      "phonetic": "ˌhæv ə ˈpɔɪnt",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Skills: How to compromise",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Yes, you've got a point. I've never thought about it like that."
+    },
+    {
+      "id": "g7-u1-0089",
+      "english": "to meet halfway",
+      "german": "sich auf halbem Weg treffen",
+      "phonetic": "ˌmiːt hɑːfˈweɪ",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Skills: How to compromise",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "I don't agree! But I don't want to fight, so let's meet halfway."
+    },
+    {
+      "id": "g7-u1-0090",
+      "english": "I don't mind … (+ -ing)",
+      "german": "Ich habe nichts dagegen (zu) …….; Mir macht es nichts aus (zu) ...",
+      "phonetic": "aɪ dəʊnt ˈmaɪnd",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Skills: How to compromise",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "I don't mind looking after my litt le brother sometimes. I don't mind doing that. – It's OK for me to do that."
+    },
+    {
+      "id": "g7-u1-0091",
+      "english": "this way",
+      "german": "so; auf diese Weise",
+      "phonetic": "ˈðɪs weɪ",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Skills: How to compromise",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "It doesn't work this way! !this way - auf diese Weise, that way = auf jene Weise"
+    },
+    {
+      "id": "g7-u1-0092",
+      "english": "misunderstood",
+      "german": "missverstanden",
+      "phonetic": "ˌmɪsʌndəˈstʊd",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Skills: How to compromise",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Every time I talk to my parents I feel misunderstood. misunderstood → to understand"
+    },
+    {
+      "id": "g7-u1-0093",
+      "english": "ear",
+      "german": "Ohr",
+      "phonetic": "ɪə",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Skills: How to compromise",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "He whispered something in my ear."
+    },
+    {
+      "id": "g7-u1-0094",
+      "english": "diving",
+      "german": "Tauchen",
+      "phonetic": "ˈdaɪvɪŋ",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Skills: How to compromise",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "I'd like to try diving this summer."
+    },
+    {
+      "id": "g7-u1-0095",
+      "english": "argument",
+      "german": "Argument",
+      "phonetic": "ˈɑːɡjəmənt",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Unit task: A group discussion",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "What are the arguments for and against the trip? Fr. argument (m); Lat. argumentum (nt)"
+    },
+    {
+      "id": "g7-u1-0096",
+      "english": "cage",
+      "german": "Käfig",
+      "phonetic": "keɪdʒ",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Unit task: A group discussion",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "You shouldn't keep pets in a cage. Fr. cage (f)"
+    },
+    {
+      "id": "g7-u1-0097",
+      "english": "strict",
+      "german": "streng; strikt",
+      "phonetic": "strɪkt",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Unit task: A group discussion",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "The rules at our school are very strict."
+    },
+    {
+      "id": "g7-u1-0098",
+      "english": "dress code",
+      "german": "Kleiderordnung; Bekleidungsvorschriften",
+      "phonetic": "ˈdres ˌkəʊd",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Unit task: A group discussion",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "The school has a dress code, so she can't wear short skirts."
+    },
+    {
+      "id": "g7-u1-0099",
+      "english": "skin",
+      "german": "Haut; Fell",
+      "phonetic": "skɪn",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Unit task: A group discussion",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "When I'm in the sun for too long, my skin goes red."
+    },
+    {
+      "id": "g7-u1-0100",
+      "english": "to interrupt",
+      "german": "unterbrechen",
+      "phonetic": "ˌɪntəˈrʌpt",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Unit task: A group discussion",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Please don't interrupt me while I'm speaking."
+    },
+    {
+      "id": "g7-u1-0101",
+      "english": "to convince",
+      "german": "überzeugen",
+      "phonetic": "kənˈvɪns",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Unit task: A group discussion",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Your arguments didn't convince me. Fr. convaincre"
+    },
+    {
+      "id": "g7-u1-0102",
+      "english": "(the) most",
+      "german": "am meisten",
+      "phonetic": "ðə ˈməʊst",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Unit task: A group discussion",
+      "page": 188,
+      "source": {
+        "page": 188,
+        "half": "L",
+        "row": 19
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Whose presentation convinced you most?"
+    },
+    {
+      "id": "g7-u1-0103",
+      "english": "to be fed up (with)",
+      "german": "sauer sein (auf); die Nase voll haben (von)",
+      "phonetic": "bi fed ˈʌp wɪð",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Story: Hang out with us instead!",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Jack was fed up with his friends."
+    },
+    {
+      "id": "g7-u1-0104",
+      "english": "to feel like (+ noun or -ing)",
+      "german": "Lust haben (auf/zu)",
+      "phonetic": "ˈfiːl laɪk",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Story: Hang out with us instead!",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Do you feel like going for a walk? ! I feel like a glass of coke. (Lust haben) I feel like an idiot. (sich fühlen)"
+    },
+    {
+      "id": "g7-u1-0105",
+      "english": "to trust",
+      "german": "vertrauen",
+      "phonetic": "trʌst",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Story: Hang out with us instead!",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "I know what I'm doing. Please trust me."
+    },
+    {
+      "id": "g7-u1-0106",
+      "english": "sneaker (AE)",
+      "german": "Turnschuh",
+      "phonetic": "ˈsniːkə",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Story: Hang out with us instead!",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Sneakers are my favourite kind of shoes."
+    },
+    {
+      "id": "g7-u1-0107",
+      "english": "to dream",
+      "german": "träumen",
+      "phonetic": "driːm",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Story: Hang out with us instead!",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "I dream of becoming a famous musician. What did you dream about last night? to dream → a dream"
+    },
+    {
+      "id": "g7-u1-0108",
+      "english": "in-crowd",
+      "german": "die Angesagten",
+      "phonetic": "ˈɪnkraʊd",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Story: Hang out with us instead!",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Kris and Mason are part of the in-crowd."
+    },
+    {
+      "id": "g7-u1-0109",
+      "english": "either … or …",
+      "german": "entweder ... oder ...",
+      "phonetic": "ˈaɪðə/ˈiːðə … ɔː",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Story: Hang out with us instead!",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "You can have either this one or that one, but not both."
+    },
+    {
+      "id": "g7-u1-0110",
+      "english": "far away",
+      "german": "weit weg",
+      "phonetic": "ˌfɑːr əˈweɪ",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Story: Hang out with us instead!",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "My aunt lives far away, in a small village in Canada."
+    },
+    {
+      "id": "g7-u1-0111",
+      "english": "to chill out",
+      "german": "chillen",
+      "phonetic": "ˌtʃɪl ˈaʊt",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Story: Hang out with us instead!",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "In the afternoon we often chill out in the park. to chill out = to relax"
+    },
+    {
+      "id": "g7-u1-0112",
+      "english": "blond",
+      "german": "blond",
+      "phonetic": "blɒnd",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Story: Hang out with us instead!",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Her hair is blond, not brown."
+    },
+    {
+      "id": "g7-u1-0113",
+      "english": "What's going on?",
+      "german": "Was ist los?; Was geht ab?",
+      "phonetic": "wɒts ˌɡəʊɪŋ ˈɒn",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Story: Hang out with us instead!",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "What's going on?What are you doing?"
+    },
+    {
+      "id": "g7-u1-0114",
+      "english": "shake",
+      "german": "Shake; Milchshake",
+      "phonetic": "ʃeɪk",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Story: Hang out with us instead!",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Let's go for a shake after school."
+    },
+    {
+      "id": "g7-u1-0115",
+      "english": "dance",
+      "german": "Tanz; Tanzveranstaltung",
+      "phonetic": "dɑːns",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Story: Hang out with us instead!",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "dance → to dance Fr. danse (f)"
+    },
+    {
+      "id": "g7-u1-0116",
+      "english": "to lend (to)",
+      "german": "leihen;verleihen",
+      "phonetic": "ˈlend tə",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Story: Hang out with us instead!",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Can you borrow Mike's laptop? – He'll never lend it to me!"
+    },
+    {
+      "id": "g7-u1-0117",
+      "english": "to go behind sb's back",
+      "german": "jmdn. hintergehen",
+      "phonetic": "ɡəʊ bɪˌhaɪnd sʌmbədiz ˈbæk",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Story: Hang out with us instead!",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "How can you go behind Sam's back? He's your best friend!"
+    },
+    {
+      "id": "g7-u1-0118",
+      "english": "to worry sb",
+      "german": "jmdn. beunruhigen",
+      "phonetic": "ˈwʌri",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Story: Hang out with us instead!",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "The news is worrying me. = I'm worried about the news. to worry → worried"
+    },
+    {
+      "id": "g7-u1-0119",
+      "english": "bay",
+      "german": "Bucht",
+      "phonetic": "beɪ",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Story: Hang out with us instead!",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "This bay is a great place for swimming. Fr. baie (f)"
+    },
+    {
+      "id": "g7-u1-0120",
+      "english": "to come along",
+      "german": "mitkommen",
+      "phonetic": "ˌkʌm əˈlɒŋ",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Story: Hang out with us instead!",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "We're going to go to the park. Would you like to come along?"
+    },
+    {
+      "id": "g7-u1-0121",
+      "english": "to suggest",
+      "german": "vorschlagen",
+      "phonetic": "səˈdʒest",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Story: Hang out with us instead!",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 19
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Mike suggested a trip to the San Francisco Bay area. to suggest → a suggestion"
+    },
+    {
+      "id": "g7-u1-0122",
+      "english": "to pay attention to",
+      "german": "beachten",
+      "phonetic": "ˌpeɪ əˈtenʃn tə",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Story: Hang out with us instead!",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 20
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Nobody was paying attention to Jack."
+    },
+    {
+      "id": "g7-u1-0123",
+      "english": "to ignore",
+      "german": "ignorieren; außer Acht lassen",
+      "phonetic": "ɪɡˈnɔː",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Story: Hang out with us instead!",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 21
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Why are you ignoring me? Have I done anything wrong? If you don't look at sth and don't listen to it, even if you know it's there, you ignore it."
+    },
+    {
+      "id": "g7-u1-0124",
+      "english": "pretty",
+      "german": "hübsch",
+      "phonetic": "ˈprɪti",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Story: Hang out with us instead!",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 22
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "She's got pretty eyes."
+    },
+    {
+      "id": "g7-u1-0125",
+      "english": "mommy (AE)",
+      "german": "Mama; Mami; Mutti",
+      "phonetic": "ˈmɑːmi",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Story: Hang out with us instead!",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 23
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Mommy, can you come and help n"
+    },
+    {
+      "id": "g7-u1-0126",
+      "english": "to drop",
+      "german": "fallen (lassen)",
+      "phonetic": "drɒp",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Story: Hang out with us instead!",
+      "page": 189,
+      "source": {
+        "page": 189,
+        "half": "R",
+        "row": 24
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "I dropped my phone. I hope it isn't"
+    },
+    {
+      "id": "g7-u1-0127",
+      "english": "to afford",
+      "german": "sich leisten",
+      "phonetic": "əˈfɔːd",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Story: Hang out with us instead!",
+      "page": 190,
+      "source": {
+        "page": 190,
+        "half": "L",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "My grandparents didn't have much money so they could never afford to go on holiday."
+    },
+    {
+      "id": "g7-u1-0128",
+      "english": "anger (no pl)",
+      "german": "Zorn; Wut",
+      "phonetic": "ˈæŋɡə",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Story: Hang out with us instead!",
+      "page": 190,
+      "source": {
+        "page": 190,
+        "half": "L",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Jack was white with anger! anger → angry"
+    },
+    {
+      "id": "g7-u1-0129",
+      "english": "loyal",
+      "german": "loyal; treu",
+      "phonetic": "ˈlɔɪəl",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Story: Hang out with us instead!",
+      "page": 190,
+      "source": {
+        "page": 190,
+        "half": "L",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "You should be loyal to your friends. Fr. loyal/-e"
+    },
+    {
+      "id": "g7-u1-0130",
+      "english": "to lie",
+      "german": "lügen",
+      "phonetic": "laɪ",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Story: Hang out with us instead!",
+      "page": 190,
+      "source": {
+        "page": 190,
+        "half": "L",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "The camera never lies! Be careful: to lie, lied, lied (lügen) to lie, lay, lain (liegen)"
+    },
+    {
+      "id": "g7-u1-0131",
+      "english": "to fit in",
+      "german": "hineinpassen; sich einfügen",
+      "phonetic": "ˌfɪt ˈɪn",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Story: Hang out with us instead!",
+      "page": 190,
+      "source": {
+        "page": 190,
+        "half": "L",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "The right piece in a puzzle will fit in easily."
+    },
+    {
+      "id": "g7-u1-0132",
+      "english": "trust",
+      "german": "Vertrauen",
+      "phonetic": "trʌst",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Story: Hang out with us instead!",
+      "page": 190,
+      "source": {
+        "page": 190,
+        "half": "L",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "I gave you all my trust and you lied to me! trust → to trust"
+    },
+    {
+      "id": "g7-u1-0133",
+      "english": "still",
+      "german": "Standbild",
+      "phonetic": "stɪl",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Across cultures 1: Reacting to a new situation",
+      "page": 190,
+      "source": {
+        "page": 190,
+        "half": "L",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Who can you see in this still? still – a photo of a film scene"
+    },
+    {
+      "id": "g7-u1-0134",
+      "english": "plate",
+      "german": "Teller",
+      "phonetic": "pleɪt",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Across cultures 1: Reacting to a new situation",
+      "page": 190,
+      "source": {
+        "page": 190,
+        "half": "L",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "There's too much food on the plate."
+    },
+    {
+      "id": "g7-u1-0135",
+      "english": "mug",
+      "german": "Becher",
+      "phonetic": "mʌɡ",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Across cultures 1: Reacting to a new situation",
+      "page": 190,
+      "source": {
+        "page": 190,
+        "half": "L",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "I always have two mugs of tea for breakfast."
+    },
+    {
+      "id": "g7-u1-0136",
+      "english": "cup",
+      "german": "Tasse",
+      "phonetic": "kʌp",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Across cultures 1: Reacting to a new situation",
+      "page": 190,
+      "source": {
+        "page": 190,
+        "half": "L",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Put the cups into the cupboard, please."
+    },
+    {
+      "id": "g7-u1-0137",
+      "english": "spoon",
+      "german": "Löffel",
+      "phonetic": "spuːn",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Across cultures 1: Reacting to a new situation",
+      "page": 190,
+      "source": {
+        "page": 190,
+        "half": "L",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "I like eating pasta with a spoon."
+    },
+    {
+      "id": "g7-u1-0138",
+      "english": "knife",
+      "german": "Messer",
+      "phonetic": "naɪf",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Across cultures 1: Reacting to a new situation",
+      "page": 190,
+      "source": {
+        "page": 190,
+        "half": "L",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "I've dropped my knife. Can I get a new one, please?"
+    },
+    {
+      "id": "g7-u1-0139",
+      "english": "fork",
+      "german": "Gabel",
+      "phonetic": "fɔːk",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Across cultures 1: Reacting to a new situation",
+      "page": 190,
+      "source": {
+        "page": 190,
+        "half": "L",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "fork and knife"
+    },
+    {
+      "id": "g7-u1-0140",
+      "english": "bread roll",
+      "german": "Brötchen",
+      "phonetic": "ˈbred ˌrəʊl",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Across cultures 1: Reacting to a new situation",
+      "page": 191,
+      "source": {
+        "page": 191,
+        "half": "R",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Would you like bread rolls or toast for breakfast?"
+    },
+    {
+      "id": "g7-u1-0141",
+      "english": "marmalade",
+      "german": "Marmelade aus Zitrusfrüchten",
+      "phonetic": "ˈmɑːməleɪd",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Across cultures 1: Reacting to a new situation",
+      "page": 191,
+      "source": {
+        "page": 191,
+        "half": "R",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Do you like bread rolls with marmalade? ! Spelling: marmalade"
+    },
+    {
+      "id": "g7-u1-0142",
+      "english": "honey",
+      "german": "Honig",
+      "phonetic": "ˈhʌni",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Across cultures 1: Reacting to a new situation",
+      "page": 191,
+      "source": {
+        "page": 191,
+        "half": "R",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "We get honey from bees."
+    },
+    {
+      "id": "g7-u1-0143",
+      "english": "muesli",
+      "german": "Müsli",
+      "phonetic": "ˈmjuːzli",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Across cultures 1: Reacting to a new situation",
+      "page": 191,
+      "source": {
+        "page": 191,
+        "half": "R",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "I usually eat muesli for breakfast."
+    },
+    {
+      "id": "g7-u1-0144",
+      "english": "sausage",
+      "german": "Wurst; Bratwurst",
+      "phonetic": "ˈsɒsɪdʒ",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Across cultures 1: Reacting to a new situation",
+      "page": 191,
+      "source": {
+        "page": 191,
+        "half": "R",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "People say that Germans eat lots of sausages."
+    },
+    {
+      "id": "g7-u1-0145",
+      "english": "sugar",
+      "german": "Zucker",
+      "phonetic": "ˈʃʊɡə",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Across cultures 1: Reacting to a new situation",
+      "page": 191,
+      "source": {
+        "page": 191,
+        "half": "R",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Do you like your tea with sugar or honey? Fr. sucre (m)"
+    },
+    {
+      "id": "g7-u1-0146",
+      "english": "experience",
+      "german": "Erfahrung; Erlebnis",
+      "phonetic": "ɪkˈspɪəriəns",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Across cultures 1: Reacting to a new situation",
+      "page": 191,
+      "source": {
+        "page": 191,
+        "half": "R",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Have you had any bad experiences at school? Fr. expérience (f)"
+    },
+    {
+      "id": "g7-u1-0147",
+      "english": "host family",
+      "german": "Gastfamilie",
+      "phonetic": "ˈhəʊst ˌfæmli",
+      "part_of_speech": "adverb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Across cultures 1: Reacting to a new situation",
+      "page": 191,
+      "source": {
+        "page": 191,
+        "half": "R",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "I'm staying with the Jacksons. They're my host family."
+    },
+    {
+      "id": "g7-u1-0148",
+      "english": "exchange student",
+      "german": "Austauschschüler/-in",
+      "phonetic": "ɪksˈtʃeɪndʒ ˌstjuːdnt",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Across cultures 1: Reacting to a new situation",
+      "page": 191,
+      "source": {
+        "page": 191,
+        "half": "R",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Our exchange student comes from England and wants to learn German."
+    },
+    {
+      "id": "g7-u1-0149",
+      "english": "type",
+      "german": "Typ; Art; Sorte",
+      "phonetic": "taɪp",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Across cultures 1: Reacting to a new situation",
+      "page": 191,
+      "source": {
+        "page": 191,
+        "half": "R",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "There are many different types of bread in Germany. type = kind Fr. type (m)"
+    },
+    {
+      "id": "g7-u1-0150",
+      "english": "to upset",
+      "german": "aus der Fassung bringen; aufregen",
+      "phonetic": "ʌpˈset",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Across cultures 1: Reacting to a new situation",
+      "page": 191,
+      "source": {
+        "page": 191,
+        "half": "R",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "His fight with Sam upsets Jack. toup ← u et"
+    },
+    {
+      "id": "g7-u1-0151",
+      "english": "impolite",
+      "german": "unhöflich",
+      "phonetic": "ˌɪmpəˈlaɪt",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Across cultures 1: Reacting to a new situation",
+      "page": 191,
+      "source": {
+        "page": 191,
+        "half": "R",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "It's impolite to interrupt people while they're talking. impolite ↔ polite Fr. impoli/-e"
+    },
+    {
+      "id": "g7-u1-0152",
+      "english": "this (+ adj)",
+      "german": "so",
+      "phonetic": "ðɪs",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Across cultures 1: Reacting to a new situation",
+      "page": 191,
+      "source": {
+        "page": 191,
+        "half": "R",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Do you really have to go home this early?"
+    },
+    {
+      "id": "g7-u1-0153",
+      "english": "that (+ adj)",
+      "german": "so",
+      "phonetic": "ðæt",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Across cultures 1: Reacting to a new situation",
+      "page": 191,
+      "source": {
+        "page": 191,
+        "half": "R",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Sorry, I can't eat that much in the morning."
+    },
+    {
+      "id": "g7-u1-0154",
+      "english": "to be used to (+ -ing)",
+      "german": "gewöhnt sein an; gewohnt sein",
+      "phonetic": "bi ˈjuːzd tə",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Across cultures 1: Reacting to a new situation",
+      "page": 191,
+      "source": {
+        "page": 191,
+        "half": "R",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "I'm not used to drinking coffee."
+    },
+    {
+      "id": "g7-u1-0155",
+      "english": "usage",
+      "german": "Gebrauch; Nutzung",
+      "phonetic": "ˈjuːsɪdʒ",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Focus 1: Young people and media",
+      "page": 191,
+      "source": {
+        "page": 191,
+        "half": "R",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "I've just read a survey about media usage. usage → to use Fr. usage (m); Lat. usus (m)"
+    },
+    {
+      "id": "g7-u1-0156",
+      "english": "what for",
+      "german": "wozu",
+      "phonetic": "ˌwɒt ˈfɔː",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Focus 1: Young people and media",
+      "page": 191,
+      "source": {
+        "page": 191,
+        "half": "R",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "What did you do it for?"
+    },
+    {
+      "id": "g7-u1-0157",
+      "english": "a day",
+      "german": "pro Tag",
+      "phonetic": "ə ˈdeɪ",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Focus 1: Young people and media",
+      "page": 191,
+      "source": {
+        "page": 191,
+        "half": "R",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "I check my e-mails three times a day."
+    },
+    {
+      "id": "g7-u1-0158",
+      "english": "content",
+      "german": "Inhalt",
+      "phonetic": "ˈkɒntent",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Focus 1: Young people and media",
+      "page": 191,
+      "source": {
+        "page": 191,
+        "half": "R",
+        "row": 19
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Sum up the content of this book. Fr. contenu (m)"
+    },
+    {
+      "id": "g7-u1-0159",
+      "english": "communication",
+      "german": "Kommunikation",
+      "phonetic": "kəˌmjuːnɪˈkeɪʃn",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Focus 1: Young people and media",
+      "page": 191,
+      "source": {
+        "page": 191,
+        "half": "R",
+        "row": 20
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "The internet has changed our com communication → to communicat P Fr. communication (f); Lat. commu"
+    },
+    {
+      "id": "g7-u1-0160",
+      "english": "digital",
+      "german": "digital",
+      "phonetic": "ˈdɪdʒɪtl",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Focus 1: Young people and media",
+      "page": 192,
+      "source": {
+        "page": 192,
+        "half": "L",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "We live in the digital age. Fr. digital/-e"
+    },
+    {
+      "id": "g7-u1-0161",
+      "english": "cyber bullying",
+      "german": "Cybermobbing",
+      "phonetic": "ˈsaɪbə ˌbʊliɪŋ",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Focus 1: Young people and media",
+      "page": 192,
+      "source": {
+        "page": 192,
+        "half": "L",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Cyber bullying can be a problem in social networks."
+    },
+    {
+      "id": "g7-u1-0162",
+      "english": "psychological",
+      "german": "psychologisch; psychisch",
+      "phonetic": "ˌsaɪklˈɒdʒɪkl",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Focus 1: Young people and media",
+      "page": 192,
+      "source": {
+        "page": 192,
+        "half": "L",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Cyber bullying can cause psychological problems. !You don't pronounce the ,p'. Fr. psychologique"
+    },
+    {
+      "id": "g7-u1-0163",
+      "english": "danger",
+      "german": "Gefahr",
+      "phonetic": "ˈdeɪndʒə",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Focus 1: Young people and media",
+      "page": 192,
+      "source": {
+        "page": 192,
+        "half": "L",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "There's a danger that you might get hurt. danger → dangerous Fr. danger (m)"
+    },
+    {
+      "id": "g7-u1-0164",
+      "english": "psychologist",
+      "german": "Psychologe/Psychologin",
+      "phonetic": "saɪˈkɒlədʒɪst",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Focus 1: Young people and media",
+      "page": 192,
+      "source": {
+        "page": 192,
+        "half": "L",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "A psychologist can help you with psychological problems."
+    },
+    {
+      "id": "g7-u1-0165",
+      "english": "to warn",
+      "german": "warnen",
+      "phonetic": "wɔːn",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Focus 1: Young people and media",
+      "page": 192,
+      "source": {
+        "page": 192,
+        "half": "L",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "They warned me of the dangers."
+    },
+    {
+      "id": "g7-u1-0166",
+      "english": "self-esteem",
+      "german": "Selbstwertgefühl; Selbstachtung",
+      "phonetic": "ˌselfɪˈstiːm",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Focus 1: Young people and media",
+      "page": 192,
+      "source": {
+        "page": 192,
+        "half": "L",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Sports can help to improve your self-esteem."
+    },
+    {
+      "id": "g7-u1-0167",
+      "english": "according to",
+      "german": "laut; gemäß",
+      "phonetic": "əˈkɔːdɪŋ tə",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Focus 1: Young people and media",
+      "page": 192,
+      "source": {
+        "page": 192,
+        "half": "L",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "According to a survey, most teenagers like sweets. According to psychologists ... = Psychologists say ..."
+    },
+    {
+      "id": "g7-u1-0168",
+      "english": "to be supposed to (do)",
+      "german": "(tun) sollen",
+      "phonetic": "bi səˈpəʊzd tə",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Focus 1: Young people and media",
+      "page": 192,
+      "source": {
+        "page": 192,
+        "half": "L",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "You aren't supposed to use your smartphone in class!"
+    },
+    {
+      "id": "g7-u1-0169",
+      "english": "mostly",
+      "german": "meistens; größtenteils; hauptsächlich",
+      "phonetic": "ˈməʊstli",
+      "part_of_speech": "adverb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Focus 1: Young people and media",
+      "page": 192,
+      "source": {
+        "page": 192,
+        "half": "L",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "I mostly chat with my friends, but sometimes I also call them."
+    },
+    {
+      "id": "g7-u1-0170",
+      "english": "direct",
+      "german": "direkt",
+      "phonetic": "dɪˈrekt; daɪˈrekt",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Focus 1: Young people and media",
+      "page": 192,
+      "source": {
+        "page": 192,
+        "half": "L",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Talking to each other face to face is direct communication. Fr. direct/-e; Lat. directus"
+    },
+    {
+      "id": "g7-u1-0171",
+      "english": "interaction",
+      "german": "Interaktion",
+      "phonetic": "ˌɪntərˈækʃn",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Focus 1: Young people and media",
+      "page": 193,
+      "source": {
+        "page": 193,
+        "half": "R",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "The interaction between students and teachers is important. Fr. interaction (f)"
+    },
+    {
+      "id": "g7-u1-0172",
+      "english": "indirect",
+      "german": "indirekt",
+      "phonetic": "ˌɪndɪˈrekt; ˌɪndaɪˈrekt",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Focus 1: Young people and media",
+      "page": 193,
+      "source": {
+        "page": 193,
+        "half": "R",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "He gave me an indirect answer, but I understood it. indirect↔direct"
+    },
+    {
+      "id": "g7-u1-0173",
+      "english": "to take a risk",
+      "german": "ein Risiko eingehen",
+      "phonetic": "ˌteɪk ə ˈrɪsk",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Focus 1: Young people and media",
+      "page": 193,
+      "source": {
+        "page": 193,
+        "half": "R",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "I'm too scared to take a risk. If you take a risk, you do something that could be dangerous."
+    },
+    {
+      "id": "g7-u1-0174",
+      "english": "to keep up",
+      "german": "aufrechterhalten",
+      "phonetic": "ˌkiːp ˈʌp",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Focus 1: Young people and media",
+      "page": 193,
+      "source": {
+        "page": 193,
+        "half": "R",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "Don't be too quiet. Try to keep up the conversation!"
+    },
+    {
+      "id": "g7-u1-0175",
+      "english": "fake",
+      "german": "falsch; gefälscht",
+      "phonetic": "feɪk",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Focus 1: Young people and media",
+      "page": 193,
+      "source": {
+        "page": 193,
+        "half": "R",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Some people use fake identities online."
+    },
+    {
+      "id": "g7-u1-0176",
+      "english": "identity",
+      "german": "Identität",
+      "phonetic": "aɪˈdentəti",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Focus 1: Young people and media",
+      "page": 193,
+      "source": {
+        "page": 193,
+        "half": "R",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "I'm scared that someone could steal my identity online. Fr. identité (f)"
+    },
+    {
+      "id": "g7-u1-0177",
+      "english": "to face",
+      "german": "gegenüber stehen; konfrontiert werden mit; anblicken; sich zuwenden",
+      "phonetic": "feɪs",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Focus 1: Young people and media",
+      "page": 193,
+      "source": {
+        "page": 193,
+        "half": "R",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "This is a problem we have to face."
+    },
+    {
+      "id": "g7-u1-0178",
+      "english": "image",
+      "german": "Bild; Image",
+      "phonetic": "ˈɪmɪdʒ",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Focus 1: Young people and media",
+      "page": 193,
+      "source": {
+        "page": 193,
+        "half": "R",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "He created an image of himself that wasn't true. Fr. image (f); Lat. imago (f)"
+    },
+    {
+      "id": "g7-u1-0179",
+      "english": "especially",
+      "german": "besonders; vor allem",
+      "phonetic": "ɪˈspeʃli",
+      "part_of_speech": "adverb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Focus 1: Young people and media",
+      "page": 193,
+      "source": {
+        "page": 193,
+        "half": "R",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "I use social media a lot, especially forums. especially → special"
+    },
+    {
+      "id": "g7-u1-0180",
+      "english": "anything",
+      "german": "alles",
+      "phonetic": "ˈeniθɪŋ",
+      "part_of_speech": "adjective",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Focus 1: Young people and media",
+      "page": 193,
+      "source": {
+        "page": 193,
+        "half": "R",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "He'd do almost anything to get more likes. !Be careful: Everything in this shop costs £1. - alles (ohne Ausnahme) You can buy anything online. - alles (Mögliche/Beliebige)"
+    },
+    {
+      "id": "g7-u1-0181",
+      "english": "behaviour (no pl)",
+      "german": "Verhalten; Benehmen; Betragen",
+      "phonetic": "bɪˈheɪvjə",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Focus 1: Young people and media",
+      "page": 193,
+      "source": {
+        "page": 193,
+        "half": "R",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "We got into trouble because of your stupid behaviour!"
+    },
+    {
+      "id": "g7-u1-0182",
+      "english": "permanent",
+      "german": "permanent; dauerhaft",
+      "phonetic": "ˈpɜːmənənt",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Focus 1: Young people and media",
+      "page": 193,
+      "source": {
+        "page": 193,
+        "half": "R",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "He's in permanent contact with his friends. permanent ↔ for a short time Fr. permanent; Lat. permanēre"
+    },
+    {
+      "id": "g7-u1-0183",
+      "english": "depression",
+      "german": "Depression; Niedergeschlagenheit",
+      "phonetic": "dɪˈpreʃn",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Focus 1: Young people and media",
+      "page": 193,
+      "source": {
+        "page": 193,
+        "half": "R",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Depression is a psychological problem. Fr. dépression (f)"
+    },
+    {
+      "id": "g7-u1-0184",
+      "english": "suicide",
+      "german": "Selbstmord; Suizid",
+      "phonetic": "ˈsuːɪsaɪd",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Focus 1: Young people and media",
+      "page": 193,
+      "source": {
+        "page": 193,
+        "half": "R",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "Depression can lead to suicide. Fr. suicide (m)"
+    },
+    {
+      "id": "g7-u1-0185",
+      "english": "vlog",
+      "german": "Vlog; Videoblog",
+      "phonetic": "vlɒɡ",
+      "part_of_speech": "noun",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Focus 1: Young people and media",
+      "page": 193,
+      "source": {
+        "page": 193,
+        "half": "R",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1"
+      ],
+      "source_note": "I post a new video on my vlog every week."
+    },
+    {
+      "id": "g7-u1-0186",
+      "english": "to design",
+      "german": "entwerfen; gestalten",
+      "phonetic": "dɪˈzaɪn",
+      "part_of_speech": "verb",
+      "unit": 1,
+      "unit_title": "Find your place",
+      "section": "Focus 1: Young people and media",
+      "page": 193,
+      "source": {
+        "page": 193,
+        "half": "R",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-1",
+        "difficult"
+      ],
+      "source_note": "I designed my website myself. Fr. dessiner"
+    }
+  ]
+}

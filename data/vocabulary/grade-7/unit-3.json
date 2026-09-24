@@ -1,1 +1,4679 @@
-{"schema_version":"1.0","subject":"English","grade":7,"unit":3,"title":"What was it like?","import_status":"full_import","entry_count":125,"sections":["Across cultures 3: Dos and don'ts","Check-in","Focus 2: The New World","Skills: How to talk","Station 1: What do the instructions say?","Text smart 2 Fictional texts","Text smart 2 · Station 1: Dealing with a fictional text – Among the Hidden"],"audit":{"source_format":"screenshots","binary_in_repo":false,"examples_in_repo":false},"parts":["unit-3-part-1.json","unit-3-part-2.json","unit-3-part-3.json"],"storage":"compact-array-v1"}
+{
+  "schema_version": "2.0",
+  "grade": 7,
+  "unit": 3,
+  "title": "What was it like?",
+  "entry_count": 201,
+  "entries": [
+    {
+      "id": "g7-u3-0001",
+      "english": "smoky",
+      "german": "verraucht; rauchig",
+      "phonetic": "ˈsməʊki",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Check-in",
+      "page": 202,
+      "source": {
+        "page": 202,
+        "half": "L",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "This room is very smoky. Let's open the window."
+    },
+    {
+      "id": "g7-u3-0002",
+      "english": "heating",
+      "german": "Heizung",
+      "phonetic": "ˈhiːtɪŋ",
+      "part_of_speech": "adjective",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Check-in",
+      "page": 202,
+      "source": {
+        "page": 202,
+        "half": "L",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Our heating doesn't work. It's so cold!"
+    },
+    {
+      "id": "g7-u3-0003",
+      "english": "belt",
+      "german": "Gürtel",
+      "phonetic": "belt",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Check-in",
+      "page": 202,
+      "source": {
+        "page": 202,
+        "half": "L",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "My trousers don't fit. I need a belt."
+    },
+    {
+      "id": "g7-u3-0004",
+      "english": "lord",
+      "german": "Lord; Herr",
+      "phonetic": "lɔːd",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Check-in",
+      "page": 202,
+      "source": {
+        "page": 202,
+        "half": "L",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "We work very hard for our lord."
+    },
+    {
+      "id": "g7-u3-0005",
+      "english": "monarch",
+      "german": "Monarch/-in",
+      "phonetic": "ˈmɒnək",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Check-in",
+      "page": 202,
+      "source": {
+        "page": 202,
+        "half": "L",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "The Queen is the British monarch. monarchs = kings and queens Fr. monarque (m)/(f)"
+    },
+    {
+      "id": "g7-u3-0006",
+      "english": "Tudor",
+      "german": "-Tudor-",
+      "phonetic": "ˈtjuːdə",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Check-in",
+      "page": 202,
+      "source": {
+        "page": 202,
+        "half": "L",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Shakespeare lived in the Tudor period."
+    },
+    {
+      "id": "g7-u3-0007",
+      "english": "intelligent",
+      "german": "intelligent; klug; vernünftig",
+      "phonetic": "ɪnˈtelɪdʒənt",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Check-in",
+      "page": 202,
+      "source": {
+        "page": 202,
+        "half": "L",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Do you think there's intelligent life on other planets?"
+    },
+    {
+      "id": "g7-u3-0008",
+      "english": "as",
+      "german": "als",
+      "phonetic": "æz; əz",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Check-in",
+      "page": 202,
+      "source": {
+        "page": 202,
+        "half": "L",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "During his time as king, Henry VIII founded the Church of England."
+    },
+    {
+      "id": "g7-u3-0009",
+      "english": "to divorce",
+      "german": "sich scheiden lassen von",
+      "phonetic": "dɪˈvɔːs",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Check-in",
+      "page": 202,
+      "source": {
+        "page": 202,
+        "half": "L",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "Henry VIII divorced two of his wives."
+    },
+    {
+      "id": "g7-u3-0010",
+      "english": "Catholic",
+      "german": "Katholik/-in; katholisch",
+      "phonetic": "ˈkæθlɪk",
+      "part_of_speech": "adjective",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Check-in",
+      "page": 202,
+      "source": {
+        "page": 202,
+        "half": "L",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Most people in Italy are Catholics. Fr. catholique"
+    },
+    {
+      "id": "g7-u3-0011",
+      "english": "the Pope",
+      "german": "der Papst",
+      "phonetic": "ðə ˈpəʊp",
+      "part_of_speech": "phrase",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Check-in",
+      "page": 202,
+      "source": {
+        "page": 202,
+        "half": "L",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "The Pope is the leader of the Catholic church."
+    },
+    {
+      "id": "g7-u3-0012",
+      "english": "to marry",
+      "german": "heiraten",
+      "phonetic": "ˈmæri",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Check-in",
+      "page": 202,
+      "source": {
+        "page": 202,
+        "half": "L",
+        "row": 19
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "Henry VIII married six times. Fr. se marier"
+    },
+    {
+      "id": "g7-u3-0013",
+      "english": "era",
+      "german": "Ära; Zeitalter",
+      "phonetic": "ˈɪərə",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Check-in",
+      "page": 202,
+      "source": {
+        "page": 202,
+        "half": "L",
+        "row": 20
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "An era is another word for a historical period."
+    },
+    {
+      "id": "g7-u3-0014",
+      "english": "Spanish Armada",
+      "german": "spanische Armada (spanische Kriegsflotte)",
+      "phonetic": "ˌspænɪʃ ɑːˈmɑːdə",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Check-in",
+      "page": 202,
+      "source": {
+        "page": 202,
+        "half": "L",
+        "row": 21
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "The Spanish Armada attacked England."
+    },
+    {
+      "id": "g7-u3-0015",
+      "english": "colony",
+      "german": "Kolonie",
+      "phonetic": "ˈkɒləni",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Check-in",
+      "page": 202,
+      "source": {
+        "page": 202,
+        "half": "L",
+        "row": 22
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Many years ago, Germany had colonies too. Fr. colonie (f); Lat. colonia (f)"
+    },
+    {
+      "id": "g7-u3-0016",
+      "english": "to serve",
+      "german": "dienen; servieren; bedienen",
+      "phonetic": "sɜːv",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Check-in",
+      "page": 203,
+      "source": {
+        "page": 203,
+        "half": "R",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "We have to serve our lord. to serve → service Fr. servir; Lat. servire"
+    },
+    {
+      "id": "g7-u3-0017",
+      "english": "court",
+      "german": "Hof; Gericht; Gerichtshof",
+      "phonetic": "kɔːt",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Check-in",
+      "page": 203,
+      "source": {
+        "page": 203,
+        "half": "R",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "What was it like to live at Queen Elizabeth's court? Fr. cour (f)"
+    },
+    {
+      "id": "g7-u3-0018",
+      "english": "play",
+      "german": "Theaterstück",
+      "phonetic": "pleɪ",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Check-in",
+      "page": 203,
+      "source": {
+        "page": 203,
+        "half": "R",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "William Shakespeare wrote lots of plays."
+    },
+    {
+      "id": "g7-u3-0019",
+      "english": "back then",
+      "german": "damals",
+      "phonetic": "ˌbæk ˈðen",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Check-in",
+      "page": 203,
+      "source": {
+        "page": 203,
+        "half": "R",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "My grandparents didn't have smartphones back then."
+    },
+    {
+      "id": "g7-u3-0020",
+      "english": "Middle Ages",
+      "german": "Mittelalter",
+      "phonetic": "ˌmɪdl ˈeɪdʒɪz",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Check-in",
+      "page": 203,
+      "source": {
+        "page": 203,
+        "half": "R",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "What was life like in the Middle Ages? Middle Ages – the period from about 500 to 1500 AD Fr. Moyen Age (m)"
+    },
+    {
+      "id": "g7-u3-0021",
+      "english": "comfortable",
+      "german": "komfortabel; bequem",
+      "phonetic": "ˈkʌmftəbl",
+      "part_of_speech": "adjective",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Check-in",
+      "page": 203,
+      "source": {
+        "page": 203,
+        "half": "R",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "This sofa is really comfortable. !Pronunciation Fr. confortable"
+    },
+    {
+      "id": "g7-u3-0022",
+      "english": "informal",
+      "german": "informell; zwanglos",
+      "phonetic": "ɪnˈfɔːml",
+      "part_of_speech": "adjective",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Check-in",
+      "page": 203,
+      "source": {
+        "page": 203,
+        "half": "R",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "With your friends, you use informal language. informal↔ formal Fr. informel/-le"
+    },
+    {
+      "id": "g7-u3-0023",
+      "english": "everyday",
+      "german": "alltäglich",
+      "phonetic": "ˈevrideɪ",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Check-in",
+      "page": 203,
+      "source": {
+        "page": 203,
+        "half": "R",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "An everyday situation is something that happens every day."
+    },
+    {
+      "id": "g7-u3-0024",
+      "english": "mirror",
+      "german": "Spiegel",
+      "phonetic": "ˈmɪrə",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Check-in",
+      "page": 203,
+      "source": {
+        "page": 203,
+        "half": "R",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "If you look in a mirror, you see yourself. Fr. miroir (m)"
+    },
+    {
+      "id": "g7-u3-0025",
+      "english": "necklace",
+      "german": "Halskette",
+      "phonetic": "ˈnekləs",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Check-in",
+      "page": 203,
+      "source": {
+        "page": 203,
+        "half": "R",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "A necklace is a piece of jewellery."
+    },
+    {
+      "id": "g7-u3-0026",
+      "english": "sandal",
+      "german": "Sandale",
+      "phonetic": "ˈsændl",
+      "part_of_speech": "adjective",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Check-in",
+      "page": 203,
+      "source": {
+        "page": 203,
+        "half": "R",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Sandals are shoes that you wear when it's hot. Fr. sandale (f); Lat. sandalium (nt)"
+    },
+    {
+      "id": "g7-u3-0027",
+      "english": "hairbrush",
+      "german": "Haarbürste",
+      "phonetic": "ˈheəbrʌʃ",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Check-in",
+      "page": 203,
+      "source": {
+        "page": 203,
+        "half": "R",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Can you do my hair? – Of course. Where's your hairbrush?"
+    },
+    {
+      "id": "g7-u3-0028",
+      "english": "Victorian",
+      "german": "viktorianisch; Viktorianer/-in",
+      "phonetic": "vɪkˈtɔːriən",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Check-in",
+      "page": 203,
+      "source": {
+        "page": 203,
+        "half": "R",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "The Victorian period was the time when Queen Victoria was in power."
+    },
+    {
+      "id": "g7-u3-0029",
+      "english": "calendar",
+      "german": "Kalender",
+      "phonetic": "ˈkæləndə",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Check-in",
+      "page": 203,
+      "source": {
+        "page": 203,
+        "half": "R",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "You can find all the dates in a calendar. Fr. calendrier (m); Lat calendarium (nt)"
+    },
+    {
+      "id": "g7-u3-0030",
+      "english": "generation",
+      "german": "Generation",
+      "phonetic": "ˌdʒenəˈreɪʃn",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Check-in",
+      "page": 203,
+      "source": {
+        "page": 203,
+        "half": "R",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Your parents come from a different generation. Fr. génération (f)"
+    },
+    {
+      "id": "g7-u3-0031",
+      "english": "lifestyle",
+      "german": "Lebensstil; Lifestyle",
+      "phonetic": "ˈlaɪfstaɪl",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Check-in",
+      "page": 203,
+      "source": {
+        "page": 203,
+        "half": "R",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "My smartphone is part of my lifestyle. lifestyle →life"
+    },
+    {
+      "id": "g7-u3-0032",
+      "english": "gadget",
+      "german": "Gerät; technische Spielerei",
+      "phonetic": "ˈɡædʒɪt",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Check-in",
+      "page": 203,
+      "source": {
+        "page": 203,
+        "half": "R",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Smartphones and play stations are gadgets."
+    },
+    {
+      "id": "g7-u3-0033",
+      "english": "they",
+      "german": "hier: man",
+      "phonetic": "ðeɪ",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Station 1: He hadn't finished his game",
+      "page": 203,
+      "source": {
+        "page": 203,
+        "half": "R",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "They say life is easier when you're young."
+    },
+    {
+      "id": "g7-u3-0034",
+      "english": "favourite",
+      "german": "Favorit/-in; Günstling",
+      "phonetic": "ˈfeɪvrɪt",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Station 1: He hadn't finished his game",
+      "page": 203,
+      "source": {
+        "page": 203,
+        "half": "R",
+        "row": 19
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Robert Dudley was the queen's favourite. Fr. favori/-te (m)/(f)"
+    },
+    {
+      "id": "g7-u3-0035",
+      "english": "to panic",
+      "german": "panisch werden",
+      "phonetic": "ˈpænɪk",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Station 1: He hadn't finished his game",
+      "page": 203,
+      "source": {
+        "page": 203,
+        "half": "R",
+        "row": 20
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "Don't panic! Everything is going to be OK. ! Spelling: Don't panic! - They panicked. – I'm Fr. paniquer"
+    },
+    {
+      "id": "g7-u3-0036",
+      "english": "to change one's mind",
+      "german": "seine Meinung ändern",
+      "phonetic": "ˌtʃeɪndʒ wʌnz ˈmaɪnd",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Station 1: He hadn't finished his game",
+      "page": 204,
+      "source": {
+        "page": 204,
+        "half": "L",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "I didn't like the film at first, but now I've changed my mind."
+    },
+    {
+      "id": "g7-u3-0037",
+      "english": "potato",
+      "german": "Kartoffel",
+      "phonetic": "pəˈteɪtəʊ",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Station 1: He hadn't finished his game",
+      "page": 204,
+      "source": {
+        "page": 204,
+        "half": "L",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "\"Do you like potatoes?\" - \"Well, I like chips.\""
+    },
+    {
+      "id": "g7-u3-0038",
+      "english": "tobacco (no pl)",
+      "german": "Tabak",
+      "phonetic": "təˈbækəʊ",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Station 1: He hadn't finished his game",
+      "page": 204,
+      "source": {
+        "page": 204,
+        "half": "L",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Walter Raleigh made tobacco popular in England. Fr. tabac (m)"
+    },
+    {
+      "id": "g7-u3-0039",
+      "english": "to play bowls",
+      "german": "Bowling spielen",
+      "phonetic": "ˌpleɪ ˈbəʊlz",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Station 1: He hadn't finished his game",
+      "page": 204,
+      "source": {
+        "page": 204,
+        "half": "L",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "Drake was playing bowls when the Spanish Armada arrived."
+    },
+    {
+      "id": "g7-u3-0040",
+      "english": "more and more",
+      "german": "immer mehr",
+      "phonetic": "ˈmɔːr ən mɔː",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Station 1: He hadn't finished his game",
+      "page": 204,
+      "source": {
+        "page": 204,
+        "half": "L",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "More and more people arrived to see the queen."
+    },
+    {
+      "id": "g7-u3-0041",
+      "english": "education (no pl)",
+      "german": "Erziehung; Bildung",
+      "phonetic": "ˌedʒuˈkeɪʃn",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Station 1: He hadn't finished his game",
+      "page": 204,
+      "source": {
+        "page": 204,
+        "half": "L",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "It's important to go to school and get a good education. Fr. éducation (f); Lat. educatio (f)"
+    },
+    {
+      "id": "g7-u3-0042",
+      "english": "to feel",
+      "german": "meinen; das Gefühl haben",
+      "phonetic": "fiːl",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Station 1: He hadn't finished his game",
+      "page": 204,
+      "source": {
+        "page": 204,
+        "half": "L",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "A lot of people feel that the Queen is important for Britain."
+    },
+    {
+      "id": "g7-u3-0043",
+      "english": "reign",
+      "german": "Herrschaft; Regierungszeit",
+      "phonetic": "reɪn",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Station 1: He hadn't finished his game",
+      "page": 204,
+      "source": {
+        "page": 204,
+        "half": "L",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Queen Elizabeth I's reign was from 1558 to 1603. Lat. regnum (nt)"
+    },
+    {
+      "id": "g7-u3-0044",
+      "english": "to capture",
+      "german": "ergreifen; gefangen nehmen",
+      "phonetic": "ˈkæptʃə",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Station 1: He hadn't finished his game",
+      "page": 204,
+      "source": {
+        "page": 204,
+        "half": "L",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "Drake captured people in Africa and sold them as slaves. Fr. capturer; Lat. capere"
+    },
+    {
+      "id": "g7-u3-0045",
+      "english": "original",
+      "german": "Original",
+      "phonetic": "əˈrɪdʒnl",
+      "part_of_speech": "adjective",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Station 2: If I hadn't talked so much …",
+      "page": 204,
+      "source": {
+        "page": 204,
+        "half": "L",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "They copied the original over 100 times. Fr. original (m)"
+    },
+    {
+      "id": "g7-u3-0046",
+      "english": "to turn back",
+      "german": "umkehren;zurückgehen",
+      "phonetic": "ˌtɜːn ˈbæk",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Station 2: If I hadn't talked so much …",
+      "page": 204,
+      "source": {
+        "page": 204,
+        "half": "L",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "When the trail ended, we had to turn back."
+    },
+    {
+      "id": "g7-u3-0047",
+      "english": "murder",
+      "german": "Mord",
+      "phonetic": "ˈmɜːdə",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Station 2: If I hadn't talked so much …",
+      "page": 204,
+      "source": {
+        "page": 204,
+        "half": "L",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "The guide told a scary story about a murder. murder ≠ Mörder; Mörder = murderer"
+    },
+    {
+      "id": "g7-u3-0048",
+      "english": "guide",
+      "german": "Führer/-in; Reiseführer",
+      "phonetic": "ɡaɪd",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Station 2: If I hadn't talked so much …",
+      "page": 204,
+      "source": {
+        "page": 204,
+        "half": "L",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "The guide told us everything about the history of London. guide = a person or a book that gives you information Fr. guide (m)/(f)"
+    },
+    {
+      "id": "g7-u3-0049",
+      "english": "dirt",
+      "german": "Schmutz; Dreck",
+      "phonetic": "dɜːt",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Station 2: If I hadn't talked so much …",
+      "page": 204,
+      "source": {
+        "page": 204,
+        "half": "L",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "In the Middle Ages, there was a lot of dirt in the streets. dirt → dirty"
+    },
+    {
+      "id": "g7-u3-0050",
+      "english": "pipe",
+      "german": "Pfeife",
+      "phonetic": "paɪp",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Station 2: If I hadn't talked so much …",
+      "page": 204,
+      "source": {
+        "page": 204,
+        "half": "L",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "He put the tobacco into his pipe."
+    },
+    {
+      "id": "g7-u3-0051",
+      "english": "electric",
+      "german": "elektrisch",
+      "phonetic": "ɪˈlektrɪk",
+      "part_of_speech": "adjective",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Station 2: If I hadn't talked so much …",
+      "page": 204,
+      "source": {
+        "page": 204,
+        "half": "L",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "We drive an electric car. electric → electricity → an electrician"
+    },
+    {
+      "id": "g7-u3-0052",
+      "english": "to pull down",
+      "german": "abreißen",
+      "phonetic": "ˌpʊl ˈdaʊn",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Station 2: If I hadn't talked so much …",
+      "page": 204,
+      "source": {
+        "page": 204,
+        "half": "L",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "They pulled down the house to build a new one."
+    },
+    {
+      "id": "g7-u3-0053",
+      "english": "to come true",
+      "german": "wahr werden; in Erfüllung gehen",
+      "phonetic": "ˌkʌm ˈtruː",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Station 2: If I hadn't talked so much …",
+      "page": 204,
+      "source": {
+        "page": 204,
+        "half": "L",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "Wouldn't it be wonderful if our dreams always came true?"
+    },
+    {
+      "id": "g7-u3-0054",
+      "english": "last night",
+      "german": "gestern Abend; gestern Nacht",
+      "phonetic": "ˌlɑːst ˈnaɪt",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Station 2: If I hadn't talked so much …",
+      "page": 204,
+      "source": {
+        "page": 204,
+        "half": "L",
+        "row": 19
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Last night I watched a film about Henry VIII. gestern Abend – last night, not: yesterday evening"
+    },
+    {
+      "id": "g7-u3-0055",
+      "english": "to experience",
+      "german": "erfahren; erleben",
+      "phonetic": "ɪkˈspɪəriəns",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Station 2: If I hadn't talked so much …",
+      "page": 204,
+      "source": {
+        "page": 204,
+        "half": "L",
+        "row": 20
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "If you visit the Tower of London, you can experience the past. to experience → experience"
+    },
+    {
+      "id": "g7-u3-0056",
+      "english": "musical",
+      "german": "musikalisch; Musik-",
+      "phonetic": "ˈmjuːzɪkl",
+      "part_of_speech": "adjective",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Station 2: If I hadn't talked so much …",
+      "page": 204,
+      "source": {
+        "page": 204,
+        "half": "L",
+        "row": 21
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Joe is very musical. He plays three musical instruments. musical → music Fr. musical/-e; Lat. musicus"
+    },
+    {
+      "id": "g7-u3-0057",
+      "english": "biography",
+      "german": "Biografie",
+      "phonetic": "baɪˈɒɡrəfi",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Station 2: If I hadn't talked so much …",
+      "page": 204,
+      "source": {
+        "page": 204,
+        "half": "L",
+        "row": 22
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "I know everything about my favourite singer's biography. Fr. biographie (f)"
+    },
+    {
+      "id": "g7-u3-0058",
+      "english": "colonial",
+      "german": "kolonial; Kolonial-",
+      "phonetic": "kəˈləʊniəl",
+      "part_of_speech": "adjective",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Station 2: If I hadn't talked so much …",
+      "page": 205,
+      "source": {
+        "page": 205,
+        "half": "R",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Britain was a colonial power. colonial → a colony → to colonize Fr. colonial/-e"
+    },
+    {
+      "id": "g7-u3-0059",
+      "english": "entertainment (no pl)",
+      "german": "Unterhaltung",
+      "phonetic": "ˌentəˈteɪnmənt",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Skills: How to talk about history",
+      "page": 205,
+      "source": {
+        "page": 205,
+        "half": "R",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "The Globe Theatre was used for all kinds of entertainment."
+    },
+    {
+      "id": "g7-u3-0060",
+      "english": "to reign",
+      "german": "herrschen; regieren",
+      "phonetic": "reɪn",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Skills: How to talk about history",
+      "page": 205,
+      "source": {
+        "page": 205,
+        "half": "R",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "Queen Elizabeth reigned for 45 years. to reign → the reign Fr. régner; Lat. regnare"
+    },
+    {
+      "id": "g7-u3-0061",
+      "english": "description",
+      "german": "Beschreibung",
+      "phonetic": "dɪˈskrɪpʃn",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Skills: How to talk about history",
+      "page": 205,
+      "source": {
+        "page": 205,
+        "half": "R",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "The descriptions of places in this book are full of details. description → to describe Fr. description (f); Lat. descriptio (f)"
+    },
+    {
+      "id": "g7-u3-0062",
+      "english": "biographical",
+      "german": "biografisch",
+      "phonetic": "ˌbaɪəʊˈɡræfɪkl",
+      "part_of_speech": "adjective",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Skills: How to talk about history",
+      "page": 205,
+      "source": {
+        "page": 205,
+        "half": "R",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Do we have any biographical information about him? biographical → a biography Fr. biographique"
+    },
+    {
+      "id": "g7-u3-0063",
+      "english": "quill",
+      "german": "Federkiel",
+      "phonetic": "kwɪl",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Skills: How to talk about history",
+      "page": 205,
+      "source": {
+        "page": 205,
+        "half": "R",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "In Elizabethan times people wrote with quills."
+    },
+    {
+      "id": "g7-u3-0064",
+      "english": "bible",
+      "german": "Bibel",
+      "phonetic": "ˈbaɪbl",
+      "part_of_speech": "adjective",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Skills: How to talk about history",
+      "page": 205,
+      "source": {
+        "page": 205,
+        "half": "R",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "My uncle is a very religious person. He often reads the Bible."
+    },
+    {
+      "id": "g7-u3-0065",
+      "english": "as if",
+      "german": "als ob",
+      "phonetic": "əz ˈɪf",
+      "part_of_speech": "phrase",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Unit task: Our historical gallery walk",
+      "page": 205,
+      "source": {
+        "page": 205,
+        "half": "R",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "She acted as if she were my friend, but she wasn't."
+    },
+    {
+      "id": "g7-u3-0066",
+      "english": "to be made of",
+      "german": "bestehen aus",
+      "phonetic": "bi ˈmeɪd əv",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Unit task: Our historical gallery walk",
+      "page": 205,
+      "source": {
+        "page": 205,
+        "half": "R",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "Windows are made of glass."
+    },
+    {
+      "id": "g7-u3-0067",
+      "english": "jewel",
+      "german": "Juwel; Edelstein",
+      "phonetic": "ˈdʒuːəl",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Unit task: Our historical gallery walk",
+      "page": 205,
+      "source": {
+        "page": 205,
+        "half": "R",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Is this a real jewel on your necklace? jewe/ →jewellery"
+    },
+    {
+      "id": "g7-u3-0068",
+      "english": "weapon",
+      "german": "Waffe",
+      "phonetic": "ˈwepən",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Unit task: Our historical gallery walk",
+      "page": 205,
+      "source": {
+        "page": 205,
+        "half": "R",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "What kind of weapons did the Romans fight with?"
+    },
+    {
+      "id": "g7-u3-0069",
+      "english": "mystery",
+      "german": "Mysterium; Rätsel; Geheimnis",
+      "phonetic": "ˈmɪstri",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Story: It's a mystery!",
+      "page": 206,
+      "source": {
+        "page": 206,
+        "half": "L",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "I can't find my bag. I had it a minute ago. It's a mystery. mystery → mysterious Fr. mystère (m); Lat. mysterium (nt)"
+    },
+    {
+      "id": "g7-u3-0070",
+      "english": "photo shoot",
+      "german": "Fotoshooting; Fotoaufnahmen",
+      "phonetic": "ˈfəʊtəʊ ˌʃuːt",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Story: It's a mystery!",
+      "page": 206,
+      "source": {
+        "page": 206,
+        "half": "L",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Today there's an important photo shoot for our magazine."
+    },
+    {
+      "id": "g7-u3-0071",
+      "english": "photographer",
+      "german": "Fotograf/-in",
+      "phonetic": "fəˈtɒɡrəfə",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Story: It's a mystery!",
+      "page": 206,
+      "source": {
+        "page": 206,
+        "half": "L",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "A photographer takes photos. Pronunciation Fr. photographe (m)/(f)"
+    },
+    {
+      "id": "g7-u3-0072",
+      "english": "set",
+      "german": "Aufnahmeort; Drehort",
+      "phonetic": "set",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Story: It's a mystery!",
+      "page": 206,
+      "source": {
+        "page": 206,
+        "half": "L",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "The set is the place where a photo shoot takes place."
+    },
+    {
+      "id": "g7-u3-0073",
+      "english": "to focus (on)",
+      "german": "sich konzentrieren (auf)",
+      "phonetic": "ˈfəʊkəs ɒn",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Story: It's a mystery!",
+      "page": 206,
+      "source": {
+        "page": 206,
+        "half": "L",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "Stop looking at your smartphone and focus on me."
+    },
+    {
+      "id": "g7-u3-0074",
+      "english": "memory",
+      "german": "Erinnerung; Gedächtnis",
+      "phonetic": "ˈmemri",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Story: It's a mystery!",
+      "page": 206,
+      "source": {
+        "page": 206,
+        "half": "L",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "We all have great memories of our school trip. Fr. mémoire (f); Lat. memoria (f)"
+    },
+    {
+      "id": "g7-u3-0075",
+      "english": "chaos",
+      "german": "Chaos; Durcheinander",
+      "phonetic": "ˈkeɪɒs",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Story: It's a mystery!",
+      "page": 206,
+      "source": {
+        "page": 206,
+        "half": "L",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "When everything is confused, there's chaos."
+    },
+    {
+      "id": "g7-u3-0076",
+      "english": "to mix up",
+      "german": "vermischen; durcheinanderbringen",
+      "phonetic": "ˌmɪks ˈʌp",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Story: It's a mystery!",
+      "page": 206,
+      "source": {
+        "page": 206,
+        "half": "L",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "Don't mix up the historical periods."
+    },
+    {
+      "id": "g7-u3-0077",
+      "english": "lady-in-waiting",
+      "german": "Hofdame",
+      "phonetic": "ˌleɪdi ɪn ˈweɪtɪŋ",
+      "part_of_speech": "adjective",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Story: It's a mystery!",
+      "page": 206,
+      "source": {
+        "page": 206,
+        "half": "L",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Queens usually have ladies-in-waiting."
+    },
+    {
+      "id": "g7-u3-0078",
+      "english": "not even",
+      "german": "nicht einmal; noch nicht einmal",
+      "phonetic": "ˌnɒt ˈiːvn",
+      "part_of_speech": "phrase",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Story: It's a mystery!",
+      "page": 206,
+      "source": {
+        "page": 206,
+        "half": "L",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "I tried to explain, but he didn'teven listen to me."
+    },
+    {
+      "id": "g7-u3-0079",
+      "english": "plaster cast",
+      "german": "Gipsverband",
+      "phonetic": "ˈplɑːstə ˌkɑːst",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Story: It's a mystery!",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "If you break your arm, the doctor puts it in a plaster cast."
+    },
+    {
+      "id": "g7-u3-0080",
+      "english": "fine",
+      "german": "gut; schön",
+      "phonetic": "faɪn",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Story: It's a mystery!",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "We had a fine meal at the new restaurant."
+    },
+    {
+      "id": "g7-u3-0081",
+      "english": "to zoom in (on)",
+      "german": "heranzoomen (auf)",
+      "phonetic": "ˌzuːm ˈɪn",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Story: It's a mystery!",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "If the camera zooms in on somebody, you get a close-up picture of that person."
+    },
+    {
+      "id": "g7-u3-0082",
+      "english": "shot",
+      "german": "Aufnahme",
+      "phonetic": "ʃɒt",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Story: It's a mystery!",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "The photographer took some great shots. shot → a photo shoot"
+    },
+    {
+      "id": "g7-u3-0083",
+      "english": "nurse",
+      "german": "Krankenschwester; Krankenpfleger",
+      "phonetic": "nɜːs",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Story: It's a mystery!",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "The nurse looked at my plaster cast."
+    },
+    {
+      "id": "g7-u3-0084",
+      "english": "boot",
+      "german": "Kofferraum",
+      "phonetic": "buːt",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Story: It's a mystery!",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "I've put all the bags into the boot of the car."
+    },
+    {
+      "id": "g7-u3-0085",
+      "english": "to drive off",
+      "german": "wegfahren",
+      "phonetic": "ˌdraɪv ˈɒf",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Story: It's a mystery!",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "She jumped into the car and drove off."
+    },
+    {
+      "id": "g7-u3-0086",
+      "english": "out of focus",
+      "german": "unscharf",
+      "phonetic": "ˌaʊt əv ˈfəʊkəs",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Story: It's a mystery!",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "The photo was out of focus because Gwen didn't stand still."
+    },
+    {
+      "id": "g7-u3-0087",
+      "english": "to photobomb",
+      "german": "ins Foto laufen",
+      "phonetic": "ˈfəʊtəʊbɒm",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Story: It's a mystery!",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "No photobombing!"
+    },
+    {
+      "id": "g7-u3-0088",
+      "english": "flash",
+      "german": "Blitz; Lichtblitz",
+      "phonetic": "flæʃ",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Story: It's a mystery!",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "You can take photos, but only without flash."
+    },
+    {
+      "id": "g7-u3-0089",
+      "english": "to edit out",
+      "german": "herausschneiden",
+      "phonetic": "ˌedɪt ˈaʊt",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Story: It's a mystery!",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "Jim was able to edit out the mistakes in the photo."
+    },
+    {
+      "id": "g7-u3-0090",
+      "english": "to crop (a photo)",
+      "german": "(ein Foto) zurechtschneiden",
+      "phonetic": "krɒp",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Story: It's a mystery!",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "The photo doesn't fit, we'll have to crop it."
+    },
+    {
+      "id": "g7-u3-0091",
+      "english": "to crash (into)",
+      "german": "zusammenstoßen (mit)",
+      "phonetic": "kræʃ",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Story: It's a mystery!",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "The car crashed into a tree."
+    },
+    {
+      "id": "g7-u3-0092",
+      "english": "ambulance",
+      "german": "Krankenwagen",
+      "phonetic": "ˈæmbjələns",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Story: It's a mystery!",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "There has been an accident. We must call an ambulance! !Pronunciation"
+    },
+    {
+      "id": "g7-u3-0093",
+      "english": "flashback",
+      "german": "Rückblende; Flashback",
+      "phonetic": "ˈflæʃbæk",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Story: It's a mystery!",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Flashbacks are often used in films and books to show an event that happened in the past."
+    },
+    {
+      "id": "g7-u3-0094",
+      "english": "fiction (no pl)",
+      "german": "Erzählliteratur; Fiktion; Erfindung",
+      "phonetic": "ˈfɪkʃn",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Fictional texts – Introduction",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "I don't like real stories. I only read fiction. Fr. fiction (f) ; Lat. fictura (f)"
+    },
+    {
+      "id": "g7-u3-0095",
+      "english": "plot",
+      "german": "Handlung",
+      "phonetic": "plɒt",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Fictional texts – Introduction",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "What happens in the film? What's the plot?"
+    },
+    {
+      "id": "g7-u3-0096",
+      "english": "series (sg or pl)",
+      "german": "Serie",
+      "phonetic": "ˈsɪəriːz",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Fictional texts – Introduction",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Harry Potter is a series of seven books. Fr. série (f)"
+    },
+    {
+      "id": "g7-u3-0097",
+      "english": "to identify with",
+      "german": "sich identifizieren mit",
+      "phonetic": "aɪˈdentɪfaɪ wɪð",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Fictional texts – Introduction",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 19
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "It's easy to identify with the characters in this book. Fr. s'identifier à"
+    },
+    {
+      "id": "g7-u3-0098",
+      "english": "genre",
+      "german": "Gattung",
+      "phonetic": "ˈʒɒ̃ːnrə",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Fictional texts – Introduction",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 20
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "This film belongs to the horror genre. Fr. genre (m); Lat. genus (nt)"
+    },
+    {
+      "id": "g7-u3-0099",
+      "english": "love",
+      "german": "Liebe",
+      "phonetic": "lʌv",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Fictional texts – Introduction",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 21
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "I sometimes cry when I read love $ love → to love"
+    },
+    {
+      "id": "g7-u3-0100",
+      "english": "graphic novel",
+      "german": "Comicroman",
+      "phonetic": "ˌɡræfɪk ˈnɒvl",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Fictional texts – Introduction",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 22
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "A graphic novel works with texts a"
+    },
+    {
+      "id": "g7-u3-0101",
+      "english": "novel",
+      "german": "Roman",
+      "phonetic": "ˈnɒvl",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Fictional texts – Introduction",
+      "page": 208,
+      "source": {
+        "page": 208,
+        "half": "L",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "This book is the best novel I've ever read."
+    },
+    {
+      "id": "g7-u3-0102",
+      "english": "happy ending",
+      "german": "Happy End",
+      "phonetic": "ˌhæpi ˈendɪŋ",
+      "part_of_speech": "adjective",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Fictional texts – Introduction",
+      "page": 208,
+      "source": {
+        "page": 208,
+        "half": "L",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "My sister only watches films with happy endings. happy ending → to end"
+    },
+    {
+      "id": "g7-u3-0103",
+      "english": "death",
+      "german": "Tod",
+      "phonetic": "deθ",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Fictional texts – Introduction",
+      "page": 208,
+      "source": {
+        "page": 208,
+        "half": "L",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "This writer became famous after his death. death ↔ life death → dead"
+    },
+    {
+      "id": "g7-u3-0104",
+      "english": "friendship",
+      "german": "Freundschaft",
+      "phonetic": "ˈfrendʃɪp",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Fictional texts – Introduction",
+      "page": 208,
+      "source": {
+        "page": 208,
+        "half": "L",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "I've got lots of friends. I think friendship is very important. friendship → a friend"
+    },
+    {
+      "id": "g7-u3-0105",
+      "english": "enemy",
+      "german": "Feind/-in",
+      "phonetic": "ˈenəmi",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Fictional texts – Introduction",
+      "page": 208,
+      "source": {
+        "page": 208,
+        "half": "L",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Everybody likes him. He hasn't got any enemies. enemy ↔ friend Fr. ennemi/-e (m)/(f); Lat. inimicus/-a (m)/(f)"
+    },
+    {
+      "id": "g7-u3-0106",
+      "english": "scenery",
+      "german": "Landschaft",
+      "phonetic": "ˈsiːnri",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Fictional texts – Introduction",
+      "page": 208,
+      "source": {
+        "page": 208,
+        "half": "L",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Look at this beautiful scenery with the high mountains! scenery = landscape"
+    },
+    {
+      "id": "g7-u3-0107",
+      "english": "setting",
+      "german": "Schauplatz; Rahmen",
+      "phonetic": "ˈsetɪŋ",
+      "part_of_speech": "adjective",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Fictional texts – Introduction",
+      "page": 208,
+      "source": {
+        "page": 208,
+        "half": "L",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "The setting of the novel is Victorian London. What is the setting of the story? - Where and when does it take place?"
+    },
+    {
+      "id": "g7-u3-0108",
+      "english": "among",
+      "german": "unter; inmitten",
+      "phonetic": "əˈmʌŋ",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Station 1 – Dealing with a fictional text – Among the Hidden",
+      "page": 208,
+      "source": {
+        "page": 208,
+        "half": "L",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "J.K. Rowling is among my favourite writers. !among ≠ under He stood among his friends. He stood under a tree."
+    },
+    {
+      "id": "g7-u3-0109",
+      "english": "distance",
+      "german": "Distanz; Entfernung",
+      "phonetic": "ˈdɪstəns",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Station 1 – Dealing with a fictional text – Among the Hidden",
+      "page": 208,
+      "source": {
+        "page": 208,
+        "half": "L",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "What's the distance from here to there? Fr. distance (f)"
+    },
+    {
+      "id": "g7-u3-0110",
+      "english": "to disobey",
+      "german": "nicht gehorchen; ungehorsam sein",
+      "phonetic": "ˌdɪsəˈbeɪ",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Station 1 – Dealing with a fictional text – Among the Hidden",
+      "page": 208,
+      "source": {
+        "page": 208,
+        "half": "L",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "When she was a child, she never disobeyed her parents. Fr. obéir; Lat. oboedire"
+    },
+    {
+      "id": "g7-u3-0111",
+      "english": "order",
+      "german": "Befehl",
+      "phonetic": "ˈɔːdə",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Station 1 – Dealing with a fictional text – Among the Hidden",
+      "page": 208,
+      "source": {
+        "page": 208,
+        "half": "L",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "The soldiers never disobeyed their orders. Fr. ordre (m)"
+    },
+    {
+      "id": "g7-u3-0112",
+      "english": "grass",
+      "german": "Gras",
+      "phonetic": "ɡrɑːs",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Station 1 – Dealing with a fictional text – Among the Hidden",
+      "page": 208,
+      "source": {
+        "page": 208,
+        "half": "L",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Let's sit down on the grass."
+    },
+    {
+      "id": "g7-u3-0113",
+      "english": "woods",
+      "german": "Wald; Wäldchen",
+      "phonetic": "wʊdz",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Station 1 – Dealing with a fictional text – Among the Hidden",
+      "page": 208,
+      "source": {
+        "page": 208,
+        "half": "L",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "We were hiking through the woods. - a small forest"
+    },
+    {
+      "id": "g7-u3-0114",
+      "english": "to take a breath",
+      "german": "Luft holen; Atem holen",
+      "phonetic": "ˌteɪk ə ˈbreθ",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Station 1 – Dealing with a fictional text – Among the Hidden",
+      "page": 208,
+      "source": {
+        "page": 208,
+        "half": "L",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "Take a deep breath and try to relax. to take a breath → breath → to breathe"
+    },
+    {
+      "id": "g7-u3-0115",
+      "english": "smoke",
+      "german": "Rauch",
+      "phonetic": "sməʊk",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Station 1 – Dealing with a fictional text – Among the Hidden",
+      "page": 208,
+      "source": {
+        "page": 208,
+        "half": "L",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "When the house had burnt down, there was a lot of smoke. smoke → smoky"
+    },
+    {
+      "id": "g7-u3-0116",
+      "english": "to lay down",
+      "german": "hinlegen",
+      "phonetic": "ˌleɪ ˈdaʊn",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Station 1 – Dealing with a fictional text – Among the Hidden",
+      "page": 208,
+      "source": {
+        "page": 208,
+        "half": "L",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "Lay down your pens andgive your tests back."
+    },
+    {
+      "id": "g7-u3-0117",
+      "english": "to remind (sb of sth/sb)",
+      "german": "(jmdn. an etw./jmdn.) erinnern",
+      "phonetic": "rɪˈmaɪnd",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Station 1 – Dealing with a fictional text – Among the Hidden",
+      "page": 208,
+      "source": {
+        "page": 208,
+        "half": "L",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "This song reminds me of our holiday. !I didn't remember Dad's birthday. Mum had to remind me."
+    },
+    {
+      "id": "g7-u3-0118",
+      "english": "silent",
+      "german": "still; ruhig; schweigsam; stumm",
+      "phonetic": "ˈsaɪlənt",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Station 1 – Dealing with a fictional text – Among the Hidden",
+      "page": 208,
+      "source": {
+        "page": 208,
+        "half": "L",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "If you say nothing, you stay silent."
+    },
+    {
+      "id": "g7-u3-0119",
+      "english": "shadow",
+      "german": "Schatten",
+      "phonetic": "ˈʃædəʊ",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Station 1 – Dealing with a fictional text – Among the Hidden",
+      "page": 208,
+      "source": {
+        "page": 208,
+        "half": "L",
+        "row": 19
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "When the sun shines, you can see the shadows of people and objects."
+    },
+    {
+      "id": "g7-u3-0120",
+      "english": "to hook",
+      "german": "hier: fesseln",
+      "phonetic": "hʊk",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Station 1 – Dealing with a fictional text – Among the Hidden",
+      "page": 208,
+      "source": {
+        "page": 208,
+        "half": "L",
+        "row": 20
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "Did the story hook you?"
+    },
+    {
+      "id": "g7-u3-0121",
+      "english": "exact",
+      "german": "exakt; genau",
+      "phonetic": "ɪɡˈzækt",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Station 1 – Dealing with a fictional text – Among the Hidden",
+      "page": 209,
+      "source": {
+        "page": 209,
+        "half": "R",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "About 20 people are going to come to my party, but I don't know the exact number."
+    },
+    {
+      "id": "g7-u3-0122",
+      "english": "author",
+      "german": "Autor/-in",
+      "phonetic": "ˈɔːθə",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Station 1 – Dealing with a fictional text – Among the Hidden",
+      "page": 209,
+      "source": {
+        "page": 209,
+        "half": "R",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "She's the author of a famous novel."
+    },
+    {
+      "id": "g7-u3-0123",
+      "english": "sharp",
+      "german": "scharf; schneidend",
+      "phonetic": "ʃɑːp",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Station 1 – Dealing with a fictional text – Among the Hidden",
+      "page": 209,
+      "source": {
+        "page": 209,
+        "half": "R",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Be careful. This knife is very sharp."
+    },
+    {
+      "id": "g7-u3-0124",
+      "english": "burial",
+      "german": "Begräbnis; Beerdigung",
+      "phonetic": "ˈberiəl",
+      "part_of_speech": "adjective",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Station 2 – Dealing with a fictional text – Blackberry Burial",
+      "page": 209,
+      "source": {
+        "page": 209,
+        "half": "R",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "At my grandma's burial everybody cried."
+    },
+    {
+      "id": "g7-u3-0125",
+      "english": "parade",
+      "german": "Parade; Umzug",
+      "phonetic": "pəˈreɪd",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Station 2 – Dealing with a fictional text – Blackberry Burial",
+      "page": 209,
+      "source": {
+        "page": 209,
+        "half": "R",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Let's go out and watch the parade for the Queen's birthday."
+    },
+    {
+      "id": "g7-u3-0126",
+      "english": "to declare",
+      "german": "erklären",
+      "phonetic": "dɪˈkleə",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Station 2 – Dealing with a fictional text – Blackberry Burial",
+      "page": 209,
+      "source": {
+        "page": 209,
+        "half": "R",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "In 1776 the 13 British colonies declared themselves independent from Britain. Fr. déclarer; Lat. declarare"
+    },
+    {
+      "id": "g7-u3-0127",
+      "english": "citizen",
+      "german": "Bürger/in",
+      "phonetic": "ˈsɪtɪzn",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Station 2 – Dealing with a fictional text – Blackberry Burial",
+      "page": 209,
+      "source": {
+        "page": 209,
+        "half": "R",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "She is a British citizen."
+    },
+    {
+      "id": "g7-u3-0128",
+      "english": "float",
+      "german": "Festzugswagen",
+      "phonetic": "fləʊt",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Station 2 – Dealing with a fictional text – Blackberry Burial",
+      "page": 209,
+      "source": {
+        "page": 209,
+        "half": "R",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "There were some colourful floats at the end of the parade."
+    },
+    {
+      "id": "g7-u3-0129",
+      "english": "vintage car",
+      "german": "Oldtimer",
+      "phonetic": "ˌvɪntɪdʒ ˈkɑː",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Station 2 – Dealing with a fictional text – Blackberry Burial",
+      "page": 209,
+      "source": {
+        "page": 209,
+        "half": "R",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "My uncle has a vintage car. He loves anything that's old."
+    },
+    {
+      "id": "g7-u3-0130",
+      "english": "celebration",
+      "german": "Feier",
+      "phonetic": "ˌseləˈbreɪʃn",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Station 2 – Dealing with a fictional text – Blackberry Burial",
+      "page": 209,
+      "source": {
+        "page": 209,
+        "half": "R",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "We're planning a big celebration for my grandma's birthday. celebration → to celebrate"
+    },
+    {
+      "id": "g7-u3-0131",
+      "english": "my fault",
+      "german": "meine Schuld",
+      "phonetic": "ˌmaɪ ˈfɔːlt",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Station 2 – Dealing with a fictional text – Blackberry Burial",
+      "page": 209,
+      "source": {
+        "page": 209,
+        "half": "R",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "It wasn't my fault. = I didn't do anything wrong."
+    },
+    {
+      "id": "g7-u3-0132",
+      "english": "wig",
+      "german": "Perücke",
+      "phonetic": "wɪɡ",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Station 2 – Dealing with a fictional text – Blackberry Burial",
+      "page": 209,
+      "source": {
+        "page": 209,
+        "half": "R",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "The actor wore a blond wig."
+    },
+    {
+      "id": "g7-u3-0133",
+      "english": "inch",
+      "german": "Zoll (Längenmaß, ca. 2,54 cm)",
+      "phonetic": "ɪntʃ",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Station 2 – Dealing with a fictional text – Blackberry Burial",
+      "page": 209,
+      "source": {
+        "page": 209,
+        "half": "R",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "My sister is five feet four inches tall."
+    },
+    {
+      "id": "g7-u3-0134",
+      "english": "suited",
+      "german": "geeignet; passend",
+      "phonetic": "ˈsuːtɪd",
+      "part_of_speech": "adjective",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Station 2 – Dealing with a fictional text – Blackberry Burial",
+      "page": 209,
+      "source": {
+        "page": 209,
+        "half": "R",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Lisa loves animals. She's perfectly suited to/for the job."
+    },
+    {
+      "id": "g7-u3-0135",
+      "english": "bell",
+      "german": "Glocke; Klingel",
+      "phonetic": "bel",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Station 2 – Dealing with a fictional text – Blackberry Burial",
+      "page": 209,
+      "source": {
+        "page": 209,
+        "half": "R",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "I can hear the church bells ringing. It's ten o'clock."
+    },
+    {
+      "id": "g7-u3-0136",
+      "english": "to wave",
+      "german": "winken; schwenken",
+      "phonetic": "weɪv",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Station 2 – Dealing with a fictional text – Blackberry Burial",
+      "page": 209,
+      "source": {
+        "page": 209,
+        "half": "R",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "The star is waving to her fans."
+    },
+    {
+      "id": "g7-u3-0137",
+      "english": "to approve",
+      "german": "annehmen; zustimmen",
+      "phonetic": "əˈpruːv",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Station 2 – Dealing with a fictional text – Blackberry Burial",
+      "page": 209,
+      "source": {
+        "page": 209,
+        "half": "R",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "Do you really want to travel to Italy on your own? Do your parents approve?"
+    },
+    {
+      "id": "g7-u3-0138",
+      "english": "apart from",
+      "german": "abgesehen von; außer",
+      "phonetic": "əˈpɑːt frəm",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Station 2 – Dealing with a fictional text – Blackberry Burial",
+      "page": 209,
+      "source": {
+        "page": 209,
+        "half": "R",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "I'm going to go to the supermarket later. What else do we need apart from bread, milk and sugar?"
+    },
+    {
+      "id": "g7-u3-0139",
+      "english": "bite",
+      "german": "Biss; Stich; Bissen",
+      "phonetic": "baɪt",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Station 2 – Dealing with a fictional text – Blackberry Burial",
+      "page": 209,
+      "source": {
+        "page": 209,
+        "half": "R",
+        "row": 19
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Some insect bites really hurt. Are you hungry? – Have a bite of my sandwich."
+    },
+    {
+      "id": "g7-u3-0140",
+      "english": "body",
+      "german": "Leiche",
+      "phonetic": "ˈbɒdi",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Station 2 – Dealing with a fictional text – Blackberry Burial",
+      "page": 209,
+      "source": {
+        "page": 209,
+        "half": "R",
+        "row": 20
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Yesterday the police found a body in the forest."
+    },
+    {
+      "id": "g7-u3-0141",
+      "english": "case",
+      "german": "Fall",
+      "phonetic": "keɪs",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Station 2 – Dealing with a fictional text – Blackberry Burial",
+      "page": 209,
+      "source": {
+        "page": 209,
+        "half": "R",
+        "row": 21
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Will the police be able to solve this case?"
+    },
+    {
+      "id": "g7-u3-0142",
+      "english": "to disappear",
+      "german": "verschwinden",
+      "phonetic": "ˌdɪsəˈpɪə",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Station 2 – Dealing with a fictional text – Blackberry Burial",
+      "page": 209,
+      "source": {
+        "page": 209,
+        "half": "R",
+        "row": 22
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "I saw a squirrel, but now it has disappeared."
+    },
+    {
+      "id": "g7-u3-0143",
+      "english": "clothing",
+      "german": "Kleidung",
+      "phonetic": "ˈkləʊðɪŋ",
+      "part_of_speech": "adjective",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Station 2 – Dealing with a fictional text – Blackberry Burial",
+      "page": 209,
+      "source": {
+        "page": 209,
+        "half": "R",
+        "row": 23
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "The man was wearing traditional Indian clothing. clothing → clothes"
+    },
+    {
+      "id": "g7-u3-0144",
+      "english": "to drown",
+      "german": "ertrinken; ertränken",
+      "phonetic": "draʊn",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Station 2 – Dealing with a fictional text – Blackberry Burial",
+      "page": 209,
+      "source": {
+        "page": 209,
+        "half": "R",
+        "row": 24
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "The child fell into the lake and nearly drowned."
+    },
+    {
+      "id": "g7-u3-0145",
+      "english": "police officer",
+      "german": "Polizeibeamter; Polizeibeamtin; Polizist/-in",
+      "phonetic": "pəˈliːs ˌɒfɪsə",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Station 2 – Dealing with a fictional text – Blackberry Burial",
+      "page": 209,
+      "source": {
+        "page": 209,
+        "half": "R",
+        "row": 25
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "There were several police officers at the scene of the accident."
+    },
+    {
+      "id": "g7-u3-0146",
+      "english": "to try out",
+      "german": "ausprobieren",
+      "phonetic": "ˌtraɪ ˈaʊt",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Text smart 2: Options",
+      "page": 209,
+      "source": {
+        "page": 209,
+        "half": "R",
+        "row": 26
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "I've never done rafting. I'd like to t"
+    },
+    {
+      "id": "g7-u3-0147",
+      "english": "dos and don'ts",
+      "german": "Geund Verbote; was man tun und was man nicht tun sollte",
+      "phonetic": "ˌduːz ənd ˈdəʊnts",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Across cultures 3: Dos and don'ts",
+      "page": 210,
+      "source": {
+        "page": 210,
+        "half": "L",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "The dos and don'ts are the things you should and shouldn't do."
+    },
+    {
+      "id": "g7-u3-0148",
+      "english": "to litter",
+      "german": "verschmutzen;verunreinigen; Müll herumliegen lassen",
+      "phonetic": "ˈlɪtə",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Across cultures 3: Dos and don'ts",
+      "page": 210,
+      "source": {
+        "page": 210,
+        "half": "L",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "Don't litter the playground. Take your rubbish home with you."
+    },
+    {
+      "id": "g7-u3-0149",
+      "english": "normally",
+      "german": "normalerweise",
+      "phonetic": "ˈnɔːmli",
+      "part_of_speech": "adverb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Across cultures 3: Dos and don'ts",
+      "page": 210,
+      "source": {
+        "page": 210,
+        "half": "L",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Normally we walk to school, but today we're going by bus."
+    },
+    {
+      "id": "g7-u3-0150",
+      "english": "custom",
+      "german": "Gewohnheit; Brauch; Sitte",
+      "phonetic": "ˈkʌstəm",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Across cultures 3: Dos and don'ts",
+      "page": 210,
+      "source": {
+        "page": 210,
+        "half": "L",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Trick-or-treating is a Halloween custom."
+    },
+    {
+      "id": "g7-u3-0151",
+      "english": "politeness",
+      "german": "Höflichkeit",
+      "phonetic": "pəˈlaɪtnəs",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Across cultures 3: Dos and don'ts",
+      "page": 210,
+      "source": {
+        "page": 210,
+        "half": "L",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Politeness is especially important in formal situations. politeness → polite → impolite Fr. politesse (f)"
+    },
+    {
+      "id": "g7-u3-0152",
+      "english": "to spit",
+      "german": "spucken",
+      "phonetic": "spɪt",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Across cultures 3: Dos and don'ts",
+      "page": 210,
+      "source": {
+        "page": 210,
+        "half": "L",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "Don't spit on the ground!"
+    },
+    {
+      "id": "g7-u3-0153",
+      "english": "to shake hands",
+      "german": "Hände schütteln; sich die Hand geben",
+      "phonetic": "ˌʃeɪk ˈhændz",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Across cultures 3: Dos and don'ts",
+      "page": 210,
+      "source": {
+        "page": 210,
+        "half": "L",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "Let's shake hands and be friends again."
+    },
+    {
+      "id": "g7-u3-0154",
+      "english": "to blow one's nose",
+      "german": "sich die Nase putzen",
+      "phonetic": "ˌbləʊ wʌnz ˈnəʊz",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Across cultures 3: Dos and don'ts",
+      "page": 210,
+      "source": {
+        "page": 210,
+        "half": "L",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "When you've got a cold, you need to blow your nose many times a day."
+    },
+    {
+      "id": "g7-u3-0155",
+      "english": "punctual",
+      "german": "pünktlich",
+      "phonetic": "ˈpʌŋktʃuəl",
+      "part_of_speech": "adjective",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Across cultures 3: Dos and don'ts",
+      "page": 210,
+      "source": {
+        "page": 210,
+        "half": "L",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "She's a punctua/ person. She's never late. Fr. ponctuel/-le"
+    },
+    {
+      "id": "g7-u3-0156",
+      "english": "to settle",
+      "german": "besiedeln; sich niederlassen",
+      "phonetic": "ˈsetl",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 210,
+      "source": {
+        "page": 210,
+        "half": "L",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "The English began to settle America in the late 16th century."
+    },
+    {
+      "id": "g7-u3-0157",
+      "english": "to worship",
+      "german": "verehren; anbeten",
+      "phonetic": "ˈwɜːʃɪp",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 210,
+      "source": {
+        "page": 210,
+        "half": "L",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "Some people regularly go to church to worship God."
+    },
+    {
+      "id": "g7-u3-0158",
+      "english": "Pilgrim",
+      "german": "Pilger/-in (Person, die 1620 aus religiösen Gründen nach Amerika auswanderte)",
+      "phonetic": "ˈpɪlɡrɪm",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 210,
+      "source": {
+        "page": 210,
+        "half": "L",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "In 1620 the Pilgrims left England for America. Fr. pelèrin/-e (m)/(f)"
+    },
+    {
+      "id": "g7-u3-0159",
+      "english": "crowded",
+      "german": "überfüllt",
+      "phonetic": "ˈkraʊdɪd",
+      "part_of_speech": "adjective",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 210,
+      "source": {
+        "page": 210,
+        "half": "L",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "The ship was so crowded we couldn't even find a place to sit. crowded – full of people crowded → a crowd"
+    },
+    {
+      "id": "g7-u3-0160",
+      "english": "smell",
+      "german": "Geruch; Duft; Gestank",
+      "phonetic": "smel",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 210,
+      "source": {
+        "page": 210,
+        "half": "L",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "There's a wonderful smell coming from the kitchen. smell → to smell"
+    },
+    {
+      "id": "g7-u3-0161",
+      "english": "seasick",
+      "german": "seekrank",
+      "phonetic": "ˈsiːsɪk",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 210,
+      "source": {
+        "page": 210,
+        "half": "L",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Some people feel seasick on boats in bad weather."
+    },
+    {
+      "id": "g7-u3-0162",
+      "english": "little",
+      "german": "wenig",
+      "phonetic": "ˈlɪtl",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 210,
+      "source": {
+        "page": 210,
+        "half": "L",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "I've got little time to chat today. I'm very busy. !many ↔ few ! much ↔ little"
+    },
+    {
+      "id": "g7-u3-0163",
+      "english": "Master",
+      "german": "Herr (histor. Anrede)",
+      "phonetic": "ˈmɑːstə",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 210,
+      "source": {
+        "page": 210,
+        "half": "L",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "What can I do for you, Master Goodman?"
+    },
+    {
+      "id": "g7-u3-0164",
+      "english": "to damage",
+      "german": "beschädigen; schaden",
+      "phonetic": "ˈdæmɪdʒ",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 210,
+      "source": {
+        "page": 210,
+        "half": "L",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "The storm has damaged our ship. Fr. endommager"
+    },
+    {
+      "id": "g7-u3-0165",
+      "english": "to repair",
+      "german": "reparieren",
+      "phonetic": "rɪˈpeə",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 210,
+      "source": {
+        "page": 210,
+        "half": "L",
+        "row": 19
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "If we can't repair the ship, it'll sink. to repair = to fix Fr. réparer; Lat. reparare"
+    },
+    {
+      "id": "g7-u3-0166",
+      "english": "overboard",
+      "german": "über Bord",
+      "phonetic": "ˈəʊvəbɔːd",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 211,
+      "source": {
+        "page": 211,
+        "half": "R",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "One of the sailors fell overboard."
+    },
+    {
+      "id": "g7-u3-0167",
+      "english": "on board",
+      "german": "an Bord",
+      "phonetic": "bɔːd",
+      "part_of_speech": "phrase",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 211,
+      "source": {
+        "page": 211,
+        "half": "R",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "When everyone was on board, the ship left."
+    },
+    {
+      "id": "g7-u3-0168",
+      "english": "Mistress",
+      "german": "Frau (histor. Anrede)",
+      "phonetic": "ˈmɪstrəs",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 211,
+      "source": {
+        "page": 211,
+        "half": "R",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Mistress Hopkins had a son."
+    },
+    {
+      "id": "g7-u3-0169",
+      "english": "direction",
+      "german": "Richtung",
+      "phonetic": "dɪˈrekʃn; daɪˈrekʃn",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 211,
+      "source": {
+        "page": 211,
+        "half": "R",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Turn around! You're going into the wrong direction. Fr. direction (f); Lat. directio (f)"
+    },
+    {
+      "id": "g7-u3-0170",
+      "english": "bag",
+      "german": "Sack",
+      "phonetic": "bæɡ",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 211,
+      "source": {
+        "page": 211,
+        "half": "R",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "We found a bag of corn."
+    },
+    {
+      "id": "g7-u3-0171",
+      "english": "to plant",
+      "german": "pflanzen; anpflanzen",
+      "phonetic": "plɑːnt",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 211,
+      "source": {
+        "page": 211,
+        "half": "R",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "Let's plant some flowers in the garden. to plant → a plant Fr. planter"
+    },
+    {
+      "id": "g7-u3-0172",
+      "english": "native",
+      "german": "einheimisch; eingeboren",
+      "phonetic": "ˈneɪtɪv",
+      "part_of_speech": "adjective",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 211,
+      "source": {
+        "page": 211,
+        "half": "R",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "What kind of plants and flowers are native to your region?"
+    },
+    {
+      "id": "g7-u3-0173",
+      "english": "agreement",
+      "german": "Abkommen;Vereinbarung",
+      "phonetic": "əˈɡriːmənt",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 211,
+      "source": {
+        "page": 211,
+        "half": "R",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "The settlers and the Native Americans signed an agreement. dgr t ← e t re"
+    },
+    {
+      "id": "g7-u3-0174",
+      "english": "chief",
+      "german": "Häuptling",
+      "phonetic": "tʃiːf",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 211,
+      "source": {
+        "page": 211,
+        "half": "R",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Who is the chief of your tribe? The leader of a group (especially of Native Americans)."
+    },
+    {
+      "id": "g7-u3-0175",
+      "english": "Indian",
+      "german": "Indianer/-in; indianisch",
+      "phonetic": "ˈɪndiən",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 211,
+      "source": {
+        "page": 211,
+        "half": "R",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "The Indians helped the white settlers to grow food. !You can use ,Indian' or ,Native American'. Both are OK."
+    },
+    {
+      "id": "g7-u3-0176",
+      "english": "to fish",
+      "german": "Fische fangen; angeln",
+      "phonetic": "fɪʃ",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 211,
+      "source": {
+        "page": 211,
+        "half": "R",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "My dad taught me how to fish. to fish → a fish"
+    },
+    {
+      "id": "g7-u3-0177",
+      "english": "coat",
+      "german": "Mantel",
+      "phonetic": "kəʊt",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 211,
+      "source": {
+        "page": 211,
+        "half": "R",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "It's cold. Put on a coat or a jacket."
+    },
+    {
+      "id": "g7-u3-0178",
+      "english": "harvest",
+      "german": "Ernte",
+      "phonetic": "ˈhɑːvɪst",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 211,
+      "source": {
+        "page": 211,
+        "half": "R",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "The harvest wasn't good because of the dry weather."
+    },
+    {
+      "id": "g7-u3-0179",
+      "english": "feast",
+      "german": "Festmahl",
+      "phonetic": "fiːst",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 211,
+      "source": {
+        "page": 211,
+        "half": "R",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "We had a big feast for our father's birthday. = a large and very special meal"
+    },
+    {
+      "id": "g7-u3-0180",
+      "english": "to shoot (at)",
+      "german": "schießen (auf)",
+      "phonetic": "ʃuːt",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 211,
+      "source": {
+        "page": 211,
+        "half": "R",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "The hunter shot a goose."
+    },
+    {
+      "id": "g7-u3-0181",
+      "english": "goose",
+      "german": "Gans",
+      "phonetic": "ɡuːs",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 211,
+      "source": {
+        "page": 211,
+        "half": "R",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Lots of geese live in this park."
+    },
+    {
+      "id": "g7-u3-0182",
+      "english": "duck",
+      "german": "Ente",
+      "phonetic": "dʌk",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 211,
+      "source": {
+        "page": 211,
+        "half": "R",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Ducks are birds, and they can swim."
+    },
+    {
+      "id": "g7-u3-0183",
+      "english": "gun",
+      "german": "Schusswaffe",
+      "phonetic": "ɡʌn",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 211,
+      "source": {
+        "page": 211,
+        "half": "R",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "People use guns to shoot at animals or people."
+    },
+    {
+      "id": "g7-u3-0184",
+      "english": "deer (sg or pl)",
+      "german": "Hirsch",
+      "phonetic": "dɪə",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 211,
+      "source": {
+        "page": 211,
+        "half": "R",
+        "row": 19
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Deer live in the woods."
+    },
+    {
+      "id": "g7-u3-0185",
+      "english": "council of elders",
+      "german": "Ältestenrat",
+      "phonetic": "ˌkaʊnsl əv ˈeldəz",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 211,
+      "source": {
+        "page": 211,
+        "half": "R",
+        "row": 20
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "The chief talked to the council of e"
+    },
+    {
+      "id": "g7-u3-0186",
+      "english": "council",
+      "german": "Rat; Ratsversammlung",
+      "phonetic": "ˈkaʊnsl",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 211,
+      "source": {
+        "page": 211,
+        "half": "R",
+        "row": 21
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "The council meets every month. Fr. conseil (m)"
+    },
+    {
+      "id": "g7-u3-0187",
+      "english": "to break away (from)",
+      "german": "sich trennen (von); sich lossagen (von)",
+      "phonetic": "ˌbreɪk əˈweɪ",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 212,
+      "source": {
+        "page": 212,
+        "half": "L",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "The English colonies in North America broke away from England."
+    },
+    {
+      "id": "g7-u3-0188",
+      "english": "for",
+      "german": "wegen",
+      "phonetic": "fɔː; fə",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 212,
+      "source": {
+        "page": 212,
+        "half": "L",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "The Pilgrims left England for religious reasons."
+    },
+    {
+      "id": "g7-u3-0189",
+      "english": "brick",
+      "german": "Ziegel; Ziegelstein",
+      "phonetic": "brɪk",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 212,
+      "source": {
+        "page": 212,
+        "half": "L",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "This wall is made of bricks."
+    },
+    {
+      "id": "g7-u3-0190",
+      "english": "blueberry",
+      "german": "Blaubeere; Heidelbeere",
+      "phonetic": "ˈbluːbri",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 212,
+      "source": {
+        "page": 212,
+        "half": "L",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "I love eating blueberry pancakes for breakfast."
+    },
+    {
+      "id": "g7-u3-0191",
+      "english": "maple syrup",
+      "german": "Ahornsirup",
+      "phonetic": "ˌmeɪpl ˈsɪrəp",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 212,
+      "source": {
+        "page": 212,
+        "half": "L",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Would you like some maple syrup on your pancakes?"
+    },
+    {
+      "id": "g7-u3-0192",
+      "english": "diner (AE)",
+      "german": "einfaches Restaurant mit Theke und Tischen",
+      "phonetic": "ˈdaɪnə",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 212,
+      "source": {
+        "page": 212,
+        "half": "L",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "I have breakfast in the diner around the corner every morning before I go to work."
+    },
+    {
+      "id": "g7-u3-0193",
+      "english": "lobster",
+      "german": "Hummer",
+      "phonetic": "ˈlɒbstə",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 212,
+      "source": {
+        "page": 212,
+        "half": "L",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Last night we had lobster for dinner."
+    },
+    {
+      "id": "g7-u3-0194",
+      "english": "seafood",
+      "german": "Meeresfrüchte",
+      "phonetic": "ˈsiːfuːd",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 212,
+      "source": {
+        "page": 212,
+        "half": "L",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Lobster is seafood."
+    },
+    {
+      "id": "g7-u3-0195",
+      "english": "sauce",
+      "german": "Soße",
+      "phonetic": "sɔːs",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 212,
+      "source": {
+        "page": 212,
+        "half": "L",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "I love ice cream with chocolate sauce. Fr. sauce (f)"
+    },
+    {
+      "id": "g7-u3-0196",
+      "english": "roast turkey",
+      "german": "Putenbraten",
+      "phonetic": "ˌrəʊst ˈtɜːki",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 212,
+      "source": {
+        "page": 212,
+        "half": "L",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Americans traditionally eat roast turkey for Thanksgiving."
+    },
+    {
+      "id": "g7-u3-0197",
+      "english": "stuffing (no pl)",
+      "german": "Füllung",
+      "phonetic": "ˈstʌfɪŋ",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 212,
+      "source": {
+        "page": 212,
+        "half": "L",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "It was a lot of work to prepare the stuffing for the turkey."
+    },
+    {
+      "id": "g7-u3-0198",
+      "english": "sweet potatoes (pl)",
+      "german": "Süßkartoffeln",
+      "phonetic": "ˈswiːt pəˌteɪtəʊz",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 212,
+      "source": {
+        "page": 212,
+        "half": "L",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Could I have some more sweet potatoes, please?"
+    },
+    {
+      "id": "g7-u3-0199",
+      "english": "dessert",
+      "german": "Dessert; Nachspeise",
+      "phonetic": "dɪˈzɜːt",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 212,
+      "source": {
+        "page": 212,
+        "half": "L",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "Would you like some ice cream for dessert? !Be careful: dessert - Dessert desert – Wüste Fr. dessert(m)"
+    },
+    {
+      "id": "g7-u3-0200",
+      "english": "professional",
+      "german": "professionell",
+      "phonetic": "prəˈfeʃnl",
+      "part_of_speech": "adjective",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 212,
+      "source": {
+        "page": 212,
+        "half": "L",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3"
+      ],
+      "source_note": "A professiona/ actor does acting as a job. Fr. professionnel/-le"
+    },
+    {
+      "id": "g7-u3-0201",
+      "english": "to stay in character",
+      "german": "in der Rolle bleiben",
+      "phonetic": "ˌsteɪ ɪn ˈkærəktə",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "What was it like?",
+      "section": "Focus 2: The New World",
+      "page": 212,
+      "source": {
+        "page": 212,
+        "half": "L",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "Good actors always stay in character."
+    }
+  ]
+}

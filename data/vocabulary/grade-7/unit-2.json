@@ -1,1 +1,3825 @@
-{"schema_version":"1.0","subject":"English","grade":7,"unit":2,"title":"Let's go to Wales","import_status":"full_import","entry_count":73,"sections":["Check-in","Skills: How to write a persuasive text","Station 1: A new Holly","Station 1: What do the instructions say?","Station 2: Sorry, I don't eat meat","Text smart 1 Factual texts"],"audit":{"source_format":"screenshots","binary_in_repo":false,"examples_in_repo":false},"parts":["unit-2-part-1.json","unit-2-part-2.json"],"storage":"compact-array-v1"}
+{
+  "schema_version": "2.0",
+  "grade": 7,
+  "unit": 2,
+  "title": "Let's go to Wales",
+  "entry_count": 164,
+  "entries": [
+    {
+      "id": "g7-u2-0001",
+      "english": "guided tour",
+      "german": "geführte Tour; Führung",
+      "phonetic": "ˌɡaɪdɪd ˈtʊə",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Check-in",
+      "page": 194,
+      "source": {
+        "page": 194,
+        "half": "L",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "Were you hiking alone or with a guided tour?"
+    },
+    {
+      "id": "g7-u2-0002",
+      "english": "lively",
+      "german": "lebendig",
+      "phonetic": "ˈlaɪvli",
+      "part_of_speech": "adverb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Check-in",
+      "page": 194,
+      "source": {
+        "page": 194,
+        "half": "L",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "This city is very lively. There's so much to see and do. lively → to live → a life"
+    },
+    {
+      "id": "g7-u2-0003",
+      "english": "tower",
+      "german": "Tum",
+      "phonetic": "ˈtaʊə",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Check-in",
+      "page": 194,
+      "source": {
+        "page": 194,
+        "half": "L",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "You have a great view from the tower. Fr. tour (f); Lat. turris (f)"
+    },
+    {
+      "id": "g7-u2-0004",
+      "english": "slate",
+      "german": "Schiefer",
+      "phonetic": "sleɪt",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Check-in",
+      "page": 194,
+      "source": {
+        "page": 194,
+        "half": "L",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "We visited a slate mine in Wales."
+    },
+    {
+      "id": "g7-u2-0005",
+      "english": "coal",
+      "german": "Kohle",
+      "phonetic": "kəʊl",
+      "part_of_speech": "adjective",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Check-in",
+      "page": 194,
+      "source": {
+        "page": 194,
+        "half": "L",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "In the past people used coa/ to keep their homes warm."
+    },
+    {
+      "id": "g7-u2-0006",
+      "english": "dragon",
+      "german": "Drache",
+      "phonetic": "ˈdræɡn",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Check-in",
+      "page": 194,
+      "source": {
+        "page": 194,
+        "half": "L",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "There's a red dragon on the Welsh flag."
+    },
+    {
+      "id": "g7-u2-0007",
+      "english": "interviewer",
+      "german": "Interviewer/-in; Befrager/-in",
+      "phonetic": "ˈɪntəvjuːə",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Check-in",
+      "page": 194,
+      "source": {
+        "page": 194,
+        "half": "L",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "The interviewer asked lots of interesting questions. interviewer → an interview"
+    },
+    {
+      "id": "g7-u2-0008",
+      "english": "Briton",
+      "german": "Brite/Britin",
+      "phonetic": "ˈbrɪtn",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Check-in",
+      "page": 194,
+      "source": {
+        "page": 194,
+        "half": "L",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "The Britons live in Britain. !Britain – Großbritannien a Briton - ein Brite/eine Britin"
+    },
+    {
+      "id": "g7-u2-0009",
+      "english": "to control",
+      "german": "kontrollieren; beherrschen; steuern",
+      "phonetic": "kənˈtrəʊl",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Check-in",
+      "page": 194,
+      "source": {
+        "page": 194,
+        "half": "L",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "It can be easier to invade a country than to control it. Fr. contrôler"
+    },
+    {
+      "id": "g7-u2-0010",
+      "english": "to conquer",
+      "german": "erobern",
+      "phonetic": "ˈkɒŋkə",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Check-in",
+      "page": 194,
+      "source": {
+        "page": 194,
+        "half": "L",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "The Normans conquered England in 1066. Fr. conquérir"
+    },
+    {
+      "id": "g7-u2-0011",
+      "english": "backpack",
+      "german": "Rucksack",
+      "phonetic": "ˈbækpæk",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Station 1: A new Holly",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "My backpack is too heavy."
+    },
+    {
+      "id": "g7-u2-0012",
+      "english": "since (+ Zeitpunkt)",
+      "german": "seit; seitdem",
+      "phonetic": "sɪns",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Station 1: A new Holly",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "They've been living in Wales since 1996."
+    },
+    {
+      "id": "g7-u2-0013",
+      "english": "for (+ Zeitraum)",
+      "german": "seit",
+      "phonetic": "fɔː; fə",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Station 1: A new Holly",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "We've been learning English for three years. = We started to learn English three years ago."
+    },
+    {
+      "id": "g7-u2-0014",
+      "english": "to last",
+      "german": "dauern; andauern; anhalten",
+      "phonetic": "lɑːst",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Station 1: A new Holly",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "Stormy weather doesn't usually last very long."
+    },
+    {
+      "id": "g7-u2-0015",
+      "english": "miner",
+      "german": "Bergarbeiter/-in",
+      "phonetic": "ˈmaɪnə",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Station 1: A new Holly",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "The miner explained everything about the coal mine. miner = sb who works in a mine miner → a mine → mining"
+    },
+    {
+      "id": "g7-u2-0016",
+      "english": "border",
+      "german": "Grenze",
+      "phonetic": "ˈbɔːdə",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Station 1: A new Holly",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "We live close to the French border."
+    },
+    {
+      "id": "g7-u2-0017",
+      "english": "comedy",
+      "german": "Komödie; Comedy-",
+      "phonetic": "ˈkɒmədi",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Station 1: A new Holly",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "I love watching comedy shows on TV. Fr. comédie (f); Lat. comoedia (f)"
+    },
+    {
+      "id": "g7-u2-0018",
+      "english": "gig",
+      "german": "Auftritt; Gig",
+      "phonetic": "ɡɪɡ",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Station 1: A new Holly",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "Dylan and his band play gigs every weekend."
+    },
+    {
+      "id": "g7-u2-0019",
+      "english": "lead singer",
+      "german": "Leadsänger/-in; Frontsänger/-in",
+      "phonetic": "ˌliːd ˈsɪŋə",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Station 1: A new Holly",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "Dylan is the lead singer in his band."
+    },
+    {
+      "id": "g7-u2-0020",
+      "english": "choir",
+      "german": "Chor",
+      "phonetic": "ˈkwaɪə",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Station 1: A new Holly",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "I've been singing in a choir since I was ten."
+    },
+    {
+      "id": "g7-u2-0021",
+      "english": "such",
+      "german": "solch; solche/-r/-s",
+      "phonetic": "sʌtʃ",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Station 2: Sorry, I don't eat meat",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "It was such a good film!"
+    },
+    {
+      "id": "g7-u2-0022",
+      "english": "to roll one's eyes",
+      "german": "die Augen verdrehen",
+      "phonetic": "ˌrəʊl wʌnz ˈaɪz",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Station 2: Sorry, I don't eat meat",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "I rolled my eyes when he began to tell another boring story."
+    },
+    {
+      "id": "g7-u2-0023",
+      "english": "Welsh rarebit (no pl)",
+      "german": "überbackenes Käsebrot",
+      "phonetic": "ˌwelʃ ˈreəbɪt",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Station 2: Sorry, I don't eat meat",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "Welsh rarebit is like cheese on toast."
+    },
+    {
+      "id": "g7-u2-0024",
+      "english": "to apologise",
+      "german": "sich entschuldigen",
+      "phonetic": "əˈpɒlədʒaɪz",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Station 2: Sorry, I don't eat meat",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "Although she apologised, he couldn't forgive her. to apologise = to say sorry"
+    },
+    {
+      "id": "g7-u2-0025",
+      "english": "vegetarian",
+      "german": "Vegetarier/-in",
+      "phonetic": "ˌvedʒɪˈteəriən",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Station 2: Sorry, I don't eat meat",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "Vegetarians don't eat meat. Fr. végétarien/-ne"
+    },
+    {
+      "id": "g7-u2-0026",
+      "english": "all right",
+      "german": "in Ordnung; alles klar",
+      "phonetic": "ˌɔːl ˈraɪt",
+      "part_of_speech": "phrase",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Station 2: Sorry, I don't eat meat",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "Let's visit a coal mine tomorrow. – All right. all right - OK"
+    },
+    {
+      "id": "g7-u2-0027",
+      "english": "to be tired of (+ noun or -ing)",
+      "german": "es müde sein (zu); es leid sein (zu); es satt haben (zu)",
+      "phonetic": "bi ˈtaɪəd əv",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Station 2: Sorry, I don't eat meat",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "I'm really tired of waiting for you all the time. We had pasta for lunch every day. I soon got tired of it."
+    },
+    {
+      "id": "g7-u2-0028",
+      "english": "to snap (at sb)",
+      "german": "anfahren; anschnauzen (ugs.)",
+      "phonetic": "ˈsnæp ət",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Station 2: Sorry, I don't eat meat",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "\"Well, you're silly too,\" Amber snapped. I'm sorry I snapped at you."
+    },
+    {
+      "id": "g7-u2-0029",
+      "english": "What's wrong?",
+      "german": "Was ist los?; Was stimmt nicht?",
+      "phonetic": "ˌwɒts ˈrɒŋ",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Station 2: Sorry, I don't eat meat",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 19
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "What's wrong with you? I'm worried about you."
+    },
+    {
+      "id": "g7-u2-0030",
+      "english": "to give sb a funny look",
+      "german": "jmdn. schief/komisch anschauen",
+      "phonetic": "ˌɡɪv ə ˌfʌni ˈlʊk",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Station 2: Sorry, I don't eat meat",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 20
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "Meg and Dai are giving each other funny looks."
+    },
+    {
+      "id": "g7-u2-0031",
+      "english": "stretcher",
+      "german": "Tragbahre",
+      "phonetic": "ˈstretʃə",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Station 2: Sorry, I don't eat meat",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 21
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "When I broke my leg, they had to carry me on a stretcher."
+    },
+    {
+      "id": "g7-u2-0032",
+      "english": "to glare at",
+      "german": "zornig anstarren",
+      "phonetic": "ˈɡleər ət",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Station 2: Sorry, I don't eat meat",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 22
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "He glared at his friend angrily. to glare at – to look angrily at"
+    },
+    {
+      "id": "g7-u2-0033",
+      "english": "unkind",
+      "german": "unfreundlich; gemein",
+      "phonetic": "ʌnˈkaɪnd",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Station 2: Sorry, I don't eat meat",
+      "page": 195,
+      "source": {
+        "page": 195,
+        "half": "R",
+        "row": 23
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "Those things you've just said to m unkind ↔ kind, friendly, nice"
+    },
+    {
+      "id": "g7-u2-0034",
+      "english": "to behave",
+      "german": "sich benehmen; sich verhalten",
+      "phonetic": "bɪˈheɪv",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Station 2: Sorry, I don't eat meat",
+      "page": 196,
+      "source": {
+        "page": 196,
+        "half": "L",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "You're silly! You behave like a little child. to behave → behaviour"
+    },
+    {
+      "id": "g7-u2-0035",
+      "english": "funfair",
+      "german": "Jahrmarkt",
+      "phonetic": "ˈfʌnfeə",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Station 2: Sorry, I don't eat meat",
+      "page": 196,
+      "source": {
+        "page": 196,
+        "half": "L",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "Let's go to the funfair. There are some exciting rides."
+    },
+    {
+      "id": "g7-u2-0036",
+      "english": "roast lamb",
+      "german": "Lammbraten",
+      "phonetic": "ˌrəʊst ˈlæm",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Station 2: Sorry, I don't eat meat",
+      "page": 196,
+      "source": {
+        "page": 196,
+        "half": "L",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "I could make roast lamb for dinner. – Sorry, I'm a vegetarian."
+    },
+    {
+      "id": "g7-u2-0037",
+      "english": "underground",
+      "german": "unter der Erde; unter die Erde",
+      "phonetic": "ˌʌndəˈɡraʊnd",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Station 2: Sorry, I don't eat meat",
+      "page": 196,
+      "source": {
+        "page": 196,
+        "half": "L",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "Let's explore this cave. It's exciting to be underground!"
+    },
+    {
+      "id": "g7-u2-0038",
+      "english": "pit",
+      "german": "Grube; Bergwerk",
+      "phonetic": "pɪt",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Station 2: Sorry, I don't eat meat",
+      "page": 196,
+      "source": {
+        "page": 196,
+        "half": "L",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "The miners were down in the pit. pit - a place where you dig for coal or other materials"
+    },
+    {
+      "id": "g7-u2-0039",
+      "english": "to contact",
+      "german": "sich in Verbindung setzen; kontaktieren",
+      "phonetic": "ˈkɒntækt",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Station 2: Sorry, I don't eat meat",
+      "page": 196,
+      "source": {
+        "page": 196,
+        "half": "L",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "You can contact me on my mobile. to contact → a contact Fr. contacter"
+    },
+    {
+      "id": "g7-u2-0040",
+      "english": "persuasive",
+      "german": "überzeugend",
+      "phonetic": "pəˈsweɪsɪv",
+      "part_of_speech": "adjective",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Skills: How to write a persuasive text",
+      "page": 196,
+      "source": {
+        "page": 196,
+        "half": "L",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "Your arguments were really persuasive. I believe you're right."
+    },
+    {
+      "id": "g7-u2-0041",
+      "english": "to persuade",
+      "german": "überreden",
+      "phonetic": "pəˈsweɪd",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Skills: How to write a persuasive text",
+      "page": 196,
+      "source": {
+        "page": 196,
+        "half": "L",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "Finally I could persuade my parents to buy a dog. Fr. persuader; Lat. persuadēre"
+    },
+    {
+      "id": "g7-u2-0042",
+      "english": "particular",
+      "german": "bestimmte/-r/-s",
+      "phonetic": "pəˈtɪkjələ",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Skills: How to write a persuasive text",
+      "page": 196,
+      "source": {
+        "page": 196,
+        "half": "L",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "Would you like to visit any city in Wales or a particular one?"
+    },
+    {
+      "id": "g7-u2-0043",
+      "english": "to attract",
+      "german": "anziehen; auf sich ziehen",
+      "phonetic": "əˈtrækt",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Skills: How to write a persuasive text",
+      "page": 196,
+      "source": {
+        "page": 196,
+        "half": "L",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "An interesting title attracts the reader's attention. to attract → attraction"
+    },
+    {
+      "id": "g7-u2-0044",
+      "english": "criterion",
+      "german": "Kriterium; Merkmal",
+      "phonetic": "kraɪˈtɪəriən",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Skills: How to write a persuasive text",
+      "page": 196,
+      "source": {
+        "page": 196,
+        "half": "L",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "What are the criteria for a persuasive text? Fr. critère (m)"
+    },
+    {
+      "id": "g7-u2-0045",
+      "english": "humour (no pl)",
+      "german": "Humor; Stimmung",
+      "phonetic": "ˈhjuːmə",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Skills: How to write a persuasive text",
+      "page": 196,
+      "source": {
+        "page": 196,
+        "half": "L",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "My grandad's sense of humour is very special. Fr. humour (m)"
+    },
+    {
+      "id": "g7-u2-0046",
+      "english": "final",
+      "german": "letzte/-r/-s",
+      "phonetic": "ˈfaɪnl",
+      "part_of_speech": "adjective",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Skills: How to write a persuasive text",
+      "page": 196,
+      "source": {
+        "page": 196,
+        "half": "L",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "In a persuasive text, the final sentence is very important. fina/ = last"
+    },
+    {
+      "id": "g7-u2-0047",
+      "english": "druid",
+      "german": "Druide",
+      "phonetic": "ˈdruːɪd",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Skills: How to write a persuasive text",
+      "page": 196,
+      "source": {
+        "page": 196,
+        "half": "L",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "Celtic druids were religious leaders."
+    },
+    {
+      "id": "g7-u2-0048",
+      "english": "to scare sb",
+      "german": "jmdm. Angst machen; jmdn. erschrecken",
+      "phonetic": "skeə",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Skills: How to write a persuasive text",
+      "page": 196,
+      "source": {
+        "page": 196,
+        "half": "L",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "My brother tried to scare me with his costume. to ← ← cc ay"
+    },
+    {
+      "id": "g7-u2-0049",
+      "english": "tongue twister",
+      "german": "Zungenbrecher",
+      "phonetic": "ˈtʌŋ ˌtwɪstə",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Skills: How to write a persuasive text",
+      "page": 196,
+      "source": {
+        "page": 196,
+        "half": "L",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "A tongue twister: Elizabeth's birthday is on the third Thursday of this month."
+    },
+    {
+      "id": "g7-u2-0050",
+      "english": "so",
+      "german": "es; das",
+      "phonetic": "səʊ",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Skills: How to write a persuasive text",
+      "page": 196,
+      "source": {
+        "page": 196,
+        "half": "L",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "If you want to relax, this is the perfect place to do so. I think so too. If you need more help, say so. !You can use so to take up something that has been said before."
+    },
+    {
+      "id": "g7-u2-0051",
+      "english": "view",
+      "german": "Aussicht; Blick",
+      "phonetic": "vjuː",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Skills: How to write a persuasive text",
+      "page": 196,
+      "source": {
+        "page": 196,
+        "half": "L",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "From here, you've got a wonderful view of the coastline."
+    },
+    {
+      "id": "g7-u2-0052",
+      "english": "puffin",
+      "german": "Papageientaucher",
+      "phonetic": "ˈpʌfɪn",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Skills: How to write a persuasive text",
+      "page": 196,
+      "source": {
+        "page": 196,
+        "half": "L",
+        "row": 19
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "What's that bird called? - It's a puffin."
+    },
+    {
+      "id": "g7-u2-0053",
+      "english": "seal",
+      "german": "Seehund; Robbe",
+      "phonetic": "siːl",
+      "part_of_speech": "adjective",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Skills: How to write a persuasive text",
+      "page": 196,
+      "source": {
+        "page": 196,
+        "half": "L",
+        "row": 20
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "This is the perfect place to watch seals."
+    },
+    {
+      "id": "g7-u2-0054",
+      "english": "kayaking",
+      "german": "Kajakfahren",
+      "phonetic": "ˈkaɪækɪŋ",
+      "part_of_speech": "adjective",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Skills: How to write a persuasive text",
+      "page": 196,
+      "source": {
+        "page": 196,
+        "half": "L",
+        "row": 21
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "Kayaking and canoeing are popular water sports."
+    },
+    {
+      "id": "g7-u2-0055",
+      "english": "treat",
+      "german": "Leckerei",
+      "phonetic": "triːt",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Skills: How to write a persuasive text",
+      "page": 196,
+      "source": {
+        "page": 196,
+        "half": "L",
+        "row": 22
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "Can I offer you a treat? a treat - sth good to eat"
+    },
+    {
+      "id": "g7-u2-0056",
+      "english": "the mainland (no pl)",
+      "german": "Festland",
+      "phonetic": "ˈmeɪnlænd",
+      "part_of_speech": "phrase",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Skills: How to write a persuasive text",
+      "page": 197,
+      "source": {
+        "page": 197,
+        "half": "R",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "It's 30 minutes by boat from this island to the mainland."
+    },
+    {
+      "id": "g7-u2-0057",
+      "english": "to work magic (on)",
+      "german": "Zauber ausüben",
+      "phonetic": "ˌwɜːk ˈmædʒɪk",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Skills: How to write a persuasive text",
+      "page": 197,
+      "source": {
+        "page": 197,
+        "half": "R",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "I'm sure the beautiful coastline will work its magic on you."
+    },
+    {
+      "id": "g7-u2-0058",
+      "english": "category",
+      "german": "Kategorie; Klasse",
+      "phonetic": "ˈkætəɡri",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Skills: How to write a persuasive text",
+      "page": 197,
+      "source": {
+        "page": 197,
+        "half": "R",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "This adjective fits in two categories. !Spelling and pronunciation Fr. catégorie (f)"
+    },
+    {
+      "id": "g7-u2-0059",
+      "english": "to rent out",
+      "german": "vermieten",
+      "phonetic": "ˌrent ˈaʊt",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Unit task: Visit Wales!",
+      "page": 197,
+      "source": {
+        "page": 197,
+        "half": "R",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "Last year our friends rented their house in England out to us."
+    },
+    {
+      "id": "g7-u2-0060",
+      "english": "public holiday",
+      "german": "gesetzlicher Feiertag",
+      "phonetic": "ˈpʌblɪk",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Unit task: Visit Wales!",
+      "page": 197,
+      "source": {
+        "page": 197,
+        "half": "R",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "New Year's Day is a public holiday in the UK."
+    },
+    {
+      "id": "g7-u2-0061",
+      "english": "entrance",
+      "german": "Eingang; Eintritt",
+      "phonetic": "ˈentrəns",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Story: I don't believe in ghosts!",
+      "page": 197,
+      "source": {
+        "page": 197,
+        "half": "R",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "Where is the entrance to the castle? entrance → to enter Fr. entrée (f)"
+    },
+    {
+      "id": "g7-u2-0062",
+      "english": "empty",
+      "german": "leer",
+      "phonetic": "ˈemti",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Story: I don't believe in ghosts!",
+      "page": 197,
+      "source": {
+        "page": 197,
+        "half": "R",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "There's nothing in this room. It's completely empty. empty ↔ full"
+    },
+    {
+      "id": "g7-u2-0063",
+      "english": "hall",
+      "german": "Halle; Saal",
+      "phonetic": "hɔːl",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Story: I don't believe in ghosts!",
+      "page": 197,
+      "source": {
+        "page": 197,
+        "half": "R",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "When you enter the castle, you get into a big hall. hall = a very big room"
+    },
+    {
+      "id": "g7-u2-0064",
+      "english": "locked",
+      "german": "abgeschlossen",
+      "phonetic": "lɒkt",
+      "part_of_speech": "adjective",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Story: I don't believe in ghosts!",
+      "page": 197,
+      "source": {
+        "page": 197,
+        "half": "R",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "The door is locked - we can't get in. locked ↔ open"
+    },
+    {
+      "id": "g7-u2-0065",
+      "english": "pocket",
+      "german": "Tasche; Hosentasche",
+      "phonetic": "ˈpɒkɪt",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Story: I don't believe in ghosts!",
+      "page": 197,
+      "source": {
+        "page": 197,
+        "half": "R",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "He put his smartphone into his trouser pocket. Fr. poche (f)"
+    },
+    {
+      "id": "g7-u2-0066",
+      "english": "signal",
+      "german": "Signal; Empfang",
+      "phonetic": "ˈsɪɡnl",
+      "part_of_speech": "adjective",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Story: I don't believe in ghosts!",
+      "page": 197,
+      "source": {
+        "page": 197,
+        "half": "R",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "I can't use my phone because there's no signal."
+    },
+    {
+      "id": "g7-u2-0067",
+      "english": "thick",
+      "german": "dick (nicht für Personen)",
+      "phonetic": "θɪk",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Story: I don't believe in ghosts!",
+      "page": 197,
+      "source": {
+        "page": 197,
+        "half": "R",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "The stone walls of the castle are very thick."
+    },
+    {
+      "id": "g7-u2-0068",
+      "english": "perhaps",
+      "german": "vielleicht",
+      "phonetic": "pəˈhæps",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Story: I don't believe in ghosts!",
+      "page": 197,
+      "source": {
+        "page": 197,
+        "half": "R",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "Perhaps we can visit you next summer, but I'm not sure. perhaps = maybe"
+    },
+    {
+      "id": "g7-u2-0069",
+      "english": "wounded",
+      "german": "verwundet; verletzt",
+      "phonetic": "ˈwuːndɪd",
+      "part_of_speech": "adjective",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Story: I don't believe in ghosts!",
+      "page": 197,
+      "source": {
+        "page": 197,
+        "half": "R",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "We found a wounded bird and took it to the vet."
+    },
+    {
+      "id": "g7-u2-0070",
+      "english": "moonlight",
+      "german": "Mondlicht",
+      "phonetic": "ˈmuːnlaɪt",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Story: I don't believe in ghosts!",
+      "page": 197,
+      "source": {
+        "page": 197,
+        "half": "R",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "There's no moonlight. The sky is completely dark."
+    },
+    {
+      "id": "g7-u2-0071",
+      "english": "above",
+      "german": "über; oberhalb (von)",
+      "phonetic": "əˈbʌv",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Story: I don't believe in ghosts!",
+      "page": 197,
+      "source": {
+        "page": 197,
+        "half": "R",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "There's a big cloud above us in the sky. above ↔below"
+    },
+    {
+      "id": "g7-u2-0072",
+      "english": "stairs (pl)",
+      "german": "Treppe",
+      "phonetic": "steəz",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Story: I don't believe in ghosts!",
+      "page": 197,
+      "source": {
+        "page": 197,
+        "half": "R",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "Let's take the stairs up the tower. ! The stairs go up. – Die Treppe führt nach oben. stairs → downstairs → upstairs"
+    },
+    {
+      "id": "g7-u2-0073",
+      "english": "to see sb (+ -ing)",
+      "german": "jmdn. etw. tun sehen",
+      "phonetic": "siː",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Story: I don't believe in ghosts!",
+      "page": 197,
+      "source": {
+        "page": 197,
+        "half": "R",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "Holly saw somebody moving on the other side."
+    },
+    {
+      "id": "g7-u2-0074",
+      "english": "to keep out (of)",
+      "german": "draußen bleiben; draußen halten",
+      "phonetic": "ˌkiːp ˈaʊt əv",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Story: I don't believe in ghosts!",
+      "page": 197,
+      "source": {
+        "page": 197,
+        "half": "R",
+        "row": 19
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "Parents must keep out of my room"
+    },
+    {
+      "id": "g7-u2-0075",
+      "english": "cracking",
+      "german": "knackend; brechend",
+      "phonetic": "ˈkrækɪŋ",
+      "part_of_speech": "adjective",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Story: I don't believe in ghosts!",
+      "page": 197,
+      "source": {
+        "page": 197,
+        "half": "R",
+        "row": 20
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "There was a cracking sound when"
+    },
+    {
+      "id": "g7-u2-0076",
+      "english": "to realise",
+      "german": "erkennen; realisieren",
+      "phonetic": "ˈrɪəlaɪz",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Story: I don't believe in ghosts!",
+      "page": 197,
+      "source": {
+        "page": 197,
+        "half": "R",
+        "row": 21
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "Holly realised they didn't have mu"
+    },
+    {
+      "id": "g7-u2-0077",
+      "english": "key ring",
+      "german": "Schlüsselbund; Schlüsselanhänger",
+      "phonetic": "ˈkiː ˌrɪŋ",
+      "part_of_speech": "adjective",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Story: I don't believe in ghosts!",
+      "page": 198,
+      "source": {
+        "page": 198,
+        "half": "L",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "I've got five keys on my key ring."
+    },
+    {
+      "id": "g7-u2-0078",
+      "english": "back",
+      "german": "Rücken; Rückseite",
+      "phonetic": "bæk",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Story: I don't believe in ghosts!",
+      "page": 198,
+      "source": {
+        "page": 198,
+        "half": "L",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "She couldn't walk so I carried her on my back."
+    },
+    {
+      "id": "g7-u2-0079",
+      "english": "rope",
+      "german": "Seil",
+      "phonetic": "rəʊp",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Story: I don't believe in ghosts!",
+      "page": 198,
+      "source": {
+        "page": 198,
+        "half": "L",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "You need a rope for climbing."
+    },
+    {
+      "id": "g7-u2-0080",
+      "english": "to hold onto",
+      "german": "(sich) festhalten an",
+      "phonetic": "ˌhəʊld ˈɒntə",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Story: I don't believe in ghosts!",
+      "page": 198,
+      "source": {
+        "page": 198,
+        "half": "L",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "Amber caught the rope and held onto it."
+    },
+    {
+      "id": "g7-u2-0081",
+      "english": "crack",
+      "german": "Knacken; Krachen",
+      "phonetic": "kræk",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Story: I don't believe in ghosts!",
+      "page": 198,
+      "source": {
+        "page": 198,
+        "half": "L",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "Have you heard the crack too? crack → cracking"
+    },
+    {
+      "id": "g7-u2-0082",
+      "english": "to scream",
+      "german": "schreien; kreischen",
+      "phonetic": "skriːm",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Story: I don't believe in ghosts!",
+      "page": 198,
+      "source": {
+        "page": 198,
+        "half": "L",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "Holly screamed because she found something awful."
+    },
+    {
+      "id": "g7-u2-0083",
+      "english": "wood",
+      "german": "Holz",
+      "phonetic": "wʊd",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Story: I don't believe in ghosts!",
+      "page": 198,
+      "source": {
+        "page": 198,
+        "half": "L",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "You use wood to make a fire. wood → wooden"
+    },
+    {
+      "id": "g7-u2-0084",
+      "english": "hard",
+      "german": "fest; stark",
+      "phonetic": "hɑːd",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Story: I don't believe in ghosts!",
+      "page": 198,
+      "source": {
+        "page": 198,
+        "half": "L",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "Amber held onto the rope as hard as she could."
+    },
+    {
+      "id": "g7-u2-0085",
+      "english": "to hear sb (+ -ing)",
+      "german": "jmdn. etw. tun hören",
+      "phonetic": "hɪə",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Story: I don't believe in ghosts!",
+      "page": 198,
+      "source": {
+        "page": 198,
+        "half": "L",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "I heard him crying."
+    },
+    {
+      "id": "g7-u2-0086",
+      "english": "definitely",
+      "german": "bestimmt; definitiv; eindeutig",
+      "phonetic": "ˈdefɪnətli",
+      "part_of_speech": "adverb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Story: I don't believe in ghosts!",
+      "page": 198,
+      "source": {
+        "page": 198,
+        "half": "L",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "Do you want a pink backpack? - No, definitely not."
+    },
+    {
+      "id": "g7-u2-0087",
+      "english": "some",
+      "german": "irgendein/-e",
+      "phonetic": "sʌm; səm",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Story: I don't believe in ghosts!",
+      "page": 198,
+      "source": {
+        "page": 198,
+        "half": "L",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "Some idiot dropped my favourite mug. Now it's broken."
+    },
+    {
+      "id": "g7-u2-0088",
+      "english": "newspaper",
+      "german": "Zeitung",
+      "phonetic": "ˈnjuːsˌpeɪpə",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Story: I don't believe in ghosts!",
+      "page": 198,
+      "source": {
+        "page": 198,
+        "half": "L",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "My dad reads the newspaper every morning. newspaper → news"
+    },
+    {
+      "id": "g7-u2-0089",
+      "english": "to interview",
+      "german": "interviewen; befragen",
+      "phonetic": "ˈɪntəvjuː",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Story: I don't believe in ghosts!",
+      "page": 198,
+      "source": {
+        "page": 198,
+        "half": "L",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "A reporter interviewed Holly and Amber after the accident. to interview → an interview → an interviewer"
+    },
+    {
+      "id": "g7-u2-0090",
+      "english": "to be trapped",
+      "german": "eingeschlossen sein; in der Falle sitzen",
+      "phonetic": "bi ˈtræpt",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Story: I don't believe in ghosts!",
+      "page": 198,
+      "source": {
+        "page": 198,
+        "half": "L",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "The river was behind us, the alligator in front - we were trapped!"
+    },
+    {
+      "id": "g7-u2-0091",
+      "english": "to give up",
+      "german": "aufgeben",
+      "phonetic": "ˌɡɪv ˈʌp",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Story: I don't believe in ghosts!",
+      "page": 198,
+      "source": {
+        "page": 198,
+        "half": "L",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "I can't play this game. I give up."
+    },
+    {
+      "id": "g7-u2-0092",
+      "english": "prince",
+      "german": "Prinz",
+      "phonetic": "prɪns",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Story: I don't believe in ghosts!",
+      "page": 198,
+      "source": {
+        "page": 198,
+        "half": "L",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "The prince will become the new king. prince = a king or queen's son Fr. prince (m); Lat. princeps (m)"
+    },
+    {
+      "id": "g7-u2-0093",
+      "english": "blood",
+      "german": "Blut",
+      "phonetic": "blʌd",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Story: I don't believe in ghosts!",
+      "page": 198,
+      "source": {
+        "page": 198,
+        "half": "L",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "There's blood on your T-shirt. Did you hurt yourself?"
+    },
+    {
+      "id": "g7-u2-0094",
+      "english": "sword",
+      "german": "Schwert",
+      "phonetic": "sɔːd",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Story: I don't believe in ghosts!",
+      "page": 198,
+      "source": {
+        "page": 198,
+        "half": "L",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "Knights often used swords to fight. You don't pronounce the 'w, and sword doesn't rhyme with word'."
+    },
+    {
+      "id": "g7-u2-0095",
+      "english": "alive",
+      "german": "lebend; am Leben; lebendig",
+      "phonetic": "əˈlaɪv",
+      "part_of_speech": "adjective",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Story: I don't believe in ghosts!",
+      "page": 198,
+      "source": {
+        "page": 198,
+        "half": "L",
+        "row": 19
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "!My grandparents are still alive. - not: my-alive-grandparents alive ↔ dead"
+    },
+    {
+      "id": "g7-u2-0096",
+      "english": "grave",
+      "german": "Grab",
+      "phonetic": "ɡreɪv",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Story: I don't believe in ghosts!",
+      "page": 198,
+      "source": {
+        "page": 198,
+        "half": "L",
+        "row": 20
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "Grandma died last year. On Sundays we often visit her grave."
+    },
+    {
+      "id": "g7-u2-0097",
+      "english": "to return",
+      "german": "zurückkehren; zurückfahren",
+      "phonetic": "rɪˈtɜːn",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Story: I don't believe in ghosts!",
+      "page": 198,
+      "source": {
+        "page": 198,
+        "half": "L",
+        "row": 21
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "When I returned from Wales, I told everyone about my trip. to return – to go or come back Fr. retourner"
+    },
+    {
+      "id": "g7-u2-0098",
+      "english": "actor",
+      "german": "Schauspieler/-in",
+      "phonetic": "ˈæktə",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Check-out",
+      "page": 198,
+      "source": {
+        "page": 198,
+        "half": "L",
+        "row": 22
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "I loved the film, especially because of the great actors. !For women you can use 'female actor' or 'actress'. actor → to act Fr. acteur/actrice; Lat. actor (m)"
+    },
+    {
+      "id": "g7-u2-0099",
+      "english": "advert",
+      "german": "Anzeige; Werbespot",
+      "phonetic": "ˈædvɜːt",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Check-out",
+      "page": 198,
+      "source": {
+        "page": 198,
+        "half": "L",
+        "row": 23
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "I saw a really funny advert for dog food on TV yesterday."
+    },
+    {
+      "id": "g7-u2-0100",
+      "english": "director",
+      "german": "Regisseur/-in",
+      "phonetic": "dɪˈrektə; daɪˈrektə",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Check-out",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "When you make a film, the director tells everyone what to do."
+    },
+    {
+      "id": "g7-u2-0101",
+      "english": "human",
+      "german": "Mensch",
+      "phonetic": "ˈhjuːmən",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Check-out",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "Neil Armstrong was the first human on the moon."
+    },
+    {
+      "id": "g7-u2-0102",
+      "english": "to deal (with)",
+      "german": "sich befassen (mit); umgehen (mit)",
+      "phonetic": "diːl",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Factual texts – Introduction",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "The text deals with an interesting topic."
+    },
+    {
+      "id": "g7-u2-0103",
+      "english": "FAQ",
+      "german": "Liste mit häufig gestellten Fragen",
+      "phonetic": "ˌefeɪˈkjuː",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Factual texts – Introduction",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "Please read the FAQ before you write an e-mail."
+    },
+    {
+      "id": "g7-u2-0104",
+      "english": "news report",
+      "german": "Tatsachenbericht; Nachrichtenbeitrag; Meldung",
+      "phonetic": "ˈnjuːz rɪˌpɔːt",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Factual texts – Introduction",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "What did the news report say about the car accident?"
+    },
+    {
+      "id": "g7-u2-0105",
+      "english": "entry",
+      "german": "Eintrag",
+      "phonetic": "ˈentri",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Factual texts – Introduction",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "a diary entry, a dictionary entry"
+    },
+    {
+      "id": "g7-u2-0106",
+      "english": "reference article",
+      "german": "Artikel in einem Nachschlagewerk",
+      "phonetic": "ˈrefrəns ˌɑːtɪkl",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Factual texts – Introduction",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "If you need basic information about something, look for a reference article."
+    },
+    {
+      "id": "g7-u2-0107",
+      "english": "to expect",
+      "german": "erwarten",
+      "phonetic": "ɪkˈspekt",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Factual texts – Introduction",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "I don't expect to meet Lisa today. She's at home sick. What you expect me to do is what you want me to do."
+    },
+    {
+      "id": "g7-u2-0108",
+      "english": "headline",
+      "german": "Schlagzeile",
+      "phonetic": "ˈhedlaɪn",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Factual texts – Introduction",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "I've read the news report because of its interesting headline. headline = the title of a news report"
+    },
+    {
+      "id": "g7-u2-0109",
+      "english": "hedgehog",
+      "german": "Igel",
+      "phonetic": "ˈhedʒhɒɡ",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Factual texts – Introduction",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "I've seen a hedgehog in our garden."
+    },
+    {
+      "id": "g7-u2-0110",
+      "english": "food",
+      "german": "Futter",
+      "phonetic": "fuːd",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Station 1 – What do the instructions say?",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "Hedgehogs eat cat and dog food."
+    },
+    {
+      "id": "g7-u2-0111",
+      "english": "ill",
+      "german": "krank",
+      "phonetic": "ɪl",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Station 1 – What do the instructions say?",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "If you're ill, it's best to go to bed."
+    },
+    {
+      "id": "g7-u2-0112",
+      "english": "wildlife",
+      "german": "Tierwelt (in freier Wildbahn)",
+      "phonetic": "ˈwaɪldlaɪf",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Station 1 – What do the instructions say?",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "I'm very interested in nature and wildlife."
+    },
+    {
+      "id": "g7-u2-0113",
+      "english": "to feed",
+      "german": "füttern; ernähren",
+      "phonetic": "fiːd",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Station 1 – What do the instructions say?",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "Did you feed the dog this morning? People must work to feed their families."
+    },
+    {
+      "id": "g7-u2-0114",
+      "english": "weight",
+      "german": "Gewicht",
+      "phonetic": "weɪt",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Station 1 – What do the instructions say?",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "You should only feed small hedgehogs that don't have enough weight to survive the winter."
+    },
+    {
+      "id": "g7-u2-0115",
+      "english": "to release",
+      "german": "hier: freilassen",
+      "phonetic": "rɪˈliːs",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Station 1 – What do the instructions say?",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "When winter was over, we could release the hedgehog."
+    },
+    {
+      "id": "g7-u2-0116",
+      "english": "to take care of",
+      "german": "sich kümmern um; sorgen für",
+      "phonetic": "ˌteɪk ˈkeər əv",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Station 1 – What do the instructions say?",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "It can be difficult to take care of a wild animal."
+    },
+    {
+      "id": "g7-u2-0117",
+      "english": "to get lost",
+      "german": "verloren gehen; sich verirren",
+      "phonetic": "ˌɡet ˈlɒst",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Station 1 – What do the instructions say?",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "In a big city, it's easy to get lost."
+    },
+    {
+      "id": "g7-u2-0118",
+      "english": "active",
+      "german": "aktiv",
+      "phonetic": "ˈæktɪv",
+      "part_of_speech": "adjective",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Station 1 – What do the instructions say?",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 19
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "Emily is a very active girl. active → activity Fr. actif/-ve; Lat. activus"
+    },
+    {
+      "id": "g7-u2-0119",
+      "english": "to avoid (+ noun or -ing)",
+      "german": "vermeiden; meiden; aus dem Weg gehen",
+      "phonetic": "əˈvɔɪd",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Station 1 – What do the instructions say?",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 20
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "Try to avoid spelling mistakes in yo 三"
+    },
+    {
+      "id": "g7-u2-0120",
+      "english": "run area",
+      "german": "Gehege; Auslauf",
+      "phonetic": "ˈrʌn ˌeəriə",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Station 1 – What do the instructions say?",
+      "page": 199,
+      "source": {
+        "page": 199,
+        "half": "R",
+        "row": 21
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "My rabbits live in a run area in our"
+    },
+    {
+      "id": "g7-u2-0121",
+      "english": "clean",
+      "german": "sauber",
+      "phonetic": "kliːn",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Station 1 – What do the instructions say?",
+      "page": 200,
+      "source": {
+        "page": 200,
+        "half": "L",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "If you clean something, it becomes clean. clean ↔ dirty"
+    },
+    {
+      "id": "g7-u2-0122",
+      "english": "layer (of)",
+      "german": "Schicht (aus); Lage (aus)",
+      "phonetic": "ˈleɪə",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Station 1 – What do the instructions say?",
+      "page": 200,
+      "source": {
+        "page": 200,
+        "half": "L",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "On the floor of the run area is a layer of newspaper."
+    },
+    {
+      "id": "g7-u2-0123",
+      "english": "to soak up",
+      "german": "aufsaugen",
+      "phonetic": "ˌsəʊk ˈʌp",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Station 1 – What do the instructions say?",
+      "page": 200,
+      "source": {
+        "page": 200,
+        "half": "L",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "The layer of newspaper soaks up water."
+    },
+    {
+      "id": "g7-u2-0124",
+      "english": "to weigh",
+      "german": "wiegen",
+      "phonetic": "weɪ",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Station 1 – What do the instructions say?",
+      "page": 200,
+      "source": {
+        "page": 200,
+        "half": "L",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "The hedgehog weighs enough. We can release it. to weigh → weight"
+    },
+    {
+      "id": "g7-u2-0125",
+      "english": "to be fearful of",
+      "german": "Angst haben vor",
+      "phonetic": "bi ˈfɪəfl",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Station 1 – What do the instructions say?",
+      "page": 200,
+      "source": {
+        "page": 200,
+        "half": "L",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "Wild animals are usually fearful of humans. to be fearful → fear"
+    },
+    {
+      "id": "g7-u2-0126",
+      "english": "set of instructions",
+      "german": "Anleitung",
+      "phonetic": "ˌset əv ɪnˈstrʌkʃnz",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Station 1 – What do the instructions say?",
+      "page": 200,
+      "source": {
+        "page": 200,
+        "half": "L",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "Here's a set of instructions that explains how to do this task. a set of instructions = a text that explains how to do sth"
+    },
+    {
+      "id": "g7-u2-0127",
+      "english": "celebrity",
+      "german": "Prominente/-r; berühmte Person",
+      "phonetic": "səˈlebrəti",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Station 2 – Didn't you hear? It was in the news!",
+      "page": 200,
+      "source": {
+        "page": 200,
+        "half": "L",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "Celebrities are famous people you often see on TV or read about in magazines."
+    },
+    {
+      "id": "g7-u2-0128",
+      "english": "Australian",
+      "german": "australisch; Australier/-in",
+      "phonetic": "ɒˈstreɪliən",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Station 2 – Didn't you hear? It was in the news!",
+      "page": 200,
+      "source": {
+        "page": 200,
+        "half": "L",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "I love your Australian accent."
+    },
+    {
+      "id": "g7-u2-0129",
+      "english": "bush",
+      "german": "Busch (Buschlandschaft); Wildnis",
+      "phonetic": "bʊʃ",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Station 2 – Didn't you hear? It was in the news!",
+      "page": 200,
+      "source": {
+        "page": 200,
+        "half": "L",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "Large areas of Australia are bush. Bush is the word you use to describe open country, e. g. in Australia or Africa."
+    },
+    {
+      "id": "g7-u2-0130",
+      "english": "firefighter",
+      "german": "Feuerwehrmann/-frau",
+      "phonetic": "ˈfaɪəˌfaɪtə",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Station 2 – Didn't you hear? It was in the news!",
+      "page": 200,
+      "source": {
+        "page": 200,
+        "half": "L",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "We had to call the firefighters in the middle of the night. firefighter - a person whose job it is to stop fires"
+    },
+    {
+      "id": "g7-u2-0131",
+      "english": "to rescue",
+      "german": "retten",
+      "phonetic": "ˈreskjuː",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Station 2 – Didn't you hear? It was in the news!",
+      "page": 200,
+      "source": {
+        "page": 200,
+        "half": "L",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "The firefighters rescued a young man. to rescue → a rescue"
+    },
+    {
+      "id": "g7-u2-0132",
+      "english": "flame",
+      "german": "Flamme",
+      "phonetic": "fleɪm",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Station 2 – Didn't you hear? It was in the news!",
+      "page": 200,
+      "source": {
+        "page": 200,
+        "half": "L",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "The flames of the fire were very high."
+    },
+    {
+      "id": "g7-u2-0133",
+      "english": "confused",
+      "german": "verwirrt; wirr; konfus",
+      "phonetic": "kənˈfjuːzd",
+      "part_of_speech": "adjective",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Station 2 – Didn't you hear? It was in the news!",
+      "page": 200,
+      "source": {
+        "page": 200,
+        "half": "L",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "What happened? Why is Jay so confused?"
+    },
+    {
+      "id": "g7-u2-0134",
+      "english": "thirsty",
+      "german": "durstig",
+      "phonetic": "ˈθɜːsti",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Station 2 – Didn't you hear? It was in the news!",
+      "page": 200,
+      "source": {
+        "page": 200,
+        "half": "L",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "I'm thirsty. Can I have a glass of water, please?"
+    },
+    {
+      "id": "g7-u2-0135",
+      "english": "animal shelter",
+      "german": "Tierheim",
+      "phonetic": "ˈænɪml ˌʃeltə",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Station 2 – Didn't you hear? It was in the news!",
+      "page": 200,
+      "source": {
+        "page": 200,
+        "half": "L",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "I sometimes walk the dogs from the animal shelter."
+    },
+    {
+      "id": "g7-u2-0136",
+      "english": "elephant",
+      "german": "Elefant",
+      "phonetic": "ˈelɪfənt",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Station 2 – Didn't you hear? It was in the news!",
+      "page": 200,
+      "source": {
+        "page": 200,
+        "half": "L",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "Elephants are very big animals."
+    },
+    {
+      "id": "g7-u2-0137",
+      "english": "to march",
+      "german": "marschieren",
+      "phonetic": "mɑːtʃ",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Station 2 – Didn't you hear? It was in the news!",
+      "page": 200,
+      "source": {
+        "page": 200,
+        "half": "L",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "Over 1,000 people marched through the streets of Bristol. Fr. marcher"
+    },
+    {
+      "id": "g7-u2-0138",
+      "english": "rhino",
+      "german": "Rhinozeros; Nashorn",
+      "phonetic": "ˈraɪnəʊ",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Station 2 – Didn't you hear? It was in the news!",
+      "page": 200,
+      "source": {
+        "page": 200,
+        "half": "L",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "Rhinos live in Africa."
+    },
+    {
+      "id": "g7-u2-0139",
+      "english": "march",
+      "german": "Marsch; Kundgebung",
+      "phonetic": "mɑːtʃ",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Station 2 – Didn't you hear? It was in the news!",
+      "page": 200,
+      "source": {
+        "page": 200,
+        "half": "L",
+        "row": 19
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "Let's join the protest march tomorrow."
+    },
+    {
+      "id": "g7-u2-0140",
+      "english": "tusk",
+      "german": "Stoßzahn",
+      "phonetic": "tʌsk",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Station 2 – Didn't you hear? It was in the news!",
+      "page": 200,
+      "source": {
+        "page": 200,
+        "half": "L",
+        "row": 20
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "People kill elephants for their tusks."
+    },
+    {
+      "id": "g7-u2-0141",
+      "english": "medicine (no pl)",
+      "german": "Medizin; Medikamente",
+      "phonetic": "ˈmedsn",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Station 2 – Didn't you hear? It was in the news!",
+      "page": 200,
+      "source": {
+        "page": 200,
+        "half": "L",
+        "row": 21
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "If you're sick, you should ask the doctor for some medicine. Fr. médecine (f); Lat. medicina (f)"
+    },
+    {
+      "id": "g7-u2-0142",
+      "english": "ivory (no pl)",
+      "german": "Elfenbein",
+      "phonetic": "ˈaɪvri",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Station 2 – Didn't you hear? It was in the news!",
+      "page": 200,
+      "source": {
+        "page": 200,
+        "half": "L",
+        "row": 22
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "Elephant tusks are made of ivory."
+    },
+    {
+      "id": "g7-u2-0143",
+      "english": "poaching (no pl)",
+      "german": "Wilderei",
+      "phonetic": "ˈpəʊtʃɪŋ",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Station 2 – Didn't you hear? It was in the news!",
+      "page": 200,
+      "source": {
+        "page": 200,
+        "half": "L",
+        "row": 23
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "Poaching is illegal."
+    },
+    {
+      "id": "g7-u2-0144",
+      "english": "to become extinct",
+      "german": "aussterben",
+      "phonetic": "bɪˌkʌm ɪkˈstɪŋkt",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Station 2 – Didn't you hear? It was in the news!",
+      "page": 200,
+      "source": {
+        "page": 200,
+        "half": "L",
+        "row": 24
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "There is a danger that rhinos will soon become extinct."
+    },
+    {
+      "id": "g7-u2-0145",
+      "english": "within",
+      "german": "innerhalb",
+      "phonetic": "wɪˈðɪn",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Station 2 – Didn't you hear? It was in the news!",
+      "page": 200,
+      "source": {
+        "page": 200,
+        "half": "L",
+        "row": 25
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "He promised to call within an hour."
+    },
+    {
+      "id": "g7-u2-0146",
+      "english": "violent",
+      "german": "gewaltsam; gewalttätig; brutal",
+      "phonetic": "ˈvaɪələnt",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Station 2 – Didn't you hear? It was in the news!",
+      "page": 201,
+      "source": {
+        "page": 201,
+        "half": "R",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "Violent criminals often carry knives. Fr. violent/-e; Lat. violentus"
+    },
+    {
+      "id": "g7-u2-0147",
+      "english": "protest",
+      "german": "Protest",
+      "phonetic": "ˈprəʊtest",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Station 2 – Didn't you hear? It was in the news!",
+      "page": 201,
+      "source": {
+        "page": 201,
+        "half": "R",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "I joined a protest for animal rights. !Pronunciation Fr. protestation (f)"
+    },
+    {
+      "id": "g7-u2-0148",
+      "english": "in power",
+      "german": "an der Macht",
+      "phonetic": "ɪn ˈpaʊə",
+      "part_of_speech": "phrase",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Station 2 – Didn't you hear? It was in the news!",
+      "page": 201,
+      "source": {
+        "page": 201,
+        "half": "R",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "People in power make important decisions for their country. in power → power → powerful"
+    },
+    {
+      "id": "g7-u2-0149",
+      "english": "on the brink of",
+      "german": "am Rande von; kurz vor",
+      "phonetic": "ˌɒn ðə ˈbrɪŋk əv",
+      "part_of_speech": "phrase",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Station 2 – Didn't you hear? It was in the news!",
+      "page": 201,
+      "source": {
+        "page": 201,
+        "half": "R",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "The country was on the brink of war. on the brink of = close to"
+    },
+    {
+      "id": "g7-u2-0150",
+      "english": "extinction (no pl)",
+      "german": "Aussterben",
+      "phonetic": "ɪkˈstɪŋkʃn",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Text smart 1: Station 2 – Didn't you hear? It was in the news!",
+      "page": 201,
+      "source": {
+        "page": 201,
+        "half": "R",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "A lot of animals are on the brink of extinction. extinction → to become extinct"
+    },
+    {
+      "id": "g7-u2-0151",
+      "english": "small talk",
+      "german": "Smalltalk; Geplauder",
+      "phonetic": "ˈsmɔːl ˌtɔːk",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Across cultures 2: Making small talk",
+      "page": 201,
+      "source": {
+        "page": 201,
+        "half": "R",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "He started the conversation with some small talk."
+    },
+    {
+      "id": "g7-u2-0152",
+      "english": "to get on (the bus)",
+      "german": "einsteigen (in den Bus)",
+      "phonetic": "ˌɡet ˈɒn",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Across cultures 2: Making small talk",
+      "page": 201,
+      "source": {
+        "page": 201,
+        "half": "R",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "When I got on the train, I noticed that my bag was missing."
+    },
+    {
+      "id": "g7-u2-0153",
+      "english": "to keep the ball bouncing",
+      "german": "hier: das Gespräch am Laufen halten",
+      "phonetic": "ˌkiːp ðə ˌbɔːl ˈbaʊnsɪŋ",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Across cultures 2: Making small talk",
+      "page": 201,
+      "source": {
+        "page": 201,
+        "half": "R",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "The conversation was difficult. We couldn't keep the ball bouncing."
+    },
+    {
+      "id": "g7-u2-0154",
+      "english": "next door",
+      "german": "(von) nebenan",
+      "phonetic": "ˌnekst ˈdɔː",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Across cultures 2: Making small talk",
+      "page": 201,
+      "source": {
+        "page": 201,
+        "half": "R",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "Your neighbours live next door."
+    },
+    {
+      "id": "g7-u2-0155",
+      "english": "to bounce",
+      "german": "springen; hüpfen; zurückwerfen",
+      "phonetic": "baʊns",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Across cultures 2: Making small talk",
+      "page": 201,
+      "source": {
+        "page": 201,
+        "half": "R",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "The ball bounced away and broke the window."
+    },
+    {
+      "id": "g7-u2-0156",
+      "english": "to check out",
+      "german": "prüfen; abchecken (ugs.); auschecken",
+      "phonetic": "ˌtʃek ˈaʊt",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Across cultures 2: Making small talk",
+      "page": 201,
+      "source": {
+        "page": 201,
+        "half": "R",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "I've got a great tip: Check out the"
+    },
+    {
+      "id": "g7-u2-0157",
+      "english": "Cheers!",
+      "german": "Danke!",
+      "phonetic": "tʃɪəz",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Across cultures 2: Making small talk",
+      "page": 201,
+      "source": {
+        "page": 201,
+        "half": "R",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "Young people in Britain often say to say \"Thanks!\" today."
+    },
+    {
+      "id": "g7-u2-0158",
+      "english": "to catch",
+      "german": "mitbekommen (ugs.); mitkriegen (ugs.)",
+      "phonetic": "kætʃ",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Across cultures 2: Making small talk",
+      "page": 202,
+      "source": {
+        "page": 202,
+        "half": "L",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "Sorry, I didn't catch that. Could you say it again, please? to catch = to understand"
+    },
+    {
+      "id": "g7-u2-0159",
+      "english": "atmosphere",
+      "german": "Atmosphäre; Stimmung",
+      "phonetic": "ˈætməsfɪə",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Across cultures 2: Making small talk",
+      "page": 202,
+      "source": {
+        "page": 202,
+        "half": "L",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "There was a strange atmosphere in the old house. Fr. atmosphère (f)"
+    },
+    {
+      "id": "g7-u2-0160",
+      "english": "relaxed",
+      "german": "entspannt; locker; gelassen",
+      "phonetic": "rɪˈlækst",
+      "part_of_speech": "adjective",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Across cultures 2: Making small talk",
+      "page": 202,
+      "source": {
+        "page": 202,
+        "half": "L",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "When we came home from our holiday, we were very relaxed."
+    },
+    {
+      "id": "g7-u2-0161",
+      "english": "awkward",
+      "german": "peinlich; ungünstig; ungeschickt; unbeholfen",
+      "phonetic": "ˈɔːkwəd",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Across cultures 2: Making small talk",
+      "page": 202,
+      "source": {
+        "page": 202,
+        "half": "L",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "I just wanted to get away from this awkward situation. awkward = embarrassing"
+    },
+    {
+      "id": "g7-u2-0162",
+      "english": "shy",
+      "german": "schüchtern",
+      "phonetic": "ʃaɪ",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Across cultures 2: Making small talk",
+      "page": 202,
+      "source": {
+        "page": 202,
+        "half": "L",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "Are you shy? - Yes, I am. That's why I don't like parties. shy ↔ brave, confident"
+    },
+    {
+      "id": "g7-u2-0163",
+      "english": "stage direction",
+      "german": "Regieanweisung",
+      "phonetic": "ˈsteɪdʒ dɪˌrekʃn",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Across cultures 2: Making small talk",
+      "page": 202,
+      "source": {
+        "page": 202,
+        "half": "L",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "A stage direction is an instruction in the script that tells the actors what to do."
+    },
+    {
+      "id": "g7-u2-0164",
+      "english": "hint",
+      "german": "Hinweis; Andeutung; Tipp",
+      "phonetic": "hɪnt",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "Let's go to Wales",
+      "section": "Across cultures 2: Making small talk",
+      "page": 202,
+      "source": {
+        "page": 202,
+        "half": "L",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-7",
+        "unit-2"
+      ],
+      "source_note": "Can't you give me just a little hint about my birthday present?"
+    }
+  ]
+}

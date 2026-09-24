@@ -1,0 +1,3049 @@
+{
+  "schema_version": "2.0",
+  "grade": 9,
+  "unit": 3,
+  "title": "The good life?",
+  "entry_count": 131,
+  "entries": [
+    {
+      "id": "g9-u3-0001",
+      "english": "the good life",
+      "german": "das Dolce Vita",
+      "phonetic": "ðə ˈɡʊd ˌlaɪf",
+      "part_of_speech": "phrase",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Check-in",
+      "page": 217,
+      "source": {
+        "page": 217,
+        "half": "R",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "I'm living the good life: I have won lots of money and needn't worry for the rest of my life. I live a good life: I'm a volunteer in an animal rescue centre and happy with my life."
+    },
+    {
+      "id": "g9-u3-0002",
+      "english": "(job) interview",
+      "german": "Vorstellungsgespräch",
+      "phonetic": "ˈdʒɒb ˌɪntəvjuː",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Check-in",
+      "page": 217,
+      "source": {
+        "page": 217,
+        "half": "R",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "I've been invited for a job interview on Thursday. How can I prepare?"
+    },
+    {
+      "id": "g9-u3-0003",
+      "english": "fulfilling",
+      "german": "erfüllend; befriedigend",
+      "phonetic": "fʊlˈfɪlɪŋ",
+      "part_of_speech": "adjective",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Check-in",
+      "page": 217,
+      "source": {
+        "page": 217,
+        "half": "R",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "!Be careful with the spelling: full + fill - fulfilling"
+    },
+    {
+      "id": "g9-u3-0004",
+      "english": "materialistic",
+      "german": "materialistisch",
+      "phonetic": "məˌtɪəriəˈlɪstɪk",
+      "part_of_speech": "adjective",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Check-in",
+      "page": 217,
+      "source": {
+        "page": 217,
+        "half": "R",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "I don't own many things.I guess I'm not very materialistic. materialistic → material Fr. matérialiste"
+    },
+    {
+      "id": "g9-u3-0005",
+      "english": "adventurous",
+      "german": "abenteuerlich; unternehmungslustig; wagemutig; experimentierfreudig",
+      "phonetic": "ədˈventʃərəs",
+      "part_of_speech": "adjective",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Check-in",
+      "page": 217,
+      "source": {
+        "page": 217,
+        "half": "R",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "My older sister has an adventurous lifestyle: She flies all over the world for her job. adventurous → adventure Fr. aventureux/-euse"
+    },
+    {
+      "id": "g9-u3-0006",
+      "english": "payment",
+      "german": "Bezahlung; Lohn; Zahlung",
+      "phonetic": "ˈpeɪmənt",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Check-in",
+      "page": 217,
+      "source": {
+        "page": 217,
+        "half": "R",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "1. Payment is one of the aspects that made me choose this career. 2. I've made the payment online just now. payment→ to pay Fr. paiement (nt), paie (f)"
+    },
+    {
+      "id": "g9-u3-0007",
+      "english": "recognition",
+      "german": "Anerkennung; Erkennung",
+      "phonetic": "ˌrekəɡˈnɪʃn",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Check-in",
+      "page": 217,
+      "source": {
+        "page": 217,
+        "half": "R",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "As a doctor I get a lot of recognition in my job. recognition → to recognize Fr. reconnaissance (f)"
+    },
+    {
+      "id": "g9-u3-0008",
+      "english": "professional",
+      "german": "Berufs-",
+      "phonetic": "prəˈfeʃnl",
+      "part_of_speech": "adjective",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Check-in",
+      "page": 217,
+      "source": {
+        "page": 217,
+        "half": "R",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "A professional actor does acting as a job. Fr. professionnel/-le"
+    },
+    {
+      "id": "g9-u3-0009",
+      "english": "personnel services (pl)",
+      "german": "Personaldienstleistungen",
+      "phonetic": "ˌpɜːsəˈnel ˌsɜːvɪsɪz",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Check-in",
+      "page": 217,
+      "source": {
+        "page": 217,
+        "half": "R",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "Private personnel services are looking for workers all the time. Fr. personnel (m)"
+    },
+    {
+      "id": "g9-u3-0010",
+      "english": "social care",
+      "german": "Sozialfürsorge; Sozialdienstleistungen",
+      "phonetic": "ˌsəʊʃl ˈkeə",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Check-in",
+      "page": 217,
+      "source": {
+        "page": 217,
+        "half": "R",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "After school I'm going to work in social care because I like helping people."
+    },
+    {
+      "id": "g9-u3-0011",
+      "english": "freelance",
+      "german": "freiberuflich",
+      "phonetic": "ˈfriːlɑːns",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Check-in",
+      "page": 217,
+      "source": {
+        "page": 217,
+        "half": "R",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "He's his own boss - he works as a freelance journalist."
+    },
+    {
+      "id": "g9-u3-0012",
+      "english": "construction",
+      "german": "Bau; Baugewerbe",
+      "phonetic": "kənˈstrʌkʃn",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Check-in",
+      "page": 217,
+      "source": {
+        "page": 217,
+        "half": "R",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "My parents both work in construction: my dad is an engineer, my mum is an architect. Fr. construction (f); Lat. constructio (f)"
+    },
+    {
+      "id": "g9-u3-0013",
+      "english": "public administration (no pl)",
+      "german": "öffentliche Verwaltung",
+      "phonetic": "ˌpʌblɪk ədˌmɪnɪˈstreɪʃn",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Check-in",
+      "page": 217,
+      "source": {
+        "page": 217,
+        "half": "R",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "The police is part of public administration. Fr. administration publique (f); Lat. administratio (f)"
+    },
+    {
+      "id": "g9-u3-0014",
+      "english": "hospitality",
+      "german": "Gastfreundschaft",
+      "phonetic": "ˌhɒspɪˈtæləti",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Check-in",
+      "page": 217,
+      "source": {
+        "page": 217,
+        "half": "R",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "The local people are famous for their warm hospitality. Fr. hospitalité (f); Lat. hospitalis"
+    },
+    {
+      "id": "g9-u3-0015",
+      "english": "logistics (pl)",
+      "german": "Logistik",
+      "phonetic": "ləˈdʒɪstɪks",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Check-in",
+      "page": 217,
+      "source": {
+        "page": 217,
+        "half": "R",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "There are several people who are oreanising the lbogistics for the party, like setting up tables, bu Fr. logistique (f)"
+    },
+    {
+      "id": "g9-u3-0016",
+      "english": "warehousing",
+      "german": "Lagerhaltung",
+      "phonetic": "ˈweəhaʊzɪŋ",
+      "part_of_speech": "adjective",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Check-in",
+      "page": 217,
+      "source": {
+        "page": 217,
+        "half": "R",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "We sell equipment for large ships"
+    },
+    {
+      "id": "g9-u3-0017",
+      "english": "insurance",
+      "german": "Versicherung",
+      "phonetic": "ɪnˈʃʊərəns",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Check-in",
+      "page": 218,
+      "source": {
+        "page": 218,
+        "half": "L",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "My dad works at an insurance company. insurance → sure Fr. assurance (f)"
+    },
+    {
+      "id": "g9-u3-0018",
+      "english": "real estate",
+      "german": "Grundbesitz; Immobilien",
+      "phonetic": "ˈrɪəl ɪˌsteɪt",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Check-in",
+      "page": 218,
+      "source": {
+        "page": 218,
+        "half": "L",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "Did you know that there are real estate companies that sell only castles?"
+    },
+    {
+      "id": "g9-u3-0019",
+      "english": "recreation",
+      "german": "Freizeitbeschäftigung; Erholung",
+      "phonetic": "ˌrekriˈeɪʃn",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Check-in",
+      "page": 218,
+      "source": {
+        "page": 218,
+        "half": "L",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "What kind of recreation do you prefer? Are you into outdoor or indoor activities? Fr. récréation (f)"
+    },
+    {
+      "id": "g9-u3-0020",
+      "english": "fishery",
+      "german": "Fischfang; Fischerei",
+      "phonetic": "ˈfɪʃəri",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Check-in",
+      "page": 218,
+      "source": {
+        "page": 218,
+        "half": "L",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "Fishery is a big industry in Alaska. fis hery → fish"
+    },
+    {
+      "id": "g9-u3-0021",
+      "english": "counsellor",
+      "german": "Betreuer/-in; Berater/-in",
+      "phonetic": "ˈkaʊnsələ",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 1 · Best summer ever!",
+      "page": 218,
+      "source": {
+        "page": 218,
+        "half": "L",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "Camp counsellors are the people who work with the children at summer camps. !Be careful with the spelling. Fr. conseiller/-ère; Lat. consiliarius/-atrix"
+    },
+    {
+      "id": "g9-u3-0022",
+      "english": "senior",
+      "german": "leitend; älter",
+      "phonetic": "ˈsiːniə",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 1 · Best summer ever!",
+      "page": 218,
+      "source": {
+        "page": 218,
+        "half": "L",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "This is Mr Grand, one of the senior managers of our company. senior ↔ assistant Lat. senex, senior"
+    },
+    {
+      "id": "g9-u3-0023",
+      "english": "no matter",
+      "german": "egal; ganz gleich",
+      "phonetic": "ˌnəʊ ˈmætə",
+      "part_of_speech": "phrase",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 1 · Best summer ever!",
+      "page": 218,
+      "source": {
+        "page": 218,
+        "half": "L",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "No matter what the problem is, just call if you need my help!"
+    },
+    {
+      "id": "g9-u3-0024",
+      "english": "testimonial",
+      "german": "Erfahrungsbericht",
+      "phonetic": "ˌtestɪˈməʊniəl",
+      "part_of_speech": "adjective",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 1 · Best summer ever!",
+      "page": 218,
+      "source": {
+        "page": 218,
+        "half": "L",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "A product review is a testimonial about the product. Fr. témoignage (m); Lat. testimonium (nt)"
+    },
+    {
+      "id": "g9-u3-0025",
+      "english": "outgoing",
+      "german": "kontaktfreudig",
+      "phonetic": "ˌaʊtˈɡəʊɪŋ",
+      "part_of_speech": "adjective",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 1 · Best summer ever!",
+      "page": 218,
+      "source": {
+        "page": 218,
+        "half": "L",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "She's very outgoing. It's easy for her to make new friends. outgoing ↔ shy"
+    },
+    {
+      "id": "g9-u3-0026",
+      "english": "qualification",
+      "german": "Qualifikation; Befähigung: Abschluss; Schulabschluss",
+      "phonetic": "ˌkwɒlɪfɪˈkeɪʃn",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 1 · Best summer ever!",
+      "page": 218,
+      "source": {
+        "page": 218,
+        "half": "L",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "What qualifications do you need for this job? Fr. qualification (f)"
+    },
+    {
+      "id": "g9-u3-0027",
+      "english": "applicant",
+      "german": "Bewerber/-in",
+      "phonetic": "ˈæplɪkənt",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 1 · Best summer ever!",
+      "page": 218,
+      "source": {
+        "page": 218,
+        "half": "L",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "In a letter of application, the applicant applies for a job. applicant → to apply, application"
+    },
+    {
+      "id": "g9-u3-0028",
+      "english": "all-rounder",
+      "german": "Allrounder; Alleskönner/-in; Multitalent",
+      "phonetic": "ˌɔːlˈraʊndə",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 1 · Best summer ever!",
+      "page": 218,
+      "source": {
+        "page": 218,
+        "half": "L",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "An all-rounder doesn't focus on just one special talent."
+    },
+    {
+      "id": "g9-u3-0029",
+      "english": "to reveal",
+      "german": "offenbaren; aufdecken",
+      "phonetic": "rɪˈviːl",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 1 · Best summer ever!",
+      "page": 218,
+      "source": {
+        "page": 218,
+        "half": "L",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "The journalist didn't reveal his source. to reveal - to make sth known, to show"
+    },
+    {
+      "id": "g9-u3-0030",
+      "english": "gender stereotyping",
+      "german": "Einordnung nach Geschlechterklischees",
+      "phonetic": "ˈdʒendə ˌsteriəʊtaɪpɪŋ",
+      "part_of_speech": "adjective",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 1 · Best summer ever!",
+      "page": 218,
+      "source": {
+        "page": 218,
+        "half": "L",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "It's gender stereotyping to expect all women to be good in the kitchen and all men to love fast cars."
+    },
+    {
+      "id": "g9-u3-0031",
+      "english": "to conduct",
+      "german": "durchführen; ausführen",
+      "phonetic": "kənˈdʌkt",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 1 · Best summer ever!",
+      "page": 218,
+      "source": {
+        "page": 218,
+        "half": "L",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "Reporters conduct lots of interviews."
+    },
+    {
+      "id": "g9-u3-0032",
+      "english": "male",
+      "german": "männlich",
+      "phonetic": "meɪl",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 1 · Best summer ever!",
+      "page": 218,
+      "source": {
+        "page": 218,
+        "half": "L",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "Is there an English word for a male pig? - Boar. male ↔ female Fr. mâle, masculin/-e; Lat. masculus"
+    },
+    {
+      "id": "g9-u3-0033",
+      "english": "profession",
+      "german": "Beruf",
+      "phonetic": "prəˈfeʃn",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 1 · Best summer ever!",
+      "page": 218,
+      "source": {
+        "page": 218,
+        "half": "L",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "My profession is teaching. profession → professional Fr. profession (f)"
+    },
+    {
+      "id": "g9-u3-0034",
+      "english": "head teacher",
+      "german": "Schulleiter/-in",
+      "phonetic": "ˌhed ˈtiːtʃə",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 1 · Best summer ever!",
+      "page": 218,
+      "source": {
+        "page": 218,
+        "half": "L",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "head teacher - the boss of all the teachers at a school"
+    },
+    {
+      "id": "g9-u3-0035",
+      "english": "ambition",
+      "german": "Ehrgeiz; Ambitionen",
+      "phonetic": "æmˈbɪʃn",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 1 · Best summer ever!",
+      "page": 218,
+      "source": {
+        "page": 218,
+        "half": "L",
+        "row": 19
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "She has ambitions to become a doctor. ambition → ambitious Fr. ambition (f); Lat. ambitio, ambitionis (f)"
+    },
+    {
+      "id": "g9-u3-0036",
+      "english": "(business) executive",
+      "german": "Geschäftsführer/-in; Manager/in; gehobene Führungskraft",
+      "phonetic": "ˈbɪznɪs ɪɡˌzekjətɪv",
+      "part_of_speech": "adjective",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 1 · Best summer ever!",
+      "page": 219,
+      "source": {
+        "page": 219,
+        "half": "R",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "The executives all have their offices on the top floor of our building."
+    },
+    {
+      "id": "g9-u3-0037",
+      "english": "sales",
+      "german": "Vertrieb; Verkauf",
+      "phonetic": "seɪlz",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 1 · Best summer ever!",
+      "page": 219,
+      "source": {
+        "page": 219,
+        "half": "R",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "Working in sales is not for me. I prefer scientific work. sales → to sell"
+    },
+    {
+      "id": "g9-u3-0038",
+      "english": "to meet sb's expectations",
+      "german": "jmds. Erwartungen erfüllen",
+      "phonetic": "ˌmiːt sʌmbədiz ˌekspekˈteɪʃnz",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 1 · Best summer ever!",
+      "page": 219,
+      "source": {
+        "page": 219,
+        "half": "R",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "The concert wasn't as good as I thought it would be. It really didn't meet my expectations."
+    },
+    {
+      "id": "g9-u3-0039",
+      "english": "comprehensive school",
+      "german": "Gesamtschule",
+      "phonetic": "ˌkɒmprɪˈhensɪv ˌskuːl",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 1 · Best summer ever!",
+      "page": 219,
+      "source": {
+        "page": 219,
+        "half": "R",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "I had a comprehensive school education."
+    },
+    {
+      "id": "g9-u3-0040",
+      "english": "GCSE (= General Certificate of Secondary Education)",
+      "german": "allg. Abschluss der weiterführenden Schulen in GB",
+      "phonetic": "ˌdʒiːsiːesˈiː; ˌdʒenrl səˌtɪfɪkət əv ˌsekəndri ˌedʒuˈkeɪʃn",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 1 · Best summer ever!",
+      "page": 219,
+      "source": {
+        "page": 219,
+        "half": "R",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "Last year the school had record GCSE results from its year 11 students."
+    },
+    {
+      "id": "g9-u3-0041",
+      "english": "hard-working",
+      "german": "fleißig",
+      "phonetic": "ˌhɑːdˈwɜːkɪŋ",
+      "part_of_speech": "adjective",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 1 · Best summer ever!",
+      "page": 219,
+      "source": {
+        "page": 219,
+        "half": "R",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "We are looking for hard-working and motivated volunteers."
+    },
+    {
+      "id": "g9-u3-0042",
+      "english": "people skills (pl)",
+      "german": "soziale Kompetenz",
+      "phonetic": "ˈpiːpl ˌskɪlz",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 1 · Best summer ever!",
+      "page": 219,
+      "source": {
+        "page": 219,
+        "half": "R",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "If you have good people skills, you communicate well and make people feel comfortable."
+    },
+    {
+      "id": "g9-u3-0043",
+      "english": "reference",
+      "german": "Referenz; Referenzschreiben; Bezugnahme; Erwähnung",
+      "phonetic": "ˈrefrəns",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 1 · Best summer ever!",
+      "page": 219,
+      "source": {
+        "page": 219,
+        "half": "R",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "1. As an attachment you will find two references. 2. I am writing to you with reference to your advertisement. reference → to refer to Fr. références (f) (pl)"
+    },
+    {
+      "id": "g9-u3-0044",
+      "english": "request",
+      "german": "Anfrage; Nachfrage",
+      "phonetic": "rɪˈkwest",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 1 · Best summer ever!",
+      "page": 219,
+      "source": {
+        "page": 219,
+        "half": "R",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "I'll send the company more information on request. Fr. requête (f)"
+    },
+    {
+      "id": "g9-u3-0045",
+      "english": "Ms",
+      "german": "Frau (Anrede)",
+      "phonetic": "mɪz",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 1 · Best summer ever!",
+      "page": 219,
+      "source": {
+        "page": 219,
+        "half": "R",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "If you don't know if a woman is married, you use Ms' before her name."
+    },
+    {
+      "id": "g9-u3-0046",
+      "english": "to consider",
+      "german": "berücksichtigen",
+      "phonetic": "kənˈsɪdə",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 1 · Best summer ever!",
+      "page": 219,
+      "source": {
+        "page": 219,
+        "half": "R",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "If you have to take a decision, you should consider the advantages and disadvantages. Fr. considérer; Lat. considerare"
+    },
+    {
+      "id": "g9-u3-0047",
+      "english": "attachment",
+      "german": "Anhang",
+      "phonetic": "əˈtætʃmənt",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 1 · Best summer ever!",
+      "page": 219,
+      "source": {
+        "page": 219,
+        "half": "R",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "Sorry, I forgot to send the attachment with my e-mail this morning. attachment - a document you send with an e-mail Fr. attacher"
+    },
+    {
+      "id": "g9-u3-0048",
+      "english": "enclosure",
+      "german": "Anlage; Beilage",
+      "phonetic": "ɪnˈkləʊʒə",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 1 · Best summer ever!",
+      "page": 219,
+      "source": {
+        "page": 219,
+        "half": "R",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "One of the enclosures is a copy of my report card. enclosure - sth you include with a letter"
+    },
+    {
+      "id": "g9-u3-0049",
+      "english": "furthermore",
+      "german": "überdies; außerdem",
+      "phonetic": "ˌfɜːðəˈmɔː",
+      "part_of_speech": "adverb",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 1 · Best summer ever!",
+      "page": 219,
+      "source": {
+        "page": 219,
+        "half": "R",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "furthermore - a formal word you can use to introduce another argument in a discussion"
+    },
+    {
+      "id": "g9-u3-0050",
+      "english": "work experience",
+      "german": "Praktikum; Schülerpraktikum",
+      "phonetic": "ˈwɜːk ɪkˌspɪəriəns",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 1 · Best summer ever!",
+      "page": 219,
+      "source": {
+        "page": 219,
+        "half": "R",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "Every student has to do work experience."
+    },
+    {
+      "id": "g9-u3-0051",
+      "english": "lifeguard",
+      "german": "Rettungsschwimmer/-in",
+      "phonetic": "ˈlaɪfɡɑːd",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 1 · Best summer ever!",
+      "page": 219,
+      "source": {
+        "page": 219,
+        "half": "R",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "The lifeguard told us to leave the water because there were dangerous currents."
+    },
+    {
+      "id": "g9-u3-0052",
+      "english": "commitment",
+      "german": "Bindung; Verpflichtung; Engagement",
+      "phonetic": "kəˈmɪtmənt",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 1 · Best summer ever!",
+      "page": 219,
+      "source": {
+        "page": 219,
+        "half": "R",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "Showing social commitment helps others, but it's meaningful for your own life as well. commitment - a plan to do sth or to support sb"
+    },
+    {
+      "id": "g9-u3-0053",
+      "english": "to involve",
+      "german": "involvieren; einbeziehen; beteiligen",
+      "phonetic": "ɪnˈvɒlv",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 1 · Best summer ever!",
+      "page": 219,
+      "source": {
+        "page": 219,
+        "half": "R",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "If you involve sb in sth, you include them, e.g. in a situation or activity."
+    },
+    {
+      "id": "g9-u3-0054",
+      "english": "moral",
+      "german": "moralisch",
+      "phonetic": "ˈmɒrəl",
+      "part_of_speech": "adjective",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 1 · Best summer ever!",
+      "page": 219,
+      "source": {
+        "page": 219,
+        "half": "R",
+        "row": 19
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "Fairy tales usually have a moral m Fr. moral/-e; Lat. moralis"
+    },
+    {
+      "id": "g9-u3-0055",
+      "english": "the elderly",
+      "german": "ältere Menschen; Senioren",
+      "phonetic": "ði ˈeldəli",
+      "part_of_speech": "adverb",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 1 · Best summer ever!",
+      "page": 219,
+      "source": {
+        "page": 219,
+        "half": "R",
+        "row": 20
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "the elderly - a more polite word fo"
+    },
+    {
+      "id": "g9-u3-0056",
+      "english": "wisdom (no pl)",
+      "german": "Weisheit; Klugheit",
+      "phonetic": "ˈwɪzdəm",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 2 · I do remember how it feels …",
+      "page": 220,
+      "source": {
+        "page": 220,
+        "half": "L",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "Wisdom comes with age and experience."
+    },
+    {
+      "id": "g9-u3-0057",
+      "english": "carpenter",
+      "german": "Schreiner/-in; Zimmermann; zimmerin",
+      "phonetic": "ˈkɑːpəntə",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 2 · I do remember how it feels …",
+      "page": 220,
+      "source": {
+        "page": 220,
+        "half": "L",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "Being a carpenter is great for me because I'm able to work with my hands. Fr. charpentier/-ière"
+    },
+    {
+      "id": "g9-u3-0058",
+      "english": "not only … but (also)",
+      "german": "nicht nur ... sondern (auch)",
+      "phonetic": "ˌnɒt ˈəʊnli … bət ˈɔːlsəʊ",
+      "part_of_speech": "phrase",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 2 · I do remember how it feels …",
+      "page": 220,
+      "source": {
+        "page": 220,
+        "half": "L",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "Not only did I lose my passport in Australia, but / also lost my phone! Great holiday."
+    },
+    {
+      "id": "g9-u3-0059",
+      "english": "to stack",
+      "german": "stapeln",
+      "phonetic": "stæk",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 2 · I do remember how it feels …",
+      "page": 220,
+      "source": {
+        "page": 220,
+        "half": "L",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "Stacking wood all day isn't my idea of a great job!"
+    },
+    {
+      "id": "g9-u3-0060",
+      "english": "exhausting",
+      "german": "anstrengend",
+      "phonetic": "ɪɡˈzɔːstɪŋ",
+      "part_of_speech": "adjective",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 2 · I do remember how it feels …",
+      "page": 220,
+      "source": {
+        "page": 220,
+        "half": "L",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "Running a marathon is exhausting. exhausting → exhausted"
+    },
+    {
+      "id": "g9-u3-0061",
+      "english": "by",
+      "german": "vorbei",
+      "phonetic": "baɪ",
+      "part_of_speech": "preposition",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 2 · I do remember how it feels …",
+      "page": 220,
+      "source": {
+        "page": 220,
+        "half": "L",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "School days never go by fast enough."
+    },
+    {
+      "id": "g9-u3-0062",
+      "english": "benefit",
+      "german": "Vorteil; Nutzen; Unterstützung",
+      "phonetic": "ˈbenɪfɪt",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 2 · I do remember how it feels …",
+      "page": 220,
+      "source": {
+        "page": 220,
+        "half": "L",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "What's the benefit of a clothing drive? Fr. bénéfice Masc; Lat. beneficium (nt)"
+    },
+    {
+      "id": "g9-u3-0063",
+      "english": "pay",
+      "german": "Lohn; Gehalt",
+      "phonetic": "peɪ",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 2 · I do remember how it feels …",
+      "page": 220,
+      "source": {
+        "page": 220,
+        "half": "L",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "pay - the money a person receives for doing their job pay → to pay Fr. paie (f)"
+    },
+    {
+      "id": "g9-u3-0064",
+      "english": "wage",
+      "german": "Lohn",
+      "phonetic": "weɪdʒ",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 2 · I do remember how it feels …",
+      "page": 220,
+      "source": {
+        "page": 220,
+        "half": "L",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "The government raised the minimum wage. wage = pay"
+    },
+    {
+      "id": "g9-u3-0065",
+      "english": "patient",
+      "german": "geduldig",
+      "phonetic": "ˈpeɪʃnt",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 2 · I do remember how it feels …",
+      "page": 220,
+      "source": {
+        "page": 220,
+        "half": "L",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "Be patient with me, I don't know anything about computers. Fr. patient/-e; Lat. patiens"
+    },
+    {
+      "id": "g9-u3-0066",
+      "english": "incredible",
+      "german": "unglaublich",
+      "phonetic": "ɪnˈkredəbl",
+      "part_of_speech": "adjective",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 2 · I do remember how it feels …",
+      "page": 221,
+      "source": {
+        "page": 221,
+        "half": "R",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "The movie I saw was incredibly bad. incredible - unbelievable Fr. incroyable; Lat. incredibilis"
+    },
+    {
+      "id": "g9-u3-0067",
+      "english": "lazy",
+      "german": "faul",
+      "phonetic": "ˈleɪzi",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 2 · I do remember how it feels …",
+      "page": 221,
+      "source": {
+        "page": 221,
+        "half": "R",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "I had a wonderful lazy weekend. lazy ↔ busy"
+    },
+    {
+      "id": "g9-u3-0068",
+      "english": "leaflet",
+      "german": "Broschüre; Informationsblatt; Prospekt",
+      "phonetic": "ˈliːflət",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 2 · I do remember how it feels …",
+      "page": 221,
+      "source": {
+        "page": 221,
+        "half": "R",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "What information does the leaflet give about jobs in fashion?"
+    },
+    {
+      "id": "g9-u3-0069",
+      "english": "course",
+      "german": "Kurs",
+      "phonetic": "kɔːs",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 2 · I do remember how it feels …",
+      "page": 221,
+      "source": {
+        "page": 221,
+        "half": "R",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "They organise sports courses for school groups. Fr. cours (m)"
+    },
+    {
+      "id": "g9-u3-0070",
+      "english": "investment",
+      "german": "Einlage; Beteiligung; Investition",
+      "phonetic": "ɪnˈvestmənt",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 2 · I do remember how it feels …",
+      "page": 222,
+      "source": {
+        "page": 222,
+        "half": "L",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "She's got a great business idea but needs an investment of £30,000 to get started. Fr. investissement (m)"
+    },
+    {
+      "id": "g9-u3-0071",
+      "english": "toothbrush",
+      "german": "Zahnbürste",
+      "phonetic": "ˈtuːθbrʌʃ",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 2 · I do remember how it feels …",
+      "page": 222,
+      "source": {
+        "page": 222,
+        "half": "L",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "I need a new toothbrush. Mine is too soft."
+    },
+    {
+      "id": "g9-u3-0072",
+      "english": "no sooner",
+      "german": "kaum",
+      "phonetic": "ˌnəʊ ˈsuːnə",
+      "part_of_speech": "phrase",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 2 · I do remember how it feels …",
+      "page": 222,
+      "source": {
+        "page": 222,
+        "half": "L",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "No sooner had I told him about my feelings than the whole school knew! What a friend."
+    },
+    {
+      "id": "g9-u3-0073",
+      "english": "colleague",
+      "german": "Kollege/Kollegin",
+      "phonetic": "ˈkɒliːɡ",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Station 2 · I do remember how it feels …",
+      "page": 222,
+      "source": {
+        "page": 222,
+        "half": "L",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "I share my office with three colleagues. Fr. collègue (m) / (f); Lat. collega (m)"
+    },
+    {
+      "id": "g9-u3-0074",
+      "english": "to buy time",
+      "german": "Zeit gewinnen",
+      "phonetic": "ˌbaɪ ˈtaɪm",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Skills · Making a good impression",
+      "page": 222,
+      "source": {
+        "page": 222,
+        "half": "L",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "In a conversation, you sometimes need to buy time while you think of what to say next."
+    },
+    {
+      "id": "g9-u3-0075",
+      "english": "tricky",
+      "german": "schwierig; kompliziert",
+      "phonetic": "ˈtrɪki",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Skills · Making a good impression",
+      "page": 222,
+      "source": {
+        "page": 222,
+        "half": "L",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "Be prepared for tricky questions at job interviews. tricky → trick"
+    },
+    {
+      "id": "g9-u3-0076",
+      "english": "to regulate",
+      "german": "regeln; regulieren",
+      "phonetic": "ˈreɡjəleɪt",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Story · The Giver",
+      "page": 222,
+      "source": {
+        "page": 222,
+        "half": "L",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "to regulate - to control sth by introducing rules Fr. régler; Lat. regere"
+    },
+    {
+      "id": "g9-u3-0077",
+      "english": "assignment",
+      "german": "Aufgabe; Auftrag; Mission",
+      "phonetic": "əˈsaɪnmənt",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Story · The Giver",
+      "page": 222,
+      "source": {
+        "page": 222,
+        "half": "L",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "Her boss is going to give her a tricky new assignment. assignment - a piece of work that you must do for school or for a job"
+    },
+    {
+      "id": "g9-u3-0078",
+      "english": "destiny",
+      "german": "Schicksal; Fügung; Vorsehung",
+      "phonetic": "ˈdestəni",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Story · The Giver",
+      "page": 222,
+      "source": {
+        "page": 222,
+        "half": "L",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "I think it's my destiny to always be late. Fr. destin (m)"
+    },
+    {
+      "id": "g9-u3-0079",
+      "english": "to assign",
+      "german": "zuordnen; übertragen",
+      "phonetic": "əˈsaɪn",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Story · The Giver",
+      "page": 222,
+      "source": {
+        "page": 222,
+        "half": "L",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "We're going to do group work, but don't divide up into groups yourselves: I'll assign you to your groups. to assign → assignment"
+    },
+    {
+      "id": "g9-u3-0080",
+      "english": "to acknowledge",
+      "german": "anerkennen; einräumen",
+      "phonetic": "əkˈnɒlɪdʒ",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Story · The Giver",
+      "page": 222,
+      "source": {
+        "page": 222,
+        "half": "L",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "We were forced to acknowledge the fact that climate change is a huge problem. to acknowledge - to admit or accept that sth is true or that a situation exists"
+    },
+    {
+      "id": "g9-u3-0081",
+      "english": "to shift",
+      "german": "hin-und herrutschen",
+      "phonetic": "ʃɪft",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Story · The Giver",
+      "page": 222,
+      "source": {
+        "page": 222,
+        "half": "L",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "He shifted in his seat because he didn't feel comfortable."
+    },
+    {
+      "id": "g9-u3-0082",
+      "english": "throughout",
+      "german": "während; überall in",
+      "phonetic": "θruːˈaʊt",
+      "part_of_speech": "preposition",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Story · The Giver",
+      "page": 222,
+      "source": {
+        "page": 222,
+        "half": "L",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "He was playing with his pen throughout the interview. ! Be careful with the spelling."
+    },
+    {
+      "id": "g9-u3-0083",
+      "english": "gentle",
+      "german": "sanft; behutsam",
+      "phonetic": "ˈdʒentl",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Story · The Giver",
+      "page": 222,
+      "source": {
+        "page": 222,
+        "half": "L",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "He stroked his cat gently."
+    },
+    {
+      "id": "g9-u3-0084",
+      "english": "satisfied",
+      "german": "zufrieden; befriedigt",
+      "phonetic": "ˈsætɪsfaɪd",
+      "part_of_speech": "adjective",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Story · The Giver",
+      "page": 222,
+      "source": {
+        "page": 222,
+        "half": "L",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "He just got a text message and now he's got a very satisfied look on his face. Hm ... Fr. satisfait/-e; Lat. satisfacere, satisfactum"
+    },
+    {
+      "id": "g9-u3-0085",
+      "english": "beside",
+      "german": "neben",
+      "phonetic": "bɪˈsaɪd",
+      "part_of_speech": "preposition",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Story · The Giver",
+      "page": 222,
+      "source": {
+        "page": 222,
+        "half": "L",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "Who's the girl beside you in the picture? beside = next to"
+    },
+    {
+      "id": "g9-u3-0086",
+      "english": "particular",
+      "german": "besonders",
+      "phonetic": "pəˈtɪkjələ",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Story · The Giver",
+      "page": 222,
+      "source": {
+        "page": 222,
+        "half": "L",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "Protecting the environment is of particular interest to society, in particular to the young generation. Fr. particulier/-ière"
+    },
+    {
+      "id": "g9-u3-0087",
+      "english": "clumsy",
+      "german": "ungeschickt; unbeholfen",
+      "phonetic": "ˈklʌmzi",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Story · The Giver",
+      "page": 223,
+      "source": {
+        "page": 223,
+        "half": "R",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "After staying in bed for one week with a cold, I felt clumsy when I got up."
+    },
+    {
+      "id": "g9-u3-0088",
+      "english": "to select",
+      "german": "auswählen; aussuchen",
+      "phonetic": "sɪˈlekt",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Story · The Giver",
+      "page": 223,
+      "source": {
+        "page": 223,
+        "half": "R",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "to select - a more formal word for 'to choose' to select → selection Fr. sélectionner; Lat. seligere, selectum"
+    },
+    {
+      "id": "g9-u3-0089",
+      "english": "puzzled",
+      "german": "verwirrt; verdutzt",
+      "phonetic": "ˈpʌzld",
+      "part_of_speech": "adjective",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Story · The Giver",
+      "page": 223,
+      "source": {
+        "page": 223,
+        "half": "R",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "I was so puzzled that I didn't know what to say. puzzled - confused"
+    },
+    {
+      "id": "g9-u3-0090",
+      "english": "firm",
+      "german": "fest",
+      "phonetic": "fɜːm",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Story · The Giver",
+      "page": 223,
+      "source": {
+        "page": 223,
+        "half": "R",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "In a firm voice she said goodbye and left. firm ↔ soft Fr. ferme; Lat. firmus"
+    },
+    {
+      "id": "g9-u3-0091",
+      "english": "pleasure",
+      "german": "Freude; Vergnügen",
+      "phonetic": "ˈpleʒə",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Story · The Giver",
+      "page": 223,
+      "source": {
+        "page": 223,
+        "half": "R",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "It was such a pleasure to meet you. Fr. plaisir (m); Lat. placere"
+    },
+    {
+      "id": "g9-u3-0092",
+      "english": "single",
+      "german": "einzeln; einzig; alleinstehend",
+      "phonetic": "ˈsɪŋɡl",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Story · The Giver",
+      "page": 223,
+      "source": {
+        "page": 223,
+        "half": "R",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "1. a single room - ein Einzelzimmer 2. not a single person - kein einziger Mensch 3. I'm single. - Ich bin alleinstehend."
+    },
+    {
+      "id": "g9-u3-0093",
+      "english": "to govern",
+      "german": "regeln; verwalten",
+      "phonetic": "ˈɡʌvn",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Story · The Giver",
+      "page": 223,
+      "source": {
+        "page": 223,
+        "half": "R",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "This policy governs the use of personal data."
+    },
+    {
+      "id": "g9-u3-0094",
+      "english": "to prohibit (sb from doing)",
+      "german": "jmdm. untersagen (etw. zu tun); jmdm.verbieten (etw. zu tun)",
+      "phonetic": "prəˈhɪbɪt",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Story · The Giver",
+      "page": 223,
+      "source": {
+        "page": 223,
+        "half": "R",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "The students are prohibited from using their mobiles during lessons."
+    },
+    {
+      "id": "g9-u3-0095",
+      "english": "to permit",
+      "german": "erlauben; genehmigen",
+      "phonetic": "pəˈmɪt",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Story · The Giver",
+      "page": 223,
+      "source": {
+        "page": 223,
+        "half": "R",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "If time permits, we could also visit the west of the country. to permit ↔ to prohibit Fr. permettre; Lat. permittere"
+    },
+    {
+      "id": "g9-u3-0096",
+      "english": "session",
+      "german": "Sitzung; Stunde",
+      "phonetic": "ˈseʃn",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Story · The Giver",
+      "page": 223,
+      "source": {
+        "page": 223,
+        "half": "R",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "We shake hands at the beginning of each interview session. Fr. session (f); Lat. sessio (f)"
+    },
+    {
+      "id": "g9-u3-0097",
+      "english": "to shrug (one's shoulders)",
+      "german": "mit den Schultern zucken",
+      "phonetic": "ʃrʌɡ",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Story · The Giver",
+      "page": 223,
+      "source": {
+        "page": 223,
+        "half": "R",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "If you shrug your shoulders, it can mean you don't know about sth, or you aren't interested."
+    },
+    {
+      "id": "g9-u3-0098",
+      "english": "unpredictable",
+      "german": "unvorhersehbar",
+      "phonetic": "ˌʌnprɪˈdɪktəbl",
+      "part_of_speech": "adjective",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Story · The Giver",
+      "page": 223,
+      "source": {
+        "page": 223,
+        "half": "R",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "The results of the elections are unpredictable. unpredictable → to predict Lat. praedicere"
+    },
+    {
+      "id": "g9-u3-0099",
+      "english": "gesture",
+      "german": "Geste; Gebärde",
+      "phonetic": "ˈdʒestʃə",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Story · The Giver",
+      "page": 223,
+      "source": {
+        "page": 223,
+        "half": "R",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "He didn't speak English so he used gestures. Fr. geste (m); Lat. gestus (m)"
+    },
+    {
+      "id": "g9-u3-0100",
+      "english": "ordinary",
+      "german": "gewöhnlich; normal",
+      "phonetic": "ˈɔːdnri",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Story · The Giver",
+      "page": 223,
+      "source": {
+        "page": 223,
+        "half": "R",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "I thought he was just an ordinary boy from school. I had no idea he was a famous actor. !False friend: ordinary ≠ ordinär Fr. ordinaire"
+    },
+    {
+      "id": "g9-u3-0101",
+      "english": "right",
+      "german": "genau; gerade",
+      "phonetic": "raɪt",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Story · The Giver",
+      "page": 223,
+      "source": {
+        "page": 223,
+        "half": "R",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "The baby is right at the age where she is beginning to walk."
+    },
+    {
+      "id": "g9-u3-0102",
+      "english": "mate",
+      "german": "Partner/-in",
+      "phonetic": "meɪt",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Story · The Giver",
+      "page": 223,
+      "source": {
+        "page": 223,
+        "half": "R",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "Penguins choose one mate for life. mate - partner"
+    },
+    {
+      "id": "g9-u3-0103",
+      "english": "dystopia",
+      "german": "Dystopie",
+      "phonetic": "dɪsˈtəʊpiə",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Story · The Giver",
+      "page": 223,
+      "source": {
+        "page": 223,
+        "half": "R",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "Most science-fiction novels create a kind of dystopia to draw attention to dangerous developments. dystopia - any real or imaginary society, place, state, etc., considered to be dangerously imperfect dystopia → dystopian"
+    },
+    {
+      "id": "g9-u3-0104",
+      "english": "utopia",
+      "german": "Utopie",
+      "phonetic": "juːˈtəʊpiə",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Story · The Giver",
+      "page": 223,
+      "source": {
+        "page": 223,
+        "half": "R",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "utopia - any real or imaginary soci considered to be perfect or ideal Fr. utopie (f)"
+    },
+    {
+      "id": "g9-u3-0105",
+      "english": "to spy on",
+      "german": "nachspionieren; bespitzeln",
+      "phonetic": "ˈspaɪ ɒn",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Story · The Giver",
+      "page": 224,
+      "source": {
+        "page": 224,
+        "half": "L",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "Have you been spying on me? to spy on - to watch (sb / sth) secretly"
+    },
+    {
+      "id": "g9-u3-0106",
+      "english": "to programme",
+      "german": "programmieren",
+      "phonetic": "ˈprəʊɡræm",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Story · The Giver",
+      "page": 224,
+      "source": {
+        "page": 224,
+        "half": "L",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "My mother has programmed a new gaming app. Fr. programmer"
+    },
+    {
+      "id": "g9-u3-0107",
+      "english": "to function",
+      "german": "funktionieren",
+      "phonetic": "ˈfʌŋkʃn",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Story · The Giver",
+      "page": 224,
+      "source": {
+        "page": 224,
+        "half": "L",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "My old video games don't function on my new computer. to function - to work Fr. fonctionner"
+    },
+    {
+      "id": "g9-u3-0108",
+      "english": "to teach somebody a lesson",
+      "german": "jmdm.eine Lehre/Lektion erteilen",
+      "phonetic": "ˌtiːtʃ ˌsʌmbədi ə ˈlesn",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Focus 2 · School days",
+      "page": 224,
+      "source": {
+        "page": 224,
+        "half": "L",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "That wasn't a nice thing to do. Let's teach him a lesson."
+    },
+    {
+      "id": "g9-u3-0109",
+      "english": "secondary school",
+      "german": "weiterführende Schule",
+      "phonetic": "ˈsekəndri ˌskuːl",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Focus 2 · School days",
+      "page": 224,
+      "source": {
+        "page": 224,
+        "half": "L",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "A German 'Gymnasium' is a secondary school. Fr. établissement d’enseignement secondaire (m)"
+    },
+    {
+      "id": "g9-u3-0110",
+      "english": "compulsory",
+      "german": "verpflichtend; obligatorisch; vorgeschrieben",
+      "phonetic": "kəmˈpʌlsəri",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Focus 2 · School days",
+      "page": 224,
+      "source": {
+        "page": 224,
+        "half": "L",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "German, Maths and English are compulsory subjects in German schools."
+    },
+    {
+      "id": "g9-u3-0111",
+      "english": "whereas",
+      "german": "während; wohingegen",
+      "phonetic": "weərˈæz",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Focus 2 · School days",
+      "page": 224,
+      "source": {
+        "page": 224,
+        "half": "L",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "Uncle Jake is in the green party whereas the rest of my family are conservatives."
+    },
+    {
+      "id": "g9-u3-0112",
+      "english": "nursery school",
+      "german": "Vorschule; Kindergarten",
+      "phonetic": "ˈnɜːsəri ˌskuːl",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Focus 2 · School days",
+      "page": 224,
+      "source": {
+        "page": 224,
+        "half": "L",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "In Germany children usually start nursery schoo/ at the age of three."
+    },
+    {
+      "id": "g9-u3-0113",
+      "english": "elementary school (AE)",
+      "german": "Grundschule",
+      "phonetic": "ˌelɪˈmentri ˌskuːl",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Focus 2 · School days",
+      "page": 224,
+      "source": {
+        "page": 224,
+        "half": "L",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "elementary school - the first school American children go to elementary school (AE) - primary school (BE)"
+    },
+    {
+      "id": "g9-u3-0114",
+      "english": "form",
+      "german": "Klasse; Jahrgangsstufe",
+      "phonetic": "fɔːm",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Focus 2 · School days",
+      "page": 224,
+      "source": {
+        "page": 224,
+        "half": "L",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "My brother and I go to the same school, but I'm in sixth form and he's is in fourth form. form (BE)- grade (AE)"
+    },
+    {
+      "id": "g9-u3-0115",
+      "english": "to gain",
+      "german": "gewinnen; bekommen",
+      "phonetic": "ɡeɪn",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Focus 2 · School days",
+      "page": 224,
+      "source": {
+        "page": 224,
+        "half": "L",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "The police tried to gain control of the situation. Fr. gagner"
+    },
+    {
+      "id": "g9-u3-0116",
+      "english": "diploma",
+      "german": "Diplom; Urkunde",
+      "phonetic": "dɪˈpləʊmə",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Focus 2 · School days",
+      "page": 224,
+      "source": {
+        "page": 224,
+        "half": "L",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "If you pass exams, you usually get a diploma. Fr. diplôme (m)"
+    },
+    {
+      "id": "g9-u3-0117",
+      "english": "vocational school",
+      "german": "Berufsschule",
+      "phonetic": "vəˈkeɪʃnl ˌskuːl",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Focus 2 · School days",
+      "page": 225,
+      "source": {
+        "page": 225,
+        "half": "R",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "After secondary school you can either go to university or to a vocational school."
+    },
+    {
+      "id": "g9-u3-0118",
+      "english": "boarding school",
+      "german": "Internat",
+      "phonetic": "ˈbɔːdɪŋ ˌskuːl",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Focus 2 · School days",
+      "page": 225,
+      "source": {
+        "page": 225,
+        "half": "R",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "At a boarding school, you eat and sleep at school. You only go home for the weekend or the holidays."
+    },
+    {
+      "id": "g9-u3-0119",
+      "english": "assembly",
+      "german": "Morgenappell",
+      "phonetic": "əˈsembli",
+      "part_of_speech": "adverb",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Focus 2 · School days",
+      "page": 225,
+      "source": {
+        "page": 225,
+        "half": "R",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "At British and American schools all the students meet at assembly before the first lesson. Fr. assemblée (f)"
+    },
+    {
+      "id": "g9-u3-0120",
+      "english": "mark (BE)",
+      "german": "Note",
+      "phonetic": "mɑːk",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Focus 2 · School days",
+      "page": 225,
+      "source": {
+        "page": 225,
+        "half": "R",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "What was your worst mark in English? mark (BE) - grade (AE)"
+    },
+    {
+      "id": "g9-u3-0121",
+      "english": "coeducation (no pl)",
+      "german": "Koedukation (gemeinsames Lehren von Jungen und Mädchen)",
+      "phonetic": "ˌkəʊedʒuˈkeɪʃn",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Focus 2 · School days",
+      "page": 225,
+      "source": {
+        "page": 225,
+        "half": "R",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "There are schools that don't have coeducation. They only teach boys or girls, not both."
+    },
+    {
+      "id": "g9-u3-0122",
+      "english": "groan",
+      "german": "Stöhnen",
+      "phonetic": "ɡrəʊn",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Focus 2 · School days",
+      "page": 225,
+      "source": {
+        "page": 225,
+        "half": "R",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "o n u e no sos t os o, groan disappointed"
+    },
+    {
+      "id": "g9-u3-0123",
+      "english": "to turn",
+      "german": "werden",
+      "phonetic": "tɜːn",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Focus 2 · School days",
+      "page": 225,
+      "source": {
+        "page": 225,
+        "half": "R",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "My brother will turn 18 next week, so we are going to have a big party at home."
+    },
+    {
+      "id": "g9-u3-0124",
+      "english": "pleased",
+      "german": "erfreut; zufrieden",
+      "phonetic": "pliːzd",
+      "part_of_speech": "adjective",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Focus 2 · School days",
+      "page": 225,
+      "source": {
+        "page": 225,
+        "half": "R",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "She was pleased to hear that her letter had arrived. pleased – happy, glad pleased → pleasure"
+    },
+    {
+      "id": "g9-u3-0125",
+      "english": "catastrophe",
+      "german": "Katastrophe",
+      "phonetic": "kəˈtæstrəfi",
+      "part_of_speech": "noun",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Focus 2 · School days",
+      "page": 225,
+      "source": {
+        "page": 225,
+        "half": "R",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "Every time I read the newspaper, it seems to be full of articles about catastrophes. catastrophe = disaster Fr. catastrophe (f)"
+    },
+    {
+      "id": "g9-u3-0126",
+      "english": "meanwhile",
+      "german": "unterdessen; inzwischen",
+      "phonetic": "ˌmiːnˈwaɪl",
+      "part_of_speech": "adverb",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Focus 2 · School days",
+      "page": 225,
+      "source": {
+        "page": 225,
+        "half": "R",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "meanwhile - at the same time"
+    },
+    {
+      "id": "g9-u3-0127",
+      "english": "weekly",
+      "german": "wöchentlich",
+      "phonetic": "ˈwiːkli",
+      "part_of_speech": "adverb",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Focus 2 · School days",
+      "page": 225,
+      "source": {
+        "page": 225,
+        "half": "R",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "Do you clean your room daily, weekly or monthly? weekly →week"
+    },
+    {
+      "id": "g9-u3-0128",
+      "english": "to poison",
+      "german": "vergiften",
+      "phonetic": "ˈpɔɪzn",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Focus 2 · School days",
+      "page": 225,
+      "source": {
+        "page": 225,
+        "half": "R",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "The police say that more women than men kill by poisoning. Fr. empoisonner"
+    },
+    {
+      "id": "g9-u3-0129",
+      "english": "to mill around",
+      "german": "umherlaufen",
+      "phonetic": "ˌmɪl əˈraʊnd",
+      "part_of_speech": "verb",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Focus 2 · School days",
+      "page": 225,
+      "source": {
+        "page": 225,
+        "half": "R",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3",
+        "difficult"
+      ],
+      "source_note": "At the festival a big crowd was milling around the food stalls."
+    },
+    {
+      "id": "g9-u3-0130",
+      "english": "on tiptoe",
+      "german": "auf Zehenspitzen",
+      "phonetic": "ɒn ˈtɪptəʊ",
+      "part_of_speech": "phrase",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Focus 2 · School days",
+      "page": 225,
+      "source": {
+        "page": 225,
+        "half": "R",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "Shhh, you must walk on tiptoe. We mustn't make any noise! on tiptoe → toe"
+    },
+    {
+      "id": "g9-u3-0131",
+      "english": "aloud",
+      "german": "laut",
+      "phonetic": "əˈlaʊd",
+      "part_of_speech": "adverb",
+      "unit": 3,
+      "unit_title": "The good life?",
+      "section": "Focus 2 · School days",
+      "page": 225,
+      "source": {
+        "page": 225,
+        "half": "R",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-3"
+      ],
+      "source_note": "Some people only sing aloud in the shower."
+    }
+  ]
+}

@@ -1,1 +1,1402 @@
-{"schema_version":"1.0","subject":"English","grade":9,"title":"Supplementary vocabulary","import_status":"full_import","entry_count":24,"sections":["Across cultures 1 The world speaks English"],"audit":{"source_format":"screenshots","binary_in_repo":false,"examples_in_repo":false},"parts":["supplements-part-1.json"],"storage":"compact-array-v1"}
+{
+  "schema_version": "2.0",
+  "grade": 9,
+  "unit": null,
+  "title": "Across cultures 1 · The world speaks English",
+  "entry_count": 60,
+  "entries": [
+    {
+      "id": "g9-u0-0001",
+      "english": "segregation",
+      "german": "Segregation; Trennung; Rassentrennung",
+      "phonetic": "ˌseɡrɪˈɡeɪʃn",
+      "part_of_speech": "noun",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "Apartheid meant racial segregation. Fr. ségrégation (f); Lat. segregare"
+    },
+    {
+      "id": "g9-u0-0002",
+      "english": "apartheid",
+      "german": "Apartheid",
+      "phonetic": "əˈpɑːtaɪt",
+      "part_of_speech": "noun",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "The South African apartheid system ended in 1994."
+    },
+    {
+      "id": "g9-u0-0003",
+      "english": "racism",
+      "german": "Rassismus",
+      "phonetic": "ˈreɪsɪzm",
+      "part_of_speech": "noun",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "Apartheid was based on racism. racism → racist Fr. racisme (m)"
+    },
+    {
+      "id": "g9-u0-0004",
+      "english": "forward",
+      "german": "vorwärts",
+      "phonetic": "ˈfɔːwəd",
+      "part_of_speech": "noun",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "Don't turn around. Move forward. forward ↔ backward"
+    },
+    {
+      "id": "g9-u0-0005",
+      "english": "icon",
+      "german": "Ikone; Symbol",
+      "phonetic": "ˈaɪkɒn",
+      "part_of_speech": "noun",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "Nelson Mandela was an icon for the black population."
+    },
+    {
+      "id": "g9-u0-0006",
+      "english": "civil rights (pl)",
+      "german": "Bürgerrechte",
+      "phonetic": "ˌsɪvl ˈraɪts",
+      "part_of_speech": "noun",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "Nelson Mandela was South Africa's most important civil rights leader."
+    },
+    {
+      "id": "g9-u0-0007",
+      "english": "election",
+      "german": "Wahl",
+      "phonetic": "ɪˈlekʃn",
+      "part_of_speech": "noun",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "The first free elections in South Africa were in 1994. Fr. élection (f); Lat. eligere, electum"
+    },
+    {
+      "id": "g9-u0-0008",
+      "english": "back",
+      "german": "damals",
+      "phonetic": "bæk",
+      "part_of_speech": "noun",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "Back in 1994, South Africa became a free country."
+    },
+    {
+      "id": "g9-u0-0009",
+      "english": "ancient",
+      "german": "alt; altertümlich; antik",
+      "phonetic": "ˈeɪnʃnt",
+      "part_of_speech": "noun",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "ancient - very, very old Fr. ancien/-ne"
+    },
+    {
+      "id": "g9-u0-0010",
+      "english": "Hindu",
+      "german": "Hindu; hinduistisch",
+      "phonetic": "ˈhɪnduː",
+      "part_of_speech": "noun",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "Most of the Indian population practise the Hindu religion."
+    },
+    {
+      "id": "g9-u0-0011",
+      "english": "Buddhist",
+      "german": "Buddhist/-in; buddhistisch",
+      "phonetic": "ˈbʊdɪst",
+      "part_of_speech": "noun",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "Buddhists believe in the words of Buddha."
+    },
+    {
+      "id": "g9-u0-0012",
+      "english": "romantic",
+      "german": "romantisch",
+      "phonetic": "rəˈmæntɪk",
+      "part_of_speech": "adjective",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "If I ever marry, I don't want any of that romantic stuff."
+    },
+    {
+      "id": "g9-u0-0013",
+      "english": "discrimination",
+      "german": "Diskriminierung",
+      "phonetic": "dɪˌskrɪmɪˈneɪʃn",
+      "part_of_speech": "noun",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "We must stop discrimination against women."
+    },
+    {
+      "id": "g9-u0-0014",
+      "english": "widespread",
+      "german": "weit verbreitet",
+      "phonetic": "ˈwaɪdspred",
+      "part_of_speech": "noun",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "Discrimination against all kinds of people is widespread."
+    },
+    {
+      "id": "g9-u0-0015",
+      "english": "sexual",
+      "german": "sexuell",
+      "phonetic": "ˈsekʃuəl",
+      "part_of_speech": "adjective",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "As teenagers we usually find out about our sexual orientation."
+    },
+    {
+      "id": "g9-u0-0016",
+      "english": "harassment",
+      "german": "Belästigung; Schikane",
+      "phonetic": "həˈræsmənt",
+      "part_of_speech": "noun",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "In India, sexual harassment is a big problem."
+    },
+    {
+      "id": "g9-u0-0017",
+      "english": "democratic",
+      "german": "demokratisch",
+      "phonetic": "ˌdeməˈkrætɪk",
+      "part_of_speech": "adjective",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "In democratic systems all people have the same rights. democratic → democracy"
+    },
+    {
+      "id": "g9-u0-0018",
+      "english": "cliché",
+      "german": "Klischee",
+      "phonetic": "ˈkliːʃeɪ",
+      "part_of_speech": "noun",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "It's a cliché that all black people can dance. Fr. cliché (m)"
+    },
+    {
+      "id": "g9-u0-0019",
+      "english": "intense",
+      "german": "intensiv; heftig",
+      "phonetic": "ɪnˈtens",
+      "part_of_speech": "noun",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 19
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "Love is an intense feeling. Fr. intense"
+    },
+    {
+      "id": "g9-u0-0020",
+      "english": "I can't help (+ -ing)",
+      "german": "Ich kann nicht anders (als zu)",
+      "phonetic": "aɪ ˌkɑːnt ˈhelp",
+      "part_of_speech": "noun",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 20
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "I couldn't help laughing about the story, it was so funny."
+    },
+    {
+      "id": "g9-u0-0021",
+      "english": "bright",
+      "german": "hell; leuchtend; strahlend",
+      "phonetic": "braɪt",
+      "part_of_speech": "noun",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 21
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "In the summer, the sun is very bright."
+    },
+    {
+      "id": "g9-u0-0022",
+      "english": "chaotic",
+      "german": "chaotisch",
+      "phonetic": "keɪˈɒtɪk",
+      "part_of_speech": "adjective",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 22
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "For Europeans, India often feels chaotic. chaotic → chaos"
+    },
+    {
+      "id": "g9-u0-0023",
+      "english": "Aussie (coll)",
+      "german": "Australier/-in; australisch (ugs.)",
+      "phonetic": "ˈɒzi",
+      "part_of_speech": "noun",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 23
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "Aussie - Australian"
+    },
+    {
+      "id": "g9-u0-0024",
+      "english": "surf instructor",
+      "german": "Surflehrer/-in",
+      "phonetic": "ˌsɜːf ɪnˈstrʌktə",
+      "part_of_speech": "noun",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 183,
+      "source": {
+        "page": 183,
+        "half": "R",
+        "row": 24
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "A surf instructor shows you how to surf. Lat. instructor (m)"
+    },
+    {
+      "id": "g9-u0-0025",
+      "english": "to envy",
+      "german": "beneiden",
+      "phonetic": "ˈenvi",
+      "part_of_speech": "verb",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 184,
+      "source": {
+        "page": 184,
+        "half": "L",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary",
+        "difficult"
+      ],
+      "source_note": "Paul envied his brother. He wanted to be as successful as he was, but he simply wasn't good enough. Fr. envier"
+    },
+    {
+      "id": "g9-u0-0026",
+      "english": "to be stuck",
+      "german": "festsitzen; feststecken; häng bleiben",
+      "phonetic": "bi ˈstʌk",
+      "part_of_speech": "verb",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 184,
+      "source": {
+        "page": 184,
+        "half": "L",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary",
+        "difficult"
+      ],
+      "source_note": "If you're stuck in a place, you can't get out. en"
+    },
+    {
+      "id": "g9-u0-0027",
+      "english": "to apply (to)",
+      "german": "gelten (für); zutreffen (auf)",
+      "phonetic": "əˈplaɪ tə",
+      "part_of_speech": "verb",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 184,
+      "source": {
+        "page": 184,
+        "half": "L",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary",
+        "difficult"
+      ],
+      "source_note": "This system of working applies to other tasks or situations too. Fr. appliquer"
+    },
+    {
+      "id": "g9-u0-0028",
+      "english": "Aboriginal",
+      "german": "von australischen Ureinwohnern abstammend; Ureirwohner/-in Australiens",
+      "phonetic": "ˌæbəˈrɪdʒnl",
+      "part_of_speech": "adjective",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 184,
+      "source": {
+        "page": 184,
+        "half": "L",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "Aborigina/ culture follows an old tradition."
+    },
+    {
+      "id": "g9-u0-0029",
+      "english": "resident",
+      "german": "Bewohner/-in; Eirwohner/-ir",
+      "phonetic": "ˈrezɪdnt",
+      "part_of_speech": "noun",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 184,
+      "source": {
+        "page": 184,
+        "half": "L",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "He's a resident of Sydney; he's lived there for two years nov Fr. résident/-e"
+    },
+    {
+      "id": "g9-u0-0030",
+      "english": "gay (infml)",
+      "german": "schwul; homosexuell; Schwu Homosexueller",
+      "phonetic": "ɡeɪ",
+      "part_of_speech": "noun",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 184,
+      "source": {
+        "page": 184,
+        "half": "L",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "ler; You're my friend. It doesn't make a difference to me if you'r gay."
+    },
+    {
+      "id": "g9-u0-0031",
+      "english": "mate (infml)",
+      "german": "Kumpel (ugs.)",
+      "phonetic": "meɪt",
+      "part_of_speech": "noun",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 184,
+      "source": {
+        "page": 184,
+        "half": "L",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "In Australia or Britain (but not the US), boys and men often call their friends their mates."
+    },
+    {
+      "id": "g9-u0-0032",
+      "english": "to head (for/to)",
+      "german": "zusteuern auf; sich auf den Weg machen nach/zu",
+      "phonetic": "ˈhed fə; ˈhed tə",
+      "part_of_speech": "verb",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 184,
+      "source": {
+        "page": 184,
+        "half": "L",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary",
+        "difficult"
+      ],
+      "source_note": "If you head for a place, you move towards it."
+    },
+    {
+      "id": "g9-u0-0033",
+      "english": "the outback",
+      "german": "Outback (australisches Hinter land)",
+      "phonetic": "ði ˈaʊtbæk",
+      "part_of_speech": "phrase",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 184,
+      "source": {
+        "page": 184,
+        "half": "L",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "The outback is the wild, empty country far away from Australia's towns and cities."
+    },
+    {
+      "id": "g9-u0-0034",
+      "english": "seat",
+      "german": "Sitz; Sitzplatz",
+      "phonetic": "siːt",
+      "part_of_speech": "noun",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 184,
+      "source": {
+        "page": 184,
+        "half": "L",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "seat - the place where you sit (in a train, theatre, etc.) Fr. siège (f); Lat. sedes (f)"
+    },
+    {
+      "id": "g9-u0-0035",
+      "english": "billion",
+      "german": "Milliarde",
+      "phonetic": "ˈbɪliən",
+      "part_of_speech": "noun",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 184,
+      "source": {
+        "page": 184,
+        "half": "L",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "There are nearly 8 billion people in the whole world. one billion - 1,000,000,000"
+    },
+    {
+      "id": "g9-u0-0036",
+      "english": "Muslim",
+      "german": "Muslim/-in; muslimisch",
+      "phonetic": "ˈmʊzlɪm",
+      "part_of_speech": "noun",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 184,
+      "source": {
+        "page": 184,
+        "half": "L",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "She's Hindu and her husband is Muslim. Fr. musulman/-e"
+    },
+    {
+      "id": "g9-u0-0037",
+      "english": "percentage",
+      "german": "Prozentsatz",
+      "phonetic": "pəˈsentɪdʒ",
+      "part_of_speech": "noun",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 184,
+      "source": {
+        "page": 184,
+        "half": "L",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "Let's find out what percentage of the world's population are women."
+    },
+    {
+      "id": "g9-u0-0038",
+      "english": "to be said to (+ inf)",
+      "german": "gelten als",
+      "phonetic": "bi ˈsed tə",
+      "part_of_speech": "verb",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 184,
+      "source": {
+        "page": 184,
+        "half": "L",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary",
+        "difficult"
+      ],
+      "source_note": "French cooking is said to be the world's best."
+    },
+    {
+      "id": "g9-u0-0039",
+      "english": "as early as",
+      "german": "schon",
+      "phonetic": "əz ˈɜːli əz",
+      "part_of_speech": "phrase",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 184,
+      "source": {
+        "page": 184,
+        "half": "L",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "Aboriginal people lived in Australia as early as 50,000 years ago."
+    },
+    {
+      "id": "g9-u0-0040",
+      "english": "to perform",
+      "german": "durchführen; verrichten",
+      "phonetic": "pəˈfɔːm",
+      "part_of_speech": "verb",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 184,
+      "source": {
+        "page": 184,
+        "half": "L",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary",
+        "difficult"
+      ],
+      "source_note": "Instead of talking, you should just perform your tasks."
+    },
+    {
+      "id": "g9-u0-0041",
+      "english": "plastic surgery (no pl)",
+      "german": "Schönheitschirurgie",
+      "phonetic": "ˌplæstɪk ˈsɜːdʒəri",
+      "part_of_speech": "noun",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 184,
+      "source": {
+        "page": 184,
+        "half": "L",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary",
+        "difficult"
+      ],
+      "source_note": "After an accident people sometimes need plastic surgery."
+    },
+    {
+      "id": "g9-u0-0042",
+      "english": "Latin",
+      "german": "Latein; lateinisch",
+      "phonetic": "ˈlætɪn",
+      "part_of_speech": "noun",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 184,
+      "source": {
+        "page": 184,
+        "half": "L",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "The Italian, Spanish and French languages all come from Latin."
+    },
+    {
+      "id": "g9-u0-0043",
+      "english": "Chinese",
+      "german": "Chinese/Chinesin; chinesiscl Chinesisch; aus China",
+      "phonetic": "tʃaɪˈniːz",
+      "part_of_speech": "noun",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 184,
+      "source": {
+        "page": 184,
+        "half": "L",
+        "row": 19
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "Many Australians have an Italian or Chinese background. Chinese → China"
+    },
+    {
+      "id": "g9-u0-0044",
+      "english": "crocodile",
+      "german": "Krokodil",
+      "phonetic": "ˈkrɒkədaɪl",
+      "part_of_speech": "noun",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 184,
+      "source": {
+        "page": 184,
+        "half": "L",
+        "row": 20
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "In Europe, crocodiles can only be found in zoos."
+    },
+    {
+      "id": "g9-u0-0045",
+      "english": "increasingly",
+      "german": "zunehmend",
+      "phonetic": "ɪnˈkriːsɪŋli",
+      "part_of_speech": "adverb",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 184,
+      "source": {
+        "page": 184,
+        "half": "L",
+        "row": 21
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "Young people's lives are being increasingly influenced by social media."
+    },
+    {
+      "id": "g9-u0-0046",
+      "english": "lingua franca",
+      "german": "Verkehrssprache",
+      "phonetic": "ˌlɪŋɡwə ˈfræŋkə",
+      "part_of_speech": "noun",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 185,
+      "source": {
+        "page": 185,
+        "half": "R",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "English is often used as a lingua franca. lingua franca - language used for communication between groups who speak different languages Fr. langue (f); Lat. lingua (f)"
+    },
+    {
+      "id": "g9-u0-0047",
+      "english": "shipping",
+      "german": "Versand; Transport (von Güte",
+      "phonetic": "ˈʃɪpɪŋ",
+      "part_of_speech": "adjective",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 185,
+      "source": {
+        "page": 185,
+        "half": "R",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "I have to pay for shipping when I order sth from the US. rn) shipping - transportation of goods shipping → to ship"
+    },
+    {
+      "id": "g9-u0-0048",
+      "english": "computing",
+      "german": "EDV",
+      "phonetic": "kəmˈpjuːtɪŋ",
+      "part_of_speech": "adjective",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 185,
+      "source": {
+        "page": 185,
+        "half": "R",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "Computing made the world of work turn faster."
+    },
+    {
+      "id": "g9-u0-0049",
+      "english": "to suggest",
+      "german": "andeuten; nahelegen",
+      "phonetic": "səˈdʒest",
+      "part_of_speech": "verb",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 185,
+      "source": {
+        "page": 185,
+        "half": "R",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary",
+        "difficult"
+      ],
+      "source_note": "These numbers suggest that the average income of womer is lower than we thought. to suggest → suggestion"
+    },
+    {
+      "id": "g9-u0-0050",
+      "english": "to associate",
+      "german": "assoziieren; verbinden",
+      "phonetic": "əˈsəʊʃieɪt",
+      "part_of_speech": "verb",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 185,
+      "source": {
+        "page": 185,
+        "half": "R",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary",
+        "difficult"
+      ],
+      "source_note": "What do you associate with immigration?"
+    },
+    {
+      "id": "g9-u0-0051",
+      "english": "progress",
+      "german": "Fortschritt",
+      "phonetic": "ˈprəʊɡres",
+      "part_of_speech": "noun",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 185,
+      "source": {
+        "page": 185,
+        "half": "R",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "The students in the English class make good progress. Fr. progrès (m)"
+    },
+    {
+      "id": "g9-u0-0052",
+      "english": "rise",
+      "german": "Anstieg; Zunahme; Aufstieg",
+      "phonetic": "raɪz",
+      "part_of_speech": "noun",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 185,
+      "source": {
+        "page": 185,
+        "half": "R",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "The rise of the average temperature mustn't be higher thar two degrees. rise → to rise"
+    },
+    {
+      "id": "g9-u0-0053",
+      "english": "to assist",
+      "german": "helfen; vorantreiben",
+      "phonetic": "əˈsɪst",
+      "part_of_speech": "verb",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 185,
+      "source": {
+        "page": 185,
+        "half": "R",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary",
+        "difficult"
+      ],
+      "source_note": "Our club assists minorities in the fight against racism. to assist → assistant"
+    },
+    {
+      "id": "g9-u0-0054",
+      "english": "neither",
+      "german": "keine/-r/-s (von beiden)",
+      "phonetic": "ˈnaɪðə; ˈniːðə",
+      "part_of_speech": "noun",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 185,
+      "source": {
+        "page": 185,
+        "half": "R",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "Both my parents have e-bikes, but neither of them cycles anywhere.(- keine/-r von beiden) Does either of you speak French? (- eine/-r von beiden)"
+    },
+    {
+      "id": "g9-u0-0055",
+      "english": "native speaker",
+      "german": "Muttersprachler/-in",
+      "phonetic": "ˌneɪtɪv ˈspiːkə",
+      "part_of_speech": "noun",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 185,
+      "source": {
+        "page": 185,
+        "half": "R",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "My friend is German but grew up in England. She's a native speaker of German and English."
+    },
+    {
+      "id": "g9-u0-0056",
+      "english": "to tend to",
+      "german": "neigen zu; tendieren zu",
+      "phonetic": "ˈtend tə",
+      "part_of_speech": "verb",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 185,
+      "source": {
+        "page": 185,
+        "half": "R",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary",
+        "difficult"
+      ],
+      "source_note": "People tend to think that their way of doing something is t right one. Lat. tendere"
+    },
+    {
+      "id": "g9-u0-0057",
+      "english": "to assume",
+      "german": "annehmen",
+      "phonetic": "əˈsjuːm",
+      "part_of_speech": "verb",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 185,
+      "source": {
+        "page": 185,
+        "half": "R",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary",
+        "difficult"
+      ],
+      "source_note": "You can'tassume everybody shares your likes and dislikes."
+    },
+    {
+      "id": "g9-u0-0058",
+      "english": "opportunity",
+      "german": "Chance; Gelegenheit; Möglic keit",
+      "phonetic": "ˌɒpəˈtjuːnəti",
+      "part_of_speech": "noun",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 185,
+      "source": {
+        "page": 185,
+        "half": "R",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "Don't miss the opportunity to do a balloon flight. It's hfantastic! opportunity - a great chance to do sth"
+    },
+    {
+      "id": "g9-u0-0059",
+      "english": "lack of",
+      "german": "Mangel an; Fehlen von",
+      "phonetic": "ˈlæk əv",
+      "part_of_speech": "noun",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 185,
+      "source": {
+        "page": 185,
+        "half": "R",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary"
+      ],
+      "source_note": "He was often criticised for his /ack of politeness."
+    },
+    {
+      "id": "g9-u0-0060",
+      "english": "to regard",
+      "german": "betrachten",
+      "phonetic": "rɪˈɡɑːd",
+      "part_of_speech": "verb",
+      "unit": null,
+      "unit_title": "Across cultures 1 · The world speaks English",
+      "section": "Across cultures 1: The world speaks English",
+      "page": 185,
+      "source": {
+        "page": 185,
+        "half": "R",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "supplementary",
+        "difficult"
+      ],
+      "source_note": "Before we decide what to do, we should regard the results the survey. Fr. regarder"
+    }
+  ]
+}

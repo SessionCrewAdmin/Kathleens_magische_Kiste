@@ -1,0 +1,4456 @@
+{
+  "schema_version": "2.0",
+  "grade": 9,
+  "unit": 2,
+  "title": "(Never) enough!",
+  "entry_count": 191,
+  "entries": [
+    {
+      "id": "g9-u2-0001",
+      "english": "sustainability",
+      "german": "Nachhaltigkeit",
+      "phonetic": "səˌsteɪnəˈbɪləti",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Check-in",
+      "page": 204,
+      "source": {
+        "page": 204,
+        "half": "L",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "Sustainability depends on three aspects (social, environmental, economic), but evaluation is difficult, especially over a long time in a global context."
+    },
+    {
+      "id": "g9-u2-0002",
+      "english": "debate",
+      "german": "Debatte",
+      "phonetic": "dɪˈbeɪt",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Check-in",
+      "page": 204,
+      "source": {
+        "page": 204,
+        "half": "L",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "debate - a formal discussion about the pros and cons of sth Fr. débat (m)"
+    },
+    {
+      "id": "g9-u2-0003",
+      "english": "to consume",
+      "german": "konsumieren; verbrauchen",
+      "phonetic": "kənˈsjuːm",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Check-in",
+      "page": 205,
+      "source": {
+        "page": 205,
+        "half": "R",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "1. For more sustainability we need to consume less. 2. My old washing machine consumes too much energy. Fr. consommer; Lat. consumere"
+    },
+    {
+      "id": "g9-u2-0004",
+      "english": "consumption",
+      "german": "Konsum; Verbrauch",
+      "phonetic": "kənˈsʌmpʃn",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Check-in",
+      "page": 205,
+      "source": {
+        "page": 205,
+        "half": "R",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "The consumption of energy is too high. Fr. consommation (f); Lat. consumptio (f)"
+    },
+    {
+      "id": "g9-u2-0005",
+      "english": "to exploit sb/sth",
+      "german": "jmdn./etw. ausbeuten; jmdn./ etw. ausnutzen",
+      "phonetic": "ɪkˈsplɔɪt",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Check-in",
+      "page": 205,
+      "source": {
+        "page": 205,
+        "half": "R",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "She has never fully exploited her talents. to exploit → exploitation Fr. exploiter"
+    },
+    {
+      "id": "g9-u2-0006",
+      "english": "waste",
+      "german": "Abfall; Mūll",
+      "phonetic": "weɪst",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Check-in",
+      "page": 205,
+      "source": {
+        "page": 205,
+        "half": "R",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "We should try not to produce too much waste."
+    },
+    {
+      "id": "g9-u2-0007",
+      "english": "to contaminate",
+      "german": "kontaminieren; verseuchen",
+      "phonetic": "kənˈtæmɪneɪt",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Check-in",
+      "page": 205,
+      "source": {
+        "page": 205,
+        "half": "R",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "Industrial pollution can contaminate rivers and make their water undrinkable. Fr. contaminer; Lat. contaminare"
+    },
+    {
+      "id": "g9-u2-0008",
+      "english": "conservation",
+      "german": "Schutz; Erhaltung",
+      "phonetic": "ˌkɒnsəˈveɪʃn",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Check-in",
+      "page": 205,
+      "source": {
+        "page": 205,
+        "half": "R",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "The conservation of nature is our most important task. Fr. conservation (f); Lat. conservatio (f)"
+    },
+    {
+      "id": "g9-u2-0009",
+      "english": "ecology",
+      "german": "Ökologie",
+      "phonetic": "iːˈkɒlədʒi",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Check-in",
+      "page": 205,
+      "source": {
+        "page": 205,
+        "half": "R",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "There's a strong ecology movement in our town. Fr. écologie (f)"
+    },
+    {
+      "id": "g9-u2-0010",
+      "english": "carbon",
+      "german": "Kohlenstoff; Kohlenstoffdioxid",
+      "phonetic": "ˈkɑːbn",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Check-in",
+      "page": 205,
+      "source": {
+        "page": 205,
+        "half": "R",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "If you want to travel by plane, you have to pay a carbon tax. Carbon is short for carbon dioxide. Fr. carbone (m); Lat. carbo (m)"
+    },
+    {
+      "id": "g9-u2-0011",
+      "english": "footprint",
+      "german": "Fußabdruck",
+      "phonetic": "ˈfʊtprɪnt",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Check-in",
+      "page": 205,
+      "source": {
+        "page": 205,
+        "half": "R",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "My carbon footprint is big because I often travel by plane. footprint→ foot"
+    },
+    {
+      "id": "g9-u2-0012",
+      "english": "fossil fuel",
+      "german": "fossiler Brennstoff",
+      "phonetic": "ˈfɒsl ˌfjuːəl",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Check-in",
+      "page": 205,
+      "source": {
+        "page": 205,
+        "half": "R",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "Typical fossil fuels are coal, mineral oil and natural gas. Fr. fossile; Lat. fossilis"
+    },
+    {
+      "id": "g9-u2-0013",
+      "english": "global warming",
+      "german": "globale Erwärmung",
+      "phonetic": "ˌɡləʊbl ˈwɔːmɪŋ",
+      "part_of_speech": "adjective",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Check-in",
+      "page": 205,
+      "source": {
+        "page": 205,
+        "half": "R",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "If we want to stop global warming, everyone must change their behaviour. Fr. global/-e; Lat. globus (m)"
+    },
+    {
+      "id": "g9-u2-0014",
+      "english": "erosion",
+      "german": "Erosion; Abtragung",
+      "phonetic": "ɪˈrəʊʒn",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Check-in",
+      "page": 205,
+      "source": {
+        "page": 205,
+        "half": "R",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "Coastal erosion is caused by rising sea levels. It means that land is washed into the water. Fr. érosion (f); Lat. erodere, erosum"
+    },
+    {
+      "id": "g9-u2-0015",
+      "english": "activism",
+      "german": "Aktivismus",
+      "phonetic": "ˈæktɪvɪzm",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Check-in",
+      "page": 205,
+      "source": {
+        "page": 205,
+        "half": "R",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "Greta Thunberg stands for environmental activism. activism → active, activity, activist Fr. activisme (m)"
+    },
+    {
+      "id": "g9-u2-0016",
+      "english": "cause",
+      "german": "Grund; Ursache; Sache",
+      "phonetic": "kɔːz",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Check-in",
+      "page": 205,
+      "source": {
+        "page": 205,
+        "half": "R",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "1. What's the cause of your injury? - I had a bike accident. 2. We're fighting for a good cause: animal rights. cause → to cause, because Fr. cause (f); Lat. causa (f)"
+    },
+    {
+      "id": "g9-u2-0017",
+      "english": "party",
+      "german": "Partei",
+      "phonetic": "ˈpɑːti",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Check-in",
+      "page": 205,
+      "source": {
+        "page": 205,
+        "half": "R",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "In Germany, there are various political parties, e.g. the Social Democratic Party of Germany."
+    },
+    {
+      "id": "g9-u2-0018",
+      "english": "NGO (non-governmental organisation)",
+      "german": "Nichtregierungsorganisation",
+      "phonetic": "ˌendʒiːˈəʊ",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Check-in",
+      "page": 205,
+      "source": {
+        "page": 205,
+        "half": "R",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "Greenpeace is an NGO."
+    },
+    {
+      "id": "g9-u2-0019",
+      "english": "environmental",
+      "german": "Umwelt-; die Umwelt betreffend; umweltbedingt",
+      "phonetic": "ɪnˌvaɪrənˈmentl",
+      "part_of_speech": "adjective",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Check-in",
+      "page": 205,
+      "source": {
+        "page": 205,
+        "half": "R",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "Global warming causes environmental changes. environmental→ environment Fr. environnemental/-e"
+    },
+    {
+      "id": "g9-u2-0020",
+      "english": "strike",
+      "german": "Streik",
+      "phonetic": "straɪk",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Check-in",
+      "page": 205,
+      "source": {
+        "page": 205,
+        "half": "R",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "The city's bus drivers have been or"
+    },
+    {
+      "id": "g9-u2-0021",
+      "english": "frequent",
+      "german": "häufig",
+      "phonetic": "ˈfriːkwənt",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Check-in",
+      "page": 205,
+      "source": {
+        "page": 205,
+        "half": "R",
+        "row": 19
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "FAQs are frequently-asked questio Fr. fréquent/-e; Lat. frequens"
+    },
+    {
+      "id": "g9-u2-0022",
+      "english": "petition",
+      "german": "Petition; Gesuch; Unterschriftenliste",
+      "phonetic": "pəˈtɪʃn",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Check-in",
+      "page": 206,
+      "source": {
+        "page": 206,
+        "half": "L",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "Most students signed the petition for a new gym. Fr. pétition (f); Lat. petitio (f)"
+    },
+    {
+      "id": "g9-u2-0023",
+      "english": "study",
+      "german": "Studie; Untersuchung",
+      "phonetic": "ˈstʌdi",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 1 · Life cycle of a T-shirt",
+      "page": 206,
+      "source": {
+        "page": 206,
+        "half": "L",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "The study showed that on average women still earn less than men."
+    },
+    {
+      "id": "g9-u2-0024",
+      "english": "ecological",
+      "german": "ökologisch",
+      "phonetic": "ˌiːkəˈlɒdʒɪkl",
+      "part_of_speech": "adjective",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 1 · Life cycle of a T-shirt",
+      "page": 206,
+      "source": {
+        "page": 206,
+        "half": "L",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "Climate change causes many ecologica/ problems. ecological → ecology Fr. écologique"
+    },
+    {
+      "id": "g9-u2-0025",
+      "english": "raw",
+      "german": "roh; Roh-; unbehandelt",
+      "phonetic": "rɔː",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 1 · Life cycle of a T-shirt",
+      "page": 206,
+      "source": {
+        "page": 206,
+        "half": "L",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "You can't eat this meat. It's still raw."
+    },
+    {
+      "id": "g9-u2-0026",
+      "english": "disposal",
+      "german": "Beseitigung; Entsorgung",
+      "phonetic": "dɪˈspəʊzl",
+      "part_of_speech": "adjective",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 1 · Life cycle of a T-shirt",
+      "page": 206,
+      "source": {
+        "page": 206,
+        "half": "L",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "The disposa/ of clothes has a considerable effect on their ecological footprint. disposal↔ purchase Lat. disponere, dispositum"
+    },
+    {
+      "id": "g9-u2-0027",
+      "english": "liter (l) (AE)",
+      "german": "Liter",
+      "phonetic": "ˈliːtə",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 1 · Life cycle of a T-shirt",
+      "page": 206,
+      "source": {
+        "page": 206,
+        "half": "L",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "You need 2,000 liters of water to produce one T-shirt. Fr. litre (m)"
+    },
+    {
+      "id": "g9-u2-0028",
+      "english": "ton",
+      "german": "Tonne",
+      "phonetic": "tʌn",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 1 · Life cycle of a T-shirt",
+      "page": 206,
+      "source": {
+        "page": 206,
+        "half": "L",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "We produce tons of rubbish every day. ton - 1,000 kg Fr. tonne (f)"
+    },
+    {
+      "id": "g9-u2-0029",
+      "english": "organic",
+      "german": "biologisch (angebaut)",
+      "phonetic": "ɔːˈɡænɪk",
+      "part_of_speech": "adjective",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 1 · Life cycle of a T-shirt",
+      "page": 206,
+      "source": {
+        "page": 206,
+        "half": "L",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "More and more people are buying organic food."
+    },
+    {
+      "id": "g9-u2-0030",
+      "english": "to harvest",
+      "german": "ernten",
+      "phonetic": "ˈhɑːvɪst",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 1 · Life cycle of a T-shirt",
+      "page": 206,
+      "source": {
+        "page": 206,
+        "half": "L",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "We harvest vegetables from our garden."
+    },
+    {
+      "id": "g9-u2-0031",
+      "english": "to spin",
+      "german": "spinnen; (sich) schnell drehen",
+      "phonetic": "spɪn",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 1 · Life cycle of a T-shirt",
+      "page": 206,
+      "source": {
+        "page": 206,
+        "half": "L",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "If you spin me around any longer, I will feel ill."
+    },
+    {
+      "id": "g9-u2-0032",
+      "english": "fabric (no pl)",
+      "german": "Stoff",
+      "phonetic": "ˈfæbrɪk",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 1 · Life cycle of a T-shirt",
+      "page": 206,
+      "source": {
+        "page": 206,
+        "half": "L",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "The fabric made of cotton is grayish at the beginning."
+    },
+    {
+      "id": "g9-u2-0033",
+      "english": "to bleach",
+      "german": "bleichen",
+      "phonetic": "bliːtʃ",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 1 · Life cycle of a T-shirt",
+      "page": 206,
+      "source": {
+        "page": 206,
+        "half": "L",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "to bleach fabric/teeth/hair"
+    },
+    {
+      "id": "g9-u2-0034",
+      "english": "to dye",
+      "german": "färben",
+      "phonetic": "daɪ",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 1 · Life cycle of a T-shirt",
+      "page": 206,
+      "source": {
+        "page": 206,
+        "half": "L",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "She has dyed her hair red. to dye ↔ to bleach"
+    },
+    {
+      "id": "g9-u2-0035",
+      "english": "to pollute",
+      "german": "verschmutzen; verunreinigen",
+      "phonetic": "pəˈluːt",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 1 · Life cycle of a T-shirt",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "Dyeing and bleaching fabric can pollute the groundwater. to pollute → pollution Fr. polluer; Lat. polluere, pollutum"
+    },
+    {
+      "id": "g9-u2-0036",
+      "english": "to harm",
+      "german": "Schaden anrichten; beschädigen",
+      "phonetic": "hɑːm",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 1 · Life cycle of a T-shirt",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "Polluted groundwaterharms the environment. to harm - to damage"
+    },
+    {
+      "id": "g9-u2-0037",
+      "english": "factory",
+      "german": "Fabrik; Werk",
+      "phonetic": "ˈfæktri",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 1 · Life cycle of a T-shirt",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "Cars, washing machines and cookers are all made in factories."
+    },
+    {
+      "id": "g9-u2-0038",
+      "english": "to sew",
+      "german": "nähen",
+      "phonetic": "səʊ",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 1 · Life cycle of a T-shirt",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "Our clothes are often sewed in Bangladesh or India. !'Sew' doesn'trhyme with 'few'."
+    },
+    {
+      "id": "g9-u2-0039",
+      "english": "warehouse",
+      "german": "Lager; Lagerhalle; Depot",
+      "phonetic": "ˈweəhaʊs",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 1 · Life cycle of a T-shirt",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "After their production goods are kept in warehouses."
+    },
+    {
+      "id": "g9-u2-0040",
+      "english": "to emit",
+      "german": "ausstoßen; absondern",
+      "phonetic": "ɪˈmɪt",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 1 · Life cycle of a T-shirt",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "Millions of tons of CO2 are emitted every year. Fr. émettre; Lat. emittere"
+    },
+    {
+      "id": "g9-u2-0041",
+      "english": "impact",
+      "german": "Auswirkung; Einfluss",
+      "phonetic": "ˈɪmpækt",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 1 · Life cycle of a T-shirt",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "My middle school teacher had a great impact on me. I studied biology because of him. !usually singular impact - effect"
+    },
+    {
+      "id": "g9-u2-0042",
+      "english": "thus",
+      "german": "dadurch; deshalb",
+      "phonetic": "ðʌs",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 1 · Life cycle of a T-shirt",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "thus - that's why"
+    },
+    {
+      "id": "g9-u2-0043",
+      "english": "to estimate",
+      "german": "schätzen",
+      "phonetic": "ˈestɪmeɪt",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 1 · Life cycle of a T-shirt",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "I estimate her stay in hospital to take a week. Fr. estimer; Lat. aestimare"
+    },
+    {
+      "id": "g9-u2-0044",
+      "english": "landfill",
+      "german": "Deponie",
+      "phonetic": "ˈlænfɪl",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 1 · Life cycle of a T-shirt",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "landfill - a place where trash is taken, often outside towns"
+    },
+    {
+      "id": "g9-u2-0045",
+      "english": "emission",
+      "german": "Ausstoß; Emission",
+      "phonetic": "ɪˈmɪʃn",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 1 · Life cycle of a T-shirt",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "The emissions from cars are often higher than estimated. emission → to emit Fr. émission (f)"
+    },
+    {
+      "id": "g9-u2-0046",
+      "english": "process",
+      "german": "Prozess; Verlauf",
+      "phonetic": "ˈprəʊses",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 1 · Life cycle of a T-shirt",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "In the process of being burnt, some clothes release toxic emissions. ! Be careful with the stress. Fr. procès (m); Lat. procedere, processum"
+    },
+    {
+      "id": "g9-u2-0047",
+      "english": "in",
+      "german": "aus; jede/-r/-s (zweite/ dritte ...); von",
+      "phonetic": "ɪn",
+      "part_of_speech": "preposition",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 1 · Life cycle of a T-shirt",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "Only about one in eight pairs of shoes is recycled after use."
+    },
+    {
+      "id": "g9-u2-0048",
+      "english": "item",
+      "german": "Gegenstand; Objekt",
+      "phonetic": "ˈaɪtəm",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 1 · Life cycle of a T-shirt",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "We'll get a few cents for every clothing item we donate."
+    },
+    {
+      "id": "g9-u2-0049",
+      "english": "packaging",
+      "german": "Verpackung; Verpackungsmaterial",
+      "phonetic": "ˈpækɪdʒɪŋ",
+      "part_of_speech": "adjective",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 1 · Life cycle of a T-shirt",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "The packaging of goods creates a huge amount of waste. packaging → to pack"
+    },
+    {
+      "id": "g9-u2-0050",
+      "english": "sustainable",
+      "german": "nachhaltig",
+      "phonetic": "səˈsteɪnəbl",
+      "part_of_speech": "adjective",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 1 · Life cycle of a T-shirt",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "We must use more sustainable energy. sustainable → sustainability"
+    },
+    {
+      "id": "g9-u2-0051",
+      "english": "to be aware of sth",
+      "german": "sich etw. bewusst sein",
+      "phonetic": "bi əˈweər əv",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 1 · Life cycle of a T-shirt",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "I'm aware of the dangers of driving too fast. to be aware → awareness"
+    },
+    {
+      "id": "g9-u2-0052",
+      "english": "to contribute to",
+      "german": "beitragen zu",
+      "phonetic": "kənˈtrɪbjuːt tə",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 1 · Life cycle of a T-shirt",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "Our consumption habits contribute to bad working conditions in production countries. to contribute to - to add to Fr. contribuer; Lat. contribuere"
+    },
+    {
+      "id": "g9-u2-0053",
+      "english": "fashion",
+      "german": "Mode",
+      "phonetic": "ˈfæʃn",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 1 · Life cycle of a T-shirt",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 19
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "In fashion lessons you learn about"
+    },
+    {
+      "id": "g9-u2-0054",
+      "english": "to make a difference (to sth)",
+      "german": "etw. verändern; etw. bewegen",
+      "phonetic": "ˌmeɪk ə ˈdɪfrəns",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 1 · Life cycle of a T-shirt",
+      "page": 207,
+      "source": {
+        "page": 207,
+        "half": "R",
+        "row": 20
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "Voting can make a difference."
+    },
+    {
+      "id": "g9-u2-0055",
+      "english": "detergent",
+      "german": "Waschmittel; Reinigungsmittel",
+      "phonetic": "dɪˈtɜːdʒənt",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 1 · Life cycle of a T-shirt",
+      "page": 208,
+      "source": {
+        "page": 208,
+        "half": "L",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "There are special detergents for washing machines. Fr. détergent (m); Lat. detergere, detergens"
+    },
+    {
+      "id": "g9-u2-0056",
+      "english": "critical",
+      "german": "kritisch; entscheidend",
+      "phonetic": "ˈkrɪtɪkl",
+      "part_of_speech": "adjective",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 1 · Life cycle of a T-shirt",
+      "page": 208,
+      "source": {
+        "page": 208,
+        "half": "L",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "This newspaper is critical of our government. critical→ self-critical Fr. critique"
+    },
+    {
+      "id": "g9-u2-0057",
+      "english": "to charge",
+      "german": "laden; aufladen",
+      "phonetic": "tʃɑːdʒ",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 1 · Life cycle of a T-shirt",
+      "page": 208,
+      "source": {
+        "page": 208,
+        "half": "L",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "My mobile needs to be charged. Fr. charger"
+    },
+    {
+      "id": "g9-u2-0058",
+      "english": "cocoa",
+      "german": "Kakao",
+      "phonetic": "ˈkəʊkəʊ",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 2 · The cocoa controversy",
+      "page": 208,
+      "source": {
+        "page": 208,
+        "half": "L",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "There would be no chocolate without cocoa."
+    },
+    {
+      "id": "g9-u2-0059",
+      "english": "quantity",
+      "german": "Menge; Quantität",
+      "phonetic": "ˈkwɒntəti",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 2 · The cocoa controversy",
+      "page": 208,
+      "source": {
+        "page": 208,
+        "half": "L",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "Chocolate is sold in large quantities in Europe. Fr. quantité (f); Lat. quantitas (f)"
+    },
+    {
+      "id": "g9-u2-0060",
+      "english": "cosmetics (no pl)",
+      "german": "Kosmetik",
+      "phonetic": "kɒzˈmetɪks",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 2 · The cocoa controversy",
+      "page": 208,
+      "source": {
+        "page": 208,
+        "half": "L",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "Cocoa butter is a main ingredient for many cosmetics. !You can't use this noun in the singular."
+    },
+    {
+      "id": "g9-u2-0061",
+      "english": "plantation",
+      "german": "Plantage",
+      "phonetic": "plænˈteɪʃn",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 2 · The cocoa controversy",
+      "page": 208,
+      "source": {
+        "page": 208,
+        "half": "L",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "Bananas are grown in large plantations. plantation → to plant Fr. plantation (f)"
+    },
+    {
+      "id": "g9-u2-0062",
+      "english": "health care",
+      "german": "Gesundheitsversorgung",
+      "phonetic": "ˈhelθ keə",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 2 · The cocoa controversy",
+      "page": 208,
+      "source": {
+        "page": 208,
+        "half": "L",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "I work in the health care industry. I'm a nurse. - Oh, me too!"
+    },
+    {
+      "id": "g9-u2-0063",
+      "english": "hardly",
+      "german": "kaum",
+      "phonetic": "ˈhɑːdli",
+      "part_of_speech": "adverb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 2 · The cocoa controversy",
+      "page": 208,
+      "source": {
+        "page": 208,
+        "half": "L",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "I can hardly believe it!"
+    },
+    {
+      "id": "g9-u2-0064",
+      "english": "exhausted",
+      "german": "erschöpft",
+      "phonetic": "ɪɡˈzɔːstɪd",
+      "part_of_speech": "adjective",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 2 · The cocoa controversy",
+      "page": 208,
+      "source": {
+        "page": 208,
+        "half": "L",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "After running the marathon, they were exhausted. Lat. exhaurire, exhaustum"
+    },
+    {
+      "id": "g9-u2-0065",
+      "english": "childhood",
+      "german": "Kindheit",
+      "phonetic": "ˈtʃaɪldhʊd",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 2 · The cocoa controversy",
+      "page": 208,
+      "source": {
+        "page": 208,
+        "half": "L",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "I was a happy childl. I had a very happy childhood."
+    },
+    {
+      "id": "g9-u2-0066",
+      "english": "emotional",
+      "german": "emotional; Gefühls-",
+      "phonetic": "ɪˈməʊʃnl",
+      "part_of_speech": "adjective",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 2 · The cocoa controversy",
+      "page": 208,
+      "source": {
+        "page": 208,
+        "half": "L",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "It was an emotional moment when my boyfriend asked me to marry him. emotional→ emotion"
+    },
+    {
+      "id": "g9-u2-0067",
+      "english": "matter",
+      "german": "Angelegenheit; Frage",
+      "phonetic": "ˈmætə",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 2 · The cocoa controversy",
+      "page": 208,
+      "source": {
+        "page": 208,
+        "half": "L",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "For most of the people in the world eating healthy is a matter of accessibility."
+    },
+    {
+      "id": "g9-u2-0068",
+      "english": "diet",
+      "german": "Ernährung; Diät",
+      "phonetic": "ˈdaɪət",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 2 · The cocoa controversy",
+      "page": 208,
+      "source": {
+        "page": 208,
+        "half": "L",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "1. His diet consists mainly of fruit and vegetables. 2. She has been on a diet, but she hasn't lost much weight yet."
+    },
+    {
+      "id": "g9-u2-0069",
+      "english": "conventional",
+      "german": "konventionell; herkömmlich; üblich",
+      "phonetic": "kənˈvenʃnl",
+      "part_of_speech": "adjective",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 2 · The cocoa controversy",
+      "page": 208,
+      "source": {
+        "page": 208,
+        "half": "L",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "Some people don't believe in conventional medicine. conventional food ↔ organic food Fr. conventionnel/-e"
+    },
+    {
+      "id": "g9-u2-0070",
+      "english": "factor",
+      "german": "Faktor; Gesichtspunkt; Einfluss",
+      "phonetic": "ˈfæktə",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 2 · The cocoa controversy",
+      "page": 208,
+      "source": {
+        "page": 208,
+        "half": "L",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "Money was not a factor in my decision. Fr. facteur (m)"
+    },
+    {
+      "id": "g9-u2-0071",
+      "english": "overweight",
+      "german": "übergewichtig",
+      "phonetic": "ˌəʊvəˈweɪt",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 2 · The cocoa controversy",
+      "page": 208,
+      "source": {
+        "page": 208,
+        "half": "L",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "My dog is overweight: she needs more walks and less food. overweight → weight → to weigh"
+    },
+    {
+      "id": "g9-u2-0072",
+      "english": "greenhouse gas",
+      "german": "Treibhausgas",
+      "phonetic": "ˈɡriːnhaʊs ˌɡæs",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 2 · The cocoa controversy",
+      "page": 208,
+      "source": {
+        "page": 208,
+        "half": "L",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "To stop climate change, we must try to reduce greenhouse gases."
+    },
+    {
+      "id": "g9-u2-0073",
+      "english": "factory farming",
+      "german": "Massentierhaltung",
+      "phonetic": "ˈfæktri ˌfɑːmɪŋ",
+      "part_of_speech": "adjective",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 2 · The cocoa controversy",
+      "page": 208,
+      "source": {
+        "page": 208,
+        "half": "L",
+        "row": 19
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "Factory farming is a way of producing great numbers of animal products."
+    },
+    {
+      "id": "g9-u2-0074",
+      "english": "to fail",
+      "german": "nicht bestehen",
+      "phonetic": "feɪl",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 2 · The cocoa controversy",
+      "page": 208,
+      "source": {
+        "page": 208,
+        "half": "L",
+        "row": 20
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "I hope I haven't failed the test."
+    },
+    {
+      "id": "g9-u2-0075",
+      "english": "drug",
+      "german": "Droge",
+      "phonetic": "drʌɡ",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 2 · The cocoa controversy",
+      "page": 208,
+      "source": {
+        "page": 208,
+        "half": "L",
+        "row": 21
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "Taking drugs can be very dangerous."
+    },
+    {
+      "id": "g9-u2-0076",
+      "english": "to combine",
+      "german": "kombinieren;verbinden",
+      "phonetic": "kəmˈbaɪn",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 2 · The cocoa controversy",
+      "page": 209,
+      "source": {
+        "page": 209,
+        "half": "R",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "If you combine certain kinds of food, it doesn't taste good. to combine → combination Fr. combiner"
+    },
+    {
+      "id": "g9-u2-0077",
+      "english": "to address",
+      "german": "ansprechen; sich wenden an",
+      "phonetic": "əˈdres",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 2 · The cocoa controversy",
+      "page": 209,
+      "source": {
+        "page": 209,
+        "half": "R",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "I'm sorry I didn't listen. Were you addressing me? to address → address Fr. s'adresser à qn"
+    },
+    {
+      "id": "g9-u2-0078",
+      "english": "convenient",
+      "german": "bequem; zweckmäßig; passend; angenehm",
+      "phonetic": "kənˈviːniənt",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 3 · Should streaming be reduced?",
+      "page": 209,
+      "source": {
+        "page": 209,
+        "half": "R",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "How convenient that you've already done the shopping! Fr. convenir; Lat. convenire, conveniens"
+    },
+    {
+      "id": "g9-u2-0079",
+      "english": "convenience",
+      "german": "Komfort; Vorteil",
+      "phonetic": "kənˈviːniəns",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 3 · Should streaming be reduced?",
+      "page": 209,
+      "source": {
+        "page": 209,
+        "half": "R",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "This flat has all modern conveniences. convenience → convenient"
+    },
+    {
+      "id": "g9-u2-0080",
+      "english": "to state",
+      "german": "feststellen; auss agen; darstellen",
+      "phonetic": "steɪt",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 3 · Should streaming be reduced?",
+      "page": 209,
+      "source": {
+        "page": 209,
+        "half": "R",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "The statistics state that the economy is booming. to state → statement"
+    },
+    {
+      "id": "g9-u2-0081",
+      "english": "nevertheless",
+      "german": "trotzdem; dennoch; nichtsdestoweniger",
+      "phonetic": "ˌnevəðəˈles",
+      "part_of_speech": "adverb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 3 · Should streaming be reduced?",
+      "page": 209,
+      "source": {
+        "page": 209,
+        "half": "R",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "He wasn't fit at all. Nevertheless, he took part in a marathon."
+    },
+    {
+      "id": "g9-u2-0082",
+      "english": "to be concerned about sth",
+      "german": "besorgt sein um etw.; sich um etw. Sorgen machen",
+      "phonetic": "bi kənˈsɜːnd əˌbaʊt",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 3 · Should streaming be reduced?",
+      "page": 209,
+      "source": {
+        "page": 209,
+        "half": "R",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "Many parents are concerned about the violent computer games their children play. to be concerned about sth - to be worried about sth"
+    },
+    {
+      "id": "g9-u2-0083",
+      "english": "broad",
+      "german": "breit",
+      "phonetic": "brɔːd",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 3 · Should streaming be reduced?",
+      "page": 209,
+      "source": {
+        "page": 209,
+        "half": "R",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "The river was broad with lots of water in it. broad - wide, large"
+    },
+    {
+      "id": "g9-u2-0084",
+      "english": "equal",
+      "german": "gleich; gleichwertig",
+      "phonetic": "ˈiːkwəl",
+      "part_of_speech": "adjective",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 3 · Should streaming be reduced?",
+      "page": 209,
+      "source": {
+        "page": 209,
+        "half": "R",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "Do you think all Americans are equal? Fr. égal/-e; Lat. aequus"
+    },
+    {
+      "id": "g9-u2-0085",
+      "english": "device",
+      "german": "Gerät; Vorrichtung",
+      "phonetic": "dɪˈvaɪs",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 3 · Should streaming be reduced?",
+      "page": 209,
+      "source": {
+        "page": 209,
+        "half": "R",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "A smartphone is an electronic devi"
+    },
+    {
+      "id": "g9-u2-0086",
+      "english": "method",
+      "german": "Methode",
+      "phonetic": "ˈmeθəd",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 3 · Should streaming be reduced?",
+      "page": 209,
+      "source": {
+        "page": 209,
+        "half": "R",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "method - a way of doing sth"
+    },
+    {
+      "id": "g9-u2-0087",
+      "english": "efficient",
+      "german": "effizient; leistungsfähig",
+      "phonetic": "ɪˈfɪʃnt",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 3 · Should streaming be reduced?",
+      "page": 210,
+      "source": {
+        "page": 210,
+        "half": "L",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "We need a new dishwasher, one that is more energy-efficient. Fr. éfficient/-e; Lat. efficere, efficiens"
+    },
+    {
+      "id": "g9-u2-0088",
+      "english": "claim",
+      "german": "Behauptung; Anspruch",
+      "phonetic": "kleɪm",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 3 · Should streaming be reduced?",
+      "page": 210,
+      "source": {
+        "page": 210,
+        "half": "L",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "He made claims about having been attacked. claim → to claim"
+    },
+    {
+      "id": "g9-u2-0089",
+      "english": "to predict",
+      "german": "vorhersagen; voraussagen",
+      "phonetic": "prɪˈdɪkt",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 3 · Should streaming be reduced?",
+      "page": 210,
+      "source": {
+        "page": 210,
+        "half": "L",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "It is hardly possible to predict the future. to predict →prediction Fr. prédire; Lat. praedicere"
+    },
+    {
+      "id": "g9-u2-0090",
+      "english": "to encourage",
+      "german": "unterstützen; ermutigen",
+      "phonetic": "ɪnˈkʌrɪdʒ",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 3 · Should streaming be reduced?",
+      "page": 210,
+      "source": {
+        "page": 210,
+        "half": "L",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "My dad encouraged me to apply for this job. to encourage - to support Fr. encourager"
+    },
+    {
+      "id": "g9-u2-0091",
+      "english": "eventually",
+      "german": "schließlich; endlich; irgendwann",
+      "phonetic": "ɪˈventʃuəli",
+      "part_of_speech": "adverb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 3 · Should streaming be reduced?",
+      "page": 210,
+      "source": {
+        "page": 210,
+        "half": "L",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "The new information eventually led the police to the criminal. !False friend: dt. eventuell – maybe, perhaps eventually - in the end, at last"
+    },
+    {
+      "id": "g9-u2-0092",
+      "english": "to announce",
+      "german": "ankündigen; durchsagen",
+      "phonetic": "əˈnaʊns",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 3 · Should streaming be reduced?",
+      "page": 210,
+      "source": {
+        "page": 210,
+        "half": "L",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "They announced that the train was two hours late. to announce → announcement Fr. annoncer; Lat. annuntiare"
+    },
+    {
+      "id": "g9-u2-0093",
+      "english": "technical",
+      "german": "technisch; handwerklich; fachlich",
+      "phonetic": "ˈteknɪkl",
+      "part_of_speech": "adjective",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 3 · Should streaming be reduced?",
+      "page": 210,
+      "source": {
+        "page": 210,
+        "half": "L",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "I'm not good at Maths, so I guess I wouldn't be so great at a technical job."
+    },
+    {
+      "id": "g9-u2-0094",
+      "english": "to suit sb",
+      "german": "(zu) jmdm. passen; jmdm. stehen",
+      "phonetic": "suːt",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 3 · Should streaming be reduced?",
+      "page": 210,
+      "source": {
+        "page": 210,
+        "half": "L",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "Which colour suits me better: black or grey?"
+    },
+    {
+      "id": "g9-u2-0095",
+      "english": "mood",
+      "german": "Stimmung; Laune",
+      "phonetic": "muːd",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 3 · Should streaming be reduced?",
+      "page": 210,
+      "source": {
+        "page": 210,
+        "half": "L",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "Can you describe the mood in that film scene?"
+    },
+    {
+      "id": "g9-u2-0096",
+      "english": "versus",
+      "german": "gegen",
+      "phonetic": "ˈvɜːsəs",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 3 · Should streaming be reduced?",
+      "page": 210,
+      "source": {
+        "page": 210,
+        "half": "L",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "Old versus young - who will win our quiz? !Vs.,'vs, 'v.' and 'V' are short for 'versus': I've got tickets for the Germany vs. Italy match."
+    },
+    {
+      "id": "g9-u2-0097",
+      "english": "to be available",
+      "german": "zur Verfügung stehen; abkömmlich sein",
+      "phonetic": "bi əˈveɪləbl",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 3 · Should streaming be reduced?",
+      "page": 210,
+      "source": {
+        "page": 210,
+        "half": "L",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "Online shops are available all day and all night. That's why many people prefer online shopping."
+    },
+    {
+      "id": "g9-u2-0098",
+      "english": "delivery",
+      "german": "Lieferung; Auslieferung; Zustellung",
+      "phonetic": "dɪˈlɪvəri",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 3 · Should streaming be reduced?",
+      "page": 210,
+      "source": {
+        "page": 210,
+        "half": "L",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "Newspaper delivery is between 6 and 10 a.m. delivery→ to deliver"
+    },
+    {
+      "id": "g9-u2-0099",
+      "english": "customer",
+      "german": "Kunde/Kundin",
+      "phonetic": "ˈkʌstəmə",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 3 · Should streaming be reduced?",
+      "page": 210,
+      "source": {
+        "page": 210,
+        "half": "L",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "Loyal customers often get special offers."
+    },
+    {
+      "id": "g9-u2-0100",
+      "english": "fraud",
+      "german": "Betrug",
+      "phonetic": "frɔːd",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 3 · Should streaming be reduced?",
+      "page": 210,
+      "source": {
+        "page": 210,
+        "half": "L",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "The jewellery wasn't real – it was a fraud! Lat. fraus, fraudis (f)"
+    },
+    {
+      "id": "g9-u2-0101",
+      "english": "mobility",
+      "german": "Mobilität",
+      "phonetic": "məˈbɪləti",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 3 · Should streaming be reduced?",
+      "page": 210,
+      "source": {
+        "page": 210,
+        "half": "L",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "More mobility means more emissions. Fr. mobilité (f); Lat. mobilis, mobilitas (f)"
+    },
+    {
+      "id": "g9-u2-0102",
+      "english": "employer",
+      "german": "Arbeitgeber/-in",
+      "phonetic": "ɪmˈplɔɪə",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 3 · Should streaming be reduced?",
+      "page": 210,
+      "source": {
+        "page": 210,
+        "half": "L",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "This company is one of the region's biggest employers. employer → employee Fr. employeur/-euse"
+    },
+    {
+      "id": "g9-u2-0103",
+      "english": "power station",
+      "german": "Kraftwerk",
+      "phonetic": "ˈpaʊə ˌsteɪʃn",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 3 · Should streaming be reduced?",
+      "page": 210,
+      "source": {
+        "page": 210,
+        "half": "L",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "Power stations use fossil fuels to produce electricity."
+    },
+    {
+      "id": "g9-u2-0104",
+      "english": "drought",
+      "german": "Dürre; Trockenheit",
+      "phonetic": "draʊt",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 3 · Should streaming be reduced?",
+      "page": 210,
+      "source": {
+        "page": 210,
+        "half": "L",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "'Drought' rhymes with ,out."
+    },
+    {
+      "id": "g9-u2-0105",
+      "english": "to do without sth",
+      "german": "ohne etw. auskommen",
+      "phonetic": "duː wɪðˈaʊt",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 3 · Should streaming be reduced?",
+      "page": 210,
+      "source": {
+        "page": 210,
+        "half": "L",
+        "row": 19
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "Can you do without eating chocolate for a week?"
+    },
+    {
+      "id": "g9-u2-0106",
+      "english": "wind farm",
+      "german": "Windpark",
+      "phonetic": "ˈwɪnd ˌfɑːm",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 3 · Should streaming be reduced?",
+      "page": 210,
+      "source": {
+        "page": 210,
+        "half": "L",
+        "row": 20
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "Wind farms produce electricity in a sustainable way."
+    },
+    {
+      "id": "g9-u2-0107",
+      "english": "cable",
+      "german": "Kabel",
+      "phonetic": "ˈkeɪbl",
+      "part_of_speech": "adjective",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 3 · Should streaming be reduced?",
+      "page": 210,
+      "source": {
+        "page": 210,
+        "half": "L",
+        "row": 21
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "My brother has at least five cables to charge his mobile. Fr. câble (m)"
+    },
+    {
+      "id": "g9-u2-0108",
+      "english": "to generate",
+      "german": "generieren; erzeugen",
+      "phonetic": "ˈdʒenəreɪt",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Station 3 · Should streaming be reduced?",
+      "page": 210,
+      "source": {
+        "page": 210,
+        "half": "L",
+        "row": 22
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "To protect the environment, we need to find new ways of generating power."
+    },
+    {
+      "id": "g9-u2-0109",
+      "english": "to the point",
+      "german": "prägnant; treffend",
+      "phonetic": "tə ðə ˈpɔɪnt",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Skills · How to chair a discussion",
+      "page": 211,
+      "source": {
+        "page": 211,
+        "half": "R",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "Keep your dialogues short and to the point."
+    },
+    {
+      "id": "g9-u2-0110",
+      "english": "duty",
+      "german": "Pflicht",
+      "phonetic": "ˈdjuːti",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Skills · How to chair a discussion",
+      "page": 211,
+      "source": {
+        "page": 211,
+        "half": "R",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "It is your duty to help a hurt person."
+    },
+    {
+      "id": "g9-u2-0111",
+      "english": "to set",
+      "german": "setzen; aufstellen",
+      "phonetic": "set",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Unit task · A class debate",
+      "page": 211,
+      "source": {
+        "page": 211,
+        "half": "R",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "In a debate the chairperson sets the rules."
+    },
+    {
+      "id": "g9-u2-0112",
+      "english": "move",
+      "german": "Bewegung; Zug",
+      "phonetic": "muːv",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Unit task · A class debate",
+      "page": 211,
+      "source": {
+        "page": 211,
+        "half": "R",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "1. Jay knows lots of dance moves. 2. It was a clever move to start the debate with this argument. move → to move"
+    },
+    {
+      "id": "g9-u2-0113",
+      "english": "vote",
+      "german": "Abstimmung; Stimme; Wahl",
+      "phonetic": "vəʊt",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Unit task · A class debate",
+      "page": 211,
+      "source": {
+        "page": 211,
+        "half": "R",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "A politician has to earn my vote; then I might vote for them. vote → to vote Fr. vote (m); Lat. votum (nt)"
+    },
+    {
+      "id": "g9-u2-0114",
+      "english": "Your time is up.",
+      "german": "Deine/Eure Zeit ist um.",
+      "phonetic": "jɔː ˌtaɪm ɪz ˈʌp",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Unit task · A class debate",
+      "page": 211,
+      "source": {
+        "page": 211,
+        "half": "R",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "It's my turn now. Your time is up."
+    },
+    {
+      "id": "g9-u2-0115",
+      "english": "ration",
+      "german": "Ration",
+      "phonetic": "ˈræʃn",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Story · The Carbon Diaries 2015",
+      "page": 211,
+      "source": {
+        "page": 211,
+        "half": "R",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "ration - having only a certain amo Fr. ration (f)"
+    },
+    {
+      "id": "g9-u2-0116",
+      "english": "petrol (BE)",
+      "german": "Benzin",
+      "phonetic": "ˈpetrəl",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Story · The Carbon Diaries 2015",
+      "page": 211,
+      "source": {
+        "page": 211,
+        "half": "R",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "How much petrol does your car us"
+    },
+    {
+      "id": "g9-u2-0117",
+      "english": "to mess sth up (infml)",
+      "german": "etw. vergeigen (ugs.)",
+      "phonetic": "mes ˈʌp",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Story · The Carbon Diaries 2015",
+      "page": 212,
+      "source": {
+        "page": 212,
+        "half": "L",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "to mess sth up - to do sth badly or wrong"
+    },
+    {
+      "id": "g9-u2-0118",
+      "english": "reduction",
+      "german": "Reduzierung; Verminderung",
+      "phonetic": "rɪˈdʌkʃn",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Story · The Carbon Diaries 2015",
+      "page": 212,
+      "source": {
+        "page": 212,
+        "half": "L",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "There's a price reduction on all fish products today. reduction ↔ rise reduction → to reduce Fr. réduction (f)"
+    },
+    {
+      "id": "g9-u2-0119",
+      "english": "over the top (infml)",
+      "german": "übertrieben; überzogen",
+      "phonetic": "ˌəʊvə ðə ˈtɒp",
+      "part_of_speech": "phrase",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Story · The Carbon Diaries 2015",
+      "page": 212,
+      "source": {
+        "page": 212,
+        "half": "L",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "Your reaction is a bit over the top, don't you think? ! Abkürzung: OTT"
+    },
+    {
+      "id": "g9-u2-0120",
+      "english": "to go",
+      "german": "sagen",
+      "phonetic": "ɡəʊ",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Story · The Carbon Diaries 2015",
+      "page": 212,
+      "source": {
+        "page": 212,
+        "half": "L",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "I said, \"You can't do that!\" But she went, \"Yes, I can.\""
+    },
+    {
+      "id": "g9-u2-0121",
+      "english": "disgusting",
+      "german": "abscheulich; ekelhaft",
+      "phonetic": "dɪsˈɡʌstɪŋ",
+      "part_of_speech": "adjective",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Story · The Carbon Diaries 2015",
+      "page": 212,
+      "source": {
+        "page": 212,
+        "half": "L",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "Ugh! This soup tastes disgusting."
+    },
+    {
+      "id": "g9-u2-0122",
+      "english": "riot",
+      "german": "Aufruhr; Aufstand",
+      "phonetic": "ˈraɪət",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Story · The Carbon Diaries 2015",
+      "page": 212,
+      "source": {
+        "page": 212,
+        "half": "L",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "The lack of clean water caused several riots."
+    },
+    {
+      "id": "g9-u2-0123",
+      "english": "to back down",
+      "german": "einen Rückzieher machen",
+      "phonetic": "ˌbæk ˈdaʊn",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Story · The Carbon Diaries 2015",
+      "page": 212,
+      "source": {
+        "page": 212,
+        "half": "L",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "After the riots the government backed down and supplied the people with water."
+    },
+    {
+      "id": "g9-u2-0124",
+      "english": "pathetic",
+      "german": "erbärmlich; armselig",
+      "phonetic": "pəˈθetɪk",
+      "part_of_speech": "adjective",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Story · The Carbon Diaries 2015",
+      "page": 212,
+      "source": {
+        "page": 212,
+        "half": "L",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "In my purse there was a pathetically small amount of money. Fr. pathétique"
+    },
+    {
+      "id": "g9-u2-0125",
+      "english": "access (no pl)",
+      "german": "Zugang; Zutritt",
+      "phonetic": "ˈækses",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Story · The Carbon Diaries 2015",
+      "page": 212,
+      "source": {
+        "page": 212,
+        "half": "L",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "access - being able to go to a place or use a thing Fr. accès (m); Lat. accessus (m)"
+    },
+    {
+      "id": "g9-u2-0126",
+      "english": "kettle",
+      "german": "Teekessel; Kessel; Wasserkocher",
+      "phonetic": "ˈketl",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Story · The Carbon Diaries 2015",
+      "page": 212,
+      "source": {
+        "page": 212,
+        "half": "L",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "Where's the kettle? I'd like to make some tea."
+    },
+    {
+      "id": "g9-u2-0127",
+      "english": "freezer",
+      "german": "Tiefkühlschrank",
+      "phonetic": "ˈfriːzə",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Story · The Carbon Diaries 2015",
+      "page": 212,
+      "source": {
+        "page": 212,
+        "half": "L",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "If you keep food in the freezer, it stays fresh."
+    },
+    {
+      "id": "g9-u2-0128",
+      "english": "to unwrap",
+      "german": "auswickeln; auspacken",
+      "phonetic": "ʌnˈræp",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Story · The Carbon Diaries 2015",
+      "page": 212,
+      "source": {
+        "page": 212,
+        "half": "L",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "I want to know what's in the parcel. Can I unwrap it?"
+    },
+    {
+      "id": "g9-u2-0129",
+      "english": "to stroke",
+      "german": "streicheln",
+      "phonetic": "strəʊk",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Story · The Carbon Diaries 2015",
+      "page": 212,
+      "source": {
+        "page": 212,
+        "half": "L",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "Deep in thought, he was stroking his beard."
+    },
+    {
+      "id": "g9-u2-0130",
+      "english": "to rub",
+      "german": "reiben; scheuern",
+      "phonetic": "rʌb",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Story · The Carbon Diaries 2015",
+      "page": 212,
+      "source": {
+        "page": 212,
+        "half": "L",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "1. Her shoes are rubbing because they are too small. 2. The cat was rub.bing her back on the floor."
+    },
+    {
+      "id": "g9-u2-0131",
+      "english": "drizzle",
+      "german": "Nieselregen",
+      "phonetic": "ˈdrɪzl",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Story · The Carbon Diaries 2015",
+      "page": 212,
+      "source": {
+        "page": 212,
+        "half": "L",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "The weather forecast announces a drizzle for tomorrow."
+    },
+    {
+      "id": "g9-u2-0132",
+      "english": "to freeze",
+      "german": "gefrieren; erstarren",
+      "phonetic": "friːz",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Story · The Carbon Diaries 2015",
+      "page": 212,
+      "source": {
+        "page": 212,
+        "half": "L",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "The last winter was so cold that even the river froze. to freeze → freezer"
+    },
+    {
+      "id": "g9-u2-0133",
+      "english": "footage",
+      "german": "Filmmaterial",
+      "phonetic": "ˈfʊtɪdʒ",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Story · The Carbon Diaries 2015",
+      "page": 212,
+      "source": {
+        "page": 212,
+        "half": "L",
+        "row": 17
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "Have you seen footage of the earthquake?"
+    },
+    {
+      "id": "g9-u2-0134",
+      "english": "emergency",
+      "german": "Notfall; Notlage; Notfall-",
+      "phonetic": "ɪˈmɜːdʒənsi",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Story · The Carbon Diaries 2015",
+      "page": 212,
+      "source": {
+        "page": 212,
+        "half": "L",
+        "row": 18
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "That plane can't land, something's wrong with it - it's an emergency!"
+    },
+    {
+      "id": "g9-u2-0135",
+      "english": "evil",
+      "german": "böse; schlecht",
+      "phonetic": "ˈiːvl",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Story · The Carbon Diaries 2015",
+      "page": 212,
+      "source": {
+        "page": 212,
+        "half": "L",
+        "row": 19
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "An evil person is bad and enjoys hurting other people."
+    },
+    {
+      "id": "g9-u2-0136",
+      "english": "to bake",
+      "german": "backen",
+      "phonetic": "beɪk",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Story · The Carbon Diaries 2015",
+      "page": 212,
+      "source": {
+        "page": 212,
+        "half": "L",
+        "row": 20
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "You bake bread, cakes and biscuits."
+    },
+    {
+      "id": "g9-u2-0137",
+      "english": "staff",
+      "german": "Personal; Mitarbeiter",
+      "phonetic": "stɑːf",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Story · The Carbon Diaries 2015",
+      "page": 212,
+      "source": {
+        "page": 212,
+        "half": "L",
+        "row": 21
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "He is allowed to go in because he is a member of the staff."
+    },
+    {
+      "id": "g9-u2-0138",
+      "english": "checkout",
+      "german": "Kasse",
+      "phonetic": "ˈtʃekaʊt",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Story · The Carbon Diaries 2015",
+      "page": 212,
+      "source": {
+        "page": 212,
+        "half": "L",
+        "row": 22
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "My aunt works at the checkout of a big supermarket."
+    },
+    {
+      "id": "g9-u2-0139",
+      "english": "edge",
+      "german": "Rand; Kante",
+      "phonetic": "edʒ",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Story · The Carbon Diaries 2015",
+      "page": 212,
+      "source": {
+        "page": 212,
+        "half": "L",
+        "row": 23
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "If you put the bottle on the edge of the table, it may fall off!"
+    },
+    {
+      "id": "g9-u2-0140",
+      "english": "blackout",
+      "german": "Stromausfall",
+      "phonetic": "ˈblækaʊt",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Story · The Carbon Diaries 2015",
+      "page": 212,
+      "source": {
+        "page": 212,
+        "half": "L",
+        "row": 24
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "Last night there was a blackout for ten minutes."
+    },
+    {
+      "id": "g9-u2-0141",
+      "english": "Swiss",
+      "german": "Schweizer; schweizerisch",
+      "phonetic": "swɪs",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Story · The Carbon Diaries 2015",
+      "page": 212,
+      "source": {
+        "page": 212,
+        "half": "L",
+        "row": 25
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "Swiss knives are said to be the best knives. Fr. suisse"
+    },
+    {
+      "id": "g9-u2-0142",
+      "english": "to refuse",
+      "german": "ablehnen; sich weigern; zurückweisen",
+      "phonetic": "rɪˈfjuːz",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Story · The Carbon Diaries 2015",
+      "page": 212,
+      "source": {
+        "page": 212,
+        "half": "L",
+        "row": 26
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "refuse - to say you will not do or accept sth Fr. refuser; Lat. refutare"
+    },
+    {
+      "id": "g9-u2-0143",
+      "english": "to beg (for)",
+      "german": "betteln (um); anflehen",
+      "phonetic": "beɡ fə",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Story · The Carbon Diaries 2015",
+      "page": 213,
+      "source": {
+        "page": 213,
+        "half": "R",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "1. The man was begging for money. 2. My friend begged me to help him."
+    },
+    {
+      "id": "g9-u2-0144",
+      "english": "annoying",
+      "german": "ärgerlich; lästig",
+      "phonetic": "əˈnɔɪɪŋ",
+      "part_of_speech": "adjective",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Story · The Carbon Diaries 2015",
+      "page": 213,
+      "source": {
+        "page": 213,
+        "half": "R",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "It's so annoying that I have to babysit my brother."
+    },
+    {
+      "id": "g9-u2-0145",
+      "english": "humorous",
+      "german": "humorvoll; lustig",
+      "phonetic": "ˈhjuːmərəs",
+      "part_of_speech": "adjective",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Focus 2",
+      "page": 213,
+      "source": {
+        "page": 213,
+        "half": "R",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "My favourite film has many humorous dialogues. humorous → humour"
+    },
+    {
+      "id": "g9-u2-0146",
+      "english": "pressure",
+      "german": "Druck",
+      "phonetic": "ˈpreʃə",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Focus 2",
+      "page": 213,
+      "source": {
+        "page": 213,
+        "half": "R",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "If you have a lot of work to do in a short time, you may feel under pressure. pressure → to press Fr. presser; Lat. premere, pressum"
+    },
+    {
+      "id": "g9-u2-0147",
+      "english": "irony",
+      "german": "Ironie",
+      "phonetic": "ˈaɪrəni",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Focus 2",
+      "page": 213,
+      "source": {
+        "page": 213,
+        "half": "R",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "Children usually don't understand irony. They believe everything you say. Fr. ironie (f); Lat. ironia (f)"
+    },
+    {
+      "id": "g9-u2-0148",
+      "english": "relief",
+      "german": "Erleichterung",
+      "phonetic": "rɪˈliːf",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Focus 2",
+      "page": 213,
+      "source": {
+        "page": 213,
+        "half": "R",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "It was a great relief to see that my best friend was pot hurt in the accident."
+    },
+    {
+      "id": "g9-u2-0149",
+      "english": "restriction",
+      "german": "Einschränkung; Beschränkung",
+      "phonetic": "rɪˈstrɪkʃn",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Focus 2",
+      "page": 213,
+      "source": {
+        "page": 213,
+        "half": "R",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "There should be tougher age restr restriction → to restrict"
+    },
+    {
+      "id": "g9-u2-0150",
+      "english": "tension",
+      "german": "Spannung",
+      "phonetic": "ˈtenʃn",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Focus 2",
+      "page": 214,
+      "source": {
+        "page": 214,
+        "half": "L",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "tension - a nervous feeling that you get when you can't relax. Fr. tension (f)"
+    },
+    {
+      "id": "g9-u2-0151",
+      "english": "egoism",
+      "german": "Egoismus",
+      "phonetic": "ˈiːɡəʊɪzəm",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Focus 2",
+      "page": 214,
+      "source": {
+        "page": 214,
+        "half": "L",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "She doesn't like sharing. That's her egoism. Fr. égoisme (m)"
+    },
+    {
+      "id": "g9-u2-0152",
+      "english": "selfishness",
+      "german": "Selbstsucht",
+      "phonetic": "ˈselfɪʃnəs",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Focus 2",
+      "page": 214,
+      "source": {
+        "page": 214,
+        "half": "L",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "She never does anything for other people. This is a sign of selfishness."
+    },
+    {
+      "id": "g9-u2-0153",
+      "english": "honesty",
+      "german": "Ehrlichkeit",
+      "phonetic": "ˈɒnəsti",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Focus 2",
+      "page": 214,
+      "source": {
+        "page": 214,
+        "half": "L",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "Honesty is important in any relationship. honesty→honest Fr. honnêteté (f)"
+    },
+    {
+      "id": "g9-u2-0154",
+      "english": "cooperation",
+      "german": "Zusammenarbeit; Kooperation",
+      "phonetic": "kəʊˌɒpəˈreɪʃn",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Focus 2",
+      "page": 214,
+      "source": {
+        "page": 214,
+        "half": "L",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "The product was developed in cooperation with another company. Fr. coopération (f)"
+    },
+    {
+      "id": "g9-u2-0155",
+      "english": "solidarity",
+      "german": "Solidarität; Zusammenhalt",
+      "phonetic": "ˌsɒlɪˈdærəti",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Focus 2",
+      "page": 214,
+      "source": {
+        "page": 214,
+        "half": "L",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "Many people expressed their solidarity with the protesters. Fr. solidarité (f)"
+    },
+    {
+      "id": "g9-u2-0156",
+      "english": "to speak out (about sth)",
+      "german": "seine Meinung (über etw) deutlich vertreten; sich (zu etw) äußern",
+      "phonetic": "spiːk ˈaʊt",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Text smart 2 · Argumentative texts · Introduction",
+      "page": 214,
+      "source": {
+        "page": 214,
+        "half": "L",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "Paul is always the first to speak out about things he thinks are wrong or unfair."
+    },
+    {
+      "id": "g9-u2-0157",
+      "english": "criticism",
+      "german": "Kritik",
+      "phonetic": "ˈkrɪtɪsɪzəm",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Text smart 2 · Argumentative texts · Introduction",
+      "page": 214,
+      "source": {
+        "page": 214,
+        "half": "L",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "There was a lot of criticism of the new school rules. criticism → critical"
+    },
+    {
+      "id": "g9-u2-0158",
+      "english": "insult",
+      "german": "Beleidigung",
+      "phonetic": "ˈɪnsʌlt",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Text smart 2 · Argumentative texts · Introduction",
+      "page": 214,
+      "source": {
+        "page": 214,
+        "half": "L",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "Fair criticism is one thing, but there's nothing fair about a nasty insult. Fr. insulte (f)"
+    },
+    {
+      "id": "g9-u2-0159",
+      "english": "to collapse",
+      "german": "kollabieren; zusammenbrechen",
+      "phonetic": "kəˈlæps",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Text smart 2 · Argumentative texts · Introduction",
+      "page": 214,
+      "source": {
+        "page": 214,
+        "half": "L",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "If a building collapses, it falls to the ground. to collapse - to fall down, usually because you are weak or ill"
+    },
+    {
+      "id": "g9-u2-0160",
+      "english": "provocative",
+      "german": "provokativ; provozierend",
+      "phonetic": "prəˈvɒkətɪv",
+      "part_of_speech": "adjective",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Text smart 2 · Argumentative texts · Introduction",
+      "page": 214,
+      "source": {
+        "page": 214,
+        "half": "L",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "Their provocative fashion was in the news."
+    },
+    {
+      "id": "g9-u2-0161",
+      "english": "to tolerate",
+      "german": "tolerieren; dulden",
+      "phonetic": "ˈtɒləreɪt",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Text smart 2 · Argumentative texts · Introduction",
+      "page": 214,
+      "source": {
+        "page": 214,
+        "half": "L",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "I can tolerate a lot, but I've really had enough of his insults. Fr. tolérer; Lat. tolerare"
+    },
+    {
+      "id": "g9-u2-0162",
+      "english": "to do away with sth",
+      "german": "etw. abschaffen; etw. loswerden",
+      "phonetic": "duː əˈweɪ wɪð",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Text smart 2 · Argumentative texts · Station 1 · Paragraph writing",
+      "page": 214,
+      "source": {
+        "page": 214,
+        "half": "L",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "We did away with the rule of asking permission before you go to the toilet."
+    },
+    {
+      "id": "g9-u2-0163",
+      "english": "candidate",
+      "german": "Kandidat/-in; Bewerber/-in",
+      "phonetic": "ˈkændɪdət",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Text smart 2 · Argumentative texts · Station 1 · Paragraph writing",
+      "page": 214,
+      "source": {
+        "page": 214,
+        "half": "L",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "The ideal candidate should be able to take on responsibility. Fr. candidat/-e (m)/(f); Lat. candidatus (m)"
+    },
+    {
+      "id": "g9-u2-0164",
+      "english": "in the first place",
+      "german": "überhaupt erst; von vornherein",
+      "phonetic": "ɪn ðə ˌfɜːst ˈpleɪs",
+      "part_of_speech": "phrase",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Text smart 2 · Argumentative texts · Station 1 · Paragraph writing",
+      "page": 214,
+      "source": {
+        "page": 214,
+        "half": "L",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "Mum, I'm really sorry about coming home so late from the club. – Being late is bad enough, but what were you doing in a club in the first place?"
+    },
+    {
+      "id": "g9-u2-0165",
+      "english": "vegan",
+      "german": "vegan; Veganer/-in",
+      "phonetic": "ˈviːɡən",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Text smart 2 · Argumentative texts · Station 1 · Paragraph writing",
+      "page": 214,
+      "source": {
+        "page": 214,
+        "half": "L",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "With their choice of food, vegans want to protect the environment and animals."
+    },
+    {
+      "id": "g9-u2-0166",
+      "english": "to fail sb",
+      "german": "jmdn. hängen lassen; jmdn. im Stich lassen; jmdn. enttäuschen",
+      "phonetic": "feɪl",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Text smart 2 · Argumentative texts · Station 2 · An argumentative essay",
+      "page": 215,
+      "source": {
+        "page": 215,
+        "half": "R",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "My best friend failed me when I was in trouble. I will never forgive her."
+    },
+    {
+      "id": "g9-u2-0167",
+      "english": "to confront",
+      "german": "konfrontieren",
+      "phonetic": "kənˈfrʌnt",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Text smart 2 · Argumentative texts · Station 2 · An argumentative essay",
+      "page": 215,
+      "source": {
+        "page": 215,
+        "half": "R",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "My dad confronted me with a letter from school. Fr. confronter"
+    },
+    {
+      "id": "g9-u2-0168",
+      "english": "to present sb with sth",
+      "german": "jmdm.etw. darbieten; jmdm. etw. präsentieren; jmdm. etw. schenken",
+      "phonetic": "prɪˈzent wɪð",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Text smart 2 · Argumentative texts · Station 2 · An argumentative essay",
+      "page": 215,
+      "source": {
+        "page": 215,
+        "half": "R",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "Adverts present us with a lot of things we don't need, but which we often want. to present sb with sth → present Fr. présenter"
+    },
+    {
+      "id": "g9-u2-0169",
+      "english": "sporty",
+      "german": "sportlich",
+      "phonetic": "ˈspɔːti",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Text smart 2 · Argumentative texts · Station 2 · An argumentative essay",
+      "page": 215,
+      "source": {
+        "page": 215,
+        "half": "R",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "My sporty friend goes running every day. sporty → sport"
+    },
+    {
+      "id": "g9-u2-0170",
+      "english": "billionaire",
+      "german": "Milliardär/-in",
+      "phonetic": "ˌbɪliəˈneə",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Text smart 2 · Argumentative texts · Station 2 · An argumentative essay",
+      "page": 215,
+      "source": {
+        "page": 215,
+        "half": "R",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "How many billionaires are there in Germany? billionaire → billion"
+    },
+    {
+      "id": "g9-u2-0171",
+      "english": "outdated",
+      "german": "veraltet; überholt",
+      "phonetic": "ˌaʊtˈdeɪtɪd",
+      "part_of_speech": "adjective",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Text smart 2 · Argumentative texts · Station 2 · An argumentative essay",
+      "page": 215,
+      "source": {
+        "page": 215,
+        "half": "R",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "I say his opinion is outdated, but he insists it's just traditional. outdated - old-fashioned outdated ↔ modern"
+    },
+    {
+      "id": "g9-u2-0172",
+      "english": "realism",
+      "german": "Realismus; Realitätssinn",
+      "phonetic": "ˈrɪəlɪzəm",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Text smart 2 · Argumentative texts · Station 2 · An argumentative essay",
+      "page": 215,
+      "source": {
+        "page": 215,
+        "half": "R",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "The film is a mix of fiction and realism. realism → real → realistic Fr. réalisme (m)"
+    },
+    {
+      "id": "g9-u2-0173",
+      "english": "role model",
+      "german": "Vorbild",
+      "phonetic": "ˈrəʊl ˌmɒdl",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Text smart 2 · Argumentative texts · Station 2 · An argumentative essay",
+      "page": 215,
+      "source": {
+        "page": 215,
+        "half": "R",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "My role model is my older sister."
+    },
+    {
+      "id": "g9-u2-0174",
+      "english": "balance",
+      "german": "Gleichgewicht",
+      "phonetic": "ˈbæləns",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Text smart 2 · Argumentative texts · Station 2 · An argumentative essay",
+      "page": 215,
+      "source": {
+        "page": 215,
+        "half": "R",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "In the article he finds a good balance between scientific and normal language. Fr. balance (f)"
+    },
+    {
+      "id": "g9-u2-0175",
+      "english": "brief",
+      "german": "kurz",
+      "phonetic": "briːf",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Text smart 2 · Argumentative texts · Station 2 · An argumentative essay",
+      "page": 215,
+      "source": {
+        "page": 215,
+        "half": "R",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "Has Mrs Chen told you about the new project yet? – No, I only saw her briefly this morning, there was no time. Fr. bref/ brève; Lat. brevis"
+    },
+    {
+      "id": "g9-u2-0176",
+      "english": "altogether",
+      "german": "insgesamt; gänzlich; ganz und Sar",
+      "phonetic": "ˌɔːltəˈɡeðə",
+      "part_of_speech": "adverb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Text smart 2 · Argumentative texts · Options",
+      "page": 215,
+      "source": {
+        "page": 215,
+        "half": "R",
+        "row": 11
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "A kilo of apples and a kilo of oranges, that'll be £5 altogether."
+    },
+    {
+      "id": "g9-u2-0177",
+      "english": "voice",
+      "german": "Mitsprache",
+      "phonetic": "vɔɪs",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Across cultures 3 · Having a voice",
+      "page": 215,
+      "source": {
+        "page": 215,
+        "half": "R",
+        "row": 12
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "It's a sign of democracy that everyone has a voice. Fr. voix (f); Lat vox, vocis (f)"
+    },
+    {
+      "id": "g9-u2-0178",
+      "english": "participation",
+      "german": "Mitwirkung; Beteiligung: Teilnahme",
+      "phonetic": "pɑːˌtɪsɪˈpeɪʃn",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Across cultures 3 · Having a voice",
+      "page": 215,
+      "source": {
+        "page": 215,
+        "half": "R",
+        "row": 13
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "Participation in school assembly is a must. Fr. participation (f); Lat. participare, participatum"
+    },
+    {
+      "id": "g9-u2-0179",
+      "english": "banner",
+      "german": "Banner; Spruchband; Transparent",
+      "phonetic": "ˈbænə",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Across cultures 3 · Having a voice",
+      "page": 215,
+      "source": {
+        "page": 215,
+        "half": "R",
+        "row": 14
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "The protesters held their banners up high over their heads. banner - flag"
+    },
+    {
+      "id": "g9-u2-0180",
+      "english": "student council",
+      "german": "Schülerrat",
+      "phonetic": "ˌstjuːdnt ˈkaʊnsl",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Across cultures 3 · Having a voice",
+      "page": 215,
+      "source": {
+        "page": 215,
+        "half": "R",
+        "row": 15
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "The Student Council meets every Monday after scbool"
+    },
+    {
+      "id": "g9-u2-0181",
+      "english": "to stand up for sb/sth",
+      "german": "jmdn./etw. verteidigen; für jmdn./etw. einstehen",
+      "phonetic": "ˌstænd ˈʌp fə",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Across cultures 3 · Having a voice",
+      "page": 215,
+      "source": {
+        "page": 215,
+        "half": "R",
+        "row": 16
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "Good friends stand up for eachoth"
+    },
+    {
+      "id": "g9-u2-0182",
+      "english": "signature",
+      "german": "Unterschrift",
+      "phonetic": "ˈsɪɡnətʃə",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Across cultures 3 · Having a voice",
+      "page": 216,
+      "source": {
+        "page": 216,
+        "half": "L",
+        "row": 1
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "That is your signature? Nobody can read that! signature → to sign Fr. signature (f)"
+    },
+    {
+      "id": "g9-u2-0183",
+      "english": "to make one's point",
+      "german": "seinen Standpunkt deutlich machen; auf etwas hinauswollen; ein Argument anbringen",
+      "phonetic": "ˌmeɪk wʌnz ˈpɔɪnt",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Across cultures 3 · Having a voice",
+      "page": 216,
+      "source": {
+        "page": 216,
+        "half": "L",
+        "row": 2
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "You needn't shout to make your point."
+    },
+    {
+      "id": "g9-u2-0184",
+      "english": "poor",
+      "german": "schlecht",
+      "phonetic": "pɔː; pʊə",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Across cultures 3 · Having a voice",
+      "page": 216,
+      "source": {
+        "page": 216,
+        "half": "L",
+        "row": 3
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "He is a poor role model - he makes many bad choices!"
+    },
+    {
+      "id": "g9-u2-0185",
+      "english": "measure",
+      "german": "Maßnahme",
+      "phonetic": "ˈmeʒə",
+      "part_of_speech": "noun",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Across cultures 3 · Having a voice",
+      "page": 216,
+      "source": {
+        "page": 216,
+        "half": "L",
+        "row": 4
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "The police has called for new safety measures at rock festivals."
+    },
+    {
+      "id": "g9-u2-0186",
+      "english": "to be passionate about sth",
+      "german": "etw. leidenschaftlich gern tun; eine Leidenschaft für etw. haben; für etw. brennen",
+      "phonetic": "bi ˈpæʃnət əˌbaʊt",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Across cultures 3 · Having a voice",
+      "page": 216,
+      "source": {
+        "page": 216,
+        "half": "L",
+        "row": 5
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "If you're passionate about sth, then you don't just like it, you love it!"
+    },
+    {
+      "id": "g9-u2-0187",
+      "english": "to admire",
+      "german": "bewundern",
+      "phonetic": "ədˈmaɪə",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Across cultures 3 · Having a voice",
+      "page": 216,
+      "source": {
+        "page": 216,
+        "half": "L",
+        "row": 6
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "Everyone admires a hero. Fr. admirer; Lat. admirari"
+    },
+    {
+      "id": "g9-u2-0188",
+      "english": "rewarding",
+      "german": "lohnend; bereichernd",
+      "phonetic": "rɪˈwɔːdɪŋ",
+      "part_of_speech": "adjective",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Across cultures 3 · Having a voice",
+      "page": 216,
+      "source": {
+        "page": 216,
+        "half": "L",
+        "row": 7
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "Working with children is a very rewarding experience."
+    },
+    {
+      "id": "g9-u2-0189",
+      "english": "to nominate",
+      "german": "nominieren; ernennen",
+      "phonetic": "ˈnɒmɪneɪt",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Across cultures 3 · Having a voice",
+      "page": 216,
+      "source": {
+        "page": 216,
+        "half": "L",
+        "row": 8
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "She has been nominated for best actor in the Academy Awards. to nominate - to suggest that sb should be chosen for an award"
+    },
+    {
+      "id": "g9-u2-0190",
+      "english": "to participate",
+      "german": "teilnehmen",
+      "phonetic": "pɑːˈtɪsɪpeɪt",
+      "part_of_speech": "verb",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Across cultures 3 · Having a voice",
+      "page": 216,
+      "source": {
+        "page": 216,
+        "half": "L",
+        "row": 9
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2",
+        "difficult"
+      ],
+      "source_note": "Did you participate in the play last year? to participate → participation Fr. participer"
+    },
+    {
+      "id": "g9-u2-0191",
+      "english": "representative",
+      "german": "Repräsentant/-in; Stellvertreter/-in",
+      "phonetic": "ˌreprɪˈzentətɪv",
+      "part_of_speech": "adjective",
+      "unit": 2,
+      "unit_title": "(Never) enough!",
+      "section": "Across cultures 3 · Having a voice",
+      "page": 216,
+      "source": {
+        "page": 216,
+        "half": "L",
+        "row": 10
+      },
+      "translation_status": "source",
+      "tags": [
+        "source-vocabulary",
+        "grade-9",
+        "unit-2"
+      ],
+      "source_note": "Our representatives in parliament are elected in a democratic way. representative → to represent Fr. représentant/-e"
+    }
+  ]
+}
