@@ -1,4 +1,4 @@
-const CACHE='kathleen-v95-clean-game-library-20260924';
+const CACHE='kathleen-v96-clean-game-library-20260924';
 const CORE=['./tools/quest-mode/index.html','./tools/quest-mode/quest.js','./tools/quest-mode/quest.css','./tools/quest-mode/landscape.webp','./tools/mobile-observations/index.html','./tools/seating-plan/mobile-view.js','./mobile-teacher-v34.js',
   './','./index.html','./assets/home-native-v47.css','./home-native-v47.js','./home-information-architecture-v1.js','./tools/gamification-preview.js','./tools/gamification-beamer/index.html','./home-todo-v2.js','./tools/todo-store.js','./tools/todo-page-integration.js','./tools/teacher-shell.js','./tools/teacher-design-v50.css','./tools/teacher-page-adapters-v50.css','./tools/teacher-shell-overrides-v54.css','./tools/teacher-premium-pages-v57.css','./tools/classroom-session.js','./tools/teacher-runtime-v54.js','./tools/quick-games-integration.js','./tools/country-hunt-integration.js','./tools/history-content-center-integration.js','./tools/quick-games/demo-packs-v66.js','./tools/quick-games/quick-games-v68.js','./tools/quick-games/quick-games-premium-v1.css','./tools/quick-games/quick-games-premium-v1.js','./tools/quick-games/game-launcher-v1.css','./tools/quick-games/game-launcher-v1.js','./tools/quick-games/knowledge-source-v1.js','./tools/quick-games/buzzer-arena-v3.css','./tools/quick-games/buzzer-arena-v3.js','./tools/quick-games/risk-premium-v2.css','./tools/quick-games/risk-premium-v2.js','./manifest.webmanifest',
   './tools/english-world-quiz/index.html','./tools/english-world-quiz/bonus.html','./tools/quick-games/index.html','./tools/quick-games/country-hunt/index.html','./tools/quick-games/history-hunt/index.html','./tools/quick-games/timeline-challenge/index.html','./tools/history-content-center/index.html','./tools/todos/index.html','./tools/todos/todos-v69.js','./tools/homework-vouchers/index.html','./tools/escape-room/index.html','./tools/teacher-command/index.html',
@@ -24,7 +24,7 @@ async function decorateTeacherPage(url,res){
   const adapter=new URL('tools/teacher-page-adapters-v50.css?v=20260923-v83',scope).href;
   const premium=new URL('tools/teacher-premium-pages-v57.css?v=20260923-v83',scope).href;
   const shell=new URL('tools/teacher-shell.js?v=20260923-v83',scope).href;
-  const quickGames=new URL('tools/quick-games-integration.js?v=20260923-v83',scope).href;
+  const quickGames=new URL('tools/quick-games-integration.js?v=20260924-unified5',scope).href;
   const premiumGames=new URL('tools/country-hunt-integration.js?v=20260924-unified5',scope).href;
   const historyCenter=new URL('tools/history-content-center-integration.js?v=20260923-v83',scope).href;
   const todoPage=new URL('tools/todo-page-integration.js?v=20260923-v83',scope).href;

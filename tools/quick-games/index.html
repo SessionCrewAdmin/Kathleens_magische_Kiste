@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#faf6fb">
 <title>Quick Games · Kathleens Kiste</title>
-<link rel="stylesheet" href="quick-games-premium-v1.css?v=20260924-unified4">
+<link rel="stylesheet" href="quick-games-premium-v1.css?v=20260924-unified5">
 <link rel="stylesheet" href="buzzer-arena-v3.css?v=20260924-v4">
 <link rel="stylesheet" href="risk-premium-v2.css?v=20260924-v2">
 <link rel="stylesheet" href="game-launcher-v1.css?v=20260924-3">
@@ -48,7 +48,7 @@ body.present{background:#120f17;overflow:hidden}body.present .qg-shell>*:not(.qg
 <script src="../lesson-mode.js?v=20260923-v64"></script>
 <script src="../gamification-preview.js?v=20260923-v64"></script>
 <script src="../teacher-shell.js?v=20260923-v64"></script>
-<script src="../quick-games-integration.js?v=20260924-unified4"></script>
+<script src="../quick-games-integration.js?v=20260924-unified5"></script>
 <script>
 (()=>{'use strict';
 const STORE='kathleenQuickGamesV1',LIVE='kathleenQuickGamesLiveV1',BC='kathleen-quick-games-v1',present=new URLSearchParams(location.search).get('present')==='1';
@@ -113,6 +113,6 @@ function initPresent(){document.getElementById('workspace').classList.add('show'
 function init(){initGrid();listen();syncContext();setInterval(syncContext,3000);document.getElementById('saveBtn').onclick=saveEditor;document.getElementById('demoBtn').onclick=loadDemo;document.getElementById('exportBtn').onclick=exportAll;document.getElementById('importBtn').onclick=()=>document.getElementById('importFile').click();document.getElementById('importFile').onchange=e=>e.target.files[0]&&importAll(e.target.files[0]);window.addEventListener('kathleen:quick-game-set',e=>{const requested=e.detail?.game;db=load();if(META[requested])selectGame(requested)});if(present)initPresent();else{const requested=new URLSearchParams(location.search).get('game');if(META[requested])selectGame(requested)}}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
 })();
-</script><script src="quick-games-premium-v1.js?v=20260924-unified4"></script><script src="buzzer-arena-v3.js?v=20260924-v4"></script><script src="risk-premium-v2.js?v=20260924-v2"></script><script src="knowledge-source-v1.js?v=20260924-3"></script><script src="game-launcher-v1.js?v=20260924-3"></script>
+</script><script src="quick-games-premium-v1.js?v=20260924-unified5"></script><script src="buzzer-arena-v3.js?v=20260924-v4"></script><script src="risk-premium-v2.js?v=20260924-v2"></script><script src="knowledge-source-v1.js?v=20260924-3"></script><script src="game-launcher-v1.js?v=20260924-3"></script>
 </body>
 </html>
