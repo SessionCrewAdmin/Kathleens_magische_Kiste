@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#faf6fb">
 <title>Quick Games · Kathleens Kiste</title>
+<link rel="stylesheet" href="quick-games-premium-v1.css?v=20260924-cinematic2">
 <link rel="stylesheet" href="../teacher-design-v50.css?v=20260923-v64">
 <link rel="stylesheet" href="../teacher-page-adapters-v50.css?v=20260923-v64">
 <link rel="stylesheet" href="../teacher-premium-pages-v57.css?v=20260923-v64">
@@ -19,7 +20,7 @@ body.present{background:#120f17;overflow:hidden}body.present .qg-shell>*:not(.qg
 <script>if(new URLSearchParams(location.search).get('present')==='1'){document.body.dataset.kdsNoShell='';document.body.classList.add('present')}</script>
 <main class="qg-shell">
 <section class="qg-hero">
-  <div><div class="qg-kicker">QUICK GAMES · MINI-GAME ENGINE</div><h1>Kleine Spiele. Sofort einsatzbereit.</h1><p>Sechs kurze Unterrichtsspiele mit gemeinsamem Editor, Beamer-Modus, Session-Kontext, Combo-System und Quest-XP. Die Inhalte sind austauschbar – die Engine bleibt dieselbe.</p></div>
+  <div><div class="qg-kicker">QUICK GAMES · SPIELESAMMLUNG</div><h1>Kleine Spiele. Sofort einsatzbereit.</h1><p>Zehn kurze Unterrichtsspiele mit eigenen Inhalten, Beamer-Modus, Teams und Punktewertung.</p></div>
   <div class="qg-context"><span class="qg-pill"><i class="qg-dot" id="sessionDot"></i><span id="sessionText">Keine laufende Stunde</span></span><span class="qg-pill" id="onlinePill">0 online</span><span class="qg-pill" id="xpPill">Quest bereit</span></div>
 </section>
 <section class="qg-grid" id="gameGrid"></section>
@@ -30,7 +31,7 @@ body.present{background:#120f17;overflow:hidden}body.present .qg-shell>*:not(.qg
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:7px"><label class="qg-field"><span>Fach</span><input id="setSubject" placeholder="z. B. Englisch"></label><label class="qg-field"><span>Jahrgang</span><input id="setGrade" placeholder="z. B. 9"></label></div>
     <label class="qg-field"><span>Inhalte</span><textarea id="contentBox"></textarea></label>
     <div class="qg-help" id="formatHelp"></div>
-    <div class="qg-actions"><button class="qg-btn primary" id="saveBtn">Speichern</button><button class="qg-btn" id="demoBtn">Beispiel laden</button><button class="qg-btn" id="exportBtn">Export</button><button class="qg-btn" id="importBtn">Import</button><input class="qg-hidden" type="file" id="importFile" accept="application/json"></div>
+    <div class="qg-actions"><button class="qg-btn primary" id="saveBtn">Speichern</button><button class="qg-btn" id="demoBtn">Vorlage laden</button><button class="qg-btn" id="exportBtn">Export</button><button class="qg-btn" id="importBtn">Import</button><input class="qg-hidden" type="file" id="importFile" accept="application/json"></div>
   </aside>
   <section class="qg-card qg-play">
     <div class="qg-play-head"><div><div class="qg-kicker" id="playKicker">SPIELBEREIT</div><h2 id="playTitle">Spiel auswählen</h2></div><div class="qg-hud"><span id="roundHud">Runde 0</span><span id="comboHud">Combo ×0</span><span id="bestHud">Best ×0</span></div></div>
@@ -58,8 +59,8 @@ const META={
 };
 let db=load(),game='buzzer',state=fresh('buzzer'),timer=null,bombEnd=0,channel=null;
 function fresh(g){return{game:g,round:0,combo:0,best:0,reveal:false,question:'',answer:'',mode:'',scoreA:0,scoreB:0,classScore:0,teacherScore:0,team:'A',timeline:[],picture:{url:'',solution:'',hint:'',revealed:[]},bomb:{category:'',remaining:0,running:false},updatedAt:Date.now()}}
-function defaults(){const sets={};Object.entries(META).forEach(([k,m])=>sets[k]={title:m.title+' · Beispielset',subject:'',grade:'',content:m.demo});return{version:1,sets}}
-function load(){try{return Object.assign(defaults(),JSON.parse(localStorage.getItem(STORE)||'null')||{})}catch(e){return defaults()}}
+function defaults(){const sets={};Object.entries(META).forEach(([k,m])=>sets[k]={title:m.title,subject:'',grade:'',content:m.demo});return{version:1,sets}}
+function load(){try{const data=Object.assign(defaults(),JSON.parse(localStorage.getItem(STORE)||'null')||{});Object.entries(data.sets||{}).forEach(([k,set])=>{if(set?.title?.endsWith(' · Beispielset')&&META[k])set.title=META[k].title});return data}catch(e){return defaults()}}
 function saveDb(){localStorage.setItem(STORE,JSON.stringify(db))}
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]))}
 function toast(t){const e=document.getElementById('toast');e.textContent=t;e.classList.add('show');clearTimeout(e._t);e._t=setTimeout(()=>e.classList.remove('show'),1700)}
@@ -70,7 +71,7 @@ function btn(label,fn,cls=''){const b=document.createElement('button');b.classNa
 function initGrid(){const grid=document.getElementById('gameGrid');grid.innerHTML=Object.entries(META).map(([k,m])=>'<button class="qg-game" data-game="'+k+'"><div class="qg-icon">'+m.icon+'</div><h3>'+m.title+'</h3><p>'+m.desc+'</p><div class="qg-badges">'+m.badges.map(x=>'<span class="qg-badge">'+x+'</span>').join('')+'</div></button>').join('');grid.querySelectorAll('[data-game]').forEach(b=>b.onclick=()=>selectGame(b.dataset.game))}
 function selectGame(g){game=g;state=fresh(g);document.getElementById('workspace').classList.add('show');document.querySelectorAll('.qg-game').forEach(x=>x.classList.toggle('active',x.dataset.game===g));const m=META[g],set=db.sets[g]||{};document.getElementById('editorTitle').textContent=m.title+' bearbeiten';document.getElementById('editorDesc').textContent=m.desc;document.getElementById('playTitle').textContent=set.title||m.title;document.getElementById('setTitle').value=set.title||m.title;document.getElementById('setSubject').value=set.subject||'';document.getElementById('setGrade').value=set.grade||'';document.getElementById('contentBox').value=set.content||'';document.getElementById('formatHelp').textContent=m.format;startGame();document.getElementById('workspace').scrollIntoView({behavior:'smooth',block:'start'})}
 function saveEditor(){db.sets[game]={title:document.getElementById('setTitle').value.trim()||META[game].title,subject:document.getElementById('setSubject').value.trim(),grade:document.getElementById('setGrade').value.trim(),content:document.getElementById('contentBox').value.trim()};saveDb();document.getElementById('playTitle').textContent=db.sets[game].title;toast('Inhalt gespeichert ✓');startGame()}
-function loadDemo(){const m=META[game];document.getElementById('contentBox').value=m.demo;toast('Beispiel geladen – noch speichern')}
+function loadDemo(){const m=META[game];document.getElementById('contentBox').value=m.demo;toast('Vorlage geladen – noch speichern')}
 function exportAll(){const blob=new Blob([JSON.stringify(db,null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='kathleen-quick-games.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),500)}
 function importAll(file){const r=new FileReader();r.onload=()=>{try{const x=JSON.parse(r.result);if(!x?.sets)throw 0;db=x;saveDb();selectGame(game);toast('Quick-Games-Inhalte importiert ✓')}catch(e){toast('Importdatei nicht erkannt')}};r.readAsText(file)}
 function session(){const l=window.KathleenLessonMode?.get?.(),c=window.KathleenClassLists?.getClassroomState?.(),g=window.KathleenClassLists?.getGlobalClass?.();return{lesson:l,classroom:c,global:g}}
@@ -106,9 +107,9 @@ function startBomb(){if(state.bomb.running)return;const seconds=6+Math.floor(Mat
 function bombScore(team){clearInterval(timer);state.bomb.running=false;team==='A'?state.scoreA++:state.scoreB++;award(true,'Word Bomb');nextRound()}
 function listen(){try{channel=new BroadcastChannel(BC);channel.onmessage=e=>{if(present&&e.data?.game){state=e.data;game=state.game;document.getElementById('workspace').classList.add('show');document.getElementById('playTitle').textContent=META[game]?.title||'Quick Game';renderStage();hud()}}}catch(e){}window.addEventListener('storage',e=>{if(present&&e.key===LIVE&&e.newValue){try{state=JSON.parse(e.newValue);game=state.game;document.getElementById('workspace').classList.add('show');renderStage();hud()}catch(err){}}})}
 function initPresent(){document.getElementById('workspace').classList.add('show');document.getElementById('editorPanel').classList.add('qg-hidden');try{const live=JSON.parse(localStorage.getItem(LIVE)||'null');if(live?.game){state=live;game=live.game}else{game=new URLSearchParams(location.search).get('game')||'buzzer';state=fresh(game)}}catch(e){}document.getElementById('playTitle').textContent=META[game]?.title||'Quick Game';renderStage();hud()}
-function init(){initGrid();listen();syncContext();setInterval(syncContext,3000);document.getElementById('saveBtn').onclick=saveEditor;document.getElementById('demoBtn').onclick=loadDemo;document.getElementById('exportBtn').onclick=exportAll;document.getElementById('importBtn').onclick=()=>document.getElementById('importFile').click();document.getElementById('importFile').onchange=e=>e.target.files[0]&&importAll(e.target.files[0]);if(present)initPresent();else selectGame('buzzer')}
+function init(){initGrid();listen();syncContext();setInterval(syncContext,3000);document.getElementById('saveBtn').onclick=saveEditor;document.getElementById('demoBtn').onclick=loadDemo;document.getElementById('exportBtn').onclick=exportAll;document.getElementById('importBtn').onclick=()=>document.getElementById('importFile').click();document.getElementById('importFile').onchange=e=>e.target.files[0]&&importAll(e.target.files[0]);if(present)initPresent();else{const requested=new URLSearchParams(location.search).get('game');selectGame(META[requested]?requested:'buzzer')}}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
 })();
-</script>
+</script><script src="quick-games-premium-v1.js?v=20260924-cinematic2"></script>
 </body>
 </html>
