@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#fff8fc"><title>Vokabelstudio · Kathleens Kiste</title><link rel="stylesheet" href="vocabulary.css?v=20260924-1"></head>
+<body><main class="shell">
+  <header class="hero"><a class="back" href="../../">← Kiste</a><div class="hero-copy"><span class="eyebrow">ENGLISH · KNOWLEDGE BASE</span><h1>Vokabelstudio</h1><p>Klasse 7 und 9 · vollständig geprüft · bereit für Unterricht und Spiele.</p></div><div class="audit"><strong id="total">1.340</strong><span>Vokabeln</span><small>82/82 Seitenhälften geprüft</small></div></header>
+  <section class="toolbar" aria-label="Vokabeln filtern">
+    <div class="grade-tabs" role="group" aria-label="Klasse"><button class="active" data-grade="7">7. Klasse</button><button data-grade="9">9. Klasse</button></div>
+    <label class="search"><span>⌕</span><input id="search" type="search" placeholder="Englisch oder Deutsch suchen …" autocomplete="off"></label>
+    <div class="filters"><label>Unit<select id="unit"></select></label><label>Abschnitt<select id="section"><option value="all">Alle Abschnitte</option></select></label><label>Wortart<select id="pos"><option value="all">Alle Wortarten</option><option value="noun">Nomen</option><option value="verb">Verben</option><option value="adjective">Adjektive</option><option value="adverb">Adverbien</option><option value="phrase">Wendungen</option><option value="knowledge-box">Lernkästen</option></select></label><label class="check"><input id="difficult" type="checkbox"> Schwierige</label><label class="check"><input id="favorites" type="checkbox"> Favoriten</label></div>
+  </section>
+  <section class="actionbar"><div><b id="resultCount">Lade …</b><span id="selectionCount">0 ausgewählt</span></div><div><button id="selectVisible">Sichtbare wählen</button><button id="clearSelection">Auswahl leeren</button><button class="primary" id="memory">🃏 Memory Match</button><button id="worksheet">▤ Arbeitsblatt</button></div></section>
+  <div id="notice" class="notice" role="status" aria-live="polite">Wissensbasis wird geladen …</div>
+  <section id="list" class="vocab-list" aria-label="Vokabelliste"></section>
+  <nav class="pager" aria-label="Seitennavigation"><button id="prev">← Zurück</button><span id="pageInfo"></span><button id="next">Weiter →</button></nav>
+</main><script src="vocabulary.js?v=20260924-1"></script></body></html>

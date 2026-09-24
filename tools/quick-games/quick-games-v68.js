@@ -1,6 +1,6 @@
 (()=>{'use strict';
 if(window.KathleenQuickGamesV68)return;window.KathleenQuickGamesV68=true;
-const SELECTED='kathleenQuickGamesDemoPackV66',STORE='kathleenQuickGamesV68',LIVE='kathleenQuickGamesV68Live',BC='kathleen-quick-games-v68';
+const SELECTED='kathleenQuickGamesDemoPackV66',STORE='kathleenQuickGamesV68',LIVE='kathleenQuickGamesV68Live',BC='kathleen-quick-games-v68',VOCAB='kathleenVocabularyGamePayloadV1';
 const present=new URLSearchParams(location.search).get('v68present')==='1';
 const presentGame=new URLSearchParams(location.search).get('v68game')||'';
 const META={
@@ -26,7 +26,7 @@ const PACKS={
 let game='',pack='english',state=null,channel=null,timer=null;
 function selectedPack(){const p=localStorage.getItem(SELECTED);return PACKS[p]?p:'english'}
 function db(){try{return JSON.parse(localStorage.getItem(STORE)||'{}')||{}}catch(e){return{}}}
-function content(g){const d=db();return d[g]?.content||PACKS[selectedPack()]?.[g]||''}
+function content(g){if(g==='memory'&&new URLSearchParams(location.search).get('vocab')==='memory'){try{const v=JSON.parse(localStorage.getItem(VOCAB)||'null');if(v?.content)return v.content}catch(e){}}const d=db();return d[g]?.content||PACKS[selectedPack()]?.[g]||''}
 function saveContent(g,text){const d=db();d[g]={content:text,updatedAt:new Date().toISOString()};localStorage.setItem(STORE,JSON.stringify(d))}
 function rows(g=game){return String(content(g)).split(/\n+/).map(x=>x.trim()).filter(Boolean).map(x=>x.split('|').map(v=>v.trim()))}
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]))}
@@ -60,6 +60,6 @@ function openBeamer(){broadcast();const u=new URL(location.href);u.searchParams.
 function listen(){try{channel=new BroadcastChannel(BC);channel.onmessage=e=>{if(present&&e.data?.game){state=e.data;game=state.game;renderPresentation()}}}catch(e){}window.addEventListener('storage',e=>{if(present&&e.key===LIVE&&e.newValue){try{state=JSON.parse(e.newValue);game=state.game;renderPresentation()}catch(err){}}})}
 function renderPresentation(){let p=document.getElementById('qg68Present');if(!p){p=document.createElement('div');p.id='qg68Present';p.className='qg68-present';p.innerHTML='<div class="qg68-stage" data-stage></div>';document.body.appendChild(p)}renderStage(p.querySelector('[data-stage]'),true)}
 function initPresent(){try{const live=JSON.parse(localStorage.getItem(LIVE)||'null');state=live?.game===presentGame?live:fresh(presentGame);game=presentGame||state.game;if(!live?.game)initRound()}catch(e){game=presentGame||'odd';state=fresh(game);initRound()}renderPresentation()}
-function init(){style();listen();if(present){initPresent();return}const work=()=>{const ok=injectCards();toolbar();if(!ok&&!document.getElementById('gameGrid'))setTimeout(work,80)};work()}
+function init(){style();listen();if(present){initPresent();return}const work=()=>{const ok=injectCards();toolbar();if(new URLSearchParams(location.search).get('vocab')==='memory'&&document.querySelector('[data-v68="memory"]')){openGame('memory');return}if(!ok&&!document.getElementById('gameGrid'))setTimeout(work,80)};work()}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
 })();
