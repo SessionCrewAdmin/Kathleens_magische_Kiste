@@ -1,0 +1,6 @@
+/* Sitzplan V28 · Lehrerperspektive + adaptive Namen */
+.room.v28-teacher-view{transform:none}
+.room.v28-teacher-view .board{top:auto!important;bottom:12px!important}
+.room.v28-teacher-view .teacher{top:auto!important;bottom:82px!important}
+.room.v28-teacher-view:before{content:'LEHRERPERSPEKTIVE';position:absolute;left:16px;bottom:18px;z-index:3;padding:5px 8px;border-radius:999px;background:#fff9;color:#806b82;font-size:7px;font-weight:950;letter-spacing:.1em;pointer-events:none}
+.seat{overflow:hidden}.seatName{display:-webkit-box;max-width:100%;overflow:hidden;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-height:1.08;overflow-wrap:anywhere;word-break:normal;hyphens:auto}.seatName.v28-long{font-size:10px}.seatName.v28-xlong{font-size:8.5px;line-height:1.02}.desk.single .seatName.v28-long{font-size:9px}.desk.single .seatName.v28-xlong{font-size:7.5px}
