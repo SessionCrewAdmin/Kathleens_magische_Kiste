@@ -1,0 +1,33 @@
+/* Risk or Safe Premium V2 */
+body[data-qgp-game="risk"]{--rk-ink:#493d51;--rk-muted:#887a8e;--rk-safe:#6fa78e;--rk-risk:#c8789b;--rk-gold:#d8aa61}
+body[data-qgp-game="risk"] .qg-stage-wrap{min-height:570px;border-radius:28px;border-color:#e0d2df;background:radial-gradient(circle at 8% 0,#e5f3eb 0,transparent 31%),radial-gradient(circle at 94% 0,#f7dfe9 0,transparent 33%),linear-gradient(145deg,#fffdfd,#f8f3f8);box-shadow:inset 0 1px 0 #fff,0 20px 54px rgba(75,53,79,.09)}
+body[data-qgp-game="risk"] .qg-stage-wrap:before{content:'';position:absolute;inset:0;opacity:.25;pointer-events:none;background:radial-gradient(circle at 50% 75%,#d9c7de 1px,transparent 1.5px);background-size:22px 22px;mask-image:linear-gradient(transparent,#000 50%,transparent)}
+body[data-qgp-game="risk"] .qg-stage{min-height:570px;padding:40px 44px}
+body[data-qgp-game="risk"] .qg-stage .label{padding:7px 12px;border:1px solid #dfd2df;border-radius:999px;background:#fff;color:#96768f;font-size:8px;font-weight:950;letter-spacing:.16em;box-shadow:0 7px 20px rgba(80,55,85,.06)}
+body[data-qgp-game="risk"] .qg-stage h2{max-width:980px;margin:18px auto 10px;font:800 clamp(36px,5vw,68px)/1.04 Georgia,'Times New Roman',serif;letter-spacing:-.04em;color:var(--rk-ink);text-wrap:balance}
+body[data-qgp-game="risk"] .qg-risk-choice{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:22px;width:min(900px,100%);margin-top:28px}
+body[data-qgp-game="risk"] .qg-risk-choice:after{content:'OR';position:absolute;left:50%;top:50%;z-index:4;transform:translate(-50%,-50%);display:grid;place-items:center;width:52px;height:52px;border:1px solid #dfd1df;border-radius:50%;background:#fff;color:#8e7592;font-size:9px;font-weight:950;letter-spacing:.12em;box-shadow:0 12px 30px rgba(76,53,81,.13)}
+body[data-qgp-game="risk"] .qg-risk-card{position:relative;min-height:210px;padding:34px 28px 28px;border-radius:26px;overflow:hidden;cursor:pointer;transition:.2s cubic-bezier(.2,.8,.2,1);box-shadow:0 17px 40px rgba(76,54,80,.09)}
+body[data-qgp-game="risk"] .qg-risk-card:before{display:block;margin:0 auto 18px;width:72px;height:72px;border-radius:22px;display:grid;place-items:center;font-size:34px;box-shadow:inset 0 1px 0 #fff9,0 12px 25px #4f3b5514}
+body[data-qgp-game="risk"] .qg-risk-card.safe{border:1px solid #cde2d7;background:radial-gradient(circle at 50% 0,#dff2e8,transparent 52%),linear-gradient(145deg,#fbfffd,#edf8f2)}
+body[data-qgp-game="risk"] .qg-risk-card.safe:before{content:'✓';background:linear-gradient(145deg,#e8f7ef,#cce9db);color:#54856f}
+body[data-qgp-game="risk"] .qg-risk-card.risk{border:1px solid #eccbd8;background:radial-gradient(circle at 50% 0,#f9dce8,transparent 52%),linear-gradient(145deg,#fffafd,#f9eaf0)}
+body[data-qgp-game="risk"] .qg-risk-card.risk:before{content:'⚡';background:linear-gradient(145deg,#fde8ef,#f4cddd);color:#aa5e7e}
+body[data-qgp-game="risk"] .qg-risk-card strong{display:block;font:800 34px/1 Georgia,'Times New Roman',serif;letter-spacing:-.025em;color:#514358}
+body[data-qgp-game="risk"] .qg-risk-card.safe strong:after{content:'Sichere Punkte';display:block;margin-top:9px;color:#789286;font:800 9px/1.3 system-ui;letter-spacing:.11em;text-transform:uppercase}
+body[data-qgp-game="risk"] .qg-risk-card.risk strong:after{content:'Mehr Punkte · mehr Druck';display:block;margin-top:9px;color:#a67a8c;font:800 9px/1.3 system-ui;letter-spacing:.11em;text-transform:uppercase}
+body[data-qgp-game="risk"] .qg-risk-card:hover{transform:translateY(-6px) scale(1.01)}
+body[data-qgp-game="risk"] .qg-risk-card.rk-selected{transform:translateY(-7px) scale(1.018);box-shadow:0 24px 54px rgba(82,58,87,.16),0 0 0 5px #b99cc51d}
+body[data-qgp-game="risk"] .qg-risk-card.rk-selected:after{content:'GEWÄHLT';position:absolute;right:16px;top:16px;padding:6px 9px;border-radius:999px;background:#58475f;color:#fff;font-size:7px;font-weight:950;letter-spacing:.13em;animation:rkPop .3s cubic-bezier(.2,.9,.2,1.2)}
+@keyframes rkPop{from{opacity:0;transform:scale(.5) rotate(-5deg)}to{opacity:1;transform:none}}
+body[data-qgp-game="risk"] .rk-stakes{display:flex;align-items:center;justify-content:center;gap:10px;width:min(720px,100%);margin:20px auto 0;padding:10px 13px;border:1px solid #e2d6e2;border-radius:16px;background:#ffffffb8;box-shadow:0 8px 24px rgba(74,53,78,.055)}
+body[data-qgp-game="risk"] .rk-stakes span{font-size:8px;font-weight:950;letter-spacing:.11em;color:#8e7b92;text-transform:uppercase}
+body[data-qgp-game="risk"] .rk-meter{position:relative;flex:1;height:8px;border-radius:999px;background:linear-gradient(90deg,#91c2ab,#e4d3a2 52%,#d98aa9);overflow:hidden}
+body[data-qgp-game="risk"] .rk-marker{position:absolute;left:50%;top:50%;width:18px;height:18px;border:4px solid #fff;border-radius:50%;background:#6a566f;box-shadow:0 3px 10px #513e5755;transform:translate(-50%,-50%);transition:left .35s cubic-bezier(.2,.8,.2,1)}
+body[data-qgp-game="risk"] .rk-pot{display:flex;align-items:center;gap:7px;padding:7px 10px;border-radius:999px;background:#fff;border:1px solid #e3d7e3;color:#705c76;font-size:9px;font-weight:900}
+body[data-qgp-game="risk"] .rk-pot:before{content:'◆';color:#d3a454}
+body[data-qgp-game="risk"] .qg-answer{animation:rkReveal .35s cubic-bezier(.2,.8,.2,1)}
+@keyframes rkReveal{from{opacity:0;transform:translateY(10px) scale(.97)}to{opacity:1;transform:none}}
+body[data-qgp-game="risk"] .rk-winburst{position:absolute;inset:0;pointer-events:none;z-index:20;overflow:hidden}.rk-spark{position:absolute;left:50%;top:55%;width:8px;height:8px;border-radius:2px;background:var(--c);animation:rkSpark .85s ease-out forwards}@keyframes rkSpark{to{transform:translate(var(--x),var(--y)) rotate(var(--r));opacity:0}}
+body[data-qgp-game="risk"].present .qg-stage-wrap{background:radial-gradient(circle at 5% 0,#254438,transparent 38%),radial-gradient(circle at 95% 0,#512a3d,transparent 38%),linear-gradient(145deg,#151119,#211621);color:#fff}body[data-qgp-game="risk"].present .qg-stage h2{color:#fff}body[data-qgp-game="risk"].present .qg-stage .label{background:#ffffff12;border-color:#ffffff2b;color:#e9dceb}
+@media(max-width:700px){body[data-qgp-game="risk"] .qg-stage{padding:28px 16px}body[data-qgp-game="risk"] .qg-risk-choice{gap:10px}body[data-qgp-game="risk"] .qg-risk-choice:after{width:38px;height:38px;font-size:7px}body[data-qgp-game="risk"] .qg-risk-card{min-height:175px;padding:25px 12px 20px}body[data-qgp-game="risk"] .qg-risk-card:before{width:54px;height:54px;border-radius:17px;font-size:25px}body[data-qgp-game="risk"] .qg-risk-card strong{font-size:25px}.rk-stakes{display:none!important}}
