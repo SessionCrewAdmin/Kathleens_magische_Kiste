@@ -113,6 +113,6 @@ function initPresent(){document.getElementById('workspace').classList.add('show'
 function init(){initGrid();listen();syncContext();setInterval(syncContext,3000);document.getElementById('saveBtn').onclick=saveEditor;document.getElementById('demoBtn').onclick=loadDemo;document.getElementById('exportBtn').onclick=exportAll;document.getElementById('importBtn').onclick=()=>document.getElementById('importFile').click();document.getElementById('importFile').onchange=e=>e.target.files[0]&&importAll(e.target.files[0]);window.addEventListener('kathleen:quick-game-set',e=>{const requested=e.detail?.game;db=load();if(META[requested])selectGame(requested)});if(present)initPresent();else{const requested=new URLSearchParams(location.search).get('game');if(META[requested])selectGame(requested)}}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
 })();
-</script><script src="quick-games-premium-v1.js?v=20260924-unified5"></script><script src="buzzer-arena-v3.js?v=20260924-v4"></script><script src="risk-premium-v2.js?v=20260924-v2"></script><script src="knowledge-source-v1.js?v=20260924-3"></script><script src="game-launcher-v1.js?v=20260924-3"></script>
+</script><script src="quick-games-premium-v1.js?v=20260924-unified5"></script><script src="buzzer-arena-v3.js?v=20260924-v4"></script><script src="risk-premium-v2.js?v=20260924-v2"></script><script src="knowledge-source-v1.js?v=20260925-editorial-7-9"></script><script src="game-launcher-v1.js?v=20260925-editorial-7-9"></script>
 </body>
 </html>

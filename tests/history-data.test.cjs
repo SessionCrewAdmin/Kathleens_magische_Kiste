@@ -25,5 +25,30 @@ test('history source binaries stay private and every published dataset is offlin
  assert.equal(all.filter(x=>/\.(pdf|docx|png|jpe?g|webp)$/i.test(x)).length,0);
  const sw=fs.readFileSync(path.join(root,'service-worker.js'),'utf8'),c=read('catalog.json');
  for(const grade of c.grades)for(const ref of [...(grade.chapters||[]),...(grade.supplements||[])])assert.ok(sw.includes(ref.data),ref.data+' missing from cache');
- for(const file of ['data/history/audit.json','tools/history-content-center/history-content-center.js'])assert.ok(sw.includes(file),file+' missing from cache')
+ for(const file of ['data/history/audit.json','data/history/quality-audit.json','tools/history-content-center/history-content-center.js'])assert.ok(sw.includes(file),file+' missing from cache')
+});
+
+test('grades 7 and 9 pass the editorial quality audit and feed the games',()=>{
+ const catalog=read('catalog.json'),quality=read('quality-audit.json');
+ assert.equal(quality.result,'pass');assert.deepEqual(quality.scope,[7,9]);assert.deepEqual(catalog.editorially_reviewed_grades,[7,9]);
+ assert.equal(quality.grades['7'].source_files_reviewed,65);assert.equal(quality.grades['9'].source_files_reviewed,49);
+ assert.equal(quality.grades['7'].generic_solution_cores,0);assert.equal(quality.grades['9'].generic_solution_cores,0);
+ for(const grade of catalog.grades.filter(g=>[7,9].includes(g.grade))){
+  assert.equal(grade.quality_status,'editorially_reviewed');
+  for(const ref of grade.chapters){
+   assert.equal(ref.quality_status,'editorially_reviewed');
+   const d=read(ref.data),sourceIds=new Set(d.source_inventory.map(x=>x.id));
+   assert.equal(d.editorial_quality.status,'editorially_reviewed');assert.equal(d.full_import_audit.editorial_review,'passed');
+   assert.equal(d.editorial_quality.generic_solution_cores,0);
+   for(const source of d.source_inventory){assert.ok(source.characters_extracted>0);assert.equal(source.audited,true)}
+   for(const topic of d.topics)for(const source of topic.source_refs||[])assert.ok(sourceIds.has(source.source_id),source.source_id);
+   for(const assignment of d.assignments||[]){assert.equal(assignment.review_status,'editorially_reviewed');assert.ok(assignment.solution_core.length>30);assert.ok(!assignment.solution_core.includes('Die Kernaussagen von'))}
+   for(const question of d.question_bank||[]){
+    assert.ok(['Sachkompetenz','Methodenkompetenz','Urteilskompetenz','Orientierungskompetenz'].includes(question.competency));
+    assert.ok(['easy','standard','challenge','boss'].includes(question.difficulty));assert.equal(question.review_status,'editorially_reviewed');
+    if(question.game_ready){assert.equal(question.choices.length,4);assert.equal(new Set(question.choices).size,4);assert.equal(question.choices.filter(x=>String(x)===String(question.answer)).length,1)}
+   }
+  }
+ }
+ assert.equal(quality.grades['9'].game_ready_questions,112);
 });
