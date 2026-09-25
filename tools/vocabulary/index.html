@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#fff8fc"><title>Vokabelstudio · Kathleens Kiste</title><link rel="stylesheet" href="vocabulary.css?v=20260925-worksheet-studio"></head>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#fff8fc"><title>Vokabelstudio · Kathleens Kiste</title><link rel="stylesheet" href="vocabulary.css?v=20260925-worksheet-types"></head>
 <body><main class="shell">
   <header class="hero"><a class="back" href="../../">← Kiste</a><div class="hero-copy"><span class="eyebrow">ENGLISH · KNOWLEDGE BASE</span><h1>Vokabelstudio</h1><p>Klasse 7 und 9 · vollständig geprüft · bereit für Unterricht und Spiele.</p></div><div class="audit"><strong id="total">1.340</strong><span>Vokabeln</span><small>82/82 Seitenhälften geprüft</small></div></header>
   <section class="toolbar" aria-label="Vokabeln filtern">
@@ -16,7 +16,8 @@
   <form method="dialog" class="worksheet-builder">
     <div class="worksheet-builder-head"><div><span>ARBEITSBLATT-STUDIO</span><h2>Vokabeltraining erstellen</h2><p id="worksheetCount"></p></div><button class="dialog-close" value="cancel" aria-label="Schließen">×</button></div>
     <label class="worksheet-title"><span>Titel des Arbeitsblatts</span><input id="worksheetTitle" value="Vokabeltraining" maxlength="80"></label>
-    <fieldset class="worksheet-modes"><legend>Abfragerichtung</legend>
+    <fieldset class="worksheet-types"><legend>Übungsform</legend><label><input type="radio" name="worksheetType" value="translate" checked><b>Übersetzen</b><small>Wörter ohne Hilfe abrufen.</small></label><label><input type="radio" name="worksheetType" value="cloze-bank"><b>Lückentext mit Wortbank</b><small>Wörter passend im Kontext einsetzen.</small></label><label><input type="radio" name="worksheetType" value="cloze-free"><b>Lückentext ohne Wortbank</b><small>Wörter frei aus dem Gedächtnis ergänzen.</small></label><label><input type="radio" name="worksheetType" value="matching"><b>Zuordnen</b><small>Englische und deutsche Begriffe verbinden.</small></label></fieldset>
+    <fieldset class="worksheet-modes" id="worksheetDirections"><legend>Abfragerichtung für Übersetzen</legend>
       <label><input type="radio" name="worksheetMode" value="en-de" checked><b>English → Deutsch</b><small>Englische Wörter sind vorgegeben.</small></label>
       <label><input type="radio" name="worksheetMode" value="de-en"><b>Deutsch → English</b><small>Nur deutsche Wörter sind vorgegeben.</small></label>
       <label><input type="radio" name="worksheetMode" value="mixed"><b>Gemischt</b><small>Beide Richtungen wechseln sich ab.</small></label>
@@ -26,4 +27,4 @@
   </form>
 </dialog>
 <section id="printSheet" class="print-sheet" aria-hidden="true"></section>
-<script src="vocabulary.js?v=20260925-worksheet-studio"></script></body></html>
+<script src="vocabulary.js?v=20260925-worksheet-types"></script></body></html>
