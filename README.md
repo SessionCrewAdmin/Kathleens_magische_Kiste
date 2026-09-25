@@ -33,6 +33,11 @@ Unterrichtszentrale für Englisch und Geschichte am Gymnasium: Klassenorganisati
 - `tools/classroom-timer/`
 - `tools/team-generator/`
 
+### Assessments
+- `tools/assessments/` – gemeinsame Assessment Engine mit History- und Vocabulary-Adaptern, Assessment-Plan, Erwartungshorizont, Korrekturbogen und lokaler Bibliothek.
+- `data/assessment/` – versioniertes Schema, Operatorenreferenz Geschichte (Bayern, März 2025) und Status der noch nicht importierten LehrplanPLUS-/Grammar-KBs.
+- `docs/assessment-engine-audit.md` – Repository- und Referenzdokument-Audit samt fehlenden Daten.
+
 ### Games
 - `tools/quick-games/`
 - `tools/quick-games/country-hunt/`
@@ -68,6 +73,8 @@ Supabase wird für persistente Funktionen wie Classroom Sessions, Live Poll, Pus
 - Funktionen: `supabase/functions/`
 - neue Migrationen: `supabase/migrations/`
 - historische Setup-/Patch-Skripte: `setup/`
+
+Assessments der ersten Ausbaustufe werden lokal im Browser gespeichert. Sie nutzen die bestehenden Knowledge Bases, statt deren Inhalte zu duplizieren. Fehlende LehrplanPLUS-, Grammar- und Quellenmaterialien werden im Plan als Lücken angezeigt.
 
 ## PWA
 

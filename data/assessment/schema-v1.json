@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sessioncrewadmin.github.io/Kathleens_magische_Kiste/data/assessment/schema-v1.json",
+  "title": "Kathleens Assessment Plan",
+  "type": "object",
+  "required": ["schema_version", "id", "assessment_type", "subject", "grade", "configuration", "tasks", "quality", "provenance"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "id": {"type": "string"},
+    "assessment_type": {"enum": ["short_test", "worksheet", "practice", "revision", "exam", "homework"]},
+    "subject": {"enum": ["Geschichte", "Englisch"]},
+    "grade": {"type": "integer", "minimum": 7, "maximum": 13},
+    "configuration": {"type": "object", "properties": {"duration_minutes": {"type": ["integer", "null"]}, "task_count": {"type": "integer", "minimum": 1}, "total_points": {"type": "integer", "minimum": 1}, "difficulty": {"type": "string"}, "afb_weights": {"type": "object"}}},
+    "tasks": {"type": "array", "items": {"type": "object", "required": ["id", "subject", "focus", "learning_objective", "operator", "afb", "points", "minutes", "difficulty", "materials", "expected_performance", "rubric", "competency", "generated_content", "warnings"], "properties": {
+      "id": {"type": "string"}, "subject": {"enum": ["Geschichte", "Englisch"]}, "grade": {"type": "integer", "minimum": 7, "maximum": 13},
+      "chapter": {"type": ["string", "null"]}, "unit": {"type": ["string", "null"]}, "topic_id": {"type": ["string", "null"]}, "subtopic": {"type": ["string", "null"]},
+      "learning_objective": {"type": "string"}, "kb_refs": {"type": "array", "items": {"type": "object"}}, "operator": {"type": "string"}, "operator_definition": {"type": "string"}, "afb": {"type": "string"},
+      "competency": {"type": "object", "properties": {"status": {"type": "string"}, "id": {"type": ["string", "null"]}, "text": {"type": ["string", "null"]}}},
+      "points": {"type": "number", "minimum": 0}, "minutes": {"type": "number", "minimum": 0}, "difficulty": {"type": "string"}, "materials": {"type": "array", "items": {"type": "object"}},
+      "expected_performance": {"type": "string"}, "rubric": {"type": "array", "items": {"type": "object", "required": ["criterion", "points"], "properties": {"criterion": {"type": "string"}, "points": {"type": "number"}}}},
+      "provenance": {"type": "array", "items": {"type": "object", "required": ["kind", "label"]}}, "generated_content": {"type": "array"}, "warnings": {"type": "array", "items": {"type": "string"}}
+    }}},
+    "quality": {"type": "object", "required": ["warnings", "competencies", "topics"]},
+    "provenance": {"type": "array", "items": {"type": "object", "required": ["kind", "label"], "properties": {"kind": {"enum": ["knowledge_base", "lehrplanplus", "uploaded_material", "generated_content", "reference_document"]}, "label": {"type": "string"}, "refs": {"type": "array"}}}}
+  }
+}
