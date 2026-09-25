@@ -1,0 +1,249 @@
+{
+  "schema_version": "1.0",
+  "subject": "Geschichte",
+  "curriculum_context": "Gymnasium Bayern",
+  "title": "Operatoren für das Fach Geschichte",
+  "source": {
+    "file": "Operatorenliste_Geschichte_Gymnasium.pdf",
+    "authority": "Bayerisches Staatsministerium für Unterricht und Kultus",
+    "edition": "Ergänzende Informationen zum LehrplanPLUS, Stand März 2025",
+    "pages": [
+      1,
+      2,
+      3
+    ],
+    "provenance": "reference_document"
+  },
+  "afb_definitions": {
+    "I": "Wiedergabe von bekannten Sachverhalten aus einem abgegrenzten Gebiet und im gelernten Zusammenhang unter rein reproduktivem Benutzen eingeübter Arbeitstechniken",
+    "II": "Selbständiges Bearbeiten, Ordnen und Erklären bekannter Sachverhalte sowie Anwenden gelernter Inhalte und Methoden auf andere Sachverhalte",
+    "III": "Reflexiver Umgang mit neuen Problemstellungen, Methoden und Erkenntnissen, um zu eigenständigen Begründungen, Folgerungen, Deutungen und Wertungen zu gelangen"
+  },
+  "operators": [
+    {
+      "id": "op-01",
+      "operator": "aufzählen",
+      "definition": "zielgerichtet Informationen zusammentragen, ohne diese zu kommentieren",
+      "expected_afb": "I",
+      "definition_source": "Operatorenliste Geschichte Gymnasium Bayern, März 2025"
+    },
+    {
+      "id": "op-02",
+      "operator": "nennen",
+      "definition": "zielgerichtet Informationen zusammentragen, ohne diese zu kommentieren",
+      "expected_afb": "I",
+      "definition_source": "Operatorenliste Geschichte Gymnasium Bayern, März 2025"
+    },
+    {
+      "id": "op-03",
+      "operator": "bezeichnen",
+      "definition": "historische Sachverhalte, Probleme oder Aussagen erkennen und zutreffend formulieren",
+      "expected_afb": "I",
+      "definition_source": "Operatorenliste Geschichte Gymnasium Bayern, März 2025"
+    },
+    {
+      "id": "op-04",
+      "operator": "schildern",
+      "definition": "historische Sachverhalte, Probleme oder Aussagen erkennen und zutreffend formulieren",
+      "expected_afb": "I",
+      "definition_source": "Operatorenliste Geschichte Gymnasium Bayern, März 2025"
+    },
+    {
+      "id": "op-05",
+      "operator": "skizzieren",
+      "definition": "historische Sachverhalte unter Beibehaltung des Sinnes auf Wesentliches reduzieren",
+      "expected_afb": "I",
+      "definition_source": "Operatorenliste Geschichte Gymnasium Bayern, März 2025"
+    },
+    {
+      "id": "op-06",
+      "operator": "aufzeigen",
+      "definition": "historische Sachverhalte unter Beibehaltung des Sinnes auf Wesentliches reduzieren",
+      "expected_afb": "I",
+      "definition_source": "Operatorenliste Geschichte Gymnasium Bayern, März 2025"
+    },
+    {
+      "id": "op-07",
+      "operator": "beschreiben",
+      "definition": "historische Sachverhalte unter Beibehaltung des Sinnes auf Wesentliches reduzieren",
+      "expected_afb": "I",
+      "definition_source": "Operatorenliste Geschichte Gymnasium Bayern, März 2025"
+    },
+    {
+      "id": "op-08",
+      "operator": "wiedergeben",
+      "definition": "historische Sachverhalte unter Beibehaltung des Sinnes auf Wesentliches reduzieren",
+      "expected_afb": "I",
+      "definition_source": "Operatorenliste Geschichte Gymnasium Bayern, März 2025"
+    },
+    {
+      "id": "op-09",
+      "operator": "zusammenfassen",
+      "definition": "historische Sachverhalte unter Beibehaltung des Sinnes auf Wesentliches reduzieren",
+      "expected_afb": "I",
+      "definition_source": "Operatorenliste Geschichte Gymnasium Bayern, März 2025"
+    },
+    {
+      "id": "op-10",
+      "operator": "analysieren",
+      "definition": "Materialien oder historische Sachverhalte kriterienorientiert bzw. aspektgeleitet erschließen",
+      "expected_afb": "II",
+      "definition_source": "Operatorenliste Geschichte Gymnasium Bayern, März 2025"
+    },
+    {
+      "id": "op-11",
+      "operator": "untersuchen",
+      "definition": "Materialien oder historische Sachverhalte kriterienorientiert bzw. aspektgeleitet erschließen",
+      "expected_afb": "II",
+      "definition_source": "Operatorenliste Geschichte Gymnasium Bayern, März 2025"
+    },
+    {
+      "id": "op-12",
+      "operator": "begründen",
+      "definition": "Aussagen (z. B. Urteil, These, Wertung) durch Argumente stützen, die auf historischen Beispielen und anderen Belegen gründen",
+      "expected_afb": "II",
+      "definition_source": "Operatorenliste Geschichte Gymnasium Bayern, März 2025"
+    },
+    {
+      "id": "op-13",
+      "operator": "nachweisen",
+      "definition": "Aussagen (z. B. Urteil, These, Wertung) durch Argumente stützen, die auf historischen Beispielen und anderen Belegen gründen",
+      "expected_afb": "II",
+      "definition_source": "Operatorenliste Geschichte Gymnasium Bayern, März 2025"
+    },
+    {
+      "id": "op-14",
+      "operator": "charakterisieren",
+      "definition": "historische Sachverhalte in ihren Eigenarten beschreiben und diese dann unter einem bestimmten Geschichtspunkt zusammenfassen",
+      "expected_afb": "II",
+      "definition_source": "Operatorenliste Geschichte Gymnasium Bayern, März 2025"
+    },
+    {
+      "id": "op-15",
+      "operator": "einordnen",
+      "definition": "einen oder mehrere historische Sachverhalte in einen historischen Zusammenhang stellen",
+      "expected_afb": "II",
+      "definition_source": "Operatorenliste Geschichte Gymnasium Bayern, März 2025"
+    },
+    {
+      "id": "op-16",
+      "operator": "erklären",
+      "definition": "historische Sachverhalte durch Wissen und Einsichten in einen Zusammenhang (Theorie, Modell, Regel, Gesetz, Funktionszusammenhang) einordnen und begründen",
+      "expected_afb": "II",
+      "definition_source": "Operatorenliste Geschichte Gymnasium Bayern, März 2025"
+    },
+    {
+      "id": "op-17",
+      "operator": "erläutern",
+      "definition": "wie erklären, aber durch zusätzliche Informationen und Beispiele verdeutlichen",
+      "expected_afb": "II",
+      "definition_source": "Operatorenliste Geschichte Gymnasium Bayern, März 2025"
+    },
+    {
+      "id": "op-18",
+      "operator": "herausarbeiten",
+      "definition": "aus Materialien bestimmte historische Sachverhalte herausfinden, die nicht explizit genannt werden, und Zusammenhänge zwischen ihnen herstellen",
+      "expected_afb": "II",
+      "definition_source": "Operatorenliste Geschichte Gymnasium Bayern, März 2025"
+    },
+    {
+      "id": "op-19",
+      "operator": "gegenüberstellen",
+      "definition": "nach vorgegebenen oder selbst gewählten Gesichtspunkten problembezogen Gemeinsamkeiten, Ähnlichkeiten und Unterschiede historischer Sachverhalte, Entwicklungen oder Prozesse ermitteln und strukturiert darstellen",
+      "expected_afb": "II",
+      "definition_source": "Operatorenliste Geschichte Gymnasium Bayern, März 2025"
+    },
+    {
+      "id": "op-20",
+      "operator": "widerlegen",
+      "definition": "Argumente dafür anführen, dass eine Behauptung zu Unrecht aufgestellt wird",
+      "expected_afb": "II",
+      "definition_source": "Operatorenliste Geschichte Gymnasium Bayern, März 2025"
+    },
+    {
+      "id": "op-21",
+      "operator": "beurteilen",
+      "definition": "den Stellenwert historischer Sachverhalte in einem Zusammenhang bestimmen, um ohne persönlichen Wertebezug zu einem begründeten Sachurteil zu kommen",
+      "expected_afb": "III",
+      "definition_source": "Operatorenliste Geschichte Gymnasium Bayern, März 2025"
+    },
+    {
+      "id": "op-22",
+      "operator": "bewerten",
+      "definition": "wie Operator „beurteilen“, aber zusätzlich mit Offenlegen und Begründen eigener Wertmaßstäbe, die Pluralität einschließen und zu einem Werturteil führen, das auf den Wertvorstellungen des Grundgesetzes basiert",
+      "expected_afb": "III",
+      "definition_source": "Operatorenliste Geschichte Gymnasium Bayern, März 2025"
+    },
+    {
+      "id": "op-23",
+      "operator": "Stellung nehmen",
+      "definition": "wie Operator „beurteilen“, aber zusätzlich mit Offenlegen und Begründen eigener Wertmaßstäbe, die Pluralität einschließen und zu einem Werturteil führen, das auf den Wertvorstellungen des Grundgesetzes basiert",
+      "expected_afb": "III",
+      "definition_source": "Operatorenliste Geschichte Gymnasium Bayern, März 2025"
+    },
+    {
+      "id": "op-24",
+      "operator": "entwickeln",
+      "definition": "gewonnene Analyseergebnisse synthetisieren, um zu einer eigenen Deutung zu gelangen",
+      "expected_afb": "III",
+      "definition_source": "Operatorenliste Geschichte Gymnasium Bayern, März 2025"
+    },
+    {
+      "id": "op-25",
+      "operator": "diskutieren",
+      "definition": "zu einer historischen Problemstellung oder These eine Argumentation entwickeln, die zu einer begründeten Bewertung führt",
+      "expected_afb": "III",
+      "definition_source": "Operatorenliste Geschichte Gymnasium Bayern, März 2025"
+    },
+    {
+      "id": "op-26",
+      "operator": "sich auseinandersetzen",
+      "definition": "zu einer historischen Problemstellung oder These eine Argumentation entwickeln, die zu einer begründeten Bewertung führt",
+      "expected_afb": "III",
+      "definition_source": "Operatorenliste Geschichte Gymnasium Bayern, März 2025"
+    },
+    {
+      "id": "op-27",
+      "operator": "prüfen",
+      "definition": "Aussagen (Hypothesen, Behauptungen, Urteile) an historischen Sachverhalten auf ihre Angemessenheit hin untersuchen",
+      "expected_afb": "III",
+      "definition_source": "Operatorenliste Geschichte Gymnasium Bayern, März 2025"
+    },
+    {
+      "id": "op-28",
+      "operator": "überprüfen",
+      "definition": "Aussagen (Hypothesen, Behauptungen, Urteile) an historischen Sachverhalten auf ihre Angemessenheit hin untersuchen",
+      "expected_afb": "III",
+      "definition_source": "Operatorenliste Geschichte Gymnasium Bayern, März 2025"
+    },
+    {
+      "id": "op-29",
+      "operator": "vergleichen",
+      "definition": "auf der Grundlage von Kriterien historische Sachverhalte problembezogen gegenüberstellen, um Gemeinsamkeiten, Unterschiede, Teilidentitäten, Ähnlichkeiten, Abweichungen oder Gegensätze zu beurteilen",
+      "expected_afb": "III",
+      "definition_source": "Operatorenliste Geschichte Gymnasium Bayern, März 2025"
+    },
+    {
+      "id": "op-30",
+      "operator": "darstellen",
+      "definition": "historische Entwicklungszusammenhänge und Zustände mit Hilfe von Quellenkenntnissen und Deutungen beschreiben, erklären und beurteilen",
+      "expected_afb": "I–III",
+      "definition_source": "Operatorenliste Geschichte Gymnasium Bayern, März 2025"
+    },
+    {
+      "id": "op-31",
+      "operator": "erörtern",
+      "definition": "Eine These oder Problemstellung durch eine Kette von Für-und-Wider- bzw. Sowohl-als-Auch-Argumenten auf ihren Wert und ihre Stichhaltigkeit hin abwägend prüfen und auf dieser Grundlage eine eigene Stellungnahme dazu entwickeln. Die Erörterung einer historischen Darstellung setzt deren Analyse voraus.",
+      "expected_afb": "I–III",
+      "definition_source": "Operatorenliste Geschichte Gymnasium Bayern, März 2025"
+    },
+    {
+      "id": "op-32",
+      "operator": "interpretieren",
+      "definition": "Sinnzusammenhänge aus Quellen erschließen und eine begründete Stellungnahme abgeben, die auf einer Analyse, Erläuterung und Bewertung beruht",
+      "expected_afb": "I–III",
+      "definition_source": "Operatorenliste Geschichte Gymnasium Bayern, März 2025"
+    }
+  ],
+  "use_policy": "Operator wording and AFB group are fixed reference data. The engine checks task text and expected student performance against this data; it does not reinterpret definitions."
+}

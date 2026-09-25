@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "title": "Assessment Engine",
+  "supported_assessment_types": ["short_test", "worksheet", "practice", "revision", "exam", "homework"],
+  "v1_assessment_types": ["short_test"],
+  "subjects": ["Geschichte", "Englisch"],
+  "grade_range": [7, 13],
+  "curriculum_knowledge_base": {
+    "subject": "LehrplanPLUS Gymnasium Bayern",
+    "status": "not_imported",
+    "grades": [7, 8, 9, 10, 11, 12, 13],
+    "reference": null,
+    "note": "Kompetenzerwartungen werden erst nach Import einer überprüfbaren Originalquelle angeboten. Es werden keine LehrplanPLUS-Texte ergänzt oder rekonstruiert."
+  },
+  "grammar_knowledge_base": {
+    "subject": "English Grammar",
+    "status": "not_imported",
+    "note": "Grammatikaufgaben bleiben gesperrt, bis Unit-bezogene Daten importiert und geprüft wurden."
+  },
+  "audio_inventory": {
+    "status": "not_audited",
+    "note": "Der Repository-Audit hat noch keine zentrale Listening-Audio-Bibliothek gefunden."
+  },
+  "history_operators": "history-operators-bayern-2025.json",
+  "provenance_types": ["knowledge_base", "lehrplanplus", "uploaded_material", "generated_content", "reference_document"],
+  "persistence": "browser-local-v1"
+}
