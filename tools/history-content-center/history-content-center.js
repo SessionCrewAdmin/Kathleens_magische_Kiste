@@ -4,12 +4,13 @@ const $=s=>document.querySelector(s);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]));
 const base='../../data/history/';
 let catalog=null,data=null,tab='topics',activeId='',activeGrade=7;
+async function importClient(){if(window.KathleenHistoryImports)return window.KathleenHistoryImports;await new Promise((resolve,reject)=>{const s=document.createElement('script');s.src=new URL('../history-import-client.js',location.href).href;s.onload=resolve;s.onerror=()=>reject(Error('Importdatenbank nicht erreichbar'));document.head.append(s)});return window.KathleenHistoryImports}
 async function getJson(url){const r=await fetch(url,{cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status+' '+url);return r.json()}
 function gradeRecord(){return catalog?.grades?.find(g=>g.grade===activeGrade)}
 function readyItems(){const g=gradeRecord();return [...(g?.chapters||[]),...(g?.supplements||[])].filter(c=>c.status==='ready'&&c.data)}
 async function loadChapter(ch){
  if(!ch?.data)return;activeId=ch.id;$('#chapterView').innerHTML='<div class="empty">Kapitel wird geladen …</div>';
- data=await getJson(base+ch.data+'?v=20260925-editorial-7-9');tab='topics';renderGrades();renderChapters();render();
+ data=await getJson(base+ch.data+'?v=20260925-editorial-7-9');try{const client=await importClient(),overlay=await client.loadAndMerge(data);data=overlay.chapter;data.import_overlay_available=overlay.available;data.import_overlay_error=overlay.error}catch(e){data.import_overlay_available=false}tab='topics';renderGrades();renderChapters();render();
  const u=new URL(location.href);u.searchParams.set('grade',activeGrade);u.searchParams.set('chapter',ch.id);history.replaceState(null,'',u)
 }
 async function selectGrade(grade,wanted){
@@ -20,7 +21,7 @@ async function selectGrade(grade,wanted){
 }
 async function init(){
  try{
-  catalog=await getJson(base+'catalog.json?v=20260925-editorial-7-9');
+  catalog=await getJson(base+'catalog.json?v=20260925-editorial-7-9');if(sessionStorage.getItem('kathleenAdminPass')){const a=document.createElement('a');a.href='../material-import/';a.textContent='＋ Material importieren';a.className='pill';a.style.textDecoration='none';$('.toolbar').prepend(a)}
   const params=new URLSearchParams(location.search),requested=Number(params.get('grade'));
   activeGrade=catalog.grades.some(g=>g.grade===requested)?requested:(catalog.grades[0]?.grade||7);
   await selectGrade(activeGrade,params.get('chapter'));

@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#faf5fa"><title>Material Import · Kathleens Kiste</title>
+<link rel="stylesheet" href="material-import.css?v=2.0.0">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@5.0.5/dist/tesseract.min.js" defer></script>
+</head>
+<body><main class="shell">
+<header class="hero"><a class="back" href="../history-content-center/">← Geschichts-Datenbank</a><div class="eyebrow">LEHRKRAFT · CONTENT IMPORT V2</div><h1>Material importieren</h1><p>PDF-Texte werden seitenweise analysiert. Scans erhalten OCR. Erst nach deiner Prüfung werden strukturierte Themen und Quellenhinweise zur bestehenden History Knowledge Base ergänzt.</p><div class="privacy">🔒 Die PDF und erkannte Seitentexte bleiben in diesem Browser. Gespeichert werden nur deine geprüften Zusammenfassungen, Metadaten und Fundstellen – keine Originalseiten.</div></header>
+<section class="panel setup"><div class="section-heading"><div><span class="step">01 · ZIEL</span><h2>Kapitel wählen</h2></div><span id="backendStatus" class="badge neutral">KB-Verbindung wird geprüft …</span></div><div class="selects"><label>Jahrgangsstufe<select id="grade"></select></label><label>Kapitel<select id="chapter"></select></label><label class="filebox"><span>PDF auswählen</span><input id="file" type="file" accept="application/pdf,.pdf"></label></div><div class="limits">PDF · bis 20 MB · maximal 100 Seiten · Originaldatei wird nicht hochgeladen</div></section>
+<section id="progressPanel" class="panel progress-panel" hidden><div class="section-heading"><div><span class="step">02 · ANALYSE</span><h2 id="progressTitle">Material wird analysiert</h2></div><span id="progressCount" class="badge">0 / 0 Seiten</span></div><div class="progress-track"><i id="progressBar"></i></div><p id="progressText">PDF wird vorbereitet …</p><ol class="pipeline"><li data-stage="read">PDF lesen</li><li data-stage="text">Text extrahieren</li><li data-stage="structure">Seiten strukturieren</li><li data-stage="review">Review vorbereiten</li></ol></section>
+<section id="reviewPanel" class="panel review-panel" hidden><div class="section-heading"><div><span class="step">03 · REVIEW</span><h2>Erkannte Inhalte prüfen</h2><p id="reviewSummary"></p></div><div class="review-actions"><button id="allPages" class="button soft">Alle auswählen</button><button id="noPages" class="button soft">Auswahl leeren</button></div></div><div id="duplicateNotice" class="notice" hidden></div><div id="pageReviews" class="review-list"></div><div id="validation" class="notice" hidden></div><div class="actions"><button id="discard" class="button soft">Import verwerfen</button><button id="confirm" class="button primary">Geprüfte Inhalte importieren</button></div></section>
+<section id="report" class="panel report" hidden></section>
+<footer>Extractor v2.0.0 · PDF.js Text-Extraktion · Tesseract.js OCR-Fallback · additive History-KB-Erweiterung</footer>
+</main><script src="../history-import-client.js?v=2.0.0"></script><script src="material-import.js?v=2.0.0"></script></body></html>
