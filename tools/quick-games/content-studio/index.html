@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#071814">
+  <title>Spielinhalte verwalten · Kathleens Kiste</title>
+  <link rel="stylesheet" href="content-studio.css?v=20260925-1">
+</head>
+<body data-kds-no-shell>
+<main class="studio">
+  <header class="topbar">
+    <a href="../">← Spielauswahl</a>
+    <div><span>KATHLEENS KISTE · GAME STUDIO</span><strong>Spielinhalte verwalten</strong></div>
+    <button id="openGame">Spiel öffnen →</button>
+  </header>
+
+  <section class="workspace">
+    <aside class="games">
+      <div class="section-label">SPIEL AUSWÄHLEN</div>
+      <nav id="gameList"></nav>
+      <div class="studio-note"><b>Eigene Inhalte</b><p>Änderungen werden nur in deiner Kiste gespeichert und stehen beim nächsten Spielstart sofort bereit.</p></div>
+    </aside>
+
+    <section class="editor">
+      <div class="editor-head">
+        <div><span id="gameKicker">FRAGEN & ANTWORTEN</span><h1 id="gameTitle">Buzzer Battle</h1><p id="gameHelp"></p></div>
+        <div class="count"><strong id="rowCount">0</strong><span>Einträge</span></div>
+      </div>
+
+      <div class="meta-grid">
+        <label><span>Set-Name</span><input id="setTitle" maxlength="80"></label>
+        <label><span>Fach</span><input id="setSubject" placeholder="z. B. Geschichte"></label>
+        <label><span>Klasse</span><input id="setGrade" placeholder="z. B. 9"></label>
+      </div>
+
+      <div class="table-head" id="tableHead"></div>
+      <div class="rows" id="rows"></div>
+
+      <div class="editor-actions">
+        <button id="addRow">＋ Eintrag hinzufügen</button>
+        <div><button id="reset" class="quiet">Set leeren</button><button id="save" class="primary">Änderungen speichern</button></div>
+      </div>
+      <div class="save-state" id="saveState" role="status">Bereit zum Bearbeiten.</div>
+    </section>
+  </section>
+</main>
+<script src="content-studio.js?v=20260925-1"></script>
+</body>
+</html>
