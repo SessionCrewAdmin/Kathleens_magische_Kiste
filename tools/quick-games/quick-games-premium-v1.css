@@ -94,7 +94,15 @@ body.qgc-cinematic .qgp-premium-badge{background:#19182b!important;border-color:
 @media(max-width:620px){body.qgc-cinematic .qg-stage-wrap,body.qgc-cinematic .qg-stage{min-height:500px}body.qgc-cinematic .qg-stage h2{font-size:42px}body.qgc-classvs .qg-scoreboard:after{display:none}.qgc-intro-ring{width:220px;height:220px}.qgc-intro p{padding:0 24px;text-align:center}}
 /* The games landing page and library are now one premium surface. */
 body.qgp-ready .qg-v68-toolbar{display:none!important}
-body.qgp-ready .qg-hero{color:#fff;border-color:#ffffff20;background:radial-gradient(circle at 82% 5%,#86549266,transparent 34%),radial-gradient(circle at 8% 100%,#256d6066,transparent 38%),linear-gradient(135deg,#112c29,#24172f 70%,#321c3b);box-shadow:0 24px 70px #20142935}
+body.qgp-ready .qg-hero {
+  color: #fff;
+  border-color: #ffffff20;
+  background:
+    radial-gradient(circle at 82% 5%, #2e725d66, transparent 34%),
+    radial-gradient(circle at 8% 100%, #153f3466, transparent 38%),
+    linear-gradient(135deg, #061b18, #0b3028 70%, #09241f);
+  box-shadow: 0 24px 70px #07171355;
+}
 body.qgp-ready .qg-hero h1{color:#fff;font-size:clamp(42px,5vw,68px)}body.qgp-ready .qg-hero p{color:#d8cbdf;font-size:13px}body.qgp-ready .qg-hero .qg-kicker{color:#f2cf78}body.qgp-ready .qg-hero .qg-pill{color:#55455e}body.qgp-ready .qg-hero:after{content:'PREMIUM GAMES';border-color:#ffffff2b;background:#ffffff12;color:#f4d98f}
 body.qgp-ready .qg-grid{gap:15px;margin-top:20px}
 body.qgp-ready .qg-game{min-height:218px;padding:21px;border-color:#ffffff24;color:#fff;box-shadow:0 16px 38px #38254020;overflow:hidden;background:radial-gradient(circle at 100% 0,#9d77bd45,transparent 42%),linear-gradient(145deg,#21172c,#3c2450)}
