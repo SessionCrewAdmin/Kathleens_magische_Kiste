@@ -6,3 +6,5 @@
 .task-materials{display:grid;gap:5px;margin-top:10px;font-size:10px}.material-choice{display:flex;align-items:center;gap:7px;padding:7px 9px;border:1px solid var(--line);border-radius:9px;background:#fff}.material-choice input{width:14px;height:14px;margin:0}.material-choice span{font-size:9px;color:var(--muted)}
 
 .history-source-editor{margin-top:9px;padding:9px;background:#faf7fb;border-radius:10px;font-size:10px}.history-source-editor summary{cursor:pointer;font-weight:800}.source-options{display:grid;gap:5px;margin-top:8px}
+
+.student-fields{margin:14px 0;padding:12px 14px;border:1px solid var(--line);border-radius:13px;background:#fdfafd}.student-fields legend{padding:0 6px;color:#675a70;font-size:11px;font-weight:850}.student-field-options{display:flex;flex-wrap:wrap;gap:8px 16px}.student-field-options label{display:flex;align-items:center;gap:6px;font-weight:700}.student-field-options input{width:15px;min-width:15px;height:15px;margin:0;padding:0}
