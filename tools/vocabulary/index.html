@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#fff8fc"><title>Vokabelstudio · Kathleens Kiste</title><link rel="stylesheet" href="vocabulary.css?v=20260924-1"></head>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#fff8fc"><title>Vokabelstudio · Kathleens Kiste</title><link rel="stylesheet" href="vocabulary.css?v=20260925-worksheet-studio"></head>
 <body><main class="shell">
   <header class="hero"><a class="back" href="../../">← Kiste</a><div class="hero-copy"><span class="eyebrow">ENGLISH · KNOWLEDGE BASE</span><h1>Vokabelstudio</h1><p>Klasse 7 und 9 · vollständig geprüft · bereit für Unterricht und Spiele.</p></div><div class="audit"><strong id="total">1.340</strong><span>Vokabeln</span><small>82/82 Seitenhälften geprüft</small></div></header>
   <section class="toolbar" aria-label="Vokabeln filtern">
@@ -11,4 +11,19 @@
   <div id="notice" class="notice" role="status" aria-live="polite">Wissensbasis wird geladen …</div>
   <section id="list" class="vocab-list" aria-label="Vokabelliste"></section>
   <nav class="pager" aria-label="Seitennavigation"><button id="prev">← Zurück</button><span id="pageInfo"></span><button id="next">Weiter →</button></nav>
-</main><script src="vocabulary.js?v=20260925-difficulty-tags"></script></body></html>
+</main>
+<dialog id="worksheetDialog" class="worksheet-dialog">
+  <form method="dialog" class="worksheet-builder">
+    <div class="worksheet-builder-head"><div><span>ARBEITSBLATT-STUDIO</span><h2>Vokabeltraining erstellen</h2><p id="worksheetCount"></p></div><button class="dialog-close" value="cancel" aria-label="Schließen">×</button></div>
+    <label class="worksheet-title"><span>Titel des Arbeitsblatts</span><input id="worksheetTitle" value="Vokabeltraining" maxlength="80"></label>
+    <fieldset class="worksheet-modes"><legend>Abfragerichtung</legend>
+      <label><input type="radio" name="worksheetMode" value="en-de" checked><b>English → Deutsch</b><small>Englische Wörter sind vorgegeben.</small></label>
+      <label><input type="radio" name="worksheetMode" value="de-en"><b>Deutsch → English</b><small>Nur deutsche Wörter sind vorgegeben.</small></label>
+      <label><input type="radio" name="worksheetMode" value="mixed"><b>Gemischt</b><small>Beide Richtungen wechseln sich ab.</small></label>
+    </fieldset>
+    <label class="worksheet-option"><input id="worksheetSolutions" type="checkbox"> Lösungsblatt auf einer neuen Seite anhängen</label>
+    <div class="worksheet-builder-actions"><button value="cancel">Abbrechen</button><button id="createWorksheet" type="button" class="primary">Arbeitsblatt drucken →</button></div>
+  </form>
+</dialog>
+<section id="printSheet" class="print-sheet" aria-hidden="true"></section>
+<script src="vocabulary.js?v=20260925-worksheet-studio"></script></body></html>
