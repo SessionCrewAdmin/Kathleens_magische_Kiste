@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "lehrplanplus-gymnasium-bayern-index",
+  "dataset_version": "1.0.0",
+  "updated_at": "2026-09-26",
+  "provenance": "lehrplanplus",
+  "source_owner": "Bayerisches Staatsministerium für Unterricht und Kultus / ISB",
+  "source_root": "https://www.lehrplanplus.bayern.de",
+  "scope": {
+    "school_type": "Gymnasium",
+    "subjects": ["Englisch", "Geschichte"],
+    "grades": [5, 6, 7, 8, 9, 10, 11, 12, 13]
+  },
+  "completeness": {
+    "source_pages_indexed": true,
+    "service_material_entry_points_indexed": true,
+    "service_materials_catalogued": true,
+    "competency_text_imported": true,
+    "individual_service_files_mirrored": false,
+    "note": "Die Lehrplanseiten, exakten Kompetenzerwartungen und aufgelisteten Servicematerial-Fundstellen sind fach-, jahrgangs- und variantenbezogen erfasst. Die Materialdateien selbst bleiben auf den offiziellen Seiten."
+  },
+  "grade_availability": [
+    {"subject":"Geschichte","grade":5,"status":"not_offered","note":"Im Fachlehrplan Gymnasium Bayern ist Geschichte in Jahrgangsstufe 5 nicht als Fachlehrplan ausgewiesen."},
+    {"subject":"Geschichte","grade":6,"status":"available"}, {"subject":"Geschichte","grade":7,"status":"available"},
+    {"subject":"Geschichte","grade":8,"status":"available"}, {"subject":"Geschichte","grade":9,"status":"available"},
+    {"subject":"Geschichte","grade":10,"status":"available"}, {"subject":"Geschichte","grade":11,"status":"available"},
+    {"subject":"Geschichte","grade":12,"status":"available","variants":["grundlegend","erhoeht"]},
+    {"subject":"Geschichte","grade":13,"status":"available","variants":["grundlegend","erhoeht"]},
+    {"subject":"Englisch","grade":5,"status":"available","variants":["1-fremdsprache"]},
+    {"subject":"Englisch","grade":6,"status":"available","variants":["1-fremdsprache","2-fremdsprache"]},
+    {"subject":"Englisch","grade":7,"status":"available","variants":["1-fremdsprache","2-fremdsprache"]},
+    {"subject":"Englisch","grade":8,"status":"available","variants":["1-fremdsprache","2-fremdsprache"]},
+    {"subject":"Englisch","grade":9,"status":"available","variants":["1-fremdsprache","2-fremdsprache"]},
+    {"subject":"Englisch","grade":10,"status":"available","variants":["gemeinsamer-lehrplan-1-und-2-fremdsprache"]},
+    {"subject":"Englisch","grade":11,"status":"available","variants":["gemeinsamer-fachlehrplan"]},
+    {"subject":"Englisch","grade":12,"status":"available","variants":["grundlegend","erhoeht"]},
+    {"subject":"Englisch","grade":13,"status":"available","variants":["grundlegend","erhoeht"]}
+  ],
+  "sources": [
+    {"id":"history-gym-6","subject":"Geschichte","grades":[6],"variant":"gemeinsamer-fachlehrplan","url":"https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/6/geschichte"},
+    {"id":"history-gym-7","subject":"Geschichte","grades":[7],"variant":"gemeinsamer-fachlehrplan","url":"https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/7/geschichte"},
+    {"id":"history-gym-8","subject":"Geschichte","grades":[8],"variant":"gemeinsamer-fachlehrplan","url":"https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/8/geschichte"},
+    {"id":"history-gym-9","subject":"Geschichte","grades":[9],"variant":"gemeinsamer-fachlehrplan","url":"https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/9/geschichte"},
+    {"id":"history-gym-10","subject":"Geschichte","grades":[10],"variant":"gemeinsamer-fachlehrplan","url":"https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/10/geschichte"},
+    {"id":"history-gym-11","subject":"Geschichte","grades":[11],"variant":"gemeinsamer-fachlehrplan","url":"https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/11/geschichte"},
+    {"id":"history-gym-12-basic","subject":"Geschichte","grades":[12],"variant":"grundlegend","url":"https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/12/geschichte/grundlegend"},
+    {"id":"history-gym-12-enhanced","subject":"Geschichte","grades":[12],"variant":"erhoeht","url":"https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/12/geschichte/erhoeht"},
+    {"id":"history-gym-13-basic","subject":"Geschichte","grades":[13],"variant":"grundlegend","url":"https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/13/geschichte/grundlegend"},
+    {"id":"history-gym-13-enhanced","subject":"Geschichte","grades":[13],"variant":"erhoeht","url":"https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/13/geschichte/erhoeht"},
+    {"id":"english-gym-5-first","subject":"Englisch","grades":[5],"variant":"1-fremdsprache","url":"https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/5/englisch"},
+    {"id":"english-gym-6-first","subject":"Englisch","grades":[6],"variant":"1-fremdsprache","url":"https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/6/englisch/1-fremdsprache"},
+    {"id":"english-gym-6-second","subject":"Englisch","grades":[6],"variant":"2-fremdsprache","url":"https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/6/englisch/2-fremdsprache"},
+    {"id":"english-gym-7-first","subject":"Englisch","grades":[7],"variant":"1-fremdsprache","url":"https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/7/englisch/1-fremdsprache"},
+    {"id":"english-gym-7-second","subject":"Englisch","grades":[7],"variant":"2-fremdsprache","url":"https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/7/englisch/2-fremdsprache"},
+    {"id":"english-gym-8-first","subject":"Englisch","grades":[8],"variant":"1-fremdsprache","url":"https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/8/englisch/1-fremdsprache"},
+    {"id":"english-gym-8-second","subject":"Englisch","grades":[8],"variant":"2-fremdsprache","url":"https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/8/englisch/2-fremdsprache"},
+    {"id":"english-gym-9-first","subject":"Englisch","grades":[9],"variant":"1-fremdsprache","url":"https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/9/englisch/1-fremdsprache"},
+    {"id":"english-gym-9-second","subject":"Englisch","grades":[9],"variant":"2-fremdsprache","url":"https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/9/englisch/2-fremdsprache"},
+    {"id":"english-gym-10-common","subject":"Englisch","grades":[10],"variant":"gemeinsamer-lehrplan-1-und-2-fremdsprache","url":"https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/10/englisch"},
+    {"id":"english-gym-11","subject":"Englisch","grades":[11],"variant":"gemeinsamer-fachlehrplan","url":"https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/11/englisch"},
+    {"id":"english-gym-12-13-basic","subject":"Englisch","grades":[12,13],"variant":"grundlegend","url":"https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/12/englisch/grundlegend"},
+    {"id":"english-gym-12-13-enhanced","subject":"Englisch","grades":[12,13],"variant":"erhoeht","url":"https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/12/englisch/erhoeht"}
+  ],
+  "service_materials": [
+    {"id":"history-operators","subject":"Geschichte","title":"Operatoren für das Fach Geschichte","url":"https://www.lehrplanplus.bayern.de/serviceinformation/l452314","type":"supplementary_reference","repository_copy":"data/assessment/history-operators-bayern-2025.json","note":"Im Repository liegt bereits die verbindlich verwendete Operatorenreferenz; diese zusätzliche LehrplanPLUS-Seite bleibt als amtliche Fundstelle verknüpft."},
+    {"id":"history-media-recommendations","subject":"Geschichte","title":"Medienempfehlungen im Fach Geschichte","url":"https://www.lehrplanplus.bayern.de/serviceinformation/l430615","type":"service_information"},
+    {"id":"history-illustrative-task","subject":"Geschichte","title":"Illustrierende Aufgabe Geschichte","url":"https://www.lehrplanplus.bayern.de/serviceinformation/l211149","type":"illustrative_task"},
+    {"id":"english-g5-school-wordfield","subject":"Englisch","grades":[5],"title":"GYM_E_5_WS_School_in_England_and_Germany","url":"https://www.lehrplanplus.bayern.de/serviceinformation/l193742","type":"illustrative_task"},
+    {"id":"english-g5-london-quiz","subject":"Englisch","grades":[5],"title":"GYM_E_5_GR_Quiz_about_London","url":"https://www.lehrplanplus.bayern.de/serviceinformation/l79317","type":"grammar_illustrative_task"},
+    {"id":"english-g5-clothes-shop","subject":"Englisch","grades":[5],"title":"GYM_E_5_MK_In_a_clothes_shop","url":"https://www.lehrplanplus.bayern.de/serviceinformation/l252397","type":"methodical_illustrative_task"},
+    {"id":"english-g7-norman-conquest","subject":"Englisch","grades":[7],"title":"GYM_E_7_WS_Norman_Conquest","url":"https://www.lehrplanplus.bayern.de/serviceinformation/l273999","type":"illustrative_task"},
+    {"id":"english-upper-writing-operators","subject":"Englisch","grades":[12,13],"title":"Operatoren für Schreibaufgaben","url":"https://www.lehrplanplus.bayern.de/serviceinformation/l430103","type":"supplementary_reference"},
+    {"id":"english-upper-speech-writing","subject":"Englisch","grades":[12,13],"title":"Speech Writing Workshop","url":"https://www.lehrplanplus.bayern.de/serviceinformation/l460587","type":"illustrative_task"}
+  ],
+  "service_material_policy": {
+    "type": "official_page_linked_catalogue",
+    "meaning": "Die Servicematerialien bleiben auf LehrplanPLUS; jeder Fachlehrplan-Link öffnet die offizielle Seite mit deren Servicematerial-Auswahl.",
+    "copyright_note": "Keine PDFs, ZIPs, Buchseiten oder geschützten Materialien werden in dieses Repository kopiert.",
+    "next_data_step": "Die offiziellen Seiten stellen die dynamische, vollständige Materialliste je Lernbereich bereit; sämtliche gelisteten Servicematerial-Fundstellen sind in den beiden Fachmanifesten erfasst. Die zugrunde liegenden PDF-/ZIP-/ByCS-Dateien selbst werden nicht gespiegelt."
+  },
+  "service_material_indexes": {
+    "Geschichte": "lehrplanplus-history-services-v1.json",
+    "Englisch": "lehrplanplus-english-services-v1.json"
+  },
+  "competency_indexes": {
+    "Geschichte": "lehrplanplus-history-competencies-v1.json",
+    "Englisch": "lehrplanplus-english-competencies-v1.json"
+  }
+}

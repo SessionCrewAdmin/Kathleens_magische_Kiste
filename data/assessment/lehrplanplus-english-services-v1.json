@@ -1,0 +1,3119 @@
+{
+  "dataset_id": "lehrplanplus-english-service-material-index",
+  "version": "1.0.3",
+  "source": "LehrplanPLUS Bayern · dynamically listed materials on each official English Gymnasium curriculum page",
+  "retrieved_at": "2026-09-26",
+  "provenance": "lehrplanplus",
+  "files_mirrored": false,
+  "note": "Material pages are linked, not mirrored. Some resources are external/ByCS hosted; review usage terms on the individual item page.",
+  "pages": [
+    {
+      "id": "english-gym-5-first",
+      "grades": [
+        5
+      ],
+      "variant": "1-fremdsprache",
+      "url": "https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/5/englisch",
+      "material_urls": [
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l200658",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l75244",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l83778",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l89822",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l89830",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l263140",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l342075",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l75247",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l75315",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l76659",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l154582",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l154656",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l263144",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l281867",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l343260",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l76988",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l75250",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l75253",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l75319",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l154589",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l209685",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l343238",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l272672",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l49205",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l343242",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l193742",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l49791",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l49796",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l75258",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l79317",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l268777",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l434349",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l252397",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l75326",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l101605",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l209673",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l263142",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l263177",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l343261",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l343262",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l285224",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l295701"
+      ]
+    },
+    {
+      "id": "english-gym-6-first",
+      "grades": [
+        6
+      ],
+      "variant": "1-fremdsprache",
+      "url": "https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/6/englisch/1-fremdsprache",
+      "material_urls": [
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l310428",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l263524",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l158895",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l158983",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l193746",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l281928",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l294947",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l343248",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l294944",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l97976",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l263181",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l272677",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l239394",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l343275",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l343276",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l75261",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l95286",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l193749",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l75283",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l430712",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l209694",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l283054",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l472685",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l239390",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l295703",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l343264",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l157991",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l448466"
+      ]
+    },
+    {
+      "id": "english-gym-6-second",
+      "grades": [
+        6
+      ],
+      "variant": "2-fremdsprache",
+      "url": "https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/6/englisch/2-fremdsprache",
+      "material_urls": [
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l200658",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l75244",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l83778",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l89822",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l89830",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l263140",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l343251",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l75247",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l75315",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l76659",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l154582",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l154656",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l263144",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l281867",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l76988",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l263283",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l343289",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l75250",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l75253",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l75319",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l154589",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l209685",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l343285",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l272672",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l343241",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l193742",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l49791",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l49796",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l75258",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l79317",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l268777",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l75283",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l252397",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l75326",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l101605",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l209673",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l263142",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l263177",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l343291",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l343292",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l285224",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l295701",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l343293"
+      ]
+    },
+    {
+      "id": "english-gym-7-first",
+      "grades": [
+        7
+      ],
+      "variant": "1-fremdsprache",
+      "url": "https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/7/englisch/1-fremdsprache",
+      "material_urls": [
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l473999",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l344078",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l294948",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l445104",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l293164",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l449337",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l272677",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l450471",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l273999",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l283057",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l343310",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l446130",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l472685",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l293161",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l300420",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l263596"
+      ]
+    },
+    {
+      "id": "english-gym-7-second",
+      "grades": [
+        7
+      ],
+      "variant": "2-fremdsprache",
+      "url": "https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/7/englisch/2-fremdsprache",
+      "material_urls": [
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l263524",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l158895",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l158983",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l193746",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l281928",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l294947",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l343307",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l294944",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l97976",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l263181",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l272677",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l343744",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l343306",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l343936",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l75261",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l95286",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l193749",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l75283",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l209694",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l283054",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l472685",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l239390",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l295703",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l343294",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l157991"
+      ]
+    },
+    {
+      "id": "english-gym-8-first",
+      "grades": [
+        8
+      ],
+      "variant": "1-fremdsprache",
+      "url": "https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/8/englisch/1-fremdsprache",
+      "material_urls": [
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l442478",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l430776",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l451894",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l442694",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l430261",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l455813",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l448468",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l455712"
+      ]
+    },
+    {
+      "id": "english-gym-8-second",
+      "grades": [
+        8
+      ],
+      "variant": "2-fremdsprache",
+      "url": "https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/8/englisch/2-fremdsprache",
+      "material_urls": [
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l442478",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l344028",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l451894",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l294948",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l300420",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l445104",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l293164",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l449337",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l450471",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l343940",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l283057",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l343313",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l446130",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l293161",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l263596",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l455712"
+      ]
+    },
+    {
+      "id": "english-gym-9-first",
+      "grades": [
+        9
+      ],
+      "variant": "1-fremdsprache",
+      "url": "https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/9/englisch/1-fremdsprache",
+      "material_urls": [
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l154620",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l460089",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l97829",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l97830",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l446337",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l455710",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l447508",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l431063"
+      ]
+    },
+    {
+      "id": "english-gym-9-second",
+      "grades": [
+        9
+      ],
+      "variant": "2-fremdsprache",
+      "url": "https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/9/englisch/2-fremdsprache",
+      "material_urls": [
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l430774",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l154620",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l460089",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l442694",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l97829",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l97830",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l446337",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l455710",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l447508",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l430261",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l431066",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l455813"
+      ]
+    },
+    {
+      "id": "english-gym-10-common",
+      "grades": [
+        10
+      ],
+      "variant": "gemeinsamer-lehrplan-1-und-2-fremdsprache",
+      "url": "https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/10/englisch",
+      "material_urls": [
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l446188",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l473979",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l157995",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l453059",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l295671"
+      ]
+    },
+    {
+      "id": "english-gym-11",
+      "grades": [
+        11
+      ],
+      "variant": "gemeinsamer-fachlehrplan",
+      "url": "https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/11/englisch",
+      "material_urls": [
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l446845",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l455708",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l430770",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l336474",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l448470"
+      ]
+    },
+    {
+      "id": "english-gym-12-13-basic",
+      "grades": [
+        12,
+        13
+      ],
+      "variant": "grundlegend",
+      "url": "https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/12/englisch/grundlegend",
+      "material_urls": [
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l460587",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l336482",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l430103",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l440247",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l446114",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l446854",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l451829",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l450046"
+      ]
+    },
+    {
+      "id": "english-gym-12-13-enhanced",
+      "grades": [
+        12,
+        13
+      ],
+      "variant": "erhoeht",
+      "url": "https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/12/englisch/erhoeht",
+      "material_urls": [
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l343247",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l472670",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l460587",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l430115",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l446114",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l446854",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l449684",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l455742",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l456519"
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "labels": [],
+      "title": "Leistungsmessung",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l200658",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_5_HV_On Lucy_s phone",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l75244",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_5_HV_Greenwich",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l83778",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_5_HV_A_crazy_pet",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l89822",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_5_HV_Family_activities",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l89830",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital"
+      ],
+      "title": "GYM_E_5_HV_Spr_MEBIS_My_family_tree",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l263140",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital",
+        "teachSHARE-Kurs"
+      ],
+      "title": "My family tree",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l342075",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_5_LV_Shopping in London",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l75247",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital"
+      ],
+      "title": "GYM_E_5_LV_What a crazy party",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l75315",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_5_LV_Visit to Nottingham",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l76659",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_5_Spr_Shopping_mall",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l154582",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_5_Spr_Holiday_activities",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l154656",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital"
+      ],
+      "title": "GYM_E_5_Spr_MEBIS_Your_school_day",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l263144",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_5_Spr_Monologisches_Sprechen",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l281867",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Your school day",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l343260",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_5_Schr_Visit to the zoo",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l76988",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_5_SM_Deutsches_Museum",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l75250",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_5_SM_Umzug nach Deutschland",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l75253",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_5_SM_Chiemsee",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l75319",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_5_SM_Madame_Tussauds",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l154589",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_5_SM_Super_Zoo",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l209685",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Chiemsee",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l343238",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_5_SM_Übersetzen",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l272672",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Sprachmittlung im Englischunterricht an der Grundschule",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l49205",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Chiemsee",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l343242",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_5_WS_School_in_England_and_Germany",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l193742",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Wortschatzliste-Grundschule",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l49791",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Classroom Phrases-Grundschule",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l49796",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_5_GR_April Fool_s Day",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l75258",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_5_GR_Quiz_about_London",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l79317",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_5_GR_Olney_Pancake_Race",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l268777",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital"
+      ],
+      "title": "Revision year 5",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l434349",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_5_MK_In_a_clothes_shop",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l252397",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_5_IKK_Test for tourists",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l75326",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_5_IKK_Jeopardy",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l101605",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_5_IKK_Where_are_we",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l209673",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital"
+      ],
+      "title": "GYM_E_5_IKK_MEBIS_Test_for_tourists",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l263142",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital"
+      ],
+      "title": "GYM_E_5_IKK_MEBIS_Where_are_we",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l263177",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "A test for tourists",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l343261",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Where are we",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l343262",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_5_TMK_Humpty_Dumpty",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l285224",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital"
+      ],
+      "title": "GYM_E_5_MK_MEBIS_In_a_clothes_shop",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l295701",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-5-first",
+          "grades": [
+            5
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Ausgefallener Jahrgangsstufentest",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l310428",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-6-first",
+          "grades": [
+            6
+          ],
+          "variant": "1-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_6_HV_British_celebrations",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l263524",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-6-first",
+          "grades": [
+            6
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-7-second",
+          "grades": [
+            7
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_6_LV_Florida",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l158895",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-6-first",
+          "grades": [
+            6
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-7-second",
+          "grades": [
+            7
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_6_LV_Goldilocks",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l158983",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-6-first",
+          "grades": [
+            6
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-7-second",
+          "grades": [
+            7
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_6_LV_Halloween",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l193746",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-6-first",
+          "grades": [
+            6
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-7-second",
+          "grades": [
+            7
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_6_Spr_Two_minute_talks",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l281928",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-6-first",
+          "grades": [
+            6
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-7-second",
+          "grades": [
+            7
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_6_Spr_Helping_a_tourist",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l294947",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-6-first",
+          "grades": [
+            6
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-7-second",
+          "grades": [
+            7
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Interactive role plays",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l343248",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-6-first",
+          "grades": [
+            6
+          ],
+          "variant": "1-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_6_Schr_Summer_holidays",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l294944",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-6-first",
+          "grades": [
+            6
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-7-second",
+          "grades": [
+            7
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_6_SM_Youth_hostel",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l97976",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-6-first",
+          "grades": [
+            6
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-7-second",
+          "grades": [
+            7
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_6_SM_Roemercamp",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l263181",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-6-first",
+          "grades": [
+            6
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-7-second",
+          "grades": [
+            7
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_6_7_SM_Übersetzen",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l272677",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-6-first",
+          "grades": [
+            6
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-7-first",
+          "grades": [
+            7
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-7-second",
+          "grades": [
+            7
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_6_WS_Forbidden_Words",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l239394",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-6-first",
+          "grades": [
+            6
+          ],
+          "variant": "1-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital"
+      ],
+      "title": "feelings and reactions",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l343275",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-6-first",
+          "grades": [
+            6
+          ],
+          "variant": "1-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "feelings and reactions",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l343276",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-6-first",
+          "grades": [
+            6
+          ],
+          "variant": "1-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_6_GR_The_best_car",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l75261",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-6-first",
+          "grades": [
+            6
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-7-second",
+          "grades": [
+            7
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_6_GR_Fortune_Teller",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l95286",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-6-first",
+          "grades": [
+            6
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-7-second",
+          "grades": [
+            7
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_6_GR_The_Romans_in_Britain",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l193749",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-6-first",
+          "grades": [
+            6
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-7-second",
+          "grades": [
+            7
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_6_GR_present progressive with future meaning",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l75283",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-6-first",
+          "grades": [
+            6
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        },
+        {
+          "id": "english-gym-7-second",
+          "grades": [
+            7
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital"
+      ],
+      "title": "Grammar Revision Year 5",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l430712",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-6-first",
+          "grades": [
+            6
+          ],
+          "variant": "1-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_6_IKK_At_a_railway_station",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l209694",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-6-first",
+          "grades": [
+            6
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-7-second",
+          "grades": [
+            7
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_6_IKK_Winter_celebrations",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l283054",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-6-first",
+          "grades": [
+            6
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-7-second",
+          "grades": [
+            7
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Neu",
+        "Digital",
+        "teachSHARE-Kurs"
+      ],
+      "title": "Advent Calendar",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l472685",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-6-first",
+          "grades": [
+            6
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-7-first",
+          "grades": [
+            7
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-7-second",
+          "grades": [
+            7
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_6_TMK_Beth_Gellert",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l239390",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-6-first",
+          "grades": [
+            6
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-7-second",
+          "grades": [
+            7
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital"
+      ],
+      "title": "GYM_E_6_TMK_MEBIS_Beth_Gellert",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l295703",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-6-first",
+          "grades": [
+            6
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-7-second",
+          "grades": [
+            7
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Beth Gellert",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l343264",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-6-first",
+          "grades": [
+            6
+          ],
+          "variant": "1-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_6_MK_Dictionary_Rally",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l157991",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-6-first",
+          "grades": [
+            6
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-7-second",
+          "grades": [
+            7
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Fair play",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l448466",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-6-first",
+          "grades": [
+            6
+          ],
+          "variant": "1-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "My family tree",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l343251",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital"
+      ],
+      "title": "GYM_E_5_HV_Spr_Schr_MEBIS_Classroom_wiki",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l263283",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Classroom wiki",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l343289",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Chiemsee",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l343285",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Chiemsee",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l343241",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital"
+      ],
+      "title": "A test for tourists",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l343291",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital"
+      ],
+      "title": "Where are we",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l343292",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital"
+      ],
+      "title": "In a clothes shop",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l343293",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-6-second",
+          "grades": [
+            6
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Neu",
+        "Digital",
+        "Selbstlernkurs",
+        "teachSHARE-Kurs"
+      ],
+      "title": "GYM_E_7_Young People's Digital Life",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l473999",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-7-first",
+          "grades": [
+            7
+          ],
+          "variant": "1-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Arbeitsblatt"
+      ],
+      "title": "Snowdonia National Park",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l344078",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-7-first",
+          "grades": [
+            7
+          ],
+          "variant": "1-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_7_Spr_Wales_Desert_South_West",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l294948",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-7-first",
+          "grades": [
+            7
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-8-second",
+          "grades": [
+            8
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Arbeitsblatt"
+      ],
+      "title": "Teenhood",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l445104",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-7-first",
+          "grades": [
+            7
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-8-second",
+          "grades": [
+            8
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_7_SM_Leistungssport_und_Schule",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l293164",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-7-first",
+          "grades": [
+            7
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-8-second",
+          "grades": [
+            8
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Arbeitsblatt"
+      ],
+      "title": "GYM_E_7_SM_reading project",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l449337",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-7-first",
+          "grades": [
+            7
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-8-second",
+          "grades": [
+            8
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Arbeitsblatt",
+        "Lernaufgabe"
+      ],
+      "title": "GYM_E_7_Lottery winner",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l450471",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-7-first",
+          "grades": [
+            7
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-8-second",
+          "grades": [
+            8
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_7_WS_Norman_Conquest",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l273999",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-7-first",
+          "grades": [
+            7
+          ],
+          "variant": "1-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_7_GR_Thanksgiving",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l283057",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-7-first",
+          "grades": [
+            7
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-8-second",
+          "grades": [
+            8
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "American middle schools",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l343310",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-7-first",
+          "grades": [
+            7
+          ],
+          "variant": "1-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital",
+        "teachSHARE-Kurs",
+        "Unterrichtsmaterial"
+      ],
+      "title": "The Secret Hut",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l446130",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-7-first",
+          "grades": [
+            7
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-8-second",
+          "grades": [
+            8
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital"
+      ],
+      "title": "GYM_E_7_LV_Extreme_internet_users",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l293161",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-7-first",
+          "grades": [
+            7
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-8-second",
+          "grades": [
+            8
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital"
+      ],
+      "title": "GYM_E_7_TMK_Digital_Skills",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l300420",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-7-first",
+          "grades": [
+            7
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-8-second",
+          "grades": [
+            8
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_7_Sprachreflexion_indirekte_Aussagesaetze",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l263596",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-7-first",
+          "grades": [
+            7
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-8-second",
+          "grades": [
+            8
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital"
+      ],
+      "title": "Interactive roleplays",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l343307",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-7-second",
+          "grades": [
+            7
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "feelings and reactions",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l343744",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-7-second",
+          "grades": [
+            7
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital"
+      ],
+      "title": "feelings and reactions",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l343306",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-7-second",
+          "grades": [
+            7
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Forbidden Words",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l343936",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-7-second",
+          "grades": [
+            7
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital"
+      ],
+      "title": "Beth Gellert",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l343294",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-7-second",
+          "grades": [
+            7
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Arbeitsblatt"
+      ],
+      "title": "Inuit Culture",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l442478",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-8-first",
+          "grades": [
+            8
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-8-second",
+          "grades": [
+            8
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Arbeitsblatt"
+      ],
+      "title": "Manitoba",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l430776",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-8-first",
+          "grades": [
+            8
+          ],
+          "variant": "1-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "teachSHARE-Kurs"
+      ],
+      "title": "Christmas traditions in Canada",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l451894",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-8-first",
+          "grades": [
+            8
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-8-second",
+          "grades": [
+            8
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Arbeitsblatt"
+      ],
+      "title": "Flyer for the film club",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l442694",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-8-first",
+          "grades": [
+            8
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-9-second",
+          "grades": [
+            9
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital",
+        "teachSHARE-Kurs",
+        "Unterrichtsmaterial"
+      ],
+      "title": "UK Politics",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l430261",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-8-first",
+          "grades": [
+            8
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-9-second",
+          "grades": [
+            9
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Neu",
+        "Digital",
+        "Selbstlernkurs",
+        "teachSHARE-Kurs"
+      ],
+      "title": "The Poet's Quest",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l455813",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-8-first",
+          "grades": [
+            8
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-9-second",
+          "grades": [
+            9
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Political participation and you",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l448468",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-8-first",
+          "grades": [
+            8
+          ],
+          "variant": "1-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Canada and its Indigenous people",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l455712",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-8-first",
+          "grades": [
+            8
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-8-second",
+          "grades": [
+            8
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Snowdonia National Park",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l344028",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-8-second",
+          "grades": [
+            8
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Norman Conquest",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l343940",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-8-second",
+          "grades": [
+            8
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "American middle schools",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l343313",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-8-second",
+          "grades": [
+            8
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Ferienjobs bei einer Jugendorganisation",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l154620",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-9-first",
+          "grades": [
+            9
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-9-second",
+          "grades": [
+            9
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Neu",
+        "Arbeitsblatt",
+        "Unterrichtsmaterial"
+      ],
+      "title": "Rethinking Job Interviews",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l460089",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-9-first",
+          "grades": [
+            9
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-9-second",
+          "grades": [
+            9
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_9_GR_Zeitenfolge",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l97829",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-9-first",
+          "grades": [
+            9
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-9-second",
+          "grades": [
+            9
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_9_GR_Indirekte Rede in allen Zeitstufen",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l97830",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-9-first",
+          "grades": [
+            9
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-9-second",
+          "grades": [
+            9
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital",
+        "teachSHARE-Kurs"
+      ],
+      "title": "Tenses - a mixed bag",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l446337",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-9-first",
+          "grades": [
+            9
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-9-second",
+          "grades": [
+            9
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Selbstlernkurs",
+        "teachSHARE-Kurs"
+      ],
+      "title": "Passiv The Hound of the Baskervilles",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l455710",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-9-first",
+          "grades": [
+            9
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-9-second",
+          "grades": [
+            9
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital",
+        "teachSHARE-Kurs",
+        "Unterrichtseinheit"
+      ],
+      "title": "Dresscodes",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l447508",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-9-first",
+          "grades": [
+            9
+          ],
+          "variant": "1-fremdsprache"
+        },
+        {
+          "id": "english-gym-9-second",
+          "grades": [
+            9
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital",
+        "teachSHARE-Kurs"
+      ],
+      "title": "Making better choices",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l431063",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-9-first",
+          "grades": [
+            9
+          ],
+          "variant": "1-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Arbeitsblatt"
+      ],
+      "title": "Manitoba",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l430774",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-9-second",
+          "grades": [
+            9
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital"
+      ],
+      "title": "Making better choices",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l431066",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-9-second",
+          "grades": [
+            9
+          ],
+          "variant": "2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Arbeitsblatt"
+      ],
+      "title": "Andy's Story",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l446188",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-10-common",
+          "grades": [
+            10
+          ],
+          "variant": "gemeinsamer-lehrplan-1-und-2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Neu",
+        "Digital",
+        "teachSHARE-Kurs"
+      ],
+      "title": "GYM_E_10_Armistice Runner",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l473979",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-10-common",
+          "grades": [
+            10
+          ],
+          "variant": "gemeinsamer-lehrplan-1-und-2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital"
+      ],
+      "title": "GYM_E_10_Schr_International_Internet_Blog",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l157995",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-10-common",
+          "grades": [
+            10
+          ],
+          "variant": "gemeinsamer-lehrplan-1-und-2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Arbeitsblatt"
+      ],
+      "title": "GYM_E_10_The Hate U Give (Angie Thomas)",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l453059",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-10-common",
+          "grades": [
+            10
+          ],
+          "variant": "gemeinsamer-lehrplan-1-und-2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_10_Themengebiete_Literatur",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l295671",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-10-common",
+          "grades": [
+            10
+          ],
+          "variant": "gemeinsamer-lehrplan-1-und-2-fremdsprache"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Arbeitsblatt"
+      ],
+      "title": "Zindzi Mandela",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l446845",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-11",
+          "grades": [
+            11
+          ],
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital",
+        "teachSHARE-Kurs",
+        "Unterrichtsmaterial"
+      ],
+      "title": "Canada's Orange Shirt Day",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l455708",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-11",
+          "grades": [
+            11
+          ],
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Arbeitsblatt",
+        "Lernaufgabe"
+      ],
+      "title": "Schreiben und Argumentieren",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l430770",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-11",
+          "grades": [
+            11
+          ],
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_11-13_Schr_Operatorenliste",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l336474",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-11",
+          "grades": [
+            11
+          ],
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Racism Here, There and Everywhere?",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l448470",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-11",
+          "grades": [
+            11
+          ],
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Neu",
+        "Arbeitsblatt",
+        "Unterrichtsmaterial"
+      ],
+      "title": "Speech Writing Workshop",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l460587",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-12-13-basic",
+          "grades": [
+            12,
+            13
+          ],
+          "variant": "grundlegend"
+        },
+        {
+          "id": "english-gym-12-13-enhanced",
+          "grades": [
+            12,
+            13
+          ],
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "GYM_E_11-13_Schr_Operatorenliste",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l336482",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-12-13-basic",
+          "grades": [
+            12,
+            13
+          ],
+          "variant": "grundlegend"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital",
+        "teachSHARE-Kurs"
+      ],
+      "title": "Operatoren für Schreibaufgaben",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l430103",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-12-13-basic",
+          "grades": [
+            12,
+            13
+          ],
+          "variant": "grundlegend"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital",
+        "Arbeitsblatt",
+        "Lernaufgabe"
+      ],
+      "title": "Shakespeare Sonnet 60",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l440247",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-12-13-basic",
+          "grades": [
+            12,
+            13
+          ],
+          "variant": "grundlegend"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital",
+        "teachSHARE-Kurs",
+        "Unterrichtsmaterial"
+      ],
+      "title": "Four Freedoms",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l446114",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-12-13-basic",
+          "grades": [
+            12,
+            13
+          ],
+          "variant": "grundlegend"
+        },
+        {
+          "id": "english-gym-12-13-enhanced",
+          "grades": [
+            12,
+            13
+          ],
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital",
+        "teachSHARE-Kurs"
+      ],
+      "title": "Jews in medieval and early modern England",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l446854",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-12-13-basic",
+          "grades": [
+            12,
+            13
+          ],
+          "variant": "grundlegend"
+        },
+        {
+          "id": "english-gym-12-13-enhanced",
+          "grades": [
+            12,
+            13
+          ],
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "teachSHARE-Kurs",
+        "Unterrichtseinheit"
+      ],
+      "title": "Much Ado About Nothing",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l451829",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-12-13-basic",
+          "grades": [
+            12,
+            13
+          ],
+          "variant": "grundlegend"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital",
+        "Lernaufgabe",
+        "Selbstlernkurs",
+        "teachSHARE-Kurs"
+      ],
+      "title": "Creative Ghana and Beyond",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l450046",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-12-13-basic",
+          "grades": [
+            12,
+            13
+          ],
+          "variant": "grundlegend"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Multiple Matching",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l343247",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-12-13-enhanced",
+          "grades": [
+            12,
+            13
+          ],
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Neu",
+        "Arbeitsblatt"
+      ],
+      "title": "International Students",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l472670",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-12-13-enhanced",
+          "grades": [
+            12,
+            13
+          ],
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital",
+        "teachSHARE-Kurs"
+      ],
+      "title": "Operatoren für Schreibaufgaben",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l430115",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-12-13-enhanced",
+          "grades": [
+            12,
+            13
+          ],
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital",
+        "teachSHARE-Kurs"
+      ],
+      "title": "GYM_E_12_13_Henry V",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l449684",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-12-13-enhanced",
+          "grades": [
+            12,
+            13
+          ],
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Neu",
+        "Digital",
+        "teachSHARE-Kurs"
+      ],
+      "title": "A Sonnet Project",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l455742",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-12-13-enhanced",
+          "grades": [
+            12,
+            13
+          ],
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Neu",
+        "Digital",
+        "teachSHARE-Kurs"
+      ],
+      "title": "Fight for your rights",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l456519",
+      "curriculum_refs": [
+        {
+          "id": "english-gym-12-13-enhanced",
+          "grades": [
+            12,
+            13
+          ],
+          "variant": "erhoeht"
+        }
+      ]
+    }
+  ]
+}

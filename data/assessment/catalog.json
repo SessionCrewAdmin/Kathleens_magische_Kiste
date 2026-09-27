@@ -4,13 +4,17 @@
   "supported_assessment_types": ["short_test", "worksheet", "practice", "revision", "exam", "homework"],
   "v1_assessment_types": ["short_test"],
   "subjects": ["Geschichte", "Englisch"],
-  "grade_range": [7, 13],
+  "grade_range": [5, 13],
   "curriculum_knowledge_base": {
     "subject": "LehrplanPLUS Gymnasium Bayern",
-    "status": "not_imported",
-    "grades": [7, 8, 9, 10, 11, 12, 13],
-    "reference": null,
-    "note": "Kompetenzerwartungen werden erst nach Import einer überprüfbaren Originalquelle angeboten. Es werden keine LehrplanPLUS-Texte ergänzt oder rekonstruiert."
+    "status": "imported",
+    "grades": [5, 6, 7, 8, 9, 10, 11, 12, 13],
+    "reference": "lehrplanplus-gymnasium-index-v1.json",
+    "competency_indexes": {
+      "Geschichte": "lehrplanplus-history-competencies-v1.json",
+      "Englisch": "lehrplanplus-english-competencies-v1.json"
+    },
+    "note": "Offizielle Kompetenzerwartungen und Inhalte sind für die verfügbaren Fachlehrplanvarianten strukturiert importiert. Servicematerialien sind pro Variante inventarisiert und werden auf den offiziellen Fundstellen verlinkt."
   },
   "grammar_knowledge_base": {
     "subject": "English Grammar",

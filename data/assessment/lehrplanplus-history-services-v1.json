@@ -1,0 +1,2415 @@
+{
+  "dataset_id": "lehrplanplus-history-service-material-index",
+  "version": "1.0.0",
+  "source": "LehrplanPLUS Bayern · dynamically listed materials on each official History Gymnasium curriculum page",
+  "retrieved_at": "2026-09-26",
+  "provenance": "lehrplanplus",
+  "files_mirrored": false,
+  "note": "Material pages are linked, not mirrored. Some resources are external/ByCS hosted; review usage terms on the individual item page.",
+  "pages": [
+    {
+      "id": "history-gym-6",
+      "grade": 6,
+      "variant": "gemeinsamer-fachlehrplan",
+      "url": "https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/6/geschichte",
+      "material_urls": [
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l474191",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l452314",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l467678",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l430605",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l274812",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l273258",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l268794",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l268799",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l268820",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l78587",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l78590",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l78600",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l448525",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l282911",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l263063",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l268823",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l78589",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l78591",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l78592",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l78595",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l78594",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l79993",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l78593"
+      ]
+    },
+    {
+      "id": "history-gym-7",
+      "grade": 7,
+      "variant": "gemeinsamer-fachlehrplan",
+      "url": "https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/7/geschichte",
+      "material_urls": [
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l474191",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l452314",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l467678",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l430607",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l282786",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l282785",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l426192",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l282784",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l282797",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l282779",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l344128",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l285241",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l80192",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l252276",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l282781",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l282903",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l80200",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l297558",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l80201",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l282800",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l282783",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l282923",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l80202"
+      ]
+    },
+    {
+      "id": "history-gym-8",
+      "grade": 8,
+      "variant": "gemeinsamer-fachlehrplan",
+      "url": "https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/8/geschichte",
+      "material_urls": [
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l474191",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l452314",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l467678",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l430611",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l283179",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l283167",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l285847",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l285848",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l283166",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l283170",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l283169",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l446261",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l448528",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l285176",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l283172",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l290558",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l283188",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l283186",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l289549",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l292938",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l283181",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l344067"
+      ]
+    },
+    {
+      "id": "history-gym-9",
+      "grade": 9,
+      "variant": "gemeinsamer-fachlehrplan",
+      "url": "https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/9/geschichte",
+      "material_urls": [
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l474191",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l452314",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l467678",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l430615",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l450717",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l297992",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l427176",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l297994",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l298081",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l344121",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l450714"
+      ]
+    },
+    {
+      "id": "history-gym-10",
+      "grade": 10,
+      "variant": "gemeinsamer-fachlehrplan",
+      "url": "https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/10/geschichte",
+      "material_urls": [
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l474191",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l431241",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l452314",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l467678",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l430617",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l80144",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l303374",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l80143",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l446264",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l344154",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l446267"
+      ]
+    },
+    {
+      "id": "history-gym-11",
+      "grade": 11,
+      "variant": "gemeinsamer-fachlehrplan",
+      "url": "https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/11/geschichte",
+      "material_urls": [
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l474191",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l430642",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l452314",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l467678",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l430619",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l439312",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l304067",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l304068",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l448531",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l344122",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l335991"
+      ]
+    },
+    {
+      "id": "history-gym-12-basic",
+      "grade": 12,
+      "variant": "grundlegend",
+      "url": "https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/12/geschichte/grundlegend",
+      "material_urls": [
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l452314",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l474191",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l430619",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l467678",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l439297",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l331406",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l331405",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l341103",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l439963",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l447715",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l449683",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l331407",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l331408",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l341105",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l454073",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l341107",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l332478",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l431690",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l332479",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l341111",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l430627"
+      ]
+    },
+    {
+      "id": "history-gym-12-enhanced",
+      "grade": 12,
+      "variant": "erhoeht",
+      "url": "https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/12/geschichte/erhoeht",
+      "material_urls": [
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l452314",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l474191",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l430619",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l467678",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l439298",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l431498",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l447718",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l450590",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l449946",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l453863",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l331407",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l332382",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l332383",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l450595",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l450599",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l454073",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l454098",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l450603",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l450630",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l332478",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l450622",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l450609",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l332479",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l332645",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l430627",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l450613",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l332646",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l332647",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l426198"
+      ]
+    },
+    {
+      "id": "history-gym-13-basic",
+      "grade": 13,
+      "variant": "grundlegend",
+      "url": "https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/13/geschichte/grundlegend",
+      "material_urls": [
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l452314",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l474191",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l430619",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l467678",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l454131",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l341137",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l452260",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l439719",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l332675",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l460604",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l426440",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l430638",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l333586",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l341117",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l333583",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l341119"
+      ]
+    },
+    {
+      "id": "history-gym-13-enhanced",
+      "grade": 13,
+      "variant": "erhoeht",
+      "url": "https://www.lehrplanplus.bayern.de/fachlehrplan/gymnasium/13/geschichte/erhoeht",
+      "material_urls": [
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l452314",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l474191",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l430619",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l467678",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l454131",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l450659",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l452260",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l332675",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l450780",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l450779",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l430638",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l450663",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l426195",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l333586",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l450667",
+        "https://www.lehrplanplus.bayern.de/serviceinformation/l431627"
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "labels": [
+        "Neu",
+        "Digital",
+        "Veranschaulichung"
+      ],
+      "title": "KI-Anwendungen im Geschichtsunterricht",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l474191",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-6",
+          "grade": 6,
+          "variant": "gemeinsamer-fachlehrplan"
+        },
+        {
+          "id": "history-gym-7",
+          "grade": 7,
+          "variant": "gemeinsamer-fachlehrplan"
+        },
+        {
+          "id": "history-gym-8",
+          "grade": 8,
+          "variant": "gemeinsamer-fachlehrplan"
+        },
+        {
+          "id": "history-gym-9",
+          "grade": 9,
+          "variant": "gemeinsamer-fachlehrplan"
+        },
+        {
+          "id": "history-gym-10",
+          "grade": 10,
+          "variant": "gemeinsamer-fachlehrplan"
+        },
+        {
+          "id": "history-gym-11",
+          "grade": 11,
+          "variant": "gemeinsamer-fachlehrplan"
+        },
+        {
+          "id": "history-gym-12-basic",
+          "grade": 12,
+          "variant": "grundlegend"
+        },
+        {
+          "id": "history-gym-12-enhanced",
+          "grade": 12,
+          "variant": "erhoeht"
+        },
+        {
+          "id": "history-gym-13-basic",
+          "grade": 13,
+          "variant": "grundlegend"
+        },
+        {
+          "id": "history-gym-13-enhanced",
+          "grade": 13,
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Unterrichtsplanung"
+      ],
+      "title": "Operatoren im Fach Geschichte",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l452314",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-6",
+          "grade": 6,
+          "variant": "gemeinsamer-fachlehrplan"
+        },
+        {
+          "id": "history-gym-7",
+          "grade": 7,
+          "variant": "gemeinsamer-fachlehrplan"
+        },
+        {
+          "id": "history-gym-8",
+          "grade": 8,
+          "variant": "gemeinsamer-fachlehrplan"
+        },
+        {
+          "id": "history-gym-9",
+          "grade": 9,
+          "variant": "gemeinsamer-fachlehrplan"
+        },
+        {
+          "id": "history-gym-10",
+          "grade": 10,
+          "variant": "gemeinsamer-fachlehrplan"
+        },
+        {
+          "id": "history-gym-11",
+          "grade": 11,
+          "variant": "gemeinsamer-fachlehrplan"
+        },
+        {
+          "id": "history-gym-12-basic",
+          "grade": 12,
+          "variant": "grundlegend"
+        },
+        {
+          "id": "history-gym-12-enhanced",
+          "grade": 12,
+          "variant": "erhoeht"
+        },
+        {
+          "id": "history-gym-13-basic",
+          "grade": 13,
+          "variant": "grundlegend"
+        },
+        {
+          "id": "history-gym-13-enhanced",
+          "grade": 13,
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Neu",
+        "Digital"
+      ],
+      "title": "Grundlegende Daten und Begriffe im Fach Geschichte (Gymnasium)",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l467678",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-6",
+          "grade": 6,
+          "variant": "gemeinsamer-fachlehrplan"
+        },
+        {
+          "id": "history-gym-7",
+          "grade": 7,
+          "variant": "gemeinsamer-fachlehrplan"
+        },
+        {
+          "id": "history-gym-8",
+          "grade": 8,
+          "variant": "gemeinsamer-fachlehrplan"
+        },
+        {
+          "id": "history-gym-9",
+          "grade": 9,
+          "variant": "gemeinsamer-fachlehrplan"
+        },
+        {
+          "id": "history-gym-10",
+          "grade": 10,
+          "variant": "gemeinsamer-fachlehrplan"
+        },
+        {
+          "id": "history-gym-11",
+          "grade": 11,
+          "variant": "gemeinsamer-fachlehrplan"
+        },
+        {
+          "id": "history-gym-12-basic",
+          "grade": 12,
+          "variant": "grundlegend"
+        },
+        {
+          "id": "history-gym-12-enhanced",
+          "grade": 12,
+          "variant": "erhoeht"
+        },
+        {
+          "id": "history-gym-13-basic",
+          "grade": 13,
+          "variant": "grundlegend"
+        },
+        {
+          "id": "history-gym-13-enhanced",
+          "grade": 13,
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital"
+      ],
+      "title": "Medienempfehlungen im Fach Geschichte",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l430605",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-6",
+          "grade": 6,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Lernaufgabe"
+      ],
+      "title": "Leben in der Steinzeit",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l274812",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-6",
+          "grade": 6,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Veranschaulichung"
+      ],
+      "title": "Methodenbaustein Kartenlesen",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l273258",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-6",
+          "grade": 6,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Lernaufgabe"
+      ],
+      "title": "Wo siedelten die Griechen?",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l268794",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-6",
+          "grade": 6,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Lernaufgabe"
+      ],
+      "title": "Die attische Demokratie",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l268799",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-6",
+          "grade": 6,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Lernaufgabe"
+      ],
+      "title": "Perserkriege",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l268820",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-6",
+          "grade": 6,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Antike Bezüge",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l78587",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-6",
+          "grade": 6,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Demokratie",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l78590",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-6",
+          "grade": 6,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Unterrichtsplanung"
+      ],
+      "title": "Sequenzvorschlag G 6.3",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l78600",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-6",
+          "grade": 6,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Gleichberechtigung von Frauen und Männern",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l448525",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-6",
+          "grade": 6,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Lernaufgabe"
+      ],
+      "title": "Hatschepsut - ein erfolgreicher Pharao?",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l282911",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-6",
+          "grade": 6,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Historische Persönlichkeiten",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l263063",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-6",
+          "grade": 6,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Lernaufgabe"
+      ],
+      "title": "Wie groß war das Imperium Romanum?",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l268823",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-6",
+          "grade": 6,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Narration",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l78589",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-6",
+          "grade": 6,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Regionalgeschichtlicher Ansatz",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l78591",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-6",
+          "grade": 6,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Diaspora",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l78592",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-6",
+          "grade": 6,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Entwicklung Roms",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l78595",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-6",
+          "grade": 6,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Kartenarbeit zum Epochenumbruch",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l78594",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-6",
+          "grade": 6,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Unterrichtsplanung"
+      ],
+      "title": "Sequenzvorschlag G 6.6",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l79993",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-6",
+          "grade": 6,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Längsschnitt Familie",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l78593",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-6",
+          "grade": 6,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital"
+      ],
+      "title": "Medienempfehlungen im Fach Geschichte",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l430607",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-7",
+          "grade": 7,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Heiliges Römisches Reich",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l282786",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-7",
+          "grade": 7,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Anknüpfung an Jahrgangsstufe 6",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l282785",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-7",
+          "grade": 7,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Reichskirchensystem",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l426192",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-7",
+          "grade": 7,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Unterrichtsplanung",
+        "Veranschaulichung"
+      ],
+      "title": "Sequenzvorschlag G 7.1",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l282784",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-7",
+          "grade": 7,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Möglichkeiten und Grenzen digitaler Quellen und Darstellungen",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l282797",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-7",
+          "grade": 7,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Unterrichtsplanung",
+        "Veranschaulichung"
+      ],
+      "title": "Sequenzvorschlag G 7.2",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l282779",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-7",
+          "grade": 7,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital",
+        "teachSHARE-Kurs"
+      ],
+      "title": "Mittelalter digital? Der Codex Manesse als Beispiel höfischer Kultur",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l344128",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-7",
+          "grade": 7,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Lernaufgabe"
+      ],
+      "title": "Die Eroberung Konstantinopels",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l285241",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-7",
+          "grade": 7,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Eroberung Konstantinopels",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l80192",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-7",
+          "grade": 7,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Karteneinsatz",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l252276",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-7",
+          "grade": 7,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Unterrichtsplanung",
+        "Veranschaulichung"
+      ],
+      "title": "Sequenzvorschlag G 7.3",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l282781",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-7",
+          "grade": 7,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Lernaufgabe"
+      ],
+      "title": "Made in China?",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l282903",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-7",
+          "grade": 7,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Limes",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l80200",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-7",
+          "grade": 7,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Lernaufgabe"
+      ],
+      "title": "Bauernkrieg",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l297558",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-7",
+          "grade": 7,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Streben nach einer friedlichen Konfliktlösung",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l80201",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-7",
+          "grade": 7,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Gesellschaftliche Auswirkungen neuer Möglichkeiten der Informationsvermittlung",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l282800",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-7",
+          "grade": 7,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Unterrichtsplanung",
+        "Veranschaulichung"
+      ],
+      "title": "Sequenzvorschlag G 7.5",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l282783",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-7",
+          "grade": 7,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Lernaufgabe"
+      ],
+      "title": "Bauwerke",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l282923",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-7",
+          "grade": 7,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Dionysostheater",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l80202",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-7",
+          "grade": 7,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital"
+      ],
+      "title": "Medienempfehlungen im Fach Geschichte",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l430611",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-8",
+          "grade": 8,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Lernaufgabe"
+      ],
+      "title": "Reformen in Bayern",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l283179",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-8",
+          "grade": 8,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Grundzüge der Französischen Revolution bis 1794",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l283167",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-8",
+          "grade": 8,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Bürgerliche Gesellschaft",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l285847",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-8",
+          "grade": 8,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Verfassungsschaubild",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l285848",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-8",
+          "grade": 8,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Unterrichtsplanung",
+        "Veranschaulichung"
+      ],
+      "title": "Sequenzvorschlag G 8.1",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l283166",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-8",
+          "grade": 8,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Rückschlüsse auf machtpolitische Verhältnisse",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l283170",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-8",
+          "grade": 8,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Unterrichtsplanung",
+        "Veranschaulichung"
+      ],
+      "title": "Sequenzvorschlag G 8.2",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l283169",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-8",
+          "grade": 8,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Beispielprüfungsaufgabe (KasL)",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l446261",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-8",
+          "grade": 8,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Freiheitsrechte",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l448528",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-8",
+          "grade": 8,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Lernaufgabe"
+      ],
+      "title": "Territoriale Entwicklung Bayerns",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l285176",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-8",
+          "grade": 8,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Unterrichtsplanung",
+        "Veranschaulichung"
+      ],
+      "title": "Sequenzvorschlag G 8.3",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l283172",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-8",
+          "grade": 8,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Lernaufgabe"
+      ],
+      "title": "Historiengemälde",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l290558",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-8",
+          "grade": 8,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Unterrichtsplanung",
+        "Veranschaulichung"
+      ],
+      "title": "Sequenzvorschlag G 8.5",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l283188",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-8",
+          "grade": 8,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Lernaufgabe"
+      ],
+      "title": "Erster Weltkrieg",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l283186",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-8",
+          "grade": 8,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Neue Dimension des Kriegs",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l289549",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-8",
+          "grade": 8,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Geographische Dimension",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l292938",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-8",
+          "grade": 8,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Unterrichtsplanung",
+        "Veranschaulichung"
+      ],
+      "title": "Sequenzvorschlag G 8.6",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l283181",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-8",
+          "grade": 8,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital",
+        "teachSHARE-Kurs"
+      ],
+      "title": "Wie nahmen die Menschen den Ersten Weltkrieg wahr?",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l344067",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-8",
+          "grade": 8,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital"
+      ],
+      "title": "Medienempfehlungen im Fach Geschichte",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l430615",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-9",
+          "grade": 9,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital",
+        "Lernaufgabe",
+        "teachSHARE-Kurs"
+      ],
+      "title": "Außenpolitische Stabilisierung der Weimarer Republik",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l450717",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-9",
+          "grade": 9,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Unterrichtsplanung",
+        "Veranschaulichung"
+      ],
+      "title": "Sequenzvorschlag G 9.2",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l297992",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-9",
+          "grade": 9,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital",
+        "teachSHARE-Kurs"
+      ],
+      "title": "Kurs \"Was sagen Quellen über den Alltag im Nationalsozialismus aus?\"",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l427176",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-9",
+          "grade": 9,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Unterrichtsplanung",
+        "Veranschaulichung"
+      ],
+      "title": "Sequenzvorschlag G 9.3",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l297994",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-9",
+          "grade": 9,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Digitale Angebote zu Flucht und Vertreibung",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l298081",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-9",
+          "grade": 9,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital",
+        "teachSHARE-Kurs"
+      ],
+      "title": "Eine neue Heimat? Flucht und Vertreibung als biografische Zäsur erkennen",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l344121",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-9",
+          "grade": 9,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital",
+        "Lernaufgabe",
+        "teachSHARE-Kurs"
+      ],
+      "title": "Folgen der Blockbildung für Deutschland",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l450714",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-9",
+          "grade": 9,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital"
+      ],
+      "title": "Material zum ILV-Repetitorium Geschichte",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l431241",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-10",
+          "grade": 10,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital"
+      ],
+      "title": "Medienempfehlungen im Fach Geschichte",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l430617",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-10",
+          "grade": 10,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Erläuterung zu außerschulischen Lernorten",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l80144",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-10",
+          "grade": 10,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Behandlung des Terrorismus",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l303374",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-10",
+          "grade": 10,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "KMS zur Behandlung der deutschen Einheit",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l80143",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-10",
+          "grade": 10,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Beispielprüfungsaufgabe (Kurzarbeit)",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l446264",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-10",
+          "grade": 10,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital",
+        "Lernaufgabe",
+        "teachSHARE-Kurs"
+      ],
+      "title": "Nationalfeiertage in Deutschland und Frankreich",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l344154",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-10",
+          "grade": 10,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Beispielprüfungsaufgabe (Stegreifaufgabe)",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l446267",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-10",
+          "grade": 10,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital"
+      ],
+      "title": "Material zum ILV-Repetitorium Geschichte",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l430642",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-11",
+          "grade": 11,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital"
+      ],
+      "title": "Medienempfehlungen im Fach Geschichte",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l430619",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-11",
+          "grade": 11,
+          "variant": "gemeinsamer-fachlehrplan"
+        },
+        {
+          "id": "history-gym-12-basic",
+          "grade": 12,
+          "variant": "grundlegend"
+        },
+        {
+          "id": "history-gym-12-enhanced",
+          "grade": 12,
+          "variant": "erhoeht"
+        },
+        {
+          "id": "history-gym-13-basic",
+          "grade": 13,
+          "variant": "grundlegend"
+        },
+        {
+          "id": "history-gym-13-enhanced",
+          "grade": 13,
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital",
+        "Lernaufgabe",
+        "Unterrichtsmaterial"
+      ],
+      "title": "Lernaufgabe zur öffentlichen Erinnerung an Holocaust und Shoa",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l439312",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-11",
+          "grade": 11,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Formen des Erinnerns an Holocaust bzw. Shoa",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l304067",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-11",
+          "grade": 11,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Zeitzeugen der DDR",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l304068",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-11",
+          "grade": 11,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Geschichte erinnern. Die Präambel der Bayerischen Verfassung",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l448531",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-11",
+          "grade": 11,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital",
+        "Lernaufgabe"
+      ],
+      "title": "Zeitzeugen der DDR und ihre Bedeutung für die Darstellung von Geschichte",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l344122",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-11",
+          "grade": 11,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Digitale Quellen und Darstellungen",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l335991",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-11",
+          "grade": 11,
+          "variant": "gemeinsamer-fachlehrplan"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Lernaufgabe"
+      ],
+      "title": "Bedeutung der Revolution von 1848/49 für die Demokratisierung Deutschlands",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l439297",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-12-basic",
+          "grade": 12,
+          "variant": "grundlegend"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Entstehung der bürgerlichen Gesellschaft",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l331406",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-12-basic",
+          "grade": 12,
+          "variant": "grundlegend"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Bewertung der Ereignisse von 1848/49",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l331405",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-12-basic",
+          "grade": 12,
+          "variant": "grundlegend"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Unterrichtsplanung",
+        "Veranschaulichung"
+      ],
+      "title": "Sequenzvorschlag G 12.1.1 (gA)",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l341103",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-12-basic",
+          "grade": 12,
+          "variant": "grundlegend"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital",
+        "Unterrichtsplanung"
+      ],
+      "title": "Materialliste zur Demokratiegeschichte",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l439963",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-12-basic",
+          "grade": 12,
+          "variant": "grundlegend"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Beispielschulaufgabe Geschichte (gA) zu 12.1",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l447715",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-12-basic",
+          "grade": 12,
+          "variant": "grundlegend"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital",
+        "Lernaufgabe"
+      ],
+      "title": "Geschlechterrollen im Wandel",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l449683",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-12-basic",
+          "grade": 12,
+          "variant": "grundlegend"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Zäsur 1929",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l331407",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-12-basic",
+          "grade": 12,
+          "variant": "grundlegend"
+        },
+        {
+          "id": "history-gym-12-enhanced",
+          "grade": 12,
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Bewertung der Leistung sozialstaatlicher Maßnahmen",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l331408",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-12-basic",
+          "grade": 12,
+          "variant": "grundlegend"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Unterrichtsplanung",
+        "Veranschaulichung"
+      ],
+      "title": "Sequenzvorschlag G 12.1.2 (gA)",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l341105",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-12-basic",
+          "grade": 12,
+          "variant": "grundlegend"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Lernaufgabe"
+      ],
+      "title": "Selbstdarstellung der NSDAP",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l454073",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-12-basic",
+          "grade": 12,
+          "variant": "grundlegend"
+        },
+        {
+          "id": "history-gym-12-enhanced",
+          "grade": 12,
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Unterrichtsplanung",
+        "Veranschaulichung"
+      ],
+      "title": "Sequenzvorschlag G 12.2.1 (gA)",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l341107",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-12-basic",
+          "grade": 12,
+          "variant": "grundlegend"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Ausgewählte Aspekte der deutschen Wiedervereinigung",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l332478",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-12-basic",
+          "grade": 12,
+          "variant": "grundlegend"
+        },
+        {
+          "id": "history-gym-12-enhanced",
+          "grade": 12,
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Unterrichtsplanung",
+        "Veranschaulichung"
+      ],
+      "title": "Sequenzvorschlag G 12.2.2 (gA)",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l431690",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-12-basic",
+          "grade": 12,
+          "variant": "grundlegend"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Rechtsterroristische Gewaltakte",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l332479",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-12-basic",
+          "grade": 12,
+          "variant": "grundlegend"
+        },
+        {
+          "id": "history-gym-12-enhanced",
+          "grade": 12,
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Unterrichtsplanung",
+        "Veranschaulichung"
+      ],
+      "title": "Sequenzvorschlag G 12.2.3 (gA)",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l341111",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-12-basic",
+          "grade": 12,
+          "variant": "grundlegend"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital",
+        "Unterrichtsplanung"
+      ],
+      "title": "Materialliste zur Geschichte des wiedervereinigten Deutschlands",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l430627",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-12-basic",
+          "grade": 12,
+          "variant": "grundlegend"
+        },
+        {
+          "id": "history-gym-12-enhanced",
+          "grade": 12,
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital",
+        "Lernaufgabe",
+        "Unterrichtsmaterial"
+      ],
+      "title": "Bedeutung der Revolution von 1848/49 für die pluralistische Demokratie",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l439298",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-12-enhanced",
+          "grade": 12,
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital",
+        "Unterrichtsplanung"
+      ],
+      "title": "Materialliste zur Demokratiegeschichte",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l431498",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-12-enhanced",
+          "grade": 12,
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Beispielschulaufgabe Geschichte (eA) zu 12.1",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l447718",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-12-enhanced",
+          "grade": 12,
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Unterrichtsplanung",
+        "Veranschaulichung"
+      ],
+      "title": "Sequenzvorschlag G 12.1.1 (eA)",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l450590",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-12-enhanced",
+          "grade": 12,
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital",
+        "Lernaufgabe"
+      ],
+      "title": "Sozialpolitik in der Weimarer Republik",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l449946",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-12-enhanced",
+          "grade": 12,
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Lernaufgabe"
+      ],
+      "title": "Was ist die Moderne?",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l453863",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-12-enhanced",
+          "grade": 12,
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Bewertung der Leistung sozialstaatlicher Maßnahmen",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l332382",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-12-enhanced",
+          "grade": 12,
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Spektrum künstlerischer Ausdrucksformen in der Moderne",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l332383",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-12-enhanced",
+          "grade": 12,
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Unterrichtsplanung",
+        "Veranschaulichung"
+      ],
+      "title": "Sequenzvorschlag G 12.1.2 (eA)",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l450595",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-12-enhanced",
+          "grade": 12,
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Unterrichtsplanung",
+        "Veranschaulichung"
+      ],
+      "title": "Sequenzvorschlag G 12.1.3 (eA)",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l450599",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-12-enhanced",
+          "grade": 12,
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital",
+        "Lernaufgabe"
+      ],
+      "title": "Widerstand im NS-Staat",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l454098",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-12-enhanced",
+          "grade": 12,
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Unterrichtsplanung",
+        "Veranschaulichung"
+      ],
+      "title": "Sequenzvorschlag G 12.2.1 (eA)",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l450603",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-12-enhanced",
+          "grade": 12,
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital",
+        "Lernaufgabe"
+      ],
+      "title": "Umgang mit Protest in beiden deutschen Staaten",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l450630",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-12-enhanced",
+          "grade": 12,
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Friedens- und Umweltbewegung",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l450622",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-12-enhanced",
+          "grade": 12,
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Unterrichtsplanung",
+        "Veranschaulichung"
+      ],
+      "title": "Sequenzvorschlag G 12.2.2 (eA)",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l450609",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-12-enhanced",
+          "grade": 12,
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Zäsur 2013",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l332645",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-12-enhanced",
+          "grade": 12,
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Unterrichtsplanung",
+        "Veranschaulichung"
+      ],
+      "title": "Sequenzvorschlag G 12.2.3 (eA)",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l450613",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-12-enhanced",
+          "grade": 12,
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Erinnerungskultur und Geschichtspolitik",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l332646",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-12-enhanced",
+          "grade": 12,
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Formen und Zielsetzung der öffentlichen Erinnerung",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l332647",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-12-enhanced",
+          "grade": 12,
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Unterrichtsplanung",
+        "Veranschaulichung"
+      ],
+      "title": "Sequenzvorschlag G 12.2.4 (eA)",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l426198",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-12-enhanced",
+          "grade": 12,
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital",
+        "Lernaufgabe"
+      ],
+      "title": "Arbeit mit dem Historischen Atlas",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l454131",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-13-basic",
+          "grade": 13,
+          "variant": "grundlegend"
+        },
+        {
+          "id": "history-gym-13-enhanced",
+          "grade": 13,
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Unterrichtsplanung",
+        "Veranschaulichung"
+      ],
+      "title": "Sequenzvorschlag G 13.1.1 (gA)",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l341137",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-13-basic",
+          "grade": 13,
+          "variant": "grundlegend"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital",
+        "Lernaufgabe"
+      ],
+      "title": "Welche Bedeutung haben Diaspora und Zionismus für die jüdische Geschichte?",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l452260",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-13-basic",
+          "grade": 13,
+          "variant": "grundlegend"
+        },
+        {
+          "id": "history-gym-13-enhanced",
+          "grade": 13,
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital",
+        "Lernaufgabe"
+      ],
+      "title": "Wirtschaftliche Transformation Chinas unter Deng Xiaoping",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l439719",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-13-basic",
+          "grade": 13,
+          "variant": "grundlegend"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Weltpolitisches Agieren der USA, Russlands und Chinas",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l332675",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-13-basic",
+          "grade": 13,
+          "variant": "grundlegend"
+        },
+        {
+          "id": "history-gym-13-enhanced",
+          "grade": 13,
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Neu"
+      ],
+      "title": "Weltpolitisches Engagement der USA",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l460604",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-13-basic",
+          "grade": 13,
+          "variant": "grundlegend"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Unterrichtsplanung",
+        "Veranschaulichung"
+      ],
+      "title": "Sequenzvorschlag G 13.1.2 (gA)",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l426440",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-13-basic",
+          "grade": 13,
+          "variant": "grundlegend"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Digital",
+        "Unterrichtsplanung"
+      ],
+      "title": "Materialliste zur Geschichte der USA, der Sowjetunion bzw. Russlands und Chinas",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l430638",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-13-basic",
+          "grade": 13,
+          "variant": "grundlegend"
+        },
+        {
+          "id": "history-gym-13-enhanced",
+          "grade": 13,
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Attische Demokratie",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l333586",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-13-basic",
+          "grade": 13,
+          "variant": "grundlegend"
+        },
+        {
+          "id": "history-gym-13-enhanced",
+          "grade": 13,
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Unterrichtsplanung",
+        "Veranschaulichung"
+      ],
+      "title": "Sequenzvorschlag G 13.2.1 (gA)",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l341117",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-13-basic",
+          "grade": 13,
+          "variant": "grundlegend"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Zentrale Probleme der deutschen Nationalstaatsbildung",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l333583",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-13-basic",
+          "grade": 13,
+          "variant": "grundlegend"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Unterrichtsplanung",
+        "Veranschaulichung"
+      ],
+      "title": "Sequenzvorschlag G 13.2.2 (gA)",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l341119",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-13-basic",
+          "grade": 13,
+          "variant": "grundlegend"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Unterrichtsplanung",
+        "Veranschaulichung"
+      ],
+      "title": "Sequenzvorschlag G 13.1.1 (eA)",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l450659",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-13-enhanced",
+          "grade": 13,
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Maoismus",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l450780",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-13-enhanced",
+          "grade": 13,
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [],
+      "title": "Stalinismus",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l450779",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-13-enhanced",
+          "grade": 13,
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Unterrichtsplanung",
+        "Veranschaulichung"
+      ],
+      "title": "Sequenzvorschlag G 13.1.2 (eA)",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l450663",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-13-enhanced",
+          "grade": 13,
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Unterrichtsplanung"
+      ],
+      "title": "Sequenzvorschlag G 13.1.3 (eA)",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l426195",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-13-enhanced",
+          "grade": 13,
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Unterrichtsplanung",
+        "Veranschaulichung"
+      ],
+      "title": "Sequenzvorschlag G 13.2.1 (eA)",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l450667",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-13-enhanced",
+          "grade": 13,
+          "variant": "erhoeht"
+        }
+      ]
+    },
+    {
+      "labels": [
+        "Unterrichtsplanung",
+        "Veranschaulichung"
+      ],
+      "title": "Sequenzvorschlag G 13.2.2 (eA)",
+      "url": "https://www.lehrplanplus.bayern.de/serviceinformation/l431627",
+      "curriculum_refs": [
+        {
+          "id": "history-gym-13-enhanced",
+          "grade": 13,
+          "variant": "erhoeht"
+        }
+      ]
+    }
+  ]
+}
