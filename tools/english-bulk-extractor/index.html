@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f4f8f6"><title>English Bulk Extractor · Kathleens Kiste</title>
+<link rel="stylesheet" href="english-bulk-extractor.css?v=1.0.0">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/tesseract.js@5.0.5/dist/tesseract.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/hash-wasm@4.12.0/dist/sha256.umd.min.js" defer></script>
+<script src="../content-extractor-core.js?v=1.0.0" defer></script>
+<script src="english-bulk-extractor.js?v=1.0.0" defer></script>
+</head>
+<body><main class="shell">
+<header class="hero"><a href="../material-import/">← Content Extractor V2</a><span class="eyebrow">LOCAL-FIRST · CONTENT EXTRACTOR V2 · ENGLISH BULK</span><h1>English Bulk Extractor</h1><p>Englisch-Materialien lokal inventarisieren, extrahieren und für Review, Knowledge Base und Assessment Engine vorbereiten.</p><div class="privacy">🔒 Originaldateien und extrahierte Volltexte bleiben auf diesem Gerät. Es erfolgt kein automatischer Upload.</div></header>
+<section class="panel source"><div><span class="step">01 · QUELLE</span><h2>Lokalen Hauptordner wählen</h2><p id="sourcePath">Noch kein Ordner gewählt</p></div><div class="actions"><button id="chooseFolder" class="button primary">Ordner auswählen</button><label class="button soft fallback">Ordner auswählen<input id="folderFallback" type="file" webkitdirectory multiple></label></div></section>
+<section class="panel controls"><div class="control-row"><label>OCR-Modus<select id="ocrMode"><option value="ondemand" selected>On demand (empfohlen)</option><option value="off">Aus</option><option value="automatic">Automatisch</option></select></label><label>Worker<select id="workers"><option>1</option><option selected>2</option><option>3</option><option>4</option></select></label><div class="actions"><button id="start" class="button primary" disabled>Analyse starten</button><button id="pause" class="button soft" disabled>Pause</button><button id="resume" class="button soft" disabled>Fortsetzen</button><button id="retry" class="button soft">Fehler erneut versuchen</button></div></div></section>
+<section class="panel"><div class="section-heading"><div><span class="step">02 · FORTSCHRITT</span><h2 id="phase">Bereit</h2></div><b id="percent">0 %</b></div><div class="progress"><i id="progressBar"></i></div><div id="stats" class="stats"></div><p id="current">Wähle einen Ordner, um das Inventar zu erstellen.</p></section>
+<section class="panel library"><div class="section-heading"><div><span class="step">03 · LOKALE BIBLIOTHEK</span><h2>Review & Qualität</h2></div><div class="actions"><button id="exportJsonl" class="button soft">JSONL exportieren</button><button id="exportKb" class="button soft">Geprüfte KB-Kandidaten</button></div></div><nav id="filters" class="filters"></nav><div class="bulk"><label><input id="allVisible" type="checkbox"> Sichtbare wählen</label><label>Klasse<input id="bulkGrade" type="number" min="5" max="13" placeholder="z. B. 9"></label><label>Unit<input id="bulkUnit" type="text" placeholder="z. B. 3"></label><label>Kategorie<select id="bulkCategory"><option value="">unverändert</option><option>Grammar</option><option>Vocabulary</option><option>Reading</option><option>Writing</option><option>Mediation</option><option>Listening</option><option>Speaking</option><option>Worksheet</option><option>Test / Assessment</option><option>Answer Key</option><option>Teacher Material</option><option>Exercise</option><option>Other</option></select></label><button id="applyBulk" class="button soft">Auswahl bestätigen</button></div><div class="table-wrap"><table><thead><tr><th></th><th>Datei</th><th>Typ</th><th>Zuordnung</th><th>Qualität</th><th>Status</th></tr></thead><tbody id="rows"></tbody></table></div></section>
+<section class="panel notes"><h2>Kontrollierter Importpfad</h2><p>Nur als geprüft markierte Datensätze werden als KB-Kandidaten exportiert. Der Export enthält Provenienz und Dateihash, aber keine Originaldateien. Ein automatischer Massenimport nach Supabase ist bewusst deaktiviert.</p></section>
+<footer>English Bulk Extractor · Schema <span id="schemaVersion"></span> · lokaler IndexedDB-Index</footer>
+</main></body></html>
