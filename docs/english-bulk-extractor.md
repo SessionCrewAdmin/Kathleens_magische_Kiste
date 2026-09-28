@@ -1,5 +1,11 @@
 # English Bulk Extractor
 
+## Nur Materialdateien einsammeln
+
+Der separate **Materialsammler** unter `tools/material-file-collector/` kopiert die tatsächlichen Unterrichtsdateien in einen frei gewählten Zielordner. Er extrahiert keine Inhalte und erzeugt keine bloße Dateiliste. Dokumente, Präsentationen, Tabellen, Bilder, Audio und Video werden mit ihrer relativen Ordnerstruktur kopiert.
+
+App-Dateien, Konfigurationen, Programme, Archive und typische Projektordner wie `src`, `tools`, `tests`, `assets`, `node_modules` und `.git` bleiben standardmäßig draußen. Quelldateien werden nicht verändert oder gelöscht; vorhandene Dateien im Ziel werden nicht überschrieben. Die Ordnerfreigabe und das Kopieren erfolgen ausschließlich lokal in Chrome oder Edge.
+
 Der English Bulk Extractor erweitert den bestehenden Content Extractor V2. Gemeinsame, fachneutrale Funktionen liegen in `tools/content-extractor-core.js`; der History-Import bleibt ein separater Adapter mit unverändertem Review- und Supabase-Overlay.
 
 ## Lokaler Ablauf
