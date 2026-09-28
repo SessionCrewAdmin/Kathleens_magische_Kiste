@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f3f7f5"><title>Materialsammler · Kathleens Kiste</title>
+<link rel="stylesheet" href="material-file-collector.css?v=1.0.0">
+<script src="material-file-collector.js?v=1.0.0" defer></script>
+</head>
+<body><main class="shell">
+<header class="hero"><a href="../english-bulk-extractor/">← English Bulk Extractor</a><span class="eyebrow">LOKAL · DATEIEN KOPIEREN</span><h1>Materialsammler</h1><p>Sammelt nur die echten Unterrichtsdateien aus allen Unterordnern und kopiert sie in einen neuen Ordner. App-Dateien werden ausgelassen.</p><div class="privacy">🔒 Alles bleibt lokal. Quellen werden weder verändert noch gelöscht, vorhandene Zieldateien nicht überschrieben.</div></header>
+<section class="panel"><span class="step">01 · QUELLE</span><h2>Ordner mit den bisherigen Dateien</h2><p id="sourceName">Noch kein Quellordner gewählt.</p><label class="option"><input id="excludeProjectFolders" type="checkbox" checked> Typische App-Ordner wie <code>tools</code>, <code>assets</code>, <code>src</code>, <code>node_modules</code> und <code>tests</code> ausschließen</label><button id="chooseSource" class="button primary">Quellordner scannen</button></section>
+<section class="panel"><div class="section-heading"><div><span class="step">02 · FUND</span><h2>Gefundene Unterrichtsdateien</h2></div><strong id="foundCount">0</strong></div><div id="stats" class="stats"></div><p id="scanStatus">Unterstützt werden Dokumente, Präsentationen, Tabellen, Bilder, Audio und Video. Archive und App-Dateien bleiben draußen.</p><details><summary>Dateien anzeigen</summary><div id="fileList" class="file-list"></div></details></section>
+<section class="panel"><span class="step">03 · ZIEL</span><h2>Neuen Sammelordner wählen</h2><p id="destinationName">Noch kein Zielordner gewählt.</p><div class="actions"><button id="chooseDestination" class="button soft">Zielordner wählen</button><button id="copy" class="button primary" disabled>Dateien kopieren</button><button id="pause" class="button soft" disabled>Pause</button><button id="resume" class="button soft" disabled>Fortsetzen</button></div></section>
+<section id="progressPanel" class="panel" hidden><div class="section-heading"><h2 id="phase">Kopieren</h2><b id="percent">0 %</b></div><div class="progress"><i id="progressBar"></i></div><p id="currentFile"></p><div id="result" class="result"></div></section>
+<footer>Materialsammler · lokale Kopie · Ordnerstruktur bleibt erhalten</footer>
+</main></body></html>
