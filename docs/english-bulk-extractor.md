@@ -10,6 +10,10 @@ Der English Bulk Extractor erweitert den bestehenden Content Extractor V2. Gemei
 
 ## Lokaler Ablauf
 
+Für DUA-/Unterrichtsassistent-Ordner ist standardmäßig **Nur inhaltlich relevante Dokumente scannen** aktiviert. Dieser Modus behält PDF, DOCX, DOC und TXT einschließlich der Unterrichtsmaterialien unter `content/media`, ignoriert aber App-Ressourcen, Hilfs-/Lizenzdateien und macOS-Schattenkopien (`._*`, `.DS_Store`). Der vollständige Inventarmodus bleibt durch Abwählen der Option erreichbar.
+
+Der reale Testbestand `0. Green Line 2` enthielt 20.773 Dateien. Der Inhaltsfilter reduzierte ihn auf 501 Kandidaten: 263 PDF, 233 DOCX, 4 DOC und 1 TXT. Je fünf echte PDF- und DOCX-Dateien wurden stichprobenartig erfolgreich geöffnet und textuell ausgelesen.
+
 1. `tools/english-bulk-extractor/` über einen lokalen Webserver in Chrome oder Edge öffnen.
 2. Den Englisch-Hauptordner auswählen. Die Anwendung inventarisiert rekursiv, hasht jede Datei einzeln und speichert nur Manifest und Extraktion in IndexedDB.
 3. Standardmäßig ist OCR **On demand**: scanartige PDF-Seiten werden markiert, aber nicht automatisch durch OCR geschickt.

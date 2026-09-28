@@ -6,7 +6,7 @@ const ALWAYS_SKIP_DIRS=new Set(['.git','.github','.vscode','.idea','node_modules
 const PROJECT_APP_DIRS=new Set(['src','dist','build','public','assets','tools','tests','test','scripts','setup','supabase','data']);
 const APP_FILE_NAMES=new Set(['readme.md','changelog.md','license.md','license.txt','package-lock.json','pnpm-lock.yaml','yarn.lock','manifest.webmanifest','service-worker.js']);
 const extension=name=>{const m=String(name||'').toLocaleLowerCase('en-US').match(/\.([^.\\/]+)$/);return m?m[1]:''};
-function isMaterialFile(name){const value=String(name||'').toLocaleLowerCase('en-US'),ext=extension(value);return!APP_FILE_NAMES.has(value)&&MATERIAL_EXTENSIONS.has(ext)&&!APP_EXTENSIONS.has(ext)}
+function isMaterialFile(name){const value=String(name||'').toLocaleLowerCase('en-US'),base=value.split(/[\\/]/).pop()||'',ext=extension(value);return!base.startsWith('._')&&!['.ds_store','thumbs.db','desktop.ini'].includes(base)&&!APP_FILE_NAMES.has(base)&&MATERIAL_EXTENSIONS.has(ext)&&!APP_EXTENSIONS.has(ext)}
 function shouldSkipDirectory(name,excludeProjectFolders=true){const value=String(name||'').toLocaleLowerCase('en-US');return ALWAYS_SKIP_DIRS.has(value)||(excludeProjectFolders&&PROJECT_APP_DIRS.has(value))}
 function classify(name){const ext=extension(name);if(['pdf','docx','doc','odt','rtf','txt','md','epub'].includes(ext))return'Dokumente';if(['pptx','ppt','odp','key'].includes(ext))return'Präsentationen';if(['xlsx','xls','ods','csv'].includes(ext))return'Tabellen';if(['png','jpg','jpeg','gif','webp','tif','tiff','bmp','svg'].includes(ext))return'Bilder';return'Medien'}
 const api={MATERIAL_EXTENSIONS,APP_EXTENSIONS,ALWAYS_SKIP_DIRS,PROJECT_APP_DIRS,APP_FILE_NAMES,extension,isMaterialFile,shouldSkipDirectory,classify};

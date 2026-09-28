@@ -16,6 +16,18 @@ test('inventory recognises supported and inventoried-only file types',()=>{
  assert.equal(row.provenance.originalRemainsLocal,true);
 });
 
+test('content scan ignores DUA app debris but keeps real documents',()=>{
+ assert.equal(Core.isEnglishContentCandidate('Leistungsmessung/Unit 1/Test.pdf'),true);
+ assert.equal(Core.isEnglishContentCandidate('Unterrichtsassistent/content/media/kv/worksheet.docx'),true);
+ assert.equal(Core.isEnglishContentCandidate('Leistungserhebungen/old-test.doc'),true);
+ assert.equal(Core.isEnglishContentCandidate('Unterrichtsassistent/content/pages/page_1/Scale1.png'),false);
+ assert.equal(Core.isEnglishContentCandidate('GL 2 Workbook/app/assets/hilfe.pdf'),false);
+ assert.equal(Core.isEnglishContentCandidate('Unterrichtsassistent/app.js'),false);
+ assert.equal(Core.isEnglishContentCandidate('Unterrichtsassistent/Lizenz.txt'),false);
+ assert.equal(Core.isEnglishContentCandidate('Unterrichtsassistent/content/media/kv/._worksheet.pdf'),false);
+ assert.equal(Core.isSystemShadow('GL 2 Workbook/.DS_Store'),true);
+});
+
 test('English classification prioritises folder, filename and headings with review confidence',()=>{
  const result=Core.classifyEnglish({relativePath:'Englisch/Klasse 9/Unit 3/Grammar/Relative Clauses/worksheet.docx',fileName:'worksheet.docx',headings:['RELATIVE CLAUSES'],text:'Complete the grammar exercises.'});
  assert.equal(result.subject,'english');
@@ -56,7 +68,7 @@ test('structured extraction keeps original text, quality and provenance',()=>{
  assert.equal(record.classification.grade,9);
  assert.equal(record.classification.section,'grammar');
  assert.equal(record.content.semantic.kind,'grammar');
- assert.equal(record.provenance.extractorVersion,'2.1.0');
+ assert.equal(record.provenance.extractorVersion,'2.1.1');
  assert.ok(['ready','needs_review'].includes(record.status));
 });
 

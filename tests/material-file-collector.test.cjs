@@ -6,6 +6,8 @@ test('material collector keeps teaching files and rejects app files',()=>{
  for(const file of ['worksheet.pdf','test.docx','slides.pptx','marks.xlsx','photo.JPG','listening.mp3','video.mp4'])assert.equal(Collector.isMaterialFile(file),true,file);
  for(const file of ['index.html','app.js','theme.css','package.json','migration.sql','service-worker.js','program.exe','app-bundle.zip'])assert.equal(Collector.isMaterialFile(file),false,file);
  assert.equal(Collector.isMaterialFile('README.md'),false);
+ assert.equal(Collector.isMaterialFile('Unit 1/._worksheet.pdf'),false);
+ assert.equal(Collector.isMaterialFile('.DS_Store'),false);
 });
 
 test('app folders are excluded without hiding ordinary teaching folders',()=>{
