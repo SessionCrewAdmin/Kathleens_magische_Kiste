@@ -78,6 +78,9 @@ test('bulk UI is local-first, resumable and exposes review/export controls',()=>
  assert.match(html,/English Bulk Extractor/);
  assert.match(html,/Originaldateien.*bleiben auf diesem Gerät/);
  assert.match(html,/Pause/);
+ assert.match(html,/Zuerst den Quellordner auswählen/);
+ assert.doesNotMatch(html,/id="start"[^>]*disabled/);
+ assert.match(js,/function startAnalysis/);
  assert.match(js,/Needs OCR/);
  assert.match(js,/indexedDB\.open/);
  assert.match(js,/Core\.resumeDecision/);
