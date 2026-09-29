@@ -68,8 +68,25 @@ test('structured extraction keeps original text, quality and provenance',()=>{
  assert.equal(record.classification.grade,9);
  assert.equal(record.classification.section,'grammar');
  assert.equal(record.content.semantic.kind,'grammar');
- assert.equal(record.provenance.extractorVersion,'2.1.1');
+ assert.equal(record.provenance.extractorVersion,'2.2.0');
  assert.ok(['ready','needs_review'].includes(record.status));
+});
+
+test('ZIP safety blocks traversal, executables, nested archives and zip bombs',()=>{
+ const audit=Core.inspectZipEntries([{name:'../escape.pdf'},{name:'run.exe'},{name:'nested.zip'},{name:'safe/worksheet.pdf',uncompressedSize:1000,compressedSize:500}]);
+ assert.equal(audit.safe,false);
+ assert.deepEqual(audit.accepted.map(x=>x.safePath),['safe/worksheet.pdf']);
+ assert.deepEqual(audit.problems.map(x=>x.code),['unsafe_path','executable','nested_archive']);
+ const bomb=Core.inspectZipEntries([{name:'huge.pdf',uncompressedSize:1000000,compressedSize:1}],{...Core.LIMITS,maxCompressionRatio:10});
+ assert.equal(bomb.accepted.length,0);
+});
+
+test('content router creates Grammar and Assessment Reference objects from one document',()=>{
+ const classification={section:'grammar',topic:'Conditionals',confidence:.9};
+ const content={rawText:'GRAMMAR TEST\nRule: Use if for a condition.\nExample: If it rains, I stay home.\nTask 1: Complete the sentences (5 points)',blocks:[],pages:[{pageIndex:1}]};
+ const objects=Core.buildContentObjects(content,classification);
+ assert.ok(objects.some(x=>x.type==='grammar'&&x.rules.length));
+ assert.ok(objects.some(x=>x.type==='assessment_reference'&&x.tasks[0].points===5));
 });
 
 test('bulk UI is local-first, resumable and exposes review/export controls',()=>{
