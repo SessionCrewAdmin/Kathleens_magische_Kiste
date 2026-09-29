@@ -1,4 +1,30 @@
 (()=>{'use strict';
+// Safari/iOS welcome hardening: never show a black placeholder, preload the
+// artwork explicitly and start the minimum display time only once it is ready.
+(()=>{
+ const root=document.getElementById('kWelcome');if(!root)return;
+ const art=root.querySelector('.k-welcome-art');if(!art)return;
+ const TOTAL=8000,ASSET='assets/reveal/kathleen-welcome-desktop.webp?v=20260929-safari3';
+ const style=document.createElement('style');
+ style.textContent='.welcome-pending .k-welcome{animation:none!important;opacity:1!important;visibility:visible!important;background:radial-gradient(circle at 50% 35%,#8d7188 0,#4f3a4c 48%,#281d27 100%)!important}.welcome-pending #kWelcome .k-welcome-art{background-size:cover!important;background-position:center!important;background-repeat:no-repeat!important;opacity:0;transition:opacity .45s ease;animation:none!important}.welcome-pending #kWelcome.welcome-art-ready .k-welcome-art{opacity:1}.k-welcome.done{opacity:0!important;visibility:hidden!important;pointer-events:none!important}';
+ document.head.appendChild(style);
+ const original=window.finishWelcome;let readyAt=0,queued=false,skip=false,timer=0;
+ if(typeof original==='function'){
+  document.getElementById('kWelcomeSkip')?.addEventListener('click',()=>{skip=true;clearTimeout(timer)},{capture:true});
+  window.finishWelcome=function(){
+   if(skip)return original();
+   if(!readyAt){queued=true;return}
+   const left=Math.max(0,TOTAL-(performance.now()-readyAt));
+   clearTimeout(timer);timer=setTimeout(()=>original(),left);
+  };
+ }
+ const markReady=(ok)=>{if(ok){art.style.backgroundImage='url("'+ASSET+'")';root.classList.add('welcome-art-ready')}readyAt=performance.now();if(queued&&typeof window.finishWelcome==='function')window.finishWelcome()};
+ const img=new Image();let settled=false;
+ const done=ok=>{if(settled)return;settled=true;markReady(ok)};
+ img.onload=()=>{if(img.decode)img.decode().then(()=>done(true)).catch(()=>done(true));else done(true)};
+ img.onerror=()=>done(false);img.src=ASSET;
+ setTimeout(()=>done(false),3500);
+})();
 const groups={
  instruction:{kicker:'Unterricht',title:'Alles für die laufende Stunde',copy:'Präsentieren, Gruppen bilden, Zeit steuern und Lernfortschritt direkt erfassen.',cards:[['✨','Whiteboard','Zentrale Unterrichtsfläche mit Material und Live Classroom.','tools/classroom-board/'],['⏱','Timer','Großer Timer für Arbeitsphasen und Beamer.','tools/classroom-timer/'],['🧩','Teams & Zufall','Gruppen bilden oder fair auswählen.','tools/team-generator/'],['📊','Live Poll','Anonyme Live-Abfragen direkt im Unterricht.','tools/live-poll/'],['👁','Beobachtungen','Mitarbeit und Entwicklung schnell festhalten.','tools/mobile-observations/'],['✦','Quest Mode','Motivation, Fortschritt und gemeinsame Ziele.','tools/quest-mode/']]},
  organisation:{kicker:'Klassen & Organisation',title:'Planen, verwalten, dokumentieren',copy:'Klassenbezogene Werkzeuge an einem klaren Ort.',cards:[['👥','Meine Klassen','Klassenübersicht und Schnellzugriffe.','tools/class-cockpit/'],['📅','Stundenplan','Wochenplan, Räume und Unterrichtsstart.','tools/timetable/'],['🪑','Sitzplan','Sitzordnung pro Klasse gestalten.','tools/seating-plan/'],['✓','Hausaufgaben','Striche, Verlauf und Übersicht.','tools/homework-strikes/'],['📝','Noten & Schulaufgaben','Leistungen erfassen und auswerten.','tools/schulaufgabenrechner/'],['🔔','Push Center','Persönliche Erinnerungen verwalten.','tools/push-center/'],['🎟','Gutscheine','Homework Voucher erstellen und einlösen.','tools/homework-vouchers/'],['📋','Klassenlisten','Zentrale Listen für alle Unterrichtstools.','tools/class-lists/']]}
