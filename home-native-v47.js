@@ -1,4 +1,28 @@
 (()=>{'use strict';
+// Keep the cinematic welcome visible long enough to actually read and enjoy it.
+// The legacy inline welcome timer completes after ~3.85s; this wrapper preserves
+// the existing logic but delays the automatic finish to ~8s. The skip button
+// remains immediate. Runtime CSS also extends the artwork/auto-out animation.
+(()=>{
+  const TOTAL_MS=8000;
+  const started=performance.now();
+  const style=document.createElement('style');
+  style.textContent='.welcome-pending .k-welcome{animation-duration:8.65s!important}.k-welcome-art{animation-duration:8.25s!important}.k-welcome-progress{transition:width 3.6s linear!important}';
+  document.head.appendChild(style);
+  const original=window.finishWelcome;
+  if(typeof original!=='function')return;
+  let queued=false,skipNow=false;
+  const skip=document.getElementById('kWelcomeSkip');
+  skip?.addEventListener('click',()=>{skipNow=true},{capture:true});
+  window.finishWelcome=function(){
+    if(skipNow)return original();
+    const remaining=Math.max(0,TOTAL_MS-(performance.now()-started));
+    if(remaining<=0)return original();
+    if(queued)return;
+    queued=true;
+    setTimeout(()=>original(),remaining);
+  };
+})();
 const REC='kathleenHomeRecentV47',D='kathleenHomeOrderDesktopV47',M='kathleenHomeOrderMobileV47',SNAP='kathleenTimetableSnapshotV1';
 const I={home:'<path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v10h13V10M9.5 20v-6h5v6"/>',calendar:'<rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4M16 3v4M4 9h16"/>',users:'<circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c.4-4 2.5-6 6-6s5.6 2 6 6M15 15c3.5 0 5.5 1.7 6 5"/>',board:'<rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 22h8M12 18v4M7 14l3-3 2 2 5-5"/>',spark:'<path d="M12 2l1.8 5.2L19 9l-5.2 1.8L12 16l-1.8-5.2L5 9l5.2-1.8L12 2Z"/><path d="M19 16l.9 2.1L22 19l-2.1.9L19 22l-.9-2.1L16 19l2.1-.9L19 16Z"/>',eye:'<path d="M2.5 12s3.5-6 9.5-6 9.5 6 9.5 6-3.5 6-9.5 6-9.5-6-9.5-6Z"/><circle cx="12" cy="12" r="2.5"/>',doc:'<path d="M6 3h8l4 4v14H6z"/><path d="M14 3v5h5M9 13h6M9 17h6"/>',game:'<path d="M7 9h10a5 5 0 0 1 4.7 6.7l-1 2.7a2 2 0 0 1-3.2.8L15 17H9l-2.5 2.2a2 2 0 0 1-3.2-.8l-1-2.7A5 5 0 0 1 7 9Z"/><path d="M7 12v4M5 14h4M16 13h.01M19 15h.01"/>',check:'<circle cx="12" cy="12" r="9"/><path d="m8 12 2.5 2.5L16.5 9"/>',book:'<path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H11v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M20 5.5A2.5 2.5 0 0 0 17.5 3H13v16h4.5a2.5 2.5 0 0 1 2.5 2.5z"/>',clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>'};
 const svg=k=>'<svg viewBox="0 0 24 24" aria-hidden="true">'+(I[k]||I.spark)+'</svg>';
