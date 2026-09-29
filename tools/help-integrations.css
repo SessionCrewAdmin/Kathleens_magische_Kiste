@@ -1,0 +1,38 @@
+.kds-help-btn {
+  min-width: 42px !important;
+  height: 42px;
+  border: 1px solid #e4d9e7 !important;
+  border-radius: 13px !important;
+  background: #fff !important;
+  color: #604b67 !important;
+  font-size: 18px !important;
+  font-weight: 950 !important;
+  cursor: pointer;
+}
+
+.k-inline-help {
+  width: 30px;
+  height: 30px;
+  align-self: center;
+  border: 1px solid #d9c9dd;
+  border-radius: 50%;
+  background: #fff;
+  color: #684675;
+  font-weight: 950;
+  cursor: pointer;
+}
+
+#afbControls > .k-inline-help,
+#filters > .k-inline-help {
+  flex: 0 0 auto;
+}
+
+.k-problem-help {
+  margin-top: 12px;
+}
+
+@media (max-width: 700px) {
+  .kds-help-btn {
+    display: none;
+  }
+}
