@@ -29,9 +29,9 @@ test('English Bulk Extractor inventories, classifies, persists and resumes a loc
  await page.locator('[data-review]').first().click();
  await page.locator('#reviewAssessment').check();
  await page.locator('#reviewSave').click();
- const approved=await page.evaluate(()=>new Promise((resolve,reject)=>{const req=indexedDB.open('kathleen-english-bulk-extractor',1);req.onerror=()=>reject(req.error);req.onsuccess=()=>{const get=req.result.transaction('documents').objectStore('documents').getAll();get.onerror=()=>reject(get.error);get.onsuccess=()=>resolve(get.result.find(x=>x.provenance?.reviewStatus==='approved'))}}));
+ const approved=await page.evaluate(()=>new Promise((resolve,reject)=>{const req=indexedDB.open('kathleen-english-bulk-extractor',3);req.onerror=()=>reject(req.error);req.onsuccess=()=>{const get=req.result.transaction('documents').objectStore('documents').getAll();get.onerror=()=>reject(get.error);get.onsuccess=()=>resolve(get.result.find(x=>x.provenance?.reviewStatus==='approved'))}}));
  assert.ok(approved.provenance.approvedUses.includes('assessment'));
- const docx=await page.evaluate(()=>new Promise((resolve,reject)=>{const req=indexedDB.open('kathleen-english-bulk-extractor',1);req.onerror=()=>reject(req.error);req.onsuccess=()=>{const get=req.result.transaction('documents').objectStore('documents').getAll();get.onerror=()=>reject(get.error);get.onsuccess=()=>resolve(get.result.find(x=>x.source.type==='docx'))}}));
+ const docx=await page.evaluate(()=>new Promise((resolve,reject)=>{const req=indexedDB.open('kathleen-english-bulk-extractor',3);req.onerror=()=>reject(req.error);req.onsuccess=()=>{const get=req.result.transaction('documents').objectStore('documents').getAll();get.onerror=()=>reject(get.error);get.onsuccess=()=>resolve(get.result.find(x=>x.source.type==='docx'))}}));
  assert.equal(docx.status,'ready');assert.ok(docx.content.blocks.some(x=>x.type==='heading'));assert.ok(docx.content.blocks.some(x=>x.type==='list_item'));assert.deepEqual(docx.content.tables[0],[['Rule','Example']]);assert.equal(docx.content.hyperlinks[0].target,'https://example.test/reference');assert.equal(docx.content.images[0].fileName,'image1.png');assert.equal(docx.content.sections,1);
  await page.reload();
  assert.match(await page.locator('#rows').innerText(),/Relative Clauses/i);

@@ -68,7 +68,7 @@ test('structured extraction keeps original text, quality and provenance',()=>{
  assert.equal(record.classification.grade,9);
  assert.equal(record.classification.section,'grammar');
  assert.equal(record.content.semantic.kind,'grammar');
- assert.equal(record.provenance.extractorVersion,'2.2.0');
+ assert.equal(record.provenance.extractorVersion,'3.0.0');
  assert.ok(['ready','needs_review'].includes(record.status));
 });
 
