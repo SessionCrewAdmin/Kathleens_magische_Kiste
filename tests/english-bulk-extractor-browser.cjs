@@ -26,6 +26,11 @@ test('English Bulk Extractor inventories, classifies, persists and resumes a loc
  await page.waitForFunction(()=>document.querySelector('#phase')?.textContent==='Analyse abgeschlossen',null,{timeout:10000}).catch(async()=>{throw Error(await page.locator('body').innerText())});
  assert.match(await page.locator('#rows').innerText(),/Grammar/);
  assert.match(await page.locator('#rows').innerText(),/Kl\. 9/);
+ await page.locator('[data-review]').first().click();
+ await page.locator('#reviewAssessment').check();
+ await page.locator('#reviewSave').click();
+ const approved=await page.evaluate(()=>new Promise((resolve,reject)=>{const req=indexedDB.open('kathleen-english-bulk-extractor',1);req.onerror=()=>reject(req.error);req.onsuccess=()=>{const get=req.result.transaction('documents').objectStore('documents').getAll();get.onerror=()=>reject(get.error);get.onsuccess=()=>resolve(get.result.find(x=>x.provenance?.reviewStatus==='approved'))}}));
+ assert.ok(approved.provenance.approvedUses.includes('assessment'));
  const docx=await page.evaluate(()=>new Promise((resolve,reject)=>{const req=indexedDB.open('kathleen-english-bulk-extractor',1);req.onerror=()=>reject(req.error);req.onsuccess=()=>{const get=req.result.transaction('documents').objectStore('documents').getAll();get.onerror=()=>reject(get.error);get.onsuccess=()=>resolve(get.result.find(x=>x.source.type==='docx'))}}));
  assert.equal(docx.status,'ready');assert.ok(docx.content.blocks.some(x=>x.type==='heading'));assert.ok(docx.content.blocks.some(x=>x.type==='list_item'));assert.deepEqual(docx.content.tables[0],[['Rule','Example']]);assert.equal(docx.content.hyperlinks[0].target,'https://example.test/reference');assert.equal(docx.content.images[0].fileName,'image1.png');assert.equal(docx.content.sections,1);
  await page.reload();
