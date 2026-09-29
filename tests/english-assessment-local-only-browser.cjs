@@ -25,6 +25,7 @@ test('local Grammar KB works for a grade without Vocabulary KB', async t => {
   t.after(() => browser.close());
 
   const page = await browser.newPage({ viewport: { width: 1180, height: 850 } });
+  await page.addInitScript(()=>localStorage.setItem('kathleenHelpNeverV1',JSON.stringify({'assessment-overview':true,'assessment-create':true})));
   await page.goto(`http://127.0.0.1:${server.address().port}/tools/assessments/`);
   await page.evaluate(() => new Promise((resolve, reject) => {
     const req = indexedDB.open('kathleen-english-bulk-extractor', 1);
