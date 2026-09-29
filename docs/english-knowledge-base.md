@@ -5,7 +5,8 @@
 1. Der English Bulk Extractor liest ausgewählte Unterrichtsdokumente lokal.
 2. Die Nutzerin prüft Klasse, Unit, Inhaltstyp und fachlichen Inhalt.
 3. Der Scanner speichert den strukturierten Datensatz in IndexedDB `kathleen-english-bulk-extractor`, Store `documents`.
-4. Die English Knowledge Base bildet daraus einzelne Content Units und zeigt Quelle, Hash, Seitenbezug, Prüfstatus und Freigaben.
+4. Extractor V3 entfernt wiederkehrende Kopf- und Fußtexte, trennt einzelne Aufgaben und verbindet erkannte Lösungsseiten.
+5. Die English Knowledge Base bildet daraus einzelne Content Units und zeigt Quelle, Hash, Seitenbezug, Prüfstatus und Freigaben.
 5. Der Kurzarbeiten-Generator erhält ausschließlich die ausdrücklich ausgewählten, fachlich geprüften und für Leistungsnachweise freigegebenen Units derselben Klasse und Unit.
 
 Originaldateien werden nicht in die Knowledge Base kopiert. Archivieren und Löschen verändern keine Originaldateien.
@@ -35,11 +36,23 @@ JSONL exportiert die ausgewählten Rohdatensätze zeilenweise. „Nur Leistungsn
 
 Aufgaben und Erwartungshorizont behalten Knowledge-Base-ID, Ursprungsdatei, Seitenbezug, Quellenhinweise und Warnungen.
 
+## Extractor V3 und Schnellprüfung
+
+PDFs werden layoutbezogen statt nur als flache Textfolge gelesen. Textpositionen, Seitenzonen, Arbeitsaufträge und Lösungsüberschriften dienen der Aufgabentrennung. Fotos werden vor der OCR lokal skaliert, kontrastiert und auf Unschärfe beziehungsweise Belichtung geprüft. Die Originaldatei wird nicht verändert.
+
+Die mobile Schnellprüfung bestätigt per Wischen nach rechts, stellt per Wischen nach links zurück und öffnet per Wischen nach oben die Bearbeitung. Dieselben Aktionen stehen als Schaltflächen und per Tastatur bereit. Bestätigen setzt nur „Geprüft“ und erteilt keine Freigabe für Leistungsnachweise.
+
+„Mit Extractor V3 erneut analysieren“ zeigt einen Vergleich. Manuelle Felder, Prüfstatus und Freigaben bleiben erhalten; ältere Aufgaben werden nicht automatisch gelöscht.
+
+## Übungswerkstatt
+
+Geprüfte Bausteine können als ähnliche Variante, neuer Kontext oder Transferaufgabe ausgegeben werden. Leicht, mittel und schwer verändern die Hilfen im Arbeitsauftrag. Eine fünfstufige Übungsreihe führt vom Erkennen über Ergänzen, Umformen und Fehlerkorrektur zur freien Anwendung. Varianten sind stets ungeprüfte Entwürfe und behalten die ID der Ausgangsaufgabe.
+
 ## Supabase
 
-Der lokale Modus funktioniert ohne Cloud. Es gibt keinen automatischen Upload. Der Stand der verbundenen Supabase-Instanz wurde geprüft: Die privaten Importtabellen und 139 strukturierte Einträge sind vorhanden; die Migration für Content Units und Task Blueprints ist dort nicht angewendet, und die English-KB-RPCs sind weder für `anon` noch `authenticated` ausführbar. Die Oberfläche zeigt deshalb korrekt „Cloud-Synchronisierung nicht eingerichtet“ und überträgt nichts.
+Der lokale Modus funktioniert ohne Cloud. Es gibt keinen automatischen Upload. Die Migration `english_extractor_v3_private_sync` wurde im verbundenen Projekt angewendet. Sie stellt eine benutzergebundene Tabelle mit vier RLS-Regeln sowie den privaten Bucket `english-kb-previews` bereit. Zum Synchronisieren ist ein Supabase-Auth-Konto erforderlich; derzeit existiert im Projekt noch kein Auth-Benutzerkonto.
 
-Die vorbereiteten Migrationen aktivieren RLS und widerrufen Tabellen- und Funktionsrechte. Für einen späteren Browser-Sync ist zusätzlich ein echtes Supabase-Auth-Benutzermodell mit `user_id`, passenden `SELECT`-/`INSERT`-/`UPDATE`-Policies (`USING` und `WITH CHECK`) sowie expliziten Grants erforderlich. Ein Service-Role-Key darf niemals in den Browser gelangen.
+Der Browser verwendet ausschließlich den Publishable Key und ein angemeldetes Benutzer-JWT. `anon` besitzt keinen Tabellenzugriff. Vorschaubilder liegen privat und benutzergebunden; vollständige Originaldateien werden nicht synchronisiert. Konflikte auf beiden Geräten werden nicht automatisch überschrieben.
 
 ## Datenschutz
 
@@ -54,4 +67,4 @@ Die vorbereiteten Migrationen aktivieren RLS und widerrufen Tabellen- und Funkti
 - Generator: `assessmentCandidates` verlangte bereits `reviewStatus=approved` und `approvedUses` mit `assessment`; bislang wurden alle passenden Units automatisch ausgewählt.
 - Nur lokal: Scannerbestand, Archivstatus, Bearbeitungen und lokale Sicherungen.
 - Supabase vorbereitet: Importbatch, Einträge, Content-Unit- und Blueprint-Migration; Live-Stand siehe Abschnitt Supabase.
-- PWA: Knowledge-Base-Seite, Modell, Bibliothek, Styles und Skripte sind Teil des Offline-Caches `v121`.
+- PWA: Extractor V3, Schnellprüfung, Übungswerkstatt, Knowledge Base und ihre lokalen Kerne sind Teil des Offline-Caches `v122`.
