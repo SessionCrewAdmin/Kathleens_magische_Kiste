@@ -46,6 +46,8 @@ Die mobile Schnellprüfung bestätigt per Wischen nach rechts, stellt per Wische
 
 Bestätigte Korrekturen können auf Nachfrage als sichtbare lokale Erkennungsregel gespeichert werden. Regeln für Klasse, Unit, Thema, Inhaltstyp, Lösungsseiten oder zu ignorierende Texte sind in der Knowledge Base einsehbar, bearbeitbar, deaktivierbar und löschbar. Ohne ausdrückliche Bestätigung wird keine Regel angelegt.
 
+Erkannte Lösungen erhalten zusätzlich eine zweite lokale Plausibilitätsprüfung. Sie vergleicht Schlüsselbegriffe, Lücken und strukturierte Antworten, schlägt daraus Teilpunkte und einen Erwartungshorizont vor und nennt Abweichungen als Warnung. Eine unsichere Lösungszuordnung kann erst für Leistungsnachweise verwendet werden, nachdem die Lehrkraft sie im Detaildialog ausdrücklich bestätigt hat.
+
 Ist eine Originaldatei nicht mehr erreichbar, bleibt der strukturierte Baustein erhalten. „Originaldatei wieder verbinden“ akzeptiert die gewählte Datei nur bei identischem SHA-256-Dateihash. Ein ähnlicher Dateiname allein genügt nicht. Unterstützt der Browser dauerhafte Dateiberechtigungen, wird lediglich das lokale Zugriffsrecht gespeichert; andernfalls gilt die Verbindung für die aktuelle Sitzung.
 
 ## Übungswerkstatt
