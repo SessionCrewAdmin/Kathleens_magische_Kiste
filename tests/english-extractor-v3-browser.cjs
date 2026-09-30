@@ -24,7 +24,9 @@ test('V3 quick review works by buttons and keyboard on a phone viewport', async 
 
   const browser = await chromium.launch({ channel: 'msedge', headless: true });
   t.after(() => browser.close());
-  const page = await browser.newPage({ viewport: { width: 390, height: 844 } });
+  const context = await browser.newContext({ viewport: { width: 390, height: 844 }, hasTouch: true, isMobile: true });
+  t.after(() => context.close());
+  const page = await context.newPage();
   await page.addInitScript(() => localStorage.setItem('kathleenHelpNeverV1', JSON.stringify({ 'english-kb': true })));
   await page.goto(`http://127.0.0.1:${server.address().port}/tools/english-knowledge-base/`);
   await page.evaluate(() => new Promise((resolve, reject) => {

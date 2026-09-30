@@ -34,7 +34,7 @@ JSONL exportiert die ausgewählten Rohdatensätze zeilenweise. „Nur Leistungsn
 
 „Im Kurzarbeiten-Generator verwenden“ übergibt Englisch, Klasse, Unit, Aufgabenbereich und Knowledge-Base-ID. Der Generator zeigt den Baustein sichtbar vorausgewählt. Nicht freigegebene, archivierte oder unpassende Bausteine werden abgelehnt. Für Grammar, Reading, Writing, Mediation und Listening muss mindestens ein sichtbarer passender Baustein bewusst ausgewählt sein.
 
-Aufgaben und Erwartungshorizont behalten Knowledge-Base-ID, Ursprungsdatei, Seitenbezug, Quellenhinweise und Warnungen.
+Aufgaben und Erwartungshorizont behalten Knowledge-Base-ID, Ursprungsdatei, Seitenbezug, Quellenhinweise und Warnungen. Strukturierte Scanner-Aufgaben übernehmen ihren tatsächlichen Arbeitsauftrag, Aufgabentext, erkannte Antworten und Lösungsseiten. Vor jedem Export läuft ein Abschlusscheck; fehlende Lösungen, unstimmige Punkte oder eine sichtbare Lösung in der Schülerfassung sperren den Export. Vergleichbare Versionen A und B können gemeinsam gespeichert und getrennt als Schüler-, Lehrkraft- oder Korrekturfassung ausgegeben werden.
 
 ## Extractor V3 und Schnellprüfung
 
@@ -52,13 +52,13 @@ Ist eine Originaldatei nicht mehr erreichbar, bleibt der strukturierte Baustein 
 
 ## Übungswerkstatt
 
-Geprüfte Bausteine können als ähnliche Variante, neuer Kontext oder Transferaufgabe ausgegeben werden. Leicht, mittel und schwer verändern die Hilfen im Arbeitsauftrag. Eine fünfstufige Übungsreihe führt vom Erkennen über Ergänzen, Umformen und Fehlerkorrektur zur freien Anwendung. Varianten sind stets ungeprüfte Entwürfe und behalten die ID der Ausgangsaufgabe.
+Geprüfte Bausteine können als ähnliche Variante, neuer Kontext oder Transferaufgabe ausgegeben werden. Leicht, mittel und schwer verändern die Hilfen im Arbeitsauftrag. Eine fünfstufige Übungsreihe führt vom Erkennen über Ergänzen, Umformen und Fehlerkorrektur zur freien Anwendung. Für Grammar kann allgemeiner Wortschatz, ausschließlich fachlich geprüfter Wortschatz derselben Klasse und Unit oder eine konkrete Auswahl solcher Vocabulary-Bausteine verwendet werden. Schülerfassung und Lösungsfassung lassen sich als Word-Datei ausgeben; die Schülerfassung kann außerdem gedruckt oder als PDF gespeichert werden. Varianten sind stets ungeprüfte Entwürfe und behalten die ID der Ausgangsaufgabe.
 
 ## Supabase
 
-Der lokale Modus funktioniert ohne Cloud. Es gibt keinen automatischen Upload. Die Migration `english_extractor_v3_private_sync` wurde im verbundenen Projekt angewendet. Sie stellt eine benutzergebundene Tabelle mit vier RLS-Regeln sowie den privaten Bucket `english-kb-previews` bereit. Zum Synchronisieren ist ein Supabase-Auth-Konto erforderlich; derzeit existiert im Projekt noch kein Auth-Benutzerkonto.
+Der lokale Modus funktioniert ohne Cloud. Es gibt keinen automatischen Upload. Die Migration `english_extractor_v3_private_sync` wurde im verbundenen Projekt angewendet. Sie stellt eine benutzergebundene Tabelle mit vier RLS-Regeln sowie den privaten Bucket `english-kb-previews` bereit. Ein privates Supabase-Auth-Konto kann in der Synchronisierungsansicht bewusst angelegt werden; falls die E-Mail-Bestätigung aktiv ist, erfolgt die erste Anmeldung nach dieser Bestätigung.
 
-Der Browser verwendet ausschließlich den Publishable Key und ein angemeldetes Benutzer-JWT. `anon` besitzt keinen Tabellenzugriff. Vorschaubilder liegen privat und benutzergebunden; vollständige Originaldateien werden nicht synchronisiert. Konflikte auf beiden Geräten werden nicht automatisch überschrieben.
+Der Browser verwendet ausschließlich den Publishable Key und ein angemeldetes Benutzer-JWT. `anon` besitzt keinen Tabellenzugriff. Vorschaubilder liegen privat und benutzergebunden; vollständige Originaldateien werden nicht synchronisiert. Konflikte auf beiden Geräten werden nicht automatisch überschrieben: abweichende Felder werden nebeneinander angezeigt und einzeln vom Gerät oder aus der Cloud übernommen. Lokale Erkennungsregeln sind standardmäßig ausgeschlossen und werden nur synchronisiert, wenn sie für den konkreten Lauf ausdrücklich ausgewählt wurden.
 
 ## Datenschutz
 
@@ -73,4 +73,4 @@ Der Browser verwendet ausschließlich den Publishable Key und ein angemeldetes B
 - Generator: `assessmentCandidates` verlangte bereits `reviewStatus=approved` und `approvedUses` mit `assessment`; bislang wurden alle passenden Units automatisch ausgewählt.
 - Nur lokal: Scannerbestand, Archivstatus, Bearbeitungen und lokale Sicherungen.
 - Supabase vorbereitet: Importbatch, Einträge, Content-Unit- und Blueprint-Migration; Live-Stand siehe Abschnitt Supabase.
-- PWA: Extractor V3, Foto-Vorschau, lokale Erkennungsregeln, Wiederverknüpfung, Schnellprüfung, Übungswerkstatt, Knowledge Base und ihre lokalen Kerne sind Teil des Offline-Caches `v123`.
+- PWA: Extractor V3, Foto-Vorschau, lokale Erkennungsregeln, Wiederverknüpfung, Schnellprüfung, Übungswerkstatt, Knowledge Base, Kurzarbeiten und ihre lokalen Kerne sind Teil des Offline-Caches `v124`.
