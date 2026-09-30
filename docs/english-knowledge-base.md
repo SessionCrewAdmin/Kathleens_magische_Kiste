@@ -7,7 +7,7 @@
 3. Der Scanner speichert den strukturierten Datensatz in IndexedDB `kathleen-english-bulk-extractor`, Store `documents`.
 4. Extractor V3 entfernt wiederkehrende Kopf- und Fußtexte, trennt einzelne Aufgaben und verbindet erkannte Lösungsseiten.
 5. Die English Knowledge Base bildet daraus einzelne Content Units und zeigt Quelle, Hash, Seitenbezug, Prüfstatus und Freigaben.
-5. Der Kurzarbeiten-Generator erhält ausschließlich die ausdrücklich ausgewählten, fachlich geprüften und für Leistungsnachweise freigegebenen Units derselben Klasse und Unit.
+6. Der Kurzarbeiten-Generator erhält ausschließlich die ausdrücklich ausgewählten, fachlich geprüften und für Leistungsnachweise freigegebenen Units derselben Klasse und Unit.
 
 Originaldateien werden nicht in die Knowledge Base kopiert. Archivieren und Löschen verändern keine Originaldateien.
 
@@ -38,11 +38,15 @@ Aufgaben und Erwartungshorizont behalten Knowledge-Base-ID, Ursprungsdatei, Seit
 
 ## Extractor V3 und Schnellprüfung
 
-PDFs werden layoutbezogen statt nur als flache Textfolge gelesen. Textpositionen, Seitenzonen, Arbeitsaufträge und Lösungsüberschriften dienen der Aufgabentrennung. Fotos werden vor der OCR lokal skaliert, kontrastiert und auf Unschärfe beziehungsweise Belichtung geprüft. Die Originaldatei wird nicht verändert.
+PDFs werden layoutbezogen statt nur als flache Textfolge gelesen. Textpositionen, Seitenzonen, Arbeitsaufträge und Lösungsüberschriften dienen der Aufgabentrennung. Fotos werden lokal auf Seitenränder untersucht, zugeschnitten, perspektivisch entzerrt, kontrastiert und auf Unschärfe beziehungsweise abgeschnittene Bereiche geprüft. Vor der OCR erscheint eine Vorschau. Die Originaldatei wird nicht verändert.
 
 Die mobile Schnellprüfung bestätigt per Wischen nach rechts, stellt per Wischen nach links zurück und öffnet per Wischen nach oben die Bearbeitung. Dieselben Aktionen stehen als Schaltflächen und per Tastatur bereit. Bestätigen setzt nur „Geprüft“ und erteilt keine Freigabe für Leistungsnachweise.
 
 „Mit Extractor V3 erneut analysieren“ zeigt einen Vergleich. Manuelle Felder, Prüfstatus und Freigaben bleiben erhalten; ältere Aufgaben werden nicht automatisch gelöscht.
+
+Bestätigte Korrekturen können auf Nachfrage als sichtbare lokale Erkennungsregel gespeichert werden. Regeln für Klasse, Unit, Thema, Inhaltstyp, Lösungsseiten oder zu ignorierende Texte sind in der Knowledge Base einsehbar, bearbeitbar, deaktivierbar und löschbar. Ohne ausdrückliche Bestätigung wird keine Regel angelegt.
+
+Ist eine Originaldatei nicht mehr erreichbar, bleibt der strukturierte Baustein erhalten. „Originaldatei wieder verbinden“ akzeptiert die gewählte Datei nur bei identischem SHA-256-Dateihash. Ein ähnlicher Dateiname allein genügt nicht. Unterstützt der Browser dauerhafte Dateiberechtigungen, wird lediglich das lokale Zugriffsrecht gespeichert; andernfalls gilt die Verbindung für die aktuelle Sitzung.
 
 ## Übungswerkstatt
 
@@ -67,4 +71,4 @@ Der Browser verwendet ausschließlich den Publishable Key und ein angemeldetes B
 - Generator: `assessmentCandidates` verlangte bereits `reviewStatus=approved` und `approvedUses` mit `assessment`; bislang wurden alle passenden Units automatisch ausgewählt.
 - Nur lokal: Scannerbestand, Archivstatus, Bearbeitungen und lokale Sicherungen.
 - Supabase vorbereitet: Importbatch, Einträge, Content-Unit- und Blueprint-Migration; Live-Stand siehe Abschnitt Supabase.
-- PWA: Extractor V3, Schnellprüfung, Übungswerkstatt, Knowledge Base und ihre lokalen Kerne sind Teil des Offline-Caches `v122`.
+- PWA: Extractor V3, Foto-Vorschau, lokale Erkennungsregeln, Wiederverknüpfung, Schnellprüfung, Übungswerkstatt, Knowledge Base und ihre lokalen Kerne sind Teil des Offline-Caches `v123`.

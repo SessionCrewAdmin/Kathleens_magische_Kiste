@@ -4,11 +4,14 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#f4f8f6"><title>English Bulk Extractor · Kathleens Kiste</title>
 <link rel="stylesheet" href="english-bulk-extractor.css?v=1.0.0">
+<link rel="stylesheet" href="image-preview.css?v=1.0.0">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5.0.5/dist/tesseract.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js" defer></script>
 <script src="https://cdn.jsdelivr.net/npm/hash-wasm@4.12.0/dist/sha256.umd.min.js" defer></script>
 <script src="../english-content-extractor-v3-core.js?v=3.0.0" defer></script>
+<script src="../english-recognition-rules-core.js?v=1.0.0" defer></script>
+<script src="../english-image-preprocess-core.js?v=1.0.0" defer></script>
 <script src="../content-extractor-core.js?v=3.0.0" defer></script>
 <script src="english-bulk-extractor.js?v=1.0.1" defer></script>
 </head>
@@ -23,4 +26,5 @@
 <footer>English Bulk Extractor · Schema <span id="schemaVersion"></span> · lokaler IndexedDB-Index</footer>
 <dialog id="reviewDialog"><form method="dialog"><div class="section-heading"><div><span class="step">EINZELPRÜFUNG</span><h2 id="reviewTitle">Material prüfen</h2></div><button class="button soft" value="cancel">Schließen</button></div><input id="reviewId" type="hidden"><div class="review-grid"><label>Klasse<input id="reviewGrade" type="number" min="5" max="13"></label><label>Unit<input id="reviewUnit"></label><label>Bereich<select id="reviewSection"></select></label><label>Thema<input id="reviewTopic"></label></div><label>Erkannte Inhaltstypen<input id="reviewTypes" readonly></label><label><span><input id="reviewAssessment" type="checkbox"> Für Leistungsnachweise freigeben</span><small>Nur fachlich kontrollierte Inhalte aktivieren.</small></label><label>Textvorschau<textarea id="reviewPreview" readonly></textarea></label><div class="actions"><button id="reviewSave" type="button" class="button primary">Prüfung bestätigen</button></div></form></dialog>
 <dialog id="helpDialog"><form method="dialog"><h2>In drei Schritten</h2><ol><li>Ordner, einzelne Dateien oder ein ZIP wählen.</li><li>Analyse starten; Bilder und bildbasierte PDFs benötigen OCR.</li><li>Gelbe oder rote Treffer prüfen und anschließend die geprüften KB-Kandidaten exportieren.</li></ol><p>Originaldateien bleiben lokal. ZIPs werden vor dem Entpacken auf unsichere Pfade, Programme, Größe und Kompressionsrate geprüft.</p><button class="button primary">Verstanden</button></form></dialog>
+<dialog id="imagePreviewDialog" aria-labelledby="imagePreviewTitle"><div class="section-heading"><div><span class="step">FOTO VOR OCR PRÜFEN</span><h2 id="imagePreviewTitle">Bildvorschau</h2><p id="imagePreviewName"></p></div></div><img id="imagePreview" class="image-preview" alt="Lokal aufbereitete Dokumentseite vor der Texterkennung"><div id="imageWarnings" class="preview-warnings" role="status"></div><p>Die Vorschau zeigt Zuschnitt, Entzerrung und Kontrastverbesserung. Die Originaldatei wird nicht verändert.</p><div class="actions"><button id="imagePreviewCancel" type="button" class="button soft">OCR später durchführen</button><button id="imagePreviewConfirm" type="button" class="button primary">Vorschau passt · OCR starten</button></div></dialog>
 </main></body></html>
