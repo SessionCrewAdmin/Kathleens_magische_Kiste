@@ -19,13 +19,47 @@ test('inventory recognises supported and inventoried-only file types',()=>{
 test('content scan ignores DUA app debris but keeps real documents',()=>{
  assert.equal(Core.isEnglishContentCandidate('Leistungsmessung/Unit 1/Test.pdf'),true);
  assert.equal(Core.isEnglishContentCandidate('Unterrichtsassistent/content/media/kv/worksheet.docx'),true);
- assert.equal(Core.isEnglishContentCandidate('Leistungserhebungen/old-test.doc'),true);
+ assert.equal(Core.isEnglishContentCandidate('Leistungserhebungen/old-test.doc'),false);
+ assert.equal(Core.isEnglishContentCandidate('GL 1 Trainingsbuch/_html/images/start.jpg'),false);
  assert.equal(Core.isEnglishContentCandidate('Unterrichtsassistent/content/pages/page_1/Scale1.png'),false);
  assert.equal(Core.isEnglishContentCandidate('GL 2 Workbook/app/assets/hilfe.pdf'),false);
  assert.equal(Core.isEnglishContentCandidate('Unterrichtsassistent/app.js'),false);
  assert.equal(Core.isEnglishContentCandidate('Unterrichtsassistent/Lizenz.txt'),false);
  assert.equal(Core.isEnglishContentCandidate('Unterrichtsassistent/content/media/kv/._worksheet.pdf'),false);
  assert.equal(Core.isSystemShadow('GL 2 Workbook/.DS_Store'),true);
+});
+
+test('mass import removes technical debris and legacy duplicates before hashing',()=>{
+ const entry=relativePath=>({relativePath,file:{name:relativePath.split('/').at(-1)}}),report=Core.prepareEnglishImport([
+  entry('5. Klasse Englisch/Unit 2/Test.pdf'),
+  entry('5. Klasse Englisch/Unit 2/Test.doc'),
+  entry('5. Klasse Englisch/Unit 2/Worksheet.docx'),
+  entry('5. Klasse Englisch/_html/images/start.jpg'),
+  entry('5. Klasse Englisch/Lizenz.txt')
+ ],{rootName:'5. Klasse Englisch'});
+ assert.deepEqual(report.accepted.map(x=>x.relativePath),['5. Klasse Englisch/Unit 2/Test.pdf','5. Klasse Englisch/Unit 2/Worksheet.docx']);
+ assert.equal(report.reasons.parallel_format,1);
+ assert.equal(report.reasons.technical_or_unsupported,2);
+});
+
+test('classification reads German grade folders and compact unit folders from grades 5 to 12',()=>{
+ for(const grade of [5,6,7,8,9,10,11,12]){
+  const result=Core.classifyEnglish({relativePath:`${grade}. Klasse Englisch/0. Green Line/02_unit2/Grammar worksheet.pdf`});
+  assert.equal(result.grade,grade);
+  assert.equal(result.unit,2);
+  assert.equal(result.section,'grammar');
+ }
+ const mixed=Core.classifyEnglish({relativePath:'11. + 12. Klasse/Material/worksheet.pdf'});
+ assert.equal(mixed.grade,null);
+ assert.equal(mixed.needs_review,true);
+ const specific=Core.classifyEnglish({relativePath:'11. + 12. Klasse/12. Klasse/Unit 2/Grammar worksheet.pdf'});
+ assert.equal(specific.grade,12);
+});
+
+test('root folder context classifies files without changing their stable relative path',()=>{
+ const inventory=Core.inventoryRecord({name:'worksheet.txt',relativePath:'Grammar/worksheet.txt',rootLabel:'12. Klasse Englisch'}),record=Core.extractionRecord(inventory,{format:'text',rawText:'GRAMMAR\nComplete the sentences with the correct tense. '.repeat(8),blocks:[],headings:['GRAMMAR'],needsOcr:false});
+ assert.equal(record.source.relativePath,'Grammar/worksheet.txt');
+ assert.equal(record.classification.grade,12);
 });
 
 test('English classification prioritises folder, filename and headings with review confidence',()=>{
@@ -101,6 +135,12 @@ test('bulk UI is local-first, resumable and exposes review/export controls',()=>
  assert.match(js,/Needs OCR/);
  assert.match(js,/indexedDB\.open/);
  assert.match(js,/Core\.resumeDecision/);
+ assert.match(js,/prepareEnglishImport/);
+ assert.match(html,/Intelligenter Massenimport/);
+ assert.match(html,/preflightSummary/);
+ assert.match(html,/nacheinander auswählen/);
+ assert.match(js,/record\.source\?\.rootLabel===state\.rootName/);
+ assert.match(js,/state\.rootName\}\/\$\{relativePath/);
  assert.match(js,/canonicalDuplicates/);
  assert.match(js,/extractDocx/);
  assert.match(js,/application\/x-ndjson/);

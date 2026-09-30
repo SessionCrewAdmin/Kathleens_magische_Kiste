@@ -1,5 +1,7 @@
 const test=require('node:test');
 const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const path=require('node:path');
 const Core=require('../tools/english-kb-manager-core.js');
 
 function record(overrides={}){return{id:'eng-'+'a'.repeat(16),schemaVersion:'english-extracted-document/v1',status:'ready',classification:{subject:'english',grade:6,unit:2,section:'grammar',topic:'Simple past'},content:{objects:[{type:'grammar',title:'Simple past',rules:['Use the past form.'],examples:['I went home.'],sourcePages:[4]}]},quality:{score:.91},source:{fileName:'grammar.pdf',relativePath:'6/Unit 2/grammar.pdf',sha256:'b'.repeat(64)},provenance:{reviewedAt:'2026-09-29T10:00:00Z',reviewStatus:'approved',approvedUses:['practice','worksheet','assessment']},...overrides}}
@@ -11,3 +13,4 @@ test('an uncertain automatically linked solution blocks assessment until manuall
 test('legacy records receive optional manager fields without a database migration',()=>{const old=record();delete old.lifecycle;delete old.managerSchemaVersion;delete old.provenance.reviewStatus;const normalized=Core.normalize(old);assert.equal(normalized.managerSchemaVersion,1);assert.deepEqual(normalized.lifecycle,{});assert.equal(normalized.provenance.reviewStatus,'reviewed')});
 test('import preview separates new, duplicate hash and invalid records',()=>{const existing=record(),fresh=record({id:'eng-'+'c'.repeat(16),source:{...existing.source,sha256:'d'.repeat(64)}}),duplicate=record({id:'eng-'+'e'.repeat(16)}),plan=Core.importPlan([existing],[fresh,duplicate,{id:'broken'}]);assert.equal(plan.valid.length,1);assert.equal(plan.duplicates.length,1);assert.equal(plan.invalid.length,1)});
 test('search covers rules, examples, file names and paths',()=>{const unit=Core.units(record())[0];for(const search of ['past form','went home','grammar.pdf','Unit 2'])assert.equal(Core.matches(unit,{search,archived:'no'}),true)});
+test('knowledge base offers a guarded local reset with a backup first',()=>{const html=fs.readFileSync(path.join(__dirname,'../tools/english-knowledge-base/index.html'),'utf8'),ui=fs.readFileSync(path.join(__dirname,'../tools/english-knowledge-base/english-knowledge-base.js'),'utf8'),library=fs.readFileSync(path.join(__dirname,'../tools/english-bulk-library.js'),'utf8');assert.match(html,/resetEnglishData/);assert.match(ui,/english-kb-vor-reset/);assert.match(ui,/ENGLISCH LÖSCHEN/);assert.ok(ui.indexOf('download(`english-kb-vor-reset')<ui.indexOf('Library.clearAll()'));assert.match(library,/async function clearAll/)});
