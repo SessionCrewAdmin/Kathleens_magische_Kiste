@@ -34,6 +34,6 @@ test('forced previews, session guard, skip and automatic completion remain wired
 });
 
 test('new image is precached and cache version is advanced', () => {
-  assert.match(worker, /kathleen-v124-english-extractor-v3-complete-20260930/);
+  assert.match(worker, /kathleen-v125-english-extractor-v3-ai-20260930/);
   assert.match(worker, new RegExp(`'\\./${artwork}'`));
 });

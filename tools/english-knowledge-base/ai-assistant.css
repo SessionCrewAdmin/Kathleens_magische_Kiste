@@ -1,0 +1,10 @@
+.ai-tools{margin:16px 0;padding:16px;border:1px solid #d9c6e5;border-radius:16px;background:linear-gradient(135deg,#fbf5ff,#fff)}
+.ai-tools p{margin:5px 0;color:var(--muted);font-size:13px}
+.ai-tools .dialog-actions{margin-top:10px}
+.ai-saved{margin-top:12px;padding:10px 12px;border-radius:12px;background:#fff4df;color:var(--warn);font-weight:800;font-size:12px}
+.ai-payload{max-height:270px;overflow:auto;white-space:pre-wrap;overflow-wrap:anywhere;padding:14px;border-radius:12px;background:#28212d;color:#fff;font:12px/1.5 ui-monospace,monospace}
+.ai-notice{margin:14px 0;padding:12px;border-left:4px solid var(--warn);background:#fff8e8}
+.ai-result{margin-top:14px;padding:14px;border-radius:14px;border:1px solid var(--line);background:#faf7fa;white-space:pre-wrap}
+.ai-check{display:flex;align-items:flex-start;gap:8px;margin:14px 0}.ai-check input{margin-top:3px}
+.generated-preview{display:block;max-width:min(100%,520px);max-height:420px;object-fit:contain;border-radius:14px;margin:10px auto}
+
