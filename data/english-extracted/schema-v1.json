@@ -1,45 +1,207 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "english-extracted-document/v1",
-  "title": "English Extracted Document",
+  "title": "English Extracted Document (v1 and v3)",
+  "description": "Backward-compatible contract for legacy v1 extraction records and structured English Extractor V3 records.",
   "type": "object",
-  "required": ["schemaVersion", "id", "source", "provenance", "status"],
+  "required": ["schemaVersion","id","source","provenance","status"],
   "properties": {
-    "schemaVersion": { "const": "english-extracted-document/v1" },
-    "id": { "type": "string", "minLength": 1 },
+    "schemaVersion": {"enum": ["english-extracted-document/v1","english-extracted-document/v3"]},
+    "id": {"type": "string","minLength": 1},
     "source": {
       "type": "object",
-      "required": ["fileName", "relativePath", "sha256", "size", "modified", "type"],
+      "required": ["fileName","relativePath","sha256","size","modified","type"],
       "properties": {
-        "fileName": { "type": "string" },
-        "relativePath": { "type": "string" },
-        "absolutePath": { "type": "string" },
-        "sha256": { "type": "string", "pattern": "^$|^[a-f0-9]{64}$" },
-        "size": { "type": "integer", "minimum": 0 },
-        "modified": { "type": "string", "format": "date-time" },
-        "type": { "enum": ["pdf", "docx", "doc", "pptx", "xlsx", "txt", "audio", "image", "zip", "other"] }
+        "fileName": {"type": "string"},
+        "relativePath": {"type": "string"},
+        "absolutePath": {"type": "string"},
+        "rootLabel": {"type": "string"},
+        "sha256": {"type": "string","pattern": "^$|^[a-f0-9]{64}$"},
+        "size": {"type": "integer","minimum": 0},
+        "modified": {"type": "string","format": "date-time"},
+        "type": {"enum": ["pdf","docx","doc","pptx","xlsx","txt","audio","image","zip","other"]}
       }
     },
     "classification": {
-      "type": ["object", "null"],
+      "type": ["object","null"],
       "properties": {
-        "subject": { "const": "english" },
-        "grade": { "type": ["integer", "null"], "minimum": 5, "maximum": 13 },
-        "unit": { "type": ["integer", "string", "null"] },
-        "section": { "type": "string" },
-        "topic": { "type": "string" },
-        "documentType": { "type": "string" },
-        "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
-        "needs_review": { "type": "boolean" }
+        "subject": {"const": "english"},
+        "grade": {"type": ["integer","null"],"minimum": 5,"maximum": 13},
+        "unit": {"type": ["integer","string","null"]},
+        "section": {"type": "string"},
+        "category": {"type": "string"},
+        "topic": {"type": "string"},
+        "documentType": {"type": "string"},
+        "difficulty": {"type": ["string","null"]},
+        "confidence": {"type": "number","minimum": 0,"maximum": 1},
+        "evidence": {"type": "array","items": {"type": "object"}},
+        "needs_review": {"type": "boolean"}
       }
     },
-    "content": { "type": ["object", "null"] },
-    "quality": { "type": ["object", "null"] },
-    "provenance": { "type": "object" },
-    "status": { "enum": ["inventory", "pending", "ready", "needs_review", "needs_ocr", "duplicate", "unsupported", "error", "deleted"] },
-    "needs_review": { "type": "boolean" },
-    "needs_ocr": { "type": "boolean" },
-    "duplicateOf": { "type": ["string", "null"] },
-    "error": { "type": ["object", "null"] }
+    "content": {"type": ["object","null"]},
+    "quality": {"type": ["object","null"]},
+    "provenance": {"type": "object"},
+    "status": {"enum": ["inventory","pending","ready","needs_review","needs_ocr","duplicate","unsupported","error","deleted"]},
+    "needs_review": {"type": "boolean"},
+    "needs_ocr": {"type": "boolean"},
+    "duplicateOf": {"type": ["string","null"]},
+    "error": {"type": ["object","null"]}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"schemaVersion": {"const": "english-extracted-document/v3"}},"required": ["schemaVersion"]},
+      "then": {
+        "required": ["content"],
+        "properties": {
+          "content": {
+            "required": ["analysisV3"],
+            "properties": {
+              "format": {"type": "string"},
+              "needsOcr": {"type": "boolean"},
+              "rawText": {"type": "string"},
+              "headings": {"type": "array","items": {"type": "string"}},
+              "blocks": {"type": "array","items": {"$ref": "#/$defs/contentBlock"}},
+              "pages": {"type": "array","items": {"$ref": "#/$defs/extractedPage"}},
+              "source": {"type": "object"},
+              "semantic": {"type": ["object","null"]},
+              "objects": {"type": "array","items": {"$ref": "#/$defs/contentObject"}},
+              "analysisV3": {"$ref": "#/$defs/analysisV3"}
+            }
+          },
+          "provenance": {
+            "properties": {
+              "extractorVersion": {"type": "string"},
+              "inventoryAt": {"type": "string","format": "date-time"},
+              "extractedAt": {"type": "string","format": "date-time"},
+              "reviewedAt": {"type": "string","format": "date-time"},
+              "reviewStatus": {"type": "string"},
+              "approvedUses": {"type": "array","items": {"enum": ["practice","worksheet","assessment"]}},
+              "originalRemainsLocal": {"type": "boolean"}
+            }
+          },
+          "quality": {"type": ["object","null"],"properties": {"score": {"type": "number","minimum": 0,"maximum": 1},"label": {"type": "string"},"characters": {"type": "integer","minimum": 0},"pages": {"type": "integer","minimum": 0},"ocrPages": {"type": "integer","minimum": 0},"failedPages": {"type": "integer","minimum": 0},"needs_review": {"type": "boolean"}}}
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "contentBlock": {"type": "object","required": ["type","text"],"properties": {"type": {"type": "string"},"text": {"type": "string"},"level": {"type": ["integer","null"]}}},
+    "extractedLine": {"type": "object","required": ["text"],"properties": {"text": {"type": "string"},"index": {"type": "integer","minimum": 0},"page": {"type": "integer","minimum": 1},"zone": {"type": "string"},"x": {"type": "number"},"y": {"type": "number"},"width": {"type": "number"},"height": {"type": "number"}}},
+    "extractedPage": {
+      "type": "object",
+      "properties": {"pageIndex": {"type": "integer","minimum": 1},"text": {"type": "string"},"lines": {"type": "array","items": {"oneOf": [{"type": "string"},{"$ref": "#/$defs/extractedLine"}]}},"method": {"type": "string"},"charCount": {"type": "integer","minimum": 0},"needsOcr": {"type": "boolean"},"error": {"type": ["string","object","null"]}}
+    },
+    "confidence": {"type": "object","required": ["overall","title","assignment","solution"],"properties": {"overall": {"type": "number","minimum": 0,"maximum": 1},"title": {"type": "number","minimum": 0,"maximum": 1},"assignment": {"type": "number","minimum": 0,"maximum": 1},"solution": {"type": "number","minimum": 0,"maximum": 1}}},
+    "solution": {
+      "type": "object",
+      "required": ["text","answers","sourcePages","confidence","reviewed","plausibility","requiresReview","totalPoints","partialPoints","expectationHorizon"],
+      "properties": {
+        "text": {"type": "string"},
+        "answers": {"type": "array","items": {"type": "object","required": ["answer","baseForm"],"properties": {"answer": {"type": "string"},"baseForm": {"type": "string"}}}},
+        "sourcePages": {"type": "array","items": {"type": "integer","minimum": 1}},
+        "confidence": {"type": "number","minimum": 0,"maximum": 1},
+        "reviewed": {"type": "boolean"},
+        "requiresReview": {"type": "boolean"},
+        "plausibility": {
+          "type": "object",
+          "required": ["status","score","issues","signals"],
+          "properties": {
+            "status": {"enum": ["missing","plausible","review_required","uncertain","manually_reviewed"]},
+            "score": {"type": "number","minimum": 0,"maximum": 1},
+            "issues": {"type": "array","items": {"type": "string"}},
+            "signals": {"type": "object"},
+            "suggestedTotalPoints": {"type": ["integer","null"]},
+            "suggestedPartialPoints": {"type": "array","items": {"type": "object"}}
+          }
+        },
+        "totalPoints": {"type": ["integer","null"]},
+        "partialPoints": {"type": "array","items": {"type": "object"}},
+        "expectationHorizon": {"type": "object"}
+      }
+    },
+    "analyzedTask": {
+      "type": "object",
+      "required": ["id","groupId","title","instruction","sourceText","taskType","type","difficulty","subtasks","gaps","sourcePages","position","confidence","solution","reviewStatus","approvedUses","provenance"],
+      "properties": {
+        "id": {"type": "string","minLength": 1},
+        "groupId": {"type": "string","minLength": 1},
+        "title": {"type": "string"},
+        "instruction": {"type": "string"},
+        "sourceText": {"type": "string"},
+        "taskType": {"type": "string"},
+        "type": {"enum": ["vocabulary","grammar","reading","writing","mediation","listening","culture","exercise","assessment_reference"]},
+        "grade": {"type": ["integer","null"],"minimum": 5,"maximum": 13},
+        "unit": {"type": ["integer","string","null"]},
+        "topic": {"type": ["string","null"]},
+        "grammarFocus": {"type": ["string","null"]},
+        "difficulty": {"type": "string"},
+        "subtasks": {"type": "array","items": {"type": "object","required": ["id","label","text","line"],"properties": {"id": {"type": "string"},"label": {"type": "string"},"text": {"type": "string"},"line": {"type": "integer","minimum": 1}}}},
+        "gaps": {"type": "array","items": {"type": "object","required": ["id","marker","baseForm","context","offset"],"properties": {"id": {"type": "string"},"marker": {"type": "string"},"baseForm": {"type": ["string","null"]},"context": {"type": "string"},"offset": {"type": "integer","minimum": 0}}}},
+        "expectedAnswerCount": {"type": ["integer","null"],"minimum": 0},
+        "sourcePages": {"type": "array","items": {"type": "integer","minimum": 1}},
+        "position": {"type": "object","required": ["startLine","endLine"],"properties": {"startLine": {"type": "integer","minimum": 0},"endLine": {"type": "integer","minimum": 0}}},
+        "confidence": {"$ref": "#/$defs/confidence"},
+        "solution": {"anyOf": [{"type": "null"},{"$ref": "#/$defs/solution"}]},
+        "reviewStatus": {"type": "string"},
+        "approvedUses": {"type": "array","items": {"enum": ["practice","worksheet","assessment"]}},
+        "provenance": {"type": "object","required": ["analyzerVersion","generated"],"properties": {"analyzerVersion": {"type": "string"},"generated": {"const": false}}}
+      }
+    },
+    "contentObject": {
+      "type": "object",
+      "required": ["type","title","taskId","taskGroupId","taskType","instruction","sourceText","blocks","solution","subtasks","gaps","difficulty","confidence","fieldConfidence","sourcePages","position","reviewStatus","approvedUses","provenance"],
+      "properties": {
+        "type": {"enum": ["vocabulary","grammar","reading","writing","mediation","listening","culture","exercise","assessment_reference"]},
+        "title": {"type": "string"},
+        "taskId": {"type": "string","minLength": 1},
+        "taskGroupId": {"type": "string","minLength": 1},
+        "taskType": {"type": "string"},
+        "instruction": {"type": "string"},
+        "sourceText": {"type": "string"},
+        "blocks": {"type": "array","items": {"$ref": "#/$defs/contentBlock"}},
+        "solution": {"anyOf": [{"type": "null"},{"$ref": "#/$defs/solution"}]},
+        "subtasks": {"type": "array","items": {"type": "object"}},
+        "gaps": {"type": "array","items": {"type": "object"}},
+        "grammarFocus": {"type": ["string","null"]},
+        "difficulty": {"type": "string"},
+        "confidence": {"type": "number","minimum": 0,"maximum": 1},
+        "fieldConfidence": {"$ref": "#/$defs/confidence"},
+        "sourcePages": {"type": "array","items": {"type": "integer","minimum": 1}},
+        "position": {"type": "object","required": ["startLine","endLine"],"properties": {"startLine": {"type": "integer","minimum": 0},"endLine": {"type": "integer","minimum": 0}}},
+        "reviewStatus": {"type": "string"},
+        "approvedUses": {"type": "array","items": {"enum": ["practice","worksheet","assessment"]}},
+        "provenance": {"type": "object","properties": {"analyzerVersion": {"type": "string"},"generated": {"type": "boolean"}}}
+      }
+    },
+    "analysisV3": {
+      "type": "object",
+      "required": ["schemaVersion","analyzerVersion","sourceDocument","metadata","pages","ignored","taskGroups","tasks","warnings"],
+      "properties": {
+        "schemaVersion": {"const": "english-content-analysis/v3"},
+        "analyzerVersion": {"type": "string"},
+        "sourceDocument": {
+          "type": "object",
+          "required": ["id","fileName","relativePath","sha256","fileType","pageCount","originalRemainsLocal","analyzedAt"],
+          "properties": {"id": {"type": "string"},"fileName": {"type": "string"},"relativePath": {"type": "string"},"sha256": {"type": "string"},"fileType": {"type": "string"},"pageCount": {"type": "integer","minimum": 0},"originalRemainsLocal": {"const": true},"analyzedAt": {"type": "string","format": "date-time"}}
+        },
+        "metadata": {
+          "type": "object",
+          "required": ["subject","grade","unit","topic","contentType"],
+          "properties": {"subject": {"const": "english"},"grade": {"type": ["integer","null"],"minimum": 5,"maximum": 13},"unit": {"type": ["integer","string","null"]},"topic": {"type": ["string","null"]},"grammarFocus": {"type": ["string","null"]},"contentType": {"type": "string"},"confidence": {"type": "object"}}
+        },
+        "pages": {"type": "array","items": {"type": "object","required": ["pageIndex","isSolution","lineCount"],"properties": {"pageIndex": {"type": "integer","minimum": 1},"isSolution": {"type": "boolean"},"lineCount": {"type": "integer","minimum": 0}}}},
+        "ignored": {"type": "array","items": {"type": "object","required": ["page","text","zone","reason"],"properties": {"page": {"type": "integer","minimum": 1},"text": {"type": "string"},"zone": {"type": "string"},"reason": {"type": "string"}}}},
+        "taskGroups": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id","title","pages","taskIds"],
+            "properties": {"id": {"type": "string"},"title": {"type": "string"},"grade": {"type": ["integer","null"]},"unit": {"type": ["integer","string","null"]},"topic": {"type": ["string","null"]},"pages": {"type": "array","items": {"type": "integer","minimum": 1}},"taskIds": {"type": "array","items": {"type": "string"}}}
+          }
+        },
+        "tasks": {"type": "array","items": {"$ref": "#/$defs/analyzedTask"}},
+        "warnings": {"type": "array","items": {"type": "string"}}
+      }
+    }
   }
 }
