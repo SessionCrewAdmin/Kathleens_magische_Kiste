@@ -1,5 +1,20 @@
 # Assessment Engine: Repository- und Materialaudit
 
+## Aktueller Status · 30.09.2026
+
+Dieses Dokument begann als Bestandsaufnahme des Snapshots `52a98c9` vom 25.09.2026. Die nachfolgenden Abschnitte bleiben als nachvollziehbare Ausgangslage erhalten. Für die aktuelle Planung gelten jedoch diese Korrekturen:
+
+| Bereich | Aktueller Status |
+| --- | --- |
+| LehrplanPLUS | Für Geschichte und Englisch strukturiert importiert: Fachlehrplanvarianten, Kompetenzerwartungen, Inhaltsitems und Serviceinventare. Die Assessment Engine lädt sie je Fach, Jahrgangsstufe und Variante und verlangt eine bewusste Zuordnung durch die Lehrkraft. |
+| Assessment-Ausgabe | Schülerfassung, Erwartungshorizont, Korrekturbogen und DOCX-Ausgabe sind vorhanden; die Bibliothek bleibt in dieser Ausbaustufe gerätelokal. |
+| English Knowledge Base | Geprüfte und für Leistungsnachweise freigegebene Content Units können neben der Vocabulary Knowledge Base genutzt werden. Originaldateien bleiben lokal beziehungsweise privat synchronisiert. |
+| Weiterhin offen | Eine schulbuchgebundene, fachlich geprüfte Grammar Knowledge Base pro Unit sowie ein freigegebenes Listening-Audioinventar. Reading benötigt weiterhin ein bewusst zugewiesenes Ausgangsmaterial. |
+
+Die alten Aussagen „LehrplanPLUS nicht importiert“ und „DOCX noch offen“ beschreiben ausschließlich den damaligen Auditstand und sind keine aktuellen Produktgrenzen.
+
+## Historische Auditbasis · 25.09.2026
+
 Auditbasis: `SessionCrewAdmin/Kathleens_magische_Kiste`, Branch `main`, Snapshot `52a98c9` (25.09.2026). Der Check erfolgte vor Änderungen; Implementierungen der bestehenden Knowledge Bases, des Schulaufgabenrechners, des Materialbereichs und der Druckansichten bleiben unangetastet.
 
 ## Bestand

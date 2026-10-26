@@ -35,8 +35,8 @@ Unterrichtszentrale für Englisch und Geschichte am Gymnasium: Klassenorganisati
 
 ### Assessments
 - `tools/assessments/` – gemeinsame Assessment Engine mit History- und Vocabulary-Adaptern, Assessment-Plan, Erwartungshorizont, Korrekturbogen und lokaler Bibliothek.
-- `data/assessment/` – versioniertes Schema, Operatorenreferenz Geschichte (Bayern, März 2025) und Status der noch nicht importierten LehrplanPLUS-/Grammar-KBs.
-- `docs/assessment-engine-audit.md` – Repository- und Referenzdokument-Audit samt fehlenden Daten.
+- `data/assessment/` – versioniertes Schema, Operatorenreferenz Geschichte (Bayern, März 2025) sowie strukturierte LehrplanPLUS-Kompetenzen und Serviceinventare für Geschichte und Englisch.
+- `docs/assessment-engine-audit.md` – historisches Ausgangsaudit mit aktuellem Status der Daten- und Funktionslücken.
 
 ### Games
 - `tools/quick-games/`
@@ -74,7 +74,7 @@ Supabase wird für persistente Funktionen wie Classroom Sessions, Live Poll, Pus
 - neue Migrationen: `supabase/migrations/`
 - historische Setup-/Patch-Skripte: `setup/`
 
-Assessments der ersten Ausbaustufe werden lokal im Browser gespeichert. Sie nutzen die bestehenden Knowledge Bases, statt deren Inhalte zu duplizieren. Fehlende LehrplanPLUS-, Grammar- und Quellenmaterialien werden im Plan als Lücken angezeigt.
+Assessments werden zunächst lokal im Browser gespeichert. Sie nutzen die bestehenden Knowledge Bases, statt deren Inhalte zu duplizieren. LehrplanPLUS-Kompetenzen für Geschichte und Englisch sind strukturiert verfügbar und werden bewusst durch die Lehrkraft zugeordnet. Als echte Lücken bleiben vor allem schulbuchgebundene Grammar-Bausteine, freigegebene Listening-Quellen und gegebenenfalls selbst bereitgestellte Ausgangsmaterialien.
 
 ## PWA
 
