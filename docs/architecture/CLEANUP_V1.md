@@ -63,7 +63,6 @@ Diese Dateien tragen alte Versionsnummern, sind aber aktuell aktiv referenziert 
 - `tools/teacher-shell-overrides-v54.css`
 - `tools/teacher-runtime-v54.js`
 - `tools/teacher-premium-pages-v57.css`
-- `tools/quick-games/demo-packs-v66.js`
 - `tools/quick-games/quick-games-v68.js`
 - `tools/quick-games/country-hunt/premium-v71.css`
 - `tools/quick-games/country-hunt/premium-v71.js`
@@ -83,6 +82,8 @@ Navigation, More-Menü, Session-Bar und aktive Tool-Zustände werden aus einer g
 
 ### D · Game Platform
 Country Hunt, History Hunt, Timeline Challenge und Quick Games erhalten gemeinsame Module für Teams, Timer, Punkte, Beamer, Session und Ergebnisübergabe.
+
+Der erste Verbindungsschritt ist umgesetzt: Quick Games übernimmt Fach und Jahrgang aus dem gemeinsamen Unterrichtskontext und schreibt Änderungen aus dem Inhaltseditor dorthin zurück. Die früheren Demo-Pakete werden nicht mehr nachgeladen; Datenbank-Quellen und bewusst geladene Vorlagen bleiben davon unabhängig.
 
 ### E · Design
 Aktive Teacher-CSS-Dateien werden zu einer klaren Design-Layer-Struktur konsolidiert. Erst danach werden die bisherigen `v50/v54/v57` Dateien entfernt.
